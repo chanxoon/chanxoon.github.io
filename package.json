@@ -1,25 +1,11 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "sass": "sass --quiet-deps assets/css/scss:assets/css",
-    "watch": "sass --watch --quiet-deps assets/css/scss:assets/css",
-    "start": "live-server ."
+    "sass": "sass --watch src/assets/scss:src/assets/css",
+    "start": "live-server src"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chanxoon/portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/chanxoon/portfolio/issues"
-  },
-  "homepage": "https://github.com/chanxoon/portfolio#readme",
   "devDependencies": {
     "live-server": "^1.2.2",
     "sass": "^1.97.2"

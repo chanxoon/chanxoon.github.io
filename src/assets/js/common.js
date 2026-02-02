@@ -73,9 +73,9 @@ $(document).ready(() => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    AOS.init({
-        duration: 1000,
-    });
+    // AOS.init({
+    //     duration: 1000,
+    // });
 
     const swiper = new Swiper('.mySwiper', {
         effect: 'coverflow',

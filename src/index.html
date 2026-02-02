@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--#include file="./_head.html"-->
+    <head data-include="include/_head.html">
     </head>
     <body>
         <div id="wrap">
-            <!--#include file="./_header.html"-->
+            <div data-include="include/_header.html"></div>
             <div id="container">
                 <div class="inner">
                     <section class="introSec">
@@ -636,7 +635,19 @@
                     </section>
                 </div>
             </div>
-            <!--#include file="./_footer.html"-->
+            <div data-include="include/_footer.html"></div>
         </div>
     </body>
 </html>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-include]').forEach(el => {
+    fetch(el.dataset.include)
+      .then(res => res.text())
+      .then(html => {
+        el.insertAdjacentHTML('afterbegin', html);
+      });
+  });
+});
+</script>

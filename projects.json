@@ -1,0 +1,219 @@
+{
+  "tabs": [
+    { "id": "all", "label": "전체" },
+    { "id": "company", "label": "회사 프로젝트" },
+    { "id": "operation", "label": "운영 프로젝트" }
+  ],
+  "projects": [
+    {
+      "type": "company",
+      "title": "효성 ITX 드림시스템 프로젝트",
+      "desc": "효성 ITX 드림시스템 - UI/UX 퍼블리싱 / 2025.11 ~ 2025.12",
+      "stack": "HTML5 / SCSS / Javascript / Git / gulp / Figma",
+      "progressText": "참여도 70% / 작업자 2",
+      "progressValue": 70,
+      "image": "./assets/img/img-thum-23.png",
+      "alt": "드림시스템",
+      "link": "./list/dream_system/coding_list.html"
+    },
+    {
+      "type": "company",
+      "title": "효성 ITX 콜봇/챗봇 프로젝트",
+      "desc": "효성 ITX 콜봇/챗봇 - UI/UX 퍼블리싱 / 2025.10 ~ 2025.11",
+      "stack": "HTML5 / SCSS / Javascript / Git / gulp / Figma",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 70,
+      "image": "./assets/img/img-thum-23.png",
+      "alt": "효성 ITX 콜봇/챗봇",
+      "link": "./list/dream_system/coding_list.html"
+    },
+    {
+      "type": "company",
+      "title": "신한라이프 QA 프로젝트",
+      "desc": "신한라이프 QA 프로젝트 투입 - UI/UX 퍼블리싱 / 2025.04 ~ 2025.10",
+      "stack": "HTML5 / CSS3 / Javascript / Git / Figma",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 70,
+      "image": "./assets/img/img-thum-24.png",
+      "alt": "신한라이프 QA프로젝트",
+      "link": "./list/dream_system/coding_list.html"
+    },
+    {
+      "type": "company",
+      "title": "하나펀드 프로젝트",
+      "desc": "하나펀드서비스 UI/UX 퍼블리싱 / 2025.4 ~ 2025.5",
+      "stack": "HTML5 / SCSS / Javascript / Git / gulp / Figma",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-thum-22.png",
+      "alt": "하나펀드서비스",
+      "link": "./list/hanafund/index.html"
+    },
+    {
+      "type": "company",
+      "title": "에스원 프로젝트 (Storage)",
+      "desc": "에스원 온라인 쇼룸 - UI/UX 퍼블리싱 / 2024.08 ~ 2024.09",
+      "stack": "HTML5 / SCSS / Javascript / Git / Figma",
+      "progressText": "참여도 25% / 작업자 4",
+      "progressValue": 25,
+      "image": "./assets/img/img-thum-21.png",
+      "alt": "온라인 쇼룸",
+      "link": "./list/s1/dist/showroom/storage.html"
+    },
+    {
+      "type": "company",
+      "title": "에스원 프로젝트 (Villa)",
+      "desc": "에스원 온라인 쇼룸 - UI/UX 퍼블리싱 / 2024.08 ~ 2024.09",
+      "stack": "HTML5 / SCSS / Javascript / Git / Figma",
+      "progressText": "참여도 25% / 작업자 4",
+      "progressValue": 25,
+      "image": "./assets/img/img-thum-20.png",
+      "alt": "에스원",
+      "link": "./list/s1/dist/showroom/villa.html"
+    },
+    {
+      "type": "company",
+      "title": "가상실험실 프로젝트 (1)",
+      "desc": "미래엔 중고등 교과서 가상실험실 퍼블리싱 - UI/UX 퍼블리싱 / 2024.09 ~ 2024.10",
+      "stack": "HTML5 / SCSS / Javascript / Git / Figma",
+      "progressText": "참여도 90% / 작업자 3",
+      "progressValue": 90,
+      "image": "./assets/img/img-thum-19.png",
+      "alt": "미래엔 중고등 교과서 가상실험실",
+      "link": "./list/virtuallab/dist/web/html/h_s12_232_130.html"
+    },
+    {
+      "type": "company",
+      "title": "가상실험실 프로젝트 (2)",
+      "desc": "미래엔 중고등 교과서 가상실험실 퍼블리싱 - UI/UX 퍼블리싱 / 2024.09 ~ 2024.10",
+      "stack": "HTML5 / SCSS / Javascript / Git / Figma",
+      "progressText": "참여도 90% / 작업자 3",
+      "progressValue": 90,
+      "image": "./assets/img/img-thum-18.png",
+      "alt": "미래엔 중고등 교과서 가상실험실",
+      "link": "./list/virtuallab/dist/web/html/h_s2_122_049.html"
+    },
+    {
+      "type": "company",
+      "title": "HeyID 앱 프로젝트",
+      "desc": "Heyid 전자신분증앱 - UI/UX 퍼블리싱 / 2023.09 ~ 2024.01",
+      "stack": "HTML5 / CSS3 / Javascript / Photoshop",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-thum-17.png",
+      "alt": "Heyid 전자신분증앱",
+      "link": "./list/heyid/pad/index.html"
+    },
+    {
+      "type": "company",
+      "title": "KB공인전자문서센터 프로젝트",
+      "desc": "KB공인전자문서 홈페이지 개발 투입 - UI/UX 퍼블리싱 / 2022.12 ~ 2023.02",
+      "stack": "HTML5 / CSS3 / Javascript / Photoshop",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-thum-14.png",
+      "alt": "KB공인전자문서센터",
+      "link": "https://kbdocu.com"
+    },
+
+    {
+      "type": "operation",
+      "title": "지역N문화 앱 운영",
+      "desc": "지역N문화 앱 버젼",
+      "stack": "",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-thum-15.png",
+      "alt": "지역N문화 앱",
+      "link": ""
+    },
+    {
+      "type": "operation",
+      "title": "지역N문화 웹진 운영",
+      "desc": "지역N문화 웹진 뉴스레터",
+      "stack": "",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-thum-13.png",
+      "alt": "지역N문화 웹진",
+      "link": "https://webzine.nculture.org"
+    },
+    {
+      "type": "operation",
+      "title": "지역N문화 테마 운영 - dictation",
+      "desc": "생생한 목소리로 듣는 우리마을이야기",
+      "stack": "",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-thum-12.png",
+      "alt": "지역N문화 테마",
+      "link": "./list/theme/dictation.html"
+    },
+    {
+      "type": "operation",
+      "title": "지역N문화 테마 운영 - unusual job",
+      "desc": "넓은 세상, 다양하고도 특이한 직업들, 이색직업",
+      "stack": "",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-thum-11.png",
+      "alt": "지역N문화 테마",
+      "link": "./list/theme/unusual-job.html"
+    },
+    {
+      "type": "operation",
+      "title": "지역N문화 테마 운영 - apparel",
+      "desc": "씨실과 날실의 아름다운 만남, 한국의 의복",
+      "stack": "",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-thum-10.png",
+      "alt": "지역N문화 테마",
+      "link": "./list/theme/apparel.html"
+    },
+    {
+      "type": "operation",
+      "title": "지역N문화 테마 운영 - local person",
+      "desc": "각자의 자리에서 우리나라를 빛내다, 지역인물",
+      "stack": "",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-thum-09.png",
+      "alt": "지역N문화 테마",
+      "link": "./list/theme/local-person.html"
+    },
+    {
+      "type": "operation",
+      "title": "지역N문화 테마 운영 - independent",
+      "desc": "나라를 빼앗긴 슬픔, 나라를 되찾은 기쁨, 독립운동",
+      "stack": "",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-thum-08.png",
+      "alt": "지역N문화 테마",
+      "link": "./list/theme/independent.html"
+    },
+    {
+      "type": "operation",
+      "title": "지역N문화 테마 운영 - fishing",
+      "desc": "우리나라 해양산업의 중심, 한국의 어업",
+      "stack": "",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-thum-07.png",
+      "alt": "지역N문화 테마",
+      "link": "./list/theme/fishing.html"
+    },
+    {
+      "type": "operation",
+      "title": "지역N문화 포탈 운영",
+      "desc": "지역N문화 메인 사이트",
+      "stack": "",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-thum-06.png",
+      "alt": "지역N문화 메인 사이트",
+      "link": "https://www.nculture.org/"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+#header.header-change { background: transparent; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+#header.header-change #search { background-image: url(/cms/imgs/common/icon/icon-search.png); }
+
+#header.header-change #menu { background-image: url(/cms/imgs/common/icon/icon-menu.png); }
+
+#header.header-change .heading-logo .logo-portal { background-image: url(/cms/imgs/common/img/logo-kccf-color.svg); }
+
+#header.header-change .food-logo .logo-themes { background-image: url(/cms/imgs/food/logo-food.svg); }
+
+.header-change ~ #container .themes-sub-depth-nav { background: rgba(0, 0, 0, 0.12); }
+
+.slide-list-wrap { background-image: url(/cms/imgs/food/bg/bg-regional.jpg); height: 270px; }
+
+.slide-list-wrap .slide-list-box { margin-top: 110px; }
+
+.contents-detail-wrap { padding-top: 270px; }
+
+@media only screen and (max-width: 640px) { 
+    #header.header-change .nav-wrap ul li a { color: #242424; } 
+
+    .slide-list-wrap .slide-list-box {margin-top: 130px;}
+
+    .slide-list-wrap {height: 355px}
+
+    .contents-detail-wrap {padding-top: 355px}
+}
+
+@media only screen and (min-width: 640px){
+    #header.header-change .logo a ,
+    #header.header-change a.logo-themes span ,
+    #header.header-change .nav-wrap a ,
+    #header.header-change .main-menu ul li a { color: #fff !important; }
+    #header.header-change .nav-wrap .active a { color: #e7b200 !important; }
+}
+
+#header.header-change .logo-portal, #header.active-search .logo-portal {
+    background: url(/images/logo.svg) no-repeat left center;
+    background-size: 43px 35px;
+}

@@ -1,0 +1,77 @@
+<div id="popRegistration" class="popLayer">
+    <div class="popWrap">
+        <h4 class="tit02">관리자 등록</h4>
+        <p class="required">* 필수입력사항</p>
+        <form>
+            <table class="table type01">
+                <caption>반려사유 내용</caption>
+                <colgroup>
+                    <col style="width:140px">
+                    <col>                          
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="userId" scope="row"><label for="id01">아이디 (ID)</label></th>
+                        <td><input type="text" value="admin_001" id="id01" disabled></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="name">이름</label></th>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="spot">직위</label></th>
+                        <td><input type="text" id="spot"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="pw">비밀번호</label></th>
+                        <td><input type="text" id="pw"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="email01">이메일</label></th>
+                        <td class="email">
+                            <input type="text" id="email01"> 
+                            <span>@</span> 
+                            <input type="text" title="도메인 입력">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="contact">연락처</label></th>
+                        <td class="phone">
+                            <select id="contact" title="연락처 첫번째 자리 선택">
+                                <option>010</option>
+                            </select> -
+                            <input type="text" title="연락처 두번째 4자리 입력"> -
+                            <input type="tel" title="연락처 세번째 4자리 입력"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">사용여부</th>
+                        <td>
+                            <div class="formRadio">
+                                <input type="radio" id="r1" name="rs" checked>
+                                <label for="r1">Y (사용)</label>
+                            </div>
+                            <div class="formRadio">
+                                <input type="radio" id="r2" name="rs">
+                                <label for="r2">N (사용안함)</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">그룹</th>
+                        <td class="group">
+                            <select title="그룹 선택">
+                                <option>선택</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <div class="btnWrap">
+            <button type="submit" class="rectangle bgBlue">등록</button>
+            <button type="reset" class="rectangle bgLightGrey btnCancel">취소</button>
+        </div>
+        <button type="button" class="popClose">닫기</button>
+    </div>
+</div>

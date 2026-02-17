@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>신분증관리 | 관리자페이지</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/plugins/jquery-ui.css">
+<link rel="stylesheet" href="./css/plugins/jquery.mCustomScrollbar.css"/>
+<link rel="stylesheet" href="./css/common.css">
+
+<script src="./js/plugins/jquery-1.12.4.min.js"></script>
+<script src="./js/plugins/jquery-ui.js"></script>
+<script src="./js/plugins/jquery.mCustomScrollbar.js"></script>
+<script src="./js/common_ui.js"></script>
+</head>
+
+<body>
+<div id="skipNavi">
+    <a href="#container">본문으로 바로가기</a> 
+</div>
+<div id="wrap">    
+    <nav id="sideBar">
+        <div class="sideCont">
+            <h1 class="tit03"><a href="./admin.html"><img src="./images/img/logo.png" alt="heyID"></a><span>강남구청</span></h1>
+            <div class="sidebarUser">
+                <div class="userPic"><img src="./images/img/img-profile-man1.png" alt="홍길동"></div>
+                <div class="userName">홍길동 (admin01)</div>
+                <small>최종접속 : 2023.04.26 13:40</small>
+                <div class="btnWrap">
+                    <button class="rectangle bgDarkGrey" onclick="location.href='./admin_mypage.html'">마이페이지</button>
+                    <button class="rectangle bgLightGrey">로그아웃</button>
+                </div>
+            </div>
+            <ul class="lnb">
+                <li>
+                    <a href="./admin.html">대시보드</a>
+                </li>
+                <li>
+                    <a href="./admin_apply_manage.html">접수관리</a>
+                    <ul>
+                        <li><a href="./admin_apply_manage.html">신청/오류관리</a></li>
+                        <li><a href="./admin_approval_manage.html">승인/반려내역</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="./admin_id_manage.html">신분증관리</a>
+                </li>
+                <li>
+                    <a href="./admin_visit_manage.html">출입/방문관리</a>
+                </li>
+                <li>
+                    <a href="./admin_notice_manage.html">알림서비스</a>
+                    <ul>
+                        <li><a href="./admin_notice_manage.html">공지관리</a></li>
+                        <li><a href="./admin_survey_manage.html">설문관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./admin_agency_info.html">시스템관리</a>
+                    <ul>
+                        <li><a href="./admin_agency_info.html">기관정보</a></li>
+                        <li><a href="./admin_agency_admin.html">기관관리자정보</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+        <footer>
+            <p>Copyright ⓒ Activar. All right reserved.</p>
+        </footer>                  
+    </nav>     
+    <div id="container">
+        <header class="containerHeader">
+            <button class="spheader btnMenu">메뉴</button>
+            <div class="btnWrap">
+                <button type="button" class="spheader btnSetting">설정
+                    <div class="submenu">
+                        <a href="./admin_mypage.html">마이페이지</a>
+                        <a href="/">로그아웃</a>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <div class="yScroll">
+            <div class="contents">
+                <div class="contentsWrap">
+                    <header>
+                        <div class="tit-box">
+                            <h2 class="tit01">신분증관리</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li><a href="javascript:void(0)">대시보드</a></li>
+                                    <li class="active" aria-current="page">신분증관리</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <article>
+                            <h3>처리상황</h3>
+                            <span>미사용 <em>10</em> 건</span>
+                            <span>사용중 <em>35</em> 건</span>
+                            <span>정지 <em>10</em> 건</span>
+                            <span>폐기 <em>5</em> 건</span>
+                        </article>
+                    </header>
+                    <section>
+                        <h3>접수내역 내용 조회</h3>
+                        <div class="tableTitle">     
+                            <ul class="tabs">
+                                <li><a href="#all">전체 (50)</a></li>
+                                <li><a href="#unuse">미사용 (10)</a></li>
+                                <li><a href="#inuse">사용중 (35)</a></li>
+                                <li><a href="#stop">정지 (10)</a></li>
+                                <li><a href="#dispose">폐기 (5)</a></li>
+                            </ul>                   
+                            <select title="접수내역 옵션 선택" class="tableSelect">
+                                <option value="선택">20</option>
+                                <option value="선택">50</option>
+                                <option value="선택">100</option>
+                                <option value="선택">150</option>
+                            </select>
+                            <div class="btnWrap">
+                                <button type="submit" class="spUtil btnTableSearch">검색</button>
+                                <button type="button" class="spUtil btnFilter">필터</button>
+                            </div>
+                            <div class="tableSearch">
+                                <a href="javascript:void(0)" class="spUtil btnBack">이전으로</a>
+                                <input type="text" placeholder="검색어를 입력하세요." aria-label="Search" class="inputSearch" title="검색어 입력">
+                            </div>
+                            <div class="popFilter">
+                                <h4 class="popTit01">필터</h4>
+                                <ul>
+                                    <li class="w100">
+                                        <label for="agency">소속기관</label>
+                                        <select title="소속기관" id="agency">
+                                            <option value="전체">전체</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label for="position">직급</label>
+                                        <select title="직급" id="position">
+                                            <option value="전체">전체</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label for="gender">성별</label>
+                                        <select title="성별 선택" id="gender">
+                                            <option value="전체">전체</option>
+                                        </select>
+                                    </li>
+                                    <li class="w100">
+                                        <label for="date">기간</label>
+                                        <div class="radio-box">
+                                            <label for="receipt"><input type="radio" id="receipt" name="receipt-date" checked> 발급일</label>
+                                            <label for="processing"><input type="radio" id="processing" name="receipt-date"> 처리일</label>
+                                        </div>
+                                        <div class="select-box">
+                                            <select title="" id="">
+                                                <option value="전체">기간전체</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-box">
+                                            <input type="date" class="datepicker datepicker1">
+                                            <span>~</span>
+                                            <input type="date" class="datepicker datepicker2">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btnWrap">
+                                    <button type="submit" class="rectangle bgDarkGrey">검색</button>
+                                    <button type="reset" class="rectangle bgLightGrey">초기화</button>
+                                    <button type="close" class="rectangle bgDark popClose2">닫기</button>
+                                </div>
+                                <button type="button" class="popClose">닫기</button>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <div id="all" class="tabCont">
+                                <table class="table list">
+                                    <caption>신청/오류관리</caption>
+                                    <colgroup>
+                                        <col style="width:5%">
+                                        <col style="width:auto">
+                                        <col style="width:auto">
+                                        <col style="width:auto">
+                                        <col style="width:auto">
+                                        <col style="width:auto">
+                                        <col style="width:12%">
+                                        <col style="width:12%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">상태</th>
+                                            <th scope="col">소속기관</th>
+                                            <th scope="col">직급</th>
+                                            <th scope="col">이름</th>
+                                            <th scope="col">생년월일/성별</th>
+                                            <th scope="col">접수일시</th>
+                                            <th scope="col">처리일시</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr onclick="location.href='./admin_id_manage_detail_unuse.html'">
+                                            <td>45</td>
+                                            <td class="unuse">미사용</td>
+                                            <td>복지생활국 보육지원과</td>
+                                            <td>사원</td>
+                                            <td>김복지</td>
+                                            <td>1990.02.17 / 여</td>
+                                            <td>2023.04.25 13:00</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_unuse.html'">
+                                            <td>44</td>
+                                            <td class="unuse">미사용</td>
+                                            <td>보건소 보건행정과</td>
+                                            <td>사원</td>
+                                            <td>김정책</td>
+                                            <td>1990.12.12 / 남</td>
+                                            <td>2023.04.25 13:00</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_unuse.html'">
+                                            <td>43</td>
+                                            <td class="unuse">미사용</td>
+                                            <td>보건소 보건행정과</td>
+                                            <td>대리</td>
+                                            <td>박도서</td>
+                                            <td>1990.06.06 / 남</td>
+                                            <td>2023.04.25 12:44</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_unuse.html'">
+                                            <td>42</td>
+                                            <td class="unuse">미사용</td>
+                                            <td>도시환경국 재건축사업과</td>
+                                            <td>사원</td>
+                                            <td>이정보</td>
+                                            <td>1989.01.01 / 여</td>
+                                            <td>2023.04.25 12:30</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_unuse.html'">
+                                            <td>41</td>
+                                            <td class="unuse">미사용</td>
+                                            <td>보건소 보건행정과</td>
+                                            <td>사원</td>
+                                            <td>최경제</td>
+                                            <td>1989.02.01 / 남</td>
+                                            <td>2023.04.24 17:48</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_inuse.html'">
+                                            <td>40</td>
+                                            <td class="inuse">사용중</td>
+                                            <td>보건소 보건행정과</td>
+                                            <td>대리</td>
+                                            <td>김도시</td>
+                                            <td>1990.02.17 / 여</td>
+                                            <td>2023.04.24 17:00</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_inuse.html'">
+                                            <td>39</td>
+                                            <td class="inuse">사용중</td>
+                                            <td>보건소 보건행정과</td>
+                                            <td>사원</td>
+                                            <td>이보건</td>
+                                            <td>1990.12.12 / 여</td>
+                                            <td>2023.04.24 15:49</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_stop.html'">
+                                            <td>38</td>
+                                            <td class="stop">정지</td>
+                                            <td>보건소 보건행정과</td>
+                                            <td>대리</td>
+                                            <td>박건강</td>
+                                            <td>1990.02.17 / 남</td>
+                                            <td>2023.04.23 12:49</td>
+                                            <td>2023.05.02 13:00</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_stop.html'">
+                                            <td>37</td>
+                                            <td class="stop">정지</td>
+                                            <td>미래문화국 스마트정보과</td>
+                                            <td>대리</td>
+                                            <td>김문화</td>
+                                            <td>1990.12.12 / 남</td>
+                                            <td>2023.04.23 12:40</td>
+                                            <td>2023.05.02 13:00</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_inuse.html'">
+                                            <td>36</td>
+                                            <td class="inuse">사용중</td>
+                                            <td>기획경제국 세무관리과</td>
+                                            <td>팀장</td>
+                                            <td>홍세무</td>
+                                            <td>1989.01.01 / 여</td>
+                                            <td>2023.04.23 10:32</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_inuse.html'">
+                                            <td>35</td>
+                                            <td class="inuse">사용중</td>
+                                            <td>기획경제국 지방소득세과</td>
+                                            <td>과장</td>
+                                            <td>강철수</td>
+                                            <td>1989.02.01 / 남</td>
+                                            <td>2023.04.23 09:34</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_inuse.html'">
+                                            <td>34</td>
+                                            <td class="inuse">사용중</td>
+                                            <td>보건소 보건행정과</td>
+                                            <td>사원</td>
+                                            <td>이보건</td>
+                                            <td>1990.12.12 / 여</td>
+                                            <td>2023.04.24 15:49</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_dispose.html'">
+                                            <td>33</td>
+                                            <td class="dispose">폐기</td>
+                                            <td>기획경제국 세무관리과</td>
+                                            <td>팀장</td>
+                                            <td>홍세무</td>
+                                            <td>1989.01.01 / 여</td>
+                                            <td>2023.04.23 10:32</td>
+                                            <td>2023.05.02 13:00</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_dispose.html'">
+                                            <td>32</td>
+                                            <td class="dispose">폐기</td>
+                                            <td>기획경제국 지방소득세과</td>
+                                            <td>과장</td>
+                                            <td>강철수</td>
+                                            <td>1989.02.01 / 남</td>
+                                            <td>2023.04.23 09:34</td>
+                                            <td>2023.05.02 13:00</td>
+                                        </tr>
+                                        <tr onclick="location.href='./admin_id_manage_detail_dispose.html'">
+                                            <td>31</td>
+                                            <td class="dispose">폐기</td>
+                                            <td>미래문화국 스마트정보과</td>
+                                            <td>대리</td>
+                                            <td>김문화</td>
+                                            <td>1990.12.12 / 남</td>
+                                            <td>2023.04.23 12:40</td>
+                                            <td>2023.05.02 13:00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div id="unuse" class="tabCont">2</div>
+                            <div id="inuse" class="tabCont">3</div>
+                            <div id="stop" class="tabCont">4</div>
+                            <div id="dispose" class="tabCont">5</div>
+                        </div>
+                        <div class="tablePage">  
+                            <div class="pagination">
+                                <a href="javascript:void(0)" class="prev">&lt; 이전</a>
+                                <a href="javascript:void(0)" class="pageNum active">1</a>
+                                <a href="javascript:void(0)" class="pageNum">2</a>
+                                <a href="javascript:void(0)" class="pageNum">3</a>
+                                <a href="javascript:void(0)" class="pageNum">4</a>
+                                <a href="javascript:void(0)" class="pageNum">5</a>
+                                <a href="javascript:void(0)" class="next">다음 &gt;</a>
+                            </div>
+                            
+                            <div class="page">
+                                PAGE
+                                <select title="페이지 선택">
+                                    <option value="1">1</option>
+                                </select>
+                                <span>/</span>
+                                102
+                            </div>
+                        </div> 
+                    </section>                
+                </div>
+            </div>
+        </div>
+    </div>        
+</div>
+
+<div id="popup"></div>
+
+</body>
+</html>

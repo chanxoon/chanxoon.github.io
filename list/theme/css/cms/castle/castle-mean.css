@@ -1,0 +1,117 @@
+@charset "UTF-8";
+.chapter-header { opacity: 0; position: relative; top: 30px; transition: all 0.6s ease; }
+
+.sub-chapter { opacity: 0; position: relative; top: 30px; transition: all 0.6s ease .3s; }
+
+.scroll-transition .chapter-header, .scroll-transition .sub-chapter { opacity: 1; top: 0; }
+
+.page-title-cover, .header-visual { background-image: url("/cms/imgs/castle/bg/bg-mean.jpg"); }
+
+/********************** 거주 주체 */
+.chapter01 { padding-bottom: 0; }
+
+.chapter01 .pic-cover + .pic-cover { padding: 30px 6%; min-height: 172px; }
+
+.chapter01 .pic-cover + .pic-cover:after { display: none; }
+.sub-chapter01 .text-wrap { min-height: 172px;}
+.sub-chapter01 .pic .box { border: 1px solid #ccc; }
+.sub-chapter01 .pic .box .pic-cover { border: none; }
+
+/********************** 지형 */
+.sub-chapter02 {padding: 80px 0;}
+.sub-chapter02 .half-pic { margin-bottom: 30px; }
+
+.sub-chapter02 .trio-pic .pic + .pic { border-left: 1px solid #ebebeb; }
+
+.sub-chapter02 .text-wrap { padding-left: 10%; padding-right: 10%; }
+
+.sub-chapter02 .text-wrap .sub-title { margin-bottom: 12px; }
+
+@media only screen and (max-width: 640px) {
+    .sub-chapter02 .trio-pic .pic + .pic { border-left: none; }
+}
+
+/********************** 지리적 위치 */
+.sub-chapter03 {padding: 80px 0; background: #EBE8E1 url("/cms/imgs/castle/bg/bg-mean-002.jpg") repeat-x center bottom; padding-top: 80px; }
+
+.sub-chapter03 .sub-chapter { padding-bottom: 45px; }
+
+.sub-chapter03 .quad-pic .pic { padding-left: 5%; padding-right: 5%; }
+
+.sub-chapter03 .quad-pic .pic i { display: block; margin: 0 auto 20px; width: 62px; height: 67px; position: relative; background-repeat: no-repeat; background-position: center top; }
+
+.sub-chapter03 .quad-pic .pic i:before { content: ''; display: block; position: absolute; bottom: 0; left: 50%; width: 30px; margin-left: -15px; height: 2px; background: #c7c7c7; }
+
+.sub-chapter03 .quad-pic .pic:nth-child(1) i { background-image: url("/cms/imgs/castle/btn/ico-mean-001.png"); }
+
+.sub-chapter03 .quad-pic .pic:nth-child(2) i { background-image: url("/cms/imgs/castle/btn/ico-mean-002.png"); }
+
+.sub-chapter03 .quad-pic .pic:nth-child(3) i { background-image: url("/cms/imgs/castle/btn/ico-mean-003.png"); }
+
+.sub-chapter03 .quad-pic .pic:nth-child(4) i { background-image: url("/cms/imgs/castle/btn/ico-mean-004.png"); }
+
+@media only screen and (max-width: 640px) {
+  .sub-chapter03 .quad-pic .pic { padding: 0; min-height: 256px; }
+}
+
+/********************** 축성 재료 */
+.sub-chapter04 {padding: 80px 0;}
+
+.sub-chapter04 .half-pic > .pic { width: calc(50% - 20px); }
+
+.sub-chapter04 .half-pic div.pic { margin-right: 40px; }
+
+.sub-chapter04 .half-pic div.pic .pic { width: 50%; }
+
+.sub-chapter04 .half-pic div.pic .pic:first-child { margin-right: 0; }
+
+.sub-chapter04 .half-pic div.pic .pic .pic-cover { border-width: 0.5px; }
+
+.sub-chapter04 .half-pic > figure.pic { text-align: left; margin-top: 15px; }
+
+.sub-chapter04 .half-pic > figure.pic h4 { color: #555555; font-size: 1.5rem; font-weight: 500; }
+
+.sub-chapter04 .half-pic > figure.pic p { font-size: 1.167rem; line-height: 1.5; color: #666666; margin-bottom: 30px; }
+
+.sub-chapter04 .half-pic > figure.pic p:last-child { margin-bottom: 0; }
+
+@media only screen and (max-width: 640px) { 
+  .sub-chapter04 .half-pic .pic { margin-bottom: 20px; }
+  .sub-chapter04 .half-pic .pic:last-child { margin-bottom: 0; } 
+}
+
+/********************** 구조의 평면 형태 */
+.sub-chapter05 {padding: 80px 0; background: #7c7d79 url("/cms/imgs/castle/bg/bg-mean-003.jpg") repeat-x center bottom; }
+
+.sub-chapter05 .sub-title strong { color: #fff;}
+
+.sub-chapter05 .round-wrap .sub-title { color: #fff; box-sizing: border-box; margin: 0 auto 20px; position: relative; width: 128px; height: 128px; border-radius: 50%; padding-top: 60px; border: 1px solid #b3c70d; }
+
+.sub-chapter05 .round-wrap .sub-title:before { content: ''; display: block; background: #b3c70d; width: 30px; height: 2px; position: absolute; top: 35px; left: 50%; margin-left: -15px; }
+
+.sub-chapter05 .round-wrap .sub-text { color: #fff; padding-left: 8%; padding-right: 8%; }
+
+@media only screen and (max-width: 640px) { 
+  .sub-chapter05 .five-pic .pic { width: 100%; float: none; margin-bottom: 20px; }
+  .sub-chapter05 .five-pic .pic:last-child { margin-bottom: 0; }
+  .sub-chapter05 .round-wrap { overflow: hidden; margin: 0; clear: both; display: table; }
+  .sub-chapter05 .round-wrap > p { display: table-cell; }
+  .sub-chapter05 .round-wrap .sub-title { float: left; font-size: 24px; }
+  .sub-chapter05 .round-wrap .sub-text { text-align: left; vertical-align: middle; padding-left: 20px; padding-right: 0; } 
+}
+
+/********************** 성의 중복도 */
+.chapter01 .sub-chapter06 {padding: 80px 0;}
+.sub-chapter06 .half-pic { margin-bottom: 20px; }
+
+.sub-chapter06 .half-pic .pic { width: calc(50% - 5px); }
+
+.sub-chapter06 .half-pic .pic:first-child { margin-right: 10px; }
+
+.sub-chapter06 .quad-pic .pic-cover:after { display: none; }
+
+.sub-chapter06 .text-wrap { padding: 30px 5%; box-sizing: border-box; height: 150px; }
+
+@media only screen and (max-width: 640px) {
+  .sub-chapter06 .text-wrap {height: 256px;}
+}

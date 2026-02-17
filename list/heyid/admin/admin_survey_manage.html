@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>설문관리 | 관리자페이지</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/plugins/jquery-ui.css">
+<link rel="stylesheet" href="./css/plugins/jquery.mCustomScrollbar.css"/>
+<link rel="stylesheet" href="./css/common.css">
+
+<script src="./js/plugins/jquery-1.12.4.min.js"></script>
+<script src="./js/plugins/jquery-ui.js"></script>
+<script src="./js/plugins/jquery.mCustomScrollbar.js"></script>
+<script src="./js/common_ui.js"></script>
+</head>
+
+<body>
+<div id="skipNavi">
+    <a href="#container">본문으로 바로가기</a> 
+</div>
+<div id="wrap">    
+    <nav id="sideBar">
+        <div class="sideCont">
+            <h1 class="tit03"><a href="./admin.html"><img src="./images/img/logo.png" alt="heyID"></a><span>강남구청</span></h1>
+            <div class="sidebarUser">
+                <div class="userPic"><img src="./images/img/img-profile-man1.png" alt="홍길동"></div>
+                <div class="userName">홍길동 (admin01)</div>
+                <small>최종접속 : 2023.04.26 13:40</small>
+                <div class="btnWrap">
+                    <button class="rectangle bgDarkGrey" onclick="location.href='./admin_mypage.html'">마이페이지</button>
+                    <button class="rectangle bgLightGrey">로그아웃</button>
+                </div>
+            </div>
+            <ul class="lnb">
+                <li>
+                    <a href="./admin.html">대시보드</a>
+                </li>
+                <li>
+                    <a href="./admin_apply_manage.html">접수관리</a>
+                    <ul>
+                        <li><a href="./admin_apply_manage.html">신청/오류관리</a></li>
+                        <li><a href="./admin_approval_manage.html">승인/반려내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./admin_id_manage.html">신분증관리</a>
+                </li>
+                <li>
+                    <a href="./admin_visit_manage.html">출입/방문관리</a>
+                </li>
+                <li class="active">
+                    <a href="./admin_notice_manage.html">알림서비스</a>
+                    <ul style="display:block;">
+                        <li><a href="./admin_notice_manage.html">공지관리</a></li>
+                        <li class="active"><a href="./admin_survey_manage.html">설문관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./admin_agency_info.html">시스템관리</a>
+                    <ul>
+                        <li><a href="./admin_agency_info.html">기관정보</a></li>
+                        <li><a href="./admin_agency_admin.html">기관관리자정보</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+        <footer>
+            <p>Copyright ⓒ Activar. All right reserved.</p>
+        </footer>                  
+    </nav>     
+    <div id="container">
+        <header class="containerHeader">
+            <button class="spheader btnMenu">메뉴</button>
+            <div class="btnWrap">
+                <button type="button" class="spheader btnSetting">설정
+                    <div class="submenu">
+                        <a href="./admin_mypage.html">마이페이지</a>
+                        <a href="/">로그아웃</a>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <div class="yScroll">
+            <div class="contents survey-manage">
+                <div class="contentsWrap">
+                    <header>
+                        <div class="tit-box">
+                            <h2 class="tit01">설문관리</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li><a href="javascript:void(0)">대시보드</a></li>
+                                    <li><a href="javascript:void(0)">알림서비스</a></li>
+                                    <li class="active" aria-current="page">설문관리</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="btn-box">
+                            <button type="button" class="survey-reg-btn">설문 등록하기</button>
+                        </div>
+                    </header>
+                    <section>
+                        <h3>설문관리</h3>
+                        <div class="tableTitle">
+                            <ul class="tabs">
+                                <li><a href="javascript:void(0)">전체 (20)</a></li>
+                                <li><a href="javascript:void(0)">예약 (5)</a></li>
+                                <li><a href="javascript:void(0)">진행중 (5)</a></li>
+                                <li><a href="javascript:void(0)">마감 (10)</a></li>
+                            </ul>
+                            <select title="접수내역 옵션 선택" class="tableSelect">
+                                <option value="선택">20</option>
+                                <option value="선택">50</option>
+                                <option value="선택">100</option>
+                                <option value="선택">150</option>
+                            </select>
+                            <div class="btnWrap">
+                                <button type="submit" class="spUtil btnTableSearch">검색</button>
+                            </div>
+                            <div class="tableSearch">
+                                <a href="javascript:void(0)" class="spUtil btnBack">이전으로</a>
+                                <input type="text" placeholder="검색어를 입력하세요." aria-label="Search" class="inputSearch" title="검색어 입력">
+                            </div>
+                        </div>
+                        
+                        <div class="tabCont">
+                            <table class="table list">
+                                <caption>신청/오류관리</caption>
+                                <colgroup>
+                                    <col style="width:auto">
+                                    <col style="width:auto">
+                                    <col style="width:auto">
+                                    <col style="width:auto">
+                                    <col style="width:auto">
+                                    <col style="width:auto">
+                                    <col style="width:auto">
+                                    <col style="width:auto">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">진행상태</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">설문기간</th>
+                                        <th scope="col">작성자</th>
+                                        <th scope="col">작성일시</th>
+                                        <th scope="col">조회수</th>
+                                        <th scope="col">응답수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="survey-view">
+                                        <td>20</td>
+                                        <td class="reservation">예약</td>
+                                        <td class="txtLeft"><a href="javascript:;">OOO 관련 만족도 조사</a></td>
+                                        <td>2023.04.25 ~ 2023.05.02</td>
+                                        <td>홍길동(admin01)</td>
+                                        <td>2023.04.25 13:00</td>
+                                        <td>50</td>
+                                        <td>40</td>
+                                    </tr>
+                                    <tr class="survey-view">
+                                        <td>19</td>
+                                        <td class="inprogress">진행중</td>
+                                        <td class="txtLeft"><a href="javascript:;">OOO 관련 만족도 조사</a></td>
+                                        <td>2023.04.25 ~ 2023.05.02</td>
+                                        <td>홍길동(admin01)</td>
+                                        <td>2023.04.25 13:00</td>
+                                        <td>50</td>
+                                        <td>40</td>
+                                    </tr>
+                                    <tr class="survey-view">
+                                        <td>19</td>
+                                        <td class="deadline">마감</td>
+                                        <td class="txtLeft"><a href="javascript:;">OOO 관련 만족도 조사</a></td>
+                                        <td>2023.04.25 ~ 2023.05.02</td>
+                                        <td>홍길동(admin01)</td>
+                                        <td>2023.04.25 13:00</td>
+                                        <td>50</td>
+                                        <td>40</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tablePage">  
+                            <div class="pagination">
+                                <a href="javascript:void(0)" class="prev">&lt; 이전</a>
+                                <a href="javascript:void(0)" class="pageNum active">1</a>
+                                <a href="javascript:void(0)" class="pageNum">2</a>
+                                <a href="javascript:void(0)" class="pageNum">3</a>
+                                <a href="javascript:void(0)" class="pageNum">4</a>
+                                <a href="javascript:void(0)" class="pageNum">5</a>
+                                <a href="javascript:void(0)" class="next">다음 &gt;</a>
+                            </div>
+                            
+                            <div class="page">
+                                PAGE
+                                <select title="페이지 선택">
+                                    <option value="1">1</option>
+                                </select>
+                                <span>/</span>
+                                102
+                            </div>
+                        </div> 
+                    </section>                
+                </div>
+            </div>
+        </div>
+    </div>        
+</div>
+
+<div id="popup"></div>
+
+<!-- 설문조사 팝업 -->
+<div class="layer-pop survey-layer" style="display: none;">
+    <div class="inner">
+        <div class="tit-box">
+            <h2>설문조사 상세</h2>
+        </div>
+        <div class="con-box yScroll">
+            <div class="view-survey">
+                <div class="view-tit">
+                    <h2>OOO기관 주관 OOOO OO 컨퍼런스 참석여부 설문조사</h2>
+                </div>
+                <div class="view-info">
+                    <div class="type">
+                        <span class="inprogress">진행중</span>
+                    </div>
+                    <div class="name">
+                        <span>작성자</span>
+                        <span>홍길동(admin01)</span>
+                    </div>
+                    <div class="date">
+                        <span>작성일시</span>
+                        <span>2023.04.25 13:00</span>
+                    </div>
+                    <div class="hit">
+                        <span><img src="./images/icon/icon-view.png" alt="조회수"></span>
+                        <span>50</span>
+                    </div>
+                </div>
+                <div class="view-body">
+                    <div class="view-con">
+                        <div class="view-txt">
+                            안녕하세요!<br>
+                            OOO기관 주관 OOOO OO 컨퍼런스가 개최될 예정에 있습니다.<br>
+                            참석자 인원 파악을 위해 이와 같은 설문을 전달 드리며, 많은 참여 부탁드립니다.<br>
+                            <br>
+                            날짜는 아래와 같으며, OOO기관에서 추구하는 비전과 정보를 여러분들께 들려드릴 예정입니다.<br>
+                            <br>
+                            날짜 : 2023.05.30 (화) 14:00 ~ 2023.05.30 (화) 17:00 (약 3시간 예상)<br>
+                            ※ 참석자분들께는 간식 (샌드위치+주스)도 제공될 예정이니 많은 참석 부탁드립니다.
+                        </div>
+                        <div class="view-survey-result">
+                            <div class="survey-info">
+                                <div class="date">
+                                    <span>설문기간</span>
+                                    <span>2023.04.25 ~ 2023.05.02</span>
+                                </div>
+                                <div class="response">
+                                    <span>응답수</span>
+                                    <span>50명</span>
+                                </div>
+                            </div>
+                            <div class="survey-progress">
+                                <div class="tit">
+                                    <h3>OOO기관 주관 OOOO OO 컨퍼런스 참석하실 예정이신가요?</h3>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="pro yes">
+                                        <div class="txt">
+                                            <span>예</span><span>5명</span>
+                                        </div>
+                                        <progress value="5" max="50"></progress>
+                                    </div>
+                                    <div class="pro no">
+                                        <div class="txt">
+                                            <span>아니오</span><span>45명</span>
+                                        </div>
+                                        <progress value="45" max="50"></progress>
+                                    </div>
+                                </div>
+
+                                <div class="tit">
+                                    <h3>다음 중 관심있는 컨퍼런스 주제는 무엇인가요?</h3>
+                                    <span>※ 복수선택가능</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="pro sub1">
+                                        <div class="txt">
+                                            <span>직장인 심리학</span><span>15명</span>
+                                        </div>
+                                        <progress value="15" max="50"></progress>
+                                    </div>
+                                    <div class="pro sub2">
+                                        <div class="txt">
+                                            <span>직장인을 위한 일과 관계의 심리학</span><span>30명</span>
+                                        </div>
+                                        <progress value="30" max="50"></progress>
+                                    </div>
+                                    <div class="pro sub3">
+                                        <div class="txt">
+                                            <span>고객의 만족을 이끌어내는 대화 기술</span><span>5명</span>
+                                        </div>
+                                        <progress value="5" max="50"></progress>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-box">
+            <div class="Left">
+                <button type="button" class="bgDarkGrey survey-del-btn">삭제</button>
+            </div>
+            <div class="Right">
+                <button type="button" class="bgBlue survey-edit-btn">수정</button>
+                <button type="button" class="close-btn bgLightGrey">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 설문조사 삭제 팝업 -->
+<div class="layer-pop survey-del-layer" style="display: none;">
+    <div class="inner">
+        <div class="tit-box">
+            <h2>설문조사 삭제</h2>
+        </div>
+        <div class="con-box yScroll">
+            <div class="info">
+                <p>해당 설문조사를 삭제하시겠습니까?</p>
+                <p>(삭제 시, HeyID 앱 알림내역에서도 삭제됩니다.)</p>
+            </div>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="bgBlue">확인</button>
+            <button type="button" class="close-btn bgLightGrey">취소</button>
+        </div>
+    </div>
+</div>
+
+<!-- 설문조사 등록 팝업 -->
+<div class="layer-pop survey-reg-layer" style="display: none;">
+    <div class="inner">
+        <div class="tit-box">
+            <h2>설문조사 등록</h2>
+            <p>※ 작성된 내용은 입력된 시작일에 맞춰 ‘HeyID 앱 > 신분증 > 알림함’으로 전송되며, <br><span>‘진행중’인 설문은 설문종료일만 수정 가능합니다.</span></p>
+        </div>
+        <div class="con-box yScroll">
+            <table class="table type01">
+                <caption>설문조사 등록</caption>
+                <colgroup>
+                    <col style="width:140px">
+                    <col style="width:auto">                              
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">작성자</th>
+                        <td><span>홍길동(admin01)</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">내용</th>
+                        <td><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">설문기간</th>
+                        <td><input type="date" class="datepicker datepicker1"> - <input type="date" class="datepicker datepicker2"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>설문문항</h3>
+            <table class="table type01">
+                <caption>새 문항 추가</caption>
+                <colgroup>
+                    <col style="width:140px">
+                    <col style="width:auto">                              
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">질문</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">유형</th>
+                        <td>
+                            <label for="single1"><input type="radio" name="single-plural1" id="single1" checked> 단일선택</label>
+                            <label for="plural2"><input type="radio" name="single-plural1" id="plural2"> 복수선택</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">답변항목</th>
+                        <td>
+                            <span class="buttons">
+                                <span class="row">
+                                    <input type="text" name="txt" class="answer-input">
+                                    <button type="button" class="btnAdd" value="Add">더하기</button>
+                                    <!-- <button type="button" class="btnRemove" value="Remove">빼기</button> -->
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="bgBlue">등록</button>
+            <button type="button" class="close-btn bgLightGrey">취소</button>
+        </div>
+    </div>
+</div>
+
+<!-- 설문조사 수정 팝업 -->
+<div class="layer-pop survey-edit-layer" style="display: none;">
+    <div class="inner">
+        <div class="tit-box">
+            <h2>설문조사 수정</h2>
+            <p>※ 수정된 내용은 ‘HeyID 앱 > 신분증 > 알림함’에 반영됩니다.</p>
+        </div>
+        <div class="con-box yScroll">
+            <table class="table type01">
+                <caption>공지사항 수정</caption>
+                <colgroup>
+                    <col style="width:140px">
+                    <col style="width:auto">                              
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">작성자</th>
+                        <td><span>홍길동(admin01)</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td><input type="text" placeholder="2023년도 워크숍 안내"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">내용</th>
+                        <td><textarea placeholder="반려사유를 작성해주세요."></textarea></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">설문기간</th>
+                        <td><input type="date" class="datepicker datepicker1">-<input type="date" class="datepicker datepicker2"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>설문문항</h3>
+            <table class="table type01">
+                <caption>새 문항 추가</caption>
+                <colgroup>
+                    <col style="width:140px">
+                    <col style="width:auto">                              
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">질문</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">유형</th>
+                        <td>
+                            <label for="single3"><input type="radio" name="single-plural2" id="single3" checked> 단일선택</label>
+                            <label for="plural4"><input type="radio" name="single-plural2" id="plural4"> 복수선택</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">답변항목</th>
+                        <td>
+                            <span class="buttons">
+                                <span class="row">
+                                    <input type="text" name="txt" class="answer-input">
+                                    <button type="button" class="btnAdd" value="Add">더하기</button>
+                                    <!-- <button type="button" class="btnRemove" value="Remove">빼기</button> -->
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="bgBlue survey-save-btn">저장</button>
+            <button type="button" class="close-btn bgLightGrey">취소</button>
+        </div>
+    </div>
+</div>
+
+<!-- 설문조사 수정 보기 팝업 -->
+<div class="layer-pop survey-edit-view-layer" style="display: none;">
+    <div class="inner">
+        <div class="tit-box">
+            <h2>설문조사 수정</h2>
+            <p>※ 수정된 내용은 ‘HeyID 앱 > 신분증 > 알림함’에 반영됩니다.</p>
+        </div>
+        <div class="con-box yScroll">
+            <table class="table type01">
+                <caption>공지사항 수정</caption>
+                <colgroup>
+                    <col style="width:140px">
+                    <col style="width:auto">                              
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">작성자</th>
+                        <td><span>홍길동(admin01)</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td><input type="text" value="OOO기관 주관 OOOO OO 컨퍼런스 참석여부 설문조사"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">내용</th>
+                        <td>
+                            <textarea>안녕하세요!
+OOO기관 주관 OOOO OO 컨퍼런스가 개최될 예정에 있습니다.
+참석자 인원 파악을 위해 이와 같은 설문을 전달 드리며, 많은 참여 부탁드립니다.
+
+날짜는 아래와 같으며, OOO기관에서 추구하는 비전과 정보를 여러분들께 들려드릴 예정입니다.
+
+날짜 : 2023.05.30 (화) 14:00 ~ 2023.05.30 (화) 17:00 (약 3시간 예상)
+※ 참석자분들께는 간식 (샌드위치+주스)도 제공될 예정이니 많은 참석 부탁드립니다.</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">설문기간</th>
+                        <td><input type="date" class="datepicker datepicker1" disabled> - <input type="date" class="datepicker datepicker2"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>설문문항</h3>
+            <table class="table type01">
+                <caption>새 문항 추가</caption>
+                <colgroup>
+                    <col style="width:140px">
+                    <col style="width:auto">                              
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">질문</th>
+                        <td><span>OOO기관 주관 OOOO OO 컨퍼런스 참석여부 설문조사</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">유형</th>
+                        <td><span>단일선택</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">답변항목</th>
+                        <td>
+                            <p>항목1 : 예</p>
+                            <p>항목2 : 아니요</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="bgBlue">저장</button>
+            <button type="button" class="close-btn bgLightGrey">취소</button>
+        </div>
+    </div>
+</div>
+
+<!-- 새 문항추가 팝업 -->
+<!-- <div class="layer-pop survey-add-layer" style="display: none;">
+    <div class="inner">
+        <div class="tit-box">
+            <h2>새 문항 추가</h2>
+        </div>
+        <div class="con-box yScroll">
+            <table class="table type01">
+                <caption>새 문항 추가</caption>
+                <colgroup>
+                    <col style="width:140px">
+                    <col style="width:auto">                              
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">질문</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">유형</th>
+                        <td>
+                            <select>
+                                <option>단일선택</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">답변항목</th>
+                        <td>
+                            <span class="buttons">
+                                <span class="row">
+                                    <input type="text" name="txt" class="answer-input">
+                                    <button type="button" class="btnAdd" value="Add">더하기</button>
+                                    <button type="button" class="btnRemove" value="Remove">빼기</button>
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="bgBlue">등록</button>
+            <button type="button" class="close-btn bgLightGrey">취소</button>
+        </div>
+    </div>
+</div> -->
+
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>틀린그림찾기</title>
+
+<link href="#" rel="shortcut icon">
+<link href="./css/common.css" rel="stylesheet">
+<link href="./css/jquery.mCustomScrollbar.css" rel="stylesheet">
+<link href="./css/default.css" rel="stylesheet">
+
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="./js/jquery.mCustomScrollbar.js"></script>
+<script src="./js/gsap.min.js"></script>
+<script src="./js/default.js"></script>
+
+<script>
+$(document).ready(function(){
+	try{
+	$(window).bind("load",function(){
+		findDifferentimg.init();
+		if(document.location.search.length < 10){ //기본 데모로 불릴 경우
+			//findDifferentimg.setStageInfo(stageInfo);
+			findDifferentimg.setStageInfos(stageInfos);
+            //findDifferentimg.start();
+		}
+		findDifferentimg.isDebug = true;
+	});
+	}catch(e){
+		alert(e);
+	}
+});
+</script>
+
+</head>
+<body oncontextmenu="return false;" onselectstart="return false;">
+
+<!-- 인트로 시작 -->
+<div class="intro">
+    <div class="logo"><img src="./img/img-intro-logo.png" alt="인트로 로고"></div>
+    <div class="title"><img src="./img/img-intro-title.png" alt="인트로 타이틀"></div>
+    <div class="Btn"><input type="button" value="시작하기" class="eff Ex audioPlay" onclick="findDifferentimg.start(); BGMrandom();"/></div>
+    <div class="tutorial"><input type="button" value="게임 튜토리얼 ＞" class="Tu"/></div>
+    <div class="flogo">
+        <span><img src="./img/img-intro-footer-logo.png" alt="푸터 로고"></span>
+        <span>COPYRIGHT (C)2021 The Federation of Korea Culture Center. ALL RIGHT RESERVED.</span>
+    </div>
+</div>
+
+<div id="layout" onselectstart="return false;">
+	<div id="contnets" class="stat-0">
+		
+		<!-- 배경음악/효과음 -->
+		<div class="Audio">
+            <p id="current" style="color:#fff;display:none;"></p>
+            <audio id="player" class="myAudio" loop></audio>
+            <audio id="succ" src="./sound/succ.mp3"></audio>
+            <audio id="fail" src="./sound/fail.mp3"></audio> 
+            <audio id="count" src="./sound/countdown.mp3"></audio>
+            <audio id="gameover" src="./sound/gameover.mp3"></audio>
+            <audio id="fanffare" src="./sound/fanffare.mp3"></audio> 
+		</div>
+		
+		<!-- 헤더 게임 버튼 -->
+        <header style="display:none;">
+            <!--
+            <input type="button" value="시작하기" class="Start" onclick="findDifferentimg.start();"/>
+            <input type="button" value="음악재생" class="audioPlay"/>
+            <input type="button" value="음악정지" class="audioStop"/>
+            <input type="button" onclick="findDifferentimg.restartTimer();" class="start" value="게임재생"/>
+            <input type="button" onclick="findDifferentimg.stopTimer();" class="pause" value="게임정지"/>
+            -->
+            <input type="button" value="정답보기" onclick="findDifferentimg.solve();"/>
+            <input type="button" value="숨기기" onclick="findDifferentimg.diffImgs();"/>
+            <input type="button" class="audio audioStop" value="음악 정지"/>
+            <input type="button" class="pause" value="게임 일시정지" onclick="findDifferentimg.stopTimer();"/>
+        </header>
+
+		<!-- 섹션 : 게임 부분 -->
+		<section id="sectionImgs" class="aPlay">
+            <h2 class="blind">틀린그림영역</h2>
+            <div class="stage-cnt"><p id="stage" title="스테이지">1 단계</p><p class="Num"></p></div>
+            <div class="stage-time"></div>
+            <div class="bar"><progress id="gameTimer" value="100" max="100" class="" title="게임시간"></progress></div>
+            <div id="secCnt"><div class="inner"><span id="searchCnt">0</span>/<span id="goalCnt">0</span></div></div>
+
+            <div class="Bgm"><input type="button" value="&#160;" class="audio audioStop" title="배경음악"/></div>
+            <div id="Pause" class="P-btn"><a onclick="findDifferentimg.stopTimer();" class="pause-fixed" title="일시정지"></a></div>
+
+            <div id="divL">
+                <div id="divDivL">
+                    <figure id="figureL" class="stat-1-hidden"><img id="imgL" class="IMG" src="./img/gate-L.png" alt="시작이미지 왼쪽">
+                        <div class="divCanvas stat-1-obj">
+                            <canvas id="canvasL" class="fireworks">캔버스 미지원 브라우저</canvas>
+                        </div>
+                        <div class="divCanvas divCanvasD">
+                            <canvas id="canvasD" class="fireworks">캔버스 미지원 브라우저</canvas>
+                        </div>
+                        <div class="divCanvas stat-1-obj">
+                            <input id="divClickL" type="button" value="클릭용"/>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <div id="divR">
+                <div id="divDivR">
+                    <figure id="figureR" class="stat-1-hidden"><img id="imgR" class="IMG" src="./img/gate-R.png" alt="시작이미지 오른쪽">
+                        <div class="divCanvas stat-2-obj">
+                            <canvas id="canvasR" class="fireworks">캔버스 미지원 브라우저</canvas>
+                        </div>
+                        <div class="divCanvas stat-2-obj">
+                            <input id="divClickR" type="button" value="클릭용"/>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <div class="paper"><img src="./img/img-paper.png" alt="종이 이미지"></div>
+		</section>
+		
+        <div class="bottom">
+            <p id="stageTitle" title="게임 스테이지 타이틀">삼칠일 동안 걸어두는 금줄</p>
+            <p id="stageDesc" title="스테이지 설명">관련 콘텐츠 정보는 우측 슬라이딩 메뉴에서 확인 가능합니다.</p>
+        </div>
+        
+        <div class="bubbly"></div>
+        <div class="bubbly2"></div>
+        <div class="wrong"></div>
+    </div>
+        
+    <!-- 인포 팝업 -->
+	<div id="info" class="transitionAll">
+        <div class="btn"><button type="button" value="&#160;" class="" onclick="findDifferentimg.stopTimer();"></button></div>   
+        <div class="inner">
+           <div class="sec1">
+                <h3 id="slideTitle">삼칠일 동안 걸어두는 금줄</h3>
+                <p id="slideList">출생의례 ＞ 출생의례의 절차와 풍습</p>
+                <p id="slideDesc">
+                    아이가 태어나면 대문앞에 금줄을 걸었는데, 부정한 것을 막기 위해 정화의 의미가 담긴 물건을 꽂았다.남자아이의 경우는 빨간 고추를 달았는데 고추의 빨간색과 매운맛은 귀신을 쫓아내주는 의미를 담고 있다. 지역에 따라 나쁜 것이 들어오지 못하게 하는 정화의 의미의 숯을 함께 달기도 했다.
+                </p>
+                <div class="c1 mCustomScrollbar" data-mcs-theme="light-1">
+                    <p class="ti">시대 / 연대</p>
+                    <p class="te">· 조선 - 조선 전체 / 1990 년대</p>
+                    <p class="ti">교과 단원</p>
+                    <p class="te">· 초등학교 사회 ▶ 3학년</p>
+                    <p class="te">· 초등학교 통합 ▶ 1학년, 2학년</p>
+                </div>
+                <p><a href="/" id="imgLlink3" target="_blank" title="해당 콘텐츠로 이동">자세히보기</a></p>
+            </div>
+            <div class="sec2">
+                <h3>연관 이야기자료(9)</h3>
+                <div class="c1">
+                   
+                    <div class="list-wrap mCustomScrollbar" data-mcs-theme="light-1">				
+						<ul class="list">
+							<li>
+								<div class="thumb">
+									<a href="javascript:void(0)" target="_blank" title="새창">
+										<img src="./img/img-info-thum-01.jpg" alt="배냇머리 자르기 그림">
+									</a>
+								</div>
+								<div class="data-wrap">
+									<dl>
+										<dt>
+											<a href="javascript:void(0)" target="_blank" title="새창">첫 이발, 배냇머리 자르기</a>
+										</dt>
+										<dd>배냇머리 자르기는 태어난 아이의 머리카락을 처음 잘라주는 행위를 말한다. 잘라주는 시기는</dd>
+									</dl>
+                                    <p class="list-info"><span>생활문화 &gt; 한국인의 통과의례, 관혼상제</span><span class="line">|</span><span>출생의례 &gt; 출생의례의 절차와 풍습</span></p>
+								</div>
+							</li>
+                            <li>
+                                <div class="thumb">
+									<a href="javascript:void(0)" target="_blank" title="새창">
+										<img src="/" alt="">
+									</a>
+								</div>
+								<div class="data-wrap">
+									<dl>
+										<dt>
+											<a href="javascript:void(0)" target="_blank" title="새창">태어나 처음 입는 옷, 배냇저고리</a>
+										</dt>
+										<dd>태어난지 사흘째(3일) 되는 아침에 처음으로 목욕을 하고 아기가 입는 옷으로 배내옷 혹은 깃저고리라고 부른다. 깃 없</dd>
+									</dl>
+                                    <p class="list-info"><span>생활문화 &gt; 한국인의 통과의례, 관혼상제</span><span class="line">|</span><span>출생의례 &gt; 출생의례의 절차와 풍습</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="thumb">
+									<a href="javascript:void(0)" target="_blank" title="새창">
+										<img src="./img/img-info-thum-02.jpg" alt="배냇머리 자르기 그림">
+									</a>
+								</div>
+								<div class="data-wrap">
+									<dl>
+										<dt>
+											<a href="javascript:void(0)" target="_blank" title="새창">금줄에도 걸리는 한국인이 좋아하는 매운 맛 고추</a>
+										</dt>
+										<dd>고추는 남아메리카 원산으로 밭에서 재배하는 한해살이풍이다. 조선 후기에 일본과 중국을 거쳐</dd>
+									</dl>
+                                    <p class="list-info"><span>생활문화 &gt; 한국인의 통과의례, 관혼상제</span><span class="line">|</span><span>출생의례 &gt; 출생의례의 절차와 풍습</span></p>
+								</div>
+							</li>
+							<li>
+							    <div class="thumb">
+									<a href="javascript:void(0)" target="_blank" title="새창">
+										<img src="/" alt="">
+									</a>
+								</div>
+								<div class="data-wrap">
+									<dl>
+										<dt>
+											<a href="javascript:void(0)" target="_blank" title="새창">경기도의 출생의례</a>
+										</dt>
+										<dd>경기도 양주에서는 농사지어 처음 찐 쌀을 창호지에 싸서 달아두었다. 이를 삼신주머니라 부르며, 고깔을 씌우기도 했다</dd>
+									</dl>
+                                    <p class="list-info"><span>생활문화 &gt; 한국인의 통과의례, 관혼상제</span><span class="line">|</span><span>출생의례 &gt; 지역별 출생의례</span></p>
+								</div>
+							</li>
+							<li>
+							    <div class="thumb">
+									<a href="javascript:void(0)" target="_blank" title="새창">
+										<img src="/" alt="">
+									</a>
+								</div>
+								<div class="data-wrap">
+									<dl>
+										<dt>
+											<a href="javascript:void(0)" target="_blank" title="새창">강원도의 출생의례</a>
+										</dt>
+										<dd>강원도 지역의 기자의례(아들을 기원하는 의례)로는 산메기가 있다. 명절이나 봄, 가을에 좋은 날을 받아 삼신을 받는 의</dd>
+									</dl>
+                                    <p class="list-info"><span>생활문화 &gt; 한국인의 통과의례, 관혼상제</span><span class="line">|</span><span>출생의례 &gt; 지역별 출생의례</span></p>
+								</div>
+							</li>
+							<li>
+							    <div class="thumb">
+									<a href="javascript:void(0)" target="_blank" title="새창">
+										<img src="/" alt="">
+									</a>
+								</div>
+								<div class="data-wrap">
+									<dl>
+										<dt>
+											<a href="javascript:void(0)" target="_blank" title="새창">경상도의 출생의례</a>
+										</dt>
+										<dd>경기도 양주에서는 농사지어 처음 찐 쌀을 창호지에 싸서 달아두었다. 이를 삼신주머니라 부르며, 고깔을 씌우기도 했다</dd>
+									</dl>
+                                    <p class="list-info"><span>생활문화 &gt; 한국인의 통과의례, 관혼상제</span><span class="line">|</span><span>출생의례 &gt; 지역별 출생의례</span></p>
+								</div>
+							</li>
+							<li>
+							    <div class="thumb">
+									<a href="javascript:void(0)" target="_blank" title="새창">
+										<img src="/" alt="">
+									</a>
+								</div>
+								<div class="data-wrap">
+									<dl>
+										<dt>
+											<a href="javascript:void(0)" target="_blank" title="새창">충청도의 출생의례</a>
+										</dt>
+										<dd>출생의례는 새로운 생명을 기원하거나 태어난 생명을 무탈하게 키워내기 위하여 행하는 의례를 말한다. 아이 낳기를 기</dd>
+									</dl>
+                                    <p class="list-info"><span>생활문화 &gt; 한국인의 통과의례, 관혼상제</span><span class="line">|</span><span>출생의례 &gt; 지역별 출생의례</span></p>
+								</div>
+							</li>
+							<li>
+							    <div class="thumb">
+									<a href="javascript:void(0)" target="_blank" title="새창">
+										<img src="/" alt="">
+									</a>
+								</div>
+								<div class="data-wrap">
+									<dl>
+										<dt>
+											<a href="javascript:void(0)" target="_blank" title="새창">충청도의 출생의례</a>
+										</dt>
+										<dd>출생의례는 새로운 생명을 기원하거나 태어난 생명을 무탈하게 키워내기 위하여 행하는 의례를 말한다. 아이 낳기를 기</dd>
+									</dl>
+                                    <p class="list-info"><span>생활문화 &gt; 한국인의 통과의례, 관혼상제</span><span class="line">|</span><span>출생의례 &gt; 지역별 출생의례</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- 시간초과 팝업 -->
+    <div class="stage-pop">
+        <div class="inner">
+            <div class="con-title">시간 초과</div>
+            <div class="con-de">그림과 관련된 지역문화콘텐츠를 보고 와서 <span>다시 도전</span> 어때요?</div>
+            <div class="con-view">
+                <div class="con-img"><img id="imgLtrue" src="./img/gate-L.png" alt="틀린그림 원본 이미지"></div>
+                <div class="con-text"><a href="/" id="imgLlink" target="_blank" title="해당 콘텐츠로 이동">콘텐츠 보기 ＞</a></div>
+                <div class="paper"><img src="./img/img-paper.png" alt="종이 이미지"></div>
+            </div>
+            <div class="rebtn"><input type="button" value="&#160;" class="reStart eff" onclick="findDifferentimg.reset();"/></div>
+            <div class="Home-btn"><input type="button" value="&#160;" class="Home" onclick="location.href='./index.html'" title="홈으로"/></div>
+            <div style="display:none;"><button type="button" class="close"></button></div>
+        </div>
+    </div>
+        
+    <!-- 스테이지 클리어 팝업 -->
+    <div class="clear-pop">
+        <div class="inner">
+            <div class="con-title">게임 클리어</div>
+            <div class="con-view">
+                <div class="con-img"><img id="imgLclear" src="./img/gate-L.png" alt="틀린그림 원본 이미지"></div>
+                <div class="con-text"><a href="/" id="imgLlink2" target="_blank" title="해당 콘텐츠로 이동">콘텐츠 보기 ＞</a></div>
+                <div class="paper"><img src="./img/img-paper.png" alt="종이 이미지"></div>
+            </div>
+            <div class="rebtn">
+                <input type="button" value="&#160;" class="reStart eff" onclick="findDifferentimg.reset();"/>
+                <input type="button" value="&#160;" class="otherStart Desc eff" onclick="findDifferentimg.start();"/>
+            </div>
+            <div class="Home-btn"><input type="button" value="&#160;" class="Home" onclick="location.href='./index.html'" title="홈으로"/></div>
+            <p style="display:none;"><button type="button" class="close"></button></p>
+        </div>
+    </div>
+       
+    <!-- ex 팝업 -->
+    <div class="ex-pop">
+        <div class="inner">
+            <div class="con1">
+                <div class="con-title">게임 설명</div>
+                <div class="con-desc">
+                    화면의 좌측과 우측의 그림을 비교해 다른 부분을 클릭해주세요.<br>
+                    정해진 개수만큼 모두 찾아 게임을 클리어하고, 그림 속 재미있는 지역문화 이야기도 함께 감상해보세요.
+                </div>
+            </div>
+            <div class="con-view">
+                <img src="./img/ex-img-01.png" alt="게임 설명 이미지">
+            </div>
+            <p class="ex-tu"><button type="button" class="close"></button></p>
+        </div>
+    </div>
+       
+    <!-- 테마 간단설명 팝업 -->
+    <div class="description-pop">
+        <div class="inner">
+            <div class="con1">
+                <div id="slideTitle-desc"></div>
+                <div id="slideList-desc"></div>
+            </div>
+            <div class="con2">
+                <div class="con-img"><img id="imgLtrue-desc" src="./" alt="틀린그림 원본 이미지"></div>
+                <div id="slideDesc-desc"></div>
+            </div>
+            <div class="con-text"><a href="/" id="imgLlink-desc" target="_blank" title="해당 콘텐츠로 이동">콘텐츠 보기 ＞</a></div>
+        </div>
+        <div class="Home"><input type="button" value="&#160;" class="Home" onclick="location.href='./index.html'" title="홈으로"/></div>
+        <div class="Btn"><input type="button" value="시작하기" class="eff Start" onclick="findDifferentimg.nowstartTimer();"/><input type="button" value="다른그림하기" class="otherStart Desc eff" onclick="findDifferentimg.start();" style="display:none;"></div>
+    </div>
+        
+    <!-- 일시정지 팝업 -->
+    <div class="pause-bg">
+        <div class="inner">
+            <div class="pause-box">
+                <div class="pause-title">일시정지 됨</div>
+                <div class="play-btn"><a class="start" onclick="findDifferentimg.restartTimer();" title="게임 계속하기">계속하기</a></div>
+                <div class="restart-btn"><a class="reStart eff" onclick="findDifferentimg.reset();" title="게임 다시하기">다시하기</a></div>
+                <div class="one">
+                    <div class="Bgm">
+                        <input type="button" class="audio audioStop" value="&#160;" title="배경음악"/>
+                    </div>
+                    <div class="Home">
+                        <input type="button" class="Home" onclick="location.href='./index.html'" value="&#160;" title="홈으로"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 성공 효과 -->
+    <div id="confetti-container">
+        <div class="modal-content">
+            <div class="modalImg"></div>
+        </div>
+    </div>
+        
+    <!-- 실패 효과 -->
+    <div class="rain"></div>
+    
+    <!-- 시작 카운트 -->
+    <div class="count-pop">
+        <div id="stagecount"></div>
+        <span class="Count"></span>
+    </div>
+    
+    <div class="bg"></div>
+    <div class="bg2"></div>
+</div>
+
+</body>
+</html>

@@ -9,14 +9,19 @@ function syncHeight() {
 
 function bodyLock() {
     scrollY = window.scrollY;
-    document.documentElement.classList.add('is-locked');
-    wrap.style.top = `-${scrollY}px`;
+    document.body.style.cssText = `
+        position: fixed;
+        top: -${scrollY}px;
+        width: 100%;
+        overflow-y: hidden;
+    `;
 }
-
 function bodyUnlock() {
-    document.documentElement.classList.remove('is-locked');
-    window.scrollTo(0, scrollY);
-    wrap.style.top = '';
+    document.body.style.cssText = '';
+    window.scrollTo({
+        top: scrollY,
+        behavior: 'instant'
+    });
 }
 
 // tab menu event
@@ -197,15 +202,23 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <div class="thumb">
                     <img src="${images[0] || ''}" alt="${project.title}">
-                    <div class="overlay"><span>VIEW</span></div>
+                    <div class="overlay">
+                        <div class="view"><a href="javascript:;">VIEW</a></div>
+                        <div class="link"><a href="${project.link}" target="_blank">LINK</a></div>
+                    </div>
                 </div>
                 <div class="project-info">
                     <h3>${project.title}</h3>
                     <p>${project.desc}</p>
+                    <p>${project.stack}</p>
+                    <p>${project.progressText}</p>
+                    <progress max="100" value="${project.progressValue}"></progress>
                 </div>
             `;
 
-            card.addEventListener('click', () => openModal(images));
+             const viewBtn = card.querySelector('.view a');
+            viewBtn.addEventListener('click', () => openModal(images));
+
             projectListEl.appendChild(card);
         });
     }
@@ -213,6 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ===== 모달 열기 ===== */
     function openModal(images) {
         modalContent.innerHTML = '';
+
         images.forEach(src => {
             const img = document.createElement('img');
             img.src = src;
@@ -220,10 +234,18 @@ document.addEventListener('DOMContentLoaded', () => {
             modalContent.appendChild(img);
         });
 
-        modal.classList.add('active');
         bodyLock();
+        modal.classList.add('active');
 
-        modalContent.scrollTop = 0;
+        requestAnimationFrame(() => {
+            modalContent.scrollTop = 0;
+        });
+
+        setTimeout(() => {
+            modal.scrollTop = 0;
+            modalContent.scrollTop = 0;
+            document.querySelector('.modal-content')?.scrollTo(0, 0);
+        }, 50);
     }
 
     /* ===== 모달 닫기 ===== */
@@ -233,10 +255,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function closeModal() {
+        modalContent.scrollTop = 0;
         modal.classList.remove('active');
         modalContent.innerHTML = '';
         bodyUnlock();
     }
+    // 바깥 클릭 시 닫기
+    modal.addEventListener('click', closeModal);
+    // 안쪽 클릭은 전파 막기
+    modalContent.addEventListener('click', e => {
+        e.stopPropagation();
+    });
 
     wrap = document.getElementById('wrap');
     syncHeight();
@@ -321,10 +350,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-window.addEventListener('load', () => {});
-
+window.addEventListener('load', () => {
+    
+});
 window.addEventListener('resize', () => {
     syncHeight();
 });
+window.addEventListener('scroll', () => {
 
-window.addEventListener('scroll', () => {});
+});

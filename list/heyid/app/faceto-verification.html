@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no" />
+<title>HeyID - 대면확인</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/">
+<link href="./css/common.css" rel="stylesheet">
+<link href="./css/swiper.min.css" rel="stylesheet">
+<link href="./css/default.css" rel="stylesheet">
+
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="./js/dragula.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/default.js"></script>    
+</head>
+<body>
+
+<div class="wrap sms-verification">
+    <!-- nav -->
+    <nav id="nav">
+        <button type="button" class="back-btn" onclick="history.back()">뒤로가기</button>
+    </nav>
+    
+    <!-- con -->
+    <div id="contents">
+        <div class="inner">
+            <div class="tit-box">
+                <h2>대면확인</h2>
+                <p>대면확인을 진행할 대상자 정보를 입력해주세요.</p>
+            </div>
+
+            <div class="con-box">
+                <form>
+                    <div class="consent">
+                        <div class="all">
+                            <label for="cbx_chkAll"><input type="checkbox" name="cbx_chkAll" id="cbx_chkAll" value="" required><i class="on"></i>본인확인을 위한 약관 전체동의</label>
+                            <button type="button" class="open-btn on">열기/닫기</button>
+                        </div>
+                        <div class="list">
+                            <div><label><input type="checkbox" name="chk"><i class="on"></i> <b>(필수)</b> HeyID 개인정보 수집</label><button type="button" class="req-pop-btn privacy-btn">btn</button></div>
+                            <div><label><input type="checkbox" name="chk"><i class="on"></i> <b>(필수)</b> 인증사 이용약관</label><button type="button" class="req-pop-btn">btn</button></div>
+                            <div><label><input type="checkbox" name="chk"><i class="on"></i> <b>(필수)</b> 통신사 이용약관</label><button type="button" class="req-pop-btn telecom-btn">btn</button></div>
+                            <div><label><input type="checkbox" name="chk"><i class="on"></i> <b>(필수)</b> 개인정보 수집 및 이용 동의</label><button type="button" class="req-pop-btn">btn</button></div>
+                            <div><label><input type="checkbox" name="chk"><i class="on"></i> <b>(필수)</b> 고유식별정보처리 동의</label><button type="button" class="req-pop-btn">btn</button></div>
+                        </div>
+                    </div>
+                    
+                    <div class="sms">
+                        <div class="input-box name">
+                            <input type="text" placeholder="이름">
+                        </div>
+                        <div class="input-box birthday">
+                            <input type="text" id="id_data_birth_1" class="inputs" maxlength="6" placeholder="생년월일 6자리"> 
+                            <span>-</span>
+                            <input type="text" id="id_data_birth_2" class="inputs" maxlength="1" style="background:url(./images/icon/icon-masking.svg) 20px center no-repeat;">
+                        </div>
+                        <div class="input-box mobile">
+                            <select name="selectmobile" id="selectmobile" required>
+                                <option selected disabled value="">통신사</option>
+                                <option value="SK">SK</option>
+                                <option value="KT">KT</option>
+                                <option value="LG">LG</option>
+                                <option value="알뜰폰">알뜰폰</option>
+                            </select>
+                            <input type="text" id="phone" maxlength="11" placeholder="휴대폰번호">
+                            <input type="button" id="btn" name="btn" value="인증요청" onclick="doTimer()"/>
+                        </div>
+                        <div class="input-box number">
+                            <span>
+                                <input type="text" maxlength="6" id="authenticationcode" name="authenticationcode" value="" readonly style="display:none;"/>
+                                <input type="text" id="typingcode" name="typingcode" maxlength="6" value="" placeholder="인증번호"/>
+                            </span>
+                            <span><img src="./images/icon/icon-timer.svg" alt="timer"> <input type="text" id="timer" name="timer" value=""/></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="btn-box">
+                <button type="submit" class="type1" onclick="doCodeCheck()">확인</button>    
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 개인정보수집 팝업 -->
+<div class="layer-pop privacy-layer" style="display: none;">
+    <div class="inner privacy">
+        <div class="tit-box">
+            <h2>HeyID 개인정보 수집</h2>
+        </div>
+        <div class="con-box">
+            <p>HeyID 서비스 이용에 따른 고객 안내, 부정이용 방지 등 HeyID 서비스 제공을 목적으로 모바일 인증 후, 휴대전화 번호와 통신사 정보가 저장됩니다.</p>
+            <p>휴대전화번호는 회원 DB에 저장되어 회원탈퇴 시까지 보관되며, 통신사 정보는 1년간 보관됩니다.</p>
+            <p>또한 모바일 인증을 사용하는 개별 서비스에서 인증 과정에서 확인된 이름 등을 활용할 수 있으나, 이는 개별 서비스의 '개인정보 수집 및 이용 동의'를 통해 회원님께 직접동의를 받고 처리합니다.</p>    
+        </div>
+        <div class="btn-box">
+            <button type="button" class="type1 on close-btn">확인</button>    
+        </div>
+        <div class="close">
+            <button type="button" class="close-btn edit-close-btn"></button>
+        </div>
+    </div>
+</div>
+
+<!-- 통신사 팝업 -->
+<div class="layer-pop telecom-layer" style="display: none;">
+    <div class="inner telecom">
+        <div class="tit-box">
+            <h2>통신사 이용약관</h2>
+        </div>
+        <div class="con-box">
+            <div class="tab">
+                <ul class="tabs">
+                    <li class="tab1 active"><a href="javascript:;">SKT</a></li>
+                    <li class="tab2"><a href="javascript:;">KT</a></li>
+                    <li class="tab3"><a href="javascript:;">LG U+</a></li>
+                </ul>
+                <div class="tab_content">
+                    <div class="tabs_item">
+                        <h3>제1조 (목적)</h3>
+                        <p>이 약관은 ‘본인확인서비스’를 제공하는 에스케이텔레콤 주식 ‘회사’(이하 "회사"라 합니다)와 ‘본인확인서비스’ 이용자 (이하 ‘이용자’라 합니다)간에 ‘본인확인서비스’ 이용에 관한 ‘회사’와 ‘이용자’의 권리와 의무, 기타 제반 사항을 정함을 목적으로 합니다.</p>
+                        <h3>제2조 (용어의 정의)</h3>
+                        <p>① ‘본인확인서비스’라 함은 ‘이용자’가 유무선 인터넷 웹’사이트’ 및 스마트폰 Application 등(이하 ‘사이트’라 합니다)에서 본인 명의로 개통한 휴대폰을 이용하여, 본인확인정보를 입력하고 인증 절차를 통하여 본인 여부와 본인이 등록한 정보의 정확성을 확인하여 주는 서비스를 말합니다.</p>
+                        <p>② ‘본인확인정보’라 함은 본인확인을 위하여 ‘이용자’가 입력한 본인의 생년월일, 성별, 성명, 내/외국인 여부, 본인명의로 개통된 이동전화번호, 기타 ‘회사’와 ‘이용자’간에 별도로 설정한 번호 등 ‘이용자’에 대한 ‘본인확인서비스’ 제공을 위해 필요한 정보를 말합니다.</p>
+                        <p>③ ‘이용자’라 함은 ‘사이트’에서 ‘회사’가 제공하는 ‘본인확인서비스’를 이용하는 자를 말하며, ‘회사’의 이동전화서비스 가입자와 ‘회사’의 이동전화망을 이용하여 개별적으로 이동전화서비스를 제공하는 별정통신사업자의 가입자중 ‘회사’의 ‘본인확인서비스’를 이용하는 자를 말합니다.</p>
+                        <p>④ ‘중복가입확인정보’라 함은 ‘이용자’가 ‘사이트’에 가입하거나 ‘사이트’에서 특정 서비스 이용, 구매 등 어떤 행동을 할 때, 해당 ‘이용자’의 기 가입/이용 여부를 확인하기 위하여 생성되는 정보를</p>
+                    </div>
+                    <div class="tabs_item">
+                        <h3>제1조 (목적)</h3>
+                        <p>이 약관은 ‘본인확인서비스’를 제공하는 에스케이텔레콤 주식 ‘회사’(이하 "회사"라 합니다)와 ‘본인확인서비스’ 이용자 (이하 ‘이용자’라 합니다)간에 ‘본인확인서비스’ 이용에 관한 ‘회사’와 ‘이용자’의 권리와 의무, 기타 제반 사항을 정함을 목적으로 합니다.</p>
+                        <h3>제2조 (용어의 정의)</h3>
+                        <p>① ‘본인확인서비스’라 함은 ‘이용자’가 유무선 인터넷 웹’사이트’ 및 스마트폰 Application 등(이하 ‘사이트’라 합니다)에서 본인 명의로 개통한 휴대폰을 이용하여, 본인확인정보를 입력하고 인증 절차를 통하여 본인 여부와 본인이 등록한 정보의 정확성을 확인하여 주는 서비스를 말합니다.</p>
+                        <p>② ‘본인확인정보’라 함은 본인확인을 위하여 ‘이용자’가 입력한 본인의 생년월일, 성별, 성명, 내/외국인 여부, 본인명의로 개통된 이동전화번호, 기타 ‘회사’와 ‘이용자’간에 별도로 설정한 번호 등 ‘이용자’에 대한 ‘본인확인서비스’ 제공을 위해 필요한 정보를 말합니다.</p>
+                        <p>③ ‘이용자’라 함은 ‘사이트’에서 ‘회사’가 제공하는 ‘본인확인서비스’를 이용하는 자를 말하며, ‘회사’의 이동전화서비스 가입자와 ‘회사’의 이동전화망을 이용하여 개별적으로 이동전화서비스를 제공하는 별정통신사업자의 가입자중 ‘회사’의 ‘본인확인서비스’를 이용하는 자를 말합니다.</p>
+                        <p>④ ‘중복가입확인정보’라 함은 ‘이용자’가 ‘사이트’에 가입하거나 ‘사이트’에서 특정 서비스 이용, 구매 등 어떤 행동을 할 때, 해당 ‘이용자’의 기 가입/이용 여부를 확인하기 위하여 생성되는 정보를</p>
+                    </div>
+                    <div class="tabs_item">
+                        <h3>제1조 (목적)</h3>
+                        <p>이 약관은 ‘본인확인서비스’를 제공하는 에스케이텔레콤 주식 ‘회사’(이하 "회사"라 합니다)와 ‘본인확인서비스’ 이용자 (이하 ‘이용자’라 합니다)간에 ‘본인확인서비스’ 이용에 관한 ‘회사’와 ‘이용자’의 권리와 의무, 기타 제반 사항을 정함을 목적으로 합니다.</p>
+                        <h3>제2조 (용어의 정의)</h3>
+                        <p>① ‘본인확인서비스’라 함은 ‘이용자’가 유무선 인터넷 웹’사이트’ 및 스마트폰 Application 등(이하 ‘사이트’라 합니다)에서 본인 명의로 개통한 휴대폰을 이용하여, 본인확인정보를 입력하고 인증 절차를 통하여 본인 여부와 본인이 등록한 정보의 정확성을 확인하여 주는 서비스를 말합니다.</p>
+                        <p>② ‘본인확인정보’라 함은 본인확인을 위하여 ‘이용자’가 입력한 본인의 생년월일, 성별, 성명, 내/외국인 여부, 본인명의로 개통된 이동전화번호, 기타 ‘회사’와 ‘이용자’간에 별도로 설정한 번호 등 ‘이용자’에 대한 ‘본인확인서비스’ 제공을 위해 필요한 정보를 말합니다.</p>
+                        <p>③ ‘이용자’라 함은 ‘사이트’에서 ‘회사’가 제공하는 ‘본인확인서비스’를 이용하는 자를 말하며, ‘회사’의 이동전화서비스 가입자와 ‘회사’의 이동전화망을 이용하여 개별적으로 이동전화서비스를 제공하는 별정통신사업자의 가입자중 ‘회사’의 ‘본인확인서비스’를 이용하는 자를 말합니다.</p>
+                        <p>④ ‘중복가입확인정보’라 함은 ‘이용자’가 ‘사이트’에 가입하거나 ‘사이트’에서 특정 서비스 이용, 구매 등 어떤 행동을 할 때, 해당 ‘이용자’의 기 가입/이용 여부를 확인하기 위하여 생성되는 정보를</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="type1 on close-btn">확인</button>    
+        </div>
+        <div class="close">
+            <button type="button" class="close-btn edit-close-btn"></button>
+        </div>
+    </div>
+</div>
+
+<script>
+/* sms 인증 */ 
+var intervalVar = undefined;
+var timeSecond = undefined;
+var authenticationCode = undefined;
+
+$('#selectmobile').change(function(){
+    var s_option = $(this).prop('value')
+    $(this).attr('value', s_option)
+});
+
+$('#phone').keyup(function () {
+    var phoneval = $('#phone').val();
+    var phonelen = phoneval.length;
+    var p11 = 11;
+
+    if(phonelen === p11){
+        $('#btn').focus();
+    }
+});
+
+function getTimeString(second) {
+    var minute = '' + (Math.floor(second / 60));
+    var dividedSec = second % 60;
+    if (dividedSec < 10) {
+        dividedSec = '0' + dividedSec;
+    }
+    // ex) 3:00 -> 3분
+    return minute + ":" + dividedSec;
+}
+
+function doTimer() {
+    if (!$('.name input').prop('value')) {
+        alert('이름을 입력하세요.');
+        $('.name input').focus();
+        return;
+    }
+    if (!$('.birthday #id_data_birth_1').prop('value')) {
+        alert('생년월일 6자리를 입력하세요.');
+        $('.birthday #id_data_birth_1').focus();
+        return;
+    }
+    if (!$('.birthday #id_data_birth_2').prop('value')) {
+        alert('주민번호 뒷자리 첫번째 숫자를 입력하세요.');
+        $('.birthday #id_data_birth_2').focus();
+        return;
+    }
+    if (!$('#selectmobile').prop('value')) {
+        alert('통신사를 선택해주세요.');
+        $('#selectmobile').focus();
+        return;
+    }
+    if (!$('#phone').prop('value')) {
+        alert('휴대폰번호를 입력하세요.');
+        $('#phone').focus();
+        return;
+    }
+
+    authenticationCode = '111111';
+    $('#authenticationcode').prop('value', authenticationCode);
+
+    timeSecond = 180;
+    $('#timer').prop('value', getTimeString(timeSecond));
+    $('#btn').prop('value', '재전송');
+    $('.sms-verification .sms .input-box.number').show();
+
+    if (intervalVar != undefined) {
+        clearInterval(intervalVar);
+    }
+
+    intervalVar = setInterval(function() {
+        if (timeSecond != 0) {
+            timeSecond = timeSecond - 1;
+            $('#timer').prop('value', getTimeString(timeSecond));
+        } else {
+            clearInterval(intervalVar);
+            intervalVar = false;
+        }
+    }, 1000);
+}
+
+function doCodeCheck() {
+    if (!$('#cbx_chkAll').prop('checked')) {
+        alert("개인정보 수집 및 활용에 동의해주세요.");
+        return;
+    } 
+    if (!$('#typingcode').prop('value')) {
+        alert('인증번호를 입력하세요.');
+        return;
+    }
+    if (timeSecond == 0 || intervalVar == false) {
+        alert('인증번호 유효시간이 초과하였습니다. 인증번호를 재전송 해주세요.');
+        return;
+    }
+
+    if ($('#authenticationcode').prop('value') == $('#typingcode').prop('value')) {
+        alert('인증번호가 동일합니다.');
+        location.href = '/app-password.html';
+    } else {
+        alert('인증번호가 동일하지 않습니다.');
+    }
+}
+</script>
+
+</body>
+</html>

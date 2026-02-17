@@ -1,0 +1,15 @@
+td.naclips_body_mesg{}
+td.naclips_body_mesg A         {color:#4B85CD; text-decoration:none;} 
+td.naclips_body_mesg A:link    {color:#4B85CD; text-decoration:none;} 
+td.naclips_body_mesg A:visited {color:#4B85CD; text-decoration:none;}
+td.naclips_body_mesg A:hover   {color:#505050; text-decoration:underline;}
+
+div.naclips_player_base {}
+div.naclips_player_base img { vertical-align:baseline; }
+div.naclips_player_base td, tbody {vertical-align:middle;}
+
+table.naclips_mulbps_back {}
+table.naclips_mulbps_back td{line-height:0px; padding:0px; font-size:0px;}
+
+table.naclips_ctrl_table {}
+table.naclips_ctrl_table td{line-height:0px; padding:0px; font-size:0px;}

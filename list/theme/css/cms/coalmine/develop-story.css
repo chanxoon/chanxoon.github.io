@@ -1,0 +1,7 @@
+#wrap {text-align: center;}
+.wrap-bg {background-image: url(/cms/imgs/coalmine/bg/bg-develop-story.jpg); z-index: 1;}
+.timeline-title br {display: none;}
+@media only screen and (max-width: 640px) {
+    .timeline-title br {display: block;}
+    
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/fonts.css" rel="stylesheet">
+    <link href="./css/defult.css" rel="stylesheet">
+
+    <script src="./js/defult.js"></script>
+</head>
+<body>
+    <div class="report-wrap sample financial-analysis-3">
+        <div class="report-wrap-inner">
+            <div class="header">
+                <div class="title-area">02. 주요 재무 분석(K-GAAP, 개별, 결산)<span class="sub-txt">성장성 분석</span></div>
+                <div class="info-area">
+                    <span>(주)길동정보</span>
+                    <span>116-81-1****</span>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="sec sec1">
+                    <div class="sec-inner">
+                        <div class="tit-box">
+                            <span class="tit">주요 성장성 비율</span>
+                        </div>
+                        <div class="con-box ta">
+                            <table>
+                                <colgroup>
+                                    <col width="130px">
+                                    <col width="40px">
+                                    <col width="100px">
+                                    <col width="100px">
+                                    <col width="100px">
+                                    <col width="100px">
+                                    <col width="100px">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>재무 비율</th>
+                                        <th>단위</th>
+                                        <th>2021.12.31</th>
+                                        <th>2022.12.31</th>
+                                        <th>2023.12.31</th>
+                                        <th>NICE산업평균(2023)</th>
+                                        <th>한은평균 (2023)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>매출액증가율</th>
+                                        <td>%</td>
+                                        <td>10.75</td>
+                                        <td>-1.88</td>
+                                        <td>1.08</td>
+                                        <td>-20.05</td>
+                                        <td>3.74</td>
+                                    </tr>
+                                    <tr>
+                                        <th>총자산증가율</th>
+                                        <td>%</td>
+                                        <td>17.89</td>
+                                        <td>10.28</td>
+                                        <td>2.10</td>
+                                        <td>-10</td>
+                                        <td>1.95</td>
+                                    </tr>
+                                    <tr>
+                                        <th>매출액영업이익률</th>
+                                        <td>%</td>
+                                        <td>19.18</td>
+                                        <td>0.23</td>
+                                        <td>-7.44</td>
+                                        <td>-186.48</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th>순이익증가율</th>
+                                        <td>%</td>
+                                        <td>16.92</td>
+                                        <td>0.98</td>
+                                        <td>7.14</td>
+                                        <td>10.61</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="sec-inner">
+                        <div class="tit-box">
+                            <span class="tit">주요 성장성 비율 해설</span>
+                        </div>
+                        <div class="con-box ta">
+                            <table>
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="32%">
+                                    <col width="48%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>재무 비율</th>
+                                        <th>산식</th>
+                                        <th>해설</th>
+                                    </tr>
+                                    <tr>
+                                        <th>매출액증가율</th>
+                                        <td>(당기매출액/전기매출액-1) x 100</td>
+                                        <td>매출액이 지속적으로 증가한다는 것은 시장에서의 경쟁력과 수익 창출 능력이 향상되고 있음을 의미합니다. 따라서 이 비율이 높을수록 기업의 성장 가능성이 크다고 볼 수 있습니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>총자산증가율</th>
+                                        <td>(당기자산총계/전기자산총계-1) x 100</td>
+                                        <td>비율이 클수록 투자활동이 활발하므로 성장성이 높은 것으로 판단할 수 있습니다. 단, 매출액증가율보다 총자산증가율이 높을 경우 자산에 대한 과대투자가 진행됨을 의미할 수 있고, 부채의 확대로 인해서도 증가율이 높아질 수 있으므로, 총자산의 구송요소 검토가 필요합니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>영업이익증가율</th>
+                                        <td>(당기영업이익/전기영업이익-1) x 100</td>
+                                        <td>영업이익증가율이 높을수록 기업의 핵심 영업 활동이 효과적으로 이루어지고 있음을 의미하며, 향후 수익성 개선 가능성을 시사합니다. 다만, 당기 혹은 전기 영업이익 값이 0미만인 경우 해당 비율이 산출되지 않습니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>순이익증가율</th>
+                                        <td>(당기순이익/전기순이익-1) x 100</td>
+                                        <td>순이익이 전년대비 증가한 정도를 나타내는 지표로 양(+)의 값을 가지는 것이 바람직한것으로 판단할 수 있습니다. 다만, 당기 혹은 전기 순이익 값이 0미만인 경우 해당 비율이 산출되지 않습니다. </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec sec2">
+                    <div class="tit-box">
+                        <span class="tit">비율분석 차트</span>
+                    </div>
+                    <div class="con-box">
+                        <div class="graph-list">
+                            <div class="list">
+                                <div class="tit-box">
+                                    <span class="tit">매출액증가율</span>
+                                    <span class="unit">(단위: %)</span>
+                                </div>
+                                <div class="graph">
+                                    <img src="./images/img-graph-6.png" src="그래프 예시">
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="tit-box">
+                                    <span class="tit">총자산증가율</span>
+                                    <span class="unit">(단위: %)</span>
+                                </div>
+                                <div class="graph">
+                                    <img src="./images/img-graph-6.png" src="그래프 예시">
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="tit-box">
+                                    <span class="tit">영업이익증가율</span>
+                                    <span class="unit">(단위: %)</span>
+                                </div>
+                                <div class="graph">
+                                    <img src="./images/img-graph-6.png" src="그래프 예시">
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="tit-box">
+                                    <span class="tit">순이익증가율</span>
+                                    <span class="unit">(단위: %)</span>
+                                </div>
+                                <div class="graph">
+                                    <img src="./images/img-graph-6.png" src="그래프 예시">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="page-info-area">
+                    <div class="page-tit">기업 분석 보고서(상세보고서)</div>
+                    <div class="dote-line"></div>
+                    <div class="page-num">07</div>
+                </div>
+                <div class="f-logo-area">
+                    <img src="./images/img-footer-logo.png" alt="NICE평가정보" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

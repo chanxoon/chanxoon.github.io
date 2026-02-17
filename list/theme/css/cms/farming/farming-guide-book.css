@@ -1,0 +1,49 @@
+
+.page-title-cover.process { background-image: url(/cms/imgs/farming/bg/bg-farming-guide-book.jpg); }
+
+.chapter-header { opacity: 0; position: relative; top: 30px; transition: all .6s ease; }
+
+.sub-chapter { opacity: 0; position: relative; top: 30px; transition: all .6s ease 1s; }
+
+.scroll-transition .chapter-header, .scroll-transition .sub-chapter { opacity: 1; top: 0; }
+
+.contents-container .bg { background-color: #f0eeea; background-image: url(/cms/imgs/farming/bg/bg-process-003.jpg); background-position: center bottom; background-size: 100% auto; padding-top: 80px; }
+
+.contents-container .bg .con-chapter { background: transparent; padding-top: 80px; }
+
+.farming-type { padding: 0 30px 50px; }
+
+.farming-type-list { max-width: 1200px; margin: 0 auto 30px; border: 1px solid #ccc; background: #fff; position: relative; left: 10%; opacity: 0; transition: all .5s ease; }
+
+.farming-type-list.scroll-transition { left: 0; opacity: 1; }
+
+.farming-type-list:after { content: ""; display: block; clear: both; }
+
+.farming-type-list .thumb-wrap { float: left; width: 402px; padding: 0; }
+
+.farming-type-list .txt-wrap { float: left; padding: 40px 60px; border-left: 1px solid #ccc; text-align: left; width: calc(100% - 402px); box-sizing: border-box; position: relative; }
+
+.farming-type-list .txt-wrap dt { font-size: 24px; font-weight: 500; color: #333; letter-spacing: -.025em; margin-bottom: 9px; }
+
+.farming-type-list .txt-wrap dt span { display: block; color: #666666; font-size: 22px; line-height: 1;  }
+
+.farming-type-list .txt-wrap dt strong { display: block; }
+
+.farming-type-list .txt-wrap dd p { min-height: 107px; margin-bottom: 20px; color: #666; line-height: 1.5; }
+
+.farming-type-list .thumb-wrap, .farming-type-list .txt-wrap { height: 386px; }
+
+.farming-type-list:hover { -moz-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); }
+
+.farming-type-list .btn-detail-link { margin: 0; position: absolute; left: 60px; bottom: 40px; }
+
+@media only screen and (max-width: 640px) { .contents-container .bg { background-size: auto 100%; }
+  .farming-type { padding: 60px 25px 50px; width: 100%; overflow: hidden; }
+  .farming-type-list .thumb-wrap { width: 100%; float: none; }
+  .farming-type-list .txt-wrap { width: 100%; float: none; padding: 40px; }
+  .farming-type-list .thumb-wrap { height: 360px; }
+  .farming-type-list .thumb-wrap img { min-width: 100%; }
+  .farming-type-list .txt-wrap dd p { height: auto; margin-bottom: 40px; }
+  .farming-type-list .txt-wrap dt { font-size: 30px; margin-bottom: 19px; }
+  .farming-type-list .thumb-wrap, .farming-type-list .txt-wrap { height: auto; }
+  .farming-type-list .btn-detail-link { margin: 0; position: static; left: auto; bottom: auto; } }

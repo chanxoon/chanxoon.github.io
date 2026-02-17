@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/********************** main */
+.main-menu ul li.active a:before { background: #e7b200; }
+
+/********************** object */
+/* page title */
+.page-heading .title { color: #e7b200; }
+
+/* sub nav */
+.themes-sub-depth-nav li button:after { background: #e7b200; }
+
+.themes-sub-depth-nav li a:after { background: #e7b200; }
+
+/* tab button */
+.type-tab-menu button.on { border-color: #e7b200; background: #e7b200; }
+
+.type-tab-menu button:focus, .type-tab-menu button:hover { border-color: #e7b200; }
+
+/* 자세히보기 button */
+.btn-detail-link { color: #e7b200; border-color: #e7b200; }
+
+.btn-detail-link:hover { background: #e7b200; }
+
+/* card visual list */
+.card-visual-list .card-box a:hover:after { border-color: #e7b200; }
+
+/* 모바일 type-select */
+.btn-mobile-tab { border-color: #e7b200; }
+
+.btn-mobile-tab:before { border-top: 10px solid #e7b200; }
+
+/********************** page-title-cover */
+.page-title-cover .page-header .page-title strong { color: #e7b200; }
+
+/* ********************* chapter */
+.chapter-header .chapter-title { color: #e7b200; }
+
+.sub-chapter .sub-count { color: #e7b200; }
+
+.con-chapter.bg-light { background-color: #f2fafe; }
+
+.con-chapter.bg-dark { background-color: #676c71; background-image: url("/cms/imgs/righteous-army/bg/bg-patten.jpg"); background-repeat: repeat-x; background-position: center bottom; }
+
+.con-chapter.bg-dark .sub-title { color: #dddddd; }
+
+.con-chapter.bg-dark .sub-title strong { color: #ffffff; }
+
+.con-chapter.bg-dark .sub-text { color: #bebebe; }
+
+/********************** page-timeline */
+.timeline-title { color: #e7b200; }
+
+.timeline-point:before { background: #e7b200; }
+
+.timeline .timeline-block .block-bullet { border-color: #e7b200; }
+
+/********************** slide-list-wrap */
+.slide-list-box .swiper-slide.selected-list .thumb-img:after { border-color: #e7b200; }
+
+.slide-list-box .swiper-slide.selected-list .data-title { color: #e7b200; }
+
+/* ********************* * card-gride-wrap */
+.card-gride-wrap .card a:focus, .card-gride-wrap .card a:hover { border-color: #e7b200; }
+
+/********************** card-con-list */
+.card-con-box .con-list.active a:after { border-color: #e7b200; }
+
+/********************** full-slide-page */
+.full-slide-page .slide-step li.on { color: #e7b200; }
+
+.full-slide-page .slide-step li.on button:before { background: #e7b200; }
+
+.full-slide-page .text-wrap .subheading { color: #e7b200; }
+
+/***************** 비주얼 탭 */
+.visual-tabs-wrap { width: 100%; padding: 0 21px; position: absolute; left: 0; z-index: 30; min-width: 1246px; opacity: 0; }
+
+@media only screen and (max-width: 640px) { .visual-tabs-wrap { min-width: 1px; } }
+
+.visual-tabs-wrap.fixed { position: fixed; top: 0 !important; overflow: hidden; transition: background-image 0.3s ease; }
+
+.visual-tabs-wrap.fixed.bg { background-size: cover; }
+
+/******************** pic-wrap */
+.pic-wrap .pic-cover { border: 1px solid #d5d5d5; }
+
+.pic-wrap.one-pic.sm { max-width: 700px; }
+
+.pic-wrap.one-pic.md { max-width: 834px; }
+
+.pic-wrap.one-pic.lg { max-width: 1000px; }
+
+@media only screen and (max-width: 640px) { .pic-wrap.one-pic.lg { padding: 0; } }
+
+.pic-wrap.half-pic .pic { width: calc(50% - 16px); }
+
+@media only screen and (max-width: 640px) { .pic-wrap.half-pic .pic { width: 100%; } }
+
+.pic-wrap.half-pic .pic:first-child { margin-right: 16px; }
+
+@media only screen and (max-width: 640px) { .pic-wrap.half-pic .pic:first-child { margin-right: 0; } }
+
+.pic-wrap.half-pic .pic img { max-width: 100%; }
+
+.pic-wrap.half-pic.sm { max-width: 925px; }
+
+.pic-wrap.half-pic.md { max-width: 1457px; }
+
+.pic-wrap.trio-pic.wide .pic { padding: 0; }
+
+.pic-wrap.trio-pic.wide .pic-cover { border: 1px solid #d5d5d5; }
+
+/******************* common components */
+.sub-break { border: 0; display: block; height: 60px; position: relative; background: #fff; }
+
+@media only screen and (max-width: 640px) { .sub-break { margin-top: -26px; } }
+
+.sub-break:after { content: ''; position: absolute; left: 50%; width: 1px; height: 60px; background: #cccccc; display: block; }

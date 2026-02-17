@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/********************** main */
+.main-menu ul li.active a:before { background: #b3c70d; }
+
+/**********************
+    menu
+**********************/
+.header-visual .page-header h3 { color: #b3c70d; }
+.nav-wrap .gnb ul li.active a span{ border-bottom-color: #b3c70d;}
+.nav-wrap .gnb ul li.active a { color: #b3c70d; }
+.nav-wrap .gnb ul li.active a:before { background-color: #b3c70d; }
+a.btn-detail-link:visited { color: #b3c70d; }
+
+/********************** object */
+/* page title */
+.page-heading .title { color: #b3c70d; }
+
+/* sub nav */
+.themes-sub-depth-nav li a:after, .themes-sub-depth-nav li button:after { background: #b3c70d; }
+
+/* tab button */
+.type-tab-menu button.on { border-color: #b3c70d; background: #b3c70d; }
+
+.type-tab-menu button:focus, .type-tab-menu button:hover { border-color: #b3c70d; }
+
+/* 자세히보기 button */
+.btn-detail-link { color: #b3c70d; border-color: #b3c70d; }
+
+.btn-detail-link:hover { background: #b3c70d; }
+
+/* card visual list */
+.card-visual-list .card-box a:hover:after { border-color: #b3c70d; }
+
+/********************** page-title-cover */
+.chapter-header .chapter-title, .page-title-cover .page-header .page-title strong, .sub-chapter .sub-count, .timeline-title { color: #b3c70d; }
+
+/* ********************* chapter */
+
+section.bg-light { background: #f7f9e6; }
+
+.text-wrap { padding: 30px 6%;}
+
+.text-wrap .sub-title {margin-bottom: 10px; color: #555555; font-size: 1.667rem; line-height: 1; font-weight: 500;}
+
+.text-wrap .sub-text { color: #666666; font-size: 1.167rem; line-height: 1.5; }
+
+/********************** page-timeline */
+.timeline-point:before { background: #b3c70d; }
+
+.timeline .timeline-block .block-bullet { border-color: #b3c70d; }
+
+/********************** slide-list-wrap */
+.slide-list-box .swiper-slide.selected-list .thumb-img:after { border-color: #b3c70d; }
+
+.slide-list-box .swiper-slide.selected-list .data-title { color: #b3c70d; }
+
+/* ********************* * card-gride-wrap */
+.card-gride-wrap .card a:focus, .card-gride-wrap .card a:hover { border-color: #b3c70d; }
+
+/********************** card-con-list */
+.card-con-box .con-list.active a:after { border-color: #b3c70d; }
+
+/********************** full-slide-page */
+.full-slide-page .slide-step li.on { color: #b3c70d; }
+
+.full-slide-page .slide-step li.on button:before { background: #b3c70d; }
+
+.full-slide-page .text-wrap .subheading { color: #b3c70d; }
+
+@media (max-width: 640px) { 
+  .full-slide-page .slide-step-wrap button.on { color: #b3c70d; } 
+  .btn-mobile-tab {border-color: #b3c70d;}
+  .btn-mobile-tab:before {border-top-color: #b3c70d;}
+}
+
+/********************** Pic-wrap */
+.pic-wrap .pic .pic-cover { border-color: #cccccc; }
+
+.pic-wrap .pic .pic-cover:after { z-index: 1; }
+
+.pic-wrap .pic .pic-caption { z-index: 2; }
+
+.pic-wrap.half-pic.wide .pic { width: 50%; }
+
+.pic-wrap.half-pic.wide .pic:first-child { margin-right: 0; }
+
+.pic-wrap.half-pic.wide .pic .pic-cover { border: 1px solid #ccc; }
+
+@media only screen and (max-width: 640px) { #container .pic-wrap.half-pic .pic { width: 100%; }
+  #container .pic-wrap.half-pic .pic:first-child { margin-right: 0; }
+  #container .pic-wrap.quad-pic .pic { margin-bottom: 20px; } 
+}

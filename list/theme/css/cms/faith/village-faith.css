@@ -1,0 +1,28 @@
+
+.wrap-bg {background-image: url(/cms/imgs/faith/bg/bg-village-faith.jpg);}
+
+.sort-card-gride-wrap {max-width: 1460px; padding: 130px 30px 60px; margin: 0 auto; position: relative;}
+.sort-card-gride-wrap:after {content: ""; display: block; clear: both;}
+.sort-card-gride-wrap .sort-wrap {width: 520px; border: 1px solid rgba(255, 255, 255, .2); background: rgba(0,0,0,.3); border-radius: 4px; overflow: hidden; padding: 35px 40px 0; position: fixed; top: 130px; }
+.sort-card-gride-wrap .card-gride-wrap {float: right; width: 100%; max-width: 100%; padding: 0; padding-left: 540px;}
+.sort-card-gride-wrap .card-gride-wrap .card-grid {width: 100%;}
+
+.type-tab-menu .pc-tab {max-width: 390px; margin: 0 auto;}
+.type-tab-menu button {margin-bottom: 10px; background: rgba(255, 255, 255, .15); border-color: rgba(255, 255, 255, .1);}
+.type-tab-menu button:nth-child(4) {margin-right: 0;}
+.card-gride-wrap .card {width: 246px;}
+.card-gride-wrap .card-thumb {height: 170px;}
+.card-gride-wrap .card-summary { white-space: normal !important;}
+
+.local-map {background: url(/cms/imgs/faith/bg/bg-village-map.png) no-repeat center top; background-size: 100% auto; position: relative; min-height: 587px;}
+.local-map:before {content: ""; display: block; position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 18px; background: url(/cms/imgs/faith/bg/bg-village-map-line.png) no-repeat;}
+
+@media only screen and (max-width: 640px) {
+    .sort-card-gride-wrap {padding: 130px 25px 80px;}
+    .sort-card-gride-wrap .sort-wrap {float: none; width: 100%; background: transparent; border: none; position: static; padding: 0;}
+    .sort-card-gride-wrap .card-gride-wrap {width: 100%; padding: 0; float: none; }
+
+    .card-gride-wrap .card {width: 256px;}
+
+    .local-map {display: none;}
+}

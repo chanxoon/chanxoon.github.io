@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no" />
+<title>HeyID - 알림함</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/">
+<link href="./css/common.css" rel="stylesheet">
+<link href="./css/swiper.min.css" rel="stylesheet">
+<link href="./css/default.css" rel="stylesheet">
+
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="./js/dragula.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/default.js"></script>    
+</head>
+<body>
+
+<div class="wrap notified">
+    <!-- nav -->
+    <nav id="nav">
+        <button type="button" class="back-btn" onclick="history.back()">뒤로가기</button>
+    </nav>
+    
+    <!-- con -->
+    <div id="contents">
+        <div class="inner">
+            <div class="tit-box">
+                <h2>알림함</h2>
+            </div>
+
+            <div class="con-box">
+                <div class="total">
+                    <span class="total-count">12개</span> 중 
+                    <span class="count">2개</span>
+                    <span>읽지않음</span>
+                </div>
+
+                <div class="list-box" id="notified-listArea">
+                    <div class="no-result" style="display:none;">
+                        <p><img src="./images/icon/icon-notified.svg" alt="알림"></p>
+                        <p>새로운 알림이 없습니다.</p>
+                    </div>
+                    <div class="list notice">
+                        <a href="./notified-view.html">
+                            <div class="icon"></div>
+                            <div class="title">
+                                <p class="typ">[공지]</p> 
+                                <p class="tit ellipsis">HeyID APP 2023.04.01 일시점검 및 서비스 HeyID APP 2023.04.01 일시점검 및 서비스</p>
+                                <p class="dat">2023-01-30 05:08:29</p>
+                                <p class="new"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list notice">
+                        <a href="./notified-view.html">
+                            <div class="icon"></div>
+                            <div class="title">
+                                <p class="typ">[공지]</p> 
+                                <p class="tit ellipsis">HeyID APP 2023.04.01 일시점검 및 서비스</p>
+                                <p class="dat">2023-01-30 05:08:29</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list event">
+                        <a href="./notified-view.html">
+                            <div class="icon"></div>
+                            <div class="title">
+                                <p class="typ">[이벤트]</p> 
+                                <p class="tit ellipsis">HeyID APP 사용자 대상 경품 이벤트 안내</p>
+                                <p class="dat">2023-01-30 05:08:29</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list survey">
+                        <a href="./notified-survey-view.html">
+                            <div class="icon"></div>
+                            <div class="title">
+                                <p class="typ">[설문조사]</p> 
+                                <p class="tit ellipsis">HeyID APP 이용실태 및 현황 파악 설문조사</p>
+                                <p class="dat">2023-01-30 05:08:29</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

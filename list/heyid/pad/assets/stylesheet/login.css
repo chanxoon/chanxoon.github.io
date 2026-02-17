@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+html, body {height:100%;}
+body {overflow:hidden;background-color:#153d77;}
+
+/* layout */
+#app {display:flex;flex-direction:column;justify-content:space-between;position:relative;min-width:768px;height:100%;z-index:10;}
+
+header,
+footer {position:relative;text-align:left;}
+
+header {}
+header div.inner {position:absolute;left:55px;top:44px;}
+header::after {clear:both;content:'';display:block;}
+header span.logo {float:left;}
+header span.logo img {vertical-align:top;}
+header span.use {float:left;margin-left:30px;font-size:16px;line-height:18px;}
+
+footer {}
+footer p.copyright {position:absolute;left:44px;bottom:44px;font-size:12px;color:#fff;opacity:0.1;}
+
+/* svg style */
+.diagonal-line {width:100%;height:100%;}
+
+/* content */
+div.content {flex:1;display:flex;flex-direction:column;justify-content:space-around;text-align:left;}
+
+div.intro {position:absolute;width:300px;padding:0 0px 0 44px;bottom: 55%;}
+div.intro div.inner {position:relative;font-size:50px;line-height:60px;z-index:10;}
+div.intro div.inner p {display:flex;justify-content:space-between;align-items:center;}
+div.intro div.inner p.main span {font-weight:700;color:#75a4e7;}
+div.intro p.greeting {margin-top:5px;font-weight:100;font-size:14px;letter-spacing: 0.8px;}
+div.intro div.line1 {position:absolute;left:100%;bottom:100%;}
+div.intro div.line2 {position:absolute;left:0;top:100%;width:93px;height:93px;margin-top:30px;}
+
+div.login {width:220px;padding:0 44px;text-align:left;position: absolute;bottom: 15%;}
+div.login strong {font-size:14px;font-weight: normal;}
+div.login div.user-data {margin-top:10px;}
+div.login div.user-data input[type=text],
+div.login div.user-data input[type=password],
+div.login div.user-data input[type=submit] {box-sizing:border-box;width:100%;height:35px;padding:0;border-radius:5px;}
+div.login div.user-data input[type=text],
+div.login div.user-data input[type=password] {padding:0 15px;border:1px solid #e4e8ea;font-size:12px;color:#777;background-repeat:no-repeat;background-position:15px 50%;}
+div.login div.user-data input[type=submit] {border:1px solid #3b7ddd;font-size:18px;background-color:#3b7ddd;}
+div.login div.user-data input[type=text] {background-image:url('../../images/login/bg_placeholder_id.png');background-size: 60%;}
+div.login div.user-data input[type=password] {background-image:url('../../images/login/bg_placeholder_password.png');}
+div.login div.user-data input.in {background-image:none;}
+div.login div.user-data div.user-passowrd,
+div.login div.user-data div.submit {margin-top:5px;}
+div.login div.user-data div.submit a {display:block;width:100%;height:40px;border-radius:5px;font-size:14px;line-height:36px;text-align:center;color:#fff;background-color:#3b7ddd;}
+div.login div.user-data div.remember-id {margin-top:12px;}
+div.login div.user-data div.remember-id input[type=checkbox] {margin:0;vertical-align:middle;}
+div.login div.user-data div.remember-id label {margin-left:8px;font-size:12px;}
+
+/********** 공통 팝업 **********/
+.layer-pop {position: fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index: 999;}
+.layer-pop .inner {background:#fff;border-radius:8px;padding:0px 0rem;width:680px;height: 430px;position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);}
+
+.entry-layer .inner {width:500px;height: 400px;padding:30px 40px;box-sizing: border-box;}
+.entry-layer .tit-box {border-bottom:2px solid #193660;text-align: left;padding-bottom:10px;}
+.entry-layer .tit-box h2 {color:#3e4676;font-size:24px;margin-bottom:25px;font-weight: 500;}
+.entry-layer .tit-box p {color:#3e4676;font-size:14px;font-weight: 400;}
+.entry-layer .con-box {width:100%;height:203px;overflow: auto;border-bottom:1px solid #eee;}
+.entry-layer .con-box .radio-box label {display:block;width:100%;height:40px;line-height: 40px;color:#3e4676;text-align: left;font-size:13px;font-weight: 400;border-bottom:1px solid #eee;}
+.entry-layer .con-box .radio-box label input {width:18px;height:18px;margin:0px 5px 0px 10px;vertical-align: middle;}
+.entry-layer .con-box .radio-box label.on {background:#e9ecef;font-weight: 700;}
+.entry-layer .btn-box {margin-top:30px;}
+.entry-layer .btn-box button {border:0;outline:0;color:#fff;font-size:14px;background:#153d77;width:100px;height:34px;line-height: 30px;border-radius: 4px;}
+
+
+

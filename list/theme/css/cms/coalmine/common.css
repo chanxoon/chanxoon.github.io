@@ -1,0 +1,108 @@
+/**********************
+        main
+**********************/
+.main-menu ul li.active a:before {background: #08c0d3;}
+
+
+/**********************
+    menu
+**********************/
+.header-visual .page-header h3 { color: #08c0d3; }
+.nav-wrap .gnb ul li.active a span{ border-bottom-color: #08c0d3;}
+.nav-wrap .gnb ul li.active a { color: #08c0d3; }
+.nav-wrap .gnb ul li.active a:before { background-color: #08c0d3; }
+a.btn-detail-link:visited { color: #08c0d3; }
+
+
+/**********************
+        object
+**********************/
+/* page title */
+.page-heading .title {color: #08c0d3;}
+
+/* sub nav */
+.themes-sub-depth-nav li button:after {background: #08c0d3;}
+.themes-sub-depth-nav li a:after {background: #08c0d3;}
+
+/* tab button */
+.type-tab-menu button.on {border-color: #08c0d3; background: #08c0d3;}
+.type-tab-menu button:hover,
+.type-tab-menu button:focus {border-color: #08c0d3;}
+
+/* 자세히보기 button */
+.btn-detail-link {color: #08c0d3; border-color: #08c0d3;}
+.btn-detail-link:hover {background: #08c0d3;}
+
+/* card visual list */
+.card-visual-list .card-box a:hover:after {border-color: #08c0d3;}
+
+
+
+
+/**********************
+    page-title-cover
+**********************/
+.page-title-cover .page-header .page-title strong {color: #08c0d3;}
+
+
+
+
+/* *********************
+        chapter
+********************* */
+.chapter-header .chapter-title {color: #08c0d3;}
+
+.sub-chapter .sub-count {color: #08c0d3;}
+
+
+
+
+/**********************
+    page-timeline
+**********************/
+.timeline-title {color: #08c0d3;}
+
+.timeline-point:before {background: #08c0d3;}
+
+.timeline .timeline-block .block-bullet {border-color: #08c0d3;}
+
+
+
+
+/**********************
+    slide-list-wrap
+**********************/
+.slide-list-box .swiper-slide.selected-list .thumb-img:after {border-color: #08c0d3;}
+.slide-list-box .swiper-slide.selected-list .data-title {color: #08c0d3;}
+
+
+
+
+/* ********************* *
+    card-gride-wrap
+* ********************** */
+.card-gride-wrap .card a:hover ,
+.card-gride-wrap .card a:focus {border-color: #08c0d3;}
+
+
+
+
+/**********************
+    card-con-list
+**********************/
+.card-con-box .con-list.active a:after {border-color: #08c0d3;}
+
+
+
+
+/**********************
+    full-slide-page
+**********************/
+.full-slide-page .slide-step li.on {color: #08c0d3;}
+.full-slide-page .slide-step li.on button:before {background: #08c0d3;}
+
+.full-slide-page .text-wrap .subheading {color: #08c0d3;}
+
+@media (max-width:640px) {
+    .full-slide-page .slide-step-wrap button.on {color: #08c0d3;}
+}

@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+#wrap {text-align: center;}
+
+/* header no change */
+/*#header.header-change {background: transparent; border-bottom: 1px solid rgba(255,255,255,.1);}*/
+/*#header.header-change .gnb ul li a{color: #fff;}*/
+#header.header-change .gnb ul li.active a{color: #e7b200;}
+#header.header-change #search {background-image: url(/cms/imgs/common/icon/icon-search.png);}
+#header.header-change #menu {background-image: url(/cms/imgs/common/icon/icon-menu.png);}
+#header.header-change .heading-logo .logo-portal {background-image: url(/cms/imgs/common/img/logo-kccf-color.svg);}
+#header.header-change .heading-logo .logo-themes {background-image: url(/cms/imgs/ceremonial/logo-ceremonial.svg);}
+.header-change ~ #container .themes-sub-depth-nav {background: rgba(0,0,0,.12);}
+
+
+.page-title-cover {background-image: url(/cms/imgs/ceremonial/bg/bg-ceremony01.jpg); background-position: center top;}
+.load-transition .page-header {top: 32%;}
+
+
+.chapter-header {opacity: 0; position: relative; top: 30px; transition: all .6s ease;}
+.sub-chapter {opacity: 0; position: relative; top: 30px; transition: all .6s ease .3s;}
+.scroll-transition .chapter-header {opacity: 1; top: 0;}
+.scroll-transition .sub-chapter {opacity: 1; top: 0;}
+
+/*****************
+    비주얼 탭
+*****************/
+/* tabs */
+.visual-tabs-wrap {width: 100%; padding: 0 21px; position: absolute; left: 0; top: 510px; z-index: 30; min-width: 1246px; opacity: 0;}
+.visual-tabs {max-width: 1418px; margin: 0 auto;}
+.visual-tabs:after {content: ""; display: block; clear: both;}
+.visual-tabs .tab-box {float: left; width: 16.666%; padding: 0 9px;}
+.visual-tabs .tab-box a {display: block; width: 100%; height: 380px; border-radius: 3px; overflow: hidden; transition: height .3s ease; position: relative;}
+.visual-tabs .tab-box a:after {content: ""; display: block; width: 100%; height: 100%; border: 1px solid rgba(238,238,238,.15); position: absolute; top: 0; right: 0; bottom: 0; left: 0; box-sizing: border-box; transition: border .3s ease; background-position: center 36.5%; background-repeat: no-repeat;}
+.visual-tabs .tab-box img {height: 100%; width: auto; min-width: 220px; display: block; transition: filter, top .3s ease;}
+.visual-tabs .tab-box .tab-name {position: absolute; bottom: 35px; width: 100%; text-align: center; color: #fff; transition: opacity .3s ease; font-size: 1.833rem;}
+.visual-tabs .tab-box .tab-name-min {opacity: 0;}
+.visual-tabs .tab-box .source-origin {opacity: .6;}
+.visual-tabs-wrap .swiper-button-next,
+.visual-tabs-wrap .swiper-button-prev {width: 33px; height: 63px; background-size: 33px 63px; top: 50%; margin-top: -31px; padding: 40px 28px; border-radius: 3px; background-color: rgba(0,0,0,.6);}
+.visual-tabs-wrap .swiper-button-prev {background-image: url(/cms/imgs/common/btn/btn-swiper-left.png); left: 0;}
+.visual-tabs-wrap .swiper-button-next {background-image: url(/cms/imgs/common/btn/btn-swiper-right.png); right: 0;}
+
+/* hover effect */
+.visual-tabs .tab-box a:hover:after {border: 3px solid #ffc600; background-image: url(/cms/imgs/common/bg/bg-card-more.png);}
+.visual-tabs-wrap.normal .tab-box.gray a img {filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); filter:gray; -webkit-filter:grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%);}
+.visual-tabs-wrap.normal .tab-box.gray a .tab-name {opacity: .6;}
+
+/* tab fixed */
+.visual-tabs-wrap.fixed {position: fixed; top: 0 !important; padding-top: 110px; padding-bottom: 30px; overflow: hidden; transition: background-image .3s ease;}
+.visual-tabs-wrap.fixed.bg {background-image: url(/cms/imgs/ceremonial/bg/bg-ceremony01.jpg); background-size: cover; background-position: center top;}
+.visual-tabs-wrap.fixed .tab-box a {height: 100px;}
+.visual-tabs-wrap.fixed .tab-box .tab-name {display: none;}
+.visual-tabs-wrap.fixed .tab-box .tab-name-min {color: #fff; font-size: 1.5rem; margin-top: 4px; opacity: 1;}
+.visual-tabs-wrap.fixed .tab-box a img {width: 100%; height: auto; position: absolute; top: 50%; transform: translateY(-50%);}
+.visual-tabs-wrap.fixed .tab-box.off a img {filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); filter:gray; -webkit-filter:grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%);}
+.visual-tabs-wrap.fixed .tab-box.off a .tab-name {opacity: .6;}
+
+.visual-tabs-wrap.fixed .tab-box.on a:after {border: 3px solid #ffc600;}
+.visual-tabs-wrap.fixed .tab-box a:hover:after {background: none;}
+.visual-tabs-wrap.fixed .tab-box a:hover img {filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); filter:gray; -webkit-filter:grayscale(0); -moz-filter: grayscale(0); -o-filter: grayscale(0);}
+.visual-tabs-wrap.fixed .tab-box a:hover .tab-name {opacity: 1;}
+.visual-tabs-wrap.fixed .swiper-button-next,
+.visual-tabs-wrap.fixed .swiper-button-prev {margin-top: -2px;}
+
+/* tab contents */
+.tab-con-box {display: none;}
+.tab-con-box.on {display: block;}
+
+
+
+/*  */
+.fixed .visual-tabs .tab-box:nth-child(1) img {top: 113px;}
+.fixed .visual-tabs .tab-box:nth-child(2) img {top: 113px;}
+.fixed .visual-tabs .tab-box:nth-child(3) img {top: 105px;}
+.fixed .visual-tabs .tab-box:nth-child(4) img {top: 111px;}
+.fixed .visual-tabs .tab-box:nth-child(5) img {top: 78px;}
+.fixed .visual-tabs .tab-box:nth-child(6) img {top: 161px;}
+
+.sub-chapter-swiper .swiper-button-next,
+.sub-chapter-swiper .swiper-button-prev {width: 33px; height: 63px; background-size: 33px 63px; top: 50%; margin-top: -31px; opacity: .6;}
+.sub-chapter-swiper .swiper-button-prev {background-image: url(/cms/imgs/common/btn/btn-swiper-left.png); left: 50px;}
+.sub-chapter-swiper .swiper-button-next {background-image: url(/cms/imgs/common/btn/btn-swiper-right.png); right: 50px;}
+.sub-chapter-swiper .swiper-button-next.swiper-button-disabled,
+.sub-chapter-swiper .swiper-button-prev.swiper-button-disabled {opacity: 0;}
+
+.con-chapter .by-region-wrap {background: url(/cms/imgs/ceremonial/bg/bg-life-birth-chapter03.png) no-repeat center; text-align: left; max-width: 1400px; padding: 0 50px; margin: 0 auto;}
+.con-chapter .by-region-wrap .btn-detail-link {margin: 12px 0 0;}
+.con-chapter .by-region-wrap:after {content: ""; display: block; clear: both;}
+.con-chapter .by-region-wrap .by-region {max-width: 340px;}
+.con-chapter .by-region-wrap .left {float: left;}
+.con-chapter .by-region-wrap .right {float: right;}
+.con-chapter .by-region-wrap .region-box {margin-top: 50px;}
+.con-chapter .by-region-wrap .region-box:first-child {margin-top: 0;}
+.con-chapter .by-region-wrap .title {font-size: 1.667rem;}
+.con-chapter .by-region-wrap .summary {color: #666;}
+
+/* 출생 */
+.birth .chapter02 {background: #f9f7f1;}
+.birth .chapter02 .chapter-text span {color: #999;}
+.birth .chapter02 .data-table-wrap {max-width: 1400px; padding: 0 30px; margin: 0 auto; position: relative;}
+.birth .chapter02 .data-table-wrap .source-origin {color: #555; bottom: -31px; padding-right: 30px; text-align: right; font-size: 1.167rem;}
+.birth .chapter02 .data-table {border-top: 2px solid #000; color: #666; width: 100%; font-weight: 500; font-size: 1.417rem;}
+.birth .chapter02 .data-table ul {display: table; table-layout: fixed; width: 100%; box-sizing: border-box;}
+.birth .chapter02 .data-table li {display: table-cell; border-right: 1px solid #858a8b; box-sizing: border-box; height: 43px; width: 7.143%; vertical-align: middle;}
+.birth .chapter02 .data-table li:last-child {border-right: none !important;}
+.birth .chapter02 .data-table .first-col {width: 80px;}
+.birth .chapter02 .data-table .data-thead {position: relative;}
+.birth .chapter02 .data-table .data-thead ul {padding-left: 80px; background: #efede8;}
+.birth .chapter02 .data-table .years .first-col {position: absolute; width: 80px; height: 100%; left: 0; top: 0; border-bottom: 1px solid #ddd; background: url(/cms/imgs/ceremonial/img/img-life-data-table.png) no-repeat center; overflow: hidden; text-indent: -9999px; font-size: 0;}
+.birth .chapter02 .data-table .years li {width: 18%;}
+.birth .chapter02 .data-table .years li span {color: #999; font-size: 1.25rem; font-weight: 400;}
+.birth .chapter02 .data-table .gender li {border-right: 1px solid #ddd; background: #aad7f6 url(/cms/imgs/ceremonial/icon/icon-man.svg) no-repeat center; border-top: 1px solid #858a8b; border-bottom: 1px solid #ddd; font-size: 0; text-indent: -999px; overflow: hidden; background-size: 17px auto;}
+.birth .chapter02 .data-table .gender li:nth-child(2n) {border-right: 1px solid #858a8b; background: #f3a1b7 url(/cms/imgs/ceremonial/icon/icon-woman.svg) no-repeat center; background-size: 14px auto;}
+.birth .chapter02 .data-table .data-tbody ul {position: relative; background: #fff; border-bottom: 1px solid #ddd;}
+.birth .chapter02 .data-table .data-tbody ul:nth-child(2n) {background: #f9f7f1;}
+.birth .chapter02 .data-table .data-tbody .first-col {color: #ff6000;}
+.birth .chapter02 .data-table .data-tbody li {height: 81px;}
+.birth .chapter02 .data-table .data-tbody li {border-right: 1px solid #858a8b;}
+.birth .chapter02 .data-table .data-tbody li:nth-child(2n) {border-right: 1px solid #ddd;}
+.birth .chapter02 .data-table .data-tbody li span {display: block; color: #e47f9f;}
+.birth .chapter02 .data-table .data-tbody li:nth-child(2n) span {color: #2f88a8;}
+.birth .chapter02 .data-table .data-tbody ul:hover:after {content: ""; display: block; position: absolute; width: 100%; height: 100%; border: 3px solid #ffc600; left: 0; top: 0; box-sizing: border-box; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.2); z-index: 5;}
+
+.birth .chapter04 {background: url(/cms/imgs/ceremonial/bg/bg-life-birth-chapter04.png) no-repeat center; background-size: cover;}
+.birth .chapter04 > .source-origin {color: #999;}
+.birth .chapter04 .chapter-header .btn-detail-link {margin-bottom: 0;}
+.birth .chapter04 .sub-chapter-swiper {max-width: 1400px; margin: 0 auto; position: relative; padding-bottom: 42px;}
+.birth .chapter04 .swiper-container {width: 1060px;}
+.birth .chapter04 .swiper-button-next,
+.birth .chapter04 .swiper-button-prev {width: 33px; height: 63px; background-size: 33px 63px; top: 320px; opacity: .6;}
+.birth .chapter04 .swiper-button-prev {background-image: url(/cms/imgs/common/btn/btn-swiper-left-bk.png); left: 0;}
+.birth .chapter04 .swiper-button-next {background-image: url(/cms/imgs/common/btn/btn-swiper-right-bk.png); right: 0;}
+.birth .chapter04 .swiper-button-next.swiper-button-disabled,
+.birth .chapter04 .swiper-button-prev.swiper-button-disabled {opacity: 0;}
+.birth .chapter04 .swiper-pagination {width: 100%; left: 0; right: 0;}
+.birth .chapter04 .swiper-pagination-bullet {width: 13px; height: 13px; border-radius: 7px; opacity: .5; background: #fff; margin-right: 3px;}
+.birth .chapter04 .swiper-pagination-bullet-active {width: 39px; background: #ffc600; opacity: 1;}
+.birth .chapter04 .swiper-slide {padding-bottom: 30px; height: 534px; opacity: 0; transition: opacity .5s ease;}
+.birth .chapter04 .swiper-slide-active {opacity: 1;}
+.birth .chapter04 .con-box:after {content: ""; display: block; clear: both;}
+.birth .chapter04 .dress .box {width: calc(50% - 10px); float: left; border: 1px solid #ccc; background: rgba(0,0,0,.5); padding: 25px 30px 21px; border-radius: 2px;}
+.birth .chapter04 .dress .box .title {font-size: 2.167rem; color: #ffc600; margin-bottom: 5px; font-weight: 500;}
+.birth .chapter04 .dress .box .summary {color: #fff; color: #fff; font-size: 1.25rem; line-height: 1.4; font-weight: 300;}
+.birth .chapter04 .dress .box:last-child {float: right;}
+.birth .chapter04 .food .con-box {padding-top: 20px;}
+.birth .chapter04 .food .box {float: left; width: 33.333%;}
+.birth .chapter04 .food .box img {border-radius: 2px; overflow: hidden; border: 1px solid #ccc;}
+.birth .chapter04 .food .box .title {font-size: 2.167rem; font-weight: 500; margin: 6px auto 15px; color: #000;}
+.birth .chapter04 .food .box .summary {max-width: 300px; font-size: 1.25rem; line-height: 1.4; font-weight: 300; margin: 0 auto;}
+.birth .chapter04 .stuff .box {border-radius: 2px; border: 1px  solid #ddd; overflow: hidden; width: calc(50% - 10px); float: left;}
+.birth .chapter04 .stuff .box img {display: block;}
+.birth .chapter04 .stuff .text {float: right; text-align: left; background: rgba(0,0,0,.5); color: #fff; padding: 10px 30px 21px;}
+.birth .chapter04 .stuff .text dl {border-bottom: 1px dashed rgba(255,255,255,.2)}
+.birth .chapter04 .stuff .text dl:after {content: ""; display: block; clear: both;}
+.birth .chapter04 .stuff .text dt {display: block; float: left; width: 130px; font-weight: 500; font-size: 1.667rem; line-height: 4rem;}
+.birth .chapter04 .stuff .text dd {display: block; float: left; color: #ccc; font-size: 1.25rem; line-height: 4rem;}
+.birth .chapter04 .stuff .text p {font-size: 1.25rem; color: #ccc; line-height: 1.4;}
+
+/* 관례 */
+.adult .chapter02 {background: url(/cms/imgs/ceremonial/bg/bg-life-adult-chapter02.png) no-repeat center; background-size: cover;}
+.adult .chapter02 .pic-wrap {max-width: 980px;}
+.adult .chapter02 .pic-cover {border: none;}
+.adult .chapter03 .sub-chapter {background: url(/cms/imgs/ceremonial/bg/bg-life-adult-chapter03.png) no-repeat center top; background-size: 100% auto; padding: 170px 21px 0;}
+.adult .chapter03 .box-row-wrap {max-width: 1400px; margin: 0 auto;}
+.adult .chapter03 .box-row-wrap:after {content: ""; display: block; clear: both;}
+.adult .chapter03 .box-wrapper {width: 25%; padding: 0 9px; float: left;}
+.adult .chapter03 .box {background: #fff; padding: 30px; border-radius: 2px; position: relative;}
+.adult .chapter03 .box:after {content: ""; display: block; position: absolute; width: 100%; height: 100%; left: 0; top: 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 2px;}
+.adult .chapter03 .box:hover:after {border: 2px solid #ffc600;}
+.adult .chapter03 .box .btn-detail-link {position: relative; z-index: 2;}
+.adult .chapter03 .box .title {min-height: 95px; font-size: 2.167rem; color: #333; line-height: 1.19; font-weight: 500; margin-bottom: 18px;}
+.adult .chapter03 .box .title span {font-size: 1.833rem; color: #666;}
+.adult .chapter03 .box .summary {font-size: 1.25rem; line-height: 1.5; height: 15em; overflow: hidden; margin-bottom: 31px;}
+
+/* 혼례 */
+.marriage .chapter01 {padding-bottom: 0;}
+
+.marriage .sub-chapter-swiper .swiper-slide {height: 540px;}
+.marriage .sub-chapter-swiper .con-box {height: 100%;}
+.marriage .sub-chapter-swiper .con-box:after {content: ""; display: block; clear: both;}
+.marriage .sub-chapter-swiper .box {float: left; width: 50%; height: 100%; position: relative; overflow: hidden;}
+.marriage .sub-chapter-swiper .image img {min-width: 100%; min-height: 100%; position: absolute; left: 50%; transform: translateX(-50%);}
+.marriage .sub-chapter-swiper .image:after {content: ""; position: absolute; width: 30%; height: 100%; left: 0; top: 0; background: url(/cms/imgs/ceremonial/bg/bg-life-slidedimd-left.png) no-repeat left center; background-size: auto 100%;}
+.marriage .sub-chapter-swiper .text {background: url(/cms/imgs/ceremonial/bg/bg-life-slide-text.png); text-align: left; padding: 150px 0 0 70px; color: #ccc; background-size: cover;}
+.marriage .sub-chapter-swiper .times01 .text {padding-top: 144px;}
+.marriage .sub-chapter-swiper .times02 .text {padding-top: 144px;}
+.marriage .sub-chapter-swiper .times03 .text {padding-top: 77px;}
+.marriage .sub-chapter-swiper .text:after {content: ""; position: absolute; width: 30%; height: 100%; right: 0; top: 0; background: url(/cms/imgs/ceremonial/bg/bg-life-slidedimd-right.png) no-repeat right center; background-size: auto 100%;}
+.marriage .sub-chapter-swiper .text .sub-count {opacity: .2; color: #fff;}
+.marriage .sub-chapter-swiper .text .sub-title {margin-bottom: 15px;}
+.marriage .sub-chapter-swiper .text .sub-title strong {color: #fff;}
+.marriage .sub-chapter-swiper .text .sub-text {margin: 0; max-width: 630px;}
+.marriage .sub-chapter-swiper .text .btn-detail-link {margin: 36px 0 30px;}
+.marriage .sub-chapter-swiper .text dl {max-width: 630px; margin-bottom: 14px;}
+.marriage .sub-chapter-swiper .text dt {font-weight: 500; color: #fff;}
+
+.marriage .chapter02 {padding-bottom: 0;}
+.marriage .chapter02 .sub-chapter {padding: 80px 15px; background: url(/cms/imgs/ceremonial/bg/bg-life-marriage-chapter02.png) no-repeat center; background-size: cover;}
+.marriage .chapter02 .box-row-wrap {max-width: 1170px; margin: 0 auto;}
+.marriage .chapter02 .box-row-wrap:after {content: ""; display: block; clear: both;}
+.marriage .chapter02 .box-wrapper {width: 33.333%; padding: 0 15px; float: left;}
+.marriage .chapter02 .box {background: rgba(0,0,0,.2); padding: 34px 30px 30px; border-radius: 2px; position: relative;}
+.marriage .chapter02 .box:after {content: ""; display: block; position: absolute; width: 100%; height: 100%; left: 0; top: 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 2px;}
+.marriage .chapter02 .box:hover:after {border: 2px solid #ffc600;}
+.marriage .chapter02 .box .btn-detail-link {position: relative; z-index: 2;}
+.marriage .chapter02 .box .title {font-size: 2.167rem; color: #fff; line-height: 1.19; font-weight: 500; margin-bottom: 24px;}
+.marriage .chapter02 .box .title span {font-size: 1.333rem; color: #a7a7a7;}
+.marriage .chapter02 .box .summary {font-size: 1.25rem; line-height: 1.5; height: 9em; overflow: hidden; margin-bottom: 24px; color: #dcdcdc;}
+.marriage .chapter02 .source-origin {text-align: right; opacity: .5;}
+
+.marriage .chapter03 .pic-wrap {margin-top: 25px;}
+.marriage .chapter03 .half-pic .pic {width: calc(50% - 8px);}
+.marriage .chapter03 .half-pic .pic:first-child {margin-right: 16px;}
+.marriage .chapter03 .sub-chapter02 .half-pic .pic {width: calc(50% - 5px);}
+.marriage .chapter03 .sub-chapter02 .half-pic .pic:first-child {margin-right: 10px;}
+.marriage .chapter03 .sub-chapter02 .row {max-width: 930px;}
+.marriage .chapter03 .sub-chapter02 .row:first-child {margin: 0 auto 10px 0;}
+.marriage .chapter03 .sub-chapter02 .row:last-child {margin: 0 0 0 auto;}
+
+/* 환갑/회혼례 */
+.birth-60 .chapter01 .con-box {max-width: 1460px; padding: 0 30px; margin: 0 auto;}
+.birth-60 .chapter01 .con-box:after {content: ""; display: block; clear: both;}
+.birth-60 .chapter01 .con-box .box:first-child {margin-right: 45px;}
+.birth-60 .chapter01 .con-box .box {width: calc(50% - 22.5px); border: 1px solid #ccc; float: left;}
+.birth-60 .chapter01 .con-box .box img {display: block; border-bottom: 1px solid #ccc; width: 100%;}
+.birth-60 .chapter01 .con-box .box dl {padding: 22px 40px 24px;}
+.birth-60 .chapter01 .con-box .box dl dt {font-size: 2.167rem; margin-bottom: 9px; font-weight: 500;}
+.birth-60 .chapter01 .con-box .box dl dd {font-size: 1.25rem; line-height: 1.5; min-height: 7.5em;}
+
+.birth-60 .chapter01 .age-list {text-align: left; max-width: 1320px; padding: 0 30px;  margin: 0 auto;}
+.birth-60 .chapter01 .age-list:after {content: ""; display: block; clear: both;}
+.birth-60 .chapter01 .age-list li {float: left; width: 33.333%; padding-right: 20px; box-sizing: border-box; display: table; font-size: 1.5rem; margin-bottom: 20px;}
+.birth-60 .chapter01 .age-list li:nth-child(3n) {padding-right: 0;}
+.birth-60 .chapter01 .age-list li .age-num {display: table-cell; width: 84px; color: #fff;}
+.birth-60 .chapter01 .age-list li .age-num p {text-align: center; width: 100%; height: 84px; line-height: 84px; background: #999; border-radius: 100%;}
+.birth-60 .chapter01 .age-list li .age-explanation {display: table-cell; padding-left: 20px; vertical-align: middle; letter-spacing: -.05em; position: relative; z-index: 10;}
+.birth-60 .chapter01 .age-list li .age-explanation .tit {color: #e7b200;}
+.birth-60 .chapter01 .age-list li .age-explanation .txt {color: #666; font-size: 1.25rem; position: relative;}
+.birth-60 .chapter01 .age-list li .age-explanation .btn-more {border-radius: 100%; width: 20px; height: 20px; border: 1px solid #e7b200; background: #fff; font-size: 15px; color: #e7b200; line-height: 20px;}
+.birth-60 .chapter01 .age-list li .age-explanation .btn-more:hover,
+.birth-60 .chapter01 .age-list li .age-explanation .btn-more:focus {outline: none; background: #e7b200; color:#fff;}
+.birth-60 .chapter01 .age-list li .age-explanation .btn-more:hover + .add-info,
+.birth-60 .chapter01 .age-list li .age-explanation .btn-more:focus + .add-info {display: block;}
+.birth-60 .chapter01 .age-list li .age-explanation .add-info {display: none; text-align: center; border: 2px solid #e7b200; border-radius: 3px; color: #666; font-size: 1.083rem; background: #fff;-moz-box-shadow: 5px 5px 15px 0 rgba(0,0,0,.1); -webkit-box-shadow: 5px 5px 15px 0 rgba(0,0,0,.1); box-shadow: 5px 5px 15px 0 rgba(0,0,0,.1); min-width: 338px; padding: 20px; position: absolute; bottom: -131px;}
+.birth-60 .chapter01 .age-list li .age-explanation .add-info em {font-size: 1.333rem; color: #333; font-weight: 500;}
+
+.birth-60 .chapter02 {background: url(/cms/imgs/ceremonial/bg/bg-life-birth-60-chapter02.png); background-size: cover;}
+.birth-60 .chapter02 .con-box {margin: 0 auto ; max-width: 1126px; background: #fff; border: 1px solid #ccc;}
+.birth-60 .chapter02 .con-box:after {content: ""; display: block; clear: both;}
+.birth-60 .chapter02 .con-box .image {width: 397px; float: left; border-left: 1px solid #ccc; position: relative;}
+.birth-60 .chapter02 .con-box .image img {min-width: 100%; min-height: 100%; display: block;}
+.birth-60 .chapter02 .con-box .text {float: left; width: calc(100% - 397px); text-align: left; padding: 45px;}
+.birth-60 .chapter02 .con-box .text .sub-title {line-height: 1.26;max-width: 590px; margin-left: auto; margin-right: auto; color: #333;}
+.birth-60 .chapter02 .con-box .text .sub-text {max-width: 590px; margin-left: auto; margin-right: auto;}
+.birth-60 .chapter02 .con-box .text .btn-detail-link {margin: 50px 20px 0;}
+
+.birth-60 .chapter03 {background: #4c4c4c;}
+.birth-60 .chapter03 .chapter-header .chapter-text {color: #ccc;}
+.birth-60 .chapter03 .con-box {max-width: 1400px; margin: 0 auto 30px; border: 1px solid #ccc; position: relative; height: auto; background: #fff; padding-bottom: 0; background: #8d8d8f;}
+.birth-60 .chapter03 .con-box:after {content: ""; display: block; clear: both;}
+.birth-60 .chapter03 .con-box .image {float: left; width: 676px; height: 100%; position: relative;}
+.birth-60 .chapter03 .con-box .image img {display: block; min-width: 100%; min-height: 100%;}
+.birth-60 .chapter03 .con-box .text {background: #fff; float: left; border-left: 1px solid #ccc; text-align: left; width: calc(100% - 676px); box-sizing: border-box; display: table; min-height: 361px;}
+.birth-60 .chapter03 .con-box .text > div {display: table-cell; vertical-align: middle; height: 360px; padding: 20px 60px;}
+.birth-60 .chapter03 .con-box .text .sub-title {margin-bottom: 14px;}
+.birth-60 .chapter03 .con-box .text .sub-title span {color: #999; font-size: 1.333rem;}
+.birth-60 .chapter03 .con-box .text .btn-detail-link {margin-left: 0;}
+.birth-60 .chapter03 .con-box:hover {-moz-box-shadow: 3px 3px 10px rgba(0,0,0,.2); -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,.2); box-shadow: 3px 3px 10px rgba(0,0,0,.2);}
+
+/* 상장례 */
+.funeral .sub-chapter-swiper .swiper-slide {height: 540px;}
+.funeral .sub-chapter-swiper .con-box {height: 100%;}
+.funeral .sub-chapter-swiper .con-box:after {content: ""; display: block; clear: both;}
+.funeral .sub-chapter-swiper .box {float: left; width: 50%; height: 100%; position: relative; overflow: hidden;}
+.funeral .sub-chapter-swiper .image img {min-width: 100%; min-height: 100%; position: absolute; left: 50%; transform: translateX(-50%);}
+.funeral .sub-chapter-swiper .image:after {content: ""; position: absolute; width: 30%; height: 100%; left: 0; top: 0; background: url(/cms/imgs/ceremonial/bg/bg-life-slidedimd-left.png) no-repeat left center; background-size: auto 100%;}
+.funeral .sub-chapter-swiper .text {background: url(/cms/imgs/ceremonial/bg/bg-life-slide-text.png); text-align: left; padding: 90px 0 0 70px; color: #ccc; background-size: cover;}
+/* .funeral .sub-chapter-swiper .times01 .text {padding-top: 144px;}
+.funeral .sub-chapter-swiper .times02 .text {padding-top: 144px;}
+.funeral .sub-chapter-swiper .times03 .text {padding-top: 77px;} */
+.funeral .sub-chapter-swiper .text:after {content: ""; position: absolute; width: 30%; height: 100%; right: 0; top: 0; background: url(/cms/imgs/ceremonial/bg/bg-life-slidedimd-right.png) no-repeat right center; background-size: auto 100%;}
+.funeral .sub-chapter-swiper .text .sub-count {opacity: .2; color: #fff;}
+.funeral .sub-chapter-swiper .text .sub-title {margin-bottom: 15px;}
+.funeral .sub-chapter-swiper .text .sub-title strong {color: #fff;}
+.funeral .sub-chapter-swiper .text .sub-text {margin: 0; max-width: 630px;}
+.funeral .sub-chapter-swiper .text .btn-detail-link {margin: 36px 0 30px;}
+.funeral .sub-chapter-swiper .text dl {max-width: 630px; margin-bottom: 14px;}
+.funeral .sub-chapter-swiper .text dt {font-weight: 500; color: #fff; margin: 11px 0 7px;}
+.funeral .sub-chapter-swiper .text dd {margin-bottom: 2px;}
+.funeral .sub-chapter-swiper .text dd em {display: block; background: rgba(0,0,0,.25); padding: 3px; float: left; line-height: 1;}
+
+.funeral .chapter01 {padding-bottom: 0;}
+.funeral .chapter02 .by-region-wrap {min-height: 630px;}
+
+/* 제례 */
+.ritual .chapter-title em {color: #aaa;}
+
+
+@media only screen and (max-width: 640px) {
+
+    .header-change .main-menu ul li a { color: #242424; }
+
+    /* 공통 */
+    .visual-tabs-wrap {min-width: 0}
+
+
+    /*  */
+    .con-chapter .by-region-wrap {background: none;}
+    .con-chapter .by-region-wrap .by-region {max-width: 100%;}
+    .con-chapter .by-region-wrap .right {margin-top: 50px;}
+
+    .birth .chapter02 .data-table-wrap .source-origin {bottom: -42px;}
+    .birth .chapter02 .data-table-wrap .select-box {position: absolute; right: 30px; width: 460px; box-sizing: border-box; border: none; top: 1px;}
+    .birth .chapter02 .data-table-wrap .select-box label {background: #efede8; font-size: 1.2rem; color: #666; width: 100%; box-sizing: border-box; left: 0; top: 0; padding: 0.55em .5em;}
+    .birth .chapter02 .data-table li {width: 50%; height: 56px;}
+    .birth .chapter02 .data-table .years li {width: 100%;}
+    .birth .chapter02 .data-table .first-col {width: 120px;}
+    .birth .chapter02 .data-table .years .first-col {width: 120px;}
+    .birth .chapter02 .data-table .data-thead ul {padding-left: 120px;}
+    .birth .chapter02 .data-table .data-tbody li {border-right: none;}
+    .birth .chapter02 .data-table li[data-year] {display: none;}
+    .birth .chapter02 .data-table li[data-year="1958"] {display: table-cell;}
+    .birth .chapter04 .swiper-container {width: 100%;}
+    .birth .chapter04 .swiper-slide {height: auto;}
+    .birth .chapter04 .dress .box {width: 100%; margin-bottom: 10px;}
+    .birth .chapter04 .food .box {width: 100%;}
+    .birth .chapter04 .food .box .title {font-size: 28px; margin: 3px auto;}
+    .birth .chapter04 .food .box .summary {max-width: 100%;}
+    .birth .chapter04 .stuff .box {width: 100%;}
+    .birth .chapter04 .stuff .box img {width: 100%;}
+    .birth .chapter04 .stuff .text dt {font-size: 23px; width: 130px; line-height: 3rem;}
+    .birth .chapter04 .stuff .text dd {font-size: 18px; line-height: 3rem;}
+    .birth .chapter04 .stuff .text p {font-size: 18px;}
+
+    .adult .chapter03 .sub-chapter {padding-top: 90px;}
+    .adult .chapter03 .box-wrapper {width: 50%; padding-bottom: 10px;}
+    .adult .chapter03 .box {padding: 25px;}
+    .adult .chapter03 .box .title {font-size: 27px; margin-bottom: 13px;}
+    .adult .chapter03 .box .title span {font-size: 20px;}
+    .adult .chapter03 .box .summary {font-size: 18px;}
+    .adult .chapter03 .btn-detail-link {margin-bottom: 7px; font-size: 1rem;}
+
+    .marriage .chapter01 .sub-chapter {padding: 0;}
+    .marriage .sub-chapter-swiper .swiper-slide {height: 1080px;}
+    .marriage .sub-chapter-swiper .box {height: 490px; float: none; width: 100%;}
+    .marriage .sub-chapter-swiper .image:after {display: none;}
+    .marriage .sub-chapter-swiper .text {text-align: left; padding: 30px 30px 0; height: 590px;}
+    .marriage .sub-chapter-swiper .text:after {display: none;}
+    .marriage .sub-chapter-swiper .times01 .text {padding-top: 30px;}
+    .marriage .sub-chapter-swiper .times02 .text {padding-top: 30px;}
+    .marriage .sub-chapter-swiper .times03 .text {padding-top: 30px;}
+    .marriage .chapter01 .sub-chapter-swiper .swiper-button-prev {top: 33%;}
+    .marriage .chapter01 .sub-chapter-swiper .swiper-button-next {top: 33%;} 
+    .marriage .chapter03 .half-pic .pic:first-child {margin-bottom: 0;}
+    .marriage .chapter02 .box-wrapper {width: 50%; margin-bottom: 22px; float: none; display: inline-block; margin-left: -3px;}
+    .marriage .chapter02 .btn-detail-link {margin-bottom: 11px;}
+
+    .birth-60 .chapter01 .con-box .box:first-child {margin-right: 0;}
+    .birth-60 .chapter01 .con-box .box {width: 100%; margin-bottom: 20px;}
+    .birth-60 .chapter01 .con-box .box dl {height: auto; padding: 25px;}
+    .birth-60 .chapter01 .age-list li {width: 100%;}
+    .birth-60 .chapter01 .age-list li .age-explanation .add-info {bottom: 80px;}
+    .birth-60 .chapter02 .con-box {max-width: 580px; padding: 0;}
+    .birth-60 .chapter02 .con-box .image {width: 100%;}
+    .birth-60 .chapter02 .con-box .image img {width: 100%;}
+    .birth-60 .chapter02 .con-box .text {width: 100%; border-left: none; padding: 35px;}
+    .birth-60 .chapter02 .con-box .text .sub-title br {display: none;}
+    .birth-60 .chapter02 .con-box .text .btn-detail-link {margin-left: 0;}
+    .birth-60 .chapter03 .con-box {padding: 0; max-width: 580px;}
+    .birth-60 .chapter03 .con-box .image {width: 100%; height: auto;}
+    .birth-60 .chapter03 .con-box .image img {width: 100%;}
+    .birth-60 .chapter03 .con-box .text {width: 100%;}
+    .birth-60 .chapter03 .con-box .text > div {padding-top: 40px;}
+
+
+    .funeral .chapter01 .sub-chapter {padding: 0;}
+    .funeral .sub-chapter-swiper .swiper-slide {height: 1080px;}
+    .funeral .sub-chapter-swiper .box {height: 490px; float: none; width: 100%;}
+    .funeral .sub-chapter-swiper .image:after {display: none;}
+    .funeral .sub-chapter-swiper .text {text-align: left; padding: 30px 30px 0; height: 590px;}
+    .funeral .sub-chapter-swiper .text:after {display: none;}
+    .funeral .sub-chapter-swiper .times01 .text {padding-top: 30px;}
+    .funeral .sub-chapter-swiper .times02 .text {padding-top: 30px;}
+    .funeral .sub-chapter-swiper .times03 .text {padding-top: 30px;}
+    .funeral .chapter01 .sub-chapter-swiper .swiper-button-prev {top: 33%;}
+    .funeral .chapter01 .sub-chapter-swiper .swiper-button-next {top: 33%;} 
+}

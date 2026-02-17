@@ -1,0 +1,77 @@
+.wrap-bg {background-image: url("/cms/imgs/righteous-army/bg/bg-last-army.jpg");}
+
+.page-heading {padding-top: 184px;}
+.status-container {position: relative; color: #fff; text-align: center;}
+.status-section {margin: 0 auto 60px; padding: 0 25px; opacity: 0; position: relative; bottom: -30px; transition: all .3s ease;}
+.load-transition .status-section {opacity: 1; bottom: 0;}
+.status-section .count-box .title {width: 247px; height: 2em; background: rgba(0, 0, 0, .2); margin: 0 auto; font-size: 1.5rem; line-height: 2;}
+
+.count-box .count {height: 32px; width: 150px; overflow: hidden; text-indent: -9999px; font-size: 0; background-size: auto 100%; background-position: center; background-repeat: no-repeat; margin: 10px auto 30px;}
+.graph-box {position: relative; margin-left: 33px;}
+.graph-box .graph-range {position: absolute; top: 20px; left: 0; right: 0; bottom: 0; width: 100%; height: 100%;}
+.graph-box .graph-range li {border-bottom: 1px solid rgba(255, 255, 255, .6); height: 34px; position: relative;}
+.graph-box .graph-range li:first-child {height: 1px;}
+.graph-box .graph-range li:nth-child(2n) {border-bottom: 1px solid rgba(255, 255, 255, .3);}
+.graph-box .graph-range li span {position: absolute; display: block; width: 24px; text-align: center; left: -33px; opacity: .4; top: 25px}
+.graph-box .graph-range li:first-child span {top: -8px;}
+.graph-box .data-list-cover {padding: 0 10px; width: 100%; height: 494px; overflow-x: auto;}
+.graph-box .data-list {height: 100%; width: 1195px; }
+.graph-box .data-list:after {content: ""; display: block; clear: both;}
+.graph-box .data-list li {float: left; width: 91px; height: 433px; background: rgba(0, 0, 0, .1); border-left: 1px solid rgba(255, 255, 255, .1); text-align: center; position: relative; margin: 20px 0;}
+.graph-box .data-list li:first-child {border-left: none;}
+.graph-box .data-list li:nth-child(2n) {background: rgba(0, 0, 0, .05);}
+.graph-box .data-list .data-label {position: absolute; bottom: -20px; width: 100%;}
+.graph-box .data-list .data-count {font-size: 22px; margin: 0 auto; position: absolute; bottom: 0; width: 100%;}
+.graph-box .data-list .data-count:before {content:""; display:block; position: absolute; bottom: 0; height: calc(100% - 40px); width: 1px; border-left: 1px dashed #fff; left: 50%; transform: scale(0); transition: all .3s ease; transform-origin: bottom;}
+.graph-box .data-list .data-count span {display:block; width: 83px; height: 83px; position: absolute; top: -43px; left: 3px; box-sizing: border-box; text-indent: -9999px; overflow: hidden; font-size: 0; transform: scale(0); transition: all .3s ease .3s;}
+.graph-box .data-list[data-year="1908"] li:nth-child(1) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-78.png);}
+.graph-box .data-list[data-year="1908"] li:nth-child(2) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-217.png);}
+.graph-box .data-list[data-year="1908"] li:nth-child(3) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-113.png);}
+.graph-box .data-list[data-year="1908"] li:nth-child(4) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-274.png);}
+.graph-box .data-list[data-year="1908"] li:nth-child(5) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-219.png);}
+.graph-box .data-list[data-year="1908"] li:nth-child(6) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-153.png);}
+.graph-box .data-list[data-year="1908"] li:nth-child(7) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-158.png);}
+.graph-box .data-list[data-year="1908"] li:nth-child(8) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-273.png);}
+.graph-box .data-list[data-year="1908"] li:nth-child(9) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-232.png);}
+.graph-box .data-list[data-year="1908"] li:nth-child(10) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-108.png);}
+.graph-box .data-list[data-year="1908"] li:nth-child(11) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-41.png);}
+.graph-box .data-list[data-year="1908"] li:nth-child(12) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-99.png);}
+.graph-box .data-list[data-year="1908"] li:nth-child(13) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1908-11.png);}
+.graph-box .data-list[data-year="1909"] li:nth-child(1) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1909-165.png);}
+.graph-box .data-list[data-year="1909"] li:nth-child(2) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1909-138.png);}
+.graph-box .data-list[data-year="1909"] li:nth-child(3) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1909-66.png);}
+.graph-box .data-list[data-year="1909"] li:nth-child(4) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1909-547.png);}
+.graph-box .data-list[data-year="1909"] li:nth-child(5) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1909-273.png);}
+.graph-box .data-list[data-year="1909"] li:nth-child(6) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1909-61.png);}
+.graph-box .data-list[data-year="1909"] li:nth-child(7) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1909-161.png);}
+.graph-box .data-list[data-year="1909"] li:nth-child(8) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1909-124.png);}
+.graph-box .data-list[data-year="1909"] li:nth-child(9) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1909-111.png);}
+.graph-box .data-list[data-year="1909"] li:nth-child(10) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1909-61.png);}
+.graph-box .data-list[data-year="1909"] li:nth-child(11) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1909-17.png);}
+.graph-box .data-list[data-year="1909"] li:nth-child(12) .data-count span {background-image: url(/cms/imgs/righteous-army/img/img-status-graph1909-14.png);}
+
+.graph-box .data-list.move .data-count:before {transform: scale(1);}
+.graph-box .data-list.move .data-count span {transform: scale(1);}
+
+[data-year="1909"] {display: none;} 
+.btn-tab[data-year="1909"] {display: inline-block;}
+
+.icon-touch {position: absolute; top: 50%; left: 50%; width: 120px; height: 120px; margin-top: -60px; margin-left: -60px;}
+.icon-touch img {width: 100%;}
+
+.section01 {max-width: 1300px;}
+.section01 .count-box .count[data-year="1908"] {background-image: url(/cms/imgs/righteous-army/img/img-statuscount-1976.png);}
+.section01 .count-box .count[data-year="1909"] {background-image: url(/cms/imgs/righteous-army/img/img-statuscount-1738.png);}
+.section02 {max-width: 924px; margin-bottom: 71px;}
+.section02 .count-box .count[data-year="1908"] {background-image: url(/cms/imgs/righteous-army/img/img-statuscount-82767.png);}
+.section02 .count-box .count[data-year="1909"] {background-image: url(/cms/imgs/righteous-army/img/img-statuscount-38593.png);}
+.section02 .map {background: url(/cms/imgs/righteous-army/bg/bg-status-data-map.png)no-repeat; background-size: 100% auto;}
+.section02 .map img {width: 100%;}
+.section02 .source-origin {position: relative; margin-top: 13px;}
+
+@media only screen and (max-width: 640px) {
+    .type-tab-menu button {height: 48px; border-radius: 24px;}
+    .graph-box {margin-left: 50px;}
+    .graph-box .graph-range li span {width: 40px; left: -50px; top: 18px;}
+    .graph-box .graph-range li:first-child span {top: -15px;}
+}

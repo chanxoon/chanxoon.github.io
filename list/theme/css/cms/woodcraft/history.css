@@ -1,0 +1,6 @@
+#wrap {text-align: center;}
+.wrap-bg {background-image: url(/cms/imgs/woodcraft/bg/bg-history.jpg); z-index: 1;}
+
+@media only screen and (max-width: 640px) {
+    
+}

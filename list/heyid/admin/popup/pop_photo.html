@@ -1,0 +1,106 @@
+<div id="popPhoto" class="popLayer">
+    <div class="popWrap">
+        <h4 class="tit02">사진크기 조정 및 등록</h4>
+        <div class="editPhoto">
+            <dl class="originalPhoto">
+                <dt>원본사진</dt>
+                <dd class="userPicBg">
+                    <div class="userPic">   
+                        <div class="userPicImg">                     
+                            <img src="/images/img/img_noImg_dark.jpg" alt="이미지 없음" />
+                        </div>
+                    </div>                        
+                </dd> 
+                <dd class="filebox">    
+                    <label for="file2">사진선택</label> 
+                    <input type='file' id="file2" onchange="readURL(this);" />  
+                    
+                    <div class="btnWrap">
+                        <button type="button" class="btnZoomIn">확대</button>
+                        <button type="button" class="btnZoomOut">축소</button>
+                    </div>                    
+                </dd>
+            </dl>
+            
+            <dl class="modifiedPhoto">
+                <dt>수정사진</dt>
+                <dd class="userPicBg">
+                    <div class="userPic">
+                        <div class="userPicImg">         
+                            <img src="/images/img/img_noImg.jpg" alt="이미지 없음" />
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <div class="notice">
+            <dl>
+                <dt>사용방법</dt>
+                <dd>
+                    <ul>
+                        <li>1. [사진선택]을 클릭하여 PC에서 수정할 사진을 선택합니다.</li>
+                        <li>2. 선택한 사진 위에 마우스 휠을 이용해 사진크기를 조절할 수 있습니다.</li>
+                        <li>3. [+], [-] 버튼을 이용해 사진 크기를 조절할 수 있습니다.</li>
+                        <li>4. 선택한 사진을 마우스 드래그를 이용해 위치를 조절할 수 있습니다.</li>
+                        <li>5. 사진크기 조정이 완료되면 [등록]을 클릭하시면 등록이 완료됩니다. </li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>유의사항</dt>
+                <dd>
+                    <ul>
+                        <li>1. 3개월 이내 촬영한 컬러사진</li>
+                        <li>2. 최소 가로, 세로 350PX 이상</li>
+                        <li>3. 파일형식: jpg, png</li>
+                        <li>4. 사진 상태(빛번짐, 안경 등)에 따라 신청이 허가되지 않을 수 있으므로 사진
+                            상태를 확인하시기 바랍니다.</li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="btnWrap">
+            <button type="submit" class="rectangle bgBlue">등록</button>
+            <button type="reset" class="rectangle bgLightGrey btnCancel">취소</button>
+        </div>
+        <button type="button" class="popClose">닫기</button>
+    </div>
+</div>
+
+<script>
+//사진 등록
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#popPhoto .userPic img')
+                .attr('src', e.target.result);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}        
+//사진 등록 zoom
+var minZoom = 1;
+var maxZoom = 5;
+var $zoomIn = $('.btnZoomIn');
+var $zoomOut = $('.btnZoomOut');
+var $zoomDiv = $('.userPicImg');
+var $zoomVal = $('.userPicImg img');
+$zoomIn.on('click', function(e){
+    zoom(1);
+});
+$zoomOut.on('click', function(e){
+    zoom(-1);
+});
+function zoom(num) {
+    var zoomVal = parseInt($zoomDiv.css('zoom'), 10);
+    zoomVal = zoomVal + num;
+    if (zoomVal < minZoom || zoomVal > maxZoom) {
+        return;
+    }
+    $zoomDiv.css('zoom', zoomVal);
+    $zoomVal.html(zoomVal);
+}
+</script>

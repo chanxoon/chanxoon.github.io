@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@media screen and (max-width: 1509px) { .nav-wrap .main-menu ul { text-align: left; padding-left: 368px; } }
+
+/**********************
+        main
+**********************/
+.main-menu ul li.active a:before { background: #e7b200; }
+
+/**********************
+        object
+**********************/
+/* page title */
+.page-heading .title { color: #e7b200; }
+
+/* sub nav */
+.themes-sub-depth-nav li button:after, .themes-sub-depth-nav li a:after { background: #e7b200; }
+
+/* tab button */
+.type-tab-menu button.on { border-color: #e7b200; background: #e7b200; }
+
+.type-tab-menu button:hover, .type-tab-menu button:focus { border-color: #e7b200; }
+
+/* 자세히보기 button */
+.btn-detail-link { color: #e7b200; border-color: #e7b200; }
+
+.btn-detail-link:hover { background: #e7b200; }
+
+/* card visual list */
+.card-visual-list .card-box a:hover:after { border-color: #e7b200; }
+
+/* 모바일 type-select */
+.btn-mobile-tab { border-color: #e7b200; }
+
+.btn-mobile-tab:before { border-top: 10px solid #e7b200; }
+
+/**********************
+    page-title-cover
+**********************/
+.header-visual .page-header .page-title strong, .chapter-header .chapter-title ,
+.page-title-cover .page-header .page-title strong, .chapter-header .chapter-title, .sub-chapter .sub-count, .timeline-title { color: #e7b200; }
+
+/* ********************* chapter */
+
+.chapter-header .chapter-text { line-height: 1.7;}
+
+/**********************
+    page-timeline
+**********************/
+.timeline-point:before { background: #e7b200; }
+
+.timeline .timeline-block .block-bullet { border-color: #e7b200; }
+
+/**********************
+    slide-list-wrap
+**********************/
+.slide-list-box .swiper-slide.selected-list .thumb-img:after { border-color: #e7b200; }
+
+.slide-list-box .swiper-slide.selected-list .data-title { color: #e7b200; }
+
+/* ********************* * card-gride-wrap */
+.card-gride-wrap .card a:hover, .card-gride-wrap .card a:focus { border-color: #e7b200; }
+
+/**********************
+    card-con-list
+**********************/
+.card-con-box .con-list.active a:after { border-color: #e7b200; }
+
+/**********************
+    full-slide-page
+**********************/
+.full-slide-page .slide-step li.on { color: #e7b200; }
+
+.full-slide-page .slide-step li.on button:before { background: #e7b200; }
+
+.full-slide-page .text-wrap .subheading { color: #e7b200; }
+
+/**********************
+    Pic-wrap
+**********************/
+.pic-wrap .pic-cover { border: 1px solid #d5d5d5; }
+
+.pic-wrap.one-pic { max-width: 660px; }
+
+.pic-wrap.one-pic.lg { max-width: 860px; }
+
+.pic-wrap.one-pic.lg .pic { max-width: 100%; }
+
+.pic-wrap.half-pic .pic img { max-width: 100%; }
+
+.pic-wrap.half-pic.sm { max-width: 1280px; }
+
+.pic-wrap.half-pic.sm .pic { width: calc(50% - 10px); }
+
+.pic-wrap.half-pic.sm .pic:first-child { margin-right: 20px; }
+
+.pic-wrap.half-pic.lg { max-width: 1460px; }
+
+.pic-wrap.half-pic.lg .pic { width: 50%; }
+
+.pic-wrap.half-pic.lg .pic:first-child { margin-right: 0; }
+
+@media only screen and (max-width: 640px) {
+    .pic-wrap.half-pic.sm .pic { width: 100%; }
+    .pic-wrap.half-pic.sm .pic:first-child { margin-right: 0; }
+}

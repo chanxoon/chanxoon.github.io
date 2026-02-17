@@ -1,0 +1,115 @@
+#wrap {text-align: center;}
+
+.page-title-cover, .header-visual {background-image: url(/cms/imgs/pavilion/bg/bg-mean-cover.jpg);}
+
+.chapter-header {opacity: 0; position: relative; top: 30px; transition: all .6s ease;}
+.sub-chapter {opacity: 0; position: relative; top: 30px; transition: all .6s ease .3s;}
+.scroll-transition .chapter-header {opacity: 1; top: 0;}
+.scroll-transition .sub-chapter {opacity: 1; top: 0;}
+
+.card-visual-list {margin-top: 35px;}
+
+.con-chapter.meaning {background-image: url(/cms/imgs/pavilion/bg/bg-mean-meaning.jpg);}
+
+.con-chapter.distribution {background-color: #efefef; background-image: url(/cms/imgs/pavilion/bg/bg-mean-distribution.jpg); background-position: center bottom;}
+
+.map-status {max-width: 1160px; margin: 0 auto;}
+.map-status:after {content: ""; display: block; clear: both;}
+.map-status .map-box {background: rgba(255, 255, 255, .5); width: 40%; height: 574px; float: left; max-width: 470px; position: relative; padding-top: 50px;}
+.map-status .map-box:after {content: ""; display: block; position: absolute; width: 20px; height: 46px; background: url(/cms/imgs/pavilion/bg/bg-mean-arrow.png) no-repeat; top: 50%; margin-top: -10px; right:-20px;}
+
+svg {width: 100%;}
+svg .back-border {opacity: 0;}
+svg .count-num.active {opacity: 1;}
+svg .count-num.active .color-circle {fill: #b7ca23; r: 30.698;}
+svg .count-num.active .back-border {opacity: .6; r: 33.888;}
+
+.map-status .graph-box {float: left; width: 60%;}
+.map-status .graph-box ul {background: url(/cms/imgs/pavilion/bg/bg-mean-graph.png)no-repeat 160px center; background-size: 536px auto; padding: 15px 0 47px;}
+.map-status .graph-box li {display: table; width: 100%;}
+.map-status .graph-box div {display: table-cell; height: 32px; vertical-align: middle;}
+.map-status .graph-box .label-local {text-align: right; width: 160px; padding: 0 20px 0 40px;}
+.map-status .graph-box .label-local .m-name {display: none;}
+.map-status .graph-box .count-bar {width: calc(100% - 160px); background: rgba(179, 179, 179, .1); border-bottom: 1px solid rgba(255,255,255,.2);}
+.map-status .graph-box li:nth-child(2n) .count-bar  {background: rgba(179, 179, 179, .4);}
+.map-status .graph-box .count-bar span {display: block; text-align: right; color: #9a9a9a; position: relative; }
+.map-status .graph-box .count-bar > span > span {position: absolute; right: -25px; opacity: 0; transition: opacity .3s ease 2.5s;}
+.map-status .graph-box .count-bar.on > span > span { opacity: 1; }
+.map-status .graph-box .count-bar > span:before {content: ""; width: 0; display: block; background: #95b7ca; height: 18px; float: left; transition: width .3s ease .6s;}
+.map-status .graph-box li.active .label-local {color: #b7ca23;}
+.map-status .graph-box li.active .count-bar span {color: #b7ca23;}
+.map-status .graph-box li.active .count-bar > span:before {background: #b7ca23;}
+.scroll-transition .map-status .graph-box .count-bar>span:before {width: 100%;}
+
+.status-table {max-width: 1240px; padding: 0 25px; margin: 0 auto;}
+.status-table:after {content: ""; display: block; clear: both;}
+.status-table li {display: table; float: left; width: 8.333%; font-size: 17px;}
+.status-table li span {display: block; height: 61px; box-sizing: border-box; line-height: 61px;}
+.status-table li .t-name {border-top: 2px solid #000; background: rgba(255, 255, 255, .5); color: #666;}
+.status-table li .t-data {border-top: 1px solid #858a8b; border-bottom: 1px solid #ddd; background: rgba(255, 255, 255, .2); color: #2f88a8;}
+
+
+.con-chapter.features {background-color: #383838;}
+.features .chapter-header .chapter-title {color: #fff;}
+.features .chapter-header .chapter-text {color: #bababa;}
+.features .card-visual-list .card-box a:after {border-color: #555;}
+.features .card-visual-list .card-box a:hover:after {border-color: #b7ca23;}
+
+
+.distribution-pop {display: none; position: fixed; z-index: 300; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,.7);}
+.distribution-pop .pop-inner .pop-title {font-size: 34px; color: #b7ca23; line-height: 1; margin-bottom: 30px;}
+.distribution-pop .pop-inner .pop-title .small-text {font-size: 16px; color: #ddd; display: block; margin-top: 10px;}
+.distribution-pop .pop-inner-box {width: 700px; height: 640px; margin: 0 auto; border-radius: 4px; overflow: hidden;}
+.distribution-pop .pop-top {background: #e7e7e7; height: 81px; padding-top: 16px;}
+.distribution-pop .pop-top .select-name {color: #000; font-size: 18px; line-height: 44px; margin-right: 16px; display: inline-block;}
+.distribution-pop .pop-top .selectbox {position: relative; width: 190px; border: 1px solid #ccc; z-index: 1; display: inline-block; text-align: center; background: #fff; border-radius: 22px;}
+.distribution-pop .pop-top .selectbox:before {content: ""; position: absolute; top: 50%; right: 15px; width: 6px; height: 6px; border: 1px solid #000; transform: rotate(45deg); border-top: none; border-left: none; margin-top: -5px;}
+.distribution-pop .pop-top .selectbox label { position: absolute; top: 1px; left: 5px; padding: .8em .5em; color: #999; z-index: -1; width: 100%; padding-right: 35px; box-sizing: border-box;}
+.distribution-pop .pop-top .selectbox select { width: 100%; height: auto; line-height: normal; font-family: inherit; padding: 1.1em .5em; border: 0; opacity: 0; filter:alpha(opacity=0); -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+.distribution-pop .pop-contents {background: #fff;}
+.distribution-pop .local-list-box .scroll-wrap {height: 400px; overflow: auto;}
+.distribution-pop .local-img-box {float: left; width: 50%; padding: 37px 30px 0; }
+.distribution-pop .local-img-box img {width: 100%;}
+.distribution-pop .local-list-box {float: left; width: 50%; padding-right: 40px;}
+.distribution-pop .local-list-box .counts {height: 57px; padding-top: 26px; border-bottom: 2px solid #999; color: #666; text-align: left;}
+.distribution-pop .local-list-box .counts span {color: #0087cc;}
+.distribution-pop .local-list-ul {text-align: left;}
+.distribution-pop .local-list-ul li {border-bottom: 1px solid #e5e5e5; padding: 11px 10px; letter-spacing: -.025em;}
+.distribution-pop .local-list-ul .nujung-name {font-size: 14px; color: #666;}
+.distribution-pop .local-list-ul .nujung-name em {color: #333; }
+.distribution-pop .local-list-ul .nujung-name em:after {content: ""; display: inline-block; height: 15px; width: 1px; background: #e5e5e5; margin: 0 10px;}
+.distribution-pop .local-list-ul .info-data {font-size: 13px; color: #999;}
+.distribution-pop .local-list-ul .info-data em {color: #666;}
+.distribution-pop .pop-bottom {text-align: center; padding: 30px; clear: both;}
+.distribution-pop .pop-bottom button {width: 120px; height: 44px; border-radius: 22px; color: #fff; background: #e7b200;}
+
+
+@media only screen and (max-width: 640px) {
+
+    .map-status .map-box {display: none;}
+    .map-status .graph-box {width: 100%;}
+    .map-status .graph-box div {height: 55px;}
+    .map-status .graph-box ul {background-position: 68px center; background-size: 505px 100%;}
+    .map-status .graph-box .label-local {padding: 0; padding-right: 15px; width: 68px;}
+    .map-status .graph-box .label-local .m-name {display: block;}
+    .map-status .graph-box .label-local .w-name {display: none;}
+    .scroll-transition .map-status .graph-box .count-bar > span:before {width: calc(100% - 18px);}
+    .map-status .graph-box .count-bar > span > span {right: -8px; top: -10px;}
+
+    .status-table {border-top: 2px solid #000; padding: 0;}
+    .status-table li {width: 33.333%; border-bottom: 1px solid #ddd;}
+    .status-table li span {width: 50%; float: left;}
+    .status-table li .t-name {border-top: none;}
+    .status-table li .t-data {border: none;}
+    .status-table li:after {content: ""; display: block; clear: both;}
+    .status-table .total {border-top: 2px solid #000; margin-top: 20px; width: 100%;}
+
+    /* 임시 방편 */
+    .card-visual-list .list-name { font-size: 1rem; }
+    .card-visual-list .list-name span { font-size: .9rem; }
+    .map-status .graph-box .label-local { width: 40px; padding: 0 10px 0 0; }
+    .map-status .graph-box div { height: 32px; }
+    .map-status .graph-box .count-bar > span:before { height: 10px; }
+    .map-status .graph-box .count-bar > span > span { right: -4px; top: -5px; }
+    .map-status .graph-box ul { background-position: 40px center;  background-size: 280px 100%; }
+}

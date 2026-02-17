@@ -1,0 +1,370 @@
+@charset "UTF-8";
+
+/* 본문 */
+/*
+.section {width: 100%; padding: 60px 0 0 0; max-width: 700px; margin: 0 auto; float: none;}
+
+.con-text {font-size: 1.333rem; line-height: 1.7; border-bottom: 1px solid #c0c0c0; padding-bottom: 27px; margin-bottom: 46px;}
+
+.con-text .con-top {padding-bottom: 23px; font-weight: 500; color: #444;}
+.con-text .con-top > div li span {display: inline-block; padding-right: 5px; color: #2781c1;}
+.con-text .con-top .field-left {float: left; padding-top: 10px;}
+.con-text .con-top .field-left:after {content: ""; display: block; clear: both;}
+.con-text .con-top .field-left li {float: left;}
+.con-text .con-top .field-left li .slash {color: #bababa; margin: 0 5px 0 10px;}
+.con-text .con-top .field-right {float: right;}
+.con-text .con-top .font-controller {width: 6.6rem;}
+.con-text .con-top .font-controller:after {content: ""; display: block; clear: both;}
+.con-text .con-top .font-controller button {width: 3.167rem; height: 3.167rem; border-radius: 2px; border: 1px solid #d7d7d7; float: left;}
+.con-text .con-top .font-controller #down {font-size: 0.917rem; margin-right: 3px;}
+.con-text .con-top .font-controller #up {font-weight: 500; font-size: 1.333rem;}
+*/
+.con-text .summary {padding-bottom: 24px; margin-bottom: 43px; border-bottom: 1px solid #c0c0c0; color: #666; font-weight: 300;}
+.con-text .mygallery p {text-align: justify; white-space: pre-line; word-wrap: break-word; font-weight: 300; color: #000;  margin-bottom: 27px;}
+
+.con-text h3 {font-size: 1.5rem; color: #000;}
+
+
+/* 본문 이미지 배치 */
+.con-text .align-left {float: left; width: 50%; margin-right: 40px;}
+.con-text .align-right {float: right; width: 50%; margin-left: 40px;}
+.con-text .align-center-50 {width: 50%; margin: 0 auto; margin-top: 50px; margin-bottom: 50px;}
+.con-text .mygallery .one-image img {width: 100%;}
+.con-text .mygallery .one-image figcaption {text-align: center; position: static; word-break: break-all;}
+.con-text .one-image div:first-of-type {margin-top: 0;}
+.con-text .one-image.align-center-50 img {width: 100%;}
+.con-text .one-image.align-center-100 {width:100%; margin: 0 auto; display: block; margin-bottom: 40px;}
+.con-text .one-image.align-center-100 img {width:100%;}
+.con-text .mygallery img, 
+.con-text .justified-gallery > a > img, 
+.con-text .justified-gallery > div > img, 
+.con-text .justified-gallery > figure > img, 
+.con-text .justified-gallery > a > a > img, 
+.con-text .justified-gallery > div > a > img, 
+.con-text .justified-gallery > figure > a > img {border: 1px solid #eee; box-sizing: border-box;}
+/* justified gallery caption 수정 */
+.con-text .mygallery figcaption {position: absolute; left: 0; right: 0; text-align: center;}
+.con-text .justified-gallery, 
+.con-text .justified-gallery > figure {overflow: visible; padding: 50px 0;}
+.con-text .justified-gallery > figure > .cap {display: block; position: absolute; bottom:0; padding: 5px; left: 0; right: 0; margin: 0;}
+.con-text .justified-gallery > a, 
+.con-text .justified-gallery > div, 
+.con-text .justified-gallery > figure {width: 40%;}
+
+/* table */
+.con-text .detail-table01 {padding-bottom: 20px; width: 100%; overflow: auto;}
+.con-text .detail-table01 table {table-layout: fixed; font-size: 1.167rem;}
+.con-text .detail-table01 caption {display: table-caption; padding-bottom: 10px;}
+.con-text .detail-table01 tr {border: 1px solid #ddd;}
+.con-text .detail-table01 th,
+.con-text .detail-table01 td {border: 1px solid #ddd; text-align: center; padding: 5px 10px;}
+.con-text .detail-table01 th {background: #efefef; font-weight: 500;}
+
+.con-text .detail-table02 {padding-bottom: 20px; width: 100%; overflow: auto;}
+.con-text .detail-table02 table {table-layout: fixed; font-size: 1.167rem;}
+.con-text .detail-table02 caption {display: table-caption; padding-bottom: 10px;}
+.con-text .detail-table02 tr {border: 1px solid #ddd;}
+.con-text .detail-table02 th,
+.con-text .detail-table02 td {border: 1px solid #ddd; text-align: center; padding: 5px 10px;}
+.con-text .detail-table02 th {background: #efefef; font-weight: 500;}
+
+.con-text .detail-table03 {padding-bottom: 20px; width: 100%; overflow: auto;}
+.con-text .detail-table03 table {table-layout: fixed; font-size: 1.167rem;}
+.con-text .detail-table03 caption {display: table-caption; padding-bottom: 10px;}
+.con-text .detail-table03 tr {border: 1px solid #ddd;}
+.con-text .detail-table03 th,
+.con-text .detail-table03 td {border: 1px solid #ddd; text-align: center; padding: 5px 10px;}
+.con-text .detail-table03 th {background: #efefef; font-weight: 500;}
+.con-text .detail-table03 tbody th {background: #eee;}
+
+/* 레시피 노트 목록 */
+.con-text .note-list01 {position: relative; padding: 34px 70px 44px; margin-bottom: 39px; color: #000; font-weight: 300; background: url(/cms/imgs/common/bg/bg-note-list-gray.png); background-size: 100% 100%;}
+.con-text .note-list01:after {content: ""; display: block; width: 93px; height: 69px; position: absolute; right: 0; top: 0; background: url(/cms/imgs/common/bg/bg-note-edge-gray.png);}
+.con-text .note-list01:before {content: ""; display: block; position: absolute; left: 0; top: 30px;  width: 42px; height: calc(100% - 60px); background: url(/cms/imgs/common/bg/bg-note-hole.png) repeat-y right top;}
+.con-text .note-list01 b {margin-bottom: 3px; display: inline-block;}
+.con-text .note-list01 p {margin-bottom: 28px;}
+.con-text .note-list01 li {margin-bottom: 14px; text-indent: -1.3rem; padding-left: 1rem;}
+.con-text .note-list02 {position: relative; padding: 34px 70px 44px; margin-bottom: 39px; color: #000; font-weight: 300; background: url(/cms/imgs/common/bg/bg-note-list-blue.png); background-size: 100% 100%;}
+.con-text .note-list02:after {content: ""; display: block; width: 93px; height: 69px; position: absolute; right: 0; top: 0; background: url(/cms/imgs/common/bg/bg-note-edge-blue.png);}
+.con-text .note-list02:before {content: ""; display: block; position: absolute; left: 0; top: 30px;  width: 42px; height: calc(100% - 60px); background: url(/cms/imgs/common/bg/bg-note-hole.png) repeat-y right top;}
+.con-text .note-list02 b {margin-bottom: 3px; display: inline-block;}
+.con-text .note-list02 p {margin-bottom: 28px;}
+.con-text .note-list02 li {margin-bottom: 14px; text-indent: -1.3rem; padding-left: 1rem;}
+.con-text .note-list03 {position: relative; padding: 34px 70px 44px; margin-bottom: 39px; color: #000; font-weight: 300; background: url(/cms/imgs/common/bg/bg-note-list-yellow.png); background-size: 100% 100%;}
+.con-text .note-list03:after {content: ""; display: block; width: 93px; height: 69px; position: absolute; right: 0; top: 0; background: url(/cms/imgs/common/bg/bg-note-edge-yellow.png);}
+.con-text .note-list03:before {content: ""; display: block; position: absolute; left: 0; top: 30px;  width: 42px; height: calc(100% - 60px); background: url(/cms/imgs/common/bg/bg-note-hole.png) repeat-y right top;}
+.con-text .note-list03 b {margin-bottom: 3px; display: inline-block;}
+.con-text .note-list03 p {margin-bottom: 28px;}
+.con-text .note-list03 li {margin-bottom: 14px; text-indent: -1.3rem; padding-left: 1rem;}
+
+/* 신규cms용 요리 레시피용 본문 클래스 (기존 클래스를 이용)*/
+.mygallery .note-list03 {position: relative; padding: 34px 70px 44px; margin-bottom: 39px; color: #000; font-weight: 300; background: url(/cms/imgs/common/bg/bg-note-list-yellow.png); background-size: 100% 100%;}
+.mygallery .note-list03:after {content: ""; display: block; width: 93px; height: 69px; position: absolute; right: 0; top: 0; background: url(/cms/imgs/common/bg/bg-note-edge-yellow.png);}
+.mygallery .note-list03:before {content: ""; display: block; position: absolute; left: 0; top: 30px;  width: 42px; height: calc(100% - 60px); background: url(/cms/imgs/common/bg/bg-note-hole.png) repeat-y right top;}
+.mygallery .note-list03 b {margin-bottom: 3px; display: inline-block;}
+.mygallery .note-list03 p {margin-bottom: 28px;}
+.mygallery .note-list03 li {margin-bottom: 14px; text-indent: -1.3rem; padding-left: 1rem;}
+/* 신규cms용 요리 레시피용 본문 클래스 (기존 클래스를 이용)*/
+
+/* 인용문 스타일 */
+.con-text blockquote {font-size: 1.5rem; font-family: 'Noto Serif KR', serif; font-weight: 600; font-style: italic; padding-bottom: 43px; text-align: center;}
+.con-text blockquote::before {content: ''; width: 28px; height: 20px; display: block; margin: 0 auto 20px; background: url(/cms/imgs/common/icon/icon-quote-top.png) no-repeat;}
+.con-text blockquote::after {content: ''; width: 28px; height: 20px; display: block; margin: 20px auto 0; background: url(/cms/imgs/common/icon/icon-quote-bottom.png) no-repeat;}
+
+/* 부가정보, 키워드, 태그, 참고자료, 관련문화원 */
+.con-add {margin-bottom: 60px;}
+.con-add h4 {font-size: 1.667rem; font-weight: 600; color: #000; float: left; width: 172px;}
+.con-add h4 span {color: #aaacb1;}
+
+.con-add .add-info {padding-bottom: 42px; margin-bottom: 47px; border-bottom: 1px solid #ededed;}
+.con-add .add-info h4 {margin-bottom: 24px; float: none;}
+.con-add .add-info p {color: #666; font-size: 	1.167rem; line-height: 1.5;}
+.con-add .add-info b {font-size: 1.333rem; font-weight: 500; color: #000;}
+
+.con-add .list-tag {margin-top: 0; height: auto; float: left; width: 528px;}
+.con-add .list-tag li {margin-bottom: 5px;}
+
+.con-add .keywords {margin-bottom: 35px;}
+.con-add .keywords:after {content: ""; display: block; clear: both;}
+
+.con-add .tags {margin-bottom: 35px;}
+.con-add .tags:after {content: ""; display: block; clear: both;}
+
+.con-add .reference {margin-bottom: 25px;}
+.con-add .reference:after {content: ""; display: block; clear: both;}
+.con-add .reference > div {float: left; width: 528px;}
+.con-add .reference .ref-type {padding-bottom: 10px; text-indent: -90px; padding-left: 90px; word-break: break-all;}
+.con-add .reference .label {display: inline-block; text-indent: -9999px; width: 78px; height: 29px; line-height: 24px; margin-right: 5px; font-size: 12px; font-weight: bold; }
+.con-add .reference .label.book { background: url(/cms/imgs/common/icon/icon-book.png) no-repeat;}
+.con-add .reference .label.thesis {background: url(/cms/imgs/common/icon/icon-thesis.png) no-repeat;}
+.con-add .reference .label.subscribe {background: url(/cms/imgs/common/icon/icon-subscribe.png) no-repeat;}
+.con-add .reference .label.report { background: url(/cms/imgs/common/icon/icon-report.png) no-repeat;}
+.con-add .reference .label.webpage {background: url(/cms/imgs/common/icon/icon-webpage.png) no-repeat;}
+.con-add .reference .label.etc {background: url(/cms/imgs/common/icon/icon-etc.png) no-repeat;}
+.con-add .reference .ref-type .homepage-link::before {content: ''; display: inline-block; background: url(/cms/imgs/common/icon/icon-homepage-link.png) no-repeat; width: 14px; height: 14px; margin-right: 5px;}
+.con-add .reference .ref-type .homepage-link {color: #247fc0;}
+
+.con-add .council {margin-bottom: 35px;}
+.con-add .council:last-child {margin-bottom: 0;}
+.con-add .council:after {content: ""; display: block; clear: both;}
+.con-add .council ul li {float: left; padding-right: 5px;}
+.con-add .council ul li:last-child > span {display: none;}
+.con-add .council li a {display: inline-block; width: 60px; height: 24px; background-color: #247fc0; border-radius: 5px; color: #fff; font-weight: bold; text-align: center; margin-left: 10px; font-size: 13px;}
+
+
+/* 하단 연관 자료 */
+/* .contents {max-width: 1040px; padding: 0;} */
+
+/* 주변정보 */
+/* 
+.related-info .map {position: relative; margin: 60px 0 52px;}
+.related-info .map > div:first-of-type {height: 470px !important; border: 1px solid #eee; box-sizing: border-box;}
+.related-info #around-list {width: 342px; height: 430px; font-family: 'Noto Sans KR'; border: 1px solid #ddd; border-radius: 3px; padding: 20px; position: absolute; top: 20px; left: 22.916%; background-color: #fff;}
+.related-info #around-list h4 {font-size: 1.667rem; font-weight: bold; color: #000; margin-bottom: 16px;}
+.related-info .around-info ul {height: 200px;}
+.related-info .around-info ul li {margin-bottom: 13px; position: relative;}
+.related-info .around-info > div {height: 200px; overflow: auto;}
+.related-info .around-info li img {display: inline-block; position: absolute; margin-top: 4px;}
+.related-info .around-info .around-title {display: block; margin-left: 35px; margin-bottom: 8px; font-size: 1.25rem}
+#naver_list_play ul li span:nth-of-type(2), 
+#naver_list_food ul li span:nth-of-type(2), 
+#naver_list_accommodation ul li span:nth-of-type(2) {font-size: 1.25rem; font-weight: bold; color:#444;}
+.related-info .address-info {font-size: 1rem; color: #555; margin-left: 37px; display: block; margin-top: -6px; font-family:'Dotum'; opacity: 0.7;}
+.related-info .around-box-wrap {width: 315px; margin-right: 60px; position: relative; z-index: 10;}
+.related-info .around-box {width: 303px; height: 43px; border: 1px solid #ccc; border-radius: 2px;  color: #fff; font-size: 1.333rem; margin-bottom: 13px; position: relative;}
+.related-info .around-box > button {background-repeat: no-repeat; background-position: center right 20px; background-color: transparent; z-index: 2;}
+.related-info .around-box > button:focus,
+.related-info .around-box > button:hover {outline: none;}
+.related-info .around-box > button:before {background-image:url(/cms/imgs/common/btn/btn-around.png); background-repeat: no-repeat; background-position: center; background-color: transparent; z-index: 2; content: ""; display: block; position: absolute; width: 14px; height: 100%; top: 0; right: 20px;}
+.related-info .around-box button {padding-left: 20px; height: 40px; width: 100%; text-align: left; position: relative; color: #000;}
+.related-info .around-box ul {position: absolute; top: 100%; width: 100%; height: 385px; z-index: 20; display: none; background-color: #fff; border: 1px solid #ccc; border-radius: 2px; margin-left: -1px; height: 215px; overflow: auto;}
+.related-info .around-box ul li {color: #000; line-height: 32px;}
+.related-info .around-box ul li button {width: 100%; height: 32px;}
+.related-info .around-box ul li button:focus,
+.related-info .around-box ul li button:hover {background: #f9f9f9; outline: none;}
+
+.related-info .location-info {display: table; width: 100%; margin-bottom: 20px;}
+.related-info .location-info span.location {padding-right: 10px; width: 37px; height: 46px; display: table-cell; vertical-align: middle;}
+.related-info .location-info span.location img {display: block; height: 100%;}
+.related-info .location-info span.info-address {font-size: 1.5rem; color: #444;  display: table-cell; vertical-align: middle; height: 46px;}
+*/
+
+/* 멀티미디어 자료 * /
+.additional-info h4 {font-size: 1.667rem; font-weight: 600; color: #000; margin-bottom: 21px;}
+.additional-info .type-title {font-size: 1.25rem; font-weight: 600; color: #333; border-top: 1px solid #ececec;}
+.additional-info .type-title .multi-count {color: #ff5a00;}
+/* 멀티미디어 자료 * /
+.additional-info h4 span {font-size: 16px; font-weight: bold;}
+.additional-info img {width: 100%; }
+.additional-info > div {padding-top: 30px; padding-bottom: 40px;}
+span.multi-count {color: #ff5a00;}
+.additional-info .sound {margin-top: 10px;}
+.collection-li1 .thumnail {width: 180px; height: 110px; position: relative;}
+.collection-li1 .info li {font-size: 14px; color: #999;}
+.collection-li1 .info li span.list-name {font-size: 14px; color: #666; font-weight: 600;}
+.cl-summary {color: #888; font-size: 14px;}
+.collection-li1 .info ul {margin-top: 10px;}
+.collection-li1 > li {padding:0; border-bottom: 0; margin: 5px 0;}
+.layer_wrap {z-index: 200;}
+.additional-info p {padding-top: 20px;}
+.additional-info p:nth-of-type(1) {padding-top: 0; border-top: none;}
+
+/* 연관이야기 자료 * /
+.related-item {background: #f5f5f5; padding: 44px 0 50px;}
+.related-item h4 {font-size: 1.667rem; font-weight: 600; color: #000;}
+.related-item .item-box {margin-top: 20px;}
+
+/* 연관 지방문화원 소장자료 * /
+.related-library {padding-top: 43px;}
+.related-library h4 {font-size: 1.667rem; font-weight: 600; color: #000;}
+
+
+/* 서비스 평가 * /
+.view-estimation {padding: 50px 0 20px 0;}
+.view-estimation:after {content: ''; display: block; clear: both;}
+.estimation {position: relative; z-index: 1; width: 100%; padding: 40px 30px; height: 160px; border: 1px solid #ddd; background-color: #f9f9f9; border-radius: 2px;}
+.estimation p {margin-bottom: 17px; font-size: 16px; color: #333; font-weight: 500;}
+.estimation input, .estimation button {height: 42px; box-sizing: border-box;}
+.estimation input {width: calc(100% - 318px); float: left; margin: 0 4px; border: 1px solid #ccc; padding: 10px; font-size: 12px;}
+.star-score {float: left; position: relative;}
+.star-score #select-score {width: 180px; height: 42px; border: 1px solid #ccc; background: #fff url(/cms/imgs/common/btn/btn-select.png)no-repeat center right; border-radius: 1px; padding-left: 10px; text-align: left;}
+.star-score .score-list {position: absolute; background: #fff; border: 1px solid #ccc; border-bottom: none; width: 180px; box-sizing: border-box; display: none;}
+.star-score .score-list li {border-bottom: 1px solid #ccc; width: 100%;}
+.star-score button {vertical-align: middle; width: 100%; height: 42px; background: #fff; padding-left: 10px; text-align: left; font-size: 14px; vertical-align: middle;}
+.star-score button:before {display: inline-block; height: 18px; margin-right: 10px;}
+.star-score .score-5:before {content: url(/cms/imgs/common/icon/icon-score-5.png);}
+.star-score .score-4:before {content: url(/cms/imgs/common/icon/icon-score-4.png);}
+.star-score .score-3:before {content: url(/cms/imgs/common/icon/icon-score-3.png);}
+.star-score .score-2:before {content: url(/cms/imgs/common/icon/icon-score-2.png);}
+.star-score .score-1:before {content: url(/cms/imgs/common/icon/icon-score-1.png);}
+.estimation .btn-submit {width: 115px; background-color: #247fc0; font-weight: 400; border-radius: 2px; color: #fff; font-size: 14px; text-align: center; float: left;}
+.edit-info {font-size: 14px; height: 60px; line-height: 60px; border: 1px solid #ddd; border-top: 0; padding-left: 30px;}
+.edit-info span {color: #777;}
+.edit-info .title {font-weight: 700; color: #333; background: url(/cms/imgs/common/icon/icon-bullet.png) no-repeat left center; padding-left: 10px;}
+.edit-info .info-in {margin-right: 22px;}
+.edit-info .info-in:last-child {margin-right: 0;}
+.back-to-list {display: block; width: 173px; height: 47px; margin-bottom: 100px; box-sizing: border-box; border-radius: 3px; color: #fff; background-color: #989898; text-align: center; line-height: 47px;}
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    /*
+    .header-change .head-line {display: none !important;}
+    .header-visual {min-width: 0;}
+    .section {padding: 60px 25px 0;}
+    .contents {padding: 0 25px;}
+    
+    
+    /* 모바일 소셜아이콘 * /
+    .con-title .social ul li,
+    .con-title .social ul .btn-share li {width: 58px; height: 58px; float: left;}
+    .con-title .social ul .social-api-kakao a:after,
+    .con-title .social ul .social-api-naver a:after,
+    .con-title .social ul .social-api-facebook,
+    .con-title .social ul .social-api-twitter {width: 58px; height: 58px; background-size: cover;}
+    .con-title .social ul .social-api-facebook { background-size: 12px 20px;}
+    .con-title .social ul .social-api-twitter {  background-size: 23px 18px;}
+    .con-title .social ul .social-api-naver a:after { background-size: 23px 18px;}
+    .con-title .social ul .social-api-kakao a:after { background-size: 13px 20px;}
+    .con-title .social ul .btn-scrap a {width: 58px; height: 58px; background-size: 18px 22px;}
+    .con-title .social ul .btn-share button {width: 58px; height: 58px; background-size: 20px 22px;}
+    .con-title .social ul .btn-share ul {height: 58px;}
+    .con-title .social ul li a {width: 58px; height: 58px;}
+    /* 소셜 아이콘 위치 * /
+    .con-title .social ul .btn-share li {left: 3px;}
+    .con-title .social ul .btn-share ul li:nth-child(2) {left: 67px;}
+    .con-title .social ul .btn-share ul li:nth-child(3) {left: 131px;}
+    .con-title .social ul .btn-share ul li:nth-child(4) {left: 195px;}
+    .con-title .social ul .btn-share ul li:nth-child(5) {left: 259px;}
+    */
+    .con-text {margin-bottom: 66px;}
+    .con-text .con-top .field-left {padding-top: 0;}
+    .con-text .con-top .field-left li {float: none;}
+    .con-text .con-top .field-left li .slash {display: none;}
+    .con-text .summary {font-weight: 400;}
+    .con-text .mygallery p {font-weight: 400;}
+    .con-text .note-list01:before {top: 60px; height: calc(100% - 120px); background: url(/cms/imgs/common/bg/bg-note-hole-mobile.png) repeat-y right top;}
+    .con-text .note-list02:before {top: 60px; height: calc(100% - 120px); background: url(/cms/imgs/common/bg/bg-note-hole-mobile.png) repeat-y right top;}
+    .con-text .note-list03:before {top: 60px; height: calc(100% - 120px); background: url(/cms/imgs/common/bg/bg-note-hole-mobile.png) repeat-y right top;}
+
+    /* 신규cms용 요리 레시피용 본문 클래스 (기존 클래스를 이용)*/
+    .mygallery .note-list03:before {top: 60px; height: calc(100% - 120px); background: url(/cms/imgs/common/bg/bg-note-hole-mobile.png) repeat-y right top;}
+    /* 신규cms용 요리 레시피용 본문 클래스 (기존 클래스를 이용)*/
+
+    .con-add h4 {margin-bottom: 24px; float: none;}
+    .con-add .keywords {margin-bottom: 55px;}
+    .con-add .tags {margin-bottom: 55px;}
+    .con-add .list-tag {width: 100%;}
+    .con-add .list-tag li {margin-bottom: 12px; margin-right: 12px;}
+    .con-add .council li a {height: 30px; line-height: 30px; font-size: 16px; vertical-align: middle;}
+    .con-add .reference {margin-bottom: 45px;}
+    .con-add .reference .ref-type {padding-left: 118px; text-indent: -118px; padding-bottom: 16px;}
+    .con-add .reference .label {width: 108px; height: 37px; background-size: 108px auto !important; vertical-align: middle;}
+
+
+    /* 주변정보 * /
+    .related-info .map > div:first-of-type {height: 296px !important;}
+    .related-info #around-list {position: static; width: 90%; margin: 20px auto 0; height: 600px;}
+    .related-info .around-info li img {width: auto !important; height: 50px !important;}
+    .related-info .around-box-wrap, 
+    .related-info .around-box,
+    .related-info .around-box button {width: 100%;}
+    .related-info .around-box-wrap {margin-right: 0; }
+    .related-info .location-info span.location {height: 58px;}
+    .related-info .around-box, 
+    .related-info .around-box button {height: 63px;}
+    .related-info .around-box {font-size: 25px; margin: 30px 0;}
+    .related-info .around-info > div {height: 320px;}
+    .related-info .additional-info {padding-bottom: 35px; padding-top: 35px;}
+    .related-info .around-info .around-title {margin-bottom: 10px; margin-left: 51px;}
+    .related-info .address-info {margin-left: 50px;}
+    .related-info .mCustomScrollBox {height: 90.4% !important;}
+
+
+    /* 서비스 평가 * /
+    .view-estimation {padding-top: 0; margin-bottom: 70px;}
+    .estimation {height: auto; margin-top: 35px;}
+    .estimation input {width: calc(100% - 125px); font-size: 20px;}
+    .estimation p {font-size: 20px;}
+    .star-score {float:none; margin-bottom: 10px;}
+    .star-score button {font-size: 18px;}
+    .estimation .btn-submit {float: none; font-size: 20px;}
+    .estimation input, .estimation button {height: 60px;}
+    .estimation input {margin: 0 4px 0 0px; border-radius: 0;}
+    .edit-info {font-size: 17px; float: none; padding: 0 20px;}
+    .star-score #select-score {height: 60px; width: 40%;}
+    .star-score button:before {vertical-align: baseline;}
+    .star-score .score-list {width: 40%;}
+    .edit-info .slash {display: none;}
+    .edit-info > span:nth-child(2), .edit-info > span:nth-child(3) {padding-left: 16px;}
+    .back-to-list {width: 233px; height: 63px; line-height: 63px; font-size: 20px;}
+    */
+}
+
+/* dayoung */
+.con-title .social ul li.detail-scrap-icon-contrl {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 본문내용 */
+.receiph {font-size: 22px; font-weight: bold; color: #000;}
+

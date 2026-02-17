@@ -1,0 +1,126 @@
+/* 폰트 */
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 100; /* weight */
+    src: url('../fonts/Pretendard-Thin.eot'); /* IE9 Compatibility */
+    src: url('../fonts/Pretendard-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Pretendard-Thin.otf') format('opentype'), /* OTF format */
+         url('../fonts/Pretendard-Thin.ttf') format('truetype'), /* TTF format */
+         url('../fonts/Pretendard-Thin.woff') format('woff'), /* WOFF format */
+         url('../fonts/Pretendard-Thin.woff2') format('woff2'), /* WOFF2 format */
+         url('../fonts/Pretendard-Thin.svg#Pretendard') format('svg'); /* SVG format */
+    font-display: swap; /* 폰트 로딩 전략 */
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 200; /* weight */
+    src: url('../fonts/Pretendard-ExtraLight.eot'); /* IE9 Compatibility */
+    src: url('../fonts/Pretendard-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Pretendard-ExtraLight.otf') format('opentype'), /* OTF format */
+         url('../fonts/Pretendard-ExtraLight.ttf') format('truetype'), /* TTF format */
+         url('../fonts/Pretendard-ExtraLight.woff') format('woff'), /* WOFF format */
+         url('../fonts/Pretendard-ExtraLight.woff2') format('woff2'), /* WOFF2 format */
+         url('../fonts/Pretendard-ExtraLight.svg#Pretendard') format('svg'); /* SVG format */
+    font-display: swap; /* 폰트 로딩 전략 */
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 300; /* weight */
+    src: url('../fonts/Pretendard-Light.eot'); /* IE9 Compatibility */
+    src: url('../fonts/Pretendard-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Pretendard-Light.otf') format('opentype'), /* OTF format */
+         url('../fonts/Pretendard-Light.ttf') format('truetype'), /* TTF format */
+         url('../fonts/Pretendard-Light.woff') format('woff'), /* WOFF format */
+         url('../fonts/Pretendard-Light.woff2') format('woff2'), /* WOFF2 format */
+         url('../fonts/Pretendard-Light.svg#Pretendard') format('svg'); /* SVG format */
+    font-display: swap; /* 폰트 로딩 전략 */
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400; /* weight */
+    src: url('../fonts/Pretendard-Regular.eot'); /* IE9 Compatibility */
+    src: url('../fonts/Pretendard-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Pretendard-Regular.otf') format('opentype'), /* OTF format */
+         url('../fonts/Pretendard-Regular.ttf') format('truetype'), /* TTF format */
+         url('../fonts/Pretendard-Regular.woff') format('woff'), /* WOFF format */
+         url('../fonts/Pretendard-Regular.woff2') format('woff2'), /* WOFF2 format */
+         url('../fonts/Pretendard-Regular.svg#Pretendard') format('svg'); /* SVG format */
+    font-display: swap; /* 폰트 로딩 전략 */
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500; /* weight */
+    src: url('../fonts/Pretendard-Medium.eot'); /* IE9 Compatibility */
+    src: url('../fonts/Pretendard-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Pretendard-Medium.otf') format('opentype'), /* OTF format */
+         url('../fonts/Pretendard-Medium.ttf') format('truetype'), /* TTF format */
+         url('../fonts/Pretendard-Medium.woff') format('woff'), /* WOFF format */
+         url('../fonts/Pretendard-Medium.woff2') format('woff2'), /* WOFF2 format */
+         url('../fonts/Pretendard-Medium.svg#Pretendard') format('svg'); /* SVG format */
+    font-display: swap; /* 폰트 로딩 전략 */
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600; /* weight */
+    src: url('../fonts/Pretendard-SemiBold.eot'); /* IE9 Compatibility */
+    src: url('../fonts/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Pretendard-SemiBold.otf') format('opentype'), /* OTF format */
+         url('../fonts/Pretendard-SemiBold.ttf') format('truetype'), /* TTF format */
+         url('../fonts/Pretendard-SemiBold.woff') format('woff'), /* WOFF format */
+         url('../fonts/Pretendard-SemiBold.woff2') format('woff2'), /* WOFF2 format */
+         url('../fonts/Pretendard-SemiBold.svg#Pretendard') format('svg'); /* SVG format */
+    font-display: swap; /* 폰트 로딩 전략 */
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700; /* weight */
+    src: url('../fonts/Pretendard-Bold.eot'); /* IE9 Compatibility */
+    src: url('../fonts/Pretendard-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Pretendard-Bold.otf') format('opentype'), /* OTF format */
+         url('../fonts/Pretendard-Bold.ttf') format('truetype'), /* TTF format */
+         url('../fonts/Pretendard-Bold.woff') format('woff'), /* WOFF format */
+         url('../fonts/Pretendard-Bold.woff2') format('woff2'), /* WOFF2 format */
+         url('../fonts/Pretendard-Bold.svg#Pretendard') format('svg'); /* SVG format */
+    font-display: swap; /* 폰트 로딩 전략 */
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 800; /* weight */
+    src: url('../fonts/Pretendard-ExtraBold.eot'); /* IE9 Compatibility */
+    src: url('../fonts/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Pretendard-ExtraBold.otf') format('opentype'), /* OTF format */
+         url('../fonts/Pretendard-ExtraBold.ttf') format('truetype'), /* TTF format */
+         url('../fonts/Pretendard-ExtraBold.woff') format('woff'), /* WOFF format */
+         url('../fonts/Pretendard-ExtraBold.woff2') format('woff2'), /* WOFF2 format */
+         url('../fonts/Pretendard-ExtraBold.svg#Pretendard') format('svg'); /* SVG format */
+    font-display: swap; /* 폰트 로딩 전략 */
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 900; /* weight */
+    src: url('../fonts/Pretendard-Black.eot'); /* IE9 Compatibility */
+    src: url('../fonts/Pretendard-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Pretendard-Black.otf') format('opentype'), /* OTF format */
+         url('../fonts/Pretendard-Black.ttf') format('truetype'), /* TTF format */
+         url('../fonts/Pretendard-Black.woff') format('woff'), /* WOFF format */
+         url('../fonts/Pretendard-Black.woff2') format('woff2'), /* WOFF2 format */
+         url('../fonts/Pretendard-Black.svg#Pretendard') format('svg'); /* SVG format */
+    font-display: swap; /* 폰트 로딩 전략 */
+}

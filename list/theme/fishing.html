@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>우리 지역놀이&lt;지역N문화 테마</title>
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/sub.css">
+<link rel="stylesheet" href="./css/plugins/swiper.min.css">
+<script src="./js/plugins/jquery-3.4.1.min.js"></script>
+<script src="./js/plugins/jquery.easing.1.3.min.js"></script>
+<script src="./js/plugins/swiper.min.js"></script>
+<script src="./js/plugins/jquery.flex-images.min.js"></script><!-- 플렉스 이미지 -->
+<script src="./js/plugins/jquery.mCustomScrollbar.concat.min.js"></script><!-- yScroll -->
+<script src="./js/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+<div class="skip-menu">
+	<a href="#container">컨텐츠영역 바로가기</a>
+	<a href="#footer">하단영역 바로가기</a>
+</div>
+
+<div id="wrap" class="bigdata-detail fishing black">
+	<header id="header">
+		<h1 class="logo">
+			<a href="javascript:void(0)" class="logo-portal">지역N문화</a>
+			<a href="javascript:void(0)" class="logo-themes">
+				산업
+				<span>경제성장의 밑거름, 한국의 어업</span>
+			</a>
+		</h1>
+		<div class="nav-wrap">
+			<nav class="gnb blue">
+				<div class="nav-tit">
+					<h2>MENU</h2>
+					<button class="btn-close"><span class="blind">메뉴닫기</span></button>
+				</div>
+				<ul>
+					<li class="active"><a href="javascript:void(0)"><span>한국의어업</span></a></li>
+					<li><a href="javascript:void(0)"><span>이야기자료</span></a></li>
+					<li><a href="javascript:void(0)"><span>멀티미디어</span></a></li>
+					<li><a href="javascript:void(0)"><span>지방문화원 소장자료</span></a></li>
+					<li><a href="javascript:void(0)"><span>빅데이터</span></a></li>
+				</ul>				
+			</nav>
+			<p class="address">서울시 마포대로 49 성우빌딩 1202호<br><a href="tel:02-704-2311">Tel 02.704.2311~3</a> Fax 02.704.2377<br>Copyright(c) 2018 The Federation of Korea Culture Center.<br>All rights reserved</p>
+		</div>
+		<div class="header-right">
+			<button type="button" class="search">검색</button>
+			<button type="button" class="menu">메뉴</button>
+		</div>
+	</header>
+
+	<div id="container">
+		<div class="header-visual orange">
+			<div class="page-header">
+				<h3><span>우리나라 해양산업의 중심</span>한국의 어업</h3>
+				<hr class="title-break">
+				<p>
+					어업은 수산동식물을 채취·포획 또는 양식하는 사업을 말한다. 삼면을 바다로 끼고 살아가는 우리의 삶에 어업은 깊게 연관되어 있다.<br>
+                    생업을 책임지는 어로활동부터 이에 필요한 선박과 어구, 어로문화 그리고 전설까지 어업에 관한 다양한 이야기를 담았다.<br>
+                    그리고 한국을 대표하는 어류, 바닷길의 신호등인 등대와 같이 바다와 어업에 대한 흥미로운 이야기도 함께 소개한다.
+                </p>
+			</div>
+			<button type="button" class="btn-scroll-action">
+				<span class="scroll">SCROLL</span>
+				<span class="mouse"><span></span><span></span><span></span></span>
+				<span class="arrow"><span></span><span></span></span>
+			</button>
+		</div>
+
+		<section class="mSection section1">
+            <h3 class="blind">우리나라 해역별 특징과 물고기 분포</h3>
+            <div class="inner-wrap">
+                <dl class="sec-area blue">
+                    <dt><strong class="underline blue">우리나라 <span>해역별 특징과 물고기 분포</span></strong></dt>
+                    <dd>
+                        우리나라는 둘러싸여 해역별 특징에 따라 다양한 어종들이 분포하고 있다. 서해는 갯벌을 비롯한 해양자원이 풍부하고, 동해는 한류와 난류가 만나 수산자원이 풍부하다. 남해는 일년내내 수온이 따듯해 양식업이 발달했다. 최근에는 기후변화로 인해 해양생태계가 변화하면서 어종들이 이동하고 있다.
+                    </dd>
+                </dl>
+                <div class="con-box">
+                    <div class="tab">
+                        <div class="tab_content">
+                            <div class="tabs_item">
+                                <div class="inner">
+                                    <button type="button" class="fish-active anchovy">멸치</button>
+                                    <button type="button" class="fish-active mackerel">고등어</button>
+                                    <button type="button" class="fish-active pollock">명태</button>
+                                    <button type="button" class="fish-active sandfish">도루묵</button>
+                                    <button type="button" class="fish-active daegu">대구</button>
+                                    <button type="button" class="fish-active hairtail">갈치</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="list-box mCustomScrollbar" data-mcs-theme="light-1">
+                            <div class="tabs">
+                                <div class="list-fish anchovy">
+                                    <div class="tit">
+                                        <p>한국인의 밑반찬에서 빼놓을 수 없는, 멸치</p>
+                                        <p>멸치가 많이 잡히는 지역은 경상남도를 비롯한 서남해안 지역으로 알려져 있긴 하나 강원도를 비롯해 동해안 일대에서도 멸치가 서식하였다.</p>
+                                    </div>
+                                    <div class="more"><a href="javascript:;" title="" class="btn-museum">이야기 보기</a></div>
+                                </div>
+                                <div class="list-fish mackerel">
+                                    <div class="tit">
+                                        <p>머리가 좋은 바다 생물로 알려진, 고등어</p>
+                                        <p>고등어는 난류성 어종으로 봄과 여름에는 북상을 하다가 가을에는 다시 아래쪽으로 내려온다. 겨울에는 바다의 최저부까지 내려가 서식한다.</p>
+                                    </div>
+                                    <div class="more"><a href="javascript:;" title="" class="btn-museum">이야기 보기</a></div>
+                                </div>
+                                <div class="list-fish pollock">
+                                    <div class="tit">
+                                        <p>점차 어획량이 줄어들고 있는, 명태</p>
+                                        <p>명태는 주로 동해안 일대에 서식하는 어종이다. 지역이나 보관방법에 따라 강태, 간태, 북태 등의 이름을 가지고 있고, 또한 명태 상태에 따라 동태(凍太), 말린 것은 북어. 날 것은 생태라고 한다.</p>
+                                    </div>
+                                    <div class="more"><a href="javascript:;" title="" class="btn-museum">이야기 보기</a></div>
+                                </div>
+                                <div class="list-fish sandfish">
+                                    <div class="tit">
+                                        <p>은어(銀魚)라고 불린, 도루묵</p>
+                                        <p>도루묵은 명태와 비슷하게 동해안 일대에 서식하는 어종이다. 여름철에는 깊은 바닷속에 있다가 겨울이 되면 산란하기 위해 연안으로 올라온다. 강원도의 북쪽부터 11월경 잡히기 시작한다.</p>
+                                    </div>
+                                    <div class="more"><a href="javascript:;" title="" class="btn-museum">이야기 보기</a></div>
+                                </div>
+                                <div class="list-fish daegu">
+                                    <div class="tit">
+                                        <p>입(口)이 매우 큰(大) 어류, 대구</p>
+                                        <p>대구는 한류성 어류로 남해안을 대표하는 어류이다. 경상도 지역에서 주로 잡히며 진해만, 거제도 해역, 가덕도와 같은 동남해안 지역에서도 많이 잡힌다.</p>
+                                    </div>
+                                    <div class="more"><a href="javascript:;" title="" class="btn-museum">이야기 보기</a></div>
+                                </div>
+                                <div class="list-fish hairtail">
+                                    <div class="tit">
+                                        <p>번쩍번쩍 은빛 도는 칼 같이 생긴, 갈치</p>
+                                        <p>갈치는 아열대 어종으로 늦가을이 되면 수심 100m 이상 숨어 월동한다. 갈치는 서식지가 일정하지 않아 이곳저곳을 돌아다닌다 하여 ‘걸물궤기’라고 부른다.</p>
+                                    </div>
+                                    <div class="more"><a href="javascript:;" title="" class="btn-museum">이야기 보기</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+		</section>
+		
+		<section class="mSection section2">
+            <h3 class="blind">어업은 어떻게 이루어질까?</h3>
+            <div class="inner-wrap">
+                <dl class="sec-area blue">
+                    <dt><strong class="underline orange2">어업은 <span>어떻게 이루어질까?</span></strong></dt>
+                    <dd>
+                        산업이 이루어지기 위해서는 일을 하기 위한 도구와 이동수단, 그리고 일하는 사람이 필요하다. 어업에서는 각각의 요소들을 어구, 어선, 어부라고 부른다. 어구는 어로활동이 연안[바다와 접해 있는 육지], 가까운 바다와 먼 바다 중 어디서 이루어지는가에 따라 다양하게 구별된다. 어선 또한 이러한 바탕에 각 지방의 지역적 특징을 추가하여 개성적으로 발전했다. 그리고 이 모든 것의 중심인 사람, 즉 어부와 해녀의 삶을 조명한다.
+                    </dd>
+                </dl>
+                <div class="con-box">
+                    <div class="tit">
+                        <p><img src="./images/intro/fishing/icon-sec2-title-1.png" alt=""></p>
+                        <p>어로활동 장소에 따라 달라지는 도구, <span>어구</span></p>
+                        <p>바다에 서식하는 생물을 효율적으로 포획하기 위해서는 대상물에 맞는 적절한 도구가 매우 중요하다. 어업에서는 이러한 도구를 어구(漁具)라 칭한다. 일반적으로 어구는 어로활동을 행하는 장소에 따라, 또한 어구의 재질이나 사용 장소, 기능 등에 따라 다양한 형태로 구분할 수 있다.</p>
+                    </div>
+                    <div class="image-accordion">
+                        <div class="acc-list selected-image">
+                            <div class="img-sec">
+                                <div class="icon-box">
+                                    <p><img src="./images/intro/fishing/icon-sec2-flex-hook.png" alt=""></p>
+                                    <p>외끌이기선 저인망</p>
+                                </div>
+                                <img src="./images/intro/fishing/img-sec2-flex-1.png" alt="외끌이기선 저인망">
+                            </div>
+                            <div class="text-sec">
+                                <p>외끌이기선 저인망</p>
+                                <p>한 척의 기선(동력선)이 그물을 바다의 밑바닥으로 끌고 다니면서 깊은 곳에 사는 바다생물을 집는 어업방식이다.</p>
+                                <p><a href="/" title="">자세히보기</a></p>
+                            </div>
+                        </div>
+                        <div class="acc-list">
+                            <div class="img-sec">
+                                <div class="icon-box">
+                                    <p><img src="./images/intro/fishing/icon-sec2-flex-hook.png" alt=""></p>
+                                    <p>죽방렴</p>
+                                </div>
+                                <img src="./images/intro/fishing/img-sec2-flex-2.png" alt="죽방렴">
+                            </div>
+                            <div class="text-sec">
+                                <p>죽방렴</p>
+                                <p>대나무를 잘라서 엮어 만든 죽방렴은 거센 물살이 지나는 좁은 물목에 설치하여 내부에 들어온 물고기를 잡는 어업방식이다.</p>
+                                <p><a href="/" title="">자세히보기</a></p>
+                            </div>
+                        </div>
+                        <div class="acc-list">
+                            <div class="img-sec">
+                                <div class="icon-box">
+                                    <p><img src="./images/intro/fishing/icon-sec2-flex-hook.png" alt=""></p>
+                                    <p>통발</p>
+                                </div>
+                                <img src="./images/intro/fishing/img-sec2-flex-3.png" alt="통발">
+                            </div>
+                            <div class="text-sec">
+                                <p>통발</p>
+                                <p>소형의 함정 어구 속으로 물고기가 들어가면 다시는 밖으로 빠져나오지 못하도록 가두어 바다생물을 잡는 어업방식이다.</p>
+                                <p><a href="/" title="">자세히보기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="con-box">
+                    <div class="tit">
+                        <p><img src="./images/intro/fishing/icon-sec2-title-2.png" alt=""></p>
+                        <p>바다에서 고기잡이를 하는 배, <span>어선</span></p>
+                        <p>어선 또한 수행하는 어업의 종류에 따라 크기나 모양이 달라진다. 어선은 상선(商船)에 비해 크기는 작지만, 먼바다에서 오랫동안 능률적으로 어로작업을 수행해야 하므로 선체가 견고해야 한다. 이러한 특징은 우리나라 지역별 개성적인 어선을 통해 살펴볼 수 있다.</p>
+                    </div>
+                    
+                    <div class="tab">
+                        <div class="tab-menu">
+                            <ul>
+                                <li><a href="javascript:;"><img src="./images/intro/fishing/icon-sec2-tab-1.png" alt=""><p>제주도<br>떼배</p></a></li>
+                                <li><a href="javascript:;"><img src="./images/intro/fishing/icon-sec2-tab-2.png" alt=""><p>낙월도<br>멍텅구리배</p></a></li>
+                                <li class="last"><a href="javascript:;"><img src="./images/intro/fishing/icon-sec2-tab-3.png" alt=""><p>중선망<br>어선</p></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab_content">
+                            <div class="tabContent active">
+                                <div class="inner">
+                                    <div class="left-sec">
+                                        <div class="img-sec">
+                                            <img src="./images/intro/fishing/img-sec2-tab-1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right-sec">
+                                        <p>제주도 떼배</p>
+                                        <p>제주도 지역의 대표적인 선박인 떼배는 8~13개 정도의 통나무를 가지고 만든다. 제주도에서는 테배라 불리는 이 배는 낚시를 비롯해 전복과 해삼 채취 등을 하는데 최적의 선박으로 오랫동안 이용되었다.</p>
+                                        <p><a href="/">자세히보기</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabContent">
+                                <div class="inner">
+                                    <div class="left-sec">
+                                        <div class="img-sec">
+                                            <img src="./images/intro/fishing/img-sec2-tab-2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right-sec">
+                                        <p>낙월도 멍텅구리배</p>
+                                        <p>낙월도 멍텅구리배는 혼자서 움직일 수 없는 배다. 동력 없이 망망대해에서 새우를 잡아야 하는 관계로 배를 고정하는 닻이 매우 중요한데 그런 점에서 닻의 크기가 크고 무게가 많이 나간다.</p>
+                                        <p><a href="/">자세히보기</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabContent">
+                                <div class="inner">
+                                    <div class="left-sec">
+                                        <div class="img-sec">
+                                            <img src="./images/intro/fishing/img-sec2-tab-3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right-sec">
+                                        <p>중선망 어선 (서해안 조기중선)</p>
+                                        <p>중선망 어선은 조선시대부터 근대까지 사용된 배로, 조수의 간만의 차가 큰 서해안 일대에서 널리 행해지던 어업 방식으로 특히 조기를 잡는데 있어 매우 탁월한 도구로 알려져 있다.</p>
+                                        <p><a href="/">자세히보기</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="video-box">
+                            <div class="left-sec">
+                                <p>발전하는 어촌, 변화하는 우리의 삶</p>
+                                <p>
+                                    [도시어부의 삶과 일상]은 현대 항구도시로 변모한 부산 어촌의 현황을 담은 다큐멘터리이다.<br>
+                                    부산 수영구는 강과 바다가 인접하여 예전부터 어업이 발달했다. 그러나 어촌이 현대 항구도시로 변모하게 되면서, 어업종사자들의 삶에도 큰 영향을 끼쳤다. <br>
+                                    많은 것이 변했지만, 여전히 부산에서 어업을 이어가는 어부와 해녀의 삶을 확인해보자.
+                                </p>
+                            </div>
+                            <div class="right-sec">
+                                <p><img src="./images/intro/fishing/img-sec2-video.png"></p>
+                                <p>영상출처: 도시어부의 삶과 일상, 부산수영문화원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="con-box">
+                    <div class="tit">
+                        <p><img src="./images/intro/fishing/icon-sec2-title-3.png" alt=""></p>
+                        <p>국가중요어업유산 <span>11종</span></p>
+                        <p>우리나라는 우수하고 고유한 가치를 지닌 어촌자원을 다양하게 보유하고 있다. 하지만 산업화 이후 도시집중과 난개발, 어촌지역의 고령화 등으로 인해 어촌자원과 어업생태계가 훼손·방치되어 그 가치를 상실하고 있다. 국가중요어업유산은 이러한 가치를 보존하고, 자원을 계승하여 어촌 지역경제에 이바지하기 위해 마련된 제도이다.</p>
+                    </div>
+                    
+                    <div class="swiper-container sec2swiperfishing">
+                        <p class="source">출처: “국가중요어업유산 가이드라인”, 해양수산부, 2021</p>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="num">제1호</div>
+                                <div class="txt-sec">
+                                    <p>제주 해녀어업</p>
+                                    <p>제주 해녀어업은 별다른 산소공급 장치 없이 보통 10m 깊이의 바닷속으로 1분간 잠수하여 전복, 소라, 해삼 등 해산물을 채취하는 전통적 어업방식이다.</p>
+                                </div>
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec2-slide-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="num">제2호</div>
+                                <div class="txt-sec">
+                                    <p>보성 뻘배어업</p>
+                                    <p>보성 뻘배어업은 갯벌에서 발 빠짐을 방지하기 위해 ‘뻘배’에 한쪽 다리를 올리고 다른 쪽 다리로 갯벌 바닥을 이동하며 꼬막, 맛조개, 짱뚱어 등을 잡는 어업방식이다.</p>
+                                </div>
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec2-slide-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="num">제3호</div>
+                                <div class="txt-sec">
+                                    <p>남해 죽방렴어업</p>
+                                    <p>남해 죽방렴(竹防簾)어업은 ‘대나무 어살’이라고도 불리며, 물살이 빠르고 물목에 조류가 흘러들어오는 곳에 V형의 나무로 만든 어구를 설치하여 그 안에 갇힌 물고기를 잡는 전통어업 방식이다.</p>
+                                </div>
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec2-slide-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="num">제4호</div>
+                                <div class="txt-sec">
+                                    <p>신안 갯벌 천일염업</p>
+                                    <p>신안 갯벌 천일염업은 바닷물을 염전으로 끌어들인 뒤, 햇볕과 바람만으로 수분을 증발시켜 소금을 생산하는 어업이다.</p>
+                                </div>
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec2-slide-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="num">제5호</div>
+                                <div class="txt-sec">
+                                    <p>완도 지주식 김 양식어업</p>
+                                    <p>완도 지주식 김 양식어업은 갯벌의 특성을 이용해 지주목을 세우고 발을 설치한 뒤, 김을 자연 햇볕에 일정 시간 반복 노출하는 방식으로 생산하는 친환경적·전통적 김 양식어업이다.</p>
+                                </div>
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec2-slide-5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="num">제6호</div>
+                                <div class="txt-sec">
+                                    <p>무안·신안갯벌낙지 맨손어업</p>
+                                    <p>무안·신안 갯벌낙지 맨손어업은 누구나 특별한 도구 없이 작업이 가능하고, 낙지에 대한 생태적 지식만 있다면 채취 가능한 어업방식이다. 남성은 주로 낙지잡이 전용 삽(가래 삽)을, 여성은 ‘부럿’이라 불리는 낙지 숨구멍을 찾아 맨손으로 낙지를 채취한다.</p>
+                                </div>
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec2-slide-6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="num">제7호</div>
+                                <div class="txt-sec">
+                                    <p>하동·광양 재첩잡이 손틀어업</p>
+                                    <p>하동·광양 섬진강 재첩잡이 손틀어업은 손틀 도구 중 ‘거랭이’를 이용하여 재첩을 채취하는 어업방식이다. 거랭이를 이용한 반복적인 채취과정이 섬진강의 수서 생태계 순환과 생물다양성 유지를 돕는다.</p>
+                                </div>
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec2-slide-7.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="num">제8호</div>
+                                <div class="txt-sec">
+                                    <p>통영·거제 견내량 돌미역 틀잇대 채취어업</p>
+                                    <p>통영·거제 틀잇대 채취어업은 ‘틀잇대’라는 긴 장대로 물속 바위에 붙은 미역을 감아올리는 전통적인 어업방식이다. 견내량은 수심이 낮고 햇볕 투과량이 많으며, 빠른 물살 때문에 수질이 깨끗해 견내량의 돌미역은 식감이 단단하고 깊은 맛이 난다.</p>
+                                </div>
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec2-slide-8.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="num">제9호</div>
+                                <div class="txt-sec">
+                                    <p>울진·울릉 돌곽 떼배 채취어업</p>
+                                    <p>울진·울릉 돌곽 떼배 채취어업은 조선 시대부터 내려온 것으로 해녀와 어민들이 떼배를 타고 바다로 나가 수산물을 채취하고 운반하는 전통적인 어업방식이다. 돌미역 떼배 체취어업은 두 명이 한 조로 한 사람은 긴 낫으로 미역을 자르고, 다른 사람은 떼배를 조종한다.</p>
+                                </div>
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec2-slide-9.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="num">제10호</div>
+                                <div class="txt-sec">
+                                    <p>부안 곰소 천일염업</p>
+                                    <p>곰소 천일염전은 조선시대부터 지역주민들이 소금을 생산했던 곳이다. 자연방식으로 바닷물을 증발시켜 천일염을 생산하는 전통방식이 잘 보존되어 있다.</p>
+                                </div>
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec2-slide-10.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="num">제11호</div>
+                                <div class="txt-sec">
+                                    <p>신안 흑산 홍어잡이어업</p>
+                                    <p>신안 흑산 홍어잡이 어업은 생태 친화적 전통어업으로 홍어가 다니는 길목에 주낙(긴 줄에 일정한 간격으로 낚시를 달아 바다에 투승)을 설치하여 홍어를 잡는다. 특히, 흑산도에서는 주로 미끼를 끼우지 않는 건주낙을 사용한다.</p>
+                                </div>
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec2-slide-11.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+		</section>
+		
+		<section class="mSection section3">
+            <h3 class="blind">어업과 관련된 흥미로운 이야기 어업과 우리의 삶</h3>
+            <div class="inner-wrap">
+                <dl class="sec-area blue">
+                    <dt><strong class="underline orange2">어업과 관련된 흥미로운 이야기 <span>어업과 우리의 삶</span></strong></dt>
+                    <dd>
+                        어업은 수산동식물을 채취·포획 또는 양식하는 사업을 말한다. 삼면을 바다로 끼고 살아가는 우리의 삶에 어업은 깊게 연관되어있다.<br>
+                        생업을 책임지는 어로활동부터 이에 필요한 선박과 어구, 어로문화 그리고 전설까지 어업에 관한 다양한 이야기를 담았다.<br>
+                        그리고 한국을 대표하는 어류, 바닷길의 신호등인 등대와 같이 바다와 어업에 대한 흥미로운 이야기도 함께 소개한다.
+                    </dd>
+                </dl>
+                <div class="con-box">
+                    <div class="tit">
+                        <p><img src="./images/intro/fishing/icon-sec3-title-1.png" alt=""></p>
+                        <p><span>서적</span></p>
+                    </div>
+                    
+                    <div class="card-box">
+                        <div class="list">
+                            <p>자산어보</p>
+                            <p>자산어보는 흑산도로 유배를 간 정약전이 제작한 책이다. 이 책은 흑산도를 중심으로 한 그 일대에서 서식하는 바다 생물을 인류(鱗類), 무인류(無鱗類), 개류(介類), 잡류(雜類)로 구분하여 정리하였다. 이 책은 조선후기의 우리네 어업의 실상을 엿볼 수 있다는 점에서 매우 의미가 큰 책으로 평가받고 있다.</p>
+                            <p><a href="/">자세히보기</a></p>
+                        </div>
+                        <div class="list">
+                            <p>고려도경</p>
+                            <p>『고려도경』은 서긍이 중국 송나라 시기에 여러 사신들과 배를 타고 오늘날 인천에 해당하는 송도를 다녀갔는데, 이 과정에서 보고 들은 내용을 소상히 기록해 놓은 것이다. 이 책은 40권 29류로 구성되어있으며, 이 책의 가장 큰 특징은 글자 기록과 함께  일부 내용은 그림으로 표현해놓은 것이다.</p>
+                            <p><a href="/">자세히보기</a></p>
+                        </div>
+                        <div class="list">
+                            <p>우해이어보</p>
+                            <p>우해이어보는 진해 지역의 바다생물을 소상하게 기록해 놓은 책이다. 이 책에는 53종의 어류와 8종의 갑각류, 그리고 10여 종의 패류가 기록돼 있다. 바다 생물의 이칭과 습성, 그리고 생김새를 비롯해 잡는 방식과 유통 등에 대해서 상세히 기록해 놓았다는 점에서 좋은 평가를 받고 있다.</p>
+                            <p><a href="/">자세히보기</a></p>
+                        </div>
+                        <div class="list">
+                            <p>지도군총쇄록</p>
+                            <p>『지도군총쇄록』은 19세기 말의 자료로 오늘날 신안군 지역에 해당하는 당시 지도 지역의 다양한 모습을 기록해 놓은 책이다. 이 책의 저자인 오횡묵은 서울에서 출발하여 지도군까지 배를 타도 오는 일련의 과정과 지도군수로 있으면서 그가 여러 섬을 다니며 했던 일들을 이 책에 기록해 놓았다.</p>
+                            <p><a href="/">자세히보기</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="banner-box">
+                        <p><img src="./images/intro/fishing/img-sec3-banner-1.png" alt=""></p>
+                        <p>고려도경 서긍 필 장문통 산수화찬(徐兢張文通山水畵讚)</p>
+                    </div>
+                </div>
+                
+                <div class="con-box">
+                    <div class="tit">
+                        <p><img src="./images/intro/fishing/icon-sec3-title-2.png" alt=""></p>
+                        <p><span>전설</span></p>
+                    </div>
+                    
+                    <div class="swiper-container sec3swiperfishing">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec3-slide-1.png" alt="">
+                                </div>
+                                <div class="txt-sec">
+                                    <p>엄씨가 안먹는 정양리 잉어</p>
+                                    <p>강원도 영월에 위치한 정양리는 과거 수운에 의해서 물자를 이동하던 곳이었다. 그 덕분에 많은 사람이 모여 살며, 지금의 마을이 형성될 수 있었다. 그리고 고기를 잡는 어부들도 많았다. 고기잡이를 좋아하는 이 마을의 엄 씨는 큰 작살을 빗대어 표현하는 ‘뭇’을 들고 고기잡이를 나선다. 하루는 나가서 큰 잉어를 발견하고 뭇으로 찔렀지만 뭇이 부러지고 만다. 한참 후 다시 고기잡이를 나선 엄 씨는 큰 잉어를 발견하고 또 찔러 잡는 데 성공한다. 잡은 잉어가 워낙 커 마을 사람들과 같이 먹고자 했는데 그 잉어에서 뭇이 나왔다. 엄 씨는 과거에 자신이 잡으려다가 놓친 큰 잉어를 다시 잡았다고 생각한다. 이상하다는 생각에 엄 씨는 개한테 잡은 잉어를 먹이는데 개는 죽고 만다. 이후 잉어를 내다 버린 곳에 이름 모를 풀이 자랐다. 그 풀을 뜯어다 송아지한테 먹였지만 송아지마저도 죽고 만다. 이후 엄 씨는 잉어가 도리어 앙갚음한다고 생각했고 이후 고기잡이를 하지 않았다.</p>
+                                    <p><a href="/">자세히보기</a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec3-slide-2.png" alt="">
+                                </div>
+                                <div class="txt-sec">
+                                    <p>거북이 구해주고 부자된 선비</p>
+                                    <p>베 팔러 가라는 아내의 말을 듣고 나온 선비는 추운 날씨에 비를 맞고 있는 거북이를 발견하게 된다. 거북이가 걱정된 그는 거북이를 감싸 안고 큰길로 내려온다. 그리고는 안전한 곳에 놓아주는데 하늘에서 우르르 소리가 나며 편지 쪼가리 두 개가 떨어진다. 하나의 편지는 ‘붙을 부’, 하나는 ‘떨어질 부’가 쓰여 있었다. 그렇게 큰길로 내려오는데 서울 가는 부자를 발견하게 되고, 편지 한 조각인 ‘붙을 부’를 외쳐 서울 가는 무리에 낄 수 있게 된다. 또한, 나머지 편지 한 조각인 ‘떨어질 부’를 사용해 부자의 노잣돈을 떨어뜨렸고, 그 돈으로 부자가 된다.</p>
+                                    <p><a href="/">자세히보기</a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-sec">
+                                    <img src="./images/intro/fishing/img-sec3-slide-3.png" alt="">
+                                </div>
+                                <div class="txt-sec">
+                                    <p>고래 속에 들어갔다 살아온 사람</p>
+                                    <p>1.고래 속에 들어갔다 살아온 사람’은 두 가지로 구성된다. 첫 번째 내용은 어부가 고기를 잡으러 갔다가 배와 함께 고래뱃속으로 들어가게 된다. 죽지 않고 살아남은 어부는 주머니 속 칼로 뱃속을 이곳저곳 찔렀고 상처를 입은 고래는 죽어서 떠내려 온다. 이후 사람들에게 발견되어 목숨을 구할 수 있었다. 두 번째 이야기는 ‘이참봉네 영감’이 고래를 쫓아 작은 배를 타고 오지만 오히려 먹혀버리고 만다. 배를 삼킨 탓에 고래는 죽고 만다. 하지만 고래와 달리 살아남은 영감은 주머니 속 칼로 고래를 도려 먹는다. 이후 사람들의 도움으로 목숨을 구한 영감은 도리어 내가 잡은 고래라고 소유권을 주장한다.</p>
+                                    <p><a href="/">자세히보기</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paging-box">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</section>
+	</div>
+	<!--// container -->
+
+	<footer id="footer">
+		<div class="footer-inner">
+			<div class="footer-left">
+				<div class="footer-logo"><img src="./images/logo-kcc-wh.svg" alt="한국문화원연합회"></div>
+				<div class="copyright">
+					<address>서울 마포대로 49 성우빌딩 1202호</address>
+					<p><span class="tel">전화</span>02-704-2311~3<span class="tel">팩스</span>02-704-2377</p>
+					<small>Copyright<span class="count">(c)</span> 2018 The Federation of Korea Culture Center. <br class="mb-show"> All rights reserved</small>
+				</div>
+			</div>
+			<div class="footer-right">
+				<div class="theme-site">
+					<div class="select-box"> 
+						<label for="select-theme">테마사이트바로가기</label> 
+						<select id="select-theme"> 
+							<option selected="" disabled="">테마사이트바로가기</option>
+							<option value="/ceremonial/life-ceremony">관혼상제</option> 
+							<option value="/pavilion/pavilion-mean">누정</option> 
+							<option value="/legacy/modern-history">근대문화역사유산</option> 
+							<option value="/woodcraft/ko-woodcraft">목공예</option> 
+							<option value="/coalmine/history">탄광</option> 
+							<option value="/faith/faith-formation">마을신앙</option> 
+							<option value="/righteous-army/background-story">의병</option> 
+							<option value="/castle/castle-mean">성과옛도로</option> 
+							<option value="/food/food-history">향토음식</option>
+							<option value="/confucianism/confucianism-mean">유교</option>
+							<option value="/farming/process">한국의 농업</option>
+							<option value="/market/market-formation">시장</option>
+							<option value="/korean-war/memory-of-war">6·25전쟁</option>
+						</select> 
+					</div>
+					<a href="#footer" target="_blank" title="새창열림" class="btn-link-go">GO</a>
+				</div>
+				<ul class="foot-sns">
+					<li><a href="https://www.facebook.com/ikccf" title="한문연 페이스북"><img src="./images/btn/icon-footer-facebook.png" alt="한문연 페이스북"></a></li>
+					<li><a href="https://blog.naver.com/kccf2007" title="한문연 블로그"><img src="./images/btn/icon-footer-blog.png" alt="한문연 블로그"></a></li>
+				</ul>
+			</div>
+		</div>
+		<button type="button" id="btn-go-top" class="btn-go-top">상단으로</button>
+	</footer>
+
+</div><!--/ #wrap -->
+
+<script>
+var sec2swiperfishing = new Swiper('.sec2swiperfishing', {
+    loop: false,
+    freemode: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoplay: false,
+    pagination: {
+        el: '.swiper-pagination',
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 10
+        },
+    }
+});
+    
+var sec3swiperfishing = new Swiper('.sec3swiperfishing', {
+    loop: false,
+    freemode: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: false,
+    pagination: {
+        el: '.swiper-pagination',
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 'auto',
+            spaceBetween: 150,
+        },
+    }
+});
+</script>
+
+</body>
+</html>

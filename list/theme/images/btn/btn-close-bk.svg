@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.891 45.891">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #2b2e34;
+        fill-rule: evenodd;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="패스_14" data-name="패스 14" class="cls-1" d="M0-45.891H45.891V0H0Z"/>
+    </clipPath>
+  </defs>
+  <g id="btn-colse-bk" transform="translate(241 -823.891)">
+    <g id="그룹_26" data-name="그룹 26" transform="translate(-241 869.782)">
+      <g id="그룹_25" data-name="그룹 25" class="cls-2">
+        <g id="그룹_23" data-name="그룹 23" transform="translate(44.865 -44.865)">
+          <path id="패스_12" data-name="패스 12" class="cls-3" d="M0,0A3.5,3.5,0,0,1,0,4.95L-38.891,43.84a3.5,3.5,0,0,1-4.949,0,3.5,3.5,0,0,1,0-4.95L-4.949,0A3.5,3.5,0,0,1,0,0"/>
+        </g>
+        <g id="그룹_24" data-name="그룹 24" transform="translate(1.025 -44.865)">
+          <path id="패스_13" data-name="패스 13" class="cls-3" d="M0,0A3.5,3.5,0,0,0,0,4.95L38.891,43.84a3.5,3.5,0,1,0,4.949-4.949L4.949,0A3.5,3.5,0,0,0,0,0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

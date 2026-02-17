@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/**********************
+        main
+**********************/
+.main-menu ul li.active a:before { background: #08c0d3; }
+
+/**********************
+    menu
+**********************/
+.nav-wrap .gnb ul li.active a span{ border-bottom-color: #08c0d3;}
+.nav-wrap .gnb ul li.active a { color: #08c0d3; }
+.nav-wrap .gnb ul li.active a:before { background-color: #08c0d3; }
+a.btn-detail-link:visited { color: #08c0d3; }
+
+/**********************
+        object
+**********************/
+/* page title */
+.page-heading .title { color: #08c0d3; }
+
+/* sub nav */
+.themes-sub-depth-nav li button:after, .themes-sub-depth-nav li a:after { background: #08c0d3; }
+
+/* tab button */
+.type-tab-menu button.on { border-color: #08c0d3; background: #08c0d3; }
+
+.type-tab-menu button:hover, .type-tab-menu button:focus { border-color: #08c0d3; }
+
+/* 자세히보기 button */
+.btn-detail-link { color: #08c0d3; border-color: #08c0d3; }
+
+.btn-detail-link:hover { background: #08c0d3; }
+
+/* card visual list */
+.card-visual-list .card-box a:hover:after { border-color: #08c0d3; }
+
+/**********************
+    page-title-cover
+**********************/
+.page-title-cover .page-header .page-title strong, .chapter-header .chapter-title, .sub-chapter .sub-count, .timeline-title { color: #08c0d3; }
+
+/* ********************* chapter */
+/**********************
+    page-timeline
+**********************/
+.timeline-point:before { background: #08c0d3; }
+
+.timeline .timeline-block .block-bullet { border-color: #08c0d3; }
+
+/**********************
+    slide-list-wrap
+**********************/
+.slide-list-box .swiper-slide.selected-list .thumb-img:after { border-color: #08c0d3; }
+
+.slide-list-box .swiper-slide.selected-list .data-title { color: #08c0d3; }
+
+/* ********************* * card-gride-wrap */
+.card-gride-wrap .card a:hover, .card-gride-wrap .card a:focus { border-color: #08c0d3; }
+
+/**********************
+    card-con-list
+**********************/
+.card-con-box .con-list.active a:after { border-color: #08c0d3; }
+
+/**********************
+    full-slide-page
+**********************/
+.full-slide-page .slide-step li.on { color: #08c0d3; }
+
+.full-slide-page .slide-step li.on button:before { background: #08c0d3; }
+
+.full-slide-page .text-wrap .subheading { color: #08c0d3; }
+
+@media (max-width: 640px) { .full-slide-page .slide-step-wrap button.on { color: #08c0d3; } }
+
+/******** page-cover *************/
+.page-title-cover.process { background-image: url(/cms/imgs/farming/bg/bg-process.jpg); }
+
+.page-title-cover.process .page-header .page-text { max-width: 100%; }
+
+/******** chapter ***********/
+.con-chapter { padding: 60px 0; }
+
+.chapter-header .chapter-text { margin-top: 30px; }
+
+.sub-chapter { padding-bottom: 60px; }
+
+.sub-chapter h3.sub-title { line-height: 1; margin-bottom: 38px; }
+
+.sub-chapter h3.sub-title span { display: block; padding-bottom: 6px; }
+
+.sub-chapter .sub-count { margin-bottom: 30px; }
+
+.bg-light { background-color: #e5eef2; }
+
+.bg-dark { background-color: #f0eeea; }
+
+/******** pic-wrap *************/
+.pic-wrap .pic-cover { border: 1px solid #d5d5d5; }
+
+.pic-wrap.one-pic.xs .pic { max-width: 490px; }
+
+.pic-wrap.one-pic.sm .pic { max-width: 800px; }
+
+.pic-wrap.one-pic.md .pic { max-width: 1000px; }
+
+.pic-wrap.one-pic.lg .pic { max-width: 1400px; }
+
+.pic-wrap.half-pic { max-width: 1460px; }
+
+.pic-wrap.half-pic .pic { width: calc(50% - 20px); }
+
+.pic-wrap.half-pic .pic:first-child { margin-right: 20px; }
+
+.pic-wrap.half-pic .pic img { max-width: 100%; }
+
+@media only screen and (max-width: 640px) { .pic-wrap.half-pic .pic { width: 100%; }
+  .pic-wrap.half-pic .pic:first-child { margin-right: 0; } }

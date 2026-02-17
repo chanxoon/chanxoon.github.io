@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>신분증 신청 | 관리자페이지</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="./css/reset.css">
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<link rel="stylesheet" type="text/css" href="./css/plugins/jquery.mCustomScrollbar.css"/>
+<script src="./js/plugins/jquery-1.12.4.min.js"></script>
+<script src="./js/plugins/jquery.mCustomScrollbar.js"></script>
+<script src="./js/common_ui.js"></script>
+</head>
+
+<body>
+<div id="skipNavi">
+    <a href="#container">본문으로 바로가기</a> 
+</div>
+<div id="wrap">    
+    <nav id="sideBar">
+        <div class="sideCont">
+            <h1 class="tit03"><a href="javascript:void(0)">Nayo</a><span>광명고등학교</span></h1>
+            <div class="sidebarUser">
+                <div class="userPic"><img src="./images/tmp/@tmp_user_sidebar.jpg" alt="홍길동"></div>
+                <div class="userName">홍길동(activar)</div>
+                <small>최종 접속일시 : 2020.03.17 12:00</small>
+                <div class="btnWrap">
+                    <button class="rectangle bgDarkGrey">마이페이지</button>
+                    <button class="rectangle bgLightGrey">로그아웃</button>
+                </div>
+            </div>
+            <ul class="lnb">
+                <li>
+                    <a href="javascript:void(0)" class="javascript:void(0)">Dashboard</a>
+                </li>
+                <li class="active">
+                    <a href="javascript:void(0)">접수내역</a>
+                    <ul style="display:block;">
+                        <li><a href="javascript:void(0)">접수01</a></li>
+                        <li><a href="javascript:void(0)">접수02</a></li>
+                        <li><a href="javascript:void(0)">접수03</a></li>
+                        <li><a href="javascript:void(0)">접수04</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">발급내역</a>
+                    <ul>
+                        <li><a href="javascript:void(0)">접수01</a></li>
+                        <li><a href="javascript:void(0)">접수02</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">사용자 관리</a>
+                    <ul>
+                        <li><a href="javascript:void(0)">접수01</a></li>
+                        <li><a href="javascript:void(0)">접수02</a></li>
+                        <li><a href="javascript:void(0)">접수03</a></li>
+                        <li><a href="javascript:void(0)">접수04</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">알람 관리</a>
+                    <ul>
+                        <li><a href="javascript:void(0)">접수01</a></li>
+                        <li><a href="javascript:void(0)">접수02</a></li>
+                        <li><a href="javascript:void(0)">접수03</a></li>
+                        <li><a href="javascript:void(0)">접수04</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">운영자 관리</a>
+                    <ul>
+                        <li><a href="javascript:void(0)">접수01</a></li>
+                        <li><a href="javascript:void(0)">접수02</a></li>
+                        <li><a href="javascript:void(0)">접수03</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+        <footer>
+            <p>Copyright ⓒ NAYO. All right reserved.</p>
+        </footer>                  
+    </nav>   
+    <div id="container">
+        <header class="containerHeader">
+            <button class="spheader btnMenu">메뉴</button>
+            <form>
+                <button type="submit" class="spheader btnSearch">검색</button>
+                <a href="javascript:void(0)" class="spheader btnBack">이전으로</a>
+                <input type="text" placeholder="Search" aria-label="Search" class="inputSearch" title="검색어 입력">
+            </form>
+            <div class="btnWrap">
+                <button type="button" class="spheader btnNotice">알림</button>
+                <button type="button" class="spheader btnSetting">설정</button>
+            </div>
+        </header>
+        <div class="yScroll">
+            <div class="contents">
+                <div class="contentsWrap">
+                    <header>
+                        <h2 class="tit01">신분증 신청 <span>(2017.10.01 수요일)</span></h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="javascript:void(0)">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">접수내역</a>
+                                </li>
+                                <li class="active" aria-current="page">접수내역02</li>
+                            </ol>
+                        </nav>
+                        <div class="btnWrap">
+                            <button type="button" class="rectangle bgWhite btnPopup">버튼명</button>
+                            <button type="button" class="rectangle bgWhite">신분증 발급하기</button>
+                        </div>
+                    </header>
+                    <section class="tableWrap type01">
+                        <h3 class="tit02">기본정보</h3>
+                        <p class="required">(*) 표시는 필수입력</p>
+                        <table class="table type01">
+                            <caption>기본정보 내용</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col style="width:32%">
+                                <col style="width:140px">
+                                <col>                                
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">신청유형</th>
+                                    <td colspan="3" class="checkList">
+                                        <div class="formRadio">
+                                            <input type="radio" id="r1" name="rs" checked>
+                                            <label for="r1">신규</label>
+                                        </div>
+                                        <div class="formRadio">
+                                            <input type="radio" id="r2" name="rs">
+                                            <label for="r2">재발급</label>
+                                        </div>
+                                        <div class="formRadio">
+                                            <input type="radio" id="r3" name="rs">
+                                            <label for="r3">변경</label>
+                                        </div>
+                                        <div class="formRadio">
+                                            <input type="radio" id="r4" name="rs">
+                                            <label for="r4">폐기</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">구분</th>
+                                    <td>개인</td>
+                                    <th scope="row">신청대상</th>
+                                    <td class="checkList">
+                                        <div class="formRadio">
+                                            <input type="radio" id="r5" name="rs01" checked>
+                                            <label for="r5">대리인</label>
+                                        </div>
+                                        <div class="formRadio">
+                                            <input type="radio" id="r6" name="rs01">
+                                            <label for="r6">출입</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">소관 *</th>
+                                    <td>
+                                        <select title="그룹 선택">
+                                            <option>선택</option>
+                                        </select>
+                                    </td>
+                                    <th scope="row">소속 *</th>
+                                    <td>
+                                        <select title="그룹 선택">
+                                            <option>선택</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 class="tit02">자격대리인 정보</h3>
+                        <p class="required">(*) 표시는 필수입력</p>
+                        <table class="table type01">
+                            <caption>자격대리인 정보 내용</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col style="width:32%">
+                                <col style="width:140px">
+                                <col>                                
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><label for="office">사무소명</label></th>
+                                    <td><input type="text" value="사무소01" id="office" disabled></td>
+                                    <th scope="row"><label for="num">등록번호</label></th>
+                                    <td><input type="text" value="850021" id="num" disabled></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="agent">자격대리인</label></th>
+                                    <td><input type="text" value="홍길동" id="agent" disabled></td>
+                                    <th scope="row"><label for="phoneNum">휴대전화번호 *</label></th>
+                                    <td class="phone">
+                                        <select id="phoneNum" title="연락처 첫번째 자리 선택">
+                                            <option>010</option>
+                                        </select> -
+                                        <input type="text" title="연락처 두번째 4자리 입력"> -
+                                        <input type="tel" title="연락처 세번째 4자리 입력"> 
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 class="tit02">신분증 신청자 정보</h3>
+                        <p class="required">(*) 표시는 필수입력</p>
+                        <table class="table type01">
+                            <caption>신분증 신청자 정보 내용</caption>
+                            <colgroup>
+                                <col style="width:257px">
+                                <col style="width:140px">
+                                <col>
+                            </colgroup>                            
+                            <tbody>
+                                <tr>
+                                    <th scope="row" rowspan="6" class="userPicBg">
+                                        <div class="userPic">
+                                            <img src="/images/img/img_noImg.jpg" alt="이미지 없음" />
+                                        </div>
+                                        <button type="button" class="rectangle bgGrey57">사진등록</button>
+                                        <dl>
+                                            <dt>※ 사진규격</dt>
+                                            <dd>- 3개월 이내 촬영한 컬러사진</dd>
+                                            <dd>- 최소 가로, 세로 350px 이상 권장 </dd>
+                                        </dl>
+                                    </th>
+                                    <th scope="row"><label for="name">성명 *</label></th>
+                                    <td><input type="text" value="홍길동" id="name" disabled></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="idNum">주민등록번호 *</label></th>
+                                    <td class="inputHalf">
+                                        <input type="text" value="111111" id="idNum" disabled> - 
+                                        <input type="text" value="1111111" title="주민등록번호 뒷자리 입력" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="adr">주소 *</label></th>
+                                    <td class="address">
+                                        <input type="text" value="111111" id="adr" disabled>
+                                        <button type="button" class="rectangle bgGrey57">주소 검색</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="career">주요경력 *</label></th>
+                                    <td><textarea placeholder="주요경력 내용이 들어갑니다." id="career"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">출입증유형 *</th>
+                                    <td>
+                                        <div class="formChk">
+                                            <input type="checkbox" name="accept" id="chk1" class="check" checked>
+                                            <label for="chk1">PC</label>
+                                        </div>
+                                        <div class="formChk">
+                                            <input type="checkbox" name="accept" id="chk2" class="check">
+                                            <label for="chk2">모바일</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">첨부파일</th>
+                                    <td class="filebox">
+                                        <label for="file">파일선택</label> 
+                                        <input type="file" id="file"> 
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 class="tit02">사무소 운영실태</h3>
+                        <table class="table type01">
+                            <caption>사무소 운영실태 내용</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col style="width:80px">
+                                <col>
+                                <col style="width:140px">
+                                <col style="width:80px">
+                                <col>                                
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><label for="numof">사무원 수</label></th>
+                                    <td colspan="5"><input type="text" placeholder="1" id="numof"> <span>명</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" rowspan="2">등기사건 수<span>(전년도분)</span></th>
+                                    <td class="tdTit"><label for="total01">총 건수</label></td>
+                                    <td class="tdCont"><input type="text" id="total01"> <span>건</span></td>
+                                    <th scope="row" rowspan="2">등기사건 수<span>(신청년도분)</span></th>
+                                    <td class="tdTit"><label for="total02">총 건수</label></td>
+                                    <td class="tdCont"><input type="text" id="total02"> <span>건</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="tdTit"><label for="total03">총 건수</label></td>
+                                    <td class="tdCont"><input type="text" id="total03"> <span>건</span></td>   
+                                    <td class="tdTit"><label for="total04">총 건수</label></td>                                 
+                                    <td class="tdCont"><input type="text" id="total04"> <span>건</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="etc">기타참고사항</label></th>
+                                    <td colspan="5"><textarea placeholder="내용을 입력해주세요." id="etc"></textarea></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btnWrap">
+                            <button type="submit" class="rectangle bgBlue">신청</button>
+                            <button type="reset" class="rectangle bgLightGrey">취소</button>
+                        </div>
+                    </section>                
+                </div>
+            </div>
+        </div>
+    </div>        
+</div>
+
+<div id="popup"></div>
+
+</body>
+</html>

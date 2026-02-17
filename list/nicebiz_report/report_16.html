@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/fonts.css" rel="stylesheet">
+    <link href="./css/defult.css" rel="stylesheet">
+
+    <script src="./js/defult.js"></script>
+    <script src="./js/amchart/index.js"></script>
+    <script src="./js/amchart/xy.js"></script>
+    <script src="./js/amchart/Animated.js"></script>
+
+    <style>
+      #chartdiv-1 {position: relative;width: 100%;height:250px;}
+      #chartdiv-2 {position: relative;width: 100%;height:300px;}
+      #chartdiv-1::before,
+      #chartdiv-2::before {content: '';position: absolute;bottom:0;left:0;width: 60px;height:22px;background:#fff;outline:0px solid red;z-index: 99;opacity: 1;}
+    </style>
+</head>
+<body>
+    <div class="report-wrap sample corp-worker">
+        <div class="report-wrap-inner">
+            <div class="header">
+                <div class="title-area">03. 기업현황 <span class="sub-txt">종업원 현황</span></div>
+                <div class="info-area">
+                    <span>(주)길동정보</span>
+                    <span>116-81-1****</span>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="sec sec1">
+                    <div class="tit-box">
+                        <span class="tit">입금현황</span>
+                    </div>
+                    <div class="con-box">
+                        <div class="box-list">
+                            <div class="list">
+                                <div class="tit">
+                                    예상 <br/>평균 연봉
+                                </div>
+                                <div class="num">
+                                    <p>8,500만원</p>
+                                    <p>(추정)</p>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="tit">
+                                    올해 입사자 <br/>평균 연봉
+                                </div>
+                                <div class="num">
+                                    <p>6,000만원</p>
+                                    <p>(추정)</p>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="tit">
+                                    종업원 수 <br/>(국민연금 기준)
+                                </div>
+                                <div class="num">
+                                    <p>761명</p>
+                                    <p>(추정)</p>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="tit">
+                                    입사율 <br/>(연간 입사자)
+                                </div>
+                                <div class="num">
+                                    <p>22.32%</p>
+                                    <p>171명</p>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="tit">
+                                    퇴사율 <br/>(연간 입사자)
+                                </div>
+                                <div class="num">
+                                    <p>27.28%</p>
+                                    <p>209명</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-txt">※ 본 정보는 공공데이터포털에서 제공하는 국민연금 데이터를 기반으로 분석된 추정값으로 실제와 차이가 있을 수 있습니다.</div>
+                </div>
+
+                <div class="sec sec2">
+                    <div class="tit-box">
+                        <span class="tit">월별 종업원수 현황</span>
+                        <span class="unit">(단위 : 명)</span>
+                    </div>
+                    <div class="con-box">
+                        <div class="graph">
+                            <!-- <img src="./images/img-graph-9.png" alt="그래프 예시"> -->
+                            <div id="chartdiv-1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec sec3">
+                    <div class="tit-box">
+                        <span class="tit">동종 산업군 비교</span>
+                        <span class="unit">(단위 : 만원)</span>
+                    </div>
+                    <div class="con-box">
+                        <div class="graph">
+                            <!-- <img src="./images/img-graph-10.png" alt="그래프 예시"> -->
+                            <div id="chartdiv-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="page-info-area">
+                    <div class="page-tit">기업 분석 보고서(상세보고서)</div>
+                    <div class="dote-line"></div>
+                    <div class="page-num">10</div>
+                </div>
+                <div class="f-logo-area">
+                    <img src="./images/img-footer-logo.png" alt="NICE평가정보" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+  am5.ready(function() {
+    
+    var root = am5.Root.new("chartdiv-1");
+    
+    root.setThemes([am5themes_Animated.new(root)]);
+    
+    var chart = root.container.children.push(
+      am5xy.XYChart.new(root, {
+        panX: false,
+        panY: false,
+        // wheelX: "panX",
+        // wheelY: "zoomX",
+        paddingLeft: 0,
+        paddingTop: 30,
+        paddingBottom: 20,
+        layout: root.verticalLayout,
+      })
+    );
+    
+    var data = [
+      {
+        year: "6월",
+        entering: 15,
+        leaving: 22,
+        expenses: 749
+      },
+      {
+        year: "7월",
+        entering: 12,
+        leaving: 18,
+        expenses: 737
+      },
+      {
+        year: "8월",
+        entering: 24,
+        leaving: 22,
+        expenses: 748
+      },
+      {
+        year: "9월",
+        entering: 10,
+        leaving: 11,
+        expenses: 732
+      },
+      {
+        year: "10월",
+        entering: 10,
+        leaving: 11,
+        expenses: 731,
+        // strokeSettings: {
+        //   stroke: chart.get("colors").getIndex(1),
+        //   strokeWidth: 10,
+        //   strokeDasharray: [5, 5]
+        // }
+      },
+    ];
+    
+    var xRenderer = am5xy.AxisRendererX.new(root, {
+      minorGridEnabled: true,
+      minGridDistance: 10,
+      cellStartLocation: 0.2,
+      cellEndLocation: 0.8,
+    });
+    var xAxis = chart.xAxes.push(
+      am5xy.CategoryAxis.new(root, {
+        categoryField: "year",
+        renderer: xRenderer,
+        // tooltip: am5.Tooltip.new(root, {})
+      })
+    );
+    xAxis.get("renderer").labels.template.setAll({
+      fontSize: 14,
+      paddingTop: 8
+    });
+    xRenderer.grid.template.setAll({
+      location: 1
+    })
+    xRenderer.grid.template.set("visible", false);
+
+    xAxis.data.setAll(data);
+    
+    var yAxis = chart.yAxes.push(
+      am5xy.ValueAxis.new(root, {
+        min: 0,
+        extraMax: 0.5,
+        renderer: am5xy.AxisRendererY.new(root, {
+          strokeOpacity: 0.1,
+        })
+      })
+    );
+
+    var yAxis2 = chart.yAxes.push(
+      am5xy.ValueAxis.new(root, {
+        maxDeviation: 0.3,
+        syncWithAxis: yAxis,
+        renderer: am5xy.AxisRendererY.new(root, { opposite: true })
+      })
+    );
+
+    // 막대1
+    var series1 = chart.series.push(
+      am5xy.ColumnSeries.new(root, {
+        name: "입사자",
+        xAxis: xAxis,
+        yAxis: yAxis,
+        fill: am5.color(0x845ce7),
+        valueYField: "entering",
+        categoryXField: "year",
+        tooltip: am5.Tooltip.new(root, {
+          pointerOrientation: "horizontal",
+          labelText: "{name} : {valueY} {info}",
+        })
+      })
+    );
+    series1.columns.template.setAll({
+      tooltipY: am5.percent(20),
+      width: am5.percent(80),
+      templateField: "columnSettings"
+    });
+    series1.data.setAll(data);
+    series1.bullets.push(function () {
+      return am5.Bullet.new(root, {
+        locationX: 0.5,
+        locationY: 0.95,
+        sprite: am5.Label.new(root, {
+          centerY: am5.p100,
+          centerX: am5.p50,
+          text: "{valueY}",
+          populateText: true
+        })
+      });
+    });
+
+    // 막대2
+    var series2 = chart.series.push(
+      am5xy.ColumnSeries.new(root, {
+        name: "퇴사자",
+        xAxis: xAxis,
+        yAxis: yAxis,
+        fill: am5.color(0xdcdddd),
+        valueYField: "leaving",
+        categoryXField: "year",
+        tooltip: am5.Tooltip.new(root, {
+          pointerOrientation: "horizontal",
+          labelText: "{name} : {valueY} {info}"
+        })
+      })
+    );
+    series2.columns.template.setAll({
+      tooltipY: am5.percent(20),
+      width: am5.percent(80),
+      templateField: "columnSettings"
+    });
+    series2.data.setAll(data);
+    series2.bullets.push(function () {
+      return am5.Bullet.new(root, {
+        locationX: 0.5,
+        locationY: 0.95,
+        sprite: am5.Label.new(root, {
+          centerY: am5.p100,
+          centerX: am5.p50,
+          text: "{valueY}",
+          populateText: true
+        })
+      });
+    });
+
+    // 라인
+    var series3 = chart.series.push(
+      am5xy.LineSeries.new(root, {
+        name: "총인원수",
+        xAxis: xAxis,
+        yAxis: yAxis2,
+        fill: am5.color(0x3524a5),
+        stroke: am5.color(0x3524a5),
+        valueYField: "expenses",
+        categoryXField: "year",
+        tooltip: am5.Tooltip.new(root, {
+          pointerOrientation: "horizontal",
+          labelText: "{name} : {valueY} {info}"
+        })
+      })
+    );
+    series3.strokes.template.setAll({
+      strokeWidth: 2,
+      templateField: "strokeSettings"
+    });
+    series3.data.setAll(data);
+    series3.bullets.push(function () {
+      return am5.Bullet.new(root, {
+        sprite: am5.Circle.new(root, {
+          strokeWidth: 1,
+          stroke: series3.get("stroke"),
+          stroke: am5.color(0x3524a5),
+          radius: 5,
+          fill: am5.color(0x3524a5)
+        })
+      });
+    });
+
+    chart.set("cursor", am5xy.XYCursor.new(root, {}));
+    
+    var legend = chart.children.push(
+      am5.Legend.new(root, {
+        centerX: am5.p0,
+        x: am5.p0
+      })
+    );
+    legend.data.setAll(chart.series.values);
+
+    legend.labels.template.setAll({ 
+      width: 15,
+      oversizedBehavior: "wrap"
+    });
+    // legend.data.setAll(series.dataItems);
+        
+    chart.appear(1000, 100);
+    series1.appear();
+    series2.appear();
+    series3.appear();
+  }); // end am5.ready()
+
+
+
+
+  am5.ready(function() {
+    var root = am5.Root.new("chartdiv-2");
+    
+    root.setThemes([am5themes_Animated.new(root)]);
+    
+    var chart = root.container.children.push(
+      am5xy.XYChart.new(root, {
+        panX: false,
+        panY: false,
+        // wheelX: "panX",
+        // wheelY: "zoomX",
+        paddingLeft: 0,
+        paddingTop: 30,
+        paddingBottom: 20,
+        layout: root.verticalLayout,
+      })
+    );
+    
+    var data = [
+      {
+        salary: "(주)길동정보 평균 연봉",
+        annual_salary: 8100
+      },
+      {
+        salary: "동종산업군 평균 연봉",
+        annual_salary: 1900
+      },
+      {
+        salary: "동종산업군 상위1% 연봉",
+        annual_salary: 9000
+      },
+      {
+        salary: "동종산업군 중간 연봉",
+        annual_salary: 1900
+      },
+    ];
+    
+    var xRenderer = am5xy.AxisRendererX.new(root, {
+      minorGridEnabled: true,
+      minGridDistance: 10,
+      cellStartLocation: 0.2,
+      cellEndLocation: 0.8,
+    });
+    var xAxis = chart.xAxes.push(
+      am5xy.CategoryAxis.new(root, {
+        categoryField: "salary",
+        renderer: xRenderer,
+        // tooltip: am5.Tooltip.new(root, {})
+      })
+    );
+    xAxis.get("renderer").labels.template.setAll({
+      fontSize: 13,
+      paddingTop: 8
+    });
+
+    xRenderer.grid.template.setAll({
+      location: 1
+    })
+    xRenderer.grid.template.set("visible", false);
+
+    xAxis.data.setAll(data);
+    
+    var yAxis = chart.yAxes.push(
+      am5xy.ValueAxis.new(root, {
+        min: 0,
+        extraMax: 0.3,
+        renderer: am5xy.AxisRendererY.new(root, {
+          strokeOpacity: 0.1,
+        })
+      })
+    );
+
+    // 막대1
+    var series1 = chart.series.push(
+      am5xy.ColumnSeries.new(root, {
+        name: "평균연봉",
+        xAxis: xAxis,
+        yAxis: yAxis,
+        fill: am5.color(0x845ce7),
+        valueYField: "annual_salary",
+        categoryXField: "salary",
+        tooltip: am5.Tooltip.new(root, {
+          pointerOrientation: "horizontal",
+          labelText: "{name} : {valueY} {info}",
+        })
+      })
+    );
+    series1.columns.template.setAll({
+      tooltipY: am5.percent(20),
+      width: am5.percent(70),
+      templateField: "columnSettings"
+    });
+    series1.data.setAll(data);
+    series1.bullets.push(function () {
+      return am5.Bullet.new(root, {
+        locationX: 0.5,
+        locationY: 0.99,
+        sprite: am5.Label.new(root, {
+          centerY: am5.p100,
+          centerX: am5.p50,
+          text: "{valueY}",
+          populateText: true
+        })
+      });
+    });
+
+    chart.set("cursor", am5xy.XYCursor.new(root, {}));
+    
+    // var legend = chart.children.push(
+    //   am5.Legend.new(root, {
+    //     centerX: am5.p50,
+    //     x: am5.p50
+    //   })
+    // );
+    // legend.data.setAll(chart.series.values);
+        
+    chart.appear(1000, 100);
+    series1.appear();
+    
+  }); // end am5.ready()
+  </script>

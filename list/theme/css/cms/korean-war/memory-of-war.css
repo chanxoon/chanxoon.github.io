@@ -1,0 +1,88 @@
+.wrap-bg {background-image: url(/cms/imgs/korean-war/bg/bg-wrap.jpg);}
+.page-title-cover {background-image: url(/cms/imgs/korean-war/bg/bg-main.jpg);}
+.page-title-cover .page-header {opacity: 1; top: 50%;}
+.page-title-cover .btn-scroll-action {opacity: 1; bottom: 100px;}
+#btn-go-top {display: none !important;}
+
+#app { width: 100%; height: 100%; position: fixed; }
+#container { min-height: 100% !important; position: relative; }
+
+#footer {background-color: transparent;}
+.story #footer {background-color: #363434;}
+.search-result #footer {background-color: #363434;}
+
+/****************
+      격전지
+*****************/
+@media only screen and (min-width: 641px) {
+
+}
+.battlefield-wrapper {width: 100%; height: 100%; overflow: hidden;}
+.battlefield-wrap {max-width: 1460px; height: 100%; margin: 0 auto; padding: 180px 30px 0; position: relative; ;background: url(/cms/imgs/korean-war/bg/bg-battlefield-map.png)no-repeat right top; background-size: contain;}
+.battlefield-wrap:after {content: ""; display: block; clear: both;}
+
+.battlefield-list-side {float: left; width: 640px; height: calc(100vh - 99px); position: absolute; top: 190px; transform: translateY(-50%); color: #fff; margin-left: -73px; overflow: visible;}
+.battlefield-list-side:before {position: absolute; top: 0; left: 0; height: 100%; width: 1px; background: #fff; opacity: .08;}
+.battlefield-list-side .swiper-wrapper .bflist-slide {position: relative; transition: all .3s ease; padding-left: 214px;}
+.battlefield-list-side .swiper-wrapper .history-head {margin-left: -140px;}
+.battlefield-list-side .swiper-wrapper .history-head:after {content:""; display: block; clear: both;}
+.battlefield-list-side .swiper-wrapper .year {font-size: 26px; margin-right: 15px; display: none; position: absolute; left: 0;}
+.battlefield-list-side .swiper-wrapper .date {font-size: 14px; background: rgba(255, 255, 255, 0.15); border-radius: 20px; width: 74px; height: 23px; float: left; text-align: center; margin-top: 5px; line-height: 23px;}
+.battlefield-list-side .swiper-wrapper .date .month:after {content:"."}
+.battlefield-list-side .swiper-wrapper .title {font-weight: 500; float: left; margin-left: 20px; font-size: 18px; opacity: .5;}
+.battlefield-list-side .swiper-wrapper .data-origin {color: #ccc; margin-top: 20px;}
+.battlefield-list-side .swiper-wrapper .story-data {display: none;}
+.battlefield-list-side .swiper-wrapper .story-data .data-tit {font-size: 20px; margin-top: 20px;}
+.battlefield-list-side .swiper-wrapper .story-data .data-txt {height: 2.8em; -webkit-box-orient:vertical;}
+.battlefield-list-side .swiper-wrapper .media-list {opacity: 0; height: 0; margin-bottom: 0;}
+.battlefield-list-side .swiper-wrapper .resource-list {display: none;}
+
+.battlefield-list-side .swiper-wrapper .bflist-slide.swiper-slide-active {}
+.battlefield-list-side .swiper-wrapper .bflist-slide.swiper-slide-active .year {display: block;}
+.battlefield-list-side .swiper-wrapper .bflist-slide.swiper-slide-active .date {width: 104px; height: 31px; background: #00a2ec; font-size: 18px; line-height: 31px;}
+.battlefield-list-side .swiper-wrapper .bflist-slide.swiper-slide-active .date .month:after {content: '월 ';}
+.battlefield-list-side .swiper-wrapper .bflist-slide.swiper-slide-active .date .day:after {content: '일';}
+.battlefield-list-side .swiper-wrapper .bflist-slide.swiper-slide-active .title {margin-left: 36px; font-size: 28px; opacity: 1;}
+.battlefield-list-side .swiper-wrapper .bflist-slide.swiper-slide-active .story-data {display: block;}
+.battlefield-list-side .swiper-wrapper .bflist-slide.swiper-slide-active .media-list {display: block; opacity: 1; height: auto; margin-bottom: 40px;}
+.battlefield-list-side .swiper-wrapper .bflist-slide.swiper-slide-active .resource-list {display: block;}
+.battlefield-list-side .swiper-wrapper .bflist-slide.slide-hidden {opacity: 0;}
+
+.battlefield-map-side {float: right; margin-top: -180px; height: calc(100vh - 99px);}
+.battlefield-map-side .map-date {position: absolute; top: 180px; right: 0; padding-right: 22px; background: url(/cms/imgs/korean-war/bg/bg-date-text.png) no-repeat;}
+.battlefield-map-side .map-share-cover {width: 100%; height: 100%;}
+.battlefield-map-side .map-share-cover:after {content: ""; display: block; clear: both;}
+.battlefield-map-side .map-share-cover img {height: 100%; margin-right: -30px; float: right;}
+.battlefield-map-side .map-point-cover {position: absolute; top: 0; right: 0; width: 100%; height: 100%;}
+.battlefield-map-side .map-point-cover .map-point {position: absolute; top: 0; right: 0; height: 100%;}
+
+@media only screen and (max-width: 640px) {
+    .wrap-bg {background-image: url(/cms/imgs/korean-war/bg/bg-battlefield-map.png); background-size: auto 150%; background-position: 87% 20%;}
+
+    .battlefield-wrapper {overflow: visible;}
+    .battlefield-wrap {background: transparent;}
+    .battlefield-list-side {transform: translateY(0); height: auto; margin-left: 0; position: relative; top: 0; float: none; width: 100%;}
+    .battlefield-list-side .swiper-wrapper {display: block;}
+    .battlefield-list-side .swiper-wrapper .swiper-wrapper {display: flex;}
+    .battlefield-list-side .swiper-wrapper .bflist-slide {padding-left: 0; float: none; margin-top: 80px;}
+    .battlefield-list-side .swiper-wrapper .history-head {margin-left: 0;}
+    .battlefield-list-side .swiper-wrapper .date {display: none;} 
+
+    .battlefield-list-side .swiper-wrapper .bflist-slide.swiper-slide-active .year {display: none;}
+    .battlefield-list-side .swiper-wrapper .bflist-slide .date {width: 104px; height: 31px; background: #00a2ec; font-size: 1.5rem; line-height: 31px;}
+    .battlefield-list-side .swiper-wrapper .bflist-slide .date .month:after {content: '월 ';}
+    .battlefield-list-side .swiper-wrapper .bflist-slide .date .day:after {content: '일';}
+    .battlefield-list-side .swiper-wrapper .bflist-slide .title {margin-left: 0; font-size: 1.8rem; opacity: 1;}
+    .battlefield-list-side .swiper-wrapper .bflist-slide .story-data {display: block;}
+    .battlefield-list-side .swiper-wrapper .bflist-slide .media-list {display: block; opacity: 1; height: auto; margin-bottom: 40px;}
+    .battlefield-list-side .swiper-wrapper .bflist-slide .resource-list {display: block;}
+    .battlefield-list-side .swiper-wrapper .bflist-slide.swiper-slide-active .title {margin-left: 0;}
+    .m-slide-date {padding-right: 22px; background: url(/cms/imgs/korean-war/bg/bg-date-text.png) no-repeat; height: 30px; background-size: auto 100%; position: absolute; right: 0; top: 8px;}
+
+    .battlefield-map-side {display: none}
+    /* .battlefield-map-side .map-share-cover {display: none;}
+    .battlefield-map-side .map-point-cover {display: none;} */
+
+}
+
+

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/***************************
+Print Friendly layout CSS
+****************************/
+#printfriendly #pf-title {
+    display:none;
+}
+
+#printfriendly #pf-src {
+    display:none;
+}
+
+.printfriendly-copyright-warning {
+    position: absolute;
+    bottom: 0;
+}
+
+/* naver 지도 부분 안보이도록 */
+#pf-content .related-info {
+    display:none;
+}
+/* naver 지도 부분 안보이도록 */
+#pf-content .map_copyright {
+    display:none;
+}
+
+/* 멀티미디어자료 높이 설정 */
+#pf-content .multimedia ul > li {
+    float: left;
+    width: 100%;
+}
+
+#pf-content .list-box ul > li {
+    float: left;
+}
+
+/* 고객의견 부분 안보이도록 */
+#pf-content .view-estimation {
+    display: none;
+}
+
+/* 포인트 배너 안보이도록 */
+#pf-content #Npoint {
+    display: none;
+}

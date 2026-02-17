@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>기관정보 | 관리자페이지</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/plugins/jquery-ui.css">
+<link rel="stylesheet" href="./css/plugins/jquery.mCustomScrollbar.css"/>
+<link rel="stylesheet" href="./css/common.css">
+
+<script src="./js/plugins/jquery-1.12.4.min.js"></script>
+<script src="./js/plugins/jquery-ui.js"></script>
+<script src="./js/plugins/jquery.mCustomScrollbar.js"></script>
+<script src="./js/common_ui.js"></script>
+</head>
+
+<body>
+<div id="skipNavi">
+    <a href="#container">본문으로 바로가기</a> 
+</div>
+<div id="wrap">    
+    <nav id="sideBar">
+        <div class="sideCont">
+            <h1 class="tit03"><a href="./admin.html"><img src="./images/img/logo.png" alt="heyID"></a><span>강남구청</span></h1>
+            <div class="sidebarUser">
+                <div class="userPic"><img src="./images/img/img-profile-man1.png" alt="홍길동"></div>
+                <div class="userName">홍길동 (admin01)</div>
+                <small>최종접속 : 2023.04.26 13:40</small>
+                <div class="btnWrap">
+                    <button class="rectangle bgDarkGrey" onclick="location.href='./admin_mypage.html'">마이페이지</button>
+                    <button class="rectangle bgLightGrey">로그아웃</button>
+                </div>
+            </div>
+            <ul class="lnb">
+                <li>
+                    <a href="./admin.html">대시보드</a>
+                </li>
+                <li>
+                    <a href="./admin_apply_manage.html">접수관리</a>
+                    <ul>
+                        <li><a href="./admin_apply_manage.html">신청/오류관리</a></li>
+                        <li><a href="./admin_approval_manage.html">승인/반려내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./admin_id_manage.html">신분증관리</a>
+                </li>
+                <li>
+                    <a href="./admin_visit_manage.html">출입/방문관리</a>
+                </li>
+                <li>
+                    <a href="./admin_notice_manage.html">알림서비스</a>
+                    <ul>
+                        <li><a href="./admin_notice_manage.html">공지관리</a></li>
+                        <li><a href="./admin_survey_manage.html">설문관리</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="./admin_agency_info.html">시스템관리</a>
+                    <ul style="display:block;">
+                        <li class="active"><a href="./admin_agency_info.html">기관정보</a></li>
+                        <li><a href="./admin_agency_admin.html">기관관리자정보</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+        <footer>
+            <p>Copyright ⓒ Activar. All right reserved.</p>
+        </footer>                  
+    </nav>    
+    <div id="container">
+        <header class="containerHeader">
+            <button class="spheader btnMenu">메뉴</button>
+            <div class="btnWrap">
+                <button type="button" class="spheader btnSetting">설정
+                    <div class="submenu">
+                        <a href="./admin_mypage.html">마이페이지</a>
+                        <a href="/">로그아웃</a>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <div class="yScroll">
+            <div class="contents agency-info">
+                <div class="contentsWrap">
+                    <header>
+                        <div class="tit-box">
+                            <h2 class="tit01">기관정보</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <a href="javascript:void(0)">대시보드</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">시스템관리</a>
+                                    </li>
+                                    <li class="active" aria-current="page">기관정보</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="date-box">
+                            <div class="date">
+                                <img src="./images/icon/icon-checkfolder.png" alt="체크폴더" class="mCS_img_loaded">
+                                <span>서비스 가입일 : 2023.01.10</span>
+                            </div>
+                        </div>
+                    </header>
+                    <section class="tableWrap type01 detail">
+                        <h3 class="tit02">기관/단체 정보</h3>
+                        <table class="table type01">
+                            <caption>>기관/단체 정보</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col style="width:450px;">
+                                <col style="width:140px;">
+                                <col style="width:450px;">
+                            </colgroup>                            
+                            <tbody>
+                                <tr>
+                                    <th scope="row">종목/분야</th>
+                                    <td>공공기관</td>
+                                    <th scope="row">기관유형</th>
+                                    <td>구청</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">기관명</th>
+                                    <td>강남구청</td>
+                                    <th scope="row">대표자명</th>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사업자등록번호 / 고유번호</th>
+                                    <td>123-45-67890</td>
+                                    <th scope="row">소재지</th>
+                                    <td >(06090) 서울 강남구 학동로 426 강남구청</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">전화번호<span class="required">＊</span></th>
+                                    <td><input type="text" value="0212345678"></td>
+                                    <th scope="row">팩스번호<span class="required">＊</span></th>
+                                    <td><input type="text" value="0200000000"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">홈페이지 URL</th>
+                                    <td colspan="3"><input type="text" value="https://www.gangnam.go.kr/main.do"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 class="tit02">신분증 유형 정보</h3>
+                        <div class="Cont">
+                            <div class="reg-box">
+                                <input type="text" class="input-reg" placeholder="신분증 유형명을 적어주세요.">
+                                <button type="button" class="reg-btn">등록</button>
+                            </div>
+                            <table class="table">
+                                <caption>비고</caption>
+                                <colgroup>
+                                    <col style="width:5%">
+                                    <col style="width:100%">
+                                    <col style="width:auto">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">신분증 유형</th>
+                                        <th scope="col">삭제</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="no-result">
+                                        <td colspan="5">작성된 메모가 없습니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="txtLeft">공인중개사증</td>
+                                        <td><button type="button" class="del-btn">삭제</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>                        
+
+                        <div class="btnWrap">
+                            <div class="Left"></div>
+                            <div class="Right">
+                                <button type="button" class="rectangle bgBlue">수정</button>
+                                <button type="button" class="rectangle bgLightGrey">취소</button>
+                            </div>
+                        </div>
+                    </section>                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popup"></div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+#wrap { text-align: center; }
+
+/* header no change */
+#header.header-change { background: transparent; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+#header.header-change #search { background-image: url("/cms/imgs/common/icon/icon-search.png"); }
+
+#header.header-change #menu { background-image: url("/cms/imgs/common/icon/icon-menu.png"); }
+
+#header.header-change .heading-logo .logo-portal { background-image: url("/cms/imgs/common/img/logo-kccf-color.svg"); }
+
+#header.header-change .heading-logo .logo-themes { background-image: url("/cms/imgs/righteous-army/logo-righteous-army.svg"); }
+
+.header-change .main-menu ul li a { color: #fff; }
+
+.header-change ~ #container .themes-sub-depth-nav { background: rgba(0, 0, 0, 0.12); }
+
+.page-title-cover { background-image: url("/cms/imgs/righteous-army/bg/bg-japanese-invasion-army.jpg"); background-position: center top; }
+
+.load-transition .page-header { top: 33.33%; }
+
+.chapter-header { opacity: 0; position: relative; top: 30px; transition: all 0.6s ease; }
+
+.sub-chapter { opacity: 0; position: relative; top: 30px; transition: all 0.6s ease .3s; }
+
+.scroll-transition .chapter-header, 
+.scroll-transition .sub-chapter { opacity: 1; top: 0; }
+
+.sub-break { margin: 0 !important; }
+
+/***************** 비주얼 탭 */
+.btn-mobile-tab { display: none; }
+
+.sub-chapter .sub-title strong {line-height: 1.5;}
+
+@media only screen and (max-width: 640px) { .btn-mobile-tab { display: block; } }
+
+.type-tab-menu .btn-tab { border: 1px solid rgba(255, 255, 255, 0.35); padding: 0 30px; line-height: 52px; display: inline-block; box-sizing: border-box; color: #fff; border-radius: 26px; margin-right: 6px; z-index: 40;  font-size: 1.333rem; transition: all .3s ease;}
+
+.type-tab-menu .btn-tab:last-child { margin-right: 0; }
+
+.type-tab-menu .btn-tab.on { border-color: #e7b200; background: #e7b200; }
+
+.type-tab-menu .btn-tab:focus, .type-tab-menu .btn-tab:hover { border-color: #e7b200; }
+
+.visual-tabs-wrap { top: 630px; }
+
+.visual-tabs-wrap.fixed { padding-top: 165px; padding-bottom: 10px; }
+
+.visual-tabs-wrap.fixed .type-tab-menu .btn-tab {line-height: 32px; padding: 0 15px; border-radius: 16px; font-size: 1.167rem;}
+
+.visual-tabs-wrap.fixed.bg { background-image: url("/cms/imgs/righteous-army/bg/bg-japanese-invasion-army.jpg"); }
+
+.visual-tabs { max-width: 1418px; position: relative; z-index: 1; margin: 0 auto; }
+
+.visual-tabs:after { content: ""; display: block; clear: both; }
+
+.tab-con-box { display: none; }
+
+.tab-con-box.on { display: block; }
+
+.pic-wrap { margin-bottom: 30px; }
+
+.pic .pic-caption { color: #cccccc; }
+
+@media only screen and (max-width: 640px) {
+    .header-change .main-menu ul li a { color: #242424; }
+
+    .sub-break + [id] { margin-top: -1px; }
+}
+
+#hamkyung { min-height: 90vh; background: #fff; }
+
+@media only screen and (min-width: 640px){
+    #header.header-change .logo a ,
+    #header.header-change a.logo-themes span ,
+    #header.header-change .nav-wrap a ,
+    #header.header-change .main-menu ul li a { color: #fff !important; }
+    #header.header-change .nav-wrap .active a { color: #e7b200 !important; }
+}

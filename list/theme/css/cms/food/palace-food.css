@@ -1,0 +1,27 @@
+#wrap { text-align: center; }
+
+.header-visual ,
+.page-title-cover { background-image: url(/cms/imgs/food/bg/bg-palace.jpg); }
+.header-visual .source-origin ,
+.page-title-cover .source-origin { text-align: right; opacity: .4; padding: 0 30px 24px; }
+
+/* .con-chapter {padding-top: 100px;} */
+.chapter-header { opacity: 0; position: relative; top: 30px; transition: all .6s ease; }
+
+.sub-chapter { opacity: 0; position: relative; top: 30px; transition: all .6s ease .3s; }
+
+.scroll-transition .chapter-header, .scroll-transition .sub-chapter { opacity: 1; top: 0; }
+
+.chapter01 .chapter-text { padding-top: 20px; padding-bottom: 7px; }
+
+.chapter02 { background-image: url(/cms/imgs/food/bg/bg-palace-002.jpg); }
+
+.chapter02 .chapter-text { padding-top: 15px; padding-bottom: 9px; }
+
+.chapter03 .chapter-text { padding-top: 17px; padding-bottom: 9px; }
+
+.chapter04 { padding-top: 95px; background-image: url(/cms/imgs/food/bg/bg-palace-003.jpg); }
+
+.chapter04 .chapter-text { color: #fff; padding-top: 17px; padding-bottom: 9px; }
+
+.chapter05 .chapter-text { padding-top: 18px; padding-bottom: 9px; }

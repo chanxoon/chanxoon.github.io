@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+<title>공유주방1번가</title>
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR" rel="stylesheet">
+<link href="./css/common.css" rel="stylesheet" type="text/css"/>
+<link href="./css/default.css" rel="stylesheet" type="text/css"/>
+<link href="./css/query.css" rel="stylesheet" type="text/css"/>
+
+<!-- 아이콘 http://fontawesome.io/ -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="./js/default.js"></script>
+<script type="text/javascript" src="./js/fullpage.js"></script>
+<script type="text/javascript" src="./js/lightslider.js"></script>
+
+
+ <!--[if IE]>
+	 <script type="text/javascript">
+		  var console = { log: function() {} };
+	 </script>
+ <![endif]-->
+<script>$(function() {$("input[name=s_name]").focus();});</script>
+</head>
+
+<body>
+
+<div id="gnb" class="">
+	<ul>
+		<li>
+			<a href="./index.html"><img src="img/logo.png" alt="공유주방1번가"></a>
+		</li>
+	</ul>
+	<ul class="popbtn_mgnb">
+        <li><a href="./brand.html" class="eff">입점 브랜드 소개</a></li>
+		<li><a href="./member.html" class="eff active">입점문의</a></li>
+	</ul>
+</div>
+
+<div class="Con_mgnb">
+	<div class="Con_inner_mgnb">
+		<ul>
+			<li><a href="./brand.html" class="eff">입점 브랜드 소개</a></li>
+			<li><a href="./member.html" class="eff">입점문의</a></li>
+
+			<div id="Close_mgnb"><a href="javascript:;" class="eff"><i class="fas fa-times"></i></a></div>
+		</ul>
+	</div>
+</div>
+
+
+<div class="section_top member">
+	<div class="Text">
+		<p>
+			<span>입점문의</span>
+		</p>
+		<p>
+			<span>1번가를 더 알고 싶다면 연락주세요.</span>
+		</p>
+	</div>
+</div>
+
+
+<div class="section_mid">
+	<div id="contents">
+		<h2>입점 진행 절차</h2>
+		<div class="step">
+			<ul>
+				<li>
+					<p><img src="img/step_01.png"></p>
+					<p>01</p>
+					<p>입점 신청서 작성</p>
+				</li>
+				<li>
+					<p><img src="img/step_02.png"></p>
+					<p>02</p>
+					<p>지점 투어 및 미팅</p>
+				</li>
+				<li>
+					<p><img src="img/step_03.png"></p>
+					<p>03</p>
+					<p>계약서 작성<br>및 보증금 납부</p>
+				</li>
+				<li>
+					<p><img src="img/step_04.png"></p>
+					<p>04</p>
+					<p>주방 장비 설치<br>및 집기 입고</p>
+				</li>
+				<li>
+					<p><img src="img/step_05.png"></p>
+					<p>05</p>
+					<p>오픈 일자 확정</p>
+				</li>
+			</ul>
+			<div class="line"></div>
+		</div>
+
+		<div class="store">
+			<h2>입점 문의서</h2>
+			<p>아래 문의서를 작성해서 보내주시면 24시간 이내로 담당자가 연락을 드립니다.</p>
+			<form id="fregisForm" name="fregisForm" method="post" onsubmit="return fregisFormSubmit(this);" autocomplete="off">
+			<ul>
+				<li>
+					<p><label>성함<span>※필수입력</span></label></p>
+					<p><input type="text" required name="s_name" onkeydown="if (event.keyCode == 13) {fregisFormSubmit(fregisForm);}"></p>
+				</li>
+				<li>
+					<p><label>업체명</label></p>
+					<p><input type="text" name="s_company" onkeydown="if (event.keyCode == 13) {fregisFormSubmit(fregisForm);}"></p>
+				</li>
+				<li>
+					<p><label>전화번호<span>※필수입력</span></label></p>
+					<p><input type="text" required name="s_tel" onkeydown="if (event.keyCode == 13) {fregisFormSubmit(fregisForm);}"></p>
+				</li>
+				<li>
+					<p><label>이메일<span>※필수입력</span></label></p>
+					<p><input type="email" required name="s_email" onkeydown="if (event.keyCode == 13) {fregisFormSubmit(fregisForm);}"></p>
+				</li>
+			</ul>
+
+			<ul>
+				<li>
+					<p><label>희망 음식 분야<span>※필수입력</span></label></p>
+
+						<div class="el-checkbox">
+							<input type="checkbox" name="food_hope" id="1_1">
+							<label class="el-checkbox-style" for="1_1"></label>
+							<span class="margin-r">한식</span>
+						</div>
+						<div class="el-checkbox">
+							<input type="checkbox" name="food_hope" id="1_2" checked>
+							<label class="el-checkbox-style" for="1_2"></label>
+							<span class="margin-r">양식</span>
+						</div>
+						<div class="el-checkbox">
+							<input type="checkbox" name="food_hope" id="1_3">
+							<label class="el-checkbox-style" for="1_3"></label>
+							<span class="margin-r">중식</span>
+						</div>
+						<div class="el-checkbox">
+							<input type="checkbox" name="food_hope" id="1_4" checked>
+							<label class="el-checkbox-style" for="1_4"></label>
+							<span class="margin-r">돈까스/회/일식</span>
+						</div>
+						<div class="el-checkbox">
+							<input type="checkbox" name="food_hope" id="1_5">
+							<label class="el-checkbox-style" for="1_5"></label>
+							<span class="margin-r">분식</span>
+						</div>
+						<div class="el-checkbox">
+							<input type="checkbox" name="food_hope" id="1_6">
+							<label class="el-checkbox-style" for="1_6"></label>
+							<span class="margin-r">치킨/피자</span>
+						</div>
+						<div class="el-checkbox">
+							<input type="checkbox" name="food_hope" id="1_7">
+							<label class="el-checkbox-style" for="1_7"></label>
+							<span class="margin-r">족발/보쌈</span>
+						</div>
+						<div class="el-checkbox">
+							<input type="checkbox" name="food_hope" id="1_8">
+							<label class="el-checkbox-style" for="1_8"></label>
+							<span class="margin-r">찜/탕</span>
+						</div>
+						<div class="el-checkbox">
+							<input type="checkbox" name="food_hope" id="1_9">
+							<label class="el-checkbox-style" for="1_9"></label>
+							<span class="margin-r">도시락</span>
+						</div>
+						<div class="el-checkbox">
+							<input type="checkbox" name="food_hope" id="1_10">
+							<label class="el-checkbox-style" for="1_10"></label>
+							<span class="margin-r">카페</span>
+						</div>
+						<div class="el-checkbox">
+							<input type="checkbox" name="food_hope" id="1_11">
+							<label class="el-checkbox-style" for="1_11"></label>
+							<span class="margin-r">기타</span>
+						</div>
+
+				</li>
+			</ul>
+
+			<ul>
+				<li>
+					<p><label>입점 희망 지역 선택<span>※필수입력</span></label></p>
+
+						<div class="el-checkbox">
+							<input type="checkbox" name="import_hope" value="성남점" id="1_12">
+							<label class="el-checkbox-style" for="1_12"></label>
+							<span class="margin-r">성남점</span>
+						</div>
+						<div class="el-checkbox">
+							<input type="checkbox" name="import_hope" value="연신내점" id="1_13" checked>
+							<label class="el-checkbox-style" for="1_13"></label>
+							<span class="margin-r">연신내점</span>
+						</div>
+						<div class="el-checkbox">
+							<input type="checkbox" name="import_hope" value="지역점" id="1_14">
+							<label class="el-checkbox-style" for="1_14"></label>
+							<span class="margin-r">지역점</span>
+						</div>
+
+				</li>
+			</ul>
+
+			<ul>
+				<li>
+					<p><label>연락 가능 시간</label></p>
+					<p>
+						<select class="">
+							<option value="최대한 빠르게">최대한 빠르게</option>
+							<option value="10:00 ~ 12:00">10:00 ~ 12:00</option>
+							<option value="12:00 ~ 18:00">12:00 ~ 18:00</option>
+							<option value="18:00 ~ 22:00">18:00 ~ 22:00</option>
+						</select>
+					</p>
+				</li>
+				<li>
+					<p><label>공유주방1번가를 어떤 경로로 알게 되셨나요?</label></p>
+					<p>
+						<select class="">
+							<option value="인터넷 검색">인터넷 검색</option>
+							<option value="뉴스기사">뉴스기사</option>
+							<option value="블로그/SNS">블로그/SNS</option>
+							<option value="지인소개">지인소개</option>
+							<option value="부동산업체">부동산업체</option>
+							<option value="기타">기타</option>
+						</select>
+					</p>
+				</li>
+			</ul>
+
+			<ul>
+				<li>
+					<p><label>문의사항을 간략하게 남겨주시면 상당히 더 수월해 집니다.</label></p>
+					<p><textarea type="text" id="content" maxlength="500"></textarea></p>
+					<p><span id="counter">###</span></p>
+				</li>
+			</ul>
+
+			<ul>
+				<li>
+					<p><label>개인정보활용동의<span>※필수선택</span></label></p>
+					<p>
+						개인정보처리방침 내용 삽입<br>
+						개인정보 수집항목, 수집목적, 수집기간 및 폐기기한 등 개인정보 활용에 대한 자세한 안내사항이 노출됩니다. 개인정보 수집항목, 수집목적, 수집기간 및 폐기기한 등 개인정보 활용에
+						대한 자세한 안내사항이 노출됩니다. <br>
+						개인정보 수집항목, 수집목적, 수집기간 및 폐기기한 등 개인정보 활용에 대한 자세한 안내사항이 노출됩니다. <br>
+						개인정보 수집항목, 수집목적, 수집기간 및 폐기기한 등 개인정보 활용에 대한 자세한 안내사항이 노출됩니다. 개인정보 수집항목, 수집목적, 수집기간 및 폐기기한 등
+						개인정보 활용에 대한 자세한 안내사항이 노출됩니다. <br>
+						<br>
+						개인정보처리방침 내용 삽입<br>
+						개인정보 수집항목, 수집목적, 수집기간 및 폐기기한 등 개인정보 활용에 대한 자세한 안내사항이 노출됩니다. 개인정보 수집항목, 수집목적, 수집기간 및 폐기기한 등 개인정보 활용에
+						대한 자세한 안내사항이 노출됩니다. <br>
+						개인정보 수집항목, 수집목적, 수집기간 및 폐기기한 등 개인정보 활용에 대한 자세한 안내사항이 노출됩니다. <br>
+						개인정보 수집항목, 수집목적, 수집기간 및 폐기기한 등 개인정보 활용에 대한 자세한 안내사항이 노출됩니다. 개인정보 수집항목, 수집목적, 수집기간 및 폐기기한 등
+						개인정보 활용에 대한 자세한 안내사항이 노출됩니다. <br>
+					</p>
+				</li>
+				<li>
+					<p>
+						개인정보활용동의 내용을 읽었으며, 개인정보 활용에 동의합니다.
+					</p>
+					<div>
+						<div class="el-radio">
+							<input type="radio" name="agreement" id="2_1" value="Y">
+							<label class="el-radio-style" for="2_1"></label>
+							<span class="margin-r">동의합니다.</span>
+						</div>
+						<div class="el-radio">
+							<input type="radio" name="agreement" id="2_2" value="N" checked>
+							<label class="el-radio-style" for="2_2"></label>
+							<span class="margin-r">동의하지 않습니다.</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<p class="not">
+				필수적으로 입력해야 할 내용 중에 입력되지 않은 내용이 있습니다.
+			</p>
+
+			<div class="Btn">
+				<a href="javascript:;" class="eff popbtn_success">문의서 제출</a>
+			</div>
+			</form>
+
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+<div class="section_bottom" id="section6">
+		<ul>
+			<li>입주 문의 <span>010-3401-3980</span></li>
+			<li>이메일 문의 <span>smartfirst@woozza.kr</span></li>
+			<li>문의 가능 시간 <span>10:00 ~ 19:00</span></li>
+		</ul>
+		<ul class="line"><span></span></ul>
+		<ul>
+			<li>
+				<span>주식회사 지에프케이</span>
+				<span>대표 최은아</span>
+				<span>사업자등록번호 762-88-01288</span>
+				<span>개인정보보호책임자 최은아</span>
+				<span><a href="#">개인정보처리방침</a></span>
+			</li>
+			<li>
+				<span>(C)copyright 2019 geeksfamily. all rights reserved.</span>
+			</li>
+		</ul>
+</div>
+
+
+<div class="Con_success">
+	<div class="Con_inner_success">
+		<ul>
+			<li>
+				<p>
+					감사합니다.<br>
+					문의가 정상 제출되었습니다.<br>
+					<br>
+					검토 후 담당자가 연락드리도록 하겠습니다.
+				</p>
+				<div id="Close_success"><a href="javascript:;">확인</a></div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<div class="all_bg"></div>
+</body>
+</html>
+
+
+<script>
+$(function() {
+	  $('#content').keyup(function (e){
+		  var content = $(this).val();
+		  $(this).height(((content.split('\n').length + 1) * 2.5) + 'em');
+		  $('#counter').html(content.length + '/500');
+	  });
+	  $('#content').keyup();
+});
+
+function fregisFormSubmit(f) {
+		if (f.s_name.value == "") {
+			alert("성함을 입력해주세요.");
+			f.s_name.select();
+			return false;
+		}
+		if (f.s_tel.value == "") {
+			alert("전화번호를 입력해주세요.");
+			f.s_tel.select();
+			return false;
+		}
+		if (f.s_email.value == "") {
+			alert("이메일을 입력해주세요.");
+			f.s_email.select();
+			return false;
+		}
+		if (f.food_hope.value.length < 2) {
+			alert("희망 음식분야를 1개 이상 선택해주세요.");
+			return false;
+		}
+		if (f.import_hope.value.length < 2) {
+			alert("입점 희망지역을 1개 이상 선택해주세요.");
+			return false;
+		}
+		if (f.agreement.value.length < 1) {
+			alert("개인정보활용동의를 동의하여야 입점문의가 가능합니다.");
+			return false;
+		}
+
+		document.getElementById("popbtn_success").disabled = "disabled";
+
+		return true;
+	}
+
+</script>

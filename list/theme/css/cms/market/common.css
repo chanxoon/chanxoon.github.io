@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/**********************
+        main
+**********************/
+.main-menu ul li.active a:before { background: #08c0d3; }
+
+
+/**********************
+    menu
+**********************/
+.nav-wrap .gnb ul li.active a span{ border-bottom-color: #08c0d3;}
+.nav-wrap .gnb ul li.active a { color: #08c0d3; }
+.nav-wrap .gnb ul li.active a:before { background-color: #08c0d3; }
+a.btn-detail-link:visited { color: #08c0d3; }
+
+
+/**********************
+        object
+**********************/
+/* page title */
+.page-heading .title { color: #08c0d3; }
+
+/* sub nav */
+.themes-sub-depth-nav li button:after, .themes-sub-depth-nav li a:after { background: #08c0d3; }
+
+/* tab button */
+.type-tab-menu button.on { border-color: #08c0d3; background: #08c0d3; }
+
+.type-tab-menu button:hover, .type-tab-menu button:focus { border-color: #08c0d3; }
+
+/* 자세히보기 button */
+.btn-detail-link { color: #08c0d3; border-color: #08c0d3; }
+
+.btn-detail-link:hover { background: #08c0d3; }
+
+/* card visual list */
+.card-visual-list .card-box a:hover:after { border-color: #08c0d3; }
+
+/**********************
+    page-title-cover
+**********************/
+.page-title-cover .page-header .page-title strong, .chapter-header .chapter-title, .sub-chapter .sub-count, .timeline-title { color: #08c0d3; }
+
+/* ********************* chapter */
+/**********************
+    page-timeline
+**********************/
+.timeline-point:before { background: #08c0d3; }
+
+.timeline .timeline-block .block-bullet { border-color: #08c0d3; }
+
+/**********************
+    slide-list-wrap
+**********************/
+.slide-list-box .swiper-slide.selected-list .thumb-img:after { border-color: #08c0d3; }
+
+.slide-list-box .swiper-slide.selected-list .data-title { color: #08c0d3; }
+
+/* ********************* * card-gride-wrap */
+.card-gride-wrap .card a:hover, .card-gride-wrap .card a:focus { border-color: #08c0d3; }
+
+/**********************
+    card-con-list
+**********************/
+.card-con-box .con-list.active a:after { border-color: #08c0d3; }
+
+/**********************
+    full-slide-page
+**********************/
+.full-slide-page .slide-step li.on { color: #08c0d3; }
+
+.full-slide-page .slide-step li.on button:before { background: #08c0d3; }
+
+.full-slide-page .text-wrap .subheading { color: #08c0d3; }
+
+@media (max-width: 640px) { .full-slide-page .slide-step-wrap button.on { color: #08c0d3; } }
+
+.bg-light { background: #f4fcfd; }
+
+/**********************
+    Pic-wrap
+**********************/
+.pic-wrap .pic .pic-cover { border-color: #cccccc; }
+
+.pic-wrap .pic .pic-cover:after { z-index: 1; }
+
+.pic-wrap .pic .pic-caption { z-index: 2; }
+
+.pic-wrap.one-pic .pic { max-width: 100%; }
+
+.pic-wrap.one-pic.xxl { max-width: 1460px; }
+
+.pic-wrap.one-pic.xl { max-width: 740px; }
+
+.pic-wrap.one-pic.lg { max-width: 640px; }
+
+.pic-wrap.one-pic.md { max-width: 560px; }
+
+.pic-wrap.one-pic.sm { max-width: 450px; }
+
+.pic-wrap.one-pic.xs { max-width: 420px; }
+
+.pic-wrap.half-pic .pic { width: calc(50% - 10px); }
+
+.pic-wrap.half-pic .pic:first-child { margin-right: 20px; }
+
+.pic-wrap.half-pic .pic + .pic + .pic { padding-top: 20px; }
+
+.pic-wrap.half-pic.wide .pic { width: 50%; }
+
+.pic-wrap.half-pic.wide .pic:first-child { margin-right: 0; }
+
+.pic-wrap.half-pic.wide .pic .pic-cover { border: 1px solid #ccc; }
+
+.pic-wrap.half-pic.lg { max-width: 1460px; }
+
+.pic-wrap.half-pic.md { max-width: 1060px; }
+
+.pic-wrap.half-pic.sm { max-width: 1010px; }
+
+.pic-wrap.trio-pic.wide .pic { padding: 0; }
+
+.pic-wrap.trio-pic.wide .pic:first-child { margin-right: 0; }
+
+@media only screen and (max-width: 640px) { #container .pic-wrap.half-pic .pic { width: 100%; }
+  #container .pic-wrap.half-pic .pic:first-child { margin-right: 0; }
+  #container .pic-wrap.quad-pic .pic { margin-bottom: 20px; } }

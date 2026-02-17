@@ -1002,13 +1002,14 @@ input:focus {
   font-size: 16px;
   font-weight: 300;
   color: #fff;
+  line-height: 20px;
 }
 #header > .inner .logoWrap h1 a span {
-  letter-spacing: 2.8px;
+  letter-spacing: 0.8px;
   display: block;
 }
 #header > .inner .logoWrap h1 a span:nth-child(1) {
-  letter-spacing: 4px;
+  letter-spacing: 1.7px;
 }
 #header > .inner .navWrap {
   display: flex;
@@ -1023,7 +1024,7 @@ input:focus {
 }
 #header.active .inner {
   background: #fff;
-  padding: 16px 80px;
+  padding: 8px 80px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
 }
@@ -1367,11 +1368,11 @@ section.projectSec .inner .tabs .tab {
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
-  color: #B6B6C8;
+  color: #222;
 }
 section.projectSec .inner .tabs .tab.active {
-  color: #384059;
-  background: linear-gradient(90deg, rgb(244, 244, 255) 0%, rgb(223, 224, 246) 50%, rgb(244, 244, 255) 100%);
+  color: #fff;
+  background: #222;
 }
 section.projectSec .inner .custom-select {
   position: relative;
@@ -1428,7 +1429,6 @@ section.projectSec .inner .projects .project {
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  cursor: pointer;
   width: 31%;
   margin-bottom: 48px;
   gap: 40px;
@@ -1465,17 +1465,24 @@ section.projectSec .inner .projects .project .thumb .overlay {
   font-size: 1.5rem;
   font-weight: bold;
 }
-section.projectSec .inner .projects .project .thumb .overlay span {
+section.projectSec .inner .projects .project .thumb .overlay > div {
+  margin: 0px 4px;
+}
+section.projectSec .inner .projects .project .thumb .overlay > div a {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
   text-align: center;
-  line-height: 100px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   border: 1px solid #999;
+}
+section.projectSec .inner .projects .project .thumb .overlay > div a:hover {
+  transition: all 0.5s ease;
+  background: rgba(0, 0, 0, 0.9);
 }
 section.projectSec .inner .projects .project .thumb:hover .overlay {
   visibility: visible;
@@ -1500,6 +1507,9 @@ section.projectSec .inner .projects .project .project-info p span {
   border-radius: 50px;
   background: rgba(169, 169, 189, 0.12);
 }
+section.projectSec .inner .projects .project .project-info progress {
+  width: 100%;
+}
 
 /* Modal */
 .modal {
@@ -1517,30 +1527,32 @@ section.projectSec .inner .projects .project .project-info p span {
 .modal .modal-content {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: calc(100dvh - 0px);
+  height: calc(100vh - 0px);
   padding: 80px 40px 180px;
   position: relative;
   overflow: auto;
-  border-radius: 16px;
 }
 .modal .modal-content > div {
   overflow: hidden;
   border-radius: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .modal .modal-content > div img {
   width: 100%;
 }
-.modal .close {
+.modal #close {
   position: fixed;
   bottom: 40px;
   left: 50%;
   transform: translate(-50%, 0%);
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  width: 280px;
-  height: 64px;
-  border-radius: 16px;
+  width: 100%;
+  max-width: 200px;
+  height: 46px;
+  border-radius: 8px;
   border: 1px solid #999;
   background: rgba(0, 0, 0, 0.8);
 }

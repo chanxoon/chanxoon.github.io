@@ -1,0 +1,113 @@
+	
+	table.cls_nuploder_style{
+			border-spacing: 0px;
+			border-collapse: collapse;		
+	}
+	
+	table.cls_nuploder_style table{
+			border-spacing: 0px;
+			border-collapse: collapse;		
+	}
+
+	table.cls_nuploder_style td{
+		padding: 0px;
+	}	
+	
+	div.cls_filestyle{
+		overflow:hidden;
+		width:100%;
+	}
+	
+	div.cls_filestyle input[type=text]{
+		float:left;
+		cursor:pointer;
+	}
+	
+	div.cls_filestyle div.cls_btndiv {
+		overflow:hidden;
+		position:relative;
+		float:left;
+	}
+	
+	div.cls_filestyle div.cls_btndiv input[type=file]{
+			position:absolute;
+			top:0;
+			right:0;
+			cursor:pointer;
+			opacity:0;
+			filter:alpha(opacity=0);
+			-ms-filter: "alpha(opacity=0)";
+			-khtml-opacity:0;
+			-moz-opacity:0;							
+	}
+	
+	div.cls_filestyle input.cls_filename {
+			padding:0 6px;
+			border:2px solid #5198CF;
+			
+			border-radius:1px;
+			-moz-border-radius:1px;
+			-ms-border-radius:1px;
+			-o-border-radius:1px;
+			-webkit-border-radius:1px;
+			
+			font-family: 'Trebuchet MS', 'Apple SD Gothic Neo', 'Malgun Gothic', 'dotum', sans-serif;
+			
+			font-size:12pt;
+			color:#446B90; 
+			font-weight:bold;
+			
+			background: #F2F7FC;
+	}						
+
+	/* /////////////////////////////////////// */
+	div.cls_filestyle{
+		margin-top:2px;
+		margin-bottom:2px;
+	}
+	
+	div.cls_filestyle div.cls_btndiv button {                
+			border:1px solid #2569A9;						
+			border-radius:1px;
+			-moz-border-radius:1px;
+			-ms-border-radius:1px;
+			-o-border-radius:1px;
+			-webkit-border-radius:1px;
+			
+			background-color: #2380D7;	
+	}
+
+	div.cls_filestyle div.cls_btndiv span.cls_btntext {
+		font-family: 'Trebuchet MS', 'Apple SD Gothic Neo', 'Malgun Gothic', 'dotum', sans-serif;            
+		font-size:12pt;
+		color:#fff; 
+		font-weight:bold;
+	}
+
+	div.cls_filestyle div.cls_btndiv {
+		padding-left:4px;
+	}	
+	
+	div.cls_progs_fore {
+		border:1px solid #CEA86C;		
+		float:left;
+		
+		border-radius:1px;
+		-moz-border-radius:1px;
+		-ms-border-radius:1px;
+		-o-border-radius:1px;
+		-webkit-border-radius:1px;
+		
+		background: #CEA86C;
+		
+		display:block;
+		text-align:center;		
+	}
+		
+	
+	table.cls_progs_back{
+		background:url('/image/skin/h5uploader/bg_slash_progress.gif'); 
+		border:1px solid #D8BE94;		
+	}
+	
+	

@@ -1,0 +1,70 @@
+
+.chapter-header { opacity: 0; position: relative; top: 30px; transition: all .6s ease; }
+
+.sub-chapter { opacity: 0; position: relative; top: 30px; transition: all .6s ease .3s; }
+
+.scroll-transition .chapter-header, .scroll-transition .sub-chapter { opacity: 1; top: 0; }
+
+#wrap { text-align: center; }
+
+.pic-wrap .pic .pic-cover { border-color: #ccc; }
+
+.page-title-cover { background-image: url("/cms/imgs/market/bg/bg-people.jpg"); }
+
+.page-header .page-text { max-width: 840px; }
+
+.chapter-header .chapter-text { padding-top: 11px; }
+
+.chapter2 .sub-text { padding-bottom: 5px; }
+
+.chapter3 { padding-top: 10px; }
+
+.chapter4 { padding-top: 10px; }
+
+.chapter4 .pic-wrap { padding-top: 5px; margin: 0 auto 30px; }
+
+.chapter5 { padding-top: 10px; }
+
+.chapter6 .chapter-text { line-height: 1.6; }
+
+.chapter7 { margin-top: -6px; }
+
+.chapter7 .sub-text { line-height: 1.7; padding-bottom: 3px; }
+
+.chapter8 { padding-top: 10px; }
+
+.chapter8 .pic-wrap { margin-bottom: 22px; padding-top: 10px; }
+
+.chapter9 .chapter-text { line-height: 1.6; }
+
+.chapter10 { margin-top: -5px; }
+
+.chapter10 .sub-text { line-height: 1.7; }
+
+.chapter11 { margin-top: 7px; }
+
+.chapter11 .sub-text { line-height: 1.7; }
+
+.chapter12 { padding: 80px 0; background-image: url("/cms/imgs/market/bg/bg-people-002.jpg"); background-position: center bottom; background-repeat: no-repeat; background-size: cover; }
+
+.chapter12 .pic-wrap { margin-top: 30px; }
+
+.chapter12 .pic-outer { margin-left: -6px; margin-right: -6px; }
+
+.chapter12 .pic { width: 20%; float: left; box-sizing: border-box; padding: 6px; }
+
+.chapter12 .pic .pic-cover { background-color: #fff; height: 180px; padding: 30px 20px; box-sizing: border-box; }
+
+.chapter12 .pic .pic-cover:after { display: none; }
+
+.chapter12 .pic .pic-cover .sub-title { font-size: 1.66667rem; color: #333333; line-height: 1; padding: 1rem 0 1.83333rem; position: relative; }
+
+.chapter12 .pic .pic-cover .sub-title:after { content: ''; display: block; background: #cccccc; position: absolute; top: 0; left: 50%; margin-left: -1.25rem; width: 2.5rem; height: 1px; }
+
+.chapter12 .pic .pic-cover .sub-text { color: #666666; font-size: 1.25rem; }
+
+@media only screen and (max-width: 640px) { .chapter12 .pic { float: none; width: 100%; }
+  .chapter12 .pic .pic-cover { height: auto; } }
+
+/********************* mobile */
+@media only screen and (max-width: 640px) { .con-chapter { margin-top: -1px; } }

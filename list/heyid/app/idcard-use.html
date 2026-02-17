@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no" />
+<title>HeyID - 신분증 사용</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/">
+<link href="./css/common.css" rel="stylesheet">
+<link href="./css/swiper.min.css" rel="stylesheet">
+<link href="./css/default.css" rel="stylesheet">
+
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="./js/dragula.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/default.js"></script>    
+</head>
+<body>
+
+<div class="wrap idcard-use">
+    <!-- nav -->
+    <nav id="nav">
+        <button type="button" class="back-btn" onclick="history.back()">뒤로가기</button>
+        <button type="button" class="menu-btn"><i>Menu icon</i></button>
+    </nav>
+
+    <!-- menu -->
+    <div class="menu">
+        <h1 class="blind">menu list</h1>
+        <div class="logoff"><button type="button" onclick="location.href='/app/app-password-input.html'"><img src="./images/icon/icon-logout.svg" alt="로그아웃">로그아웃</button></div>
+        <div class="myinfo">
+            <div class="info-box">
+                <div class="img"><img src="./images/img/img-user-noimg.png" alt="프로필이미지"></div>
+                <div class="tit">
+                    <p class="company">한국공인중개사사무소</p>
+                    <p class="name">공인중개사증 / 홍길동</p>
+                </div>
+                <div class="notice">
+                    <a href="./notified.html">
+                        <img src="./images/icon/icon-notice.svg" alt="알림">
+                        <span class="count">12</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <ul class="list">
+            <li><a href="/">대면확인 (보류)</a></li>
+            <li><a href="/">신분증 보내기</a></li>
+            <li><a href="javascript:;" class="dispose-btn">폐기신청 (보류)</a></li>
+        </ul>
+        <div class="customer">
+            <div class="btn">
+                <a href="tel:02-123-4567">문의처 02-123-4567</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- con -->
+    <div id="contents">
+        <div class="inner">
+            <div class="tit-box">
+                <h2>법무사증</h2>
+            </div>
+
+            <div class="con-box">
+                <div class="deco"><img src="./images/img/img-card-top.png" alt="카드"></div>
+                <div class="card-box">
+                    <div class="num">
+                        <p>등록번호</p>
+                        <p>48720-2020-00137</p>
+                    </div>
+
+                    <div class="timer-box">
+                        <svg width="250" height="250">
+                            <circle class="circle" cx="125" cy="125" r="120"/>
+                        </svg>
+                        <div class="timer"><span class="head">10</span></div>
+                        <div class="img">
+                            <p class="profile"><img src="./images/img/img-profile-man1.png" alt="프로필 이미지"></p>
+                            <p class="name">김대한</p>
+                        </div>
+                    </div>
+
+                    <div class="sec-box">
+                        <div class="sec1">
+                            <div class="company">한국법무사사무소</div>
+                            <div class="position">실장</div>
+                        </div>
+                        <div class="sec2">
+                            <div class="code-box">
+                                <div class="barcode">
+                                    <p class="bar"><img src="./images/img/img-bar.png" alt="바코드"></p>
+                                    <p class="code"><span class="co1">1234</span> - <span class="co2">5678</span> - <span class="co3">9876</span> - <span class="co4">5432</span></p>
+                                </div>
+                                <div class="numcode" style="display: none;">
+                                    <p class="code">425183</p>
+                                </div>
+                                <div class="back"><button type="button" class="back-btn"><img src="./images/icon/icon-back-btn.svg" alt="화살표"> 뒤로가기</button></div>
+                            </div>
+                        </div>
+                        <div class="sec3">
+                            <div class="attestation">
+                                <p>위 사실을 증명합니다.</p>
+                                <p>대한법무사협회장</p>
+                                <p><img src="./images/img/img-stemp.png" alt="도장"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-box">
+                <button type="button" class="nfc nfc-btn"><img src="./images/icon/icon-nfc.svg" alt="nfc"> NFC</button>
+                <button type="button" class="otp barotp"><img src="./images/icon/icon-otp.svg" alt="otp"> OTP</button>
+                <button type="button" class="qr qr-btn"><img src="./images/icon/icon-qr.svg" alt="QR"> QR</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- nfc 팝업 -->
+<div class="layer-pop nfc-layer" style="display: none;">
+    <div class="inner nfc">
+        <div class="tit-box">
+            <div class="profile">
+                <div class="img"><img src="./images/img/img-nfc-profile.png" alt="프로필이미지"></div>
+                <div class="txt">
+                    <p class="name">김대한</p>
+                    <p class="company">한국법무사사무소</p>
+                </div>
+            </div>
+        </div>
+        <div class="con-box">       
+            <div class="nfc-img"><img src="./images/img/img-nfc-1.png" alt="nfc"></div>
+            <div class="nfc-txt">
+                <p>휴대폰 뒷면을 기기에 접촉해주세요.</p>
+                <p>기기에 휴대폰의 뒷면을 그림과 같이<br>약 1~3초간 접촉합니다.</p>
+            </div>
+        </div>
+        <div class="close">
+            <button type="button" class="close-btn edit-close-btn"></button>
+        </div>
+    </div>
+</div>
+
+<!-- qr 팝업 -->
+<div class="layer-pop qr-layer" style="display: none;">
+    <div class="inner qr">
+        <div class="tit-box">
+            <div class="profile">
+                <div class="img"><img src="./images/img/img-nfc-profile.png" alt="프로필이미지"></div>
+                <div class="txt">
+                    <p class="name">김대한</p>
+                    <p class="company">한국법무사사무소</p>
+                </div>
+            </div>
+            <div class="scan">
+                <img src="./images/img/img-qr-scan.png" alt="qrcode 스캔">
+            </div>
+        </div>
+        <div class="con-box">       
+            <div class="qr-txt">
+                <p>QR 코드를 스캔해보세요.</p>
+                <p>QR코드가 화면에 보이는 스캔 영역 안에<br>들어오도록 합니다.</p>
+            </div>
+        </div>
+        <div class="close">
+            <button type="button" class="close-btn edit-close-btn"></button>
+        </div>
+    </div>
+</div>
+
+<!-- 스캔완료 팝업 -->
+<div class="layer-pop notice-layer scan-com-layer" style="display: none;">
+    <div class="inner notice">
+        <div class="tit-box">
+            <h2>스캔완료</h2>
+        </div>
+        <div class="con-box">
+            <p>QR코드 정상적으로 스캔 되었습니다.</p>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="close-btn">확인</button> 
+        </div>
+    </div>
+</div>
+
+<!-- 스캔오류 팝업 -->
+<div class="layer-pop notice-layer scan-error-layer" style="display: none;">
+    <div class="inner notice">
+        <div class="tit-box">
+            <h2>스캔오류</h2>
+        </div>
+        <div class="con-box">
+            <p>QR코드 스캔에 일시적인 오류가 발생하였습니다.</p>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="close-btn">확인</button> 
+        </div>
+    </div>
+</div>
+
+<!-- 폐기신청 팝업 -->
+<div class="layer-pop notice-layer dispose-layer" style="display: none;">
+    <div class="inner notice">
+        <div class="tit-box">
+            <h2>폐기 신청</h2>
+        </div>
+        <div class="con-box">
+            <p><strong>[한국법무사사무소]</strong> 법무사증을 폐기하시겠습니까?</p>
+            <p class="info">※ 폐기신청 이후 해당 법무사증을 사용하실 수 없습니다.</p>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="close-btn">닫기</button>
+            <button type="button" class="sub-btn">폐기신청</button> 
+        </div>
+    </div>
+</div>
+
+<!-- 로그아웃 팝업 -->
+<div class="layer-pop notice-layer logout-layer" style="display: none;">
+    <div class="inner notice">
+        <div class="tit-box">
+            <h2>로그아웃</h2>
+        </div>
+        <div class="con-box">
+            <p>OO구청 공인중개사증을 로그아웃하시겠습니까?</p>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="close-btn">취소</button> 
+            <button type="button" class="sub-btn">로그아웃</button> 
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+#wrap { text-align: center; }
+
+/* header no change */
+#header.header-change { background: transparent; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+#header.header-change #search { background-image: url("/cms/imgs/common/icon/icon-search.png"); }
+
+#header.header-change #menu { background-image: url("/cms/imgs/common/icon/icon-menu.png"); }
+
+#header.header-change .heading-logo .logo-portal { background-image: url("/cms/imgs/common/img/logo-kccf-color.svg"); }
+
+#header.header-change .heading-logo .logo-themes { background-image: url("/cms/imgs/righteous-army/logo-righteous-army.svg"); }
+
+.header-change .main-menu ul li a { color: #fff; }
+
+.header-change ~ #container .themes-sub-depth-nav { background: rgba(0, 0, 0, 0.12); }
+
+.page-title-cover { background-image: url("/cms/imgs/righteous-army/bg/bg-last-army.jpg"); background-position: center top; }
+
+.page-title-cover .btn-detail-link { margin: 30px auto; }
+
+.load-transition .page-header { top: 33.33%; }
+
+.chapter-header { opacity: 0; position: relative; top: 30px; transition: all 0.6s ease; }
+
+.sub-chapter { opacity: 0; position: relative; top: 30px; transition: all 0.6s ease .3s; }
+
+.sub-chapter .sub-title small { display: block; font-size: 16px; color: #999999; margin-top: 10px; margin-bottom: 5px; }
+
+.scroll-transition .chapter-header, 
+.scroll-transition .sub-chapter { opacity: 1; top: 0; }
+
+/*****************
+    비주얼 탭
+*****************/
+.visual-tabs-wrap { top: 630px; }
+
+.visual-tabs-wrap.fixed { padding-top: 195px; padding-bottom: 30px; }
+
+.visual-tabs-wrap.fixed.bg { background-image: url("/cms/imgs/righteous-army/bg/bg-last-army.jpg"); }
+
+.visual-tabs { max-width: 1418px; position: relative; z-index: 1; margin: 0 auto; }
+
+.visual-tabs:after { content: ""; display: block; clear: both; }
+
+.tab-menu { text-align: center; }
+
+.tab-menu a { display: inline-block; width: 200px; height: 60px; box-sizing: border-box; color: #fff; padding: 9px 0; background-color: rgba(255, 255, 255, 0.3); border-radius: 30px; line-height: 1; border: 1px solid rgba(255, 255, 255, 0.4); }
+
+.tab-menu a small { font-size: 14px; margin-bottom: 8px; display: block; opacity: .7; }
+
+.tab-menu a strong { font-size: 16px; display: block; font-weight: 500; }
+
+.tab-menu .dot-img { display: inline-block; width: 45px; height: 60px; background: url(/cms/imgs/common/img/img-tab-dot.png) no-repeat center; background-size:  30% auto; vertical-align: top;}
+
+.tab-menu a.on { background-color: #e7b200; border-color: #e7b200; }
+
+/* tab contents */
+.tab-con-box { display: none; }
+
+.tab-con-box.on { display: block; }
+
+.one-pic.md { margin-bottom: 30px; }
+
+.pic .sub-text { text-align: justify; }
+
+.pic .btn-detail-link { margin: 0; }
+
+@media only screen and (max-width: 640px) {
+    .header-change .main-menu ul li a { color: #242424; }
+    .load-transition .page-header {top: 39.33%;}
+    .pic .sub-text { text-align: center;}
+    .pic .btn-detail-link { margin: 0 auto 30px; } 
+}
+
+#section03 { min-height: 95vh; background: #fff; }
+
+@media only screen and (min-width: 640px){
+    #header.header-change .logo a ,
+    #header.header-change a.logo-themes span ,
+    #header.header-change .nav-wrap a ,
+    #header.header-change .main-menu ul li a { color: #fff !important; }
+    #header.header-change .nav-wrap .active a { color: #e7b200 !important; }
+}

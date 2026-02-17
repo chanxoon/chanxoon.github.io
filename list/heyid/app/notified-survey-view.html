@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no" />
+<title>HeyID - 알림함</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/">
+<link href="./css/common.css" rel="stylesheet">
+<link href="./css/swiper.min.css" rel="stylesheet">
+<link href="./css/default.css" rel="stylesheet">
+
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="./js/dragula.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/default.js"></script>    
+</head>
+<body>
+
+<div class="wrap notified-view survey">
+    <!-- nav -->
+    <nav id="nav">
+        <button type="button" class="back-btn" onclick="history.back()">뒤로가기</button>
+    </nav>
+    
+    <!-- con -->
+    <div id="contents">
+        <div class="inner">
+            <div class="tit-box">
+                <h2>알림함</h2>
+            </div>
+
+            <div class="view-box">
+                <div class="view-title">
+                    <p class="typ">[설문조사]</p>
+                    <p class="tit ellipsis">OOO기관 주관 OOOO OO 컨퍼런스 참석여부 설문조사</p>
+                    <p class="dat">2023.03.30 <span>|</span> 한국공인중개사협회</p>
+                </div>
+                
+                <div class="view-content">
+                    <p>
+                        안녕하세요!<br>
+                        OOO기관 주관 OOOO OO 컨퍼런스가 개최될 예정에 있습니다.<br>
+                        참석자 인원 파악을 위해 이와 같은 설문을 전달 드리며, 많은 참여 부탁드립니다.<br>
+                        <br>
+                        날짜는 아래와 같으며, OOO기관에서 추구하는 비전과 정보를 여러분들께 들려드릴 예정입니다.<br>
+                        <br>
+                        날짜 : 2023.04.20 (목) 14:00 ~ 2023.04.20 (목) 17:00 (약 3시간 예상)<br>
+                        ※ 참석자분들께는 간식 (샌드위치+주스)도 제공될 예정이니 많은 참석 부탁드립니다.
+                    </p>
+                </div>
+
+                <div class="view-survey">
+                    <div class="survey-type1">
+                        <div class="tit">OOO기관 주관 OOOOO 컨퍼런스 참석하실 예정이신가요?</div>
+                        <div class="radio-box">
+                            <label for="yes" class="on"><span>예</span><input type="radio" id="yes" name="survey-answer" checked></label>
+                            <label for="no"><span>아니요</span><input type="radio" id="no" name="survey-answer"></label>
+                        </div>
+                    </div>
+                    <div class="survey-type2">
+                        <div class="tit">다음 중 관심있는 컨퍼런스 주제는 무엇인가요?<span>※ 복수선택가능</span></div>
+                        <div class="check-box">
+                            <label for="answer1"><span>직장인 심리학</span><input type="checkbox" id="answer1" name="survey-answer"></label>
+                            <label for="answer2"><span>직장인을 위한 일과 관계의 심리학</span><input type="checkbox" id="answer2" name="survey-answer"></label>
+                            <label for="answer3"><span>고객의 만족을 이끌어내는 대화 기술</span><input type="checkbox" id="answer3" name="survey-answer"></label>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <button type="button" class="sur-btn type1 on">답변제출</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

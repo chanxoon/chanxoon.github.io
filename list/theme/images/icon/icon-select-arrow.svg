@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 11 7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #ccc;
+        fill-rule: evenodd;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="패스_20" data-name="패스 20" class="cls-1" d="M0-7H11V0H0Z"/>
+    </clipPath>
+  </defs>
+  <g id="icon-select-arrow" class="cls-2" transform="translate(0 7)">
+    <g id="그룹_30" data-name="그룹 30" transform="translate(11 -6.028)">
+      <path id="패스_19" data-name="패스 19" class="cls-3" d="M0,0A.982.982,0,0,1-.278.688L-5.5,6.028-10.722.688a.993.993,0,0,1-.005-1.373.925.925,0,0,1,1.334,0L-5.5,3.292-1.607-.689a.925.925,0,0,1,1.334,0A.991.991,0,0,1,0,0"/>
+    </g>
+  </g>
+</svg>

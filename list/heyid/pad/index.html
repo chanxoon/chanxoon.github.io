@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>HeyID 출입시스템</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon">
+	<link rel="stylesheet" href="./assets/stylesheet/base.css" />
+	<link rel="stylesheet" href="./assets/stylesheet/common.css" />
+	<link rel="stylesheet" href="./assets/stylesheet/swiper.min.css" />
+	<link rel="stylesheet" href="./assets/stylesheet/home.css" />
+	
+	<script src="./assets/js/jquery-1.11.2.min.js"></script>
+	<script src="./assets/js/gsap.min.js"></script>
+	<script src="./assets/js/swiper.min.js"></script>
+	<script src="./assets/js/common.js"></script>
+	<script src="./assets/js/home.js"></script>
+</head>
+<body>
+	<div id="bm" style="position:fixed;z-index:10000;"></div>
+	<video autoplay="autoplay" playsinline muted="muted" loop="loop" src="./theme/background.mp4" id="pattern"></video>
+	<div id="app">
+		<header>
+			<div class="organization clear">
+				<span class="logo"><a href="./index.html"><img src="./images/common/logo.png" alt="heyID" /></a></span>
+				<span class="use">(주)엑티버 / 한국공인중개사협회 C동 203호 (OOO 회의실)</span>
+			</div>
+
+			<div class="global-navi">
+				<button type="button" class="menu-btn"><i>Menu icon</i></button>
+			</div>
+
+			<div class="menu">
+				<h1 class="blind">menu list</h1>
+				<div class="logoff"><button type="button" onclick="location.href='/'"><img src="./images/home/icon-logout.png" alt="로그아웃">로그아웃</button></div>
+				<div class="myinfo">
+					<div class="info-box">
+						<p class="name"><span>홍길동(admin01)</span> 관리자님</p>
+						<p class="date">최종접속일시 : <span>2023.05.12 13:34</span></p>
+					</div>
+				</div>
+				<ul class="list">
+					<div class="entry-room">
+						<span>출입실 정보</span>
+						<span><button type="button" class="entry-btn"><img src="./images/home/icon-edit.png" alt="변경">출입실 변경</button></span>
+					</div>
+					<li><a href="/">한국공인중개사협회 C동 201호 (OOO 회의실)</a></li>
+				</ul>
+			</div>
+		</header>
+		<div id="contents">
+			<!-- Intro Area Start -->
+			<div class="intro"></div>
+			<!-- Intro Area End// -->
+
+			<!-- Stage Area Start -->
+			<div class="stage">
+				<div class="outer">
+					<div class="container"></div>
+
+					<!-- 다른 로그인 방식 -->
+					<div class="besides">
+						<div class="banners swiper-container">
+							<div class="swiper-wrapper">
+								<div data-css-name="barcode" class="swiper-slide barcode">
+									<span class="icon"></span>
+									<div class="title">
+										<span class="num">01</span>
+										<strong>바코드</strong>
+									</div>
+								</div>
+								<div data-css-name="nfc" class="swiper-slide nfc">
+									<span class="icon"></span>
+									<div class="title">
+										<span class="num">02</span>
+										<strong>NFC</strong>
+									</div>
+								</div>
+								<div data-css-name="qr" class="swiper-slide qr">
+									<span class="icon"></span>
+									<div class="title">
+										<span class="num">03</span>
+										<strong>QR</strong>
+									</div>
+								</div>
+								<div data-css-name="direct" class="swiper-slide direct">
+									<span class="icon"></span>
+									<div class="title">
+										<span class="num">04</span>
+										<strong>직접입력</strong>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!-- Stage Area End// -->
+		</div>
+
+		<footer>
+			<div class="outer">
+				<div class="copyright"><p><a href="./login.html">Copyright &copy; Activar. All right reserved.</a></p></div>
+				<div class="today-tip clear">
+					<div id="weather"><img src="./images/home/weather-sun.png" alt="날씨"></div>
+					<div class="today">
+						<div class="day"></div>
+						<div class="time"></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="toast-container">
+		<div class="inner">
+			<strong>인증 실패</strong>
+			<p>인증정보 확인에 실패하였습니다.<br>다시한번 인증을 시도해주세요.</p>
+			<button class="button-set confirm">확인</button>
+		</div>
+	</div>
+
+	<!-- OTP 확인방법 팝업 -->
+	<div class="layer-pop otp-layer">
+		<div class="inner">
+			<div class="tit-box">
+				<h2><img src="./images/home/icon-question-white.png" alt="물음표"> OTP 확인방법</h2>
+			</div>
+			<div class="con-box">
+				<div class="swiper-container swiper-otp">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slide1">
+							<div class="img-box"><img src="./images/home/img-otp-01.png" alt="OTP 확인방법"></div>
+						</div>
+						<div class="swiper-slide slide2">
+							<div class="img-box"><img src="./images/home/img-otp-02.png" alt="OTP 확인방법"></div>
+						</div>
+						<div class="swiper-slide slide3">
+							<div class="img-box"><img src="./images/home/img-otp-03.png" alt="OTP 확인방법"></div>
+						</div>
+					</div>
+					<div class="swiper-button-prev swiper-button-prev-otp"></div>
+					<div class="swiper-button-next swiper-button-next-otp"></div>
+					<div class="swiper-pagination swiper-pagination-otp"></div>
+				</div>
+				<div class="txt-sec">
+					<div class="list list1 on">
+						<p>01. 사용할 신분증 선택</p>
+						<p>HeyID에 등록된 신분증들 중 인증에 사용할 <span>신분증을 선택</span>하여 터치합니다.</p>
+					</div>
+					<div class="list list2">
+						<p>02. OTP 버튼 터치</p>
+						<p>인증에 사용할 신분증을 선택했다면, <span>하단 중앙에 위치한 [OTP] 버튼</span>을 눌러 바코드에서 OTP로 전환합니다.</p>
+					</div>
+					<div class="list list3">
+						<p>03. OTP 확인</p>
+						<p>신분증 화면에 나타난 <span>6자리의 OTP 번호</span>를 확인하고, 직접입력 인증화면에 입력해주세요.</p>
+					</div>
+				</div>
+			</div>
+			<div class="btn-box">
+				<button type="button" class="close-btn">닫기</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- 출입실 변경 팝업 -->
+	<div class="layer-pop entry-layer" style="display: none;">
+		<div class="inner">
+			<div class="tit-box">
+				<h2>출입실 변경</h2>
+				<p>※ 출입/방문 인증을 진행할 출입실을 설정해주세요.</p>
+			</div>
+			<div class="con-box">
+				<div class="radio-box">
+					<label for="mr1" class="on"><input type="radio" id="mr1" name="entry" checked><span>한국공인중개사협회 C동 203호 (OOO 회의실)</span></label>
+					<label for="mr2"><input type="radio" id="mr2" name="entry"><span>한국공인중개사협회 A동 203호 (OOO 회의실)</span></label>
+					<label for="mr3"><input type="radio" id="mr3" name="entry"><span>한국공인중개사협회 B동 203호 (OOO 회의실)</span></label>
+					<label for="mr4"><input type="radio" id="mr4" name="entry"><span>한국공인중개사협회 C동 110호 (OOO 회의실)</span></label>
+					<label for="mr5"><input type="radio" id="mr5" name="entry"><span>한국공인중개사협회 C동 105호 (OOO 회의실)</span></label>
+					<label for="mr6"><input type="radio" id="mr6" name="entry"><span>한국공인중개사협회 C동 203호 (OOO 회의실)</span></label>
+					<label for="mr7"><input type="radio" id="mr7" name="entry"><span>한국공인중개사협회 A동 203호 (OOO 회의실)</span></label>
+					<label for="mr8"><input type="radio" id="mr8" name="entry"><span>한국공인중개사협회 B동 203호 (OOO 회의실)</span></label>
+					<label for="mr9"><input type="radio" id="mr9" name="entry"><span>한국공인중개사협회 C동 110호 (OOO 회의실)</span></label>
+					<label for="mr10"><input type="radio" id="mr10" name="entry"><span>한국공인중개사협회 C동 105호 (OOO 회의실)</span></label>
+				</div>
+			</div>
+			<div class="btn-box">
+				<button type="button" class="type1 pw-btn">선택</button>
+				<button type="button" class="close-btn type2">취소</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- 비밀번호 확인 팝업 -->
+	<div class="layer-pop pw-layer" style="display: none;">
+		<div class="inner">
+			<div class="tit-box">
+				<h2>비밀번호 확인</h2>
+				<p></p>
+			</div>
+			<div class="con-box">
+				<div class="dec">
+					<p>한국공인중개사협회 A동 203호 (OOO 회의실)로 변경하시겠습니까?</p>
+					<p>(출입실 변경을 위해 관리자 비밀번호 입력이 필요합니다.)</p>
+				</div>
+				<div class="inp">
+					<input type="password" placeholder="비밀번호를 입력해주세요.">
+				</div>
+			</div>
+			<div class="btn-box">
+				<button type="button" class="type1">확인</button>
+				<button type="button" class="close-btn type2">취소</button>
+			</div>
+		</div>
+	</div>
+
+<script>
+// // otp 확인방법 슬라이드
+var swiper_otp = new Swiper('.swiper-otp', {
+    spaceBetween: 0,
+    slidesPerView : 1,
+    centeredSlides: false,
+    loop : false,
+    observer: true,
+    observeParents: true,
+    on: {
+        setTransition: function(){
+            $('.otp-layer .con-box .txt-sec .list').removeClass('on');
+            if($('.otp-layer .con-box .swiper-otp .swiper-slide.slide1').hasClass('swiper-slide-active')){
+                $('.otp-layer .con-box .txt-sec .list1').addClass('on');
+            }
+            if($('.otp-layer .con-box .swiper-otp .swiper-slide.slide2').hasClass('swiper-slide-active')){
+                $('.otp-layer .con-box .txt-sec .list2').addClass('on');
+            }
+            if($('.otp-layer .con-box .swiper-otp .swiper-slide.slide3').hasClass('swiper-slide-active')){
+                $('.otp-layer .con-box .txt-sec .list3').addClass('on');
+            }
+        },
+    },
+    pagination: { 
+        el: ".swiper-pagination-otp",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next-otp',
+        prevEl: '.swiper-button-prev-otp',
+    },
+});
+</script>
+    
+</body>
+</html>

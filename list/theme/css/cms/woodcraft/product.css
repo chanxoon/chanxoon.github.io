@@ -1,0 +1,6 @@
+.wrap-bg {background-image: url(/cms/imgs/woodcraft/bg/bg-product.jpg);}
+.card-gride-wrap .card-summary { white-space: normal !important;}
+
+@media only screen and (max-width: 640px) {
+    
+}

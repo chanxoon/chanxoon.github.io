@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>기관관리자 등록 | 관리자페이지</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/plugins/jquery-ui.css">
+<link rel="stylesheet" href="./css/plugins/jquery.mCustomScrollbar.css"/>
+<link rel="stylesheet" href="./css/common.css">
+
+<script src="./js/plugins/jquery-1.12.4.min.js"></script>
+<script src="./js/plugins/jquery-ui.js"></script>
+<script src="./js/plugins/jquery.mCustomScrollbar.js"></script>
+<script src="./js/common_ui.js"></script>
+</head>
+
+<body>
+<div id="skipNavi">
+    <a href="#container">본문으로 바로가기</a> 
+</div>
+<div id="wrap">    
+    <nav id="sideBar">
+        <div class="sideCont">
+            <h1 class="tit03"><a href="./admin.html"><img src="./images/img/logo.png" alt="heyID"></a><span>강남구청</span></h1>
+            <div class="sidebarUser">
+                <div class="userPic"><img src="./images/img/img-profile-man1.png" alt="홍길동"></div>
+                <div class="userName">홍길동 (admin01)</div>
+                <small>최종접속 : 2023.04.26 13:40</small>
+                <div class="btnWrap">
+                    <button class="rectangle bgDarkGrey" onclick="location.href='./admin_mypage.html'">마이페이지</button>
+                    <button class="rectangle bgLightGrey">로그아웃</button>
+                </div>
+            </div>
+            <ul class="lnb">
+                <li>
+                    <a href="./admin.html">대시보드</a>
+                </li>
+                <li>
+                    <a href="./admin_apply_manage.html">접수관리</a>
+                    <ul>
+                        <li><a href="./admin_apply_manage.html">신청/오류관리</a></li>
+                        <li><a href="./admin_approval_manage.html">승인/반려내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./admin_id_manage.html">신분증관리</a>
+                </li>
+                <li>
+                    <a href="./admin_visit_manage.html">출입/방문관리</a>
+                </li>
+                <li>
+                    <a href="./admin_notice_manage.html">알림서비스</a>
+                    <ul>
+                        <li><a href="./admin_notice_manage.html">공지관리</a></li>
+                        <li><a href="./admin_survey_manage.html">설문관리</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="./admin_agency_info.html">시스템관리</a>
+                    <ul style="display: block;">
+                        <li><a href="./admin_agency_info.html">기관정보</a></li>
+                        <li class="active"><a href="./admin_agency_admin.html">기관관리자정보</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+        <footer>
+            <p>Copyright ⓒ Activar. All right reserved.</p>
+        </footer>                  
+    </nav>    
+    <div id="container">
+        <header class="containerHeader">
+            <button class="spheader btnMenu">메뉴</button>
+            <div class="btnWrap">
+                <button type="button" class="spheader btnSetting">설정
+                    <div class="submenu">
+                        <a href="./admin_mypage.html">마이페이지</a>
+                        <a href="/">로그아웃</a>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <div class="yScroll">
+            <div class="contents agency-admin-reg">
+                <div class="contentsWrap">
+                    <header>
+                        <div class="tit-box">
+                            <h2 class="tit01">기관관리자 등록</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li><a href="javascript:void(0)">대시보드</a></li>
+                                    <li><a href="javascript:void(0)">시스템관리</a></li>
+                                    <li class="active" aria-current="page">기관관리자정보</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </header>
+                    <section class="tableWrap type01 detail">
+                        <h3 class="tit02">기본정보<span>모두 필수입력 항목입니다.</span></h3>
+                        <table class="table type01">
+                            <caption>기본정보</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col style="width:450px;">
+                                <col style="width:140px;">
+                                <col style="width:450px;">
+                            </colgroup>                            
+                            <tbody>
+                                <tr>
+                                    <th scope="row">이름</th>
+                                    <td><input type="text" value=""></td>
+                                    <th scope="row">생년월일</th>
+                                    <td><input type="text" value="" placeholder="YYMMDD"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">성별</th>
+                                    <td>
+                                        <select>
+                                            <option>남</option>
+                                            <option>여</option>
+                                        </select>
+                                    </td>
+                                    <th scope="row">부서/직급</th>
+                                    <td class="position"><input type="text" value="" placeholder="부서"><input type="text" value="" placeholder="직급"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">휴대폰번호</th>
+                                    <td><input type="text" value="" placeholder="‘-’제외하고 입력"></td>
+                                    <th scope="row">이메일</th>
+                                    <td><input type="text" value=""></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 class="tit02">로그인 정보<span>모두 필수입력 항목입니다.</span></h3>
+                        <table class="table type01">
+                            <caption>로그인 정보</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col style="width:450px;">
+                                <col style="width:140px;">
+                                <col style="width:450px;">
+                            </colgroup>                            
+                            <tbody>
+                                <tr>
+                                    <th scope="row">아이디</th>
+                                    <td class="id"><input type="text" value="admin47"><span class="checking"><img src="./images/icon/icon-succ-form.png" alt="체크" class="succ"><img src="./images/icon/icon-fail-form.png" alt="엑스" class="fail"></span><button type="button" class="check-btn">중복확인</button></td>
+                                    <th scope="row">비밀번호</th>
+                                    <td><input type="text" value="" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">접근권한
+                                        <span class="guide-box">
+                                            <img src="./images/icon/icon-questionmark.png" alt="안내 물음표">
+                                            <span class="guide">
+                                                <span class="guide-box">
+                                                    <h3><img src="./images/icon/icon-questionmark.png" alt="안내 물음표"> 접근권한 안내</h3>
+                                                    <p><strong>기관담당자</strong> 기관관리시스템의 모든 메뉴 이용 가능</p>
+                                                    <p><strong>일반관리자</strong> 시스템관리 메뉴를 제외한 메뉴 이용 가능</p>
+                                                    <p><strong>출입관리자</strong> 시스템관리 메뉴를 제외한 기관관리시스템 및 출입기록관리시스템 이용 가능</p>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <td>
+                                        <select>
+                                            <option>일반관리자</option>
+                                            <option>기관담당자</option>
+                                            <option>출입관리자</option>
+                                        </select>
+                                    </td>
+                                    <th scope="row">사용여부</th>
+                                    <td>
+                                        <select>
+                                            <option>Y</option>
+                                            <option>N</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>                       
+
+                        <div class="btnWrap">
+                            <div class="Left"></div>
+                            <div class="Right">
+                                <button type="button" class="rectangle bgBlue">등록</button>
+                                <button type="button" class="rectangle bgLightGrey">취소</button>
+                            </div>
+                        </div>
+                    </section>                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popup"></div>
+
+</body>
+</html>

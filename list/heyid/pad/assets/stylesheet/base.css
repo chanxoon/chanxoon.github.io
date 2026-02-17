@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 100;
+	src: local(※),
+	url('../font/NotoSansKR-Thin.woff2') format('woff2'),
+	url('../font/NotoSansKR-Thin.woff') format('woff'),
+	url('../font/NotoSansKR-Thin.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: local(※),
+	url('../font/NotoSansKR-Light.woff2') format('woff2'),
+	url('../font/NotoSansKR-Light.woff') format('woff'),
+	url('../font/NotoSansKR-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: local(※),
+	url('../font/NotoSansKR-Regular.woff2') format('woff2'),
+	url('../font/NotoSansKR-Regular.woff') format('woff'),
+	url('../font/NotoSansKR-Regular.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: local(※),
+	url('../font/NotoSansKR-Medium.woff2') format('woff2'),
+	url('../font/NotoSansKR-Medium.woff') format('woff'),
+	url('../font/NotoSansKR-Medium.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 800;
+	src: local(※),
+	url('../font/NotoSansKR-Bold.woff2') format('woff2'),
+	url('../font/NotoSansKR-Bold.woff') format('woff'),
+	url('../font/NotoSansKR-Bold.otf') format('opentype');
+}
+
+/* reset*/
+div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,
+samp,small,strike,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,article,aside,canvas,details,embed,figure,
+figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+ol,ul {list-style:none;}
+table,tbody,tfoot,thead,tr,th,td {padding:0;margin:0;border-collapse:collapse;border-spacing:0;}
+table caption {display: none;}
+em,address {font-style: normal;}
+a {text-decoration: none;color: #fff;}
+a img {border: none;}
+a:hover, a:active, a:visited {text-decoration:none;color:#fff;}
+input:focus, select:focus, textarea:focus, button:focus, label:focus, img:focus, li:focus, a:focus, span:focus {outline:none;border:0;}
+button,input[type=submit] {cursor:pointer;}
+pre,
+textarea,
+input,
+select,
+button {font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', Roboto, 'Helvetica Neue', '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', AppleSDGothicNeo, dotum, gulim, Helvetica, Arial, sans-serif;font-size:18px;color:#fff;}
+pre {white-space:pre-wrap;}
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', Roboto, 'Helvetica Neue', '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', AppleSDGothicNeo, dotum, gulim, Helvetica, Arial, sans-serif;
+	font-size:18px;
+	font-weight:400;
+	line-height:20px;
+	color: #fff;
+	text-align: center;
+}
+
+
+#pattern {position:fixed;top:0;left:0;min-width:100%;min-height:100%;}

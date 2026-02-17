@@ -1,0 +1,17 @@
+#header.header-change { background: transparent; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.header-change .main-menu ul li a { color: #fff; }
+
+#header.header-change #search { background-image: url(/cms/imgs/common/icon/icon-search.png); }
+
+#header.header-change #menu { background-image: url(/cms/imgs/common/icon/icon-menu.png); }
+
+#header.header-change .heading-logo .logo-portal { background-image: url(/cms/imgs/common/img/logo-kccf-color.svg); }
+
+#header.header-change .woodcraft-logo .logo-themes { background-image: url(/cms/imgs/woodcraft/logo-woodcraft.svg); }
+
+.header-change ~ #container .themes-sub-depth-nav { background: rgba(0, 0, 0, 0.12); }
+
+.slide-list-wrap { background-image: url(/cms/imgs/confucianism/bg/bg-political-activities.jpg); }
+
+@media only screen and (max-width: 640px) { .header-change .main-menu ul li a { color: #242424; } }

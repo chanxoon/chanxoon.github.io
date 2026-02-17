@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+.timeline-header .btn-scroll-action { position: static; transform: none; opacity: 1; }
+
+#wrap {text-align: center;}
+.timeline-bg img {display: block; min-height: 100%; min-width: 100%; max-width: 100%; opacity: 0; transition: opacity 1s ease; position: absolute; top: 0; bottom: 0; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.timeline-bg .bg-img.on {opacity: 1;}
+
+.timeline-bg .source-origin {opacity: 0;}
+.timeline-bg .source-origin.on {opacity: .4;}
+
+@media only screen and (max-width: 640px) {
+
+}

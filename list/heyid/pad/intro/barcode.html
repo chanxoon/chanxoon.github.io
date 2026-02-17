@@ -1,0 +1,42 @@
+<!-- 유저가 선택한 로그인 방식 -->
+<div class="way">
+	<div class="inner">
+		<span class="icon"></span>
+		<div class="explanation">
+			<strong class="title">바코드</strong>
+			<p class="desc"><strong>바코드 리더기</strong>에 <strong>heyID 신분증</strong>을 올려 본인임을<br />인증하세요.</p>
+			<ul>
+				<li>heyID 어플로 인증이 가능합니다.</li>
+				<li>바코드 리더기에 heyID 신분증을 가까이 가져다<br />주세요.</li>
+				<li>바코드가 인식되지 않은 경우 [직접입력인증]<br />메뉴를 통해 인식을 진행해주세요.</li>
+				<li>인식이 완료되면 [확인]을 눌러주세요.</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- 로그인 방식 -->
+<div class="primary scan">
+	<div class="progress barcode-progress">
+		<div class="outer">
+			<strong>출입인증 대기중입니다.</strong>
+			<p>인증을 진행해주세요.</p>
+			<div class="inner">
+				<div class="fixed-image"><img src="./images/home/barcode/barcode_progress.png" alt=""></div>
+				<div class="animation">
+					<span class="item sphere1"></span>
+					<span class="item sphere2"></span>
+					<span class="item sphere3"></span>
+					<span class="item sphere4"></span>
+					<span class="item sphere5"></span>
+					<span class="item sphere6"></span>
+				</div>
+				<div class="sequence"><img src="./images/home/barcode/sequence/barcode_00000.png" alt=""></div>
+			</div>
+			<input type="text" id="user-barcode-scanner" />
+			<!-- 스캔영역 추가 -->
+			<div class="scan-box"></div>
+			<p class="txt">위 영역안에 바코드를 맞추면 스캔됩니다.</p>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+#header.header-change {background: transparent; border-bottom: 1px solid rgba(255,255,255,.1);}
+.header-change .main-menu ul li a{color: #fff;}
+#header.header-change #search {background-image: url(/cms/imgs/common/icon/icon-search.png);}
+#header.header-change #menu {background-image: url(/cms/imgs/common/icon/icon-menu.png);}
+#header.header-change .heading-logo .logo-portal {background-image: url(/cms/imgs/common/img/logo-kccf-color.svg);}
+#header.header-change .pavilion-logo .logo-themes {background-image: url(/cms/imgs/pavilion/logo-pavilion.svg);}
+.header-change~#container .themes-sub-depth-nav {background: rgba(0,0,0,.12);}
+
+.slide-list-wrap {background-image: url(/cms/imgs/pavilion/bg/bg-temple.jpg);}
+
+@media only screen and (max-width: 640px) {
+    .header-change .main-menu ul li a { color: #242424; }
+    /* 임시방편 */
+    #container { padding-bottom: 300px; }
+    .slide-list-wrap { height: 340px; }
+    .contents-detail-wrap { padding-top: 350px; }
+    .slide-list-box .thumb-img { height: 90px; }
+}
+
+@media only screen and (min-width: 640px){
+    #header.header-change .logo a ,
+    #header.header-change a.logo-themes span ,
+    #header.header-change .nav-wrap a ,
+    #header.header-change .main-menu ul li a { color: #fff !important; }
+    #header.header-change .nav-wrap .active a { color: #e7b200 !important; }
+}

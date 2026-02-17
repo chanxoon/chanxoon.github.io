@@ -1,0 +1,150 @@
+@charset "UTF-8";
+.wrap-bg { background-image: url("/cms/imgs/confucianism/bg/bg-confucian-ideas.jpg"); }
+
+.type-tab-menu { top: 155px; width: 100%; position: fixed; z-index: 40; text-align: center; }
+
+#container { padding-bottom: 0; }
+
+.sort-card-gride-wrap { max-width: 1460px; padding: 208px 30px 140px; height: 100%; margin: 0 auto; position: relative; }
+
+.sort-card-gride-wrap:after { content: ""; display: block; clear: both; }
+
+.sort-card-gride-wrap .sort-wrap { width: 590px; border: 1px solid #8c8c8c; background: #fff; border-radius: 4px; overflow: hidden; padding: 0; float: left; }
+
+.sort-card-gride-wrap .card-gride-wrap { float: right; width: calc(100% - 600px); padding: 0; }
+
+.sort-card-gride-wrap .sort-wrap, .sort-card-gride-wrap .card-gride-wrap { height: 100%; }
+
+.sort-card-gride-wrap .scroll-wrap { height: 100%; }
+
+.sort-card-gride-wrap .card-grid { width: 100%; }
+
+.sort-card-gride-wrap .card { width: 246px; }
+
+.sort-card-gride-wrap .card-thumb { height: 170px; }
+
+@media only screen and (max-width: 640px) { 
+  .type-tab-menu { background: rgba(0, 0, 0, 0.12); margin: 0 auto; padding: 20px 0; }
+  .header-change + #container .type-tab-menu { background: rgba(0, 0, 0, 0.6); }
+  .type-tab-menu {top: 165px;}
+
+  .sort-card-gride-wrap { padding: 270px 25px 80px; }
+  .sort-card-gride-wrap .sort-wrap { display: none; float: none; width: 100%; background: transparent; border: none; position: static; padding: 0; }
+  .sort-card-gride-wrap .card-gride-wrap { width: 100%; padding: 0 0 340px; float: none; }
+  .card-gride-wrap .card { width: 256px; } 
+}
+  
+
+/*
+.sort-card-gride-wrap {
+    max-width: 1460px;
+    padding: 10px 30px 60px;
+    margin: 0 auto;
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .sort-wrap {
+        width: 590px;
+        border: 1px solid #8c8c8c;
+        background: #fff;
+        border-radius: 4px;
+        overflow: hidden;
+        padding: 35px 40px 0;
+        position: fixed;
+        top: 207px;
+    }
+
+    .card-gride-wrap {
+        float: right;
+        width: 100%;
+        max-width: 100%;
+        padding: 200px 0 0 610px;
+
+        .card-grid {
+            width: 100%;
+        }
+
+            .card {
+                width: 246px;
+            }
+
+            .card-thumb {
+                height: 170px;
+            }
+    }
+}
+
+.sort-wrap,
+.card-grid-box-inner {
+    min-height: 820px;
+    height: 1000px;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    .sort-card-gride-wrap {
+        padding: 10px 25px 80px;
+
+        .sort-wrap {
+            display: none;
+            float: none;
+            width: 100%;
+            background: transparent;
+            border: none;
+            position: static;
+            padding: 0;
+        }
+
+        .card-gride-wrap {
+            width: 100%;
+            padding: 0;
+            float: none;
+        }
+    }
+
+    .card-gride-wrap .card {
+        width: 256px;
+    }
+}
+
+
+
+*/
+/**************
+   지도 위 Pin
+**************/
+#place-wrap { position: absolute; z-index: 10; }
+
+#place-wrap .place-outer { position: relative; }
+
+#place-wrap .place-inner { width: 290px; border: 1px solid #cccccc; border-radius: 5px; background: #fff; padding: 1.66667rem; position: absolute; left: 50%; bottom: 70px; margin-left: -150px; }
+
+#place-wrap .place-inner:after, #place-wrap .place-inner:before { position: absolute; top: 100%; left: 50%; display: block; content: ''; width: 0; height: 0; border-style: solid; }
+
+#place-wrap .place-inner:before { margin-left: -9px; border-width: 18px 12px 0 12px; border-color: #cccccc transparent transparent transparent; }
+
+#place-wrap .place-inner:after { margin-left: -7px; border-width: 16px 10px 0 10px; border-color: #ffffff transparent transparent transparent; }
+
+#place-wrap .place-header { color: #333333; line-height: 1; font-size: 1.66667rem; padding-bottom: 10px; border-bottom: 2px solid #333333; margin-bottom: 10px; }
+
+#place-wrap .place-header:after {content: ""; display: block; clear: both;}
+
+#place-wrap .place-header .place-title {float: left; width: calc(100% - 24px);}
+
+#place-wrap .place-header .btn-close {width: 24px; height: 100%; background: url(/cms/imgs/common/btn/btn-map-layer-close.png)no-repeat right center; text-indent: -9999px; overflow: hidden;}
+
+#place-wrap .place-thumb { position: relative; }
+
+#place-wrap .place-thumb img { max-width: 100%; }
+
+#place-wrap .place-thumb .source { position: absolute; left: 20px; bottom: 10px; font-size: 1rem; color: #eeeeee; }
+
+#place-wrap .place-body { margin: 8px 0; color: #666666; font-size: 1.08333rem; line-height: 1.6em; height: 4.8em; overflow: hidden;}
+
+#place-wrap .place-footer .btn-detail-link { padding: 0; font-size: 13px; line-height: 30px; }

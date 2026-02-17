@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no" />
+<title>HeyID - 신청페이지</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/">
+<link href="./css/common.css" rel="stylesheet">
+<link href="./css/jquery-ui.css" rel="stylesheet">
+<link href="./css/croppie.min.css" rel="stylesheet">
+<link href="./css/swiper.min.css" rel="stylesheet">
+<link href="./css/default.css" rel="stylesheet">
+
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/croppie.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/default.js"></script>    
+</head>
+
+<body>
+<div class="wrap sub register-photo">
+    <header id="header">
+        <div class="inner">
+            <h1><a href="./"><img src="./images/img/img-logo.png" alt="강남구"></a><span>전자신분증 발급신청</span></h1>
+        </div>
+    </header>
+    
+    <div id="contents">
+        <div class="inner">
+            <div class="step-box">
+                <div class="step-li com"><span class="circle"></span> 본인인증</div>
+                <div class="step-li on"><span class="circle"></span> 사진 및 정보등록</div>
+                <div class="step-li"><span class="circle"></span> 발급신청완료</div>
+            </div>
+
+            <div class="tit-box">
+                <h2>사진 및 정보등록</h2>
+                <p>신분증에 사용할 사진과 정보를 등록해주세요.</p>
+            </div>
+
+            <div class="con-box">
+                <form>
+                    <div class="photo-box">
+                        <div class="photo">
+                            <div id="image-container">
+                                <div id="resizer"></div>
+                                <button type="button" class="upload-close" >&times;</button>
+                            </div>
+
+                            <div class="file-btn">
+                                <div class="btn btn-dark">
+                                    <label for="file-upload"><div class="btn-upload">파일 찾기</div></label>
+                                    <input type="file" class="file-upload" id="file-upload" name="profile_picture" accept="image/*">
+                                    <!-- <button class="btn btn-block btn-dark" id="upload" > 
+                                    Crop And Upload</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="register">
+                                <h3>사진등록방법</h3>
+                                <ul>
+                                    <li>[파일찾기]를 클릭하여 등록할 사진을 선택합니다.</li>
+                                    <li>선택된 사진은 마우스 휠 또는 [+], [-] 버튼으로 크기 조절이 가능합니다.</li>
+                                    <li>선택된 사진은 마우스로 드래그하여 위치 조정 가능합니다.</li>
+                                    <li>크기 및 위치 조절이 완료되면 [등록]을 클릭하여 사진을 등록합니다.</li>
+                                </ul>
+                            </div>
+                            <div class="caution">
+                                <h3>사진 등록 시 유의사항</h3>
+                                <ul>
+                                    <li>6개월 이내 촬영한 컬러사진</li>
+                                    <li>가로, 세로 최소 350px 이상</li>
+                                    <li>파일형식 : jpg, png</li>
+                                    <li>사진 상태(빛 번짐, 안경 등)에 따라 신청이 허가되지 않을 수 있으므로 사진 상태를 확인하시기 바랍니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input-box company">
+                            <span class="input-title">소속기관</span>
+                            <input type="text" id="agency" placeholder="본인이 소속 되어있는 부서정보 입력 (예:복지생활국 복지정책과)">
+                        </div>
+                        <div class="input-box position">
+                            <span class="input-title">직급</span>
+                            <input type="text" id="position" placeholder="직급 입력">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="btn-box">
+                <button type="submit" class="type1 on" onclick="location.href='./complete.html'">신청하기</button>    
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="down-box">
+            <div class="inner">
+                <div class="left-sec">
+                    <p>전자신분증 APP 다운로드</p>
+                    <p>발급하신 신분증은 HeyID 앱에 등록한 후 사용하실 수 있습니다. (Android/iOS 모두 지원됩니다.)</p>
+                </div>
+                <div class="right-sec">
+                    <div class="gp">
+                        <p><img src="./images/img/img-qr-googleplay.png" alt="qr"></p>
+                        <p><button type="button" onclick="location.href='/'"><img src="./images/btn/btn-googleplay.png" alt="google play"></button></p>
+                    </div>
+                    <div class="as">
+                        <p><img src="./images/img/img-qr-appstore.png" alt="qr"></p>
+                        <p><button type="button" onclick="location.href='/'"><img src="./images/btn/btn-appstore.png" alt="app store"></button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="addr-box">
+            <div class="inner">
+                <div class="addr"><p>(06090)서울특별시 강남구 학동로 426 (삼성동) 02-3423-5114 (120 다산콜센터로 연결) | 문의처 : 02-3423-6000~3</p></div>
+                <div class="copy"><p>COPYRIGHT 2021. GANGNAM-GU OFFICE, ALL RIGHTS RESERVED.</p></div>
+                <div class="privacy"><a href="/">개인정보처리방침</a></div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+$(function() {
+    var croppie = null;
+    var el = document.getElementById('resizer');
+
+    $.base64ImageToBlob = function(str) {
+        var pos = str.indexOf(';base64,');
+        var type = str.substring(5, pos);
+        var b64 = str.substr(pos + 8);
+        var imageContent = atob(b64);
+        var buffer = new ArrayBuffer(imageContent.length);
+        var view = new Uint8Array(buffer);
+      
+        for (var n = 0; n < imageContent.length; n++) {
+          view[n] = imageContent.charCodeAt(n);
+        }
+        var blob = new Blob([buffer], { type: type });
+      
+        return blob;
+    }
+
+    $.getImage = function(input, croppie) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {  
+                croppie.bind({
+                    url: e.target.result,
+                });
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#file-upload").on("change", function(event) {
+        croppie = new Croppie(el, {
+                viewport: {
+                    width: 256,
+                    height: 256,
+                    type: 'circle'
+                },
+                boundary: {
+                    width: 336,
+                    height: 336
+                },
+                enableOrientation: true
+            });
+        $.getImage(event.target, croppie); 
+        $('.upload-close').show();
+    });
+
+    $("#upload").on("click", function() {
+        croppie.result('base64').then(function(base64) {
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(data) {
+                    
+                },
+                error: function(error) {
+                    
+                }
+            });
+        });
+    });
+
+    $('.upload-close').click(function(){
+        setTimeout(function() { croppie.destroy(); }, 100);
+        $(this).hide();
+    });
+});
+</script>
+
+</body>
+</html>

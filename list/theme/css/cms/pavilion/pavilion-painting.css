@@ -1,0 +1,9 @@
+
+.wrap-bg {background-image: url(/cms/imgs/pavilion/bg/bg-painting.jpg);}
+.card-gride-wrap .card a {height: 410px;}
+.card-gride-wrap .card-thumb ~ .card-txt {min-height: 191px;}
+.card-gride-wrap .card-summary { white-space: normal !important;}
+@media only screen and (max-width: 640px) {
+    .card-gride-wrap .card a {height: 470px;}
+    .card-gride-wrap .card-thumb ~ .card-txt {min-height: 264px;}
+}

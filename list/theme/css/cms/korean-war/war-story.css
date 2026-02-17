@@ -1,0 +1,24 @@
+
+.wrap-bg {background-image: url(/cms/imgs/korean-war/bg/bg-anecdote.png);}
+
+#footer {background-color: transparent;}
+.story #footer {background-color: #363434;}
+.search-result #footer {background-color: #363434;}
+
+.btn-mobile-tab {width: 100%; background: #e7b200 url(/cms/imgs/korean-war/icon/icon-arrow-wh.png)no-repeat right 20px center; border-radius: 0; height: 60px;}
+.btn-mobile-tab:before {display: none;}
+.btn-mobile-tab label {text-align: left; font-size: 1.333rem;}
+
+.card-gride-wrap {padding-top: 155px; position: relative;}
+.card-gride-wrap .card a {height: 410px;}
+.card-gride-wrap .card-summary { white-space: normal !important;}
+.card-gride-wrap .card-thumb ~ .card-txt {min-height: 191px;}
+@media only screen and (max-width: 640px) {
+
+    .type-tab-menu {margin-top: 44px; margin-bottom: 30px;}
+
+    .card-gride-wrap .card a {height: 470px;}
+    .card-gride-wrap .card-thumb ~ .card-txt {min-height: 264px;}
+
+}
+

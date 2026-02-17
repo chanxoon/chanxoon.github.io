@@ -1,0 +1,112 @@
+@media screen and (max-width:1440px) {
+    .nav-wrap .main-menu ul {text-align: left; padding-left: 222px;}
+}
+
+/**********************
+        main
+**********************/
+.main-menu ul li.active a:before {background: #b3c70d;}
+
+
+/**********************
+    menu
+**********************/
+.header-visual .page-header h3 { color: #b3c70d; }
+.nav-wrap .gnb ul li.active a span{ border-bottom-color: #b3c70d;}
+.nav-wrap .gnb ul li.active a { color: #b3c70d; }
+.nav-wrap .gnb ul li.active a:before { background-color: #b3c70d; }
+a.btn-detail-link:visited { color: #b3c70d; }
+
+
+/**********************
+        object
+**********************/
+/* page title */
+.page-heading .title {color: #b3c70d;}
+
+/* sub nav */
+.themes-sub-depth-nav li button:after {background: #b3c70d;}
+.themes-sub-depth-nav li a:after {background: #b3c70d;}
+
+/* tab button */
+.type-tab-menu button.on {border-color: #b3c70d; background: #b3c70d;}
+.type-tab-menu button:hover,
+.type-tab-menu button:focus {border-color: #b3c70d;}
+
+/* 자세히보기 button */
+.btn-detail-link {color: #b3c70d; border-color: #b3c70d;}
+.btn-detail-link:hover {background: #b3c70d;}
+
+/* card visual list */
+.card-visual-list .card-box a:hover:after {border-color: #b3c70d;}
+
+/* 모바일 type-select */
+.btn-mobile-tab {border-color: #b3c70d;}
+.btn-mobile-tab:before {border-top: 10px solid #b3c70d;}
+
+
+
+
+/**********************
+    page-title-cover
+**********************/
+.page-title-cover .page-header .page-title strong {color: #b3c70d;}
+
+
+
+
+/* *********************
+        chapter
+********************* */
+.chapter-header .chapter-title {color: #84920d;}
+
+.sub-chapter .sub-count {color: #84920d;}
+
+
+
+
+/**********************
+    page-timeline
+**********************/
+.timeline-title {color: #b3c70d;}
+
+.timeline-point:before {background: #b3c70d;}
+
+.timeline .timeline-block .block-bullet {border-color: #b3c70d;}
+
+
+
+
+/**********************
+    slide-list-wrap
+**********************/
+.slide-list-box .swiper-slide.selected-list .thumb-img:after {border-color: #b3c70d;}
+.slide-list-box .swiper-slide.selected-list .data-title {color: #b3c70d;}
+
+
+
+
+/* ********************* *
+    card-gride-wrap
+* ********************** */
+.card-gride-wrap .card a:hover ,
+.card-gride-wrap .card a:focus {border-color: #b3c70d;}
+
+
+
+
+/**********************
+    card-con-list
+**********************/
+.card-con-box .con-list.active a:after {border-color: #b3c70d;}
+
+
+
+
+/**********************
+    full-slide-page
+**********************/
+.full-slide-page .slide-step li.on {color: #b3c70d;}
+.full-slide-page .slide-step li.on button:before {background: #b3c70d;}
+
+.full-slide-page .text-wrap .subheading {color: #b3c70d;}

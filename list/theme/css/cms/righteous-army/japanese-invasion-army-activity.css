@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.wrap-bg {background-image: url(/cms/imgs/righteous-army/bg/bg-japanese-invasion-army.jpg); }
+
+.card-gride-wrap { padding-top: 165px;}
+.card-gride-wrap .card-summary { white-space: normal !important;}
+
+@media only screen and (max-width: 640px) {
+
+}
+

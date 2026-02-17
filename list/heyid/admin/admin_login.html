@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>로그인 | 관리자페이지</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/common.css">
+	<link rel="stylesheet" type="text/css" href="./css/plugins/jquery.mCustomScrollbar.css"/>
+	<script src="./js/plugins/jquery-1.12.4.min.js"></script>
+	<script src="./js/plugins/jquery.mCustomScrollbar.js"></script>
+	<script src="./js/common_ui.js"></script>
+</head>
+
+<body>
+	<video autoplay="autoplay" playsinline muted="muted" loop="loop" src="./theme/background.mp4" id="pattern"></video>
+	<div id="admin-login">
+		<header>
+			<div class="inner">
+				<span class="logo"><a href="/"><img src="./images/img/logo.png" alt="heyID" /></a></span>
+			</div>
+		</header>
+
+		<div class="content" style="flex:1;">
+			<div class="intro">
+				<div class="inner">
+					<p class="main">
+						<span>전</span>
+						<span>자</span>
+						<span>신</span>
+						<span>분</span>
+						<span>증</span>
+					</p>
+					<p>
+						<span>기</span>
+						<span>관</span>
+						<span>관</span>
+						<span>리</span>
+						<span>시</span>
+						<span>스</span>
+						<span>템</span>
+					</p>
+				</div>
+				<p class="greeting">전자신분증 기관관리시스템에 오신 것을 환영합니다.</p>
+				<div class="line1"><svg class="diagonal-line"><line x1="0" y1="100%" x2="100%" y2="0" style="stroke:rgba(255,255,255,0.2);stroke-width:1;"/></svg></div>
+				<div class="line2"><svg class="diagonal-line"><line x1="0" y1="100%" x2="100%" y2="0" style="stroke:rgba(255,255,255,0.2);stroke-width:1;"/></svg></div>
+			</div>
+			<div class="login">
+				<strong>LOGIN</strong>
+				<div class="user-data">
+					<div class="user-id"><input type="text"></div>
+					<div class="user-passowrd"><input type="password"></div>
+					<div class="submit"><a href="javascript:;" class="entry-btn">Login</a></div>
+					<div class="remember-id"><input type="checkbox" id="remember"><label for="remember">아이디 저장</label></div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<p class="copyright">Copyright &copy; Activar. All right reserved.</p>
+		</footer>
+	</div>
+
+	<!-- 출입실 선택 팝업 -->
+	<div class="layer-pop entry-layer" style="display: none;">
+		<div class="inner">
+			<div class="tit-box">
+				<h2>출입실 선택</h2>
+				<p>※ 출입/방문 인증을 진행할 출입실을 설정해주세요.</p>
+			</div>
+			<div class="con-box">
+				<div class="radio-box">
+					<label for="mr1" class="on"><input type="radio" id="mr1" name="entry" checked><span>한국공인중개사협회 C동 203호 (OOO 회의실)</span></label>
+					<label for="mr2"><input type="radio" id="mr2" name="entry"><span>한국공인중개사협회 A동 203호 (OOO 회의실)</span></label>
+					<label for="mr3"><input type="radio" id="mr3" name="entry"><span>한국공인중개사협회 B동 203호 (OOO 회의실)</span></label>
+					<label for="mr4"><input type="radio" id="mr4" name="entry"><span>한국공인중개사협회 C동 110호 (OOO 회의실)</span></label>
+					<label for="mr5"><input type="radio" id="mr5" name="entry"><span>한국공인중개사협회 C동 105호 (OOO 회의실)</span></label>
+					<label for="mr6"><input type="radio" id="mr6" name="entry"><span>한국공인중개사협회 C동 203호 (OOO 회의실)</span></label>
+					<label for="mr7"><input type="radio" id="mr7" name="entry"><span>한국공인중개사협회 A동 203호 (OOO 회의실)</span></label>
+					<label for="mr8"><input type="radio" id="mr8" name="entry"><span>한국공인중개사협회 B동 203호 (OOO 회의실)</span></label>
+					<label for="mr9"><input type="radio" id="mr9" name="entry"><span>한국공인중개사협회 C동 110호 (OOO 회의실)</span></label>
+					<label for="mr10"><input type="radio" id="mr10" name="entry"><span>한국공인중개사협회 C동 105호 (OOO 회의실)</span></label>
+				</div>
+			</div>
+			<div class="btn-box">
+				<button type="button" class="close-btn close-btn-entry">선택</button>
+			</div>
+		</div>
+	</div>
+
+<script>
+// 상단 대각선 라인 높이값 설정
+var $line = $('div.intro div.line1');
+$(window).resize(function(){
+	var $intro = $('div.intro');
+	var y = $intro.offset().top;
+	$line.css({width:y, height:y});
+}).trigger('resize');
+</script>
+</body>
+</html>

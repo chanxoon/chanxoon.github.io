@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no" />
+<title>HeyID - 알림설정</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/">
+<link href="./css/common.css" rel="stylesheet">
+<link href="./css/swiper.min.css" rel="stylesheet">
+<link href="./css/default.css" rel="stylesheet">
+
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="./js/dragula.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/default.js"></script>    
+</head>
+<body>
+
+<div class="wrap notified-edit">
+    <!-- nav -->
+    <nav id="nav">
+        <button type="button" class="back-btn" onclick="history.back()">뒤로가기</button>
+    </nav>
+    
+    <!-- con -->
+    <div id="contents">
+        <div class="inner">
+            <div class="tit-box">
+                <h2>알림설정</h2>
+            </div>
+
+            <div class="con-box">
+                <div class="push push-all">
+                    <div class="switch-box">
+                        <div class="tit">
+                            <p>푸시알림 모두 받기</p>
+                            <p>서비스에서 제공하는 모든 유형의 푸시 알림을 받습니다.</p>
+                        </div>
+                        <div class="btn">
+                            <div class="switch">
+                                <label class="el-switch el-switch-sm">
+                                    <input type="checkbox" name="switch" id="push-all" checked>
+                                    <span class="el-switch-style"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="push push-service">
+                    <div class="switch-box">
+                        <div class="tit">
+                            <p>HeyID 서비스 알림</p>
+                            <p>HeyID 서비스 측에서 보내는 공지, 이벤트, 설문조사 알림을 받습니다.</p>
+                        </div>
+                        <div class="btn">
+                            <div class="switch">
+                                <label class="el-switch el-switch-sm">
+                                    <input type="checkbox" name="switch" class="switch-btn" checked>
+                                    <span class="el-switch-style"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="push push-idcard">
+                    <div class="switch-box">
+                        <div class="tit">
+                            <p>전자신분증</p>
+                        </div>
+                        <div class="btn">
+                            <div class="switch">
+                                <label class="el-switch el-switch-sm">
+                                    <input type="checkbox" name="switch" class="switch-btn" checked>
+                                    <span class="el-switch-style"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="switch-box">
+                        <div class="tit">
+                            <p>한국공인중개사사무소</p>
+                        </div>
+                        <div class="btn">
+                            <div class="switch">
+                                <label class="el-switch el-switch-sm">
+                                    <input type="checkbox" name="switch" class="switch-btn" checked>
+                                    <span class="el-switch-style"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="switch-box">
+                        <div class="tit">
+                            <p>강남구청</p>
+                        </div>
+                        <div class="btn">
+                            <div class="switch">
+                                <label class="el-switch el-switch-sm">
+                                    <input type="checkbox" name="switch" class="switch-btn" checked>
+                                    <span class="el-switch-style"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="switch-box">
+                        <div class="tit">
+                            <p>OOO 컨퍼런스</p>
+                        </div>
+                        <div class="btn">
+                            <div class="switch">
+                                <label class="el-switch el-switch-sm">
+                                    <input type="checkbox" name="switch" class="switch-btn" checked>
+                                    <span class="el-switch-style"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

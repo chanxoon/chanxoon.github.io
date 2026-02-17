@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="하나금융그룹" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="http://www.hanafn.com/" />
+        <meta property="og:title" content="" />
+        <meta property="og:image" content="../assets/img/favicon/og_hanafn.png" />
+        <meta property="og:description" content="" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:url" content="http://www.hanafn.com/" />
+        <meta name="twitter:image" content="../assets/img/favicon/og_hanafn.png" />
+        <meta name="apple-mobile-web-app-title" content="하나금융그룹" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png" />
+        <!-- <link rel="manifest" href="/assets/img/favicon/site.webmanifest" /> -->
+        <link rel="mask-icon" href="../assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="msapplication-TileImage" content="../assets/img/favicon/mstile-144x144.png" />
+        <meta name="msapplication-config" content="../assets/img/favicon/browserconfig.xml" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/lib/swiper.min.css?t=1742282958622" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/lib/aos.css?t=1742282958622" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/common.min.css?t=1742282958622" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.min.css?t=1742282958622" />
+        <script src="../assets/js/lib/jquery-3.6.0.min.js?t=1742282958622"></script>
+        <script src="../assets/js/lib/jquery-ui.min.js?t=1742282958622"></script>
+        <script src="../assets/js/lib/jquery.ui.monthpicker.js?t=1742282958622"></script>
+        <script src="../assets/js/lib/aos.js?t=1742282958622"></script>
+        <script src="../assets/js/lib/swiper.min.js?t=1742282958622"></script>
+        <script src="../assets/js/lib/apexcharts.min.js?t=1742282958622"></script>
+        <script src="../assets/js/common.js?t=1742282958622"></script>
+        <title>하나펀드서비스</title>
+
+        <style>
+            .apexcharts-graphical .apexcharts-datalabels .apexcharts-data-labels:last-child text {
+                font-size: 40px;
+            }
+        </style>
+
+        <script>
+            // 차트
+            $(function () {
+                lineGroupChart();
+                lineGroupChart2();
+                lineGroupChart3();
+                AOS.init({ duration: 1000 });
+            });
+            window.addEventListener('popstate', function () {
+                AOS.refresh(); // 페이지가 변경될 때마다 AOS 갱신
+            });
+        </script>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header">
+            <div class="inner">
+                <div class="logo-box">
+                    <h1>
+                        <a href="../index.html"><img src="../assets/img/img-logo.svg" alt="하나펀드서비스" /></a>
+                    </h1>
+                </div>
+                <div class="nav-box">
+                    <nav id="nav" class="">
+                        <ul>
+                            <li>
+                                <a href="#">회사소개</a>
+                                <div class="submenu">
+                                    <ul>
+                                        <li class="img-area">
+                                            <img src="../assets/img/img-nav-company.png" alt="회사소개" />
+                                            <p>회사소개</p>
+                                        </li>
+                                        <li class="txt-area">
+                                            <p>
+                                                Global Standard의 서비스 경쟁력을<br />
+                                                갖춘 대한민국 대표사무 관리사
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">회사개요</a></li>
+                                        <li><a href="">CEO 인사말</a></li>
+                                        <li><a href="">연혁</a></li>
+                                        <li><a href="../sub/sub-1.html">요약재무제표</a></li>
+                                        <li><a href="">책임선언</a></li>
+                                        <li><a href="">윤리경영</a></li>
+                                        <li><a href="">하나금융그룹</a></li>
+                                        <li><a href="">찾아오시는길</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">주요 서비스</a>
+                                <div class="submenu">
+                                    <ul>
+                                        <li class="img-area">
+                                            <img src="../assets/img/img-nav-company.png" alt="주요서비스" />
+                                            <p>주요서비스</p>
+                                        </li>
+                                        <li class="txt-area">
+                                            <p>
+                                                Global Standard의 서비스 경쟁력을<br />
+                                                갖춘 대한민국 대표사무 관리사
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">서비스 특장점</a></li>
+                                        <li><a href="">제공 서비스</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">제공 시스템</a>
+                                <div class="submenu">
+                                    <ul>
+                                        <li class="img-area">
+                                            <img src="../assets/img/img-nav-system.png" alt="제공 시스템" />
+                                            <p>제공 시스템</p>
+                                        </li>
+                                        <li class="txt-area">
+                                            <p>
+                                                효율적인 자산 운용을 위한<br />
+                                                하나펀드서비스만의 차별화된 시스템
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="../sub/sub-2.html">제공시스템 개요</a></li>
+                                        <li><a href="">펀드회계시스템</a></li>
+                                        <li><a href="">주문관리시스템</a></li>
+                                        <li><a href="">운용지원시스템</a></li>
+                                        <li><a href="">헤지펀드운용지원시스템</a></li>
+                                        <li><a href="">GIPS시스템</a></li>
+                                        <li><a href="">Compliance시스템</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">펀드공시</a>
+                                <div class="submenu">
+                                    <ul>
+                                        <li class="img-area">
+                                            <img src="../assets/img/img-nav-system.png" alt="펀드공시" />
+                                            <p>펀드공시</p>
+                                        </li>
+                                        <li class="txt-area">
+                                            <p>
+                                                효율적인 자산 운용을 위한<br />
+                                                하나펀드서비스만의 차별화된 시스템
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">집합투자 공시</a></li>
+                                        <li><a href="">리츠 공시</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">소식</a>
+                                <div class="submenu">
+                                    <ul>
+                                        <li class="img-area">
+                                            <img src="../assets/img/img-nav-system.png" alt="소식" />
+                                            <p>소식</p>
+                                        </li>
+                                        <li class="txt-area">
+                                            <p>
+                                                효율적인 자산 운용을 위한<br />
+                                                하나펀드서비스만의 차별화된 시스템
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">하나소식</a></li>
+                                        <li><a href="">인재채용</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mo" style="display: none"><a href="">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="allmenu-box">
+                    <div class="contact-btn">
+                        <a href="">Contact Us</a>
+                    </div>
+                    <div class="allmenu-btn">
+                        <button id="nav-button" type="button">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap" class="sub financial-state">
+            <div class="sub-title">
+                <div class="inner">
+                    <div class="sub-tit-box">
+                        <h3>회사소개</h3>
+                        <p>시장을 선도하는 대한민국 대표사무관리사, <br />하나펀드서비스</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-nav">
+                <ul class="menu">
+                    <li class="menu-item home">
+                        <a href="./index.html">홈</a>
+                    </li>
+                    <li class="menu-item depth1">
+                        <a href="#">회사소개</a>
+                        <ul class="submenu">
+                            <li class="active"><a href="./sub/sub-1.html">회사소개</a></li>
+                            <li><a href="#">주요 서비스</a></li>
+                            <li><a href="./sub/sub-2.html">제공 시스템</a></li>
+                            <li><a href="#">펀드공시</a></li>
+                            <li><a href="#">소식</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item depth2">
+                        <a href="#">요약재무제표</a>
+                        <ul class="submenu">
+                            <li><a href="#">회사개요</a></li>
+                            <li><a href="#">CEO 인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li class="active"><a href="./sub/sub-1.html">요약재무제표</a></li>
+                            <li><a href="#">책임선언</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                            <li><a href="#">하나금융그룹</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="contents">
+                <div class="inner">
+                    <div class="tit">
+                        <span>요약재무제표</span>
+                        <i class="icon icon-dote"></i>
+                    </div>
+                    <div class="tabs">
+                        <div class="list active" rel="tab1">대차대조표</div>
+                        <div class="list" rel="tab2">손익계산서</div>
+                    </div>
+                    <div class="tab_container">
+                        <!-- #tab1 -->
+                        <div id="tab1" class="tab_content">
+                            <div class="chart-box">
+                                <div class="g1" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="txt">
+                                        <p>자산</p>
+                                        <p>(단위 : 억원)</p>
+                                    </div>
+                                    <div class="con">
+                                        <div id="lineGroupChart"></div>
+                                    </div>
+                                </div>
+                                <div class="g2" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="txt">
+                                        <p>부채</p>
+                                        <p>(단위 : 억원)</p>
+                                    </div>
+                                    <div class="con">
+                                        <div id="lineGroupChart2"></div>
+                                    </div>
+                                </div>
+                                <div class="g3" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="txt">
+                                        <p>자본</p>
+                                        <p>(단위 : 억원)</p>
+                                    </div>
+                                    <div class="con">
+                                        <div id="lineGroupChart3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-box" data-aos="fade-up" data-aos-duration="1000">
+                                <table>
+                                    <colgroup>
+                                        <col width="25%" />
+                                        <col width="25%" />
+                                        <col width="25%" />
+                                        <col width="25%" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>2021</th>
+                                            <th>2022</th>
+                                            <th>2023</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>유동자산</td>
+                                            <td>338</td>
+                                            <td>386</td>
+                                            <td>277</td>
+                                        </tr>
+                                        <tr>
+                                            <td>이연법인세자산</td>
+                                            <td>7</td>
+                                            <td>7</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>유형자산</td>
+                                            <td>79</td>
+                                            <td>104</td>
+                                            <td>110</td>
+                                        </tr>
+                                        <tr>
+                                            <td>무형자산</td>
+                                            <td>42</td>
+                                            <td>37</td>
+                                            <td>35</td>
+                                        </tr>
+                                        <tr>
+                                            <td>기타비유동자산</td>
+                                            <td>13</td>
+                                            <td>123</td>
+                                            <td>297</td>
+                                        </tr>
+                                        <tr class="bg">
+                                            <td>자산 총계</td>
+                                            <td>478</td>
+                                            <td>657</td>
+                                            <td>725</td>
+                                        </tr>
+                                        <tr class="bg">
+                                            <td>부채 총계</td>
+                                            <td>131</td>
+                                            <td>150</td>
+                                            <td>155</td>
+                                        </tr>
+                                        <tr>
+                                            <td>자본금</td>
+                                            <td>26</td>
+                                            <td>26</td>
+                                            <td>26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>이익잉여금</td>
+                                            <td>432</td>
+                                            <td>494</td>
+                                            <td>553</td>
+                                        </tr>
+                                        <tr class="bg">
+                                            <td>자본 총계</td>
+                                            <td>448</td>
+                                            <td>507</td>
+                                            <td>570</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- #tab2 -->
+                        <div id="tab2" class="tab_content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="top-sec">
+                    <div class="f-menu">
+                        <ul>
+                            <li>
+                                <a href="">개인정보처리방침</a>
+                            </li>
+                            <li>
+                                <a href="">고객정보취급방침</a>
+                            </li>
+                            <li>
+                                <a href="">찾아오시는 길</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="family">
+                        <div class="family-site">
+                            <button class="family-btn">패밀리 사이트</button>
+                            <ul class="family-list">
+                                <li><a href="https://www.google.com" target="_blank">패밀리 사이트1</a></li>
+                                <li><a href="https://www.naver.com" target="_blank">패밀리 사이트2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bot-sec">
+                    <div class="addr-box">
+                        <div class="addr">
+                            <span
+                                ><strong>주소</strong>
+                                <span>(04538) 서울시 중구 을지로 66 하나금융그룹 명동사옥 10층,11층</span></span
+                            >
+                            <span><strong>대표번호</strong> <span>02-6714-4600</span></span>
+                            <span><strong>이메일</strong> <span>webmaster@kebis.co.kr</span></span>
+                        </div>
+                        <div class="copy">Copyright© HANA INVESTORS SERVICES. All rights reserved.</div>
+                    </div>
+                    <div class="f-logo"><img src="../assets/img/img-footer-logo.svg" alt="하나금융그룹" /></div>
+                </div>
+            </div>
+        </footer>
+        <!--// footer -->
+
+        <button class="scroll-to-top" id="scrollToTopBtn">↑</button>
+    </body>
+</html>

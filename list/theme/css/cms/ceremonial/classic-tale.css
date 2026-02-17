@@ -1,0 +1,11 @@
+
+.wrap-bg {background-image: url(/cms/imgs/ceremonial/bg/bg-classic-tale.jpg);}
+.card-gride-wrap {padding-top: 110px;}
+.card-gride-wrap .card-summary { white-space: normal !important;}
+.type-tab-menu {margin-bottom: 30px;}
+
+@media only screen and (max-width: 640px) {
+    .card-gride-wrap {padding-top: 110px;}
+    .type-tab-menu {margin-bottom: 30px;}
+}
+

@@ -1,0 +1,77 @@
+.wrap-bg {background-image: url(/cms/imgs/korean-war/bg/bg-wrap.jpg);}
+#btn-go-top {display: none !important;}
+
+#footer {background-color: transparent;}
+.story #footer {background-color: #363434;}
+.search-result #footer {background-color: #363434;}
+
+/****************
+      피난마을
+*****************/
+/* .sub-shelter {height: 100%;} */
+.sub-shelter .shelter-wrap {max-width: 1460px; margin: 0 auto; padding: 180px 30px 0; position: relative;}
+.sub-shelter .shelter-wrap:after {content: ""; display: block; clear: both;}
+
+.sub-shelter .shelter-list-side {height: 100%; float: left;}
+.shelter-list-side .local-select {margin-bottom: 20px;}
+.shelter-list-side .local-select .w-use {width: 315px; height: 46px; background: #00a2ec; color: #fff; position: relative;}
+.shelter-list-side .local-select .w-use .scroll-wrap {height: 300px; overflow: auto; display: none; position: absolute; top: 46px; left: 0; background: #222; width: 100%; z-index: 10;}
+.shelter-list-side .local-select .w-use ul button {width: 100%; box-sizing: border-box; text-align: left; padding: 15px; border-bottom: 1px solid #333;}
+.shelter-list-side .local-select .local-selected {color: #fff; width: 100%; height: 100%; background: url(/cms/imgs/korean-war/icon/icon-arrow-wh.png)no-repeat right 20px center; text-align: left; padding-left: 20px; box-sizing: border-box; font-size: 16px;}
+.shelter-list-side .total {color: #fff; font-size: 1.167rem; margin-bottom: 10px;}
+.shelter-list-side .total em {color: #ffae00;}
+.shelter-list-side .shelter-list {overflow: auto;}
+.shelter-list-side .shelter-list .mCSB_outside+.mCSB_scrollTools {right: -12px;}
+.shelter-list-side .shelter-list li {border-bottom: 1px solid rgba(255, 255, 255, 0.1); display: table; width: 100%;}
+.shelter-list-side .shelter-list li a:after {content: ""; display: block; clear: both;}
+.shelter-list-side .shelter-list li a {display: block; width: 100%; }
+.shelter-list-side .shelter-list li a > div {display: table-cell; vertical-align: middle; font-size: 1.333rem; color: rgba(255, 255, 255, 0.6); padding: 15px 10px; height: 80px;}
+.shelter-list-side .shelter-list li .thumb {width: 86px; height: 50px; float: none; border-color: rgba(255, 255, 255, 0.3); background-color: #fff;}
+.shelter-list-side .shelter-list li.active a {background: url(/cms/imgs/korean-war/bg/bg-shelter-active.png)no-repeat; background-size: cover;}
+
+.sub-shelter .shelter-detail-side {float: left; padding-left: 40px; width: 447px; position: relative; z-index: 10;}
+
+.sub-shelter .shelter-map-side {width: 638px; position: absolute; right: 0; top: 0; height: 100vh; padding-top: 180px; background: url(/cms/imgs/korean-war/bg/bg-shelter-map.png)no-repeat; background-size: 100% auto; float: left;}
+.shelter-map-side .local-all {background: url(/cms/imgs/korean-war/bg/bg-shelter-mapline.png)no-repeat center top; background-size: contain; position: relative; width: 100%; height: 94%; max-height: 778px;}
+.shelter-map-side .local-all li {transition: background .5s; background-color: rgba(0, 162, 236, .7); color: #fff; text-align: center; border-radius: 100%; border: 1px solid #fff; position: absolute; width: 60px; height: 60px; font-size: 25px; transform: translate(-50%, -50%)}
+.shelter-map-side .local-all .seoul {right: 43%; top: 16.4%;}
+.shelter-map-side .local-all .incheon {right: 56%; top: 17%;}
+.shelter-map-side .local-all .busan {right: 0; top: 60%;}
+.shelter-map-side .local-all .daegu {right: 15%; top: 49%;}
+.shelter-map-side .local-all .gwangju {right: 47%; top: 62%;}
+.shelter-map-side .local-all .daejeon {right: 36%; top: 39%;}
+.shelter-map-side .local-all .ulsan {right: 1%; top: 54%;}
+.shelter-map-side .local-all .gyeonggi {right: 39%; top: 9%;}
+.shelter-map-side .local-all .gangwon {right: 20%; top: 14%;}
+.shelter-map-side .local-all .chungbuk {right: 29%; top: 30%;}
+.shelter-map-side .local-all .chungnam {right: 48%; top: 36%;}
+.shelter-map-side .local-all .gyeongbuk {right: 10%; top: 35%;}
+.shelter-map-side .local-all .gyeongnam {right: 23%; top: 59%;}
+.shelter-map-side .local-all .jeonbuk {right: 42%; top: 53%;}
+.shelter-map-side .local-all .jeonnam {right: 50%; top: 72%;}
+.shelter-map-side .local-all .jeju {right: 53%; top: 90%;}
+.shelter-map-side .local-all li a {display: block; color: #fff;}
+.shelter-map-side .local-all li .local-name {font-size: 14px; padding-top: .5em; display: block;}
+.shelter-map-side .local-all li .count {margin-top: -.3em}
+.shelter-map-side .local-all .count-2 .local-name {font-size: 14px;}
+.shelter-map-side .local-all .count-3 .local-name {font-size: 16px;}
+.shelter-map-side .local-all .count-4 .local-name {font-size: 18px;}
+.shelter-map-side .local-all .count-5 .local-name {font-size: 20px;}
+.shelter-map-side .local-all .count-6 .local-name {font-size: 22px;}
+.shelter-map-side .local-all .count-2 {width: 70px; height: 70px; font-size: 30px;}
+.shelter-map-side .local-all .count-3 {width: 80px; height: 80px; font-size: 33px;}
+.shelter-map-side .local-all .count-4 {width: 90px; height: 90px; font-size: 36px;}
+.shelter-map-side .local-all .count-5 {width: 100px; height: 100px; font-size: 39px;}
+.shelter-map-side .local-all .count-6 {width: 110px; height: 110px; font-size: 42px;}
+
+@media only screen and (max-width: 640px) {
+    .sub-shelter .shelter-wrap {padding-top: 197px;}
+    .shelter-list-side .shelter-list {height: auto !important;}
+    .sub-shelter .shelter-list-side {float: none; width: 100%; position: relative; z-index: 10;}
+    .sub-shelter .shelter-list-side .refuge_village_region {color: #fff; font-family: 'Noto Sans KR', sans-serif; font-size: 1.333rem; background:#e7b200 url(/cms/imgs/korean-war/icon/icon-arrow-wh.png)no-repeat right 20px center; width: 100%; height: 60px;}
+    .sub-shelter .shelter-detail-side {display: none; position: fixed; width: 100%; left: 0; top: 0; background: rgba(0, 0, 0, .8); height: 100%; z-index: 300; padding: 130px 25px 25px; overflow: auto;}
+    .sub-shelter .shelter-detail-side .btn-detail-close {display: block; position: absolute; right: 25px; top: 36px; width: 42px; height: 42px; background: url(/cms/imgs/common/btn/btn-close-wh.svg); background-size: 100% 100%; text-indent: 1000px; overflow: hidden;}
+    .sub-shelter .shelter-map-side {position: fixed;}
+    .sub-shelter .shelter-map-side .local-all {display: none;}
+
+}

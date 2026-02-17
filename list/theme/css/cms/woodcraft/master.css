@@ -1,0 +1,6 @@
+.wrap-bg { background-image: url(/cms/imgs/woodcraft/bg/bg-master.jpg); z-index: 0; }
+
+.card-con-list.detail-open .card-con-box.fixed { position: fixed; top: 110px; }
+
+@media only screen and (max-width: 640px) {
+}

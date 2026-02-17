@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>기관관리자정보 | 관리자페이지</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/plugins/jquery-ui.css">
+<link rel="stylesheet" href="./css/plugins/jquery.mCustomScrollbar.css"/>
+<link rel="stylesheet" href="./css/common.css">
+
+<script src="./js/plugins/jquery-1.12.4.min.js"></script>
+<script src="./js/plugins/jquery-ui.js"></script>
+<script src="./js/plugins/jquery.mCustomScrollbar.js"></script>
+<script src="./js/common_ui.js"></script>
+</head>
+
+<body>
+<div id="skipNavi">
+    <a href="#container">본문으로 바로가기</a> 
+</div>
+<div id="wrap">    
+    <nav id="sideBar">
+        <div class="sideCont">
+            <h1 class="tit03"><a href="./admin.html"><img src="./images/img/logo.png" alt="heyID"></a><span>강남구청</span></h1>
+            <div class="sidebarUser">
+                <div class="userPic"><img src="./images/img/img-profile-man1.png" alt="홍길동"></div>
+                <div class="userName">홍길동 (admin01)</div>
+                <small>최종접속 : 2023.04.26 13:40</small>
+                <div class="btnWrap">
+                    <button class="rectangle bgDarkGrey" onclick="location.href='./admin_mypage.html'">마이페이지</button>
+                    <button class="rectangle bgLightGrey">로그아웃</button>
+                </div>
+            </div>
+            <ul class="lnb">
+                <li>
+                    <a href="./admin.html">대시보드</a>
+                </li>
+                <li>
+                    <a href="./admin_apply_manage.html">접수관리</a>
+                    <ul>
+                        <li><a href="./admin_apply_manage.html">신청/오류관리</a></li>
+                        <li><a href="./admin_approval_manage.html">승인/반려내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./admin_id_manage.html">신분증관리</a>
+                </li>
+                <li>
+                    <a href="./admin_visit_manage.html">출입/방문관리</a>
+                </li>
+                <li>
+                    <a href="./admin_notice_manage.html">알림서비스</a>
+                    <ul>
+                        <li><a href="./admin_notice_manage.html">공지관리</a></li>
+                        <li><a href="./admin_survey_manage.html">설문관리</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="./admin_agency_info.html">시스템관리</a>
+                    <ul style="display:block;">
+                        <li class="active"><a href="./admin_agency_info.html">기관정보</a></li>
+                        <li><a href="./admin_agency_admin.html">기관관리자정보</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <p>Copyright ⓒ Activar. All right reserved.</p>
+        </footer>                  
+    </nav>    
+    <div id="container">
+        <header class="containerHeader">
+            <button class="spheader btnMenu">메뉴</button>
+            <div class="btnWrap">
+                <button type="button" class="spheader btnSetting">설정
+                    <div class="submenu">
+                        <a href="./admin_mypage.html">마이페이지</a>
+                        <a href="/">로그아웃</a>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <div class="yScroll">
+            <div class="contents agency-info">
+                <div class="contentsWrap">
+                    <header>
+                        <div class="tit-box">
+                            <h2 class="tit01">홍길동 (admin47)</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <a href="javascript:void(0)">대시보드</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">시스템관리</a>
+                                    </li>
+                                    <li class="active" aria-current="page">기관관리자정보</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </header>
+                    <section class="tableWrap type01 detail">
+                        <h3 class="tit02">기본정보</h3>
+                        <table class="table type01">
+                            <caption>기본정보</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col style="width:450px;">
+                                <col style="width:140px;">
+                                <col style="width:450px;">
+                            </colgroup>                            
+                            <tbody>
+                                <tr>
+                                    <th scope="row">이름</th>
+                                    <td>홍길동</td>
+                                    <th scope="row">생년월일</th>
+                                    <td>1990.02.17</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">성별</th>
+                                    <td>남</td>
+                                    <th scope="row">부서/직급</th>
+                                    <td>인사관리1팀/사원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">휴대폰번호</th>
+                                    <td>010-0000-0000</td>
+                                    <th scope="row">이메일</th>
+                                    <td>gildong01@mail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 class="tit02">로그인 정보</h3>
+                        <table class="table type01">
+                            <caption>로그인 정보</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col style="width:450px;">
+                                <col style="width:140px;">
+                                <col style="width:450px;">
+                            </colgroup>                            
+                            <tbody>
+                                <tr>
+                                    <th scope="row">아이디</th>
+                                    <td colspan="3">admin47</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">접근권한</th>
+                                    <td>일반관리자</td>
+                                    <th scope="row">사용여부</th>
+                                    <td>Y</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">등록일시</th>
+                                    <td>2023.04.02 14:00</td>
+                                    <th scope="row">최종접속일시</th>
+                                    <td>2023.04.26 13:40</td>
+                                </tr>
+                            </tbody>
+                        </table>                       
+
+                        <div class="btnWrap">
+                            <div class="Left">
+                                <button type="button" class="rectangle bgDarkGrey">목록</button>
+                            </div>
+                            <div class="Right">
+                                <button type="button" class="rectangle bgBlue" onclick="location.href='./admin_agency_admin_detail_edit.html'">회원정보수정</button>
+                                <button type="button" class="rectangle bgLightGrey password-edit-btn">비밀번호 재설정</button>
+                                <button type="button" class="rectangle borderBlue agency-del-btn">삭제</button>
+                            </div>
+                        </div>
+                    </section>                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popup"></div>
+
+<!-- 비밀번호 재설정 팝업 -->
+<div class="layer-pop password-edit-layer" style="display: none;">
+    <div class="inner">
+        <div class="tit-box">
+            <h2>비밀번호 재설정</h2>
+        </div>
+        <div class="con-box yScroll">
+            <div class="info">
+                <p>재설정할 <strong>홍길동 (admin47)님</strong>의 비밀번호를 입력해주세요.</p>
+                <p>(기존 비밀번호는 초기화되고, 새 비밀번호가 설정됩니다.)</p>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="새 비밀번호를 입력해주세요.">
+            </div>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="bgBlue">재설정</button>
+            <button type="button" class="close-btn bgLightGrey">취소</button>
+        </div>
+    </div>
+</div>
+
+<!-- 기관관리자 삭제 팝업 -->
+<div class="layer-pop agency-del-layer" style="display: none;">
+    <div class="inner">
+        <div class="tit-box">
+            <h2>기관관리자 삭제</h2>
+        </div>
+        <div class="con-box yScroll">
+            <div class="info">
+                <p><strong>홍길동 (admin47)님</strong>의 계정을 삭제하시겠습니까?</p>
+                <p>(삭제된 관리자는 더 이상 기관관리시스템을 이용할 수 없습니다.)</p>
+            </div>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="bgBlue">확인</button>
+            <button type="button" class="close-btn bgLightGrey">취소</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

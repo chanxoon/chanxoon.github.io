@@ -1,0 +1,80 @@
+.page-title-cover { background-image: url("/cms/imgs/confucianism/bg/bg-mean-001.jpg"); }
+
+.page-title-cover .page-header .page-text { max-width: 1000px; }
+
+.page-header .page-text { max-width: 100%; }
+
+.no-scroll .page-title-cover ~ .contents-container {z-index: 400;}
+
+
+.sub-chapter > .sub-text { padding-bottom: 15px; }
+
+.sub-list { border-top: 2px solid #333; max-width: 1000px; margin: 0 auto; }
+
+.sub-list .sub-list-item { display: table; padding: 15px 0; text-align: center; font-size: 1.25rem; line-height: 1.666; border-bottom: 1px solid #dddddd; }
+
+.sub-list .sub-list-item:after { content: ''; display: block; clear: both; }
+
+.sub-list .btn-group, .sub-list .sub-text, .sub-list .tit { display: table-cell; vertical-align: middle; box-sizing: border-box; }
+
+.sub-list .tit { width: 60px; font-size: 22px; color: #b3c70d; }
+
+.sub-list .sub-text { width: calc(100% - 60px - 130px); padding-left: 48px; padding-right: 20px; margin-bottom: 0; text-align: justify; }
+
+.sub-list .sub-text dl { font-size: 1.25rem; display: table; padding-top: 10px; }
+
+.sub-list .sub-text dl dt { display: table-cell; color: #666666; width: 70px; vertical-align: top; }
+
+.sub-list .sub-text dl dd { color: #999999; }
+
+.sub-list .btn-group { width: 130px; }
+
+
+@media only screen and (max-width: 640px) { .sub-list { max-width: 100%; border-top: 1px solid #dddddd; }
+  .sub-list .sub-list-item { display: block; padding: 0; text-align: left; }
+  .sub-list .sub-list-item .btn-group, .sub-list .sub-list-item .sub-text, .sub-list .sub-list-item .tit { background: transparent; float: none; }
+  .sub-list .sub-list-item .tit { padding: 20px 25px; width: 100%; line-height: 1; font-size: 1.875rem; display: block; position: relative; }
+  .sub-list .sub-list-item .tit:after { content: ''; background-repeat: no-repeat; background-position: center; background-size: cover; width: 28px; height: 14px; position: absolute; right: 30px; top: 50%; margin-top: -7px; display: block; background-image: url("/cms/imgs/confucianism/btn/btn-around-open.png"); }
+  .sub-list .sub-list-item .sub-text { display: none; padding: 20px 25px; width: 100%; background: #f9f9f9; }
+  .sub-list .sub-list-item .sub-text dl { display: block; }
+  .sub-list .sub-list-item .sub-text dl dt { display: block; color: #666666; width: 100%; vertical-align: top; }
+  .sub-list .sub-list-item .sub-text dl dd { color: #999999; }
+  .sub-list .sub-list-item .btn-group { display: none; width: 100%; background: #f9f9f9; margin: 0; padding-bottom: 30px; text-align: left; }
+  .sub-list .sub-list-item .btn-group .btn-detail-link { margin: 0 0 0 25px; }
+  .sub-list .sub-list-item.active .tit { background: #b3c70d; color: #fff; }
+  .sub-list .sub-list-item.active .tit:after { background-image: url("/cms/imgs/confucianism/btn/btn-around.png"); }
+  .sub-list .sub-list-item.active .btn-group, .sub-list .sub-list-item.active .sub-text { display: block; } }
+
+.chapter01 { background: #ffffff url("/cms/imgs/confucianism/bg/bg-mean-002.jpg") no-repeat center bottom; background-size: cover; }
+
+.chapter01 .sub-chapter { margin-top: -10px; }
+
+.chapter02 { background: #F8F8F8 url("/cms/imgs/confucianism/bg/bg-mean-003.jpg") no-repeat center bottom; background-size: cover; }
+
+.chapter02 .chapter-header { padding-bottom: 43px; }
+
+.chapter02 .pic-wrap { width: 480px; text-align: center; position: relative; }
+
+@media only screen and (max-width: 640px) { .chapter02 .pic-wrap { width: 100%; } }
+
+.chapter02 .legacy-type-list .pic-wrap, .chapter02 .legacy-type-list .txt-wrap { height: 288px; }
+
+.chapter03 { background: #ffffff url("/cms/imgs/confucianism/bg/bg-mean-002.jpg") no-repeat center bottom; background-size: cover; }
+
+.chapter03 .chapter-header { padding-bottom: 40px; }
+
+.chapter04 { background: #F8F8F8 url("/cms/imgs/confucianism/bg/bg-mean-004.jpg") no-repeat center bottom; background-size: cover; padding-bottom: 30px; }
+
+.chapter04 .chapter-header { padding-bottom: 40px; }
+
+.chapter04 .sub-chapter > p.sub-text { color: #fff; }
+
+.chapter04 .card-detail-box { text-align: left; z-index: 800; }
+
+.chapter04 .detail-box-summary + .btn-detail-link { margin: 0 0 30px; }
+
+.chapter04 .resource-list .thumb img { max-width: 100%; }
+
+@media only screen and (max-width: 640px) { #wrap.popupOpen #header { z-index: 1; }
+.card-con-list.detail-open .con-list {width: calc(50% - 20px) !important; margin: 0 10px 20px !important;}
+}

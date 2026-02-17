@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>관리자페이지</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/plugins/jquery-ui.css">
+<link rel="stylesheet" href="./css/plugins/jquery.mCustomScrollbar.css"/>
+<link rel="stylesheet" href="./css/common.css">
+
+<script src="./js/plugins/jquery-1.12.4.min.js"></script>
+<script src="./js/plugins/jquery-ui.js"></script>
+<script src="./js/plugins/jquery.mCustomScrollbar.js"></script>
+<script src="./js/common_ui.js"></script>
+</head>
+
+<body>
+<div id="skipNavi">
+    <a href="#container">본문으로 바로가기</a> 
+</div>
+<div id="wrap">    
+    <nav id="sideBar">
+        <div class="sideCont">
+            <h1 class="tit03"><a href="./admin.html"><img src="./images/img/logo.png" alt="heyID"></a><span>강남구청</span></h1>
+            <div class="sidebarUser">
+                <div class="userPic"><img src="./images/img/img-profile-man1.png" alt="홍길동"></div>
+                <div class="userName">홍길동 (admin01)</div>
+                <small>최종접속 : 2023.04.26 13:40</small>
+                <div class="btnWrap">
+                    <button class="rectangle bgDarkGrey" onclick="location.href='./admin_mypage.html'">마이페이지</button>
+                    <button class="rectangle bgLightGrey">로그아웃</button>
+                </div>
+            </div>
+            <ul class="lnb">
+                <li class="active">
+                    <a href="./admin.html">대시보드</a>
+                </li>
+                <li>
+                    <a href="./admin_apply_manage.html">접수관리</a>
+                    <ul>
+                        <li><a href="./admin_apply_manage.html">신청/오류관리</a></li>
+                        <li><a href="./admin_approval_manage.html">승인/반려내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./admin_id_manage.html">신분증관리</a>
+                </li>
+                <li>
+                    <a href="./admin_visit_manage.html">출입/방문관리</a>
+                </li>
+                <li>
+                    <a href="./admin_notice_manage.html">알림서비스</a>
+                    <ul>
+                        <li><a href="./admin_notice_manage.html">공지관리</a></li>
+                        <li><a href="./admin_survey_manage.html">설문관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./admin_agency_info.html">시스템관리</a>
+                    <ul>
+                        <li><a href="./admin_agency_info.html">기관정보</a></li>
+                        <li><a href="./admin_agency_admin.html">기관관리자정보</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+        <footer>
+            <p>Copyright ⓒ Activar. All right reserved.</p>
+        </footer>                  
+    </nav>   
+    <div id="container">
+        <header class="containerHeader">
+            <button class="spheader btnMenu">메뉴</button>
+            <form style="display:none;">
+                <button type="submit" class="spheader btnSearch">검색</button>
+                <a href="javascript:void(0)" class="spheader btnBack">이전으로</a>
+                <input type="text" placeholder="Search" aria-label="Search" class="inputSearch" title="검색어 입력">
+            </form>
+            <div class="btnWrap">
+                <button type="button" class="spheader btnSetting">설정
+                    <div class="submenu">
+                        <a href="./admin_mypage.html">마이페이지</a>
+                        <a href="/">로그아웃</a>
+                    </div>
+                </button>
+            </div>
+        </header>
+        
+        <div class="contents">
+            <div class="main-contentsWrap">
+                <header>
+                    <div class="tit-box">
+                        <h2 class="tit01"><strong>홍길동</strong>님, 안녕하세요. <span>기관담당자</span></h2>
+                        <p>강남구청 기관관리시스템에 오신 걸 환영합니다.</p>
+                    </div>
+                    <div class="date-box">
+                        <div class="date">
+                            <img src="./images/icon/icon-calendar.png" alt="시간">
+                            <span class="year"></span>년
+                            <span class="month"></span>월
+                            <span class="date"></span>일
+                            <span class="day"></span>/
+                            <span class="hour"></span>:<span class="minute"></span>
+                        </div>
+                        <div class="reload"><a href="./admin.html"><img src="./images/btn/btn-reload.png" alt="새로고침"></a></div>
+                    </div>
+                </header>
+                <section class="main">
+                    <h2 class="blind">대시보드</h2>
+                    <div class="sec1">
+                        <h3>강남구청 현황</h3>
+                        <div class="card-box">
+                            <div class="unuse">
+                                <a href="./admin_id_manage.html#unuse">
+                                    <p class="tit">신분증 미사용</p>
+                                    <p class="cou"><span>10</span>건</p>
+                                    <p class="ico"><img src="./images/icon/icon-dash-unuse.png" alt="신분증 미사용"></p>
+                                </a>
+                            </div>
+                            <div class="inuse">
+                                <a href="./admin_id_manage.html#inuse">
+                                    <p class="tit">신분증 사용중</p>
+                                    <p class="cou"><span>35</span>건</p>
+                                    <p class="ico"><img src="./images/icon/icon-dash-inuse.png" alt="신분증 사용중"></p>
+                                </a>
+                            </div>
+                            <div class="stop">
+                                <a href="./admin_id_manage.html#stop">
+                                    <p class="tit">정지된 신분증</p>
+                                    <p class="cou"><span>10</span>건</p>
+                                    <p class="ico"><img src="./images/icon/icon-dash-stop.png" alt="정지된 신분증"></p>
+                                </a>
+                            </div>
+                            <div class="dispose">
+                                <a href="./admin_id_manage.html#dispose">
+                                    <p class="tit">폐기된 신분증</p>
+                                    <p class="cou"><span>5</span>건</p>
+                                    <p class="ico"><img src="./images/icon/icon-dash-dispose.png" alt="폐기된 신분증"></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sec2">
+                        <div class="sec2-1">
+                            <div class="sec2-1-1">
+                                <div class="sec2-1-1-1 bg">
+                                    <h3>오늘의 소식</h3>
+                                    <div class="today-box">
+                                        <div class="list new on">
+                                            <p class="tit">신규</p>
+                                            <p class="cou"><span>10</span>건</p>
+                                        </div>
+                                        <div class="list reissue on">
+                                            <p class="tit">재발급</p>
+                                            <p class="cou"><span>3</span>건</p>
+                                        </div>
+                                        <div class="list subscription">
+                                            <p class="tit">신청</p>
+                                            <p class="cou"><span>10</span>건</p>
+                                        </div>
+                                        <div class="list checking">
+                                            <p class="tit">확인중</p>
+                                            <p class="cou"><span>8</span>건</p>
+                                        </div>
+                                        <div class="list error">
+                                            <p class="tit">오류</p>
+                                            <p class="cou"><span>3</span>건</p>
+                                        </div>
+                                        <div class="list approval">
+                                            <p class="tit">승인</p>
+                                            <p class="cou"><span>10</span>건</p>
+                                        </div>
+                                        <div class="list reject">
+                                            <p class="tit">반려</p>
+                                            <p class="cou"><span>3</span>건</p>
+                                        </div>
+                                    </div>
+                                    <div class="more"><a href="./admin_apply_manage.html">더보기</a></div>
+                                </div>
+                            </div>
+                            <div class="sec2-1-2">
+                                <div class="sec2-1-2-1 bg">
+                                    <div class="tab">
+                                        <div class="tab-menu">
+                                            <ul>
+                                                <li><a href="javascript:;">공지</a></li>
+                                                <li class="last"><a href="javascript:;">설문</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content yScroll">
+                                            <div class="tabContent active">
+                                                <div class="list-box noti">
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">공지</span>
+                                                            <span class="tit">2023년도 워크숍 안내</span>
+                                                            <span class="dat">2023.05.02 13:32</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">공지</span>
+                                                            <span class="tit">제목이 들어갑니다. 두줄 이상 시 말줄임 처리됩니다.</span>
+                                                            <span class="dat">2023.05.02 13:32</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">공지</span>
+                                                            <span class="tit">강남구청 주최 축제 안내</span>
+                                                            <span class="dat">2023.05.02 13:32</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">공지</span>
+                                                            <span class="tit">2023년도 워크숍 안내</span>
+                                                            <span class="dat">2023.05.02 13:32</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">공지</span>
+                                                            <span class="tit">제목이 들어갑니다. 두줄 이상 시 말줄임 처리됩니다.</span>
+                                                            <span class="dat">2023.05.02 13:32</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">공지</span>
+                                                            <span class="tit">강남구청 주최 축제 안내</span>
+                                                            <span class="dat">2023.05.02 13:32</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">공지</span>
+                                                            <span class="tit">제목이 들어갑니다. 두줄 이상 시 말줄임 처리됩니다.</span>
+                                                            <span class="dat">2023.05.02 13:32</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tabContent">
+                                                <div class="list-box survey">
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">설문</span>
+                                                            <span class="tit">OOO 관련 만족도 조사</span>
+                                                            <span class="sta reservation">예약</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">설문</span>
+                                                            <span class="tit">2023 OOOO 세미나 만족도 조사</span>
+                                                            <span class="sta reservation">예약</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">설문</span>
+                                                            <span class="tit">2023 OOO 이벤트 설문조사</span>
+                                                            <span class="sta progression">진행중</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">설문</span>
+                                                            <span class="tit">전 직원 대상 □□□□ 설문조사</span>
+                                                            <span class="sta progression">진행중</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">설문</span>
+                                                            <span class="tit">△△△△ 축제 관련 설문조사</span>
+                                                            <span class="sta progression">진행중</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">설문</span>
+                                                            <span class="tit">강남구청 주최 OOO 교육 참석여부 조사</span>
+                                                            <span class="sta progression">진행중</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="list">
+                                                        <a href="/">
+                                                            <span class="typ">설문</span>
+                                                            <span class="tit">제목이 들어갑니다. 두줄 이상 시 말줄임 처리됩니다.</span>
+                                                            <span class="sta deadline">마감</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="more"><a href="./admin_notice_manage.html">더보기</a></div>                                        
+                                </div>
+                                <div class="sec2-1-2-2 bg">
+                                    <h3>출입시스템 현황</h3>
+                                    <div class="access-system yScroll">
+                                        <div class="as-list">
+                                            <p class="tit"><a href="/">한국공인중개사협회 C동 203호 / OOOOOOOO 회의실</a></p>
+                                            <p class="visi">금일 방문자 수 <span>275</span>명</p>
+                                            <p class="succ">성공 <span>270</span>명</p>
+                                            <p class="fail">실패 <span>5</span>명</p>
+                                        </div>
+                                        <div class="as-list">
+                                            <p class="tit"><a href="/">출입실 명이 들어갑니다. 두줄 이상 시 말줄임 처리됩니다. 출입실 명이 들어갑니다.</a></p>
+                                            <p class="visi">금일 방문자 수 <span>275</span>명</p>
+                                            <p class="succ">성공 <span>270</span>명</p>
+                                            <p class="fail">실패 <span>5</span>명</p>
+                                        </div>
+                                        <div class="as-list">
+                                            <p class="tit"><a href="/">한국공인중개사협회 C동 203호 / OOOOOOOO 회의실</a></p>
+                                            <p class="visi">금일 방문자 수 <span>275</span>명</p>
+                                            <p class="succ">성공 <span>270</span>명</p>
+                                            <p class="fail">실패 <span>5</span>명</p>
+                                        </div>
+                                        <div class="as-list">
+                                            <p class="tit"><a href="/">출입실 명이 들어갑니다. 두줄 이상 시 말줄임 처리됩니다. 출입실 명이 들어갑니다.</a></p>
+                                            <p class="visi">금일 방문자 수 <span>275</span>명</p>
+                                            <p class="succ">성공 <span>270</span>명</p>
+                                            <p class="fail">실패 <span>5</span>명</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sec2-2 bg">
+                            <h3>
+                                <span>최근 신청/접수</span>
+                                <select>
+                                    <option>전체</option>
+                                </select>
+                            </h3>
+                            <div class="subscription-box yScroll">
+                                <div class="sub-list">
+                                    <a href="/">
+                                        <div class="img"><img src="./images/img/img-profile-1.png" alt="프로필사진"></div>
+                                        <div class="txt">
+                                            <p class="name">김정책</p>
+                                            <p class="info">
+                                                <span class="birth">1990.02.17 / 남</span>
+                                                <span class="type">신규</span>
+                                                <span class="date">2023.05.04 13:00</span>
+                                                <span class="state subscription">신청</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sub-list">
+                                    <a href="/">
+                                        <div class="img"><img src="./images/img/img-profile-2.png" alt="프로필사진"></div>
+                                        <div class="txt">
+                                            <p class="name">박도서</p>
+                                            <p class="info">
+                                                <span class="birth">1995.01.02 / 남</span>
+                                                <span class="type">신규</span>
+                                                <span class="date">2023.05.04 13:00</span>
+                                                <span class="state subscription">신청</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sub-list">
+                                    <a href="/">
+                                        <div class="img"><img src="./images/img/img-profile-3.png" alt="프로필사진"></div>
+                                        <div class="txt">
+                                            <p class="name">김도시</p>
+                                            <p class="info">
+                                                <span class="birth">1993.10.21 / 여</span>
+                                                <span class="type">신규</span>
+                                                <span class="date">2023.05.04 13:00</span>
+                                                <span class="state check">확인중</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sub-list">
+                                    <a href="/">
+                                        <div class="img"><img src="./images/img/img-profile-4.png" alt="프로필사진"></div>
+                                        <div class="txt">
+                                            <p class="name">박건강</p>
+                                            <p class="info">
+                                                <span class="birth">1991.07.17 / 남</span>
+                                                <span class="type">재발급</span>
+                                                <span class="date">2023.05.04 13:00</span>
+                                                <span class="state error">오류</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sub-list">
+                                    <a href="/">
+                                        <div class="img"><img src="./images/img/img-profile-5.png" alt="프로필사진"></div>
+                                        <div class="txt">
+                                            <p class="name">최미래</p>
+                                            <p class="info">
+                                                <span class="birth">1997.06.24 / 여</span>
+                                                <span class="type">신규</span>
+                                                <span class="date">2023.05.04 13:00</span>
+                                                <span class="state error">오류</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sub-list">
+                                    <a href="/">
+                                        <div class="img"><img src="./images/img/img-profile-6.png" alt="프로필사진"></div>
+                                        <div class="txt">
+                                            <p class="name">김기획</p>
+                                            <p class="info">
+                                                <span class="birth">1984.04.11 / 여</span>
+                                                <span class="type">재발급</span>
+                                                <span class="date">2023.05.04 13:00</span>
+                                                <span class="state check">확인중</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sub-list">
+                                    <a href="/">
+                                        <div class="img"><img src="./images/img/img-profile-6.png" alt="프로필사진"></div>
+                                        <div class="txt">
+                                            <p class="name">김기획</p>
+                                            <p class="info">
+                                                <span class="birth">1984.04.11 / 여</span>
+                                                <span class="type">재발급</span>
+                                                <span class="date">2023.05.04 13:00</span>
+                                                <span class="state check">확인중</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="more"><a href="./admin_apply_manage.html">더보기</a></div>
+                        </div>
+                    </div>
+
+                </section>                
+            </div>
+        </div>
+        
+    </div>        
+</div>
+
+<div id="popup"></div>
+
+</body>
+</html>

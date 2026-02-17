@@ -1,0 +1,23 @@
+.full-slide-page.bg-01 .wrap-bg {background-image: url(/cms/imgs/woodcraft/bg/bg-technique01.jpg);}
+.full-slide-page.bg-02 .wrap-bg {background-image: url(/cms/imgs/woodcraft/bg/bg-technique02.jpg);}
+.full-slide-page.bg-03 .wrap-bg {background-image: url(/cms/imgs/woodcraft/bg/bg-technique03.jpg);}
+
+.technique2 .small-contents .table-view {display: table; width: 100%; margin-bottom: 20px; table-layout: fixed;}
+.technique2 .small-contents .table-view > :first-child {}
+.technique2 .small-contents .half-pic {height: 195px; margin: 0; display: table-cell; vertical-align: middle; width: 40%;}
+.technique2 .small-contents .half-pic img {display: block; min-height: 100%; width: 100%;}
+.technique2 .small-contents .half-txt {width: 60%; display: table-cell; vertical-align: middle; padding-left: 45px; box-sizing: border-box;}
+
+@media (max-width:640px) {
+
+    .full-slide-page .slide-step-wrap[data-slide-step="kinds"] button {background-image: url(/cms/imgs/woodcraft/bg/bg-m-technique01.jpg);}
+    .full-slide-page .slide-step-wrap[data-slide-step="material"] button {background-image: url(/cms/imgs/woodcraft/bg/bg-m-technique02.jpg);}
+    .full-slide-page .slide-step-wrap[data-slide-step="technique"] button {background-image: url(/cms/imgs/woodcraft/bg/bg-m-technique03.jpg);}
+
+    .bg-name.source-origin {margin-bottom: 0;}
+    .technique .half-pic {margin-bottom: 0;}
+    .technique2 .small-contents .table-view {display: block; margin-bottom: 46px;}
+    .technique2 .small-contents .table-view > :first-child {margin-right: auto;}
+    .technique2 .small-contents .half-pic {display: block; width: 73%; float: none; margin: 0 auto 22px;}
+    .technique2 .small-contents .half-txt {display: block; width: 100%;}
+}

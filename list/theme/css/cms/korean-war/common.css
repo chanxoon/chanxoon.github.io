@@ -1,0 +1,141 @@
+.wrap-bg {background-image: url(/cms/imgs/korean-war/bg/bg-wrap.jpg);}
+.sub-tit {text-align: center; font-size: 2.5rem; font-weight: 500; color: #fff; padding-top: 173px; margin-bottom: 23px; position: relative; z-index: 10;}
+.sub-tit span {font-size: 1rem; font-weight: 400; display: block;}
+
+.source-origin {opacity: .7;}
+.img-wrap {width: 408px; height: 215px; border: 1px solid #555; position: relative;}
+.story-data {margin-bottom: 20px;}
+.story-data .data-tit {color: #fff; font-weight: 500;}
+.story-data .data-txt {color: #fff; margin-bottom: 3px;}
+.story-data .btn-detail-link {border: none; padding: 0; width: auto; display: inline-block; font-weight: 500;}
+.story-data .btn-detail-link:hover {text-decoration: underline; background: transparent;}
+.media-list .list-title {color: #fff;}
+.media-list .media-caption {color: #fff; opacity: .8;}
+.media-list .thumb {height: 115px;}
+.resource-list .list-title {color: #fff;}
+.resource-list .block-name {color: #fff;}
+
+@media only screen and (max-width: 640px) {
+    .sub-tit {font-size: 1.8rem; padding-top: 202px;}
+
+    .media-list .list-title {font-size: 1.4rem; min-height: 50px; line-height: 50px;}
+    .media-list .thumb {height: 174px;}
+}
+
+/**********************
+        main
+**********************/
+.main-menu ul li.active a:before {background: #00a2ec;}
+
+
+/**********************
+    menu
+**********************/
+.header-visual .page-header h3 { color: #00a2ec; }
+.nav-wrap .gnb ul li.active a span{ border-bottom-color: #00a2ec;}
+.nav-wrap .gnb ul li.active a { color: #00a2ec; }
+.nav-wrap .gnb ul li.active a:before { background-color: #00a2ec; }
+a.btn-detail-link:visited { color: #00a2ec; }
+
+/**********************
+        object
+**********************/
+/* page title */
+.page-heading .title {color: #00a2ec;}
+
+/* sub nav */
+.themes-sub-depth-nav li button:after {background: #00a2ec;}
+.themes-sub-depth-nav li a:after {background: #00a2ec;}
+
+/* tab button */
+.type-tab-menu button.on {border-color: #00a2ec; background: #00a2ec;}
+.type-tab-menu button:hover,
+.type-tab-menu button:focus {border-color: #00a2ec;}
+
+/* 자세히보기 button */
+.btn-detail-link {color: #00a2ec; border-color: #00a2ec;}
+.btn-detail-link:hover {background: #00a2ec;}
+
+/* card visual list */
+.card-visual-list .card-box a:hover:after {border-color: #00a2ec;}
+
+@media only screen and (max-width: 640px) {
+
+    .btn-mobile-tab {border-color: #00a2ec;}
+    .btn-mobile-tab:before {border-top-color: #00a2ec;}
+}
+
+
+
+
+
+/**********************
+    page-title-cover
+**********************/
+.page-title-cover .page-header .page-title strong {color: #00a2ec;}
+
+
+
+
+/* *********************
+        chapter
+********************* */
+.chapter-header .chapter-title {color: #00a2ec;}
+
+.sub-chapter .sub-count {color: #00a2ec;}
+
+
+
+
+/**********************
+    page-timeline
+**********************/
+.timeline-title {color: #00a2ec;}
+
+.timeline-point:before {background: #00a2ec;}
+
+.timeline .timeline-block .block-bullet {border-color: #00a2ec;}
+
+
+
+
+/**********************
+    slide-list-wrap
+**********************/
+.slide-list-box .swiper-slide.selected-list .thumb-img:after {border-color: #00a2ec;}
+.slide-list-box .swiper-slide.selected-list .data-title {color: #00a2ec;}
+
+
+
+
+/* ********************* *
+    card-gride-wrap
+* ********************** */
+.card-gride-wrap .card a:hover ,
+.card-gride-wrap .card a:focus {border-color: #00a2ec;}
+
+
+
+
+/**********************
+    card-con-list
+**********************/
+.card-con-box .con-list.active a:after {border-color: #00a2ec;}
+
+
+
+
+/**********************
+    full-slide-page
+**********************/
+.full-slide-page .slide-step li.on {color: #00a2ec;}
+.full-slide-page .slide-step li.on button:before {background: #00a2ec;}
+
+.full-slide-page .text-wrap .subheading {color: #00a2ec;}
+
+@media (max-width:640px) {
+    .full-slide-page .slide-step-wrap button.on {color: #00a2ec;}
+}
+
+
+.center-in {max-width: 1460px; width: 100%; margin: 0 auto; padding: 0 30px; box-sizing: border-box; position: relative;}

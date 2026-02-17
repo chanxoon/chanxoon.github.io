@@ -1,0 +1,63 @@
+#footer {background-color: transparent;}
+.story #footer {background-color: #363434;}
+.search-result #footer {background-color: #363434;}
+
+.wrap-bg {background-image: url(/cms/imgs/korean-war/bg/bg-wrap.jpg);}
+.con-wrap {padding-top: 133px;}
+
+/* top-banner */
+.top-banner {position: relative; width: 100%;}
+.top-banner:after {height: 20%;}
+.top-banner .swiper-slide {position: relative; width: 100%; background: #000;}
+.top-banner img {min-width: 1370px; min-height: 360px; max-width: 100%; width: 100%; display: block; position: relative; left: 50%; transform: translateX(-50%);}
+.top-banner .swiper-pagination {z-index: 20;}
+.top-banner > .swiper-pagination-bullets {bottom: 90px;}
+.top-banner .swiper-pagination .swiper-pagination-bullet {width: 10px; height: 10px; background: transparent; border: 1px solid #fff;}
+.top-banner .swiper-pagination .swiper-pagination-bullet-active {background: #fff;}
+.top-banner .overview-txt {position: absolute; bottom: 147px; left: 50%; text-align: right; width: 100%; max-width: 1470px; transform: translateX(-50%); padding: 0 30px; box-sizing: border-box;}
+.top-banner .overview-txt:after {content: ""; display: block; clear: both;}
+.top-banner .overview-txt .tit {margin-bottom: 21px; font-size: 38px; color: #e7b200; letter-spacing: -0.03em;}
+.top-banner .overview-txt .summary {font-size: 14px; color: #fff; line-height: 24px; letter-spacing: -0.03em;}
+.top-banner .overview-txt .btn-learn-more {margin-top: 18px; display: block; float: right; width: 160px; height: 44px; border-radius: 2px; background: #e7b200; font-size: 16px;  color: #fff; line-height: 44px; text-align: center;}
+
+/* con-graoup */
+.con-group .group-tit {padding-bottom: 20px; font-size: 2rem; color: #fff; letter-spacing: -0.03em;}
+.con-group .list-wrap {padding-bottom: 50px;}
+.con-group .list-wrap:after {content: ""; display: block; clear: both;}
+.con-group .list {float: left; margin-right: 10px; margin-bottom: 10px; width: calc(20% - 8px); height: 367px;}
+.con-group .list:nth-child(5n), .con-group .list:last-child {margin-right: 0;}
+.con-group.recommend .list {width: calc(20% - 10px);}
+.con-group .cover {position: relative; height: 100%; border-radius: 5px; overflow: hidden; background: #fff;}
+.con-group .cover:before {content: ""; display: block; width: 100%; height: 100%; position: absolute; background: rgba(0,0,0,.5); top: 0; opacity: 0; transition: .5s ease; z-index: 1;}
+.con-group .cover:hover:before {opacity: 1;}
+.con-group .cover img {min-width: 100%; min-height: 101%; max-height: 101%; display: block; transition: .5s ease; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.con-group .cover:hover img,.con-group .cover:focus img {transform: scale(1.1) translate(-50%, -50%);}
+.con-group .cover .con-label {position: absolute; top: 0; left: 0; padding: 8px; width: 66px; height: 66px; font-size: 	1.083rem; z-index: 1; background: url(/cms/imgs/korean-war/bg/bg-con-label.png) no-repeat; color: #fff;}
+.con-group .detail-wrap {position: absolute; bottom: 0; padding: 27px 24px 26px; width: 100%; background: #fff; transition: transform .5s ease; transform: translateY(100%); z-index: 2;}
+.con-group .cover:hover .detail-wrap, .con-group .cover:focus .detail-wrap {transform: translateY(0);}
+.con-group .detail-wrap .tit {width: 100%; margin-bottom: 8px; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden; font-size: 1.5rem; font-weight: 500; color: #333;}
+.con-group .detail-wrap .summary {height: 4.8em; margin-bottom: 23px; line-height: 1.6; color: #777; overflow: hidden;}
+.con-group .detail-wrap .btn-learn-more {color: #247fc0;}
+
+/* con-group  추천 */
+.con-group.recommend .list:first-child .cover:after {content: ""; display: block; width: 100%; height: 100%; position: absolute; left: 0; bottom: -1px; background: url(/cms/imgs/korean-war/bg/bg-detail-wrap.png) no-repeat; background-size: 100% 100%; z-index: 1;}
+.con-group.recommend .list:first-child {width: 40%;}
+.con-group.recommend .list:first-child .cover .detail-wrap {transform: translateY(0);}
+.con-group.recommend .list:first-child .detail-wrap {background: transparent;}
+.con-group.recommend .list:first-child .detail-wrap .tit {color: #fff;}
+.con-group.recommend .list:first-child .detail-wrap .summary {color: #fff; opacity: .7;}
+
+
+
+@media screen and (max-width:640px) {
+    .con-group .list {height: 392px;}
+    .con-group .list .cover:after {content: ""; display: block; width: 100%; height: 100%; position: absolute; left: 0; bottom: -1px; background: url(/cms/imgs/korean-war/bg/bg-detail-wrap.png) no-repeat; background-size: 100% 100%; z-index: 1;}
+    .con-group.recommend .list:first-child {width: 100%}
+    .con-group.recommend .list {width: 50%;}
+    .con-group .cover .con-label {width: 78px; height: 78px; background-size: cover;}
+    .con-group .detail-wrap {transform: translateY(0); background: transparent;}
+    .con-group .detail-wrap .tit {color: #fff;}
+    .con-group .detail-wrap .summary {display: none;}
+    
+    .con-group .cover:hover:before {opacity: 0;}
+}

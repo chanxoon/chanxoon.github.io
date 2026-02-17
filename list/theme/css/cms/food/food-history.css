@@ -1,0 +1,80 @@
+.chapter-header { opacity: 0; position: relative; top: 30px; transition: all 0.6s ease; padding-bottom: 25px; }
+
+.chapter-header .chapter-title+.chapter-text { padding-top: 9px; }
+
+.sub-chapter { opacity: 0; position: relative; top: 30px; transition: all 0.6s ease .3s; }
+
+.scroll-transition .chapter-header, .scroll-transition .sub-chapter { opacity: 1; top: 0; }
+
+.header-visual ,
+.page-title-cover { background-image: url("/cms/imgs/food/bg/bg-history.jpg"); }
+.header-visual .page-header .page-text ,
+.page-title-cover .page-header .page-text { max-width: 1000px; }
+
+.map-tab-wrap { border: 1px solid #dddddd; max-width: 1060px; height: 492px; padding: 30px 0; box-sizing: border-box; margin: 0 auto; }
+
+@media only screen and (max-width: 640px) { .map-tab-wrap { height: auto; } }
+
+.map-tab-wrap:after { clear: both; content: ''; display: block; }
+
+.btn-mobile-tab { margin-bottom: 30px; }
+
+.btn-mobile-tab label { color: #e7b200; }
+
+.map-wrap { box-sizing: border-box; width: 45%; padding-left: 11%; float: left; }
+
+@media only screen and (max-width: 640px) { .map-wrap { display: none; float: none; } }
+
+#map { width: 300px; height: 430px; position: relative; background-image: url("/cms/imgs/food/img/img-map.jpg"); background-repeat: no-repeat; }
+
+#map button { width: 38px; height: 45px; color: #fff; background-position: 0 0; background-repeat: no-repeat; background-image: url("/cms/imgs/food/btn/ico-pin-off.png"); text-align: center; line-height: 1; padding-bottom: 10px; font-size: 13px; position: absolute; }
+
+#map button.on { background-image: url("/cms/imgs/food/btn/ico-pin-on.png"); }
+
+#map [data-target='Gangwon'] { left: 134px; top: 60px; }
+
+#map [data-target='Gyeonggi'] { left: 72px; top: 104px; }
+
+#map [data-target='Gyeongnam'] { left: 130px; top: 258px; }
+
+#map [data-target='Kyungbuk'] { left: 181px; top: 167px; }
+
+#map [data-target='Gwangju'] { left: 30px; top: 269px; }
+
+#map [data-target='Daegu'] { left: 158px; top: 210px; }
+
+#map [data-target='Busan'] { left: 183px; top: 262px; }
+
+#map [data-target='Seoul'] { left: 44px; top: 49px; }
+
+#map [data-target='Ulsan'] { left: 210px; top: 232px; }
+
+#map [data-target='Incheon'] { left: 25px; top: 85px; }
+
+#map [data-target='Jeonnam'] { left: 69px; top: 291px; }
+
+#map [data-target='Jeonbuk'] { left: 69px; top: 237px; }
+
+#map [data-target='Jeju'] { left: 21px; top: 372px; }
+
+#map [data-target='Chungnam'] { left: 48px; top: 176px; }
+
+#map [data-target='Chungbuk'] { left: 101px; top: 147px; }
+
+.detail-wrap { width: 55%; float: right; padding-right: 4.6%; padding-left: 4.6%; padding-top: 30px; }
+
+@media only screen and (max-width: 640px) { .detail-wrap { width: 100%; float: none; padding-top: 0; } }
+
+.detail-wrap .panel { display: none; text-align: left; }
+
+.detail-wrap .panel.on { display: block; }
+
+.detail-wrap .panel-header { color: #333333; font-size: 1.66667rem; line-height: 1; padding-bottom: 1.33333rem; border-bottom: 2px solid #333333; }
+
+.detail-wrap .panel-body ul li { display: table; width: 100%; padding: 1.33333rem 0; border-bottom: 1px solid #e5e5e5; }
+
+.detail-wrap .panel-body ul li p, .detail-wrap .panel-body ul li a { display: table-cell; vertical-align: middle; }
+
+.detail-wrap .panel-body ul li p { padding-left: 0.83333rem; padding-right: 1.66667rem; font-size: 1.16667rem; line-height: 1.75rem; }
+
+.detail-wrap .panel-body ul li .btn-detail-link { height: 1.33333rem; }

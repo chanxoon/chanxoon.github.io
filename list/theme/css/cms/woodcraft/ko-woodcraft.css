@@ -1,0 +1,98 @@
+.chapter-header { opacity: 0; position: relative; top: 30px; transition: all .6s ease; }
+.sub-chapter { opacity: 0; position: relative; top: 30px; transition: all .6s ease .3s; }
+.scroll-transition .chapter-header, .scroll-transition .sub-chapter { opacity: 1; top: 0; }
+
+#wrap {text-align: center;}
+.pic-wrap .pic .pic-cover {border-color: #ccc;}
+
+.page-title-cover {background-image: url(/cms/imgs/woodcraft/bg/bg-ko-woodcraft01.jpg);}
+
+.page-header .page-text {max-width: 840px;}
+
+.sub-chapter .sub-count {color: #aaa;}
+
+.decoration .pic-wrap {max-width: 990px;}
+.decoration .pic {_height: 280px; width: calc(50% - 5px);}
+.decoration .pic:nth-child(1) {_height: 568px; margin-right: 10px;}
+.decoration .pic:nth-child(2) {margin-bottom: 8px;}
+
+.furniture {background: url(/cms/imgs/woodcraft/bg/bg-ko-woodcraft03.jpg)no-repeat; background-size: cover;}
+.furniture .chapter-header {padding-bottom: 46px;}
+.furniture .chapter-header .chapter-title:before {background: #737373;}
+.furniture .chapter-header .chapter-title {color: #fff;}
+.furniture .type-tab-menu button {border-color: #aaa; min-width: 108px; height: 3rem; border-radius: 1.5rem;}
+.furniture .type-tab-menu button.on {background: #fff; color: #0d9cab; border-color: #fff;}
+
+.furniture-contents {max-width: 1460px; padding: 0 30px; margin: 0 auto; height: 620px; overflow: hidden;}
+.furniture-contents:after {content: ""; display: block; clear: both;}
+
+.furniture-view {float: left; width: calc(100% - 384px); background: #fff; height: 100%; padding: 40px; position: relative;}
+.furniture-view .room {display: none;}
+.furniture-view .room.on {display: block;}
+.furniture-view .list-tab {max-width: 885px; border: 1px solid #ccc; margin: 0 auto; position: relative; z-index: 10; background: #fff;}
+.furniture-view .list-tab:after {content: ""; display: block; clear: both;}
+.furniture-view .list-tab li {float: left; border-left: 1px solid #ccc; box-sizing: border-box; font-size: 1.333rem; color: #555; line-height: 46px;}
+.furniture-view .list-tab li a {display:block; width: 100%; height: 100%; color: inherit;}
+.furniture-view .list-tab li:first-child {border-left: none;}
+.furniture-view .list-tab li.on {background: #08c0d3; color: #fff;}
+.furniture-view #anbang .list-tab li {width: 25%;}
+.furniture-view #sarangbang .list-tab li {width: 20%;}
+.furniture-view .room-view {position: absolute; width: 100%; height: 100%; border: 1px solid #ccc; left: 0; top: 50%; transform: translateY(-50%); background-repeat: no-repeat;}
+.furniture-view .room-view img {display: block; width: 100%;}
+.furniture-view #anbang .room-view {background-image: url(/cms/imgs/woodcraft/bg/bg-anbang.png); background-size: 100% auto;}
+.furniture-view #anbang .room-view img {position: relative; top: -2px;}
+.furniture-view #sarangbang .room-view {background-image: url(/cms/imgs/woodcraft/bg/bg-sarangbang.png); background-size: 100% auto;}
+
+.furniture .contents-detail {float: left; width: 384px; background: rgba(0,0,0,.7); padding: 20px; text-align: left; height: 100%;}
+.furniture .contents-detail .scroll-wrap {height: 100%; overflow: auto;}
+.furniture .contents-detail .story-data {margin-bottom: 0;}
+.furniture .contents-detail .img-wrap {overflow: hidden; margin-bottom: 21px; height: 250px;}
+.furniture .contents-detail .img-wrap img {display: block; height: 100%; margin: 0 auto;}
+.furniture .contents-detail .data-tit {font-size: 1.833rem; font-weight: 500; color: #fff; margin-bottom: 15px; text-align: center; padding-top: 13px;}
+/* .contents-detail .data-tit em {font-weight: 500; font-size: 2rem; display: block; line-height: 1.166;} */
+.furniture .contents-detail .data-txt {color: #d1d1d1; line-height: 1.5; max-height: 4.5em; overflow: hidden; margin-bottom: 15px;}
+.furniture .contents-detail .btn-detail-link {margin: 0 0 30px;}
+
+.furniture .contents-detail .list-title {color: #fff;}
+.furniture .contents-detail .list-title span {color: #888;}
+.furniture .media-list .media-caption {color: #d1d1d1;}
+.furniture .resource-list .block-name {color: #efefef;}
+.furniture .resource-list .block-info li {color: #d1d1d1}
+.furniture .resource-list .block-info li em {color: #ccc;}
+
+.furniture .mCSB_outside + .mCSB_scrollTools {right: -18px;}
+
+/*********************
+        mobile
+**********************/
+
+@media only screen and (max-width: 640px) {
+    .decoration .sub-text {padding: 0 }
+    .decoration .half-pic .pic {margin-bottom: 0; width: calc(50% - 2px);}
+    .decoration .pic:nth-child(1) {margin-right: 4px;}
+    .decoration .pic:nth-child(2) {margin-bottom: 3px;}
+
+    .furniture .type-tab-menu button {min-width: 162px;}
+    .furniture-contents {height: auto;}
+    .furniture-view {width: 100%; min-height: 0; padding: 0; background: transparent;}
+    .furniture-view .room-view {display: none;}
+    .furniture-view .list-tab {margin-bottom: 20px;}
+    .furniture-view .list-tab li {font-size: 18px;}
+
+    .furniture .contents-detail {width: 100%; height: auto; padding: 30px;}
+    .furniture .contents-detail .data-tit {margin-bottom: 16px;}
+    .furniture .contents-detail .img-box {height: 270px;}
+    .furniture .contents-detail .list-title {margin-bottom: 24px;}
+    .furniture .contents-detail .data-txt {text-align: center;}
+    .furniture .contents-detail .btn-detail-link {margin: 0 auto 40px;}
+
+    .furniture .media-list .thumb {height: 151px;}
+
+    /* 방그림 */
+    /* .furniture-view {width: 100%; min-height: 380px; margin-bottom: 10px; padding: 20px;} */
+    /* .furniture-view .room-view {background-position: center 30px;} */
+    /* .furniture-view .room-view img {padding-top: 30px;} */
+
+
+
+}

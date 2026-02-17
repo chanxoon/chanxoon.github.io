@@ -1,0 +1,104 @@
+@media screen and (max-width:1509px) {
+    .nav-wrap .main-menu ul {text-align: left; padding-left: 368px;}
+}
+
+/**********************
+        main
+**********************/
+.main-menu ul li.active a:before {background: #e7b200;}
+
+
+
+
+/**********************
+        object
+**********************/
+/* page title */
+.page-heading .title {color: #e7b200;}
+
+/* sub nav */
+.themes-sub-depth-nav li button:after {background: #e7b200;}
+.themes-sub-depth-nav li a:after {background: #e7b200;}
+
+/* tab button */
+.type-tab-menu button.on {border-color: #e7b200; background: #e7b200;}
+.type-tab-menu button:hover,
+.type-tab-menu button:focus {border-color: #e7b200;}
+
+/* 자세히보기 button */
+.btn-detail-link {color: #e7b200; border-color: #e7b200;}
+.btn-detail-link:hover {background: #e7b200;}
+
+/* card visual list */
+.card-visual-list .card-box a:hover:after {border-color: #e7b200;}
+
+/* 모바일 type-select */
+.btn-mobile-tab {border-color: #e7b200;}
+.btn-mobile-tab:before {border-top: 10px solid #e7b200;}
+
+
+
+
+/**********************
+    page-title-cover
+**********************/
+.page-title-cover .page-header .page-title strong {color: #e7b200;}
+
+
+
+
+/* *********************
+        chapter
+********************* */
+.chapter-header .chapter-title {color: #e7b200;}
+
+.sub-chapter .sub-count {color: #e7b200;}
+
+
+
+
+/**********************
+    page-timeline
+**********************/
+.timeline-title {color: #e7b200;}
+
+.timeline-point:before {background: #e7b200;}
+
+.timeline .timeline-block .block-bullet {border-color: #e7b200;}
+
+
+
+
+/**********************
+    slide-list-wrap
+**********************/
+.slide-list-box .swiper-slide.selected-list .thumb-img:after {border-color: #e7b200;}
+.slide-list-box .swiper-slide.selected-list .data-title {color: #e7b200;}
+
+
+
+
+/* ********************* *
+    card-gride-wrap
+* ********************** */
+.card-gride-wrap .card a:hover ,
+.card-gride-wrap .card a:focus {border-color: #e7b200;}
+
+
+
+
+/**********************
+    card-con-list
+**********************/
+.card-con-box .con-list.active a:after {border-color: #e7b200;}
+
+
+
+
+/**********************
+    full-slide-page
+**********************/
+.full-slide-page .slide-step li.on {color: #e7b200;}
+.full-slide-page .slide-step li.on button:before {background: #e7b200;}
+
+.full-slide-page .text-wrap .subheading {color: #e7b200;}

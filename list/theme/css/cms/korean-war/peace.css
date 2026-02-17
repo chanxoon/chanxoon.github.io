@@ -1,0 +1,151 @@
+/* font color */
+#wrap {color: #fff;}
+
+#footer {background-color: transparent;}
+.story #footer {background-color: #363434;}
+.search-result #footer {background-color: #363434;}
+
+/* header no change */
+#header.header-change {background: transparent; border-bottom: 1px solid rgba(255,255,255,.1);}
+.header-change .main-menu ul li a {color: #fff;}
+#header.header-change #search {background-image: url(/cms/imgs/common/icon/icon-search.png);}
+#header.header-change #menu {background-image: url(/cms/imgs/common/icon/icon-menu.png);}
+#header.header-change .heading-logo .logo-portal {background-image: url(/cms/imgs/common/img/logo-kccf-color.svg);}
+#header.header-change .heading-logo .logo-themes {background-image: url(/cms/imgs/korean-war/logo-korean-war.svg);}
+.header-change ~ #container .themes-sub-depth-nav {background: rgba(0,0,0,.12);}
+.page-title-cover .page-header { transform: translateY(-50%); }
+
+/**********************
+    page-title-cover
+**********************/
+.page-title-cover {background-image: url("/cms/imgs/korean-war/bg/bg-peace.png"); background-position: center top;}
+
+.meeting-count-wrap {display: inline-block; margin: 12.5vh auto 0;}
+.meeting-count-wrap ul:after {content: ""; display: block; clear: both;}
+.meeting-count-wrap ul li {float: left; position: relative; font-size: 1.5rem; font-family: 'Noto Serif KR'; font-style: italic; width: 199px; padding: 0 4px;}
+.meeting-count-wrap ul li:after {content: ""; display: block; position: absolute; top: 0; right: -4px; width: 8px; height: 100%; background: url(/cms/imgs/korean-war/bg/bg-peace-count.png)no-repeat center; background-size: cover;}
+.meeting-count-wrap ul li:last-child:after {display: none;}
+.meeting-count-wrap ul li .meeting-con {font-size: 2rem; color: #8d8d8d;}
+.meeting-count-wrap ul li .meeting-con .count {font-size: 5rem; color: #00a2ec;}
+.meeting-count-wrap ul li .count-tit {opacity: .7; display: block; margin-top: 10px;}
+.meeting-count-wrap p {font-size: 1rem; color: #fff; opacity: .3; margin-top: 25px;}
+
+/********************
+    time progress
+*********************/
+.time-progress-wrap {width: 100%; max-width: 1460px; padding: 0 30px 40px; margin: 0 auto;} 
+
+.time-progress-nav {padding: 134px 0 22px;}
+.time-progress-nav .fixed-bg {display: none;}
+.time-progress-nav .years li {display: table; float: left; width: 7.14%; min-width: 84px; min-height: 30px; margin-bottom: 13px; font-family: 'Noto Serif KR'; font-size: 1.333rem; font-style: italic; text-align: center; line-height: 1; transition: font .2s ease;}
+.time-progress-nav .years li.on {color: #00a2ec; font-size: 2.5rem;}
+.time-progress-nav .years li.on a {padding: 0 10%;}
+.time-progress-nav .years li:first-child {text-align: left;}
+.time-progress-nav .years li:last-child {text-align: right;}
+.time-progress-nav .years li a {display: table-cell; width: 100%; padding: 0 14%; box-sizing: border-box; vertical-align: bottom; color: inherit;}
+.time-progress-nav .origin {font-size: 1rem; color: #fff; opacity: .3; margin-top: 8px; text-align: right;}
+.time-progress-nav .progress {width: 100%; height: 13px; border-radius: 20px; background: #fff; position: relative; overflow: hidden;}
+.time-progress-nav .progress .bar {display: block; position: absolute; left: 0; top: 0; width: 0; height: 100%; border-radius: 20px; background: #00a2ec; transition: all .3s ease;}
+/* fixed style */
+.time-progress-nav.fixed {width: 100%; min-width: 1246px; padding: 134px 30px 22px; box-sizing: border-box; position: fixed; top: 0; left: 0; z-index: 20;}
+.time-progress-nav.fixed .years {width: 100%; max-width: 1400px; margin: 0 auto;} 
+.time-progress-nav.fixed .progress {width: 100%; max-width: 1400px; margin: 0 auto;} 
+.time-progress-nav.fixed .origin {width: 100%; max-width: 1400px; margin: 8px auto 0;} 
+.time-progress-nav.fixed .fixed-bg {display: block; width: 100%; height: 238px; position: fixed; left: 0; top: 0; right: 0; background: url(/cms/imgs/korean-war/bg/bg-peace.png)no-repeat center top; background-size: 100% auto; z-index: -1;}
+.time-progress-nav.fixed ~ .time-progress-con {padding-top: 254px;}
+
+.time-progress-con {padding-top: 16px;}
+.time-progress-con .years-wrap:last-child {min-height: calc(100vh - 360px);}
+.time-progress-con .time-box {display: table; min-height: 44px; margin-bottom: 36px; position: relative;}
+.time-progress-con .time-date {width: 191px; height: 44px; border-radius: 22px; position: absolute; top: 0; left: 0; font-size: 1.5rem; font-style: italic; line-height: 44px; text-align: center; color: #00a2ec; background: rgba(0,0,0,.5);}
+.time-progress-con .time-con {display: table-cell; padding-left: 207px; vertical-align: middle;}
+.time-progress-con .time-con .time-tit {margin-bottom: 12px; font-size: 2rem; font-weight: 600; font-style: italic; color: #00a2ec;}
+.time-progress-con .time-con .time-media {padding-top: 17px; margin-right: -4px;}
+.time-progress-con .time-con .time-media:after {content: ""; display: block; clear: both;}
+.time-progress-con .time-con .time-media .mda {float: left; width: 395px; height: 232px; margin: 0 4px 4px 0; overflow: hidden; position: relative;}
+.time-progress-con .time-con .time-media .mda img {display: block; width: 100%;}
+.time-progress-con .time-con .time-media .mda iframe {width: 100%; height: 100%;}
+.time-progress-con .time-con .time-media .mda:after {content: ""; display: block; position: absolute; background: url(/cms/imgs/korean-war/bg/bg-peace-dimd.png) no-repeat center bottom; background-size: cover; width: 100%; height: 100%; top: 0; left: 0;}
+.time-progress-con .time-con .time-media .mda a {display: block; width: 100%; height: 100%; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; text-indent: -99999px; overflow: hidden;}
+
+/* 미디어 팝업 */
+.mda-viewer-pop {display: none; position: fixed; width: 100%; height: 100%; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,.5); z-index: 300;}
+.mda-viewer-pop .viewer-container {width: 80%; max-width: 1240px; height: 80%; margin: auto; position: relative; top: 50%; transform: translateY(-50%);}
+
+.mda-viewer-pop .viewer-head .btn-close {position: absolute; top: -37px; right: 0; width: 26px; height: 26px; text-indent: -9999px; overflow: hidden; background: url(/cms/imgs/common/btn/btn-close-wh.svg) no-repeat; background-size: cover;}
+
+.mda-viewer-pop .swiper-container a {display: none;}
+.mda-viewer-pop .swiper-container .mda {height: 100%;}
+.mda-viewer-pop .swiper-container .mda img {display: block; width: auto; max-width: 100%; margin: auto;}
+.mda-viewer-pop .swiper-container .mda iframe {width: 100%; height: 100%;}
+.mda-viewer-pop .swiper-container .mda .mda-caption {opacity: 0;}
+.mda-viewer-pop .swiper-container .mda .mda-summary {opacity: 0;}
+.mda-viewer-pop .swiper-container .mda .source-origin {opacity: 0;}
+
+.mda-viewer-pop .mda-gallery-swipe {margin-bottom: 30px;}
+.mda-viewer-pop .mda-gallery-swipe .mda {height: calc(80vh - 120px); position: relative;}
+.mda-viewer-pop .mda-gallery-swipe .mda img {max-height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+.mda-viewer-pop .mda-info {width: 50%; float: left;}
+.mda-viewer-pop .mda-info .mda-caption {font-size: 1.667rem;}
+.mda-viewer-pop .mda-info .mda-summary {color: #ddd;}
+.mda-viewer-pop .mda-info .origin {color: #ddd;}
+
+.mda-viewer-pop .mda-thumb-swipe {float: right; width: 50%; max-width: 580px; height: 90px;}
+.mda-viewer-pop .mda-thumb-swipe .mda {overflow: hidden;}
+.mda-viewer-pop .mda-thumb-swipe .swiper-slide-thumb-active {border: 2px solid #00a2ec;}
+.mda-viewer-pop .mda-thumb-swipe .mda:after {content: ""; display: block; position: absolute; background: url(/cms/imgs/korean-war/bg/bg-peace-dimd.png) no-repeat center bottom; background-size: cover; width: 100%; height: 100%; top: 0; left: 0;}
+.mda-viewer-pop .mda-thumb-swipe .mda .mda-summary {opacity: 1;}
+.mda-viewer-pop .mda-thumb-swipe .swiper-button-next,
+.mda-viewer-pop .mda-thumb-swipe .swiper-button-prev {width: 16px; height: 26px; margin-top: -13px; background-size: cover;}
+
+/* 1280 */
+@media only screen and (max-width: 1270px) {
+    .meeting-count-wrap ul li {width: 179px;}
+    .meeting-count-wrap ul li .meeting-con .count {font-size: 4.5rem;}
+}
+
+/* 모바일 */
+@media only screen and (max-width: 640px) {
+    .header-change .main-menu ul li a {color: #242424;}
+
+    .page-title-cover .page-header .page-title img {width: 80%;}
+    .meeting-count-wrap {margin-top: 6vh;}
+    .meeting-count-wrap ul li {margin-bottom: 16px;}
+    .meeting-count-wrap ul li:nth-child(3n):after {display: none;}
+    .meeting-count-wrap ul li .meeting-con .count {font-size: 3rem;}
+    .meeting-count-wrap ul li .meeting-con {font-size: 1.5rem;}
+    .meeting-count-wrap ul li .count-tit {font-size: 1.2rem; margin-top: 0;}
+
+    .time-progress-nav .years li {min-width: 0; width: 7%;}
+    .time-progress-nav .years li a {font-size: 0; padding: 0;}
+    .time-progress-nav .years li.on a {font-size: 1rem; color: #fff;}
+    .time-progress-nav .progress {height: 4px;}
+    .time-progress-nav.fixed {min-width: 0; padding-top: 110px;}
+    .time-progress-nav.fixed .fixed-bg {height: 208px;}
+
+    .time-progress-con .time-box {margin-bottom: 60px;}
+    .time-progress-con .time-date {position: static; font-size: 1.3rem; margin-bottom: 10px;}
+    .time-progress-con .time-con {padding-left: 0; display: block;}
+    .time-progress-con .time-con .time-tit {font-size: 1.7rem;}
+    .time-progress-con .time-con .time-media .mda {width: 288px; height: 169px;}
+
+    .mda-viewer-pop {padding: 25px; padding-top: 70px}
+
+    .mda-viewer-pop .viewer-container {width: 100%; height: 100%; background: rgba(0,0,0,.7)}
+    .mda-viewer-pop .viewer-head .btn-close {width: 35px; height: 35px;}
+
+    .mda-viewer-pop .mda-gallery-swipe .mda {height: calc(100vh - 500px);}
+
+    .mda-viewer-pop .mda-info {width: 100%; padding-top: 20px;}
+    .mda-viewer-pop .mda-thumb-swipe {width: 100%;}
+
+}
+
+@media only screen and (min-width: 640px){
+    #header.header-change .logo a ,
+    #header.header-change a.logo-themes span ,
+    #header.header-change .nav-wrap a ,
+    #header.header-change .main-menu ul li a { color: #fff !important; }
+    #header.header-change .nav-wrap .active a { color: #00a2ec !important; }
+}

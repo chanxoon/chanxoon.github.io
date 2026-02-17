@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no" />
+<title>HeyID - 테마설정</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/">
+<link href="./css/common.css" rel="stylesheet">
+<link href="./css/swiper.min.css" rel="stylesheet">
+<link href="./css/default.css" rel="stylesheet">
+
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="./js/dragula.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/default.js"></script>    
+</head>
+<body>
+
+<div class="wrap theme">
+    <!-- nav -->
+    <nav id="nav">
+        <button type="button" class="back-btn" onclick="history.back()">뒤로가기</button>
+    </nav>
+    
+    <!-- con -->
+    <div id="contents">
+        <div class="inner">
+            <div class="tit-box">
+                <h2>HeyID 테마</h2>
+                <p>사용하고 싶은 테마를 선택해주세요.</p>
+            </div>
+
+            <div class="con-box">
+                <div class="swiper theme_Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <div class="img-box">
+                                <img src="./images/img/img-theme-1.png" alt="테마">
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="img-box">
+                                <img src="./images/img/img-theme-2.png" alt="테마">
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <div class="img-box">
+                                <img src="./images/img/img-theme-3.png" alt="테마">
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide4">
+                            <div class="img-box">
+                                <img src="./images/img/img-theme-4.png" alt="테마">
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide5">
+                            <div class="img-box">
+                                <img src="./images/img/img-theme-5.png" alt="테마">
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide6">
+                            <div class="img-box">
+                                <img src="./images/img/img-theme-6.png" alt="테마">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-theme"></div>
+                </div>
+            </div>
+
+            <div class="btn-box">
+                <button type="button" class="theme-btn">적용</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 알림 팝업 -->
+<div class="layer-pop notice-layer notice-theme-layer" style="display: none;">
+    <div class="inner notice">
+        <div class="tit-box">
+            <h2>테마 적용완료</h2>
+        </div>
+        <div class="con-box">
+            <p>선택하신 테마가 적용되었습니다.</p>
+        </div>
+        <div class="btn-box">
+            <button type="button" class="close-btn">확인</button>
+        </div>
+    </div>
+</div>
+
+<script>
+// 테마
+var theme_Swiper = new Swiper(".theme_Swiper", {
+    speed:500,
+    spaceBetween: 20,
+    slidesPerView : 1.9,
+    centeredSlides: true,
+    autoplay: false,
+    loop : false, 
+    on: {
+        setTransition: function(){
+            if($('.theme_Swiper .swiper-slide.slide1').hasClass('swiper-slide-active')){
+                $('body').attr('style','');
+                $('#nav .back-btn').attr('style','');
+                $('.theme .btn-box button').css('background','').css('border','');
+                $('.theme .tit-box h2').css('color','');
+                $('.theme .tit-box p').css('color','');
+            }
+            if($('.theme_Swiper .swiper-slide.slide2').hasClass('swiper-slide-active')){
+                $('body').attr('style','background:url(./images/bg/bg-theme-1.png) no-repeat center / cover;');
+                $('#nav .back-btn').attr('style','background: url(./images/icon/icon-back-white.svg) center no-repeat;');
+                $('.theme .btn-box button').css('background','#000').css('border','1px solid #000');
+                $('.theme .tit-box h2').css('color','#fff');
+                $('.theme .tit-box p').css('color','#fff');
+            }
+            if($('.theme_Swiper .swiper-slide.slide3').hasClass('swiper-slide-active')){
+                $('body').attr('style','background:url(./images/bg/bg-theme-2.png) no-repeat center / cover;');
+                $('#nav .back-btn').attr('style','background: url(./images/icon/icon-back.svg) center no-repeat;');
+                $('.theme .btn-box button').css('background','#fff').css('border','1px solid #ebebeb');
+                $('.theme .tit-box h2').css('color','#000');
+                $('.theme .tit-box p').css('color','#000');
+            }
+            if($('.theme_Swiper .swiper-slide.slide4').hasClass('swiper-slide-active')){
+                $('body').attr('style','background:url(./images/bg/bg-theme-3.png) no-repeat center / cover;');
+                $('#nav .back-btn').attr('style','background: url(./images/icon/icon-back-white.svg) center no-repeat;');
+                $('.theme .btn-box button').css('background','#fff').css('border','1px solid #ebebeb');
+                $('.theme .tit-box h2').css('color','#fff');
+                $('.theme .tit-box p').css('color','#fff');
+            }
+            if($('.theme_Swiper .swiper-slide.slide5').hasClass('swiper-slide-active')){
+                $('body').attr('style','background:url(./images/bg/bg-theme-4.png) no-repeat center / cover;');
+                $('#nav .back-btn').attr('style','background: url(./images/icon/icon-back-white.svg) center no-repeat;');
+                $('.theme .btn-box button').css('background','#fff').css('border','1px solid #ebebeb');
+                $('.theme .tit-box h2').css('color','#fff');
+                $('.theme .tit-box p').css('color','#fff');
+            }
+            if($('.theme_Swiper .swiper-slide.slide6').hasClass('swiper-slide-active')){
+                $('body').attr('style','background:url(./images/bg/bg-theme-5.png) no-repeat center / cover;');
+                $('#nav .back-btn').attr('style','background: url(./images/icon/icon-back-white.svg) center no-repeat;');
+                $('.theme .btn-box button').css('background','#fff').css('border','1px solid #ebebeb');
+                $('.theme .tit-box h2').css('color','#fff');
+                $('.theme .tit-box p').css('color','#fff');
+            }
+        },
+    },
+    pagination: { 
+        el: ".swiper-pagination-theme",
+        clickable: true,
+    },
+});
+</script>
+
+</body>
+</html>

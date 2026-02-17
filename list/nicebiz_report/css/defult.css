@@ -1,0 +1,337 @@
+/* 보고서 커버 */
+.report-wrap {width:210mm;height:297mm;min-height:297mm;padding:20px 40px 0px;box-sizing: border-box;position: relative;margin:0 auto;outline:1px solid #ccc;}
+/* .report-wrap.sample::before {content: '';width:631px;height:475px;display: inline-block;position: absolute;top:50%;left:50%;transform: translate(-50%, -50%);z-index: 999;background:url(../images/img-sample.png) center no-repeat;background-size: contain;} */
+.report-wrap .report-wrap-inner {position:relative;height:100%;}
+
+.header {display: flex;justify-content: space-between;align-items: center;height:32px;border-bottom:1px solid #B5B6B6;margin-bottom:16px;padding-bottom:8px;position: relative;top:0;width:100%;left:0;}
+.header .title-area {color:#000;font-size:20px;font-weight: 600;}
+.header .title-area .sub-txt {display:inline-block;margin: 0 0 0 12px;font-size: 20px;font-weight: normal;letter-spacing: -0.4px;color: #383635;height:20px;line-height:20px;border-left:1px solid #b5b6b6;margin-left:12px;padding-left:12px;}
+.header .info-area {color:#383635;font-size:12px;}
+.header .info-area span:nth-child(1) {display:inline-block;border-right:1px solid #DCDDDD;margin-right:8px;padding-right:8px;height:12px;line-height:12px;}
+
+.footer {display: flex;justify-content: space-between;align-items: center;height:32px;border-top:1px solid #B5B6B6;margin-top:15px;position: absolute;bottom: 0;width:100%;left:0;}
+.footer .page-info-area {display: flex;}
+.footer .page-info-area .page-tit {font-size:10px;color:#6F757A;}
+.footer .page-info-area .dote-line {width:58px;height:1px;border-top:2px dotted #6F757A;margin:4px 10px;}
+.footer .page-info-area .page-num {font-size:10px;color:#6F757A;}
+.report-wrap .contents {position: relative;top:0;left:0;width:100%;height: calc(100% - 89px);overflow: hidden;}
+.report-wrap .contents .sec {margin-bottom:16px;}
+.report-wrap .contents .sec .tit-box {margin-bottom:8px;display: flex;justify-content: space-between;align-items: center;}
+.report-wrap .contents .sec .tit-box .tit {font-size:14px;font-weight: 500;color:#000;}
+.report-wrap .contents .sec .tit-box .unit {font-size:10px;color:#727171;}
+.report-wrap .contents .sec .tit-box .unit .date {position: relative;margin-left: 4px;padding-left: 4px;}
+.report-wrap .contents .sec .tit-box .unit .date::after {content: " ";position: absolute;left: 0;top: 1px;width: 1px;height: 9px;background-color: #c9caca;}
+.report-wrap .contents .sec .tit-box .circle {background: #000;width: 4px;height: 4px;border-radius: 50%;display: inline-block;margin: 0px 3px 3px 0px;}
+
+.report-wrap .contents .sub-title {display: flex;justify-content: space-between;align-items: center;border-bottom:1px solid #595656;padding-bottom:8px;margin-bottom:16px;}
+.report-wrap .contents .sub-title .title-area {font-size:14px;font-weight: 500;color:#000;}
+.report-wrap .contents .sub-title .info-area {font-size:10px;color:#727171;}
+.report-wrap .sec .info-txt {color:#727171;font-size:10px;margin-top:4px;}
+
+.report-wrap table {table-layout: fixed;word-break:break-all;height: auto;}
+.report-wrap .con-box.ta {border-top:1px solid #595656;border-bottom:1px solid #595656;}
+.report-wrap table tr {border-bottom:1px solid #DCDDDD;} 
+.report-wrap table tr th {height:24px;font-size:14px;color:#191C1F;padding:4px 8px;background:#F4F4F4;border-right:1px solid #DCDDDD;vertical-align: middle;}
+.report-wrap table tr td {height:24px;font-size:14px;color:#383635;padding:4px 8px;border-right:1px solid #DCDDDD;vertical-align: middle;}
+.report-wrap table tr:last-child {border-bottom:0;}
+.report-wrap table tr th:last-child,
+.report-wrap table tr td:last-child {border-right:0;}
+
+.report-wrap table thead tr th {font-weight: 500;border-bottom: 1px solid #595656;}
+.report-wrap table tr th {font-weight: 500;}
+.report-wrap .sec .info-txt {padding-left: 10px;text-indent: -8px;line-height: 1.1;color: #727171;font-size: 10px;margin-top: 4px;}
+.report-wrap .sec .info-txt p {margin-bottom: 4px;}
+
+.report-wrap.cover .logo-area {position:absolute;top:32px;left:0px;display: flex;align-items:flex-end;}
+.report-wrap.cover .logo-area h1 {width:120px;height:22px;background:url(../images/bg-report-cover-logo.png) center no-repeat;background-size:contain;margin-right:20px;}
+.report-wrap.cover .logo-area h2 {width:132px;height:26px;background:url(../images/bg-report-cover-logo-2.png) center no-repeat;background-size:contain;}
+.report-wrap.cover .logo-area.en h1 {width:217px;height:42px;background:url(../images/bg-report-cover-logo-en.png) center no-repeat;background-size:contain;}
+.report-wrap.cover .title-area {position:absolute;top:132px;left:0px;}
+.report-wrap.cover .title-area::before {content:'';position: absolute;left:0px;top:0px;background:linear-gradient(0deg, #5562Ed 0%, #8861ff 100%);width:10px;height:100%;}
+.report-wrap.cover .title-area > div {margin:0px 0px 0px 30px;}
+.report-wrap.cover .title-area .m-tit {font-size:56px;font-weight:700;color:#031241;line-height:56px;margin-bottom:12px;letter-spacing:-4px;}
+.report-wrap.cover .title-area .s-tit {position:relative;color:#845CE7;font-size:20px;font-weight:bold;letter-spacing: -1px;padding-left:10px;margin-bottom:36px;}
+.report-wrap.cover .title-area .s-tit::before {content: '';position:absolute;left:0;top:3px;width:2px;height:15px;background:#cfcfcf;}
+.report-wrap.cover .title-area .desc p {color:#000;font-size:16px;margin-bottom:4px;}
+
+.report-wrap.cover-type1 {background:url(../images/bg-report-cover-1.png) center no-repeat;background-size: contain;}
+.report-wrap.cover-type2 {background:url(../images/bg-report-cover-2.png) center no-repeat;background-size: contain;}
+.report-wrap.cover-type3 {background:url(../images/bg-report-cover-3.png) center no-repeat;background-size: contain;}
+.report-wrap.cover-type4 {background:url(../images/bg-report-cover-4.png) center no-repeat;background-size: contain;}
+.report-wrap.cover-type5 {background:url(../images/bg-report-cover-5.png) center no-repeat;background-size: contain;}
+
+.report-wrap.cover-type2 .logo-area {bottom:32px;top:auto;left:0px;}
+.report-wrap.cover-type2 .title-area {position: absolute;top:auto;bottom:132px;left:0px;}
+.report-wrap.cover-type3 .logo-area {bottom: auto;top:32px;left:auto;right:0px;}
+.report-wrap.cover-type3 .title-area {position:absolute;top:132px;bottom:auto;right:0px;left:auto;display:flex;flex-direction: column;align-items: flex-end;}
+.report-wrap.cover-type3 .title-area > div {margin: 0px 30px 0px 0px;text-align: right;}
+.report-wrap.cover-type3 .title-area .m-tit {margin-bottom: 12px;}
+.report-wrap.cover-type3 .title-area .s-tit {margin-bottom:36px;display: inline-block;}
+.report-wrap.cover-type3 .title-area::before {left:auto;right:0;}
+.report-wrap.cover-type4 .logo-area {bottom:32px;top:auto;left:0px;}
+.report-wrap.cover-type4 .title-area {position: absolute;top:auto;bottom:132px;left:0px;}
+.report-wrap.cover-type5 .logo-area {bottom:32px;top:auto;left:0px;}
+.report-wrap.cover-type5 .title-area {position: absolute;top:auto;bottom:132px;left:auto;right:0px;display: flex;flex-direction: column;align-items: flex-end;}
+.report-wrap.cover-type5 .title-area > div {margin:0 30px 0 0;text-align: right;}
+.report-wrap.cover-type5 .title-area .m-tit {margin-bottom:12px;}
+.report-wrap.cover-type5 .title-area .s-tit {margin-bottom:36px;display: inline-block;}
+.report-wrap.cover-type5 .title-area::before {left:auto;right:0;}
+
+/* 보고서 컨텐츠 목록 */
+.report-wrap.report-list .report-wrap-inner {display: flex;flex-direction: column;justify-content: space-between;padding: 44px 0px 32px;}
+.report-wrap.report-list .content-sec {display: flex;justify-content: space-between;}
+.report-wrap.report-list .content-sec > div {width:48.5%;outline:0px solid red;}
+.report-wrap.report-list .content-sec .left-area {display: flex;flex-direction: column;justify-content: space-between;}
+.report-wrap.report-list .content-sec .left-area .tit-box .m-title {font-size:36px;line-height: 36px;font-weight: bold;color:#031241;margin-bottom:16px;letter-spacing: -1px;}
+.report-wrap.report-list .content-sec .left-area .tit-box .s-title {font-size:18px;color:#000;letter-spacing: -1px;}
+.report-wrap.report-list .content-sec .left-area .tit-box .s-title span:nth-child(1) {display: inline-block;font-weight:700;height:16px;line-height: 16px;border-right:2px solid #cfcfcf;margin-right: 10px;padding-right:12px;}
+.report-wrap.report-list .content-sec .left-area .info-box > div {margin-bottom:5px;display:flex;justify-content: space-between;align-items: center;}
+.report-wrap.report-list .content-sec .left-area .info-box > div .tit {font-size:10px;color:#595656;width:54px;margin-right:12px;display:inline-block;}
+.report-wrap.report-list .content-sec .left-area .info-box > div .txt {font-size:10px;color:#595656;width:280px;}
+.report-wrap.report-list .content-sec .right-area {margin-top:63px;}
+.report-wrap.report-list .content-sec .right-area .list-box {border-top:1px solid #595656;border-bottom:1px solid #595656;}
+.report-wrap.report-list .content-sec .right-area .list-box .list {border-bottom:1px solid #DCDDDD;padding:16px 0px;display: flex;flex-wrap: wrap;justify-content: space-between;}
+.report-wrap.report-list .content-sec .right-area .list-box .list .tit {font-size:14px;color:#191C1F;margin-bottom:8px;font-weight: 600;}
+.report-wrap.report-list .content-sec .right-area .list-box .list:last-child .tit {padding-left:24px;}
+.report-wrap.report-list .content-sec .right-area .list-box .list .tit span {margin-right:8px;}
+.report-wrap.report-list .content-sec .right-area .list-box .list .sub {width:100%;}
+.report-wrap.report-list .content-sec .right-area .list-box .list .sub ul {padding-left:26px;}
+.report-wrap.report-list .content-sec .right-area .list-box .list .sub ul li {font-size:14px;color:#383635;margin-bottom:5px;}
+.report-wrap.report-list .content-sec .right-area .list-box .list .num {font-size:14px;color:#727171;font-weight:500;}
+.report-wrap.report-list .content-sec .right-area .info-txt {color:#727171;font-size:10px;margin-top:4px;}
+.report-wrap.report-list .footer-sec {background:#F4F4F4;padding:12px;}
+.report-wrap.report-list .footer-sec .ref-box .tit {font-size:11px;color:#595656;font-weight:600;margin-bottom:6px;}
+.report-wrap.report-list .footer-sec .ref-box .con p {color:#727171;font-size:10px;line-height:14px;margin-bottom:4px;display: flex;}
+.report-wrap.report-list .footer-sec .ref-box .con p span:nth-child(1) {margin-right:5px;}
+
+/* 기업요약 */
+.report-wrap.corp-summary .sec1 .con-box table tr {border-bottom:1px solid #DCDDDD;}
+.report-wrap.corp-summary .sec1 .con-box table tr:last-child {border-bottom:0;}
+.report-wrap.corp-summary .sec1 .con-box table tr th {height:24px;font-size:14px;color:#191C1F;padding:5px 8px;text-align: left;background:#F4F4F4;}
+.report-wrap.corp-summary .sec1 .con-box table tr td {height:24px;font-size:14px;color:#383635;padding:5px 8px;}
+
+.report-wrap.corp-summary .sec2 {display: flex;justify-content: space-between;}
+.report-wrap.corp-summary .sec2 > div {width:49.5%;}
+.report-wrap.corp-summary .sec2 > div .con-box {border:1px solid #DCDDDD;border-radius: 6px;padding:12px 24px;}
+.report-wrap.corp-summary .sec2 > div .con-box .graph {width:304px;}
+.report-wrap.corp-summary .sec2 > div .con-box img {width:100%;}
+.report-wrap.corp-summary .sec2 .unit {display: none;}
+
+.report-wrap.corp-summary .sec3 .con-box table tr {border-bottom:1px solid #DCDDDD;}
+.report-wrap.corp-summary .sec3 .con-box table tr:last-child {border-bottom:0;} 
+.report-wrap.corp-summary .sec3 .con-box table tr th {height:24px;font-size:14px;color:#191C1F;padding:5px 8px;text-align: center;background:#F4F4F4;border-right:1px solid #DCDDDD;border-bottom:1px solid #595656;}
+.report-wrap.corp-summary .sec3 .con-box table tr th:last-child {border-right:0;}
+.report-wrap.corp-summary .sec3 .con-box table tr td {height:24px;font-size:14px;color:#383635;padding:5px 8px;text-align: right;border-right:1px solid #DCDDDD;}
+.report-wrap.corp-summary .sec3 .con-box table tr td:last-child {border-right:0;}
+.report-wrap.corp-summary .sec3 .con-box table tr td:nth-child(1),
+.report-wrap.corp-summary .sec3 .con-box table tr td:nth-child(2) {text-align: center;}
+
+.report-wrap.corp-summary .sec4 .con-box {display: flex;justify-content: space-between;}
+.report-wrap.corp-summary .sec4 .con-box .list {width:32.7%;border:1px solid #DCDDDD;border-radius:6px;padding:12px;}
+.report-wrap.corp-summary .sec4 .con-box .list .tit {font-size:14px;color:#000;margin-bottom:15px;font-weight:500;}
+.report-wrap.corp-summary .sec4 .con-box .list .graph {text-align: center;width:136px;height:73px;margin:0 auto 20px;}
+.report-wrap.corp-summary .sec4 .con-box .list .graph img {width:100%;}
+.report-wrap.corp-summary .sec4 .con-box .list .date {font-size:10px;color:#727171;text-align: center;}
+
+.report-wrap.corp-summary .sec5 .con-box table tr {border-bottom:1px solid #DCDDDD;}
+.report-wrap.corp-summary .sec5 .con-box table tr:last-child {border-bottom:0;} 
+.report-wrap.corp-summary .sec5 .con-box table tr th {height:24px;font-size:14px;color:#191C1F;padding:5px 8px;text-align: center;background:#F4F4F4;border-right:1px solid #DCDDDD;border-bottom:1px solid #595656;vertical-align: middle;}
+.report-wrap.corp-summary .sec5 .con-box table tr th:last-child {border-right:0;}
+.report-wrap.corp-summary .sec5 .con-box table tr td {height:24px;font-size:14px;color:#383635;padding:5px 8px;text-align: center;border-right:1px solid #DCDDDD;vertical-align: middle;}
+.report-wrap.corp-summary .sec5 .con-box table tr:nth-child(2) td:last-child {border-right:0;}
+
+/* 기업요약 재무분석1 */
+.report-wrap.financial-analysis .sec .con-box table tr {border-bottom:1px solid #DCDDDD;}
+.report-wrap.financial-analysis .sec .con-box table tr:nth-of-type(2) {border-bottom:1px solid #595656;}
+.report-wrap.financial-analysis .sec .con-box table tr:last-child {border-bottom:0;} 
+.report-wrap.financial-analysis .sec .con-box table tr:nth-child(1) th:nth-child(1) {width:170px;}
+.report-wrap.financial-analysis .sec .con-box table tr:nth-child(1) th:nth-child(2) {width:150px;}
+.report-wrap.financial-analysis .sec .con-box table tr:nth-child(1) th:nth-child(3) {width:150px;}
+.report-wrap.financial-analysis .sec .con-box table tr:nth-child(1) th:nth-child(4) {width:150px;}
+.report-wrap.financial-analysis .sec .con-box table tr th {height:24px;font-size:14px;color:#191C1F;padding:5px 8px;background:#F4F4F4;border-right:1px solid #DCDDDD;vertical-align: middle;}
+.report-wrap.financial-analysis .sec .con-box table tr:nth-of-type(1) th:nth-child(1) {border-right:1px solid #595656;}
+.report-wrap.financial-analysis .sec .con-box table tr th:nth-child(2) {border-right:1px solid #595656;}
+.report-wrap.financial-analysis .sec .con-box table tr td {height:24px;font-size:14px;color:#383635;padding:5px 8px;text-align: right;border-right:1px solid #DCDDDD;}
+.report-wrap.financial-analysis .sec .con-box table tr th:last-child {border-right:0;}
+.report-wrap.financial-analysis .sec .con-box table tr td:last-child {border-right:0;}
+.report-wrap.financial-analysis .sec .con-box table tr td:nth-of-type(2),
+.report-wrap.financial-analysis .sec .con-box table tr td:nth-of-type(4) {border-right:1px solid #595656;}
+.report-wrap.financial-analysis .sec .con-box table tr:nth-of-type(1) th:nth-of-type(3),
+.report-wrap.financial-analysis .sec .con-box table tr:nth-of-type(2) th:nth-of-type(4) {border-right:1px solid #595656;}
+
+/* 기업요약 재무분석2 */
+.report-wrap.financial-analysis-2 .list-box ul li {margin-bottom:24px;}
+.report-wrap.financial-analysis-2 .list-box ul li h4 {margin-bottom:8px;font-size:14px;font-weight: 600;}
+.report-wrap.financial-analysis-2 .list-box ul li h4 span {background:#000;width:4px;height:4px;border-radius:50%;display:inline-block;margin:0px 3px 3px 0px;}
+.report-wrap.financial-analysis-2 .list-box ul li p {color:#383635;font-size:14px;line-height:18px;}
+
+/* 기업요약 재무분석3 */
+.report-wrap.financial-analysis-3 .contents {display: flex;flex-direction: column;justify-content: space-between;}
+.report-wrap.financial-analysis-3 .sec1 .sec-inner:nth-of-type(1) table tr td {text-align: right;}
+.report-wrap.financial-analysis-3 .sec1 .sec-inner:nth-of-type(1) table tr td:nth-of-type(1) {text-align: center;}
+.report-wrap.financial-analysis-3 .sec1 .sec-inner {margin-bottom:16px;}
+.report-wrap.financial-analysis-3 .sec1 .sec-inner:nth-of-type(2) {margin-bottom:0;}
+.report-wrap.financial-analysis-3 .sec table tr th:nth-of-type(1) {text-align: left;}
+.report-wrap.financial-analysis-3 .sec .con-box table tr:nth-child(1) th {border-bottom:1px solid #595656;}
+.report-wrap.financial-analysis-3 .sec2 {margin:0px 0px 0px;}
+.report-wrap.financial-analysis-3 .sec2 .con-box .graph-list {display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;}
+.report-wrap.financial-analysis-3 .sec2 .con-box .graph-list .list {width:49.5%;border:1px solid #DCDDDD;border-radius:6px;padding:12px;margin-bottom:6px;}
+.report-wrap.financial-analysis-3 .sec2 .con-box .graph-list .list .tit-box {display: flex;justify-content: space-between;}
+.report-wrap.financial-analysis-3 .sec2 .con-box .graph-list .list .graph {width:328px;}
+.report-wrap.financial-analysis-3 .sec2 .con-box .graph-list .list .graph img {width:100%;}
+
+/* 기업현황 개요 */
+.report-wrap.corp-overview .sec1 .con-box table tr th {text-align: left;}
+.report-wrap.corp-overview .sec2 .con-box table tr td:nth-child(2),
+.report-wrap.corp-overview .sec2 .con-box table tr td:nth-child(3) {text-align: right;}
+.report-wrap.corp-overview .sec2 .con-box table tr td:nth-child(4) {text-align: center;}
+.report-wrap.corp-overview .sec3 .con-box table tr td {text-align: right;}
+.report-wrap.corp-overview .sec3 .con-box table tr td:nth-child(1),
+.report-wrap.corp-overview .sec3 .con-box table tr td:nth-child(2),
+.report-wrap.corp-overview .sec3 .con-box table tr td:nth-child(3) {text-align: center;}
+.report-wrap.corp-overview .sec2 .con-box table tr:nth-child(1),
+.report-wrap.corp-overview .sec3 .con-box table tr:nth-child(1) {border-bottom:1px solid #595656;}
+
+/* 기업현황 종업원 */
+.report-wrap.corp-worker .sec1 .con-box .box-list {display: flex;justify-content: space-between;border: solid 1px #dcdddd;}
+.report-wrap.corp-worker .sec1 .con-box .box-list .list {width:25%;padding:12px;border-right:1px solid #dcdddd;}
+.report-wrap.corp-worker .sec1 .con-box .box-list .list:last-child {border-right:0;}
+.report-wrap.corp-worker .sec1 .con-box .box-list .list .tit {font-size:14px;margin-bottom:44px;line-height:16px;}
+.report-wrap.corp-worker .sec1 .con-box .box-list .list .num {text-align: right;}
+.report-wrap.corp-worker .sec1 .con-box .box-list .list .num p:nth-child(1) {color:#191c1f;font-size:20px;margin-bottom:5px;font-weight:600;}
+.report-wrap.corp-worker .sec1 .con-box .box-list .list .num p:nth-child(2) {color:#383635;font-size:14px;}
+.report-wrap.corp-worker .sec2 .con-box .graph {border: solid 1px #dcdddd;border-radius: 6px;padding:12px 24px;width:100%;}
+.report-wrap.corp-worker .sec3 .con-box .graph {border: solid 1px #dcdddd;border-radius: 6px;padding:12px 24px;width:100%;}
+.report-wrap.corp-worker .sec .con-box .graph img {width:100%;height:100%;}
+
+/* 산업분석 */
+.report-wrap.industry-analysis .sec .tit-box.underline {display: flex;justify-content: space-between;align-items: center;border-bottom:1px solid #595656;padding-bottom:8px;margin-bottom:8px;}
+.report-wrap.industry-analysis .sec .tit-box.underline .tit {font-size:14px;font-weight: 500;color:#000;}
+.report-wrap.industry-analysis .sec1 p:nth-child(1) {margin-bottom:5px;font-size: 14px;font-style: normal;line-height: 1.14;letter-spacing: -0.28px;color: #191c1f;}
+.report-wrap.industry-analysis .sec1 p:nth-child(1) span {font-weight: 600;display: block;padding-top: 5px;}
+.report-wrap.industry-analysis .sec1 p:nth-child(2) { font-size: 10px;line-height: 1.1;letter-spacing: -0.2px;text-align: left;color: #727171;}
+.report-wrap.industry-analysis .sec1 p:nth-child(2) span {font-weight: 600;width: 41px;height: 16px;margin: 0 8px 0 0;padding: 3px 4px 2px;background-color: #eeefef;}
+.report-wrap.industry-analysis .sec2 .con-box {display: flex;}
+.report-wrap.industry-analysis .sec2 p {font-size:12px;color:#383635;margin-right:16px;}
+.report-wrap.industry-analysis .sec2 p span {font-weight:600;}
+.report-wrap.industry-analysis .sec3 {display: flex;justify-content: space-between;}
+.report-wrap.industry-analysis .sec3 > div {width:49.5%;}
+.report-wrap.industry-analysis .sec3 > div .con-box {border:1px solid #DCDDDD;border-radius: 6px;padding:12px 24px;}
+.report-wrap.industry-analysis .sec3 > div .con-box .graph {width:304px;}
+.report-wrap.industry-analysis .sec3 > div .con-box img {width:100%;}
+.report-wrap.industry-analysis .sec4 .con-box .tit {font-size:14px;font-weight:600;margin-bottom:8px;}
+.report-wrap.industry-analysis .sec4 .con-box .txt p {font-size: 12px;line-height: 1.17;letter-spacing: -0.40px;color: #191c1f;margin-bottom:10px;}
+
+/* 산업분석 빅데이터 */
+.report-wrap.industry-analysis-2 .sec1 .con-box table tr:nth-child(2) {border-bottom: 1px solid #595656;}
+.report-wrap.industry-analysis-2 .sec1 .con-box table tr th:nth-of-type(1) {border-right: 1px solid #595656;}
+.report-wrap.industry-analysis-2 .sec1 .con-box table tr:nth-child(2) th:nth-of-type(1) {border-right: 1px solid #DCDDDD;}
+.report-wrap.industry-analysis-2 .sec1 .con-box table tr th:nth-of-type(2), 
+.report-wrap.industry-analysis-2 .sec1 .con-box table tr td:nth-of-type(2) {border-right: 1px solid #595656;}
+.report-wrap.industry-analysis-2 .sec1 .con-box table tr td {text-align: right;}
+.report-wrap.industry-analysis-2 .sec2 .con-box table tr:nth-child(1) th {border-bottom: 1px solid #595656;}
+.report-wrap.industry-analysis-2 .sec2 .con-box table tr th:nth-child(4),
+.report-wrap.industry-analysis-2 .sec2 .con-box table tr td:nth-of-type(3) {border-right: 1px solid #595656;}
+.report-wrap.industry-analysis-2 .sec2 .con-box table tr td {text-align: right;}
+
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr {border-bottom:1px solid #DCDDDD;}
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr:nth-of-type(2) {border-bottom:1px solid #595656;}
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr:last-child {border-bottom:0;} 
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr th {height:24px;font-size:14px;color:#191C1F;padding:5px 8px;background:#F4F4F4;border-right:1px solid #DCDDDD;vertical-align: middle;}
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr:nth-of-type(1) th:nth-child(1) {border-right:1px solid #595656;}
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr th:nth-child(2) {border-right:1px solid #595656;}
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr td {height:24px;font-size:14px;color:#383635;padding:5px 8px;text-align: right;border-right:1px solid #DCDDDD;}
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr th:last-child {border-right:0;}
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr td:last-child {border-right:0;}
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr th:nth-of-type(1),
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr td:nth-of-type(2),
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr td:nth-of-type(4) {border-right:1px solid #595656;}
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr:nth-of-type(1) th:nth-of-type(3),
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr:nth-of-type(2) th:nth-of-type(4) {border-right:1px solid #595656;}
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr:nth-of-type(2) th:nth-of-type(1) {border-right:1px solid #DCDDDD;}
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr td:nth-of-type(2),
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr td:nth-of-type(4),
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr td:nth-of-type(6) {text-align: center;}
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr.bold th,
+.report-wrap.industry-analysis-2 .sec3 .con-box table tr.bold td {font-weight: 700;border-bottom:1px solid #595656;}
+
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box {display: flex;justify-content: space-between;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list {width:32.5%;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area {border:1px solid #DCDDDD;border-radius: 6px;padding:12px;margin-bottom:8px;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area .tit {font-size:14px;margin-bottom:8px;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area .per {text-align: right;margin-bottom:4px;font-size:24px;font-weight:600;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area .contrast {font-size:14px;text-align: right;border-bottom:1px solid #dcdddd;margin-bottom:12px;padding-bottom:12px;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area .contrast .plus {color: #db3a1a;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area .contrast .minus {color: #00b353;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area .standard {margin-bottom:12px;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area .standard,
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area .insolvency {display: flex;justify-content:space-between;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area .standard span:nth-child(1),
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area .insolvency span:nth-child(1) {color: #191c1f;font-size:14px;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area .standard span:nth-child(2),
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .top-area .insolvency span:nth-child(2) {color: #191c1f;font-size:20px;font-weight:600;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .bot-area .tit {color: #595656;font-size:10px;margin-bottom:6px;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .bot-area .con div:nth-child(1) {color: #595656;font-size:10px;margin-bottom:8px;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list:nth-child(1) .bot-area .con div:nth-child(1) {margin-right:10px;} 
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .bot-area .con div:nth-child(1) p {display: inline-block;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .bot-area .con div:nth-child(1) p:nth-child(1) {position: relative;border-bottom:1px solid #c9caca;padding-bottom:2px;margin-bottom:2px;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list:nth-of-type(2) .bot-area .con div:nth-child(1) p:nth-child(1) {width:135px;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .bot-area .con div:nth-child(1) p:nth-child(1) span {position: absolute;top:8px;right:-47px;}
+.report-wrap.industry-analysis-2 .sec4 .con-box .list-box .list .bot-area .con div:nth-child(2) {color: #595656;font-size:10px;}
+
+/* 신용등급 */
+.report-wrap.credit-rating .sec .con-box table tr td {text-align: center;}
+.report-wrap.credit-rating .sec .con-box table tr td.txt {text-align: left;}
+.report-wrap.credit-rating .sec .con-box table tr td[rowspan] {border-left: 1px solid #dcdddd;}
+.report-wrap.credit-rating .sec.graph {display: flex;justify-content: space-between;}
+.report-wrap.credit-rating .sec.graph > div {width:49.5%;}
+.report-wrap.credit-rating .sec.graph > div .con-box {border:1px solid #DCDDDD;border-radius: 6px;padding:12px 24px;}
+.report-wrap.credit-rating .sec.graph > div .con-box .graph {width:307px;}
+.report-wrap.credit-rating .sec.graph > div .con-box img {width:100%;}
+
+/* 재무제표 */
+.report-wrap.financial-statements .sec .con-box table tr th,
+.report-wrap.financial-statements .sec .con-box table tr td {padding:2px 8px;height:20px;}
+.report-wrap.financial-statements .sec .con-box table tr.line th,
+.report-wrap.financial-statements .sec .con-box table tr.line td {border-top: 1px solid #595656;border-bottom: 1px solid #595656;}
+.report-wrap.financial-statements .sec .con-box table tr td {text-align: right;}
+.report-wrap.financial-statements .sec .con-box table tr:nth-child(1) th,
+.report-wrap.financial-statements .sec .con-box table tr:nth-child(2) th:nth-child(2),
+.report-wrap.financial-statements .sec .con-box table tr:nth-child(2) th:nth-child(4),
+.report-wrap.financial-statements .sec .con-box table tr td:nth-child(3),
+.report-wrap.financial-statements .sec .con-box table tr td:nth-child(5) {border-right: 1px solid #595656;}
+.report-wrap.financial-statements .sec .con-box table tr:nth-child(1) th:last-child {border-right:0;}
+.report-wrap.financial-statements .sec .con-box table tr:not(:first-child) th:first-child {text-align: left;}
+.report-wrap.financial-statements .sec .con-box table tr:nth-child(2) th:first-child {text-align: center;}
+.report-wrap.financial-statements .sec .con-box table tr:nth-child(1) th:nth-child(1),
+.report-wrap.financial-statements .sec .con-box table tr:nth-child(2) th {border-bottom: 1px solid #595656;}
+.report-wrap.financial-statements .sec .con-box table tr th:first-child:last-of-type {border-right: 1px solid #595656;}
+.report-wrap.financial-statements .sec .con-box table tr th.pd-l24 {padding-left: 24px;}
+.report-wrap.financial-statements .sec .con-box table tr th.pd-l40 {padding-left: 40px;}
+
+.no-result {display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;font-size: 16px;color:#000;}
+
+/* 프린트용 css */
+@page {
+	size: A4;
+	margin: 0mm;
+}
+/* 인쇄시 변경되는 부분 */
+@media print {
+	html,
+	body {
+		width:210mm;
+		height:297mm;
+		-webkit-print-color-adjust: exact;
+		color-adjust: exact;
+	}
+	.report-wrap {
+		width:initial;
+		min-height:inherit;
+		page-break-after: always;
+		margin:0; 
+	}
+	.report-wrap.last-wrap {
+		page-break-after: avoid;
+	}
+}

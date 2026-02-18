@@ -69,10 +69,21 @@ $(document).ready(() => {
     headerActiveCheck();
 });
 
-
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init({
         duration: 1000,
+    });
+
+    const swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+        },
     });
 
     /* ===== 프로젝트 영역 ===== */
@@ -215,8 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h3>${project.title}</h3>
                     <p>${project.desc}</p>
                     <p>${project.stack}</p>
-                    <p>${project.progressText}</p>
-                    <progress max="100" value="${project.progressValue}"></progress>
+                    <p><span>${project.progressText}</span><progress max="100" value="${project.progressValue}"></progress></p>
                 </div>
             `;
 

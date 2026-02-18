@@ -429,7 +429,7 @@ function loadProjectDetail() {
 
             const setNav = (el, proj) => {
                 if (!el) return;
-                if (proj) el.href = `project_view.html?id=${proj.id}`;
+                if (proj) el.href = `/list/darum2026/project_view.html?id=${proj.id}`;
                 else {
                     el.classList.add('disabled');
                     el.removeAttribute('href');

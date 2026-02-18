@@ -1,0 +1,1731 @@
+.h_s12_232_130 .intro-title-text {
+  font-size: 108px;
+  line-height: 113px;
+  letter-spacing: -2px;
+}
+.h_s12_232_130 .modal-layer .aim-madal .bullet-list {
+  width: 80%;
+  padding-left: 62px;
+}
+.h_s12_232_130 .scene-layer {
+  opacity: 0;
+  visibility: hidden;
+}
+.h_s12_232_130 .scene-layer.active {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 1000px;
+  height: 690px;
+  background: url("../../images/h_s12_232_130/img-blood-plate.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .tit {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 54px;
+  left: -webkit-calc(50% - 80px);
+  left: -moz-calc(50% - 80px);
+  left: calc(50% - 80px);
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .blood-serum,
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .blood-serum-1,
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .blood-serum-2 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .blood-serum span,
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .blood-serum-1 span,
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .blood-serum-2 span {
+  text-align: center;
+  position: absolute;
+  top: 167px;
+  left: 5px;
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .agglomeration {
+  position: absolute;
+  top: -43px;
+  left: -125px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .agglomeration.active {
+  opacity: 1;
+  visibility: visible;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .agglomeration span {
+  display: inline-block;
+  width: 110px;
+  height: 70px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 56px;
+  font-weight: bold;
+  text-align: center;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .agglomeration span.blue {
+  background: url("../../images/h_s12_232_130/img-agg-blue.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .agglomeration span.green {
+  background: url("../../images/h_s12_232_130/img-agg-green.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .agglomeration span.blue-reverse {
+  background: url("../../images/h_s12_232_130/img-agg-blue-reverse.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .agglomeration span.green-reverse {
+  background: url("../../images/h_s12_232_130/img-agg-green-reverse.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .agglomeration span .icon.o {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("../../images/h_s12_232_130/icon-O.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .agglomeration span .icon.x {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("../../images/h_s12_232_130/icon-x.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .blood-damage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  -webkit-perspective: 600px;
+     -moz-perspective: 600px;
+          perspective: 600px;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .blood-drop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(0, -100px) scale(1.3, 1.3);
+     -moz-transform: translate(0, -100px) scale(1.3, 1.3);
+      -ms-transform: translate(0, -100px) scale(1.3, 1.3);
+          transform: translate(0, -100px) scale(1.3, 1.3);
+  z-index: 10;
+  width: 0;
+  height: 0;
+  border: 10px solid #da4d15;
+  -moz-border-radius: 1000px;
+       border-radius: 1000px;
+  margin-top: -10px;
+  margin-left: -10px;
+  opacity: 0;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+     -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+     -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .blood-drop.active {
+  -webkit-animation: water-drop 3000ms cubic-bezier(0.56, 0.18, 0.92, 0.69) forwards;
+     -moz-animation: water-drop 3000ms cubic-bezier(0.56, 0.18, 0.92, 0.69) forwards;
+          animation: water-drop 3000ms cubic-bezier(0.56, 0.18, 0.92, 0.69) forwards;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con > div .blood-drop::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 7.5px 13px 7.5px;
+  border-color: transparent transparent #da4d15 transparent;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  -webkit-transform: translate(-50%, 0);
+     -moz-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+@-webkit-keyframes water-drop {
+  0% {
+    opacity: 0;
+    z-index: 10;
+    -webkit-transform: translate(0, -100px) scale(1.3, 1.3);
+            transform: translate(0, -100px) scale(1.3, 1.3);
+  }
+  50% {
+    opacity: 1;
+    z-index: 10;
+    -webkit-transform: translate(0, 0px) scale(1.1, 1.4);
+            transform: translate(0, 0px) scale(1.1, 1.4);
+  }
+  51% {
+    opacity: 1;
+    z-index: 10;
+    margin-top: -40px;
+    margin-left: -10px;
+    border-width: 10px;
+    -webkit-transform: rotateX(70deg);
+            transform: rotateX(70deg);
+    -webkit-animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+            animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+    margin-top: -40px;
+    margin-left: -17px;
+    border-width: 20px;
+    -webkit-transform: rotateX(70deg);
+            transform: rotateX(70deg);
+    -webkit-animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+            animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+  }
+}
+@-moz-keyframes water-drop {
+  0% {
+    opacity: 0;
+    z-index: 10;
+    -moz-transform: translate(0, -100px) scale(1.3, 1.3);
+         transform: translate(0, -100px) scale(1.3, 1.3);
+  }
+  50% {
+    opacity: 1;
+    z-index: 10;
+    -moz-transform: translate(0, 0px) scale(1.1, 1.4);
+         transform: translate(0, 0px) scale(1.1, 1.4);
+  }
+  51% {
+    opacity: 1;
+    z-index: 10;
+    margin-top: -40px;
+    margin-left: -10px;
+    border-width: 10px;
+    -moz-transform: rotateX(70deg);
+         transform: rotateX(70deg);
+    -moz-animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+         animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+    margin-top: -40px;
+    margin-left: -17px;
+    border-width: 20px;
+    -moz-transform: rotateX(70deg);
+         transform: rotateX(70deg);
+    -moz-animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+         animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+  }
+}
+@keyframes water-drop {
+  0% {
+    opacity: 0;
+    z-index: 10;
+    -webkit-transform: translate(0, -100px) scale(1.3, 1.3);
+       -moz-transform: translate(0, -100px) scale(1.3, 1.3);
+            transform: translate(0, -100px) scale(1.3, 1.3);
+  }
+  50% {
+    opacity: 1;
+    z-index: 10;
+    -webkit-transform: translate(0, 0px) scale(1.1, 1.4);
+       -moz-transform: translate(0, 0px) scale(1.1, 1.4);
+            transform: translate(0, 0px) scale(1.1, 1.4);
+  }
+  51% {
+    opacity: 1;
+    z-index: 10;
+    margin-top: -40px;
+    margin-left: -10px;
+    border-width: 10px;
+    -webkit-transform: rotateX(70deg);
+       -moz-transform: rotateX(70deg);
+            transform: rotateX(70deg);
+    -webkit-animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+       -moz-animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+            animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+    margin-top: -40px;
+    margin-left: -17px;
+    border-width: 20px;
+    -webkit-transform: rotateX(70deg);
+       -moz-transform: rotateX(70deg);
+            transform: rotateX(70deg);
+    -webkit-animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+       -moz-animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+            animation-timing-function: cubic-bezier(0.12, 0.41, 0.63, 0.99);
+  }
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .RH {
+  position: absolute;
+  top: 195px;
+  left: 454px;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .RH .blood-serum {
+  background: url("../../images/h_s12_232_130/img-blood-serum-rh.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .RH .blood-serum-1 {
+  background: url("../../images/h_s12_232_130/img-blood-serum-rh-1.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .RH .blood-serum-2 {
+  background: url("../../images/h_s12_232_130/img-blood-serum-rh-2.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .A {
+  position: absolute;
+  top: 420px;
+  left: 235px;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .A .blood-serum {
+  background: url("../../images/h_s12_232_130/img-blood-serum-a.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .A .blood-serum-1 {
+  background: url("../../images/h_s12_232_130/img-blood-serum-a-1.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .A .blood-serum-2 {
+  background: url("../../images/h_s12_232_130/img-blood-serum-a-2.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .B {
+  position: absolute;
+  top: 420px;
+  left: 667px;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .B .blood-serum {
+  background: url("../../images/h_s12_232_130/img-blood-serum-b.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .B .blood-serum-1 {
+  background: url("../../images/h_s12_232_130/img-blood-serum-b-1.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .B .blood-serum-2 {
+  background: url("../../images/h_s12_232_130/img-blood-serum-b-2.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer1 .blood-reaction-plate .con .B .agglomeration {
+  position: absolute;
+  top: -43px;
+  left: 125px;
+}
+.h_s12_232_130 .scene-layer1 .blood-list {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+     -moz-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.h_s12_232_130 .scene-layer1 .blood-list button {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(143, 158, 182)), to(rgb(179, 196, 218)));
+  background: -webkit-linear-gradient(bottom, rgb(143, 158, 182) 0%, rgb(179, 196, 218) 100%);
+  background: -moz-linear-gradient(bottom, rgb(143, 158, 182) 0%, rgb(179, 196, 218) 100%);
+  background: -o-linear-gradient(bottom, rgb(143, 158, 182) 0%, rgb(179, 196, 218) 100%);
+  background: linear-gradient(0deg, rgb(143, 158, 182) 0%, rgb(179, 196, 218) 100%);
+  width: 120px;
+  height: 58px;
+  line-height: 58px;
+  -moz-border-radius: 12px;
+       border-radius: 12px;
+  margin: 0px 8px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #303a46;
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.h_s12_232_130 .scene-layer1 .blood-list button span {
+  font-size: 20px;
+  display: inline-block;
+  -moz-border-radius: 50%;
+       border-radius: 50%;
+  border: 2px solid #303a46;
+  width: 26px;
+  height: 26px;
+  line-height: 28px;
+}
+.h_s12_232_130 .scene-layer1 .blood-list button.on {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(215, 12, 9)), to(rgb(249, 16, 6)));
+  background: -webkit-linear-gradient(bottom, rgb(215, 12, 9) 0%, rgb(249, 16, 6) 100%);
+  background: -moz-linear-gradient(bottom, rgb(215, 12, 9) 0%, rgb(249, 16, 6) 100%);
+  background: -o-linear-gradient(bottom, rgb(215, 12, 9) 0%, rgb(249, 16, 6) 100%);
+  background: linear-gradient(0deg, rgb(215, 12, 9) 0%, rgb(249, 16, 6) 100%);
+  color: #fff;
+}
+.h_s12_232_130 .scene-layer1 .blood-list button.on span {
+  color: #fff;
+  border-color: #fff;
+}
+.h_s12_232_130 .scene-layer1 .blood-list button.disable {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.h_s12_232_130 .scene-layer1 .blood-type {
+  position: absolute;
+  top: 742px;
+  left: 1437px;
+}
+.h_s12_232_130 .scene-layer1 .blood-type button {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(46, 101, 187)), to(rgb(71, 136, 224)));
+  background: -webkit-linear-gradient(bottom, rgb(46, 101, 187) 0%, rgb(71, 136, 224) 100%);
+  background: -moz-linear-gradient(bottom, rgb(46, 101, 187) 0%, rgb(71, 136, 224) 100%);
+  background: -o-linear-gradient(bottom, rgb(46, 101, 187) 0%, rgb(71, 136, 224) 100%);
+  background: linear-gradient(0deg, rgb(46, 101, 187) 0%, rgb(71, 136, 224) 100%);
+  width: 270px;
+  height: 65px;
+  line-height: 65px;
+  -moz-border-radius: 12px;
+       border-radius: 12px;
+  margin: 0px 8px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+}
+.h_s12_232_130 .scene-layer1 .blood-type button .plus {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 5px;
+       border-radius: 5px;
+  margin-left: 10px;
+  background: url("../../images/h_s12_232_130/icon-plus.png") center no-repeat #234c8b;
+  -webkit-background-size: 20px 20px;
+     -moz-background-size: 20px 20px;
+          background-size: 20px 20px;
+  vertical-align: middle;
+}
+.h_s12_232_130 .scene-layer1 .blood-type .dote-line1 {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  width: 285px;
+  height: 84px;
+  border: 5px dotted #5d86b9;
+  -moz-border-radius: 15px;
+       border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+}
+.h_s12_232_130 .scene-layer1 .blood-type .dote-line1.active {
+  opacity: 1;
+  visibility: unset;
+  -webkit-animation-name: viewHidden;
+     -moz-animation-name: viewHidden;
+          animation-name: viewHidden;
+  -webkit-animation-direction: alternate;
+     -moz-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 0.5s;
+     -moz-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid {
+  position: absolute;
+  top: 180px;
+  left: 370px;
+  width: 850px;
+  height: 800px;
+  background: #3e4b59;
+  -moz-border-radius: 20px;
+       border-radius: 20px;
+  padding: 20px;
+  -webkit-box-shadow: inset -1px -1px 6px rgba(0, 0, 0, 0.5), inset 1px 1px 6px rgba(255, 255, 255, 0.5), 1px 1px 5px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 6px rgba(0, 0, 0, 0.5), inset 1px 1px 6px rgba(255, 255, 255, 0.5), 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 6px rgba(0, 0, 0, 0.5), inset 1px 1px 6px rgba(255, 255, 255, 0.5), 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .tit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0px 25px;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .tit > div {
+  width: 33.3%;
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .tit > div.type {
+  opacity: 0.5;
+  width: 24%;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .tit > div.RH {
+  width: 36.5%;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .tit > div.ABO {
+  width: 36.5%;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .blood-list {
+  width: 24%;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .blood-list div {
+  text-align: center;
+  width: 100%;
+  height: 77px;
+  line-height: 80px;
+  -moz-border-radius: 10px;
+       border-radius: 10px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  background: #435060;
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.4), inset 1px 1px 4px rgba(255, 255, 255, 0.4), 1px 1px 3px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.4), inset 1px 1px 4px rgba(255, 255, 255, 0.4), 1px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.4), inset 1px 1px 4px rgba(255, 255, 255, 0.4), 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .blood-list div.active {
+  background: #5d86b9;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .blood-list div:last-child {
+  margin-bottom: 0;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .rh-list {
+  width: 36.5%;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .rh-list .rh-box {
+  position: relative;
+  width: 100%;
+  height: 77px;
+  background: #333e4b;
+  -webkit-box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.6);
+     -moz-box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+  -moz-border-radius: 10px;
+       border-radius: 10px;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .rh-list .rh-box > div {
+  text-align: center;
+  width: 150px;
+  height: 55px;
+  line-height: 55px;
+  -moz-border-radius: 10px;
+       border-radius: 10px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(228, 132, 19)), to(rgb(230, 151, 33)));
+  background: -webkit-linear-gradient(bottom, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  background: -moz-linear-gradient(bottom, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  background: -o-linear-gradient(bottom, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  background: linear-gradient(0deg, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .rh-list .rh-box > div.on {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(218, 12, 9)), to(rgb(249, 32, 23)));
+  background: -webkit-linear-gradient(bottom, rgb(218, 12, 9) 0%, rgb(249, 32, 23) 100%);
+  background: -moz-linear-gradient(bottom, rgb(218, 12, 9) 0%, rgb(249, 32, 23) 100%);
+  background: -o-linear-gradient(bottom, rgb(218, 12, 9) 0%, rgb(249, 32, 23) 100%);
+  background: linear-gradient(0deg, rgb(218, 12, 9) 0%, rgb(249, 32, 23) 100%);
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .rh-list .rh-box.active {
+  background: #202831;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .rh-list .rh-box:last-child {
+  margin-bottom: 0;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .ABO-list {
+  width: 36.5%;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .ABO-list .abo-box {
+  position: relative;
+  width: 100%;
+  height: 77px;
+  background: #333e4b;
+  -webkit-box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.6);
+     -moz-box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+  -moz-border-radius: 10px;
+       border-radius: 10px;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .ABO-list .abo-box > div {
+  text-align: center;
+  width: 150px;
+  height: 55px;
+  line-height: 55px;
+  -moz-border-radius: 10px;
+       border-radius: 10px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(228, 132, 19)), to(rgb(230, 151, 33)));
+  background: -webkit-linear-gradient(bottom, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  background: -moz-linear-gradient(bottom, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  background: -o-linear-gradient(bottom, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  background: linear-gradient(0deg, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .ABO-list .abo-box > div.on {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(218, 12, 9)), to(rgb(249, 32, 23)));
+  background: -webkit-linear-gradient(bottom, rgb(218, 12, 9) 0%, rgb(249, 32, 23) 100%);
+  background: -moz-linear-gradient(bottom, rgb(218, 12, 9) 0%, rgb(249, 32, 23) 100%);
+  background: -o-linear-gradient(bottom, rgb(218, 12, 9) 0%, rgb(249, 32, 23) 100%);
+  background: linear-gradient(0deg, rgb(218, 12, 9) 0%, rgb(249, 32, 23) 100%);
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .ABO-list .abo-box.active {
+  background: #202831;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-grid .con .ABO-list .abo-box:last-child {
+  margin-bottom: 0;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-box {
+  position: absolute;
+  top: 380px;
+  left: 170px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-box div {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  width: 150px;
+  height: 55px;
+  line-height: 55px;
+  -moz-border-radius: 10px;
+       border-radius: 10px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(228, 132, 19)), to(rgb(230, 151, 33)));
+  background: -webkit-linear-gradient(bottom, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  background: -moz-linear-gradient(bottom, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  background: -o-linear-gradient(bottom, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  background: linear-gradient(0deg, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+.h_s12_232_130 .scene-layer2 .blood-type-box div.on {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(218, 12, 9)), to(rgb(249, 32, 23)));
+  background: -webkit-linear-gradient(bottom, rgb(218, 12, 9) 0%, rgb(249, 32, 23) 100%);
+  background: -moz-linear-gradient(bottom, rgb(218, 12, 9) 0%, rgb(249, 32, 23) 100%);
+  background: -o-linear-gradient(bottom, rgb(218, 12, 9) 0%, rgb(249, 32, 23) 100%);
+  background: linear-gradient(0deg, rgb(218, 12, 9) 0%, rgb(249, 32, 23) 100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.h_s12_232_130 .scene-layer2 .blood-agg-reaction {
+  position: absolute;
+  top: 185px;
+  right: 50px;
+}
+.h_s12_232_130 .scene-layer2 .blood-agg-reaction button {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(57, 73, 93)), to(rgb(80, 98, 120)));
+  background: -webkit-linear-gradient(bottom, rgb(57, 73, 93) 0%, rgb(80, 98, 120) 100%);
+  background: -moz-linear-gradient(bottom, rgb(57, 73, 93) 0%, rgb(80, 98, 120) 100%);
+  background: -o-linear-gradient(bottom, rgb(57, 73, 93) 0%, rgb(80, 98, 120) 100%);
+  background: linear-gradient(0deg, rgb(57, 73, 93) 0%, rgb(80, 98, 120) 100%);
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  -moz-border-radius: 15px;
+       border-radius: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+.h_s12_232_130 .scene-layer2 .blood-agg-reaction button span {
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+}
+.h_s12_232_130 .scene-layer2 .blood-agg-reaction button .search {
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 50%;
+       border-radius: 50%;
+  display: inline-block;
+  margin-left: 20px;
+  background: url("../../images/h_s12_232_130/icon-search.png") center no-repeat #2a3541;
+  -webkit-background-size: 30px 30px;
+     -moz-background-size: 30px 30px;
+          background-size: 30px 30px;
+}
+.h_s12_232_130 .scene-layer2 .blood-agg-reaction .dote-line2 {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 305px;
+  height: 120px;
+  border: 5px dotted #5d86b9;
+  -moz-border-radius: 15px;
+       border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+}
+.h_s12_232_130 .scene-layer2 .blood-agg-reaction .dote-line2.active {
+  opacity: 1;
+  visibility: unset;
+  -webkit-animation-name: viewHidden;
+     -moz-animation-name: viewHidden;
+          animation-name: viewHidden;
+  -webkit-animation-direction: alternate;
+     -moz-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 0.5s;
+     -moz-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+.h_s12_232_130 .scene-layer2 .prev-btn {
+  position: absolute;
+  top: 920px;
+  left: 50px;
+}
+.h_s12_232_130 .scene-layer2 .prev-btn button {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(113, 122, 133)), to(rgb(142, 150, 160)));
+  background: -webkit-linear-gradient(bottom, rgb(113, 122, 133) 0%, rgb(142, 150, 160) 100%);
+  background: -moz-linear-gradient(bottom, rgb(113, 122, 133) 0%, rgb(142, 150, 160) 100%);
+  background: -o-linear-gradient(bottom, rgb(113, 122, 133) 0%, rgb(142, 150, 160) 100%);
+  background: linear-gradient(0deg, rgb(113, 122, 133) 0%, rgb(142, 150, 160) 100%);
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+  padding: 15px 20px;
+  -moz-border-radius: 15px;
+       border-radius: 15px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+.h_s12_232_130 .scene-layer2 .prev-btn button .arr {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url("../../images/h_s12_232_130/icon-arr-right.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  vertical-align: middle;
+  -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  vertical-align: text-top;
+}
+.h_s12_232_130 .scene-layer2 .next-btn {
+  position: absolute;
+  top: 920px;
+  right: 50px;
+}
+.h_s12_232_130 .scene-layer2 .next-btn button {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(113, 122, 133)), to(rgb(142, 150, 160)));
+  background: -webkit-linear-gradient(bottom, rgb(113, 122, 133) 0%, rgb(142, 150, 160) 100%);
+  background: -moz-linear-gradient(bottom, rgb(113, 122, 133) 0%, rgb(142, 150, 160) 100%);
+  background: -o-linear-gradient(bottom, rgb(113, 122, 133) 0%, rgb(142, 150, 160) 100%);
+  background: linear-gradient(0deg, rgb(113, 122, 133) 0%, rgb(142, 150, 160) 100%);
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+  padding: 15px 20px;
+  -moz-border-radius: 15px;
+       border-radius: 15px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.h_s12_232_130 .scene-layer2 .next-btn button .arr {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 5px;
+  background: url("../../images/h_s12_232_130/icon-arr-right.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  vertical-align: middle;
+  vertical-align: text-top;
+}
+.h_s12_232_130 .scene-layer2 .next-btn button.active {
+  opacity: 1;
+  pointer-events: unset;
+}
+.h_s12_232_130 .scene-layer3 .blood-list-btn {
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.h_s12_232_130 .scene-layer3 .blood-list-btn button {
+  width: 220px;
+  height: 55px;
+  line-height: 55px;
+  -moz-border-radius: 10px;
+       border-radius: 10px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(228, 132, 19)), to(rgb(230, 151, 33)));
+  background: -webkit-linear-gradient(bottom, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  background: -moz-linear-gradient(bottom, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  background: -o-linear-gradient(bottom, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  background: linear-gradient(0deg, rgb(228, 132, 19) 0%, rgb(230, 151, 33) 100%);
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+.h_s12_232_130 .scene-layer3 .blood-list-btn button.on {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(195, 115, 21)), to(rgb(193, 129, 34)));
+  background: -webkit-linear-gradient(bottom, rgb(195, 115, 21) 0%, rgb(193, 129, 34) 100%);
+  background: -moz-linear-gradient(bottom, rgb(195, 115, 21) 0%, rgb(193, 129, 34) 100%);
+  background: -o-linear-gradient(bottom, rgb(195, 115, 21) 0%, rgb(193, 129, 34) 100%);
+  background: linear-gradient(0deg, rgb(195, 115, 21) 0%, rgb(193, 129, 34) 100%);
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1100px;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .agglutinin {
+  width: 65%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .agglutinin > div {
+  text-align: center;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .agglutinin > div .txt {
+  background: #3a4654;
+  -moz-border-radius: 50px;
+       border-radius: 50px;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px 30px;
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .agglutinin .agg1 .img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: url("../../images/h_s12_232_130/img-agg-1.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .agglutinin .agg2 .img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: url("../../images/h_s12_232_130/img-agg-2.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .agglutinin .agg3 .img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: url("../../images/h_s12_232_130/img-agg-3.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood {
+  width: 25%;
+  margin-left: 10%;
+  text-align: center;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: url("../../images/h_s12_232_130/red-blood.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  position: relative;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img > div .blind {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  -webkit-clip-path: unset;
+          clip-path: unset;
+  clip: unset;
+  color: #fff;
+  font-size: 20px;
+  top: -57px;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img > div .blind::before {
+  content: "";
+  width: 1px;
+  height: 34px;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  border-left: 4px dotted #ccc;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-A {
+  display: inline-block;
+  width: 220px;
+  height: 220px;
+  background: url("../../images/h_s12_232_130/red-blood-A.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-A.on {
+  background: url("../../images/h_s12_232_130/red-blood-A-on.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  z-index: -1;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-A .blind {
+  left: 71px;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-B {
+  display: inline-block;
+  width: 220px;
+  height: 220px;
+  background: url("../../images/h_s12_232_130/red-blood-B.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  -webkit-transform: rotate(30deg);
+     -moz-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-B.on {
+  background: url("../../images/h_s12_232_130/red-blood-B-on.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  z-index: -1;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-B .blind {
+  -webkit-transform: rotate(-30deg);
+     -moz-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  left: 111px;
+  top: -63px;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-B .blind::before {
+  height: 53px;
+  top: 13px;
+  left: 1%;
+  -webkit-transform: rotate(70deg);
+     -moz-transform: rotate(70deg);
+      -ms-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-RH {
+  display: inline-block;
+  width: 220px;
+  height: 220px;
+  background: url("../../images/h_s12_232_130/red-blood-RH.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  -webkit-transform: rotate(60deg);
+     -moz-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-RH.on {
+  background: url("../../images/h_s12_232_130/red-blood-RH-on.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  z-index: -1;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-RH .blind {
+  -webkit-transform: rotate(-60deg);
+     -moz-transform: rotate(-60deg);
+      -ms-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  left: -102px;
+  top: 145px;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-RH .blind::before {
+  height: 53px;
+  top: 13px;
+  left: 88%;
+  -webkit-transform: rotate(-70deg);
+     -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-RH-O {
+  display: inline-block;
+  width: 220px;
+  height: 220px;
+  background: url("../../images/h_s12_232_130/red-blood.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  -webkit-transform: rotate(60deg);
+     -moz-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-RH-O.on {
+  background: url("../../images/h_s12_232_130/red-blood.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  z-index: -1;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-RH-O .blind {
+  -webkit-transform: rotate(-60deg);
+     -moz-transform: rotate(-60deg);
+      -ms-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  left: -102px;
+  top: 145px;
+  display: none;
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .img .agg-RH-O .blind::before {
+  height: 53px;
+  top: 13px;
+  left: 88%;
+  -webkit-transform: rotate(-70deg);
+     -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+}
+.h_s12_232_130 .scene-layer3 .agglutinin-box .red-blood .txt {
+  background: #29323d;
+  -moz-border-radius: 50px;
+       border-radius: 50px;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px 50px;
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+}
+.h_s12_232_130 .scene-layer3 .example-box {
+  position: absolute;
+  top: 700px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 850px;
+  height: 230px;
+  background: #242c36;
+  border: 5px solid #5a6471;
+  -moz-border-radius: 20px;
+       border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+     -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+  opacity: 1;
+  visibility: unset;
+  pointer-events: none;
+}
+.h_s12_232_130 .scene-layer3 .example-box.active {
+  pointer-events: unset;
+}
+.h_s12_232_130 .scene-layer3 .example-box .tit {
+  background: #465260;
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 3px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 6px 25px;
+  -moz-border-radius: 5px;
+       border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.h_s12_232_130 .scene-layer3 .example-box .con {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0px;
+}
+.h_s12_232_130 .scene-layer3 .example-box .con .agg-A {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: url("../../images/h_s12_232_130/red-blood-A.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer3 .example-box .con .agg-B {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: url("../../images/h_s12_232_130/red-blood-B.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer3 .example-box .con .agg-RH {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: url("../../images/h_s12_232_130/red-blood-RH.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+}
+.h_s12_232_130 .scene-layer3 .example-box .con .agg-RH-O {
+  display: inline-block;
+  width: 0px;
+  height: 150px;
+  background: url("../../images/h_s12_232_130/red-blood.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+.h_s12_232_130 .scene-layer3 .example-box .con .agg-RH-O.active {
+  opacity: 1;
+  visibility: unset;
+  display: inline-block;
+}
+.h_s12_232_130 .scene-layer3 .example-box .con > div {
+  margin: 0px 20px;
+}
+.h_s12_232_130 .scene-layer3 .example-box .con > div.on {
+  display: none;
+}
+.h_s12_232_130 .scene-layer3 .prev-btn {
+  position: absolute;
+  top: 920px;
+  left: 50px;
+}
+.h_s12_232_130 .scene-layer3 .prev-btn button {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(113, 122, 133)), to(rgb(142, 150, 160)));
+  background: -webkit-linear-gradient(bottom, rgb(113, 122, 133) 0%, rgb(142, 150, 160) 100%);
+  background: -moz-linear-gradient(bottom, rgb(113, 122, 133) 0%, rgb(142, 150, 160) 100%);
+  background: -o-linear-gradient(bottom, rgb(113, 122, 133) 0%, rgb(142, 150, 160) 100%);
+  background: linear-gradient(0deg, rgb(113, 122, 133) 0%, rgb(142, 150, 160) 100%);
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+  padding: 15px 20px;
+  -moz-border-radius: 15px;
+       border-radius: 15px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+.h_s12_232_130 .scene-layer3 .prev-btn button .arr {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url("../../images/h_s12_232_130/icon-arr-right.png") center no-repeat;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  vertical-align: middle;
+  -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  vertical-align: text-top;
+}
+.h_s12_232_130 .guide-balloon-tip-wrap {
+  z-index: 3;
+}
+.h_s12_232_130 .guide-balloon-tip-wrap .bubble-box .bubble-text {
+  position: relative;
+  opacity: 1;
+  visibility: unset;
+}
+.h_s12_232_130 .info-box {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+  background: #838159;
+  -moz-border-radius: 10px;
+       border-radius: 10px;
+  padding: 20px 25px;
+  -webkit-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -1px -1px 4px rgba(0, 0, 0, 0.7), inset 1px 1px 4px rgba(255, 255, 255, 0.7), 1px 1px 8px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.h_s12_232_130 .info-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -18px;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 23px solid #838159;
+  border-bottom: 13px solid transparent;
+  z-index: 1;
+}
+.h_s12_232_130 .info-box p {
+  color: #e9e5be;
+  font-size: 25px;
+  line-height: 35px;
+}
+.h_s12_232_130 .info-box.info-box1-1 {
+  top: 238px;
+  left: 1207px;
+}
+.h_s12_232_130 .info-box.info-box1-2 {
+  top: 325px;
+  left: 1207px;
+}
+.h_s12_232_130 .info-box.info-box1-3 {
+  top: 411px;
+  left: 1207px;
+}
+.h_s12_232_130 .info-box.info-box1-4 {
+  top: 500px;
+  left: 1207px;
+}
+.h_s12_232_130 .info-box.info-box1-5 {
+  top: 586px;
+  left: 1207px;
+}
+.h_s12_232_130 .info-box.info-box1-6 {
+  top: 674px;
+  left: 1207px;
+}
+.h_s12_232_130 .info-box.info-box1-7 {
+  top: 761px;
+  left: 1207px;
+}
+.h_s12_232_130 .info-box.info-box1-8 {
+  top: 847px;
+  left: 1207px;
+}
+.h_s12_232_130 .info-box.info-box3, .h_s12_232_130 .info-box.info-box3-2, .h_s12_232_130 .info-box.info-box3-3, .h_s12_232_130 .info-box.info-box3-4, .h_s12_232_130 .info-box.info-box3-5, .h_s12_232_130 .info-box.info-box3-6, .h_s12_232_130 .info-box.info-box3-7, .h_s12_232_130 .info-box.info-box3-8 {
+  top: 560px;
+  right: 480px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+.h_s12_232_130 .info-box.info-box3::before, .h_s12_232_130 .info-box.info-box3-2::before, .h_s12_232_130 .info-box.info-box3-3::before, .h_s12_232_130 .info-box.info-box3-4::before, .h_s12_232_130 .info-box.info-box3-5::before, .h_s12_232_130 .info-box.info-box3-6::before, .h_s12_232_130 .info-box.info-box3-7::before, .h_s12_232_130 .info-box.info-box3-8::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: auto;
+  right: 55px;
+  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border-top: 13px solid transparent;
+  border-right: 23px solid #838159;
+  border-bottom: 13px solid transparent;
+}
+.h_s12_232_130 .info-box.info-box3 p, .h_s12_232_130 .info-box.info-box3-2 p, .h_s12_232_130 .info-box.info-box3-3 p, .h_s12_232_130 .info-box.info-box3-4 p, .h_s12_232_130 .info-box.info-box3-5 p, .h_s12_232_130 .info-box.info-box3-6 p, .h_s12_232_130 .info-box.info-box3-7 p, .h_s12_232_130 .info-box.info-box3-8 p {
+  position: relative;
+}
+.h_s12_232_130 .info-box.active {
+  opacity: 1;
+  visibility: unset;
+}
+.h_s12_232_130 .gesture-finger {
+  display: inline-block;
+  position: absolute;
+  z-index: 3;
+  width: 84px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: contain;
+     -moz-background-size: contain;
+          background-size: contain;
+  background-image: url("../../images/common/icon-click-hand.png");
+  pointer-events: none;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.h_s12_232_130 .gesture-finger.gesture-box-guide-finger1 {
+  left: 477px;
+  top: 962px;
+  opacity: 0;
+  visibility: hidden;
+}
+.h_s12_232_130 .gesture-finger.gesture-box-guide-finger1.active {
+  -webkit-animation-name: viewHidden;
+     -moz-animation-name: viewHidden;
+          animation-name: viewHidden;
+  -webkit-animation-direction: alternate;
+     -moz-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 0.5s;
+     -moz-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+.h_s12_232_130 .gesture-finger.gesture-box-guide-finger2 {
+  left: 280px;
+  top: 475px;
+  opacity: 0;
+  visibility: hidden;
+}
+.h_s12_232_130 .gesture-finger.gesture-box-guide-finger2.active {
+  -webkit-animation-name: leftrightmove1;
+     -moz-animation-name: leftrightmove1;
+          animation-name: leftrightmove1;
+  -webkit-animation-direction: alternate;
+     -moz-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1.5s;
+     -moz-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+.h_s12_232_130 .gesture-finger.gesture-box-guide-finger3 {
+  left: 154px;
+  top: 320px;
+  opacity: 0;
+  visibility: hidden;
+}
+.h_s12_232_130 .gesture-finger.gesture-box-guide-finger3.active {
+  -webkit-animation-name: viewHidden;
+     -moz-animation-name: viewHidden;
+          animation-name: viewHidden;
+  -webkit-animation-direction: alternate;
+     -moz-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 0.5s;
+     -moz-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+.h_s12_232_130 .gesture-finger.gesture-box-guide-finger4 {
+  left: 758px;
+  top: 810px;
+  opacity: 0;
+  visibility: hidden;
+}
+.h_s12_232_130 .gesture-finger.gesture-box-guide-finger4.active {
+  -webkit-animation-name: leftrightmove2;
+     -moz-animation-name: leftrightmove2;
+          animation-name: leftrightmove2;
+  -webkit-animation-direction: alternate;
+     -moz-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1.5s;
+     -moz-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+@-webkit-keyframes dragmove {
+  0% {
+    left: 1020px;
+    opacity: 1;
+    visibility: unset;
+  }
+  100% {
+    left: 1250px;
+    opacity: 1;
+    visibility: unset;
+  }
+}
+@-moz-keyframes dragmove {
+  0% {
+    left: 1020px;
+    opacity: 1;
+    visibility: unset;
+  }
+  100% {
+    left: 1250px;
+    opacity: 1;
+    visibility: unset;
+  }
+}
+@keyframes dragmove {
+  0% {
+    left: 1020px;
+    opacity: 1;
+    visibility: unset;
+  }
+  100% {
+    left: 1250px;
+    opacity: 1;
+    visibility: unset;
+  }
+}
+@-webkit-keyframes leftrightmove1 {
+  0% {
+    opacity: 1;
+    visibility: unset;
+    left: 280px;
+    top: 475px;
+  }
+  100% {
+    opacity: 1;
+    visibility: unset;
+    left: 730px;
+    top: 300px;
+  }
+}
+@-moz-keyframes leftrightmove1 {
+  0% {
+    opacity: 1;
+    visibility: unset;
+    left: 280px;
+    top: 475px;
+  }
+  100% {
+    opacity: 1;
+    visibility: unset;
+    left: 730px;
+    top: 300px;
+  }
+}
+@keyframes leftrightmove1 {
+  0% {
+    opacity: 1;
+    visibility: unset;
+    left: 280px;
+    top: 475px;
+  }
+  100% {
+    opacity: 1;
+    visibility: unset;
+    left: 730px;
+    top: 300px;
+  }
+}
+@-webkit-keyframes leftrightmove2 {
+  0% {
+    opacity: 1;
+    visibility: unset;
+    left: 758px;
+    top: 810px;
+  }
+  100% {
+    opacity: 1;
+    visibility: unset;
+    left: 1365px;
+    top: 350px;
+  }
+}
+@-moz-keyframes leftrightmove2 {
+  0% {
+    opacity: 1;
+    visibility: unset;
+    left: 758px;
+    top: 810px;
+  }
+  100% {
+    opacity: 1;
+    visibility: unset;
+    left: 1365px;
+    top: 350px;
+  }
+}
+@keyframes leftrightmove2 {
+  0% {
+    opacity: 1;
+    visibility: unset;
+    left: 758px;
+    top: 810px;
+  }
+  100% {
+    opacity: 1;
+    visibility: unset;
+    left: 1365px;
+    top: 350px;
+  }
+}
+@-webkit-keyframes topBottomMove1 {
+  0% {
+    top: 144px;
+  }
+  100% {
+    top: 248px;
+  }
+}
+@-moz-keyframes topBottomMove1 {
+  0% {
+    top: 144px;
+  }
+  100% {
+    top: 248px;
+  }
+}
+@keyframes topBottomMove1 {
+  0% {
+    top: 144px;
+  }
+  100% {
+    top: 248px;
+  }
+}
+@-webkit-keyframes topBottomMove2 {
+  0% {
+    top: 696px;
+  }
+  100% {
+    top: 596px;
+  }
+}
+@-moz-keyframes topBottomMove2 {
+  0% {
+    top: 696px;
+  }
+  100% {
+    top: 596px;
+  }
+}
+@keyframes topBottomMove2 {
+  0% {
+    top: 696px;
+  }
+  100% {
+    top: 596px;
+  }
+}
+@-webkit-keyframes viewHidden {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: unset;
+  }
+}
+@-moz-keyframes viewHidden {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: unset;
+  }
+}
+@keyframes viewHidden {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: unset;
+  }
+}
+/*# sourceMappingURL=../maps/page/h_s12_232_130.css.map */

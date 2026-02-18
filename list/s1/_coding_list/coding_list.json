@@ -1,0 +1,55 @@
+{
+    "templete": {
+        "h2Title": "<h2><a href=\"#\" onclick=\"toggleFunc(event, this)\">{title}</a></h2>",
+        "detail": [
+            "{html}",
+            "<td colspan=\"{colspan}\" class=\"{td_class}\"><a href=\"{href}\" target=\"{target}\" class=\"{class}\" onclick=\"clickFuncs(event, this)\">{subject}<span class=\"{comment_class}\">{comment}</span></a><a href=\"{href}\" target=\"_blank\" class=\"new_window\">새창</a></td>"
+        ]
+    },
+    "header": {
+        "title": "에스원(S1) : PC[국문-KOR]"
+    },
+    "links": {
+        "에스원(S1) : PC[국문-KOR]": {
+            "디지털 쇼룸":{
+                "인트로": ["/showroom/intro.html", "mainframe", "완료", ""],
+                "시큐리티 서비스": {
+                    "단독주택": ["/showroom/house.html", "mainframe", "진행중", ""],
+                    "공동주택": ["/showroom/villa.html", "mainframe", "진행중", ""],
+                    "매장": ["/showroom/store.html", "mainframe", "진행중", ""],
+                    "사무실": ["/showroom/office.html", "mainframe", "진행중", ""],
+                    "공장": ["/showroom/factory.html", "mainframe", "진행중", ""],
+                    "창고": ["/showroom/storage.html", "mainframe", "진행중", ""]
+                },
+                "건물관리 서비스": {
+                    "블루스캔(비상주 건물관리)": ["/showroom/bluescan.html", "mainframe", "진행중", ""],
+                    "자산관리(PM) 시설관리(FM)": ["/showroom/pmfm.html", "mainframe", "진행중", ""]
+                },
+                "견적 페이지": {
+                    "가격견적": ["/showroom/pricing.html", "mainframe", "진행중", ""]
+                }
+            },
+            "가이드" : {
+                "공통 컴포넌트": ["/showroom/components.html", "mainframe", "진행중", ""],
+                "공통 컴포넌트 - sr1 단독주택": ["/showroom/components1.html", "mainframe", "진행중", ""],
+                "공통 컴포넌트 - sr5 공장": ["/showroom/components5.html", "mainframe", "진행중", ""],
+                "공통 컴포넌트 - sr6 창고": ["/showroom/components6.html", "mainframe", "진행중", ""]
+            },
+            "백업(이전 작업물)" : {
+                "인트로(이전 백업)": ["/showroom/before_main.html", "mainframe", "완료", ""]
+            },
+            "샘플페이지": {
+                "메인[s1.co.kr]" : ["/index.html", "mainframe", "완료", ""],
+                "세콤" : {
+                    "상업용 세콤": ["/secom/commercial/commercial.html", "mainframe", "완료", ""],
+                    "가정용 세콤": ["/secom/household/household.html", "mainframe", "완료", ""],
+                    "아파트단지(HUEN)": ["/secom/household/huen/huen.html", "mainframe", "완료", ""]
+                },
+                "영상보안" : {
+                    "CCTV": ["/cctv/cctv.html", "mainframe", "완료", ""],
+                    "지능형 CCTV": ["/cctv/intelligent-video-security/intelligent-video-security.html", "mainframe", "완료", ""]
+                }
+            }
+        }
+    }
+}

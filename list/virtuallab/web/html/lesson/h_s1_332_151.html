@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>동물 세포와 식물 세포에서 일어나는 삼투 확인하기</title>
+        <!-- 공통 css -->
+        <link type="text/css" href="../../css/common.css?t=1739422595771" rel="stylesheet" />
+        <!-- 주제별 css -->
+        <link type="text/css" href="../../css/page/h_s1_332_151.css?t=1739422595771" rel="stylesheet" />
+        <link type="text/css" href="../../css/swiper-bundle.min.css?t=1739422595771" rel="stylesheet" />
+        <script src="../../js/lib/swiper.min.js?t=1739422595771"></script>
+        <script src="../../js/lib/jquery.min.js?t=1739422595771"></script>
+        <script src="../../js/lib/jquery-ui.min.js?t=1739422595771"></script>
+        <script src="../../js/lib/jquery.ui.touch-punch.min.js?t=1739422595771"></script>
+        <script src="../../js/lib/video-js.js?t=1739422595771"></script>
+        <script src="../../js/lib/video.js?t=1739422595771"></script>
+        <script src="../../js/lib/gsap.min.js?t=1739422595771"></script>
+        <script src="../../js/lib/p5.min.js?t=1739422595771"></script>
+        <script src="../../js/common.js?t=1739422595771"></script>
+        <script src="../../js/h_s1_332_151.js?t=1739422595771"></script>
+    </head>
+    <body>
+        <!-- Wrap 영역 -->
+        <div id="wrap" class="wrap wrap-new">
+            <!-- View 영역 -->
+            <div class="wrapper-set-view h_s1_332_151">
+                <!-- page-view1 : (페이지) 인트로 : page-view1 intro에 인접클래스 active가 있으면 보여짐 제거시 사라짐 -->
+                <div class="page-view page-view1 intro active">
+                    <!-- intro header area : 인트로 헤더영역 -->
+                    <div class="header-area header-area-intro">
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// intro header area : 인트로 헤더영역 -->
+
+                    <!-- Common Element : 인트로 과목명 -->
+                    <div class="background-area">
+                        <div class="background-area-inner">
+                            <em class="object-cockle-hat">
+                                <span class="blind">꼬깔모자 요소</span>
+                            </em>
+                            <h2 class="intro-title-text">
+                                동물 세포와 식물 세포에서<br />
+                                일어나는 <span class="text-color-fff605">삼투</span> 확인하기
+                            </h2>
+                            <ul class="ruler">
+                                <li class="begin">
+                                    <span class="number">0</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">10</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">20</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">30</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">40</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 과목명 -->
+
+                    <!-- Common Element : 인트로 메인으로 시작 버튼 -->
+                    <div class="button-intro-area">
+                        <div class="button-start-area">
+                            <button class="button-intro-main-start">
+                                <em class="text-box">
+                                    <span>활동 시작</span>
+                                </em>
+                                <em class="arrow-box">
+                                    <span class="text blind">-&gt;</span>
+                                    <i class="icon"></i>
+                                </em>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 메인으로 시작 버튼 -->
+
+                    <!-- Common Element : 인트로 캐릭터 -->
+                    <div class="intro-character1-layer">
+                        <span class="blind">인트로 캐릭터</span>
+                        <ul id="" class="interaction-character-list">
+                            <li class="motion-1">
+                                <img src="../../images/common/character1/character1-motion1.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// Common Element : 인트로 캐릭터 -->
+                </div>
+                <!--// page-view1 : (페이지) 인트로 -->
+
+                <!-- page-view2 : (모달) 활동목표 : page-view2에 인접클래스 active가 있으면 보여짐 제거시 사라짐 님 -->
+                <div class="page-view page-view2 modal-layer modal-layer-activity-goals">
+                    <div class="modal-layer-box aim-madal">
+                        <button class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <h4 class="title-round">
+                            <span>활동 목표</span>
+                        </h4>
+                        <ul class="bullet-list">
+                            <li>
+                                동물 세포와 식물 세포를 농도가 다른<br />
+                                용액에 넣었을 때 삼투에 의해<br />
+                                나타나는 현상을 설명할 수 있다.
+                            </li>
+                        </ul>
+                        <div class="character-guide h-character-activity-goals">
+                            <span class="blind">고등 활동목표</span>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view2 : (모달) 활동목표 -->
+
+                <!-- page-view3 : (페이지) 컨텐츠 페이지 -->
+                <div class="page-view page-view3 content-area">
+                    <!-- Content Header Area : 컨텐츠 헤더영역 -->
+                    <div class="header-area header-area-content">
+                        <!-- Common Title : 타이틀 -->
+                        <div class="header-title">
+                            <p>동물 세포와 식물 세포에서 일어나는 삼투 확인하기</p>
+                        </div>
+                        <!--// Common Title : 타이틀 -->
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-home">
+                                <span class="blind">홈</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// Content Header Area : 컨텐츠 헤더영역 -->
+
+                    <!-- 씬 영역 : 씬 영역1 -->
+                    <div class="scene scene-layer-area1">
+                        <div class="scene-layer scene-layer1">
+                            <div class="drag-area-cell-wrap">
+                                <ul>
+                                    <li class="drag-area-cell-item cell-animal">
+                                        <span class="cell-frame">
+                                            <i data-drag-item="animal"></i>
+                                        </span>
+                                        <p class="cell-text">동물 세포<br /><small>(적혈구)</small></p>
+                                    </li>
+                                    <li class="drag-area-cell-item cell-plant">
+                                        <span class="cell-frame">
+                                            <i data-drag-item="plant"></i>
+                                        </span>
+                                        <p class="cell-text">식물 세포</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="drop-area-beaker-wrap">
+                                <!-- 가이드 -->
+                                <div class="drag-guide-wrap drag-guide-wrap-1">
+                                    <span class="drag-guide-circle">
+                                        <i class="blind">원</i>
+                                    </span>
+                                    <span class="drag-guide-line">
+                                        <i class="blind">라인</i>
+                                    </span>
+                                    <span class="drag-guide-arrow">
+                                        <i class="blind">화살표</i>
+                                    </span>
+                                    <span class="drag-guide-hand">
+                                        <i class="blind">손가락</i>
+                                    </span>
+                                </div>
+                                <!-- 비커 -->
+                                <ul>
+                                    <li class="drop-area-beaker-item drop-area-beaker-item-1">
+                                        <span class="beaker-bg">
+                                            <span class="beaker-top"></span>
+                                            <span class="beaker-bottom">
+                                                <span class="beaker-inner">
+                                                    <span class="anime-img"></span>
+                                                </span>
+                                                <i data-drop-target="low"></i>
+                                            </span>
+                                        </span>
+                                        <p class="beaker-text">
+                                            세포 안보다 용질의<br />
+                                            농도가 낮은 용액
+                                        </p>
+                                    </li>
+                                    <li class="drop-area-beaker-item drop-area-beaker-item-2">
+                                        <span class="beaker-bg">
+                                            <span class="beaker-top"></span>
+                                            <span class="beaker-bottom">
+                                                <span class="beaker-inner"> 비커 내 세포 </span>
+                                                <i data-drop-target="same"></i>
+                                            </span>
+                                        </span>
+                                        <p class="beaker-text">
+                                            세포 안과 용질의<br />
+                                            농도가 같은 용액
+                                        </p>
+                                    </li>
+                                    <li class="drop-area-beaker-item drop-area-beaker-item-3">
+                                        <span class="beaker-bg">
+                                            <span class="beaker-top"></span>
+                                            <span class="beaker-bottom">
+                                                <span class="beaker-inner"> 비커 내 세포 </span>
+                                                <i data-drop-target="high"></i>
+                                            </span>
+                                        </span>
+                                        <p class="beaker-text">
+                                            세포 안보다 용질의<br />
+                                            농도가 높은 용액
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 초기화 버튼 -->
+                            <button class="btn-retry" type="button" title="초기화"></button>
+
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text1 active">
+                                            동물 세포와 식물 세포를 농도가<br />
+                                            서로 다른 용액에 넣었을 때<br />
+                                            나타나는 현상을 확인해 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text2 active">
+                                            세포를 각각의 비커로<br />
+                                            드래그하세요.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text3 active">
+                                            적혈구가 부풀어<br />
+                                            오르다가 터집니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text4 active">
+                                            적혈구의 부피가<br />
+                                            변하지 않습니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap5">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text5 active">
+                                            적혈구가<br />
+                                            쭈그러듭니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap6">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text6 active">
+                                            식물 세포가<br />
+                                            팽팽해집니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap7">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text7 active">
+                                            식물 세포의 부피가<br />
+                                            변하지 않습니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap8">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text8 active">
+                                            식물 세포의 세포막과<br />
+                                            세포벽이 분리됩니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scene-layer scene-layer2"></div>
+                    </div>
+                    <!--// 씬 영역 : 씬 영역1 -->
+
+                    <!-- 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                    <ul class="tab-list-basic">
+                        <li>
+                            <!-- 버튼 클릭 : button-tab 인접클래스 active 추가 -->
+                            <button class="button-tab">
+                                <span>정리하기</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                </div>
+                <!--// page-view3 : (페이지) 컨텐츠 페이지 -->
+
+                <!-- page-view4 : 탭 스타일 page-view4 modal-layer-activity-goals3 인접클래스 active시 활성화 -->
+                <div class="page-view page-view4 modal-layer-activity-goals3 modal-layer">
+                    <!-- modal-layer-box tab-modal 인접클래스 active 추가시 우에서 좌로 모션 -->
+                    <div class="modal-layer-box tab-modal active">
+                        <h4 class="title-sign">
+                            <span class="text">정리하기</span>
+                        </h4>
+                        <button id="btnTabClose" class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <div class="text-content-area">
+                            <div class="modal-inner">
+                                <!-- 테이블 -->
+                                <div class="modal-table-wrap">
+                                    <div class="table-box">
+                                        <div class="table-head">
+                                            <div class="table-row">
+                                                <div class="th">
+                                                    <p class="position-center">구분</p>
+                                                </div>
+                                                <div class="th">
+                                                    세포 안보다 용질의<br />
+                                                    농도가 낮은 용액
+                                                </div>
+                                                <div class="th">
+                                                    세포 안과 용질의<br />
+                                                    농도가 같은 용액
+                                                </div>
+                                                <div class="th">
+                                                    세포 안보다 용질의<br />
+                                                    농도가 높은 용액
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-body">
+                                            <div class="table-row row-animal">
+                                                <div class="th">
+                                                    <p class="position-center">
+                                                        동물 세포<br />
+                                                        (적혈구)
+                                                    </p>
+                                                </div>
+                                                <div class="td">
+                                                    <span class="img-box">
+                                                        <img
+                                                            src="../../images/h_s1_332_151/img-modal-table-animal-cell-1.png"
+                                                            alt="세포이미지"
+                                                        />
+                                                    </span>
+                                                    <p>
+                                                        세포 안으로 들어오는 물의 양이 많아<br />
+                                                        부풀어 오르다가 터질 수 있다.
+                                                    </p>
+                                                </div>
+                                                <div class="td">
+                                                    <span class="img-box">
+                                                        <img
+                                                            src="../../images/h_s1_332_151/img-modal-table-animal-cell-2.png"
+                                                            alt="세포이미지"
+                                                    /></span>
+                                                    <p>
+                                                        세포 안팎으로 이동하는 물의 양이 같아<br />
+                                                        부피가 변하지 않는다.
+                                                    </p>
+                                                </div>
+                                                <div class="td">
+                                                    <span class="img-box"
+                                                        ><img
+                                                            src="../../images/h_s1_332_151/img-modal-table-animal-cell-3.png"
+                                                            alt="세포이미지"
+                                                    /></span>
+                                                    <p>
+                                                        세포 밖으로 빠져나가는 물의 양이 많아<br />
+                                                        쭈그러든다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="table-row row-plant">
+                                                <div class="th">
+                                                    <p class="position-center">식물 세포</p>
+                                                </div>
+                                                <div class="td">
+                                                    <span class="img-box"
+                                                        ><img
+                                                            src="../../images/h_s1_332_151/img-modal-table-plant-cell-1.png"
+                                                            alt="세포이미지"
+                                                    /></span>
+                                                    <p>
+                                                        세포 안으로 들어오는 물의 양이 많아<br />
+                                                        세포가 팽팽해진다.
+                                                    </p>
+                                                </div>
+                                                <div class="td">
+                                                    <span class="img-box"
+                                                        ><img
+                                                            src="../../images/h_s1_332_151/img-modal-table-plant-cell-2.png"
+                                                            alt="세포이미지"
+                                                    /></span>
+                                                    <p>
+                                                        세포 안팎으로 이동하는 물의 양이 같아<br />
+                                                        부피가 변하지 않는다.
+                                                    </p>
+                                                </div>
+                                                <div class="td">
+                                                    <span class="img-box"
+                                                        ><img
+                                                            src="../../images/h_s1_332_151/img-modal-table-plant-cell-3.png"
+                                                            alt="세포이미지"
+                                                    /></span>
+                                                    <p>
+                                                        세포 밖으로 빠져나가는 물의 양이 많아<br />
+                                                        세포막과 세포벽이 분리된다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 텍스트 -->
+                                <p class="modal-text">
+                                    세포막을 경계로 세포 안팎에 농도가 다른 용액이 있을 때에는 물 분자가 세포막을 통해
+                                    <br />
+                                    용질의 농도가 낮은 곳에서 높은 곳으로 이동하는 삼투가 일어난다.
+                                </p>
+                                <!-- 캐릭터 -->
+                                <div class="character-area character">
+                                    <img src="../../images/common/character/h-character-organizing.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view4 : 탭 스타일 - 우에서 좌로 모션 -->
+            </div>
+            <!--// View 영역 -->
+        </div>
+        <!--// Wrap 영역 -->
+    </body>
+</html>

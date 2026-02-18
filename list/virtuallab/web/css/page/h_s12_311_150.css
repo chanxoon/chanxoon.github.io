@@ -1,0 +1,2344 @@
+.h_s12_311_150 .intro-title-text {
+  font-size: 108px;
+  line-height: 113px;
+  letter-spacing: -2px;
+}
+.h_s12_311_150 .modal-layer .aim-madal .bullet-list {
+  width: 80%;
+  padding-left: 62px;
+}
+.h_s12_311_150 .guide-balloon-tip-wrap {
+  z-index: 20 !important;
+  top: 123px;
+}
+.h_s12_311_150 .guide-modal-tip-wrap {
+  position: absolute;
+  top: 138px;
+  -moz-border-radius: 40px;
+       border-radius: 40px;
+  background: rgb(69, 106, 190);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(69, 106, 190)), to(rgb(115, 155, 245)));
+  background: -webkit-linear-gradient(bottom, rgb(69, 106, 190) 0%, rgb(115, 155, 245) 100%);
+  background: -moz-linear-gradient(bottom, rgb(69, 106, 190) 0%, rgb(115, 155, 245) 100%);
+  background: -o-linear-gradient(bottom, rgb(69, 106, 190) 0%, rgb(115, 155, 245) 100%);
+  background: linear-gradient(0deg, rgb(69, 106, 190) 0%, rgb(115, 155, 245) 100%);
+  right: -100%;
+  -webkit-transition-duration: 1s;
+     -moz-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+  z-index: 20;
+}
+.h_s12_311_150 .guide-modal-tip-wrap.active {
+  right: 56px;
+}
+.h_s12_311_150 .guide-modal-tip-wrap .modal-box {
+  padding: 80px 50px 50px 99px;
+}
+.h_s12_311_150 .guide-modal-tip-wrap .modal-text {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+.h_s12_311_150 .guide-modal-tip-wrap .img-character-box {
+  position: absolute;
+  top: -83px;
+  left: 36px;
+}
+.h_s12_311_150 .guide-modal-tip-wrap1 {
+  width: 735px;
+}
+.h_s12_311_150 .guide-modal-tip-wrap1 .modal-text {
+  display: block;
+  min-height: 34px;
+}
+.h_s12_311_150 .scene-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.h_s12_311_150 .scene-layer.active {
+  visibility: unset;
+  opacity: 1;
+  overflow: unset;
+}
+.h_s12_311_150 .scene-layer .scene-inner {
+  height: 100%;
+  padding: 120px 120px 60px;
+}
+.h_s12_311_150 .tab-list-basic {
+  top: 880px;
+}
+.h_s12_311_150 .drag-guide-wrap {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition-duration: 0.2s;
+     -moz-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.h_s12_311_150 .drag-guide-wrap.show {
+  visibility: unset;
+  opacity: 1;
+}
+.h_s12_311_150 .drag-guide-wrap.show .drag-guide-hand:before {
+  -webkit-animation-play-state: running;
+     -moz-animation-play-state: running;
+          animation-play-state: running;
+}
+.h_s12_311_150 .drag-guide-wrap > span {
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+}
+.h_s12_311_150 .drag-guide-circle {
+  width: 27px;
+  height: 27px;
+  border: 7px solid #262e38;
+  -moz-border-radius: 50%;
+       border-radius: 50%;
+  background: #fff;
+  top: 0;
+  left: 0;
+}
+.h_s12_311_150 .drag-guide-line {
+  width: 6px;
+  background: url(../../images/h_s12_311_150/img-guide-line-dot.png) repeat-y 50% 0/6px 15px;
+}
+.h_s12_311_150 .drag-guide-arrow {
+  width: 56px;
+  height: 56px;
+  background: url(../../images/h_s12_311_150/img-guide-arrow.png) no-repeat 50%/56px auto;
+  bottom: 0;
+}
+.h_s12_311_150 .drag-guide-hand {
+  width: 84px;
+  z-index: 3;
+}
+.h_s12_311_150 .drag-guide-hand:before {
+  content: "";
+  display: inline-block;
+  width: 84px;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../../images/common/item-finger-right.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 84px auto;
+     -moz-background-size: 84px auto;
+          background-size: 84px auto;
+  background-position: 50%;
+  -webkit-animation-name: guideHand;
+     -moz-animation-name: guideHand;
+          animation-name: guideHand;
+  -webkit-animation-duration: 1.5s;
+     -moz-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+     -moz-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: paused;
+     -moz-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-iteration-count: 3;
+     -moz-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+.h_s12_311_150 .drag-guide-wrap-1 {
+  width: 143px;
+  height: 263px;
+  position: absolute;
+  top: 403px;
+  left: 791px;
+  z-index: 5;
+  -webkit-transform: rotate(-140deg);
+     -moz-transform: rotate(-140deg);
+      -ms-transform: rotate(-140deg);
+          transform: rotate(-140deg);
+}
+.h_s12_311_150 .drag-guide-wrap-1 .drag-guide-circle {
+  left: auto;
+  right: 0;
+}
+.h_s12_311_150 .drag-guide-wrap-1 .drag-guide-line {
+  height: 160px;
+  top: 32px;
+  left: auto;
+  right: 9px;
+}
+.h_s12_311_150 .drag-guide-wrap-1 .drag-guide-arrow {
+  left: auto;
+  right: -14px;
+}
+.h_s12_311_150 .drag-guide-wrap-1 .drag-guide-hand {
+  height: 165px;
+  top: 32px;
+  right: 18px;
+  left: auto;
+}
+.h_s12_311_150 .drag-guide-wrap-1 .drag-guide-hand:before {
+  -webkit-transform: rotate(136deg);
+     -moz-transform: rotate(136deg);
+      -ms-transform: rotate(136deg);
+          transform: rotate(136deg);
+  left: auto;
+  right: 14px;
+}
+.h_s12_311_150 .drag-guide-wrap-2 {
+  width: 61px;
+  height: 471px;
+  position: absolute;
+  top: 714px;
+  left: 560px;
+  z-index: 5;
+  -webkit-transform-origin: 0 0;
+     -moz-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(233deg);
+     -moz-transform: rotate(233deg);
+      -ms-transform: rotate(233deg);
+          transform: rotate(233deg);
+}
+.h_s12_311_150 .drag-guide-wrap-2 .drag-guide-circle {
+  left: auto;
+  right: 0;
+}
+.h_s12_311_150 .drag-guide-wrap-2 .drag-guide-line {
+  height: 373px;
+  top: 32px;
+  left: auto;
+  right: 9px;
+}
+.h_s12_311_150 .drag-guide-wrap-2 .drag-guide-arrow {
+  left: auto;
+  right: -14px;
+}
+.h_s12_311_150 .drag-guide-wrap-2 .drag-guide-hand {
+  height: 373px;
+  top: 32px;
+  right: 18px;
+  left: auto;
+}
+.h_s12_311_150 .drag-guide-wrap-2 .drag-guide-hand:before {
+  -webkit-transform: rotate(136deg);
+     -moz-transform: rotate(136deg);
+      -ms-transform: rotate(136deg);
+          transform: rotate(136deg);
+  left: auto;
+  right: 14px;
+  -webkit-animation-duration: 2s;
+     -moz-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.h_s12_311_150 .layer-dimmed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  z-index: -1;
+}
+.h_s12_311_150 .layer-dimmed.show {
+  -webkit-transition-duration: 0.2s;
+     -moz-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-property: opacity;
+  z-index: 14;
+  opacity: 1;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-wrap,
+.h_s12_311_150 .scene-layer2 .chromosome-wrap {
+  font-size: 0;
+  width: 100%;
+  letter-spacing: -0.5px;
+  padding-top: 40px;
+  height: 100%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box,
+.h_s12_311_150 .scene-layer2 .chromosome-box {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker,
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker {
+  width: 741px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .chromosome-box-view,
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .chromosome-box-view {
+  padding: 15px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .box-inner,
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .box-inner {
+  background: #fff;
+  -webkit-box-shadow: inset 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: inset 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .box-inner .drag-item,
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .box-inner .drag-item {
+  display: inline-block;
+  position: absolute;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .box-inner .drag-item.zIndex span,
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .box-inner .drag-item.zIndex span {
+  z-index: 10;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .box-inner .drag-item.zIndex span.moved,
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .box-inner .drag-item.zIndex span.moved {
+  z-index: 2;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .box-inner .drag-item span,
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .box-inner .drag-item span {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: auto;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .box-inner .drag-item span.moved,
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .box-inner .drag-item span.moved {
+  cursor: default;
+  width: 62px;
+  height: 129px;
+  z-index: 1;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .box-inner .drag-item span.moved > img,
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .box-inner .drag-item span.moved > img {
+  -webkit-transform: translateX(-50%) !important;
+     -moz-transform: translateX(-50%) !important;
+      -ms-transform: translateX(-50%) !important;
+          transform: translateX(-50%) !important;
+  -webkit-transition-duration: 0.3s;
+     -moz-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  position: absolute;
+  left: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .box-inner .drag-item img,
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .box-inner .drag-item img {
+  width: auto;
+  -webkit-transform-origin: center;
+     -moz-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type,
+.h_s12_311_150 .scene-layer2 .chromosome-box.type {
+  width: 906px;
+  margin-left: 33px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .chromosome-box-view,
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .chromosome-box-view {
+  padding: 10px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-wrap.zIndex,
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-wrap.zIndex {
+  z-index: 9;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-wrap.zIndex:has(.fill),
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-wrap.zIndex:has(.fill) {
+  z-index: unset;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box.fill .right > em,
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box.fill .right > em {
+  opacity: 1 !important;
+  visibility: unset !important;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-title,
+.h_s12_311_150 .scene-layer2 .chromosome-box-title {
+  font-size: 28px;
+  font-weight: 700;
+  height: 52px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-title > p,
+.h_s12_311_150 .scene-layer2 .chromosome-box-title > p {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  color: #fff;
+  padding: 20px 30px 0;
+  background: rgb(74, 93, 117);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(74, 93, 117)), to(rgb(74, 90, 111)));
+  background: -webkit-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -moz-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -o-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: linear-gradient(90deg, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  -moz-border-radius: 33px 33px 0 0;
+       border-radius: 33px 33px 0 0;
+  height: 100%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-title em,
+.h_s12_311_150 .scene-layer2 .chromosome-box-title em {
+  font-weight: inherit;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view {
+  position: relative;
+  top: -1px;
+  width: 100%;
+  height: -webkit-calc(100% - 52px);
+  height: -moz-calc(100% - 52px);
+  height: calc(100% - 52px);
+  background: rgb(74, 93, 117);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(74, 93, 117)), to(rgb(74, 90, 111)));
+  background: -webkit-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -moz-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -o-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: linear-gradient(90deg, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  -moz-border-radius: 0 33px 33px 33px;
+       border-radius: 0 33px 33px 33px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .box-inner,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .box-inner {
+  width: 100%;
+  height: 100%;
+  -moz-border-radius: 27px;
+       border-radius: 27px;
+  position: relative;
+  padding: 14px 10px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .box-inner .box-dimmed,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .box-inner .box-dimmed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(20, 24, 28, 0.86);
+  -moz-border-radius: inherit;
+       border-radius: inherit;
+  z-index: 3;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .box-inner .box-dimmed.hide,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .box-inner .box-dimmed.hide {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+  -webkit-transition-duration: 0.3s;
+     -moz-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-wrap,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-wrap {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 138px;
+  height: 180px;
+  padding-bottom: 23px;
+  position: relative;
+  margin: 0 7px 13px 0;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-wrap:nth-of-type(6n),
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-wrap:nth-of-type(6n) {
+  margin-right: 0;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-wrap.has-border:before,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-wrap.has-border:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  bottom: -7px;
+  left: -7px;
+  border: 5px dotted #ff4b04;
+  -moz-border-radius: 20px;
+       border-radius: 20px;
+  -webkit-animation-name: frameBlinker;
+     -moz-animation-name: frameBlinker;
+          animation-name: frameBlinker;
+  -webkit-animation-duration: 1.3s;
+     -moz-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-inner,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-inner {
+  -moz-border-radius: 22.5px;
+       border-radius: 22.5px;
+  height: 100%;
+  padding: 7px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-box,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-box {
+  background: #fff;
+  -moz-border-radius: 16.5px;
+       border-radius: 16.5px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-box:before,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-box:before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: -webkit-calc(100% - 14px);
+  height: -moz-calc(100% - 14px);
+  height: calc(100% - 14px);
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-side,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-side {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-side > i,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-side > i {
+  display: block;
+  width: 100%;
+  height: -webkit-calc(100% - 14px);
+  height: -moz-calc(100% - 14px);
+  height: calc(100% - 14px);
+  position: relative;
+  top: 7px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-side > em,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-side > em {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  background: #434d5a;
+  -moz-border-radius: 6.5px;
+       border-radius: 6.5px;
+  width: 23px;
+  height: 12px;
+  text-align: center;
+  line-height: 16px;
+  color: #fff;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  margin-left: -11.5px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-number,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-number {
+  width: 94px;
+  padding: 4px;
+  -moz-border-radius: 0 0 11.5px 11.5px;
+       border-radius: 0 0 11.5px 11.5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -47px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-number > p,
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-number > p {
+  font-size: 15px;
+  font-weight: 700;
+  color: #434d5a;
+  height: 22px;
+  line-height: 24px;
+  text-align: center;
+  -moz-border-radius: 5px 5px 10px 10px;
+       border-radius: 5px 5px 10px 10px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale1 {
+  height: 116px;
+  top: 357px;
+  left: 512px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale1 img {
+  -webkit-transform: rotate(28deg);
+     -moz-transform: rotate(28deg);
+      -ms-transform: rotate(28deg);
+          transform: rotate(28deg);
+  height: 116px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale1 .moved > img {
+  top: 10px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale2 {
+  height: 101px;
+  top: 45px;
+  left: 60px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale2 img {
+  height: 101px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale2 .moved > img {
+  top: 25px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale3 {
+  height: 89px;
+  top: 133px;
+  left: 199px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale3 img {
+  height: 89px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale3 .moved > img {
+  top: 38px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale4 {
+  height: 83px;
+  top: 62px;
+  left: 353px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale4 img {
+  -webkit-transform: rotate(-43deg);
+     -moz-transform: rotate(-43deg);
+      -ms-transform: rotate(-43deg);
+          transform: rotate(-43deg);
+  height: 83px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale4 .moved > img {
+  top: 43px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale5 {
+  height: 77px;
+  top: 56px;
+  left: 504px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale5 img {
+  -webkit-transform: rotate(13.9deg);
+     -moz-transform: rotate(13.9deg);
+      -ms-transform: rotate(13.9deg);
+          transform: rotate(13.9deg);
+  height: 77px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale5 .moved > img {
+  top: 50px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale6 {
+  height: 73px;
+  top: 147px;
+  left: 595px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale6 img {
+  -webkit-transform: rotate(123.6deg);
+     -moz-transform: rotate(123.6deg);
+      -ms-transform: rotate(123.6deg);
+          transform: rotate(123.6deg);
+  height: 73px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale6 .moved > img {
+  top: 54px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale7 {
+  height: 67px;
+  top: 181px;
+  left: 321px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale7 img {
+  -webkit-transform: rotate(29.5deg);
+     -moz-transform: rotate(29.5deg);
+      -ms-transform: rotate(29.5deg);
+          transform: rotate(29.5deg);
+  height: 67px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale7 .moved > img {
+  top: 43px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale8 {
+  height: 61px;
+  top: 279px;
+  left: 93px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale8 img {
+  height: 61px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale8 .moved > img {
+  top: 48px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale9 {
+  height: 64px;
+  top: 340px;
+  left: 212px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale9 img {
+  -webkit-transform: rotate(-24.75deg);
+     -moz-transform: rotate(-24.75deg);
+      -ms-transform: rotate(-24.75deg);
+          transform: rotate(-24.75deg);
+  height: 64px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale9 .moved > img {
+  top: 45px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale10 {
+  height: 60px;
+  top: 323px;
+  left: 408px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale10 img {
+  height: 60px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale10 .moved > img {
+  top: 49px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale11 {
+  height: 55px;
+  top: 188px;
+  left: 513px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale11 img {
+  -webkit-transform: rotate(-17.6deg);
+     -moz-transform: rotate(-17.6deg);
+      -ms-transform: rotate(-17.6deg);
+          transform: rotate(-17.6deg);
+  height: 55px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale11 .moved > img {
+  top: 54px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale12 {
+  height: 56px;
+  top: 370px;
+  left: 645px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale12 img {
+  height: 56px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale12 .moved > img {
+  top: 54px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale13 {
+  height: 51px;
+  top: 460px;
+  left: 309px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale13 img {
+  height: 51px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale13 .moved > img {
+  top: 61px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale14 {
+  height: 46px;
+  top: 467px;
+  left: 80px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale14 img {
+  -webkit-transform: rotate(120deg);
+     -moz-transform: rotate(120deg);
+      -ms-transform: rotate(120deg);
+          transform: rotate(120deg);
+  height: 46px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale14 .moved > img {
+  top: 65px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale15 {
+  height: 45px;
+  top: 561px;
+  left: 224px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale15 img {
+  height: 45px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale15 .moved > img {
+  top: 66px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale16 {
+  height: 42px;
+  top: 535px;
+  left: 445px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale16 img {
+  -webkit-transform: rotate(-34.6deg);
+     -moz-transform: rotate(-34.6deg);
+      -ms-transform: rotate(-34.6deg);
+          transform: rotate(-34.6deg);
+  height: 42px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale16 .moved > img {
+  top: 69px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale17 {
+  height: 38px;
+  top: 537px;
+  left: 604px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale17 img {
+  -webkit-transform: rotate(9.8deg);
+     -moz-transform: rotate(9.8deg);
+      -ms-transform: rotate(9.8deg);
+          transform: rotate(9.8deg);
+  height: 38px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale17 .moved > img {
+  top: 73px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale18 {
+  height: 38px;
+  top: 606px;
+  left: 350px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale18 img {
+  height: 38px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale18 .moved > img {
+  top: 73px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale19 {
+  height: 33px;
+  top: 609px;
+  left: 57px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale19 img {
+  height: 33px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale19 .moved > img {
+  top: 78px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale20 {
+  height: 30px;
+  top: 698px;
+  left: 130px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale20 img {
+  -webkit-transform: rotate(-15deg);
+     -moz-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  height: 30px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale20 .moved > img {
+  top: 81px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale21 {
+  height: 27px;
+  top: 703px;
+  left: 277px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale21 img {
+  height: 27px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale21 .moved > img {
+  top: 85px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale22 {
+  height: 29px;
+  top: 695px;
+  left: 445px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale22 img {
+  height: 29px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale22 .moved > img {
+  top: 83px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale23 {
+  height: 31px;
+  top: 647px;
+  left: 554px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale23 img {
+  -webkit-transform: rotate(-25.3deg);
+     -moz-transform: rotate(-25.3deg);
+      -ms-transform: rotate(-25.3deg);
+          transform: rotate(-25.3deg);
+  height: 31px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.sticker .drag-item#itemMale23 .moved > img {
+  top: 80px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner {
+  background: rgb(74, 93, 117);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(74, 93, 117)), to(rgb(74, 90, 111)));
+  background: -webkit-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -moz-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -o-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: linear-gradient(90deg, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  -webkit-box-shadow: inset 0px 0px 16px 0px rgba(40, 50, 61, 0.3);
+     -moz-box-shadow: inset 0px 0px 16px 0px rgba(40, 50, 61, 0.3);
+          box-shadow: inset 0px 0px 16px 0px rgba(40, 50, 61, 0.3);
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale1]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-1.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale2]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-2.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale3]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-3.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale4]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-4.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale5]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-5.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale6]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-6.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale7]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-7.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale8]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-8.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale9]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-9.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale10]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-10.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale11]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-11.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale12]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-12.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale13]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-13.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale14]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-14.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale15]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-15.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale16]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-16.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale17]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-17.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale18]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-18.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale19]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-19.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale20]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-20.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale21]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-21.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale22]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-22.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale23]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-23.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale1]) .left .item-img {
+  -webkit-background-size: auto 116px;
+     -moz-background-size: auto 116px;
+          background-size: auto 116px;
+  background-position-y: 10px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale2]) .left .item-img {
+  -webkit-background-size: auto 101px;
+     -moz-background-size: auto 101px;
+          background-size: auto 101px;
+  background-position-y: 25px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale3]) .left .item-img {
+  -webkit-background-size: auto 89px;
+     -moz-background-size: auto 89px;
+          background-size: auto 89px;
+  background-position-y: 38px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale4]) .left .item-img {
+  -webkit-background-size: auto 83px;
+     -moz-background-size: auto 83px;
+          background-size: auto 83px;
+  background-position-y: 43px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale5]) .left .item-img {
+  -webkit-background-size: auto 77px;
+     -moz-background-size: auto 77px;
+          background-size: auto 77px;
+  background-position-y: 50px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale6]) .left .item-img {
+  -webkit-background-size: auto 73px;
+     -moz-background-size: auto 73px;
+          background-size: auto 73px;
+  background-position-y: 54px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale7]) .left .item-img {
+  -webkit-background-size: auto 67px;
+     -moz-background-size: auto 67px;
+          background-size: auto 67px;
+  background-position-y: 43px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale8]) .left .item-img {
+  -webkit-background-size: auto 61px;
+     -moz-background-size: auto 61px;
+          background-size: auto 61px;
+  background-position-y: 48px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale9]) .left .item-img {
+  -webkit-background-size: auto 64px;
+     -moz-background-size: auto 64px;
+          background-size: auto 64px;
+  background-position-y: 45px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale10]) .left .item-img {
+  -webkit-background-size: auto 60px;
+     -moz-background-size: auto 60px;
+          background-size: auto 60px;
+  background-position-y: 49px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale11]) .left .item-img {
+  -webkit-background-size: auto 55px;
+     -moz-background-size: auto 55px;
+          background-size: auto 55px;
+  background-position-y: 54px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale12]) .left .item-img {
+  -webkit-background-size: auto 56px;
+     -moz-background-size: auto 56px;
+          background-size: auto 56px;
+  background-position-y: 54px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale13]) .left .item-img {
+  -webkit-background-size: auto 51px;
+     -moz-background-size: auto 51px;
+          background-size: auto 51px;
+  background-position-y: 61px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale14]) .left .item-img {
+  -webkit-background-size: auto 46px;
+     -moz-background-size: auto 46px;
+          background-size: auto 46px;
+  background-position-y: 65px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale15]) .left .item-img {
+  -webkit-background-size: auto 45px;
+     -moz-background-size: auto 45px;
+          background-size: auto 45px;
+  background-position-y: 66px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale16]) .left .item-img {
+  -webkit-background-size: auto 42px;
+     -moz-background-size: auto 42px;
+          background-size: auto 42px;
+  background-position-y: 69px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale17]) .left .item-img {
+  -webkit-background-size: auto 38px;
+     -moz-background-size: auto 38px;
+          background-size: auto 38px;
+  background-position-y: 73px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale18]) .left .item-img {
+  -webkit-background-size: auto 38px;
+     -moz-background-size: auto 38px;
+          background-size: auto 38px;
+  background-position-y: 73px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale19]) .left .item-img {
+  -webkit-background-size: auto 33px;
+     -moz-background-size: auto 33px;
+          background-size: auto 33px;
+  background-position-y: 78px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale20]) .left .item-img {
+  -webkit-background-size: auto 30px;
+     -moz-background-size: auto 30px;
+          background-size: auto 30px;
+  background-position-y: 81px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale21]) .left .item-img {
+  -webkit-background-size: auto 27px;
+     -moz-background-size: auto 27px;
+          background-size: auto 27px;
+  background-position-y: 85px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale22]) .left .item-img {
+  -webkit-background-size: auto 29px;
+     -moz-background-size: auto 29px;
+          background-size: auto 29px;
+  background-position-y: 83px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale23]) .left .item-img {
+  -webkit-background-size: auto 71px;
+     -moz-background-size: auto 71px;
+          background-size: auto 71px;
+  background-position-y: 40px;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemMale23]) .right > em {
+  opacity: 0;
+  visibility: hidden;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-title em {
+  color: #95cfff;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-inner {
+  background: #7497b4;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-box:before {
+  background: url(../../images/h_s12_311_150/bg-line-dashed.png) repeat-y 0 0/3px auto;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-number {
+  background: #7497b4;
+}
+.h_s12_311_150 .scene-layer1 .chromosome-box-view .item-number > p {
+  background: #8ab0d0;
+  border: 1px solid #5d7c95;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale1 {
+  height: 116px;
+  top: 420px;
+  left: 310px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale1 span {
+  z-index: 10;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale1 span.moved {
+  z-index: 2;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale1 img {
+  -webkit-transform: rotate(86.2deg);
+     -moz-transform: rotate(86.2deg);
+      -ms-transform: rotate(86.2deg);
+          transform: rotate(86.2deg);
+  height: 116px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale1 .moved > img {
+  top: 10px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale2 {
+  height: 101px;
+  top: 365px;
+  left: 506px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale2 img {
+  height: 101px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale2 .moved > img {
+  top: 25px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale3 {
+  height: 89px;
+  top: 258px;
+  left: 78px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale3 img {
+  height: 89px;
+  -webkit-transform: rotate(-30deg);
+     -moz-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale3 .moved > img {
+  top: 38px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale4 {
+  height: 83px;
+  top: 55px;
+  left: 373px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale4 img {
+  -webkit-transform: rotate(-3.9deg);
+     -moz-transform: rotate(-3.9deg);
+      -ms-transform: rotate(-3.9deg);
+          transform: rotate(-3.9deg);
+  height: 83px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale4 .moved > img {
+  top: 43px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale5 {
+  height: 77px;
+  top: 58px;
+  left: 517px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale5 img {
+  -webkit-transform: rotate(-24.95deg);
+     -moz-transform: rotate(-24.95deg);
+      -ms-transform: rotate(-24.95deg);
+          transform: rotate(-24.95deg);
+  height: 77px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale5 .moved > img {
+  top: 50px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale6 {
+  height: 73px;
+  top: 673px;
+  left: 123px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale6 img {
+  -webkit-transform: rotate(123.6deg);
+     -moz-transform: rotate(123.6deg);
+      -ms-transform: rotate(123.6deg);
+          transform: rotate(123.6deg);
+  height: 73px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale6 .moved > img {
+  top: 54px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale7 {
+  height: 67px;
+  top: 202px;
+  left: 333px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale7 img {
+  -webkit-transform: rotate(41.27deg);
+     -moz-transform: rotate(41.27deg);
+      -ms-transform: rotate(41.27deg);
+          transform: rotate(41.27deg);
+  height: 67px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale7 .moved > img {
+  top: 43px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale8 {
+  height: 61px;
+  top: 153px;
+  left: 200px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale8 img {
+  -webkit-transform: rotate(-136deg);
+     -moz-transform: rotate(-136deg);
+      -ms-transform: rotate(-136deg);
+          transform: rotate(-136deg);
+  height: 61px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale8 .moved > img {
+  top: 48px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale9 {
+  height: 64px;
+  top: 340px;
+  left: 212px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale9 img {
+  -webkit-transform: rotate(33.68deg);
+     -moz-transform: rotate(33.68deg);
+      -ms-transform: rotate(33.68deg);
+          transform: rotate(33.68deg);
+  height: 64px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale9 .moved > img {
+  top: 45px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale10 {
+  height: 60px;
+  top: 508px;
+  left: 615px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale10 img {
+  height: 60px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale10 .moved > img {
+  top: 49px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale11 {
+  height: 55px;
+  top: 197px;
+  left: 501px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale11 img {
+  -webkit-transform: rotate(66.6deg);
+     -moz-transform: rotate(66.6deg);
+      -ms-transform: rotate(66.6deg);
+          transform: rotate(66.6deg);
+  height: 55px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale11 .moved > img {
+  top: 54px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale12 {
+  height: 56px;
+  top: 670px;
+  left: 272px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale12 img {
+  -webkit-transform: rotate(deg);
+     -moz-transform: rotate(deg);
+      -ms-transform: rotate(deg);
+          transform: rotate(deg);
+  height: 56px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale12 .moved > img {
+  top: 54px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale13 {
+  height: 51px;
+  top: 86px;
+  left: 109px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale13 img {
+  height: 51px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale13 .moved > img {
+  top: 61px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale14 {
+  height: 46px;
+  top: 686px;
+  left: 589px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale14 img {
+  -webkit-transform: rotate(120deg);
+     -moz-transform: rotate(120deg);
+      -ms-transform: rotate(120deg);
+          transform: rotate(120deg);
+  height: 46px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale14 .moved > img {
+  top: 65px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale15 {
+  height: 45px;
+  top: 561px;
+  left: 224px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale15 img {
+  height: 45px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale15 .moved > img {
+  top: 66px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale16 {
+  height: 42px;
+  top: 466px;
+  left: 123px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale16 img {
+  -webkit-transform: rotate(-34.6deg);
+     -moz-transform: rotate(-34.6deg);
+      -ms-transform: rotate(-34.6deg);
+          transform: rotate(-34.6deg);
+  height: 42px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale16 .moved > img {
+  top: 69px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale17 {
+  height: 38px;
+  top: 289px;
+  left: 429px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale17 img {
+  -webkit-transform: rotate(-4.78deg);
+     -moz-transform: rotate(-4.78deg);
+      -ms-transform: rotate(-4.78deg);
+          transform: rotate(-4.78deg);
+  height: 38px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale17 .moved > img {
+  top: 73px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale18 {
+  height: 38px;
+  top: 606px;
+  left: 350px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale18 img {
+  height: 38px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale18 .moved > img {
+  top: 73px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale19 {
+  height: 33px;
+  top: 609px;
+  left: 57px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale19 img {
+  height: 33px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale19 .moved > img {
+  top: 78px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale20 {
+  height: 30px;
+  top: 176px;
+  left: 618px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale20 img {
+  -webkit-transform: rotate(-15deg);
+     -moz-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  height: 30px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale20 .moved > img {
+  top: 81px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale21 {
+  height: 27px;
+  top: 327px;
+  left: 615px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale21 img {
+  height: 27px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale21 .moved > img {
+  top: 85px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale22 {
+  height: 29px;
+  top: 695px;
+  left: 445px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale22 img {
+  height: 29px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale22 .moved > img {
+  top: 83px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale23 {
+  height: 71px;
+  top: 542px;
+  left: 466px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale23 img {
+  -webkit-transform: rotate(-25.3deg);
+     -moz-transform: rotate(-25.3deg);
+      -ms-transform: rotate(-25.3deg);
+          transform: rotate(-25.3deg);
+  height: 71px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.sticker .drag-item#itemFemale23 .moved > img {
+  top: 40px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner {
+  background: rgb(74, 93, 117);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(74, 93, 117)), to(rgb(74, 90, 111)));
+  background: -webkit-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -moz-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -o-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: linear-gradient(90deg, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  -webkit-box-shadow: inset 0px 0px 16px 0px rgba(40, 50, 61, 0.3);
+     -moz-box-shadow: inset 0px 0px 16px 0px rgba(40, 50, 61, 0.3);
+          box-shadow: inset 0px 0px 16px 0px rgba(40, 50, 61, 0.3);
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale1]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-1.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale2]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-2.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale3]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-3.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale4]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-4.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale5]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-5.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale6]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-6.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale7]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-7.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale8]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-8.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale9]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-9.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale10]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-10.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale11]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-11.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale12]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-12.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale13]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-13.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale14]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-14.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale15]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-15.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale16]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-16.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale17]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-17.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale18]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-18.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale19]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-19.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale20]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-20.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale21]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-21.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale22]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-22.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale23]) .left .item-img {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-23.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale1]) .left .item-img {
+  -webkit-background-size: auto 116px;
+     -moz-background-size: auto 116px;
+          background-size: auto 116px;
+  background-position-y: 10px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale2]) .left .item-img {
+  -webkit-background-size: auto 101px;
+     -moz-background-size: auto 101px;
+          background-size: auto 101px;
+  background-position-y: 25px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale3]) .left .item-img {
+  -webkit-background-size: auto 89px;
+     -moz-background-size: auto 89px;
+          background-size: auto 89px;
+  background-position-y: 38px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale4]) .left .item-img {
+  -webkit-background-size: auto 83px;
+     -moz-background-size: auto 83px;
+          background-size: auto 83px;
+  background-position-y: 43px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale5]) .left .item-img {
+  -webkit-background-size: auto 77px;
+     -moz-background-size: auto 77px;
+          background-size: auto 77px;
+  background-position-y: 50px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale6]) .left .item-img {
+  -webkit-background-size: auto 73px;
+     -moz-background-size: auto 73px;
+          background-size: auto 73px;
+  background-position-y: 54px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale7]) .left .item-img {
+  -webkit-background-size: auto 67px;
+     -moz-background-size: auto 67px;
+          background-size: auto 67px;
+  background-position-y: 43px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale8]) .left .item-img {
+  -webkit-background-size: auto 61px;
+     -moz-background-size: auto 61px;
+          background-size: auto 61px;
+  background-position-y: 48px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale9]) .left .item-img {
+  -webkit-background-size: auto 64px;
+     -moz-background-size: auto 64px;
+          background-size: auto 64px;
+  background-position-y: 45px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale10]) .left .item-img {
+  -webkit-background-size: auto 60px;
+     -moz-background-size: auto 60px;
+          background-size: auto 60px;
+  background-position-y: 49px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale11]) .left .item-img {
+  -webkit-background-size: auto 55px;
+     -moz-background-size: auto 55px;
+          background-size: auto 55px;
+  background-position-y: 54px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale12]) .left .item-img {
+  -webkit-background-size: auto 56px;
+     -moz-background-size: auto 56px;
+          background-size: auto 56px;
+  background-position-y: 54px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale13]) .left .item-img {
+  -webkit-background-size: auto 51px;
+     -moz-background-size: auto 51px;
+          background-size: auto 51px;
+  background-position-y: 61px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale14]) .left .item-img {
+  -webkit-background-size: auto 46px;
+     -moz-background-size: auto 46px;
+          background-size: auto 46px;
+  background-position-y: 65px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale15]) .left .item-img {
+  -webkit-background-size: auto 45px;
+     -moz-background-size: auto 45px;
+          background-size: auto 45px;
+  background-position-y: 66px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale16]) .left .item-img {
+  -webkit-background-size: auto 42px;
+     -moz-background-size: auto 42px;
+          background-size: auto 42px;
+  background-position-y: 69px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale17]) .left .item-img {
+  -webkit-background-size: auto 38px;
+     -moz-background-size: auto 38px;
+          background-size: auto 38px;
+  background-position-y: 73px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale18]) .left .item-img {
+  -webkit-background-size: auto 38px;
+     -moz-background-size: auto 38px;
+          background-size: auto 38px;
+  background-position-y: 73px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale19]) .left .item-img {
+  -webkit-background-size: auto 33px;
+     -moz-background-size: auto 33px;
+          background-size: auto 33px;
+  background-position-y: 78px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale20]) .left .item-img {
+  -webkit-background-size: auto 30px;
+     -moz-background-size: auto 30px;
+          background-size: auto 30px;
+  background-position-y: 81px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale21]) .left .item-img {
+  -webkit-background-size: auto 27px;
+     -moz-background-size: auto 27px;
+          background-size: auto 27px;
+  background-position-y: 85px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale22]) .left .item-img {
+  -webkit-background-size: auto 29px;
+     -moz-background-size: auto 29px;
+          background-size: auto 29px;
+  background-position-y: 83px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale23]) .left .item-img {
+  -webkit-background-size: auto 71px;
+     -moz-background-size: auto 71px;
+          background-size: auto 71px;
+  background-position-y: 40px;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box.type .box-inner .item-box:has([data-drop-target=itemFemale23]) .right > em {
+  opacity: 0;
+  visibility: hidden;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box-title em {
+  color: #ffb2c8;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-inner {
+  background: #e28ea6;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-box:before {
+  background: url(../../images/h_s12_311_150/bg-line-dashed2.png) repeat-y 0 0/3px auto;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-number {
+  background: #e28ea6;
+}
+.h_s12_311_150 .scene-layer2 .chromosome-box-view .item-number > p {
+  background: #f4a6bc;
+  border: 1px solid #b4748f;
+}
+.h_s12_311_150 .scene-layer3 .scene-inner {
+  padding: 120px 44px 27px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-wrap {
+  width: 100%;
+  height: 100%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-head {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-head .title {
+  font-size: 32px;
+  line-height: 62px;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
+  height: 61px;
+  padding: 0 50px;
+  background: rgb(39, 48, 59);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(39, 48, 59)), to(rgb(56, 70, 87)));
+  background: -webkit-linear-gradient(bottom, rgb(39, 48, 59) 0%, rgb(56, 70, 87) 100%);
+  background: -moz-linear-gradient(bottom, rgb(39, 48, 59) 0%, rgb(56, 70, 87) 100%);
+  background: -o-linear-gradient(bottom, rgb(39, 48, 59) 0%, rgb(56, 70, 87) 100%);
+  background: linear-gradient(0deg, rgb(39, 48, 59) 0%, rgb(56, 70, 87) 100%);
+  border: 2px solid #3b495a;
+  -moz-border-radius: 30.5px;
+       border-radius: 30.5px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-body {
+  width: 100%;
+  height: -webkit-calc(100% - 73px);
+  height: -moz-calc(100% - 73px);
+  height: calc(100% - 73px);
+  font-size: 0;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: -webkit-calc(50% - 10px);
+  width: -moz-calc(50% - 10px);
+  width: calc(50% - 10px);
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box.male .chromosome-result-box-title p em {
+  color: #95cfff;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box.male .chromosome-result-box-view .item-inner {
+  background: #7497b4;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box.male .chromosome-result-box-view .item-inner .item-side + .item-side:before {
+  background-image: url(../../images/h_s12_311_150/bg-line-dashed.png);
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box.male .chromosome-result-box-view .item-number {
+  background: #7497b4;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box.male .chromosome-result-box-view .item-number > p {
+  background: #8ab0d0;
+  border: 1px solid #5d7c95;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box.male .chromosome-result-box-view .item-wrap:nth-of-type(23) .item-side:nth-of-type(2) {
+  background-image: url(../../images/h_s12_311_150/img-item-chromo-24.png);
+  -webkit-background-size: 24px 31px;
+     -moz-background-size: 24px 31px;
+          background-size: 24px 31px;
+  background-position-y: 85px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box.female {
+  margin-left: 20px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box.female .chromosome-result-box-title p em {
+  color: #ffb2c8;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box.female .chromosome-result-box-view .item-inner {
+  background: #e28ea6;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box.female .chromosome-result-box-view .item-inner .item-side + .item-side:before {
+  background-image: url(../../images/h_s12_311_150/bg-line-dashed2.png);
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box.female .chromosome-result-box-view .item-number {
+  background: #e28ea6;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box.female .chromosome-result-box-view .item-number > p {
+  background: #f4a6bc;
+  border: 1px solid #b4748f;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-title p {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  height: 51px;
+  padding: 20px 25px 6px;
+  background: rgb(74, 93, 117);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(74, 93, 117)), to(rgb(74, 90, 111)));
+  background: -webkit-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -moz-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -o-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: linear-gradient(90deg, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  -moz-border-radius: 33px 33px 0 0;
+       border-radius: 33px 33px 0 0;
+  line-height: 1;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-title p > em {
+  font-weight: inherit;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view {
+  background: rgb(74, 93, 117);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(74, 93, 117)), to(rgb(74, 90, 111)));
+  background: -webkit-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -moz-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -o-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: linear-gradient(90deg, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  -moz-border-radius: 0 33px 33px 33px;
+       border-radius: 0 33px 33px 33px;
+  height: -webkit-calc(100% - 51px);
+  height: -moz-calc(100% - 51px);
+  height: calc(100% - 51px);
+  position: relative;
+  top: -1px;
+  padding: 13px 10px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .box-inner {
+  padding: 11px;
+  height: 100%;
+  background: rgb(74, 93, 117);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(74, 93, 117)), to(rgb(74, 90, 111)));
+  background: -webkit-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -moz-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: -o-linear-gradient(left, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  background: linear-gradient(90deg, rgb(74, 93, 117) 0%, rgb(74, 90, 111) 100%);
+  -webkit-box-shadow: inset 0px 0px 16px 0px rgba(40, 50, 61, 0.35);
+     -moz-box-shadow: inset 0px 0px 16px 0px rgba(40, 50, 61, 0.35);
+          box-shadow: inset 0px 0px 16px 0px rgba(40, 50, 61, 0.35);
+  -moz-border-radius: 27px;
+       border-radius: 27px;
+  font-size: 0;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap {
+  display: inline-block;
+  vertical-align: top;
+  width: 138px;
+  height: 180px;
+  padding-bottom: 23px;
+  position: relative;
+  margin: 0 7px 13px 0;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(6n) {
+  margin-right: 0;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(1) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-1.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(2) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-2.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(3) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-3.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(4) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-4.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(5) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-5.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(6) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-6.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(7) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-7.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(8) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-8.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(9) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-9.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(10) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-10.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(11) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-11.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(12) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-12.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(13) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-13.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(14) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-14.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(15) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-15.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(16) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-16.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(17) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-17.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(18) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-18.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(19) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-19.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(20) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-20.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(21) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-21.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(22) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-22.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(23) .item-side {
+  background: url(../../images/h_s12_311_150/img-item-chromo-23.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(1) .item-side {
+  -webkit-background-size: 30px 115px;
+     -moz-background-size: 30px 115px;
+          background-size: 30px 115px;
+  background-position-y: 16px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(2) .item-side {
+  -webkit-background-size: 34px 101px;
+     -moz-background-size: 34px 101px;
+          background-size: 34px 101px;
+  background-position-y: 30px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(3) .item-side {
+  -webkit-background-size: 27px 87px;
+     -moz-background-size: 27px 87px;
+          background-size: 27px 87px;
+  background-position-y: 44px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(4) .item-side {
+  -webkit-background-size: 27px 83px;
+     -moz-background-size: 27px 83px;
+          background-size: 27px 83px;
+  background-position-y: 49px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(5) .item-side {
+  -webkit-background-size: 27px 77px;
+     -moz-background-size: 27px 77px;
+          background-size: 27px 77px;
+  background-position-y: 56px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(6) .item-side {
+  -webkit-background-size: 32px 73px;
+     -moz-background-size: 32px 73px;
+          background-size: 32px 73px;
+  background-position-y: 61px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(7) .item-side {
+  -webkit-background-size: 29px 68px;
+     -moz-background-size: 29px 68px;
+          background-size: 29px 68px;
+  background-position-y: 48px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(8) .item-side {
+  -webkit-background-size: 26px 61px;
+     -moz-background-size: 26px 61px;
+          background-size: 26px 61px;
+  background-position-y: 55px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(9) .item-side {
+  -webkit-background-size: 28px 64px;
+     -moz-background-size: 28px 64px;
+          background-size: 28px 64px;
+  background-position-y: 51px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(10) .item-side {
+  -webkit-background-size: 26px 60px;
+     -moz-background-size: 26px 60px;
+          background-size: 26px 60px;
+  background-position-y: 55px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(11) .item-side {
+  -webkit-background-size: 23px 55px;
+     -moz-background-size: 23px 55px;
+          background-size: 23px 55px;
+  background-position-y: 55px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(12) .item-side {
+  -webkit-background-size: 26px 56px;
+     -moz-background-size: 26px 56px;
+          background-size: 26px 56px;
+  background-position-y: 60px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(13) .item-side {
+  -webkit-background-size: 24px 51px;
+     -moz-background-size: 24px 51px;
+          background-size: 24px 51px;
+  background-position-y: 67px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(14) .item-side {
+  -webkit-background-size: 27px 47px;
+     -moz-background-size: 27px 47px;
+          background-size: 27px 47px;
+  background-position-y: 71px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(15) .item-side {
+  -webkit-background-size: 25px 45px;
+     -moz-background-size: 25px 45px;
+          background-size: 25px 45px;
+  background-position-y: 72px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(16) .item-side {
+  -webkit-background-size: 23px 42px;
+     -moz-background-size: 23px 42px;
+          background-size: 23px 42px;
+  background-position-y: 76px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(17) .item-side {
+  -webkit-background-size: 23px 38px;
+     -moz-background-size: 23px 38px;
+          background-size: 23px 38px;
+  background-position-y: 77px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(18) .item-side {
+  -webkit-background-size: 21px 38px;
+     -moz-background-size: 21px 38px;
+          background-size: 21px 38px;
+  background-position-y: 79px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(19) .item-side {
+  -webkit-background-size: 20px 33px;
+     -moz-background-size: 20px 33px;
+          background-size: 20px 33px;
+  background-position-y: 84px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(20) .item-side {
+  -webkit-background-size: 25px 30px;
+     -moz-background-size: 25px 30px;
+          background-size: 25px 30px;
+  background-position-y: 88px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(21) .item-side {
+  -webkit-background-size: 21px 27px;
+     -moz-background-size: 21px 27px;
+          background-size: 21px 27px;
+  background-position-y: 91px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(22) .item-side {
+  -webkit-background-size: 26px 29px;
+     -moz-background-size: 26px 29px;
+          background-size: 26px 29px;
+  background-position-y: 89px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-wrap:nth-of-type(23) .item-side {
+  -webkit-background-size: 29px 72px;
+     -moz-background-size: 29px 72px;
+          background-size: 29px 72px;
+  background-position-y: 46px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-inner {
+  height: 100%;
+  padding: 7px 6px;
+  -moz-border-radius: 22.5px;
+       border-radius: 22.5px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-box {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -moz-border-radius: 16.5px;
+       border-radius: 16.5px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-side {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-side + .item-side:before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: -webkit-calc(100% - 15px);
+  height: -moz-calc(100% - 15px);
+  height: calc(100% - 15px);
+  background-repeat: repeat-y;
+  background-position: 50% -8px;
+  -webkit-background-size: 2px auto;
+     -moz-background-size: 2px auto;
+          background-size: 2px auto;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  margin-left: -1px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-side em {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  margin-left: -10px;
+  width: 23px;
+  height: 13px;
+  color: #fff;
+  background: #434d5a;
+  text-align: center;
+  line-height: 16px;
+  -moz-border-radius: 6px;
+       border-radius: 6px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-number {
+  height: 28px;
+  width: 88px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -44px;
+  padding: 0 4px;
+  -moz-border-radius: 0 0 11.5px 11.5px;
+       border-radius: 0 0 11.5px 11.5px;
+}
+.h_s12_311_150 .scene-layer3 .chromosome-result-box-view .item-number > p {
+  font-size: 15px;
+  font-weight: 700;
+  color: #434d5a;
+  text-align: center;
+  height: 22px;
+  line-height: 23px;
+  margin-top: 2.5px;
+  -moz-border-radius: 5px 5px 10px 10px;
+       border-radius: 5px 5px 10px 10px;
+}
+.h_s12_311_150 .page-view4.modal-layer-activity-goals3.active {
+  z-index: 16;
+}
+.h_s12_311_150 .page-view4.modal-layer-activity-goals3 .text-content-area {
+  margin-top: 160px;
+  padding-bottom: 265px;
+}
+.h_s12_311_150 .page-view4.modal-layer-activity-goals3 .text-content-area .dot-list > li {
+  padding-left: 54px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #303a46;
+  line-height: 1.25;
+  word-break: keep-all;
+  position: relative;
+  letter-spacing: -1px;
+}
+.h_s12_311_150 .page-view4.modal-layer-activity-goals3 .text-content-area .dot-list > li + li {
+  margin-top: 52px;
+}
+.h_s12_311_150 .page-view4.modal-layer-activity-goals3 .text-content-area .dot-list > li:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  -moz-border-radius: 50%;
+       border-radius: 50%;
+  background: #303a46;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+.h_s12_311_150 .page-view4.modal-layer-activity-goals3 .text-content-area .h-character-organizing {
+  width: 229px;
+  height: 232px;
+  position: absolute;
+  right: 53px;
+  bottom: 76px;
+}
+
+@-webkit-keyframes guideHand {
+  0% {
+    top: -21px;
+  }
+  100% {
+    top: -webkit-calc(100% - 53px);
+    top: calc(100% - 53px);
+  }
+}
+
+@-moz-keyframes guideHand {
+  0% {
+    top: -21px;
+  }
+  100% {
+    top: -moz-calc(100% - 53px);
+    top: calc(100% - 53px);
+  }
+}
+
+@keyframes guideHand {
+  0% {
+    top: -21px;
+  }
+  100% {
+    top: -webkit-calc(100% - 53px);
+    top: -moz-calc(100% - 53px);
+    top: calc(100% - 53px);
+  }
+}
+@-webkit-keyframes frameBlinker {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes frameBlinker {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes frameBlinker {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=../maps/page/h_s12_311_150.css.map */

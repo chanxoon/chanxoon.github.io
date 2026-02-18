@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <meta content="온라인 쇼룸 | 에스원" id="metaTitle" name="title" />
+        <meta content="온라인 쇼룸" id="metaDescription" name="description" />
+        <meta content="온라인 쇼룸" id="metaKeyword" name="keywords" />
+
+        <meta content="website" property="og:type" />
+        <meta content="https://www.s1.co.kr/secom/commercial" property="og:url" />
+        <meta content="온라인 쇼룸 | 에스원" property="og:title" />
+        <meta content="온라인 쇼룸" property="og:description" />
+        <meta content="https://www.s1.co.kr/images/ko/meta/meta-default-img.png" property="og:image" />
+        <meta content="630" property="og:image:height" />
+        <meta content="1200" property="og:image:width" />
+
+        <title>온라인 쇼룸 | 에스원</title>
+
+        <link rel="preload" href="/css/ko/common.css" as="style" type="text/css" />
+        <link rel="preload" href="/css/ko/main.css" as="style" type="text/css" />
+        <link rel="preload" href="/css/ko/s1_contents.css" as="style" type="text/css" />
+        <link rel="preload" href="/js/libs/jquery-1.12.4.min.js" as="script" />
+        <link rel="preload" href="/js/libs/jquery-ui.js" as="script" />
+        <link rel="preload" href="/js/libs/slick.js" as="script" />
+        <link rel="preload" href="/js/ui/ko/common.js" as="script" />
+
+        <link rel="icon" href="/favicon/favicon-48x48.ico" />
+        <link rel="shortcut icon" href="/favicon/favicon-48x48.ico" />
+        <link rel="stylesheet" href="/css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="/css/aos.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/common.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/s1_contents.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/popup.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/showroom.css" type="text/css" />
+
+        <script type="text/javascript" src="/js/libs/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="/js/libs/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/libs/slick.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.min.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.scrollbar-2.1.js"></script>
+        <script type="text/javascript" src="/js/libs/aos.js"></script>
+        <script type="text/javascript" src="/js/libs/stick-to-me.js"></script>
+        <script type="text/javascript" src="/js/libs/client.min.js"></script>
+
+        <!-- 네이버 연관채널 -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "s1",
+                "url": "https://www.s1.co.kr",
+                "sameAs": [
+                    "https://blog.naver.com/s1corporation",
+                    "https://www.instagram.com/s1corporation/",
+                    "https://www.youtube.com/@welcome.S1",
+                    "https://www.facebook.com/s1corporation"
+                ]
+            }
+        </script>
+
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 쇼룸 전용 컨텐츠 -->
+        <div id="wrapShowroom" class="wrap-online-showroom">
+            <div class="showroom-container-wrap sr0-main">
+                <!-- 이전 페이지 버튼 -->
+                <button
+                    onclick="location.href='/index.html'"
+                    class="button-screen-wrap page-back"
+                    title="페이지 이동"
+                    aria-label="페이지 이동"
+                >
+                    <em class="button-screen-inner">
+                        <span class="text">처음으로</span>
+                    </em>
+                </button>
+                <!--// 이전 페이지 버튼 -->
+
+                <!-- 타이틀 -->
+                <div class="title-pa">
+                    <h4 class="title-showroom-content">
+                        <strong class="text-bold">에스원 온라인 쇼룸</strong>에<br />
+                        오신 것을 환영합니다.
+                    </h4>
+                    <span class="sub-con-text"> 공간을 선택해 에스원의 서비스를 체험하세요. </span>
+                </div>
+                <!--// 타이틀 -->
+
+                <div class="showroom-container-inner">
+                    <!--
+                        인트로
+                        active 클래스 추가시 페이지 보임
+                    -->
+                    <div class="showroom-content-wrap showroom-main active">
+                        <div class="showroom-content-inner">
+                            <!-- 1_단독주택(가정용) -->
+                            <button
+                                onclick="location.href='/showroom/sr1_house.html'"
+                                class="unit-select-wrap unit-select-wrap1"
+                                title="페이지 이동"
+                                aria-label="페이지 이동"
+                            >
+                                <em class="unit-select-inner">
+                                    <span class="title-sign">
+                                        <em class="sign-box">
+                                            <span class="sign-text">단독주택</span>
+                                        </em>
+                                    </span>
+                                </em>
+                            </button>
+                            <!--// 1_단독주택(가정용) -->
+
+                            <!-- 2_공동주택(가정용) -->
+                            <button
+                                onclick="location.href='/showroom/sr2_villa.html'"
+                                class="unit-select-wrap unit-select-wrap2"
+                                title="페이지 이동"
+                                aria-label="페이지 이동"
+                            >
+                                <em class="unit-select-inner">
+                                    <span class="title-sign">
+                                        <em class="sign-box">
+                                            <span class="sign-text">공동주택</span>
+                                        </em>
+                                    </span>
+                                </em>
+                            </button>
+                            <!--// 2_공동주택(가정용) -->
+
+                            <!-- 3_매장(상업용) -->
+                            <button
+                                onclick="location.href='/showroom/sr3_store.html'"
+                                class="unit-select-wrap unit-select-wrap3"
+                                title="페이지 이동"
+                                aria-label="페이지 이동"
+                            >
+                                <em class="unit-select-inner">
+                                    <span class="title-sign">
+                                        <em class="sign-box">
+                                            <span class="sign-text">매장</span>
+                                        </em>
+                                    </span>
+                                </em>
+                            </button>
+                            <!--// 3_매장(상업용) -->
+
+                            <!-- 4_사무실(상업용) -->
+                            <button
+                                onclick="location.href='/showroom/sr4_office.html'"
+                                class="unit-select-wrap unit-select-wrap4"
+                                title="페이지 이동"
+                                aria-label="페이지 이동"
+                            >
+                                <em class="unit-select-inner">
+                                    <span class="title-sign">
+                                        <em class="sign-box">
+                                            <span class="sign-text">사무실</span>
+                                        </em>
+                                    </span>
+                                </em>
+                            </button>
+                            <!--// 4_사무실(상업용) -->
+
+                            <!-- 5_공장(상업용) -->
+                            <button
+                                onclick="javascript:void(0)"
+                                class="unit-select-wrap unit-select-wrap5"
+                                title="페이지 이동"
+                                aria-label="페이지 이동"
+                            >
+                                <em class="unit-select-inner">
+                                    <span class="title-sign">
+                                        <em class="sign-box">
+                                            <span class="sign-text">공장</span>
+                                        </em>
+                                    </span>
+                                </em>
+                            </button>
+                            <!--// 5_공장(상업용) -->
+
+                            <!-- 6_창고(상업용) -->
+                            <button
+                                onclick="javascript:void(0)"
+                                class="unit-select-wrap unit-select-wrap6"
+                                title="페이지 이동"
+                                aria-label="페이지 이동"
+                            >
+                                <em class="unit-select-inner">
+                                    <span class="title-sign">
+                                        <em class="sign-box">
+                                            <span class="sign-text">창고</span>
+                                        </em>
+                                    </span>
+                                </em>
+                            </button>
+                            <!--// 6_창고(상업용) -->
+
+                            <!-- 7_도어캠 -->
+                            <!--// 7_도어캠 -->
+
+                            <!-- 8_블루스캔 -->
+                            <button
+                                onclick="location.href='/showroom/sr8_bluescan.html'"
+                                class="unit-select-wrap unit-select-wrap8"
+                                title="페이지 이동"
+                                aria-label="페이지 이동"
+                            >
+                                <em class="unit-select-inner">
+                                    <span class="title-sign type-blue">
+                                        <em class="sign-box">
+                                            <span class="sign-text">블루스캔</span>
+                                        </em>
+                                    </span>
+                                    <span class="speech-bubble-wrap">
+                                        <em class="speech-bubble-inner">
+                                            <span class="sb-text">당신의 건물을 스마트하고 안전하게!</span>
+                                            <span class="speech-bubble-box-wrap">
+                                                <span class="speech-bubble-box"></span>
+                                                <span class="speech-bubble-tail"></span>
+                                            </span>
+                                        </em>
+                                    </span>
+                                </em>
+                            </button>
+                            <!--// 8_블루스캔 -->
+
+                            <!-- 9_PM/FM -->
+                            <button
+                                onclick="javascript:void(0)"
+                                class="unit-select-wrap unit-select-wrap9"
+                                title="페이지 이동"
+                                aria-label="페이지 이동"
+                            >
+                                <em class="unit-select-inner">
+                                    <span class="title-sign type-blue">
+                                        <em class="sign-box">
+                                            <span class="sign-text">PM/FM</span>
+                                        </em>
+                                    </span>
+                                    <span class="speech-bubble-wrap">
+                                        <em class="speech-bubble-inner">
+                                            <span class="sb-text">고층 대형건물, 에스원은 어떻게 관리할까요?</span>
+                                            <span class="speech-bubble-box-wrap">
+                                                <span class="speech-bubble-box"></span>
+                                                <span class="speech-bubble-tail"></span>
+                                            </span>
+                                        </em>
+                                    </span>
+                                </em>
+                            </button>
+                            <!--// 9_PM/FM -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomComm.js"></script>
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroom0.js"></script>
+        <script>
+            function setView() {
+                const width = window.innerWidth;
+                const height = window.innerHeight;
+                const wrap = document.querySelector('.showroom-intro');
+                const widthSize = 1530;
+                const heightSize = 966;
+
+                // 너비나 높이가 지정된 크기 이상인 경우 원래 크기 유지
+                if (width >= widthSize && height >= heightSize) {
+                    wrap.style.transform = `translate3d(-50%,-50%, 0) scale(1)`;
+                    return;
+                }
+
+                const horizontalZoomRate = width / widthSize;
+                const verticalZoomRate = height / heightSize;
+                const zoomRate = widthSize * verticalZoomRate > width ? horizontalZoomRate : verticalZoomRate;
+
+                wrap.style.transform = `translate3d(-50%,-50%, 0) scale(${zoomRate})`;
+            }
+            setView();
+            window.addEventListener('resize', setView);
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showroomComm();
+                showroom0();
+            });
+        </script>
+
+        <!--// 쇼룸 전용 컨텐츠 -->
+    </body>
+</html>

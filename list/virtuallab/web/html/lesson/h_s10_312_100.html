@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>화학 평형에서 농도비의 규칙성 찾기</title>
+        <!-- 공통 css -->
+        <link type="text/css" href="../../css/common.css?t=1739422595806" rel="stylesheet" />
+        <!-- 주제별 css -->
+        <link type="text/css" href="../../css/page/h_s10_312_100.css?t=1739422595806" rel="stylesheet" />
+        <link type="text/css" href="../../css/swiper-bundle.min.css?t=1739422595806" rel="stylesheet" />
+        <script src="../../js/lib/swiper.min.js?t=1739422595806"></script>
+        <script src="../../js/lib/jquery.min.js?t=1739422595806"></script>
+        <script src="../../js/lib/jquery-ui.min.js?t=1739422595806"></script>
+        <script src="../../js/lib/jquery.ui.touch-punch.min.js?t=1739422595806"></script>
+        <script src="../../js/lib/video-js.js?t=1739422595806"></script>
+        <script src="../../js/lib/video.js?t=1739422595806"></script>
+        <script src="../../js/lib/gsap.min.js?t=1739422595806"></script>
+        <script src="../../js/lib/p5.min.js?t=1739422595806"></script>
+        <script src="../../js/common.js?t=1739422595806"></script>
+        <script src="../../js/h_s10_312_100.js?t=1739422595806"></script>
+    </head>
+    <body>
+        <!-- Wrap 영역 -->
+        <div id="wrap" class="wrap wrap-new">
+            <!-- View 영역 -->
+            <div class="wrapper-set-view h_s10_312_100">
+                <!-- page-view1 : (페이지) 인트로 : page-view1 intro에 인접클래스 active가 있으면 보여짐 제거시 사라짐 -->
+                <div class="page-view page-view1 intro active">
+                    <!-- intro header area : 인트로 헤더영역 -->
+                    <div class="header-area header-area-intro">
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// intro header area : 인트로 헤더영역 -->
+
+                    <!-- Common Element : 인트로 과목명 -->
+                    <div class="background-area">
+                        <div class="background-area-inner">
+                            <em class="object-cockle-hat">
+                                <span class="blind">꼬깔모자 요소</span>
+                            </em>
+                            <h2 class="intro-title-text">
+                                <span class="text-color-fff000">화학 평형</span>에서<br />
+                                <span class="text-color-abb5ff">농도비의 규칙성</span> 찾기
+                            </h2>
+                            <ul class="ruler">
+                                <li class="begin">
+                                    <span class="number">0</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">10</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">20</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">30</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">40</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 과목명 -->
+
+                    <!-- Common Element : 인트로 메인으로 시작 버튼 -->
+                    <div class="button-intro-area">
+                        <div class="button-start-area">
+                            <button class="button-intro-main-start">
+                                <em class="text-box">
+                                    <span>활동 시작</span>
+                                </em>
+                                <em class="arrow-box">
+                                    <span class="text blind">-&gt;</span>
+                                    <i class="icon"></i>
+                                </em>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 메인으로 시작 버튼 -->
+
+                    <!-- Common Element : 인트로 캐릭터 -->
+                    <div class="intro-character1-layer">
+                        <span class="blind">인트로 캐릭터</span>
+                        <ul id="" class="interaction-character-list">
+                            <li class="motion-1">
+                                <img src="../../images/common/character1/character1-motion1.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// Common Element : 인트로 캐릭터 -->
+                </div>
+                <!--// page-view1 : (페이지) 인트로 -->
+
+                <!-- page-view2 : (모달) 활동목표 : page-view2에 인접클래스 active가 있으면 보여짐 제거시 사라짐 님 -->
+                <div class="page-view page-view2 modal-layer modal-layer-activity-goals">
+                    <div class="modal-layer-box-ex">
+                        <div class="modal-layer-box-ex-inner">
+                            <button class="button-close">
+                                <span class="blind">닫기</span>
+                            </button>
+                            <h4 class="title-top">
+                                <span class="text">탐구 방법</span>
+                            </h4>
+                            <div class="conten-box-wrap">
+                                <div class="conten-box-inner">
+                                    <span class="text">
+                                        『화학』 102 쪽 ‘화학 평형에서 농도비의 규칙성 찾기’ 탐구에<br />
+                                        주어진 실험 1 ~ 5의 이산화 질소(NO<sup class="sup-bot-num">2</sup>)와 사산화
+                                        이질소(N<sup class="sup-bot-num">2</sup>O<sup class="sup-bot-num">4</sup
+                                        >)의<br />
+                                        평형 농도를 스프레드시트에 입력한 다음, 몇 가지 수식을 입력하여<br />
+                                        화학 평형에서 농도비의 규칙성을 찾아보자.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="character-guide h-character-activity-goals">
+                                <span class="blind">고등 활동목표</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view2 : (모달) 활동목표 -->
+
+                <!-- page-view3 : (페이지) 컨텐츠 페이지 -->
+                <div class="page-view page-view3 content-area active">
+                    <!-- Content Header Area : 컨텐츠 헤더영역 -->
+                    <div class="header-area header-area-content">
+                        <!-- Common Title : 타이틀 -->
+                        <div class="header-title">
+                            <p>화학 평형에서 농도비의 규칙성 찾기</p>
+                        </div>
+                        <!--// Common Title : 타이틀 -->
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-home">
+                                <span class="blind">홈</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// Content Header Area : 컨텐츠 헤더영역 -->
+
+                    <!-- 씬 영역 : 씬 영역1 -->
+                    <div class="scene scene-layer-area1">
+                        <div class="scene-layer scene-layer1">
+                            <a
+                                class="button-help"
+                                href="javascript:void(0)"
+                                title="도움말 보기"
+                                aria-label="도움말 보기"
+                            >
+                                <span class="blind">도움말</span>
+                            </a>
+                            <div class="excel-window-wrap">
+                                <div class="excel-top-wrap">
+                                    <span class="blind">엑셀 아이콘 영역</span>
+                                </div>
+                                <div class="excel-cotainer-wrap">
+                                    <div class="excel-cotainer-inner">
+                                        <div class="excel-cotainer-top">
+                                            <div class="select-view-wrap">
+                                                <div class="select-view-inner">
+                                                    <input type="text" class="select-view-text" />
+                                                    <i class="select-arrow"></i>
+                                                    <!--
+                                                    <a
+                                                        class="select-view-text"
+                                                        href="javascript:void(0)"
+                                                        title="셀 메뉴열기"
+                                                        aria-label="셀 메뉴열기"
+                                                    >
+                                                        <span class="text"></span>
+                                                        <i class="arrow"></i>
+                                                    </a>
+                                                    <ul class="select-view-choice">
+                                                        <li class="choice-item">
+                                                            <a
+                                                                class="choice-link m3"
+                                                                href="javascript:void(0);"
+                                                                title="메뉴선택"
+                                                            >
+                                                                <span class="text">B3</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="choice-item">
+                                                            <a
+                                                                class="choice-link m4"
+                                                                href="javascript:void(0);"
+                                                                title="메뉴선택"
+                                                            >
+                                                                <span class="text">B4</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="choice-item">
+                                                            <a
+                                                                class="choice-link m5"
+                                                                href="javascript:void(0);"
+                                                                title="메뉴선택"
+                                                            >
+                                                                <span class="text">M5</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="choice-item">
+                                                            <a
+                                                                class="choice-link m6"
+                                                                href="javascript:void(0);"
+                                                                title="메뉴선택"
+                                                            >
+                                                                <span class="text">M6</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="choice-item">
+                                                            <a
+                                                                class="choice-link m7"
+                                                                href="javascript:void(0);"
+                                                                title="메뉴선택"
+                                                            >
+                                                                <span class="text">M7</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="choice-item">
+                                                            <a
+                                                                class="choice-link m8"
+                                                                href="javascript:void(0);"
+                                                                title="메뉴선택"
+                                                            >
+                                                                <span class="text">M8</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="choice-item">
+                                                            <a
+                                                                class="choice-link m9"
+                                                                href="javascript:void(0);"
+                                                                title="메뉴선택"
+                                                            >
+                                                                <span class="text">M9</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    -->
+                                                </div>
+                                            </div>
+                                            <div class="input-view-wrap">
+                                                <div class="input-view-inner">
+                                                    <input class="input-view-text" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="excel-cell-wrap">
+                                            <div class="excel-cell-inner">
+                                                <table class="excel-table">
+                                                    <colgroup>
+                                                        <col style="width: 58px" />
+                                                        <col style="width: 200px" />
+                                                        <col style="width: 185px" />
+                                                        <col style="width: 190px" />
+                                                        <col style="width: 185px" />
+                                                        <col style="width: 185px" />
+                                                        <col style="width: 185px" />
+                                                        <col style="width: 96px" />
+                                                        <col style="width: 96px" />
+                                                        <col style="width: 40px" />
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="line-right-strong line-bot-light"></th>
+                                                            <th class="line-bot-normal">
+                                                                <span class="text char">A</span>
+                                                            </th>
+                                                            <th class="line-bot-normal">
+                                                                <i class="th-ver-title-line"></i>
+                                                                <span class="text char bar-left">B</span>
+                                                            </th>
+                                                            <th class="line-bot-normal">
+                                                                <i class="th-ver-title-line"></i>
+                                                                <span class="text char bar-left">C</span>
+                                                            </th>
+                                                            <th class="line-bot-normal">
+                                                                <i class="th-ver-title-line"></i>
+                                                                <span class="text char bar-left">D</span>
+                                                            </th>
+                                                            <th class="line-bot-normal">
+                                                                <i class="th-ver-title-line"></i>
+                                                                <span class="text char bar-left">E</span>
+                                                            </th>
+                                                            <th class="line-bot-normal line-right-strong">
+                                                                <i class="th-ver-title-line"></i>
+                                                                <span class="text char bar-left">F</span>
+                                                            </th>
+                                                            <th class="line-bot-light line-right-light">
+                                                                <span class="text char bar-left op">G</span>
+                                                            </th>
+                                                            <th class="line-bot-light">
+                                                                <span class="text char bar-left op">H</span>
+                                                            </th>
+                                                            <th class="line-bot-light"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="line-right-strong line-bot-light">
+                                                                <span class="text char bar-left">1</span>
+                                                            </th>
+                                                            <td
+                                                                class="line-right-normal line-bot-normal bg-fff9dc"
+                                                                rowspan="2"
+                                                            >
+                                                                <span class="text char bold">실험</span>
+                                                            </td>
+                                                            <td
+                                                                class="bg-fff9dc line-right-normal line-bot-strong"
+                                                                colspan="2"
+                                                            >
+                                                                <span class="text char bold">평형 농도(mol/L)</span>
+                                                            </td>
+                                                            <td
+                                                                class="line-bot-strong line-right-strong bg-fff9dc"
+                                                                colspan="3"
+                                                            >
+                                                                <span class="text char bold">농도비</span>
+                                                            </td>
+                                                            <td class="bg-ffffff line-right-light line-bot-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="line-right-strong line-bot-light">
+                                                                <span class="text char bar-left">2</span>
+                                                            </th>
+                                                            <td class="line-bot-normal line-right-normal bg-fff9dc">
+                                                                <span class="text char"
+                                                                    >[NO<sup class="sup-bot-num">2</sup>]</span
+                                                                >
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-fff9dc">
+                                                                <span class="text char"
+                                                                    >[N<sup class="sup-bot-num">2</sup>O<sup
+                                                                        class="sup-bot-num"
+                                                                        >4</sup
+                                                                    >]</span
+                                                                >
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-fff9dc">
+                                                                <i class="sign-cicle sign-cicle1">
+                                                                    <span class="blind">ㄱ</span>
+                                                                </i>
+                                                                <em class="fraction-wrap">
+                                                                    <em class="fraction-box">
+                                                                        <span class="text char"
+                                                                            >[N<sup class="sup-bot-num">2</sup>O<sup
+                                                                                class="sup-bot-num"
+                                                                                >4</sup
+                                                                            >]</span
+                                                                        >
+                                                                    </em>
+                                                                    <em class="fraction-line">
+                                                                        <span class="blind">라인</span>
+                                                                    </em>
+                                                                    <em class="fraction-box">
+                                                                        <span class="text char"
+                                                                            >[NO<sup class="sup-bot-num">2</sup>]</span
+                                                                        >
+                                                                    </em>
+                                                                </em>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-fff9dc">
+                                                                <i class="sign-cicle sign-cicle2">
+                                                                    <span class="blind">ㄴ</span>
+                                                                </i>
+                                                                <em class="fraction-wrap">
+                                                                    <em class="fraction-box">
+                                                                        <span class="text char"
+                                                                            >[N<sup class="sup-bot-num">2</sup>O<sup
+                                                                                class="sup-bot-num"
+                                                                                >4</sup
+                                                                            >]</span
+                                                                        >
+                                                                    </em>
+                                                                    <em class="fraction-line">
+                                                                        <span class="blind">라인</span>
+                                                                    </em>
+                                                                    <em class="fraction-box">
+                                                                        <span class="text char"
+                                                                            >[NO<sup class="sup-bot-num">2</sup>]<sup
+                                                                                class="sup-top-num"
+                                                                                >2</sup
+                                                                            ></span
+                                                                        >
+                                                                    </em>
+                                                                </em>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-strong bg-fff9dc">
+                                                                <i class="sign-cicle sign-cicle3">
+                                                                    <span class="blind">ㄷ</span>
+                                                                </i>
+                                                                <em class="fraction-wrap">
+                                                                    <em class="fraction-box">
+                                                                        <span class="text char"
+                                                                            >[N<sup class="sup-bot-num">2</sup>O<sup
+                                                                                class="sup-bot-num"
+                                                                                >4</sup
+                                                                            >]</span
+                                                                        >
+                                                                    </em>
+                                                                    <em class="fraction-line">
+                                                                        <span class="blind">라인</span>
+                                                                    </em>
+                                                                    <em class="fraction-box">
+                                                                        <span class="text char"
+                                                                            >2<i class="sign-x"></i>[NO<sup
+                                                                                class="sup-bot-num"
+                                                                                >2</sup
+                                                                            >]</span
+                                                                        >
+                                                                    </em>
+                                                                </em>
+                                                            </td>
+                                                            <td class="line-right-light line-bot-light bg-ffffff"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="line-right-strong line-bot-light">
+                                                                <span class="text char bar-left">3</span>
+                                                            </th>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-a3 active"
+                                                                    data-cell="A3"
+                                                                    value="1"
+                                                                />
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <!-- cell-input에 인접클래스 active가 된 후 placeholder-layer 인접클래스 active가 되어야 placeholder-layer 보여짐 -->
+                                                                <input
+                                                                    class="cell-input cell-b3 active"
+                                                                    data-cell="B3"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-c3 active"
+                                                                    data-cell="C3"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-d3 color-red"
+                                                                    data-cell="D3"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span
+                                                                    class="placeholder-layer placeholder-layer2 active"
+                                                                    >입력</span
+                                                                >
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-e3 color-red"
+                                                                    data-cell="E3"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-strong bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-f3 color-red"
+                                                                    data-cell="F3"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-light line-right-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="line-right-strong line-bot-light">
+                                                                <span class="text char bar-left">4</span>
+                                                            </th>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-a4 active"
+                                                                    value="2"
+                                                                    data-cell="A4"
+                                                                />
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <!-- cell-input에 인접클래스 active가 된 후 placeholder-layer 인접클래스 active가 되어야 placeholder-layer 보여짐 -->
+                                                                <input
+                                                                    class="cell-input cell-b4 active"
+                                                                    data-cell="B4"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-c4 active"
+                                                                    data-cell="C4"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-d4 color-red"
+                                                                    data-cell="D4"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-e4 color-red"
+                                                                    data-cell="E4"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-strong bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-f4 color-red"
+                                                                    data-cell="F4"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-light line-right-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="line-right-strong line-bot-light">
+                                                                <span class="text char bar-left">5</span>
+                                                            </th>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-a5 active"
+                                                                    value="3"
+                                                                    data-cell="A5"
+                                                                />
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <!-- cell-input에 인접클래스 active가 된 후 placeholder-layer 인접클래스 active가 되어야 placeholder-layer 보여짐 -->
+                                                                <input
+                                                                    class="cell-input cell-b5 active"
+                                                                    data-cell="B5"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-c5 active"
+                                                                    data-cell="C5"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-d5 color-red"
+                                                                    data-cell="D5"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-e5 color-red"
+                                                                    data-cell="E5"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-strong bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-f5 color-red"
+                                                                    data-cell="F5"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-light line-right-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="line-right-strong line-bot-light">
+                                                                <span class="text char bar-left">6</span>
+                                                            </th>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-a6 active"
+                                                                    value="4"
+                                                                    data-cell="A6"
+                                                                />
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <!-- cell-input에 인접클래스 active가 된 후 placeholder-layer 인접클래스 active가 되어야 placeholder-layer 보여짐 -->
+                                                                <input
+                                                                    class="cell-input cell-b6 active"
+                                                                    data-cell="B6"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-c6 active"
+                                                                    data-cell="C6"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-d6 color-red"
+                                                                    data-cell="D6"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-e6 color-red"
+                                                                    data-cell="E6"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-strong bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-f6 color-red"
+                                                                    data-cell="F6"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-light line-right-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="line-right-strong line-bot-light">
+                                                                <span class="text char bar-left">7</span>
+                                                            </th>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-a7 active"
+                                                                    value="5"
+                                                                    data-cell="A7"
+                                                                />
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <!-- cell-input에 인접클래스 active가 된 후 placeholder-layer 인접클래스 active가 되어야 placeholder-layer 보여짐 -->
+                                                                <input
+                                                                    class="cell-input cell-b7 active"
+                                                                    data-cell="B7"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-c7 active"
+                                                                    data-cell="C7"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-d7 color-red"
+                                                                    data-cell="D7"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-normal bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-e7 color-red"
+                                                                    data-cell="E7"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-normal line-right-strong bg-ffffff">
+                                                                <input
+                                                                    class="cell-input cell-f7 color-red"
+                                                                    data-cell="F7"
+                                                                    readonly="readonly"
+                                                                />
+                                                                <span class="placeholder-layer active">입력</span>
+                                                            </td>
+                                                            <td class="line-bot-light line-right-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                            <td class="bg-ffffff line-bot-light"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <div class="drag-top-bottom-wrap drag-top-bottom-wrap-d">
+                                                    <div class="drag-top-bottom-inner">
+                                                        <span class="blind">드래그 D라인</span>
+                                                        <i class="icon-drag-plus active">
+                                                            <span class="blind">드래그 표시</span>
+                                                        </i>
+                                                        <i class="icon-drag-arrow active">
+                                                            <span class="blind">드래그 방향</span>
+                                                        </i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="drag-top-bottom-wrap drag-top-bottom-wrap-e">
+                                                    <div class="drag-top-bottom-inner">
+                                                        <span class="blind">드래그 E라인</span>
+                                                        <i class="icon-drag-plus">
+                                                            <span class="blind">드래그 표시</span>
+                                                        </i>
+                                                        <i class="icon-drag-arrow">
+                                                            <span class="blind">드래그 방향</span>
+                                                        </i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="drag-top-bottom-wrap drag-top-bottom-wrap-f">
+                                                    <div class="drag-top-bottom-inner">
+                                                        <span class="blind">드래그 F라인</span>
+                                                        <i class="icon-drag-plus">
+                                                            <span class="blind">드래그 표시</span>
+                                                        </i>
+                                                        <i class="icon-drag-arrow">
+                                                            <span class="blind">드래그 방향</span>
+                                                        </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="button-nongndo-reset"
+                                href="javascript:void(0)"
+                                title="농도비 초기화"
+                                aria-label="농도비 초기화"
+                            >
+                                <em class="button-reset-inner">
+                                    <span class="text">농도비<br />초기화</span>
+                                </em>
+                            </button>
+                            <button
+                                class="button-reset"
+                                href="javascript:void(0)"
+                                title="입력 초기화"
+                                aria-label="입력 초기화"
+                            >
+                                <em class="button-reset-inner">
+                                    <span class="text">초기화</span>
+                                </em>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// 씬 영역 : 씬 영역1 -->
+
+                    <!-- 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                    <ul class="tab-list-basic">
+                        <li>
+                            <!-- 버튼 클릭 : button-tab 인접클래스 active 추가 -->
+                            <button class="button-tab">
+                                <span>정리하기</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                </div>
+                <!--// page-view3 : (페이지) 컨텐츠 페이지 -->
+
+                <!-- page-view4 : 탭 스타일 page-view4 modal-layer-help 인접클래스 active시 활성화 -->
+                <div class="page-view page-view4 modal-layer-helper modal-layer">
+                    <div class="modal-helper-box">
+                        <div class="pop-top-wrap">
+                            <h4 class="title-pop-top">
+                                <span class="text">스프레드시트 수식 계산하기</span>
+                            </h4>
+                            <button class="button-close">
+                                <span class="blind">닫기</span>
+                            </button>
+                        </div>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide1">
+                                    <div class="swiper-helper-item swiper-helper-item1">
+                                        <ul class="bullet-circle-list">
+                                            <li class="bullet-circle-item">
+                                                <i class="icon-circle"></i>
+                                                스프레트시트에 '=' 기호를 입력하고 뒤이어<br />
+                                                수식을 입력하면 값을 계산할 수 있다.
+                                            </li>
+                                        </ul>
+                                        <div class="helper-content">
+                                            <table class="helper1-table">
+                                                <colgroup>
+                                                    <col style="width: 100px" />
+                                                    <col style="width: 100px" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            <span class="text">수학 기호</span>
+                                                        </th>
+                                                        <th>
+                                                            <span class="text">스프레드시트 입력</span>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="text">덧셈</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text">+</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="text">뺄셈</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text">-</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="text">곱셈</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text">*</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="text">나눗셈</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text">/</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="text">제곱</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text">^2</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="text">괄호</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text">( )</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide2">
+                                    <div class="swiper-helper-item swiper-helper-item2">
+                                        <ul class="bullet-circle-list">
+                                            <li class="bullet-circle-item">
+                                                <i class="icon-circle"></i>
+                                                수식을 다음과 같이 입력해 값을 계산한다.
+                                            </li>
+                                        </ul>
+                                        <div class="helper-content">
+                                            <div class="helper2-excel-wrap">
+                                                <a
+                                                    href="javascript:void(0)"
+                                                    class="helper2-excel-inner"
+                                                    title="클릭시 정보표시"
+                                                    aria-label="클릭시 정보표시"
+                                                >
+                                                    <em class="bg-excel">
+                                                        <span class="blind">엑셀 배경</span>
+                                                    </em>
+                                                    <em
+                                                        class="button-cell button-cell1"
+                                                        title="0.047"
+                                                        aria-label="0.047"
+                                                    >
+                                                        <span class="blind">0.047</span>
+                                                    </em>
+                                                    <em
+                                                        class="button-cell button-cell2"
+                                                        title="0.067"
+                                                        aria-label="0.067"
+                                                    >
+                                                        <span class="blind">0.067</span>
+                                                    </em>
+                                                    <em
+                                                        class="button-cell button-cell3"
+                                                        title="=C3/B3^2"
+                                                        aria-label="=C3/B3^2"
+                                                    >
+                                                        <span class="blind">=C3/B3^2</span>
+                                                    </em>
+                                                    <i class="tip-view tip-view1">
+                                                        <span class="blind">B3셀</span>
+                                                    </i>
+                                                    <i class="tip-view tip-view2">
+                                                        <span class="blind">C3셀</span>
+                                                    </i>
+                                                    <i class="tip-view tip-view3">
+                                                        <span class="blind">C3 셀의 값</span>
+                                                        <span class="blind line"></span>
+                                                        <span class="blind">C3 셀의 값</span>
+                                                    </i>
+                                                    <i class="gesture-finger gesture-pop-excel-finger1 active">
+                                                        <span class="blind">손모양 제스처</span>
+                                                    </i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="active-wrap">
+                                <div id="nextFinal" class="swiper-button-next custom-next"></div>
+                                <div id="prevFinal" class="swiper-button-prev custom-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- modal-layer-alert : active시 활성화 -->
+                <div class="modal-layer-alert modal-layer-alert1">
+                    <div class="modal-layer-alert-inner">
+                        <i class="bg-effect"></i>
+                        <button class="button-alert-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <em class="text-wrap">
+                            <span class="text">
+                                평형 농도를 옳게<br />
+                                입력해 주세요.
+                            </span>
+                        </em>
+                    </div>
+                </div>
+
+                <div class="modal-layer-alert modal-layer-alert2">
+                    <div class="modal-layer-alert-inner">
+                        <i class="bg-effect"></i>
+                        <button class="button-alert-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <em class="text-wrap">
+                            <span class="text">
+                                수식을 옳게<br />
+                                입력해 주세요.
+                            </span>
+                        </em>
+                    </div>
+                </div>
+
+                <div class="modal-layer-alert modal-layer-alert3">
+                    <div class="modal-layer-alert-inner">
+                        <i class="bg-effect"></i>
+                        <button class="button-alert-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <em class="text-wrap">
+                            <span class="text">
+                                먼저 실험 1~5에서<br />
+                                이산화 질소(NO<sup class="sup-bot-num">2</sup>)와<br />
+                                사산화 이질소(N<sup class="sup-bot-num">2</sup>O<sup class="sup-bot-num">4</sup
+                                >)의<br />
+                                평형 농도를<br />
+                                모두 입력해 주세요.
+                            </span>
+                        </em>
+                    </div>
+                </div>
+
+                <div class="modal-layer-alert modal-layer-alert4">
+                    <div class="modal-layer-alert-inner">
+                        <i class="bg-effect"></i>
+                        <button class="button-alert-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <em class="text-wrap">
+                            <span class="text">
+                                수식 ㉠ ~ ㉢ 을<br />
+                                순서대로 입력해 주세요.
+                            </span>
+                        </em>
+                    </div>
+                </div>
+            </div>
+            <!--// View 영역 -->
+        </div>
+        <!--// Wrap 영역 -->
+    </body>
+</html>

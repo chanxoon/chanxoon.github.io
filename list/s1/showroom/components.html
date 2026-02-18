@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <meta content="온라인 쇼룸 | 에스원" id="metaTitle" name="title" />
+        <meta content="온라인 쇼룸" id="metaDescription" name="description" />
+        <meta content="온라인 쇼룸" id="metaKeyword" name="keywords" />
+
+        <meta content="website" property="og:type" />
+        <meta content="https://www.s1.co.kr/secom/commercial" property="og:url" />
+        <meta content="온라인 쇼룸 | 에스원" property="og:title" />
+        <meta content="온라인 쇼룸" property="og:description" />
+        <meta content="https://www.s1.co.kr/images/ko/meta/meta-default-img.png" property="og:image" />
+        <meta content="630" property="og:image:height" />
+        <meta content="1200" property="og:image:width" />
+
+        <title>온라인 쇼룸 | 에스원</title>
+
+        <link rel="preload" href="/css/ko/common.css" as="style" type="text/css" />
+        <link rel="preload" href="/css/ko/main.css" as="style" type="text/css" />
+        <link rel="preload" href="/css/ko/s1_contents.css" as="style" type="text/css" />
+        <link rel="preload" href="/js/libs/jquery-1.12.4.min.js" as="script" />
+        <link rel="preload" href="/js/libs/jquery-ui.js" as="script" />
+        <link rel="preload" href="/js/libs/slick.js" as="script" />
+        <link rel="preload" href="/js/ui/ko/common.js" as="script" />
+
+        <link rel="icon" href="/favicon/favicon-48x48.ico" />
+        <link rel="shortcut icon" href="/favicon/favicon-48x48.ico" />
+        <link rel="stylesheet" href="/css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="/css/aos.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/common.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/s1_contents.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/popup.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/showroom.css" type="text/css" />
+
+        <script type="text/javascript" src="/js/libs/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="/js/libs/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/libs/slick.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.min.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.scrollbar-2.1.js"></script>
+        <script type="text/javascript" src="/js/libs/aos.js"></script>
+        <script type="text/javascript" src="/js/libs/stick-to-me.js"></script>
+        <script type="text/javascript" src="/js/libs/client.min.js"></script>
+
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomComm.js"></script>
+
+        <!-- 네이버 연관채널 -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "s1",
+                "url": "https://www.s1.co.kr",
+                "sameAs": [
+                    "https://blog.naver.com/s1corporation",
+                    "https://www.instagram.com/s1corporation/",
+                    "https://www.youtube.com/@welcome.S1",
+                    "https://www.facebook.com/s1corporation"
+                ]
+            }
+        </script>
+
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            .wrap-online-showroom.sr-component {
+                background: rgba(266, 266, 266, 0.8);
+                padding: 20px;
+                overflow: auto;
+            }
+
+            .wrap-online-showroom.sr-component h1,
+            h2,
+            h3,
+            h4 {
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            .wrap-online-showroom.sr-component h1 {
+                margin-bottom: 20px;
+                font-size: 28px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-set > h2 {
+                font-size: 24px;
+                margin-top: 32px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-box > h3 {
+                font-size: 18px;
+                margin-top: 16px;
+                position: relative;
+                padding-left: 14px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-box > h3::before {
+                content: '';
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-width: 0 0 2px 2px;
+                border-style: solid;
+                border-color: #222;
+                position: absolute;
+                left: 1px;
+                top: 49%;
+                margin-top: -4px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-item {
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 20px;
+                margin-top: 16px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-item > h4 {
+                padding-left: 14px;
+                position: relative;
+                font-size: 16px;
+                color: #666;
+                margin-bottom: 16px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-item > h4:before {
+                content: '▼';
+                font-size: 7px;
+                display: inline-block;
+                position: absolute;
+                left: 2px;
+                top: 4px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-item-inner {
+                margin-bottom: 16px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 쇼룸 공통 컴포넌트 -->
+        <div id="wrapShowroom" class="wrap-online-showroom sr-component">
+            <h1>에스원 쇼룸 퍼블리싱 공통 컴포넌트</h1>
+            <div class="sr-component-set">
+                <h2>포인터</h2>
+                <div class="sr-component-box">
+                    <h3>red</h3>
+                    <div class="sr-component-item">
+                        <!-- sr포인터 start -->
+                        <button class="sr-pointer sr-pointer1 red" title="" aria-label="">
+                            <span class="sr-pointer-pin"></span>
+                            <span class="sr-pointer-layer">
+                                <span class="sr-pointer-layer-1"></span>
+                                <span class="sr-pointer-layer-2"></span>
+                            </span>
+                        </button>
+                        <!-- // sr포인터 end -->
+
+                        <!-- sr포인터 인접클래스 active 추가시 hover에 대한 sr-pointer-pin 동작 적용 start -->
+                        <button class="sr-pointer sr-pointer1 red active" title="" aria-label="">
+                            <span class="sr-pointer-pin"></span>
+                            <span class="sr-pointer-layer">
+                                <span class="sr-pointer-layer-1"></span>
+                                <span class="sr-pointer-layer-2"></span>
+                            </span>
+                        </button>
+                        <!-- // sr포인터 인접클래스 active 추가시 hover에 대한 sr-pointer-pin 동작 적용 end -->
+                    </div>
+                    <h3>blue</h3>
+                    <div class="sr-component-item">
+                        <!-- sr포인터 start -->
+                        <button class="sr-pointer sr-pointer1 blue" title="" aria-label="">
+                            <span class="sr-pointer-pin"></span>
+                            <span class="sr-pointer-layer">
+                                <span class="sr-pointer-layer-1"></span>
+                                <span class="sr-pointer-layer-2"></span>
+                            </span>
+                        </button>
+                        <!-- // sr포인터 end -->
+
+                        <!-- sr포인터 인접클래스 active 추가시 hover에 대한 sr-pointer-pin 동작 적용 start -->
+                        <button class="sr-pointer sr-pointer1 blue active" title="" aria-label="">
+                            <span class="sr-pointer-pin"></span>
+                            <span class="sr-pointer-layer">
+                                <span class="sr-pointer-layer-1"></span>
+                                <span class="sr-pointer-layer-2"></span>
+                            </span>
+                        </button>
+                        <!-- // sr포인터 인접클래스 active 추가시 hover에 대한 sr-pointer-pin 동작 적용 end -->
+                    </div>
+                </div>
+                <h2>타겟팅</h2>
+                <div class="sr-component-box">
+                    <div class="sr-component-item">
+                        <div>
+                            <!-- start -->
+                            <i class="sr-targeting" style="left: 0; top: 0">
+                                <span class="sr-targeting-frame"></span>
+                                <span class="sr-targeting-inner"></span>
+                            </i>
+                            <!-- // end -->
+
+                            <!-- start : 인접클래스 active 추가시 인터렉션 동작 -->
+                            <i class="sr-targeting active" style="left: 0; top: 0">
+                                <span class="sr-targeting-frame"></span>
+                                <span class="sr-targeting-inner"></span>
+                            </i>
+                            <!-- // end -->
+                        </div>
+                    </div>
+                </div>
+                <h2>일러스트</h2>
+                <div class="sr-component-box">
+                    <div class="sr-component-item">
+                        <div class="sr-component-item">
+                            <h4>카페 직원</h4>
+                            <div class="sr-component-item-inner">
+                                <div style="padding: 20px; background-color: rgba(0, 0, 0, 0.1)">
+                                    <!-- start -->
+                                    <i class="sr-person-cs sr-person-cs1">
+                                        <span class="blind">카페 직원</span>
+                                    </i>
+                                    <i class="sr-person-cs sr-person-cs2">
+                                        <span class="blind">카페 직원</span>
+                                    </i>
+                                    <i class="sr-person-cs sr-person-cs3">
+                                        <span class="blind">카페 직원</span>
+                                    </i>
+                                    <i class="sr-person-cs sr-person-cs4">
+                                        <span class="blind">카페 직원</span>
+                                    </i>
+                                    <i class="sr-person-cs sr-person-cs5">
+                                        <span class="blind">카페 직원</span>
+                                    </i>
+                                    <!-- // end -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sr-component-item">
+                            <h4>술취한 남자</h4>
+                            <div class="sr-component-item-inner">
+                                <div style="padding: 20px; background-color: rgba(0, 0, 0, 0.1)">
+                                    <!-- start -->
+                                    <i class="sr-person-dm sr-person-dm1">
+                                        <span class="blind">술취한 남자</span>
+                                    </i>
+                                    <i class="sr-person-dm sr-person-dm2">
+                                        <span class="blind">술취한 남자</span>
+                                    </i>
+                                    <!-- // end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>아이콘 : 이미지</h2>
+                <div class="sr-component-box">
+                    <div class="sr-component-item">
+                        <h4>출동경비 서비스 : 세콤 아이콘</h4>
+                        <div class="sr-component-item-inner">
+                            <div style="padding: 20px; background-color: rgba(0, 0, 0, 0.1)">
+                                <!-- start -->
+                                <i class="img-secom-circle-item img-secom-circle-item1">
+                                    <span class="blind">자석 감지기</span>
+                                </i>
+                                <i class="img-secom-circle-item img-secom-circle-item2">
+                                    <span class="blind">컨트롤러</span>
+                                </i>
+                                <i class="img-secom-circle-item img-secom-circle-item3">
+                                    <span class="blind">비상 버튼</span>
+                                </i>
+                                <i class="img-secom-circle-item img-secom-circle-item4">
+                                    <span class="blind">열선 감지기</span>
+                                </i>
+                                <i class="img-secom-circle-item img-secom-circle-item5">
+                                    <span class="blind">지문 리더기</span>
+                                </i>
+                                <i class="img-secom-circle-item img-secom-circle-item6">
+                                    <span class="blind">실외용 CCTV</span>
+                                </i>
+                                <i class="img-secom-circle-item img-secom-circle-item7">
+                                    <span class="blind">녹화기(NVR)</span>
+                                </i>
+                                <i class="img-secom-circle-item img-secom-circle-item8">
+                                    <span class="blind">실내용 CCTV</span>
+                                </i>
+                                <!-- // end -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sr-component-item">
+                        <h4>출동경비 서비스 : 감지기 아이콘</h4>
+                        <div class="sr-component-item-inner">
+                            <div style="padding: 20px; background-color: rgba(0, 0, 0, 0.1)">
+                                <!-- start -->
+                                <i class="img-secom-magnet-detector">
+                                    <span class="blind">자석 감지기</span>
+                                </i>
+                                <i class="img-secom-heat-detector">
+                                    <span class="blind">열선 감지기</span>
+                                </i>
+                                <!-- // end -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sr-component-item">
+                        <h4>출동경비 서비스 : 레이어 팝업 애니메이션 아이콘</h4>
+                        <div class="sr-component-item-inner">
+                            <div style="padding: 20px; background-color: rgba(0, 0, 0, 0.1)">
+                                <!-- start -->
+                                <i class="ani-icon-secom ani-icon-secom-magnet-detector">
+                                    <span class="blind">자석 감지기</span>
+                                </i>
+                                <i class="ani-icon-secom ani-icon-secom-heat-detector">
+                                    <span class="blind">열선 감지기</span>
+                                </i>
+                                <i class="ani-icon-secom ani-icon-secom-link">
+                                    <span class="blind">세콤링크</span>
+                                </i>
+                                <em class="img-dispatch-vehicle">
+                                    <span class="img-dispatch-vehicle-inner">
+                                        <i class="di-car-siren-machine">
+                                            <span class="blind">사이렌 장치</span>
+                                        </i>
+                                        <i class="di-car-siren-light">
+                                            <span class="blind">사이렌 빛</span>
+                                        </i>
+                                        <i class="di-car-body">
+                                            <span class="blind">차체</span>
+                                        </i>
+                                        <i class="di-car-wheel di-car-wheel1">
+                                            <em class="di-car-wheel-inner">
+                                                <span class="blind">앞바퀴</span>
+                                            </em>
+                                        </i>
+                                        <i class="di-car-wheel di-car-wheel2">
+                                            <em class="di-car-wheel-inner">
+                                                <span class="blind">뒷바퀴</span>
+                                            </em>
+                                        </i>
+                                        <em class="di-car-exhaust di-car-exhaust1">
+                                            <span class="di-car-exhaust-inner">
+                                                <i class="di-car-exhaust-bar">
+                                                    <span class="blind">매연1</span>
+                                                </i>
+                                            </span>
+                                        </em>
+                                        <em class="di-car-exhaust di-car-exhaust2">
+                                            <span class="di-car-exhaust-inner">
+                                                <i class="di-car-exhaust-bar">
+                                                    <span class="blind">매연2</span>
+                                                </i>
+                                            </span>
+                                        </em>
+                                        <i class="di-car-shadow">
+                                            <span class="blind">그림자</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <i class="sr-person-counselor">
+                                    <span class="blind">상담사</span>
+                                </i>
+                                <i class="sr-person-dm-ex sr-person-dm-ex1">
+                                    <span class="blind">술취한 남자</span>
+                                </i>
+                                <i class="icon-ex-mark-speech-bubble">
+                                    <span class="blind">술취한 남자</span>
+                                </i>
+                                <!-- // end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>라인</h2>
+                <div class="sr-component-box">
+                    <div class="sr-component-item">
+                        <h4>파란점 도트 라인</h4>
+                        <div class="sr-component-item-inner">
+                            <div style="padding: 20px; background-color: rgba(0, 0, 0, 0.1)">
+                                <div>
+                                    <!-- start -->
+                                    <div class="check-dot-line-wrap check-dot-line1 blue">
+                                        <div class="check-dot-line-inner">
+                                            <i class="circle-line-wrap">
+                                                <i class="circle-line-inner">
+                                                    <span class="blind">라인 센터 서클</span>
+                                                </i>
+                                            </i>
+                                            <em
+                                                class="dot-line-repeat"
+                                                style="
+                                                    width: 360px;
+                                                    top: 8px;
+                                                    left: 19px;
+                                                    background-position: left center;
+                                                "
+                                            >
+                                                <span class="blind">닷 라인</span>
+                                            </em>
+                                        </div>
+                                    </div>
+                                    <!-- // end -->
+                                </div>
+                                <div>
+                                    <!-- start -->
+                                    <div class="check-dot-line-wrap check-dot-line2 blue">
+                                        <div class="check-dot-line-inner">
+                                            <i class="circle-line-wrap">
+                                                <i class="circle-line-inner">
+                                                    <span class="blind">라인 센터 서클</span>
+                                                </i>
+                                            </i>
+                                            <em
+                                                class="dot-line-repeat"
+                                                style="
+                                                    width: 480px;
+                                                    top: 8px;
+                                                    left: 19px;
+                                                    background-position: left center;
+                                                "
+                                            >
+                                                <span class="blind">닷 라인</span>
+                                            </em>
+                                        </div>
+                                    </div>
+                                    <!-- // end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>메시지</h2>
+                <div class="sr-component-box">
+                    <h3>말풍선 메시지</h3>
+                    <div class="sr-component-item">
+                        <h4>말풍선 상단 위치 / 꼬리 사이 간격 있음</h4>
+                        <div class="sr-component-item-inner">
+                            <div style="padding: 20px; background-color: rgba(0, 0, 0, 0.1)">
+                                <!-- start -->
+                                <span class="sr-title-sign">
+                                    <em class="sign-box">
+                                        <span class="sign-text">공동주택</span>
+                                    </em>
+                                </span>
+                                <span class="sr-title-sign type-blue">
+                                    <em class="sign-box">
+                                        <span class="sign-text">블루스캔</span>
+                                    </em>
+                                </span>
+                                <!-- // end -->
+                            </div>
+                        </div>
+                        <h4>말풍선 하단 위치 / 꼬리 상단 중앙 위치</h4>
+                        <div class="sr-component-item-inner">
+                            <div
+                                style="background: rgba(0, 0, 0, 0.1); padding: 20px; height: 100px; position: relative"
+                            >
+                                <!-- start -->
+                                <div class="s-pointer-area" style="left: 100px">
+                                    <em class="s-pointer-tip s-pointer-tip1">
+                                        <span class="s-pointer-tip-inner">
+                                            <span class="box-text">출입 권한 이상 감지!</span>
+                                            <span class="triangle-top"></span>
+                                        </span>
+                                    </em>
+                                </div>
+                                <!-- // end -->
+                            </div>
+                        </div>
+                        <h4>말풍선 상단 위치 / 꼬리 하단 위치(기울어진 형태)</h4>
+                        <div class="sr-component-item-inner">
+                            <div style="padding: 20px; background-color: rgba(0, 0, 0, 0.1)">
+                                <!-- start -->
+                                <!-- 말풍선 꼬리 오른쪽 위치 .sr-speech-bubble-tail.right -->
+                                <div class="sr-speech-bubble">
+                                    <div class="sr-speech-bubble-inner">
+                                        <p class="sr-speech-bubble-text">
+                                            손님의 물건이 없어졌을 때,<br />
+                                            <em>에스원 덕분에</em> 해결했어요!
+                                        </p>
+                                        <span class="sr-speech-bubble-frame">
+                                            <span class="sr-speech-bubble-box"></span>
+                                            <span class="sr-speech-bubble-tail right"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- 말풍선 꼬리 오른쪽 위치 .sr-speech-bubble-tail.left -->
+                                <div class="sr-speech-bubble">
+                                    <div class="sr-speech-bubble-inner">
+                                        <p class="sr-speech-bubble-text">
+                                            <em>에스원CCTV</em>에 대해<br />
+                                            알려드릴게요!
+                                        </p>
+                                        <span class="sr-speech-bubble-frame">
+                                            <span class="sr-speech-bubble-box"></span>
+                                            <span class="sr-speech-bubble-tail left"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- //end -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>화면 설명 메시지</h3>
+                    <div class="sr-component-item">
+                        <!-- inline style 임의 적용. 실제 적용 시에는 inline style 제거 -->
+                        <div style="position: relative; width: 100%; height: 100px">
+                            <!-- start -->
+                            <div class="bottom-gray-tooltip-wrap active" style="bottom: 10px">
+                                <!-- bottom-gray-text 인접클래스 active 시 하단 정보 텍스트 내용 -->
+                                <p class="bottom-gray-text bottom-gray-text1 active">
+                                    에스원 <strong class="color-bold-blue">자석 감지기</strong>는 자석의 접촉 상태를
+                                    감지하여 도난 및 침입을 방지하는 보안 장치입니다.
+                                </p>
+                                <p class="bottom-gray-text bottom-gray-text2">
+                                    에스원 <strong class="color-bold-blue">자석 감지기</strong>는 자석의 접촉 상태를
+                                    감지하여 도난 및 침입을 방지하는 보안 장치입니다.
+                                </p>
+                            </div>
+                            <!-- // end -->
+                        </div>
+                    </div>
+                    <h3>floating 툴팁 메시지</h3>
+                    <div class="sr-component-item">
+                        <div style="background: rgba(0, 0, 0, 0.1); padding: 20px; height: 150px">
+                            <!-- start -->
+                            <div data-tooltip-wrap>
+                                <div class="sr-float-tooltip" data-tooltip>
+                                    <button data-tooltip-title>
+                                        <p>툴팁 메시지 타이틀</p>
+                                    </button>
+                                    <div data-tooltip-text>
+                                        <p>
+                                            500만 화소로 실내 움직임 및 탬버링 (제3자가 임의로 CCTV 각도를 변경) 감지
+                                            기능이 있어요!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // end -->
+                        </div>
+                        <div
+                            style="
+                                background: rgba(0, 0, 0, 0.1);
+                                padding: 20px;
+                                height: 150px;
+                                position: relative;
+                                margin-top: 10px;
+                            "
+                        >
+                            <div style="position: absolute; left: 0; bottom: 0; width: 100%">
+                                <!-- start -->
+                                <div data-tooltip-wrap data-tooltip-bottom>
+                                    <div class="sr-float-tooltip" data-tooltip>
+                                        <button data-tooltip-title>
+                                            <p>툴팁 메시지 타이틀 : 하단 스타일</p>
+                                        </button>
+                                        <div data-tooltip-text>
+                                            <p>
+                                                500만 화소로 실내 움직임 및 탬버링 (제3자가 임의로 CCTV 각도를 변경)
+                                                감지 기능이 있어요!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // end -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Alert 메시지</h3>
+                    <div class="sr-component-item">
+                        <h4>긍정</h4>
+                        <div class="sr-component-item-inner">
+                            <div style="position: relative; height: 50px; width: 100%">
+                                <!-- start -->
+                                <div class="sr-alert-msg active">
+                                    <p><i class="complete"></i>카드 인식이 완료되었습니다.</p>
+                                </div>
+                                <!-- // end -->
+                            </div>
+                        </div>
+                        <h4>부정</h4>
+                        <div class="sr-component-item-inner">
+                            <div style="position: relative; height: 50px; width: 100%">
+                                <!-- start -->
+                                <div class="sr-alert-msg active">
+                                    <p><i class="error"></i>침입이 발생했습니다!</p>
+                                </div>
+                                <!-- // end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>빔 효과</h2>
+                <div class="sr-component-box">
+                    <h3>매장 - guard - step2</h3>
+                    <div class="sr-component-item">
+                        <!-- start -->
+                        <div class="sr-layer-beam active">
+                            <span class="blind">빔 효과</span>
+                        </div>
+                        <!-- // end -->
+                    </div>
+                </div>
+                <h2>레이더</h2>
+                <div class="sr-component-box">
+                    <h3>누수감지 센서</h3>
+                    <div class="sr-component-item">
+                        <!-- start -->
+                        <div class="sr-lk-sensor">
+                            <div class="sr-lk-sensor-item"></div>
+                            <div class="sr-lk-sensor-beam"></div>
+                        </div>
+                        <!-- // end -->
+                    </div>
+                </div>
+                <h2>버튼</h2>
+                <div class="sr-component-box"></div>
+                <h2>팝업</h2>
+                <div class="sr-component-box">
+                    <h3>중앙 위치 레이어 팝업(애니메이션, 이미지 등 노출)</h3>
+                    <div class="sr-component-item">
+                        <!-- 팝업 호출 시 modalOpenSetTime('팝업id', 노출시간)
+                        노출시간 설정 안할 경우/애니메이션 작업 시 null 입력. (modalOpenSetTime('id', null))
+                    -->
+                        <button onclick="modalOpenSetTime('popupPolice', 2000)">
+                            팝업 호출(실제 페이지 적용 시에는 버튼 호출 X)
+                        </button>
+                        <!-- start -->
+                        <div class="sr-popup-wrap" id="popupPolice">
+                            <div class="sr-popup-inner">
+                                <div class="sr-popup-content">
+                                    <div class="sr-popup-frame">
+                                        <!-- 애니메이션 영역 -->
+                                    </div>
+                                    <p class="sr-popup-text">
+                                        이상신호가 감지되어 관제센터에 전달되면<br />
+                                        <em>즉시 현장으로 출동</em>하여 적절한 조치를 취합니다.
+                                    </p>
+                                </div>
+                                <button class="sr-popup-btn">체험 완료</button>
+                            </div>
+                        </div>
+                        <!-- end -->
+                    </div>
+                </div>
+                <h2>스와이퍼</h2>
+                <div class="sr-component-box">
+                    <h3>STEP4 스와이퍼</h3>
+                    <div class="sr-component-item">
+                        <div style="background: rgba(0, 0, 0, 0.6); padding: 20px">
+                            <!-- 출동경비 서비스 : 스와이퍼 -->
+                            <div class="sr-step-swiper-wrap sr-step-swiper-wrap1">
+                                <div class="sr-step-swiper-inner">
+                                    <div class="swiper-title-wrap swiper-title-wrap1">
+                                        <div class="swiper-title-item swiper-title-item1">
+                                            <div class="top-swiper-text">
+                                                <h5 class="title-step-swiper">
+                                                    <span class="text"> 에스원의 서비스를 영상으로 체험해보세요 </span>
+                                                </h5>
+                                                <em class="sub-text-step-swiper">
+                                                    <span class="text">상업용 세콤_자석감지기</span>
+                                                </em>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-title-item swiper-title-item2">
+                                            <div class="top-swiper-text">
+                                                <h5 class="title-step-swiper">
+                                                    <span class="text"> 에스원의 서비스를 영상으로 체험해보세요 </span>
+                                                </h5>
+                                                <em class="sub-text-step-swiper">
+                                                    <span class="text">상업용 세콤_열선감지기</span>
+                                                </em>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-title-item swiper-title-item3">
+                                            <div class="top-swiper-text">
+                                                <h5 class="title-step-swiper">
+                                                    <span class="text"> 에스원의 서비스를 영상으로 체험해보세요 </span>
+                                                </h5>
+                                                <em class="sub-text-step-swiper">
+                                                    <span class="text">세콤_관제센터</span>
+                                                </em>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-title-item swiper-title-item4">
+                                            <div class="top-swiper-text">
+                                                <h5 class="title-step-swiper">
+                                                    <span class="text"> 에스원의 서비스를 영상으로 체험해보세요 </span>
+                                                </h5>
+                                                <em class="sub-text-step-swiper">
+                                                    <span class="text">상업용 세콤_출동서비스</span>
+                                                </em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-layer-wrap swiper-layer-wrap1">
+                                        <div class="swiper-layer-item swiper-layer-item1 swiper-movie-item">
+                                            <div class="thumbnail-wrap thumbnail-wrap1 active">
+                                                <div class="thumbnail-inner">
+                                                    <button class="button-movie-start" title="재생" aria-label="재생">
+                                                        <span class="blind">PLAY</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <iframe
+                                                class="video-iframe"
+                                                src="https://www.youtube.com/embed/ivJI3iw7Kvg?si=YaahzoP25Cp3fcwz"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen
+                                            ></iframe>
+                                        </div>
+                                        <div class="swiper-layer-item swiper-layer-item2 swiper-movie-item">
+                                            <div class="thumbnail-wrap thumbnail-wrap2 active">
+                                                <div class="thumbnail-inner">
+                                                    <button class="button-movie-start" title="재생" aria-label="재생">
+                                                        <span class="blind">PLAY</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <iframe
+                                                class="video-iframe"
+                                                src="https://www.youtube.com/embed/bBF4F0oMXtw?si=RvQ88NIodhbCsbic"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen
+                                            ></iframe>
+                                        </div>
+                                        <div class="swiper-layer-item swiper-layer-item3 swiper-movie-item">
+                                            <div class="thumbnail-wrap thumbnail-wrap3 active">
+                                                <div class="thumbnail-inner">
+                                                    <button class="button-movie-start" title="재생" aria-label="재생">
+                                                        <span class="blind">PLAY</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <iframe
+                                                class="video-iframe"
+                                                src="https://www.youtube.com/embed/Z2nFtu3B618?si=1jsD2gUInl4oJIoM"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen
+                                            ></iframe>
+                                        </div>
+                                        <div class="swiper-layer-item swiper-layer-item4 swiper-movie-item">
+                                            <div class="thumbnail-wrap thumbnail-wrap4 active">
+                                                <div class="thumbnail-inner">
+                                                    <button class="button-movie-start" title="재생" aria-label="재생">
+                                                        <span class="blind">PLAY</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <iframe
+                                                class="video-iframe"
+                                                src="https://www.youtube.com/embed/aEtBwd0z5QU?si=2MfCd2rkq3OCBmuX"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen
+                                            ></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-swiper-button-wrap">
+                                        <button
+                                            class="button-swiper-bottom button-swiper-bottom-screen1 bg-color-blue"
+                                            title="체험 완료"
+                                            aria-label="체험 완료"
+                                        >
+                                            <span class="text">체험 완료</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 출동경비 서비스 : 스와이퍼1 -->
+
+                            <!-- CCTV 서비스 : 스와이퍼 -->
+                            <div class="sr-step-swiper-wrap sr-step-swiper-wrap2">
+                                <div class="sr-step-swiper-inner">
+                                    <div class="swiper-title-wrap swiper-title-wrap2">
+                                        <div class="swiper-title-item swiper-title-item1">
+                                            <div class="top-swiper-text">
+                                                <h5 class="title-step-swiper">
+                                                    <span class="text">
+                                                        에스원의 IP카메라를 영상으로 체험해보세요!
+                                                    </span>
+                                                </h5>
+                                                <em class="sub-text-step-swiper">
+                                                    <span class="text">에스원 IP카메라의 4mm vs 6mm 화각 비교</span>
+                                                </em>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-title-item swiper-title-item1">
+                                            <div class="top-swiper-text">
+                                                <h5 class="title-step-swiper">
+                                                    <span class="text"> 24시간 연중무휴 </span>
+                                                </h5>
+                                                <em class="sub-text-step-swiper">
+                                                    <span class="text"
+                                                        >24시간 운영 연중무휴, 문제 상황 발생 시 바로 대응 가능한
+                                                        상담직원이 항시 대기중입니다.</span
+                                                    >
+                                                </em>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-title-item swiper-title-item1">
+                                            <div class="top-swiper-text">
+                                                <h5 class="title-step-swiper">
+                                                    <span class="text"> 모두(MoDU) 앱 원격 모니터링 </span>
+                                                </h5>
+                                                <em class="sub-text-step-swiper">
+                                                    <span class="text"
+                                                        >PC는 물론, 에스원 통합 모바일 애플리케이션을 통해 언제 어디서나
+                                                        모니터링이 가능합니다.</span
+                                                    >
+                                                </em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-layer-wrap swiper-layer-wrap2">
+                                        <div class="swiper-layer-item swiper-layer-item1 swiper-movie-item">
+                                            <div class="thumbnail-wrap thumbnail-wrap1 active">
+                                                <div class="thumbnail-inner">
+                                                    <button class="button-movie-start" title="재생" aria-label="재생">
+                                                        <span class="blind">PLAY</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <iframe
+                                                class="video-iframe"
+                                                src="https://www.youtube.com/embed/8lh9DvMnpOI?si=8KfSQCj0crOujrLj"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen
+                                            ></iframe>
+                                        </div>
+                                        <div class="swiper-layer-item swiper-layer-item2">
+                                            <div class="thumbnail-wrap thumbnail-wrap2 active">
+                                                <div class="thumbnail-inner">
+                                                    <span class="blind">이미지</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-layer-item swiper-layer-item3">
+                                            <div class="thumbnail-wrap thumbnail-wrap3 active">
+                                                <div class="thumbnail-inner">
+                                                    <span class="blind">이미지</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-swiper-button-wrap">
+                                        <button
+                                            class="button-swiper-bottom button-swiper-bottom-screen1 bg-color-blue"
+                                            title="체험 완료"
+                                            aria-label="체험 완료"
+                                        >
+                                            <span class="text">체험 완료</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // CCTV 서비스 : 스와이퍼 -->
+
+                            <!-- 출입관리 서비스 : 스와이퍼 -->
+                            <div class="sr-step-swiper-wrap sr-step-swiper-wrap3">
+                                <div class="sr-step-swiper-inner">
+                                    <div class="swiper-title-wrap swiper-title-wrap3">
+                                        <div class="swiper-title-item swiper-title-item1">
+                                            <div class="top-swiper-text">
+                                                <h5 class="title-step-swiper">
+                                                    <span class="text">
+                                                        매장에 설치괸 출입관리 서비스 사계를 확인해보세요
+                                                    </span>
+                                                </h5>
+                                                <em class="sub-text-step-swiper">
+                                                    <span class="text">출입관리 서비스의 사례</span>
+                                                </em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-layer-wrap swiper-layer-wrap3">
+                                        <div class="swiper-layer-item swiper-layer-item1 swiper-movie-item">
+                                            <div class="thumbnail-wrap thumbnail-wrap1 active">
+                                                <div class="thumbnail-inner">
+                                                    <button class="button-movie-start" title="재생" aria-label="재생">
+                                                        <span class="blind">PLAY</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <iframe
+                                                class="video-iframe"
+                                                src="https://www.youtube.com/embed/JGESv17Pu3k?si=ST45NKR8Tp0YpwMI"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen
+                                            ></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-swiper-button-wrap">
+                                        <button
+                                            class="button-swiper-bottom button-swiper-bottom-screen1 bg-color-blue"
+                                            title="체험 완료"
+                                            aria-label="체험 완료"
+                                        >
+                                            <span class="text">체험 완료</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // 출입관리 서비스 : 스와이퍼 -->
+                            <script>
+                                $(document).ready(function () {
+                                    $('.swiper-title-wrap1').slick({
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        asNavFor: '.swiper-layer-wrap1',
+                                        arrows: false,
+                                        fade: true,
+                                        infinite: true,
+                                    });
+                                    $('.swiper-layer-wrap1').slick({
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        asNavFor: '.swiper-title-wrap1',
+                                        speed: 300,
+                                        cssEase: 'linear',
+                                        dots: true,
+                                        infinite: true,
+                                        // autoplay: true,
+                                        // autoplaySpeed: 2000,
+                                    });
+
+                                    // 스크린2 스와이퍼
+                                    $('.swiper-title-wrap2').slick({
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        asNavFor: '.swiper-layer-wrap2',
+                                        arrows: false,
+                                        fade: true,
+                                        infinite: true,
+                                    });
+                                    $('.swiper-layer-wrap2').slick({
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        asNavFor: '.swiper-title-wrap2',
+                                        speed: 300,
+                                        cssEase: 'linear',
+                                        dots: true,
+                                        infinite: true,
+                                    });
+
+                                    // 스크린3 스와이퍼
+                                    $('.swiper-title-wrap3').slick({
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        asNavFor: '.swiper-layer-wrap3',
+                                        arrows: false,
+                                        fade: true,
+                                        infinite: true,
+                                    });
+                                    $('.swiper-layer-wrap3').slick({
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        asNavFor: '.swiper-title-wrap3',
+                                        speed: 300,
+                                        cssEase: 'linear',
+                                        dots: true,
+                                        infinite: true,
+                                    });
+
+                                    moviePlay();
+                                });
+
+                                function moviePlay() {
+                                    const buttonMovieStart = $('.button-movie-start');
+
+                                    buttonMovieStart.on('click', function () {
+                                        const thisB = $(this);
+                                        const iframe = thisB.closest('.swiper-movie-item').find('.video-iframe');
+                                        const src = iframe.attr('src');
+                                        thisB.closest('.thumbnail-wrap').removeClass('active');
+                                        iframe.addClass('active');
+                                        if (!src.includes('autoplay=1')) {
+                                            iframe.attr('src', src + (src.includes('?') ? '&' : '?') + 'autoplay=1');
+                                        }
+                                    });
+
+                                    // 슬라이더 변경 후 비디오 리셋
+                                    $('.swiper-layer-wrap').on('afterChange', function (event, slick, currentSlide) {
+                                        resetVideos();
+                                    });
+
+                                    // 모든 비디오를 초기 상태로 되돌리는 함수
+                                    function resetVideos() {
+                                        $('.swiper-movie-item').each(function () {
+                                            const thisB = $(this);
+                                            const iframe = thisB.find('.video-iframe');
+
+                                            if (iframe.length > 0) {
+                                                // iframe 요소가 존재하는지 확인
+                                                const src = iframe.attr('src');
+
+                                                if (src) {
+                                                    // src 속성이 유효한지 확인
+                                                    const updatedSrc = src
+                                                        .replace('&autoplay=1', '')
+                                                        .replace('?autoplay=1', '');
+                                                    iframe.attr('src', updatedSrc); // 초기화
+                                                }
+
+                                                thisB.find('.thumbnail-wrap').addClass('active');
+                                                iframe.removeClass('active');
+                                            }
+                                        });
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <h2></h2>
+                <div class="sr-component-box">
+                    <h3>STEP 팝업 애니메이션</h3>
+                    <div class="sr-component-item">
+                        <div style="background: rgba(0, 0, 0, 0.6); padding: 20px">
+                            <div class="popup-layer-step-wrap">
+                                <div class="popup-layer-step-inner">
+                                    <div class="animation-layer-wrap animation-layer-wrap1">
+                                        <div class="animation-layer-inner"></div>
+                                    </div>
+                                    <div class="bottom-text-wrap">
+                                        <span class="text">
+                                            경비 구역에 침입·이상 상황이 발생하면<br />
+                                            이상신호를 즉시 <em class="color-blue">에스원 관제센터</em>로 전송합니다.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>팝업 : 애니메이션</h2>
+                <div class="sr-component-box">
+                    <h3>팝업 스타일1 : 애니메이션</h3>
+                    <div class="sr-component-item">
+                        <div style="background: rgba(0, 0, 0, 0.1); padding: 20px; text-align: center">
+                            <!-- 에스원 관제센터 : .popup-layer-animation-wrap의 인접클래스 active로 동작 -->
+                            <div class="popup-layer-animation-wrap">
+                                <div class="popup-layer-animation-inner">
+                                    <div class="animation-box-wrap control-center">
+                                        <div class="animation-box-inner">
+                                            <div class="icon-postion-wrap top-center">
+                                                <div class="icon-postion-inner">
+                                                    <i class="sr-person-counselor">
+                                                        <span class="blind">상담사</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div class="icon-postion-wrap bottom-left">
+                                                <div class="icon-postion-inner">
+                                                    <i class="ani-icon-secom ani-icon-secom-heat-detector">
+                                                        <span class="blind">열선 감지기</span>
+                                                    </i>
+                                                    <em class="ellipse-wave-length-wrap ellipse-wave-length-wrap1">
+                                                        <span class="ellipse-wave-length-inner">
+                                                            <i class="ellipse-wave-item ellipse-wave-item1">
+                                                                <span class="blind">큰파장</span>
+                                                            </i>
+                                                            <i class="ellipse-wave-item ellipse-wave-item2">
+                                                                <span class="blind">중간파장</span>
+                                                            </i>
+                                                            <i class="ellipse-wave-item ellipse-wave-item3">
+                                                                <span class="blind">작은파장</span>
+                                                            </i>
+                                                        </span>
+                                                    </em>
+                                                </div>
+                                            </div>
+                                            <div class="icon-postion-wrap bottom-center">
+                                                <div class="icon-postion-inner">
+                                                    <i class="ani-icon-secom ani-icon-secom-link">
+                                                        <span class="blind">세콤링크</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div class="icon-postion-wrap bottom-right">
+                                                <div class="icon-postion-inner">
+                                                    <i class="ani-icon-secom ani-icon-secom-magnet-detector">
+                                                        <span class="blind">자석 감지기</span>
+                                                    </i>
+                                                    <em class="ellipse-wave-length-wrap ellipse-wave-length-wrap2">
+                                                        <span class="ellipse-wave-length-inner">
+                                                            <i class="ellipse-wave-item ellipse-wave-item1">
+                                                                <span class="blind">큰파장</span>
+                                                            </i>
+                                                            <i class="ellipse-wave-item ellipse-wave-item2">
+                                                                <span class="blind">중간파장</span>
+                                                            </i>
+                                                            <i class="ellipse-wave-item ellipse-wave-item3">
+                                                                <span class="blind">작은파장</span>
+                                                            </i>
+                                                        </span>
+                                                    </em>
+                                                </div>
+                                            </div>
+                                            <em class="line-dot-red center-width center-width-left">
+                                                <i class="line-dot-view"></i>
+                                                <span class="blind">중앙에서 아래 왼쪽 방향 적색 점선</span>
+                                            </em>
+                                            <em class="line-dot-red center-width center-width-right">
+                                                <i class="line-dot-view"></i>
+                                                <span class="blind">중앙에서 아래 오른쪽 방향 적색 점선</span>
+                                            </em>
+                                            <em class="line-dot-red center-bottom-top">
+                                                <i class="line-dot-view"></i>
+                                                <span class="blind">중앙에서 위방향 적색 점선</span>
+                                            </em>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-text-wrap">
+                                        <span class="text">
+                                            경비 구역에 침입·이상 상황이 발생하면<br />
+                                            이상신호를 즉시 <strong class="color-blue">에스원 관제센터</strong>로
+                                            전송합니다.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 에스원 관제센터 -->
+
+                            <!-- 에스원 관제센터 : .popup-layer-animation-wrap의 인접클래스 active로 동작 -->
+                            <div class="popup-layer-animation-wrap active">
+                                <div class="popup-layer-animation-inner">
+                                    <div class="animation-box-wrap control-center">
+                                        <div class="animation-box-inner">
+                                            <div class="icon-postion-wrap top-center">
+                                                <div class="icon-postion-inner">
+                                                    <i class="sr-person-counselor">
+                                                        <span class="blind">상담사</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div class="icon-postion-wrap bottom-left">
+                                                <div class="icon-postion-inner">
+                                                    <i class="ani-icon-secom ani-icon-secom-heat-detector">
+                                                        <span class="blind">열선 감지기</span>
+                                                    </i>
+                                                    <em class="ellipse-wave-length-wrap ellipse-wave-length-wrap1">
+                                                        <span class="ellipse-wave-length-inner">
+                                                            <i class="ellipse-wave-item ellipse-wave-item1">
+                                                                <span class="blind">큰파장</span>
+                                                            </i>
+                                                            <i class="ellipse-wave-item ellipse-wave-item2">
+                                                                <span class="blind">중간파장</span>
+                                                            </i>
+                                                            <i class="ellipse-wave-item ellipse-wave-item3">
+                                                                <span class="blind">작은파장</span>
+                                                            </i>
+                                                        </span>
+                                                    </em>
+                                                </div>
+                                            </div>
+                                            <div class="icon-postion-wrap bottom-center">
+                                                <div class="icon-postion-inner">
+                                                    <i class="ani-icon-secom ani-icon-secom-link">
+                                                        <span class="blind">세콤링크</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div class="icon-postion-wrap bottom-right">
+                                                <div class="icon-postion-inner">
+                                                    <i class="ani-icon-secom ani-icon-secom-magnet-detector">
+                                                        <span class="blind">자석 감지기</span>
+                                                    </i>
+                                                    <em class="ellipse-wave-length-wrap ellipse-wave-length-wrap2">
+                                                        <span class="ellipse-wave-length-inner">
+                                                            <i class="ellipse-wave-item ellipse-wave-item1">
+                                                                <span class="blind">큰파장</span>
+                                                            </i>
+                                                            <i class="ellipse-wave-item ellipse-wave-item2">
+                                                                <span class="blind">중간파장</span>
+                                                            </i>
+                                                            <i class="ellipse-wave-item ellipse-wave-item3">
+                                                                <span class="blind">작은파장</span>
+                                                            </i>
+                                                        </span>
+                                                    </em>
+                                                </div>
+                                            </div>
+                                            <em class="line-dot-red center-width center-width-left">
+                                                <span class="blind">중앙에서 아래 왼쪽 방향 적색 점선</span>
+                                                <i class="line-dot-view"></i>
+                                            </em>
+                                            <em class="line-dot-red center-width center-width-right">
+                                                <span class="blind">중앙에서 아래 오른쪽 방향 적색 점선</span>
+                                                <i class="line-dot-view"></i>
+                                            </em>
+                                            <em class="line-dot-red center-bottom-top">
+                                                <span class="blind">중앙에서 위방향 적색 점선</span>
+                                                <i class="line-dot-view"></i>
+                                            </em>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-text-wrap">
+                                        <span class="text">
+                                            경비 구역에 침입·이상 상황이 발생하면<br />
+                                            이상신호를 즉시 <strong class="color-blue">에스원 관제센터</strong>로
+                                            전송합니다.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 에스원 관제센터 -->
+                        </div>
+
+                        <div
+                            style="background: rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; margin-top: 10px"
+                        >
+                            <!-- 즉시 현장으로 출동 .popup-layer-animation-wrap의 인접클래스 active로 동작 -->
+                            <div class="popup-layer-animation-wrap">
+                                <div class="popup-layer-animation-inner">
+                                    <div class="animation-box-wrap dispatch-immediately">
+                                        <div class="animation-box-inner">
+                                            <div class="sr-person-dm-wrap">
+                                                <div class="sr-person-dm-inner">
+                                                    <i class="icon-ex-mark-speech-bubble">
+                                                        <span class="blind">!</span>
+                                                    </i>
+                                                    <i class="sr-person-dm-ex sr-person-dm-ex1">
+                                                        <span class="blind">술취한 남자</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <em class="img-dispatch-vehicle">
+                                                <span class="img-dispatch-vehicle-inner">
+                                                    <i class="di-car-siren-machine">
+                                                        <span class="blind">사이렌 장치</span>
+                                                    </i>
+                                                    <i class="di-car-siren-light">
+                                                        <span class="blind">사이렌 빛</span>
+                                                    </i>
+                                                    <i class="di-car-body">
+                                                        <span class="blind">차체</span>
+                                                    </i>
+                                                    <i class="di-car-wheel di-car-wheel1">
+                                                        <em class="di-car-wheel-inner">
+                                                            <span class="blind">앞바퀴</span>
+                                                        </em>
+                                                    </i>
+                                                    <i class="di-car-wheel di-car-wheel2">
+                                                        <em class="di-car-wheel-inner">
+                                                            <span class="blind">뒷바퀴</span>
+                                                        </em>
+                                                    </i>
+                                                    <em class="di-car-exhaust di-car-exhaust1">
+                                                        <span class="di-car-exhaust-inner">
+                                                            <i class="di-car-exhaust-bar">
+                                                                <span class="blind">매연1</span>
+                                                            </i>
+                                                        </span>
+                                                    </em>
+                                                    <em class="di-car-exhaust di-car-exhaust2">
+                                                        <span class="di-car-exhaust-inner">
+                                                            <i class="di-car-exhaust-bar">
+                                                                <span class="blind">매연2</span>
+                                                            </i>
+                                                        </span>
+                                                    </em>
+                                                    <i class="di-car-shadow">
+                                                        <span class="blind">그림자</span>
+                                                    </i>
+                                                </span>
+                                            </em>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-text-wrap">
+                                        <span class="text">
+                                            관제센터로부터 출동지시를 받은 출동요원이<br />
+                                            <strong class="color-blue">즉시 현장으로 출동</strong>하여 신속하게
+                                            대처합니다.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 즉시 현장으로 출동 -->
+
+                            <!-- 즉시 현장으로 출동 .popup-layer-animation-wrap의 인접클래스 active로 동작 -->
+                            <div class="popup-layer-animation-wrap active">
+                                <div class="popup-layer-animation-inner">
+                                    <div class="animation-box-wrap dispatch-immediately">
+                                        <div class="animation-box-inner">
+                                            <div class="sr-person-dm-wrap">
+                                                <div class="sr-person-dm-inner">
+                                                    <i class="icon-ex-mark-speech-bubble">
+                                                        <span class="blind">!</span>
+                                                    </i>
+                                                    <i class="sr-person-dm-ex sr-person-dm-ex1">
+                                                        <span class="blind">술취한 남자</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <em class="img-dispatch-vehicle">
+                                                <span class="img-dispatch-vehicle-inner">
+                                                    <i class="di-car-siren-machine">
+                                                        <span class="blind">사이렌 장치</span>
+                                                    </i>
+                                                    <i class="di-car-siren-light">
+                                                        <span class="blind">사이렌 빛</span>
+                                                    </i>
+                                                    <i class="di-car-body">
+                                                        <span class="blind">차체</span>
+                                                    </i>
+                                                    <i class="di-car-wheel di-car-wheel1">
+                                                        <em class="di-car-wheel-inner">
+                                                            <span class="blind">앞바퀴</span>
+                                                        </em>
+                                                    </i>
+                                                    <i class="di-car-wheel di-car-wheel2">
+                                                        <em class="di-car-wheel-inner">
+                                                            <span class="blind">뒷바퀴</span>
+                                                        </em>
+                                                    </i>
+                                                    <em class="di-car-exhaust di-car-exhaust1">
+                                                        <span class="di-car-exhaust-inner">
+                                                            <i class="di-car-exhaust-bar">
+                                                                <span class="blind">매연1</span>
+                                                            </i>
+                                                        </span>
+                                                    </em>
+                                                    <em class="di-car-exhaust di-car-exhaust2">
+                                                        <span class="di-car-exhaust-inner">
+                                                            <i class="di-car-exhaust-bar">
+                                                                <span class="blind">매연2</span>
+                                                            </i>
+                                                        </span>
+                                                    </em>
+                                                    <i class="di-car-shadow">
+                                                        <span class="blind">그림자</span>
+                                                    </i>
+                                                </span>
+                                            </em>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-text-wrap">
+                                        <span class="text">
+                                            관제센터로부터 출동지시를 받은 출동요원이<br />
+                                            <strong class="color-blue">즉시 현장으로 출동</strong>하여 신속하게
+                                            대처합니다.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 즉시 현장으로 출동 -->
+                        </div>
+                    </div>
+
+                    <h3>팝업 스타일2 : 애니메이션</h3>
+                    <div class="sr-component-item">
+                        <div style="background: rgba(0, 0, 0, 0.1); padding: 20px; text-align: center">
+                            <!-- 에스원 리더기로 안전하게 출입관리를 해보세요. -->
+                            <div class="popup-layer-animation2-wrap">
+                                <div class="popup-layer-animation2-inner">
+                                    <div class="s1-reader-safe-warp">
+                                        <div class="s1-reader-safe-inner">
+                                            <em class="circle-safe-check-wrap">
+                                                <span class="circle-safe-check-inner">
+                                                    <i class="icon-safe-check-white">
+                                                        <span class="blind">체크</span>
+                                                    </i>
+                                                    <i class="icon-safe-check-circle">
+                                                        <span class="blind">원</span>
+                                                    </i>
+                                                </span>
+                                            </em>
+                                            <div class="bg-icon-safe-lock-wrap">
+                                                <div class="bg-icon-safe-lock-inner">
+                                                    <div class="bg-icon-safe-ring">
+                                                        <span class="blind">자물쇠 고리</span>
+                                                    </div>
+                                                    <div class="bg-icon-safe-lock">
+                                                        <span class="blind">자물쇠 몸통</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-safe-guard">
+                                                <span class="blind">세이프</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-text-wrap">
+                                        <span class="text">
+                                            <strong class="color-blue">에스원 리더기</strong>로 안전하게 출입관리를
+                                            해보세요.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 에스원 리더기로 안전하게 출입관리를 해보세요. -->
+
+                            <!-- 에스원 리더기로 안전하게 출입관리를 해보세요. : active -->
+                            <div class="popup-layer-animation2-wrap active">
+                                <div class="popup-layer-animation2-inner">
+                                    <div class="s1-reader-safe-warp">
+                                        <div class="s1-reader-safe-inner">
+                                            <em class="circle-safe-check-wrap">
+                                                <span class="circle-safe-check-inner">
+                                                    <i class="icon-safe-check-white">
+                                                        <span class="blind">체크</span>
+                                                    </i>
+                                                    <i class="icon-safe-check-circle">
+                                                        <span class="blind">원</span>
+                                                    </i>
+                                                </span>
+                                            </em>
+                                            <div class="bg-icon-safe-lock-wrap">
+                                                <div class="bg-icon-safe-lock-inner">
+                                                    <div class="bg-icon-safe-ring">
+                                                        <span class="blind">자물쇠 고리</span>
+                                                    </div>
+                                                    <div class="bg-icon-safe-lock">
+                                                        <span class="blind">자물쇠 몸통</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-icon-safe-guard">
+                                                <span class="blind">세이프</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-text-wrap">
+                                        <span class="text">
+                                            <strong class="color-blue">에스원 리더기</strong>로 안전하게 출입관리를
+                                            해보세요.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 에스원 리더기로 안전하게 출입관리를 해보세요. -->
+                        </div>
+                    </div>
+                </div>
+
+                <h2>팝업</h2>
+                <div class="sr-component-box">
+                    <h3>상점 체험하기 완료</h3>
+                    <div class="sr-component-item">
+                        <div style="background: rgba(0, 0, 0, 0.1); padding: 20px; text-align: center">
+                            <div class="popup-check-complete-wrap popup-check-complete-wrap1">
+                                <div class="popup-check-complete-inner">
+                                    <h4 class="title-service-check-complete">
+                                        <span class="text">출동 경비 서비스로 안심</span>
+                                    </h4>
+                                    <i class="icon-complete-check">
+                                        <em class="icon-complete-check-inner">
+                                            <span class="blind">체크</span>
+                                        </em>
+                                    </i>
+                                    <div class="bg-check-complete">
+                                        <span class="blind">배경</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-check-complete-wrap popup-check-complete-wrap2">
+                                <div class="popup-check-complete-inner">
+                                    <h4 class="title-service-check-complete">
+                                        <span class="text">CCTV 서비스로 매장 안심</span>
+                                    </h4>
+                                    <i class="icon-complete-check">
+                                        <em class="icon-complete-check-inner">
+                                            <span class="blind">체크</span>
+                                        </em>
+                                    </i>
+                                    <div class="bg-check-complete">
+                                        <span class="blind">배경</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-check-complete-wrap popup-check-complete-wrap3">
+                                <div class="popup-check-complete-inner">
+                                    <h4 class="title-service-check-complete">
+                                        <span class="text">직원 출입/근태 안심</span>
+                                    </h4>
+                                    <i class="icon-complete-check">
+                                        <em class="icon-complete-check-inner">
+                                            <span class="blind">체크</span>
+                                        </em>
+                                    </i>
+                                    <div class="bg-check-complete">
+                                        <span class="blind">배경</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>버튼 정보 보기</h3>
+                    <div class="sr-component-item">
+                        <div style="background: rgba(0, 0, 0, 0.1); padding: 20px; text-align: center">
+                            <!-- 버튼 정보 보기 -->
+                            <div class="info-view-popup-wrap">
+                                <div class="info-view-popup-inner">
+                                    <!-- 버튼 영역 -->
+                                    <div class="info-button-wrap">
+                                        <div class="info-button-inner">
+                                            <ul class="info-button-list">
+                                                <li class="info-button-item">
+                                                    <button
+                                                        class="button-info-view"
+                                                        title="팝업 정보 보기"
+                                                        aria-label="팝업 정보 보기"
+                                                    >
+                                                        <span class="text">카드 리더기</span>
+                                                        <em class="icon-view">
+                                                            <span class="icon-view-inner">
+                                                                <i class="bar bar1"></i>
+                                                                <i class="bar bar2"></i>
+                                                            </span>
+                                                        </em>
+                                                    </button>
+                                                </li>
+                                                <li class="info-button-item">
+                                                    <button
+                                                        class="button-info-view"
+                                                        title="팝업 정보 보기"
+                                                        aria-label="팝업 정보 보기"
+                                                    >
+                                                        <span class="text">지문 리더기</span>
+                                                        <em class="icon-view">
+                                                            <span class="icon-view-inner">
+                                                                <i class="bar bar1"></i>
+                                                                <i class="bar bar2"></i>
+                                                            </span>
+                                                        </em>
+                                                    </button>
+                                                </li>
+                                                <li class="info-button-item">
+                                                    <button
+                                                        class="button-info-view"
+                                                        title="팝업 정보 보기"
+                                                        aria-label="팝업 정보 보기"
+                                                    >
+                                                        <span class="text">얼굴 리더기</span>
+                                                        <em class="icon-view">
+                                                            <span class="icon-view-inner">
+                                                                <i class="bar bar1"></i>
+                                                                <i class="bar bar2"></i>
+                                                            </span>
+                                                        </em>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--// 버튼 영역 -->
+                                    <!-- 팝업 영역 -->
+                                    <div class="info-popup-wrap">
+                                        <div class="info-popup-inner">
+                                            <ul class="popup-view-list">
+                                                <li class="popup-view-item">
+                                                    <div class="popup-view-wrap">
+                                                        <div class="popup-view-inner">
+                                                            <a
+                                                                class="icon-view-close"
+                                                                href="javascript:void(0)"
+                                                                title="닫기"
+                                                                aria-label="닫기"
+                                                            >
+                                                                <span class="icon-view-inner">
+                                                                    <i class="bar bar1"></i>
+                                                                    <i class="bar bar2"></i>
+                                                                </span>
+                                                            </a>
+                                                            <h4 class="title-popup-view">
+                                                                <span class="text">카드 리더기</span>
+                                                            </h4>
+                                                            <div class="screen-view-icon-wrap">
+                                                                <div class="screen-view-icon-inner">
+                                                                    <i class="image-device image-device1">
+                                                                        <span class="blind">카드 리더기</span>
+                                                                    </i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bottom-text-wrap">
+                                                                <span class="text">
+                                                                    카드, 스마트폰(모바일 카드)으로<br />
+                                                                    간편하게 인증 후 출입할 수 있어요!
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="popup-view-item">
+                                                    <div class="popup-view-wrap">
+                                                        <div class="popup-view-inner">
+                                                            <a
+                                                                class="icon-view-close"
+                                                                href="javascript:void(0)"
+                                                                title="닫기"
+                                                                aria-label="닫기"
+                                                            >
+                                                                <span class="icon-view-inner">
+                                                                    <i class="bar bar1"></i>
+                                                                    <i class="bar bar2"></i>
+                                                                </span>
+                                                            </a>
+                                                            <h4 class="title-popup-view">
+                                                                <span class="text">지문 리더기</span>
+                                                            </h4>
+                                                            <div class="screen-view-icon-wrap">
+                                                                <div class="screen-view-icon-inner">
+                                                                    <i class="image-device image-device2">
+                                                                        <span class="blind">지문 리더기</span>
+                                                                    </i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bottom-text-wrap">
+                                                                <span class="text">
+                                                                    개인 생체(지문)을 활용하여<br />
+                                                                    보안은 철저하고,<br />
+                                                                    사용은 더욱 편리해요!
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="popup-view-item">
+                                                    <div class="popup-view-wrap">
+                                                        <div class="popup-view-inner">
+                                                            <a
+                                                                class="icon-view-close"
+                                                                href="javascript:void(0)"
+                                                                title="닫기"
+                                                                aria-label="닫기"
+                                                            >
+                                                                <span class="icon-view-inner">
+                                                                    <i class="bar bar1"></i>
+                                                                    <i class="bar bar2"></i>
+                                                                </span>
+                                                            </a>
+                                                            <h4 class="title-popup-view">
+                                                                <span class="text">얼굴 리더기</span>
+                                                            </h4>
+                                                            <div class="screen-view-icon-wrap">
+                                                                <div class="screen-view-icon-inner">
+                                                                    <i class="image-device image-device3">
+                                                                        <span class="blind">얼굴 리더기</span>
+                                                                    </i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bottom-text-wrap">
+                                                                <span class="text">
+                                                                    비접촉 방식으로 위생적이고 편리하며,<br />
+                                                                    고도화된 인증방식으로<br />
+                                                                    보안수준까지 높일 수 있어요!
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--// 팝업 영역 -->
+                                </div>
+                            </div>
+                            <!--// 버튼 정보 보기 -->
+                        </div>
+                    </div>
+                </div>
+
+                <h2>우측 사이드 레이어</h2>
+                <div class="sr-component-box">
+                    <!-- 임의로 inline style 적용. 사용 시 삭제할 것 -->
+                    <style>
+                        .wrap-online-showroom .service-step-wrap,
+                        .wrap-online-showroom .estimate-indicator {
+                            position: static;
+                            transform: unset;
+                        }
+                    </style>
+                    <h3>스텝 이동 리스트</h3>
+                    <div class="sr-component-item">
+                        <div style="background: rgba(0, 0, 0, 0.6); padding: 20px">
+                            <!-- start -->
+                            <div class="service-step-wrap">
+                                <div class="service-step-inner">
+                                    <div class="title-step-top">
+                                        <h4 class="title-top-text">
+                                            <span class="text">출동경비 알람 서비스</span>
+                                        </h4>
+                                        <em class="sub-top-text">
+                                            <span class="text">에스원의 경비는 어떻게 다를까요?</span>
+                                        </em>
+                                    </div>
+                                    <!--
+                                                        공통 STEP 리스트
+                                                    -->
+                                    <div class="step-list-wrap">
+                                        <ul class="step-play-list">
+                                            <!--
+                                            해당 레이어 진입시
+                                            step-play-item 인접클래스
+                                            active시 메뉴활성화 되면
+                                            step-play-item에 인접클래스 play 추가
+                                            5초가 지나면 complate 클래스 추가
+                                        -->
+                                            <li class="step-play-item active">
+                                                <a
+                                                    href="javascript:void(0)"
+                                                    class="link-list-step"
+                                                    title="페이지 이동"
+                                                    aria-label="페이지 이동"
+                                                >
+                                                    <h6 class="title-number">
+                                                        <span class="text">STEP1</span>
+                                                    </h6>
+                                                    <em class="title-con">
+                                                        <span class="text">자석 감지기 작동</span>
+                                                    </em>
+                                                </a>
+                                                <div class="automatic-layer">
+                                                    <!--
+                                                    service-circle-play의 인접클래스
+                                                    play : 실행
+                                                    pause시 : 멈춤
+                                                -->
+                                                    <button class="service-circle-play play">
+                                                        <span class="service-circle-play-inner">
+                                                            <svg
+                                                                width="28"
+                                                                height="28"
+                                                                viewBox="0 0 100 100"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <circle
+                                                                    cx="50"
+                                                                    cy="50"
+                                                                    r="45"
+                                                                    fill="none"
+                                                                    stroke="gray"
+                                                                    stroke-width="5"
+                                                                />
+                                                                <path
+                                                                    class="blue-circle"
+                                                                    d="M50,5 a45,45 0 1,1 0,90 a45,45 0 1,1 0,-90"
+                                                                    fill="none"
+                                                                    stroke="#1d6ceb"
+                                                                    stroke-width="5"
+                                                                />
+                                                            </svg>
+                                                            <i class="icon-play">
+                                                                <span class="blind">실행/멈춤 버튼</span>
+                                                            </i>
+                                                        </span>
+                                                    </button>
+                                                    <i class="check">
+                                                        <span class="blind">재생완료</span>
+                                                    </i>
+                                                </div>
+                                            </li>
+                                            <li class="step-play-item">
+                                                <a
+                                                    href="javascript:void(0)"
+                                                    class="link-list-step"
+                                                    title="페이지 이동"
+                                                    aria-label="페이지 이동"
+                                                >
+                                                    <h6 class="title-number">
+                                                        <span class="text">STEP2</span>
+                                                    </h6>
+                                                    <em class="title-con">
+                                                        <span class="text">열선 감지기 작동</span>
+                                                    </em>
+                                                </a>
+                                                <div class="automatic"></div>
+                                            </li>
+                                            <li class="step-play-item">
+                                                <a
+                                                    href="javascript:void(0)"
+                                                    class="link-list-step"
+                                                    title="페이지 이동"
+                                                    aria-label="페이지 이동"
+                                                >
+                                                    <h6 class="title-number">
+                                                        <span class="text">STEP3</span>
+                                                    </h6>
+                                                    <em class="title-con">
+                                                        <span class="text">이상신호 관제센터 전달</span>
+                                                    </em>
+                                                </a>
+                                                <div class="automatic"></div>
+                                            </li>
+                                            <li class="step-play-item">
+                                                <a
+                                                    href="javascript:void(0)"
+                                                    class="link-list-step"
+                                                    title="페이지 이동"
+                                                    aria-label="페이지 이동"
+                                                >
+                                                    <h6 class="title-number">
+                                                        <span class="text">STEP4</span>
+                                                    </h6>
+                                                    <em class="title-con">
+                                                        <span class="text">출동요원 출동</span>
+                                                    </em>
+                                                </a>
+                                                <div class="automatic"></div>
+                                            </li>
+                                        </ul>
+                                        <div class="step-button-wrap">
+                                            <button class="button-submit">
+                                                <span class="text">다른 체험이 궁금해요</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--// 공통 STEP 리스트 -->
+                                </div>
+                            </div>
+                            <!-- // end -->
+                        </div>
+                    </div>
+                    <h3>견적내기</h3>
+                    <div class="sr-component-item">
+                        <div style="background: rgba(0, 0, 0, 0.6); padding: 20px">
+                            <!-- start -->
+                            <div class="estimate-indicator">
+                                <div class="estimate-indicator-inner">
+                                    <div class="estimate-indicator-title">
+                                        <h4>예상 견적 내기</h4>
+                                        <button class="button-reset">초기화</button>
+                                    </div>
+                                    <div class="estimate-indicator-details">
+                                        <!-- 조건 선택 영역 -->
+                                        <ul class="select-details">
+                                            <!-- 선택 전: arr 노출 / 상세 미노출 -->
+                                            <!-- 선택 중 open: arr 미노출 / 상세 노출 -->
+                                            <!-- 선택 후 done: arr 미노출 / 상세 미노출 / 선택 결과 노출 -->
+                                            <li class="select-details-item">
+                                                <button class="details-btn">
+                                                    <p
+                                                        data-text="공간 유형을 선택해주세요."
+                                                        data-original-text="공간 유형"
+                                                    >
+                                                        공간 유형
+                                                    </p>
+                                                    <em></em>
+                                                </button>
+                                                <div class="details-view">
+                                                    <button class="option">
+                                                        <span>상업용</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>가정용</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+
+                                            <li class="select-details-item">
+                                                <button class="details-btn">
+                                                    <p data-text="장소를 선택해주세요." data-original-text="장소">
+                                                        장소
+                                                    </p>
+                                                    <em></em>
+                                                </button>
+                                                <div class="details-view">
+                                                    <button class="option">
+                                                        <span>사무실</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>매장</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>공장</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>창고</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+
+                                            <li class="select-details-item">
+                                                <button class="details-btn">
+                                                    <p
+                                                        data-text="원하시는 보안서비스를 선택해주세요."
+                                                        data-original-text="보안서비스"
+                                                    >
+                                                        보안서비스
+                                                    </p>
+                                                    <em></em>
+                                                </button>
+                                                <div class="details-view l-grid-3">
+                                                    <button class="option">
+                                                        <span>출동경비</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>CCTV</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>둘 다</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+
+                                            <li class="select-details-item">
+                                                <button class="details-btn">
+                                                    <p
+                                                        data-text="출입문 개수를 선택하세요."
+                                                        data-original-text="출입문 개수"
+                                                    >
+                                                        출입문 개수
+                                                    </p>
+                                                    <em></em>
+                                                </button>
+                                                <div class="details-view">
+                                                    <!-- 0 초과 개수일 경우 .text-blue input[number]에 추가 -->
+                                                    <span class="spinner">
+                                                        <button class="decrease" disabled></button>
+                                                        <input type="number" value="0" readonly />
+                                                        <button class="increase"></button>
+                                                    </span>
+                                                </div>
+                                            </li>
+
+                                            <li class="select-details-item">
+                                                <button class="details-btn">
+                                                    <p
+                                                        data-text="출입 방식을 선택하세요. (다중 선택)"
+                                                        data-original-text="출입 방식"
+                                                    >
+                                                        출입 방식
+                                                    </p>
+                                                    <em></em>
+                                                </button>
+                                                <div class="details-view multiple">
+                                                    <button class="option">
+                                                        <span>지문</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>얼굴</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>모바일 카드</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>세콤 카드</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+
+                                            <li class="select-details-item">
+                                                <button class="details-btn">
+                                                    <p
+                                                        data-text="CCTV 타입을 선택하세요."
+                                                        data-original-text="CCTV 타입"
+                                                    >
+                                                        CCTV 타입
+                                                    </p>
+                                                    <em></em>
+                                                </button>
+                                                <div class="details-view">
+                                                    <button class="option">
+                                                        <span>일반형</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>클라우드형</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+
+                                            <li class="select-details-item">
+                                                <button class="details-btn">
+                                                    <p
+                                                        data-text="CCTV 개수를 선택하세요."
+                                                        data-original-text="CCTV 개수"
+                                                    >
+                                                        CCTV 개수
+                                                    </p>
+                                                    <em></em>
+                                                </button>
+                                                <div class="details-view">
+                                                    <span class="spinner">
+                                                        <button class="decrease" disabled></button>
+                                                        <input type="number" value="0" readonly />
+                                                        <button class="increase"></button>
+                                                    </span>
+                                                </div>
+                                            </li>
+
+                                            <li class="select-details-item">
+                                                <button class="details-btn">
+                                                    <p
+                                                        data-text="부가 서비스를 선택하세요."
+                                                        data-original-text="부가 서비스"
+                                                    >
+                                                        부가 서비스
+                                                    </p>
+                                                    <em></em>
+                                                </button>
+                                                <div class="details-view">
+                                                    <button class="option">
+                                                        <span>출입/관리</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>근태/식당</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>스페셜 보험</span>
+                                                    </button>
+                                                    <button class="option">
+                                                        <span>선택 안함</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- 결과 영역 -->
+                                        <div class="select-result">
+                                            <!-- 예상금액 산출 전 -->
+                                            <p>예상금액</p>
+                                            <!-- 예상금액 산출 후 -->
+                                            <!-- <p class="calculated">약 <em>187,000 ~ 235,000</em>원</p> -->
+                                            <span
+                                                >* 예상금액은 평면도를 이용하여 대략적으로 산정한 금액이므로, 실제 견적
+                                                금액과는 상이할 수 있습니다.</span
+                                            >
+                                        </div>
+                                        <!-- 문의하기 버튼 -->
+                                        <button class="button-submit">맞춤 견적 문의하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomComm.js"></script>
+
+        <!--// 쇼룸 공통 컴포넌트 -->
+    </body>
+</html>

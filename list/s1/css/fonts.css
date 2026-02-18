@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/*-------------------------------------------------------------------
+    파일정의 : fonts.css / 사용되는 폰트
+    작성날짜 : 2021-03-19 이수정
+-------------------------------------------------------------------*/
+/* font */
+/**  ko
+    * noto-sans kr fonts/ roboto fonts
+    * Regular 400/ Medium 500/ Bold 700
+**/
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NotoSansKR-Regular.eot");
+  src: local("※"), url("../fonts/NotoSansKR-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Regular.woff") format("woff"), url("../fonts/NotoSansKR-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/NotoSansKR-Medium.eot");
+  src: local("※"), url("../fonts/NotoSansKR-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Medium.woff") format("woff"), url("../fonts/NotoSansKR-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/NotoSansKR-Bold.eot");
+  src: local("※"), url("../fonts/NotoSansKR-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Bold.woff") format("woff"), url("../fonts/NotoSansKR-Bold.otf") format("opentype");
+}
+/* en, number, character */
+/* @font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/Roboto-Light.eot");
+    src: local("※"), url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto-Light.woff") format("woff"),
+    url("../fonts/Roboto-Light.otf") format('opentype');
+    unicode-range: U+0020-007E;
+}
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Roboto-Regular.eot");
+    src: local("※"), url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto-Regular.woff") format("woff"),
+    url("../fonts/Roboto-Regular.otf") format('opentype');
+    unicode-range: U+0020-007E;
+}
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/Roboto-Medium.eot");
+    src: local("※"), url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto-Medium.woff") format("woff"),
+    url("../fonts/Roboto-Medium.otf") format('opentype');
+    unicode-range: U+0020-007E;
+}
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Roboto-Bold.eot");
+    src: local("※"), url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Roboto-Bold.woff") format("woff"),
+    url("../fonts/Roboto-Bold.otf") format('opentype');
+    unicode-range: U+0020-007E;
+} */
+/**  en, number, character
+    * noto-sans kr fonts/ roboto fonts
+    * Regular 400/ Bold 700
+**/
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Inter-Regular.eot");
+  src: local("※"), url("../fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.otf") format("opentype");
+  unicode-range: U+0020-007E;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Inter-Medium.eot");
+  src: local("※"), url("../fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.otf") format("opentype");
+  unicode-range: U+0020-007E;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Inter-Bold.eot");
+  src: local("※"), url("../fonts/Inter-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.otf") format("opentype");
+  unicode-range: U+0020-007E;
+}
+/*# sourceMappingURL=maps/fonts.css.map */

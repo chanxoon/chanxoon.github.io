@@ -71,7 +71,7 @@
       "progressValue": 25,
       "image": "./assets/img/img-detail-list21.png",
       "alt": "온라인 쇼룸",
-      "link": "./list/s1/dist/showroom/storage.html"
+      "link": "./list/s1/showroom/storage.html"
     },
     {
       "type": "brand",
@@ -82,7 +82,7 @@
       "progressValue": 25,
       "image": "./assets/img/img-detail-list20.png",
       "alt": "에스원",
-      "link": "./list/s1/dist/showroom/villa.html"
+      "link": "./list/s1/showroom/villa.html"
     },
     {
       "type": "brand",
@@ -93,7 +93,7 @@
       "progressValue": 90,
       "image": "./assets/img/img-detail-list19.png",
       "alt": "미래엔 중고등 교과서 가상실험실",
-      "link": "./list/virtuallab/dist/web/html/h_s12_232_130.html"
+      "link": "./list/virtuallab/web/html/h_s12_232_130.html"
     },
     {
       "type": "brand",
@@ -104,7 +104,7 @@
       "progressValue": 90,
       "image": "./assets/img/img-detail-list18.png",
       "alt": "미래엔 중고등 교과서 가상실험실",
-      "link": "./list/virtuallab/dist/web/html/h_s2_122_049.html"
+      "link": "./list/virtuallab/web/html/h_s2_122_049.html"
     },
     {
       "type": "brand",

@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>산과 염기를 혼합할 때 온도 변화와 지시약의 색 변화 관찰하기</title>
+        <link
+            rel="preload"
+            href="../../fonts/GmarketSansBold.woff?t=1739422601548"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="../../fonts/GmarketSansBold.woff2?t=1739422601548"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="../../fonts/GmarketSansLight.woff?t=1739422601548"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="../../fonts/GmarketSansLight.woff2?t=1739422601548"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="../../fonts/GmarketSansMedium.woff?t=1739422601548"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="../../fonts/GmarketSansMedium.woff2?t=1739422601548"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <!-- 공통 css -->
+        <link type="text/css" href="../../css/common.css?t=1739422601548" rel="stylesheet" />
+        <!-- 주제별 css -->
+        <link type="text/css" href="../../css/page/h_s2_122_052.css?t=1739422601548" rel="stylesheet" />
+        <link type="text/css" href="../../css/swiper-bundle.min.css?t=1739422601548" rel="stylesheet" />
+        <script src="../../js/lib/swiper.min.js?t=1739422601548"></script>
+        <script src="../../js/lib/jquery.min.js?t=1739422601548"></script>
+        <script src="../../js/lib/jquery-ui.min.js?t=1739422601548"></script>
+        <script src="../../js/lib/jquery.ui.touch-punch.min.js?t=1739422601548"></script>
+        <script src="../../js/lib/video-js.js?t=1739422601548"></script>
+        <script src="../../js/lib/video.js?t=1739422601548"></script>
+        <script src="../../js/lib/gsap.min.js?t=1739422601548"></script>
+        <script src="../../js/lib/p5.v10.js?t=1739422601548"></script>
+        <script src="../../js/common.js?t=1739422601548"></script>
+        <script src="../../js/h_s2_122_052.js?t=1739422601548"></script>
+    </head>
+    <body>
+        <!-- Wrap 영역 -->
+        <div id="wrap" class="wrap wrap-new">
+            <!-- View 영역 -->
+            <div class="wrapper-set-view h_s2_122_052">
+                <!-- page-view1 : (페이지) 인트로 : page-view1 intro에 인접클래스 active가 있으면 보여짐 제거시 사라짐 -->
+                <div class="page-view page-view1 intro active">
+                    <!-- intro header area : 인트로 헤더영역 -->
+                    <div class="header-area header-area-intro">
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// intro header area : 인트로 헤더영역 -->
+
+                    <!-- Common Element : 인트로 과목명 -->
+                    <div class="background-area">
+                        <div class="background-area-inner">
+                            <em class="object-cockle-hat">
+                                <span class="blind">꼬깔모자 요소</span>
+                            </em>
+                            <h2 class="intro-title-text">
+                                산과 염기를 혼합할 때 <span class="text-color-fff000">온도 변화</span>와<br />
+                                <span class="text-color-abb5ff">지시약의 색 변화</span> 관찰하기
+                            </h2>
+                            <ul class="ruler">
+                                <li class="begin">
+                                    <span class="number">0</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">10</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">20</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">30</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">40</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 과목명 -->
+
+                    <!-- Common Element : 인트로 메인으로 시작 버튼 -->
+                    <div class="button-intro-area">
+                        <div class="button-start-area">
+                            <button class="button-intro-main-start">
+                                <em class="text-box">
+                                    <span>활동 시작</span>
+                                </em>
+                                <em class="arrow-box">
+                                    <span class="text blind">-&gt;</span>
+                                    <i class="icon"></i>
+                                </em>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 메인으로 시작 버튼 -->
+
+                    <!-- Common Element : 인트로 캐릭터 -->
+                    <div class="intro-character1-layer">
+                        <span class="blind">인트로 캐릭터</span>
+                        <ul id="" class="interaction-character-list">
+                            <li class="motion-1">
+                                <img src="../../images/common/character1/character1-motion1.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// Common Element : 인트로 캐릭터 -->
+                </div>
+                <!--// page-view1 : (페이지) 인트로 -->
+
+                <!-- page-view2 : (모달) 활동목표 : page-view2에 인접클래스 active가 있으면 보여짐 제거시 사라짐 님 -->
+                <div class="page-view page-view2 modal-layer modal-layer-activity-goals">
+                    <div class="modal-layer-box aim-madal">
+                        <button class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <h4 class="title-round">
+                            <span>활동 목표</span>
+                        </h4>
+                        <ul class="bullet-list">
+                            <li>
+                                <i class="bullet-circle"></i>
+                                산과 염기를 혼합할 때의 반응을<br />
+                                모형으로 나타내고, 온도 변화와<br />
+                                지시약의 색 변화를 설명할 수 있다.
+                            </li>
+                        </ul>
+                        <div class="character-guide h-character-activity-goals">
+                            <span class="blind">고등 활동목표</span>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view2 : (모달) 활동목표 -->
+
+                <!-- page-view3 : (페이지) 컨텐츠 페이지 -->
+                <div class="page-view page-view3 content-area">
+                    <!-- Content Header Area : 컨텐츠 헤더영역 -->
+                    <div class="header-area header-area-content">
+                        <!-- Common Title : 타이틀 -->
+                        <div class="header-title">
+                            <p>산과 염기를 혼합할 때 온도 변화와 지시약의 색 변화 관찰하기</p>
+                        </div>
+                        <!--// Common Title : 타이틀 -->
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-home">
+                                <span class="blind">홈</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// Content Header Area : 컨텐츠 헤더영역 -->
+
+                    <!-- modal-layer-activity-number-goals에 인접클래스 active 추가시 활동 팝업 보여짐 -->
+                    <div class="modal-layer modal-layer-activity-number-goals">
+                        <div class="activity-number-modal">
+                            <button class="button-close">
+                                <span class="blind">닫기</span>
+                            </button>
+                            <div class="character-area">
+                                <img src="../../images/common/modal-activity-character.png" alt="" />
+                            </div>
+                            <ul class="bullet-list">
+                                <li>
+                                    농도와 온도가 같은 염산과<br />
+                                    수산화 나트륨 수용액의 부피를 달리하며<br />
+                                    반응시켜 봅시다.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 씬 영역 : 씬 영역1 -->
+                    <div class="scene scene-layer-area1">
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap0-1">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        온도 버튼을 클릭해 염산(HCl)과 수산화 나트륨<br />
+                                        (NaOH) 수용액의 처음 온도를 측정해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1-1">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        염산(HCl) 버튼을 1 회 클릭해 염산 2 mL를<br />
+                                        비커에 넣어 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1-2">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        수산화 나트륨(NaOH) 버튼을 5 회 클릭해<br />
+                                        수산화 나트륨 수용액 10 mL를 비커에 넣어 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1-3">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        용액이 채워진 비커를 클릭해 혼합 용액에서<br />
+                                        일어나는 반응을 확인해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1-4">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        온도 버튼을 클릭해 혼합 용액의<br />
+                                        최고 온도를 측정해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1-5">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        화면 아래의 결과 표를 클릭해 혼합 용액의<br />
+                                        최고 온도를 기록해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1-6">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        지시약 버튼을 클릭해 BTB 용액을 떨어뜨렸을 때<br />
+                                        혼합 용액의 색을 확인해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1-7">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        화면 아래의 결과 표를 클릭해 혼합 용액의<br />
+                                        색을 기록해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1-8">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        다음 버튼을 클릭해 염산 4 mL와 수산화 나트륨<br />
+                                        수용액 8 mL를 혼합해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2-1">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        염산(HCl) 버튼을 2 회 클릭해 염산 4 mL를<br />
+                                        비커에 넣어 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2-2">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        수산화 나트륨(NaOH) 버튼을 4 회 클릭해<br />
+                                        수산화 나트륨 수용액 8 mL를 비커에 넣어 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2-3">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        용액이 채워진 비커를 클릭해 혼합 용액에서<br />
+                                        일어나는 반응을 확인해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2-4">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        온도 버튼을 클릭해 혼합 용액의<br />
+                                        최고 온도를 측정해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2-5">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        화면 아래의 결과 표를 클릭해 혼합 용액의<br />
+                                        최고 온도를 기록해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2-6">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        지시약 버튼을 클릭해 BTB 용액을 떨어뜨렸을 때<br />
+                                        혼합 용액의 색을 확인해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2-7">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        화면 아래의 결과 표를 클릭해 혼합 용액의<br />
+                                        색을 기록해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2-8">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        다음 버튼을 클릭해 염산 6 mL와 수산화 나트륨<br />
+                                        수용액 6 mL를 혼합해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3-1">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        염산(HCl) 버튼을 3 회 클릭해 염산 6 mL를<br />
+                                        비커에 넣어 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3-2">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        수산화 나트륨(NaOH) 버튼을 3 회 클릭해<br />
+                                        수산화 나트륨 수용액 6 mL를 비커에 넣어 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3-3">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        용액이 채워진 비커를 클릭해 혼합 용액에서<br />
+                                        일어나는 반응을 확인해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3-4">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        온도 버튼을 클릭해 혼합 용액의<br />
+                                        최고 온도를 측정해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3-5">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        화면 아래의 결과 표를 클릭해 혼합 용액의<br />
+                                        최고 온도를 기록해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3-6">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        지시약 버튼을 클릭해 BTB 용액을 떨어뜨렸을 때<br />
+                                        혼합 용액의 색을 확인해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3-7">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        화면 아래의 결과 표를 클릭해 혼합 용액의<br />
+                                        색을 기록해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3-8">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        다음 버튼을 클릭해 염산 8 mL와 수산화 나트륨<br />
+                                        수용액 4 mL를 혼합해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4-1">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        염산(HCl) 버튼을 4 회 클릭해 염산 8 mL를<br />
+                                        비커에 넣어 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4-2">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        수산화 나트륨(NaOH) 버튼을 2 회 클릭해 수산화 나트륨<br />
+                                        수용액 4 mL를 비커에 넣어 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4-3">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        용액이 채워진 비커를 클릭해 혼합 용액에서<br />
+                                        일어나는 반응을 확인해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4-4">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        온도 버튼을 클릭해 혼합 용액의<br />
+                                        최고 온도를 측정해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4-5">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        화면 아래의 결과 표를 클릭해 혼합 용액의<br />
+                                        최고 온도를 기록해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4-6">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        지시약 버튼을 클릭해 BTB 용액을 떨어뜨렸을 때<br />
+                                        혼합 용액의 색을 확인해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4-7">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        화면 아래의 결과 표를 클릭해 혼합 용액의 색을 기록해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4-8">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        다음 버튼을 클릭해 염산 10 mL와 수산화 나트륨<br />
+                                        수용액 2 mL를 혼합해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap5-1">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        염산(HCl) 버튼을 5 회 클릭해 염산 10 mL를<br />
+                                        비커에 넣어 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap5-2">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        수산화 나트륨(NaOH) 버튼을 1 회 클릭해 수산화 나트륨<br />
+                                        수용액 2 mL를 비커에 넣어 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap5-3">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        용액이 채워진 비커를 클릭해 혼합 용액에서<br />
+                                        일어나는 반응을 확인해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap5-4">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        온도 버튼을 클릭해 혼합 용액의<br />
+                                        최고 온도를 측정해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap5-5">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        화면 아래의 결과 표를 클릭해 혼합 용액의<br />
+                                        최고 온도를 기록해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap5-6">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        지시약 버튼을 클릭해 BTB 용액을 떨어뜨렸을 때<br />
+                                        혼합 용액의 색을 확인해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                        <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap5-7">
+                            <div class="bubble-box">
+                                <div class="text-box">
+                                    <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                    <span class="bubble-text bubble-text1 active">
+                                        화면 아래의 결과 표를 클릭해 혼합 용액의 색을 기록해 봅시다.
+                                    </span>
+                                </div>
+                                <div class="img-background-area img-background-high">
+                                    <span class="blind">캐릭터</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- scene-layer1 인접클래스 active 추가시 화면보여짐 -->
+                        <div class="scene-layer scene-layer1">
+                            <div class="content-beaker-wrap">
+                                <div class="beaker-temperature-wrap">
+                                    <div class="beaker-wrap">
+                                        <div class="beaker-inner">
+                                            <!-- temperature-wrap 인접클래스 active시 활성화 -->
+                                            <em class="temperature-wrap">
+                                                <span class="number">24.0</span>
+                                                <span class="mark">℃</span>
+                                            </em>
+                                            <em class="beaker-image">
+                                                <span class="blind">비이커 이미지</span>
+                                            </em>
+                                            <em class="water-wrap water-wrap1">
+                                                <em class="water-inner">
+                                                    <i class="water-top">
+                                                        <span class="blind">물표면</span>
+                                                    </i>
+                                                </em>
+                                            </em>
+                                        </div>
+                                    </div>
+                                    <div class="text-chemical">
+                                        <span class="text">염산</span>
+                                        <span class="chemical">(HCl)</span>
+                                    </div>
+                                </div>
+                                <div class="center-button-wrap">
+                                    <button class="button-temperature" title="진행버튼" aria-label="진행버튼">
+                                        <span class="text">온도</span>
+                                    </button>
+                                    <i class="gesture-finger gesture-temperature-finger1">
+                                        <span class="blind">손모양 제스처</span>
+                                    </i>
+                                </div>
+                                <div class="beaker-temperature-wrap">
+                                    <div class="beaker-wrap">
+                                        <div class="beaker-inner">
+                                            <!-- temperature-wrap 인접클래스 active시 활성화 -->
+                                            <em class="temperature-wrap">
+                                                <span class="number">24.0</span>
+                                                <span class="mark">℃</span>
+                                            </em>
+                                            <em class="beaker-image">
+                                                <span class="blind">비이커 이미지</span>
+                                            </em>
+                                            <em class="water-wrap water-wrap1">
+                                                <em class="water-inner">
+                                                    <i class="water-top">
+                                                        <span class="blind">물표면</span>
+                                                    </i>
+                                                </em>
+                                            </em>
+                                        </div>
+                                    </div>
+                                    <div class="text-chemical">
+                                        <span class="text">수산화 나트륨</span>
+                                        <span class="chemical">(NaOH) <span class="chemical-text">수용액</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// scene-layer1 인접클래스 active 추가시 화면보여짐 -->
+
+                        <!-- scene-layer2 인접클래스 active 추가시 화면보여짐 -->
+                        <div class="scene-layer scene-layer2">
+                            <div class="button-round-box-wrap">
+                                <div class="button-round-box-inner">
+                                    <div class="button-layer button-layer1">
+                                        <!--
+                                            button-chemical
+                                            인접클래스 on 추가시 색상 표시
+                                            인접클래스 active 추가시 클릭 활성화
+                                        -->
+                                        <button class="button-chemical button-chemical1">
+                                            <span class="text">염산</span>
+                                            <span class="chemica">(HCl)</span>
+                                        </button>
+                                        <!-- gesture-button-finger1 인접클래스 active 추가시 활성화 -->
+                                        <i class="gesture-finger gesture-button-finger1">
+                                            <span class="blind">손모양 제스처</span>
+                                        </i>
+                                    </div>
+                                    <div class="button-layer button-layer2">
+                                        <!--
+                                            button-chemical
+                                            인접클래스 on 추가시 색상 표시
+                                            인접클래스 active 추가시 클릭 활성화
+                                        -->
+                                        <button class="button-chemical button-chemical2">
+                                            <span class="text">수산화 나트륨</span>
+                                            <span class="chemica">(NaOH)</span>
+                                        </button>
+                                        <!-- gesture-button-finger2 인접클래스 active 추가시 활성화 -->
+                                        <i class="gesture-finger gesture-button-finger2">
+                                            <span class="blind">손모양 제스처</span>
+                                        </i>
+                                    </div>
+                                    <div class="button-layer button-layer3">
+                                        <!--
+                                            button-chemical
+                                            인접클래스 on 추가시 색상 표시
+                                            인접클래스 active 추가시 클릭 활성화
+                                        -->
+                                        <button class="button-chemical button-chemical3">
+                                            <span class="text">온도</span>
+                                        </button>
+                                        <!-- gesture-button-finger3 인접클래스 active 추가시 활성화 -->
+                                        <i class="gesture-finger gesture-button-finger3">
+                                            <span class="blind">손모양 제스처</span>
+                                        </i>
+                                    </div>
+                                    <div class="button-layer button-layer4">
+                                        <!--
+                                            button-chemical
+                                            인접클래스 on 추가시 색상 표시
+                                            인접클래스 active 추가시 클릭 활성화
+                                        -->
+                                        <button class="button-chemical button-chemical4">
+                                            <span class="text">지시약</span>
+                                        </button>
+                                        <!-- gesture-button-finger4 인접클래스 active 추가시 활성화 -->
+                                        <i class="gesture-finger gesture-button-finger4">
+                                            <span class="blind">손모양 제스처</span>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="button-again-wrap">
+                                <div class="button-again-inner">
+                                    <!-- button-next 인접클래스 active 추가시 활성화 -->
+                                    <button class="button-next">
+                                        <span class="text">다음</span>
+                                    </button>
+                                    <!-- button-next 인접클래스 active 추가시 활성화 -->
+                                    <button class="button-restart">
+                                        <span class="text">처음으로</span>
+                                    </button>
+                                    <!-- gesture-button-next-finger1 인접클래스 active 추가시 활성화 -->
+                                    <i class="gesture-finger gesture-button-again-finger1">
+                                        <span class="blind">손모양 제스처</span>
+                                    </i>
+                                </div>
+                            </div>
+
+                            <!--
+                                beaker-wrap에 인접클래스 active시 클릭 활성화
+                                인접클래스 color-blue : 물색깔 파랑
+                                인접클래스 color-green : 물색깔 녹색
+                                인접클래스 color-yellow : 물색깔 노랑
+                            -->
+                            <div class="beaker-wrap">
+                                <div class="beaker-inner">
+                                    <!-- temperature-wrap 클래스 추가시 온도계 보여짐 -->
+                                    <em class="temperature-wrap">
+                                        <span class="number">24.0</span>
+                                        <span class="mark">℃</span>
+                                    </em>
+                                    <em class="beaker-image">
+                                        <span class="blind">비이커 이미지</span>
+                                    </em>
+                                    <!--
+                                        water-wrap에 인접클래스 motion 추가시 물 보여짐
+                                        인접클래스 g-motion1 (가이드 모션) 비커에 1/6만큼 물채워짐
+                                    -->
+                                    <em class="water-wrap water-wrap1">
+                                        <em class="water-inner">
+                                            <i class="water-top">
+                                                <span class="blind">물표면</span>
+                                            </i>
+                                            <i class="water-color-all">
+                                                <span class="blind">색상</span>
+                                            </i>
+                                            <i class="water-color-top">
+                                                <span class="blind">색상</span>
+                                            </i>
+                                            <i class="water-color-mid">
+                                                <span class="blind">색상</span>
+                                            </i>
+                                            <i class="water-color-bot">
+                                                <span class="blind">색상</span>
+                                            </i>
+
+                                            <!-- 원소 입자 배치 영역 -->
+                                            <em class="particle-wrap">
+                                                <em class="particle-inner">
+                                                    <!-- 원소 입자가 배치되는 공간 -->
+                                                    <!--
+                                                    <i class="item-marble item-marble-cl">
+                                                        <i class="item-marble-inner">
+                                                            <em class="text-wrap">
+                                                                <span class="text">Cl</span>
+                                                                <sup class="sup-sign">-</sup>
+                                                            </em>
+                                                        </i>
+                                                    </i>
+                                                    <i class="item-marble item-marble-h">
+                                                        <i class="item-marble-inner">
+                                                            <em class="text-wrap">
+                                                                <span class="text">H</span>
+                                                                <sup class="sup-sign">+</sup>
+                                                            </em>
+                                                        </i>
+                                                    </i>
+                                                    <i class="item-marble item-marble-h2o">
+                                                        <i class="item-marble-inner">
+                                                            <em class="text-wrap">
+                                                                <span class="text">H</span>
+                                                                <sup class="sup-num">2</sup>
+                                                                <span class="text">O</span>
+                                                            </em>
+                                                        </i>
+                                                    </i>
+                                                    <i class="item-marble item-marble-na">
+                                                        <i class="item-marble-inner">
+                                                            <em class="text-wrap">
+                                                                <span class="text">Na</span>
+                                                                <sup class="sup-sign">+</sup>
+                                                            </em>
+                                                        </i>
+                                                    </i>
+                                                    <i class="item-marble item-marble-oh">
+                                                        <i class="item-marble-inner">
+                                                            <em class="text-wrap">
+                                                                <pan class="text">OH</pan>
+                                                                <sup class="sup-sign">-</sup>
+                                                            </em>
+                                                        </i>
+                                                    </i>
+                                                    -->
+                                                    <!--// 원소 입자가 배치되는 공간 -->
+                                                </em>
+                                            </em>
+                                        </em>
+                                    </em>
+
+                                    <!-- gesture-beaker-finger1 인접클래스 active 추가시 활성화 -->
+                                    <i class="gesture-finger gesture-beaker-finger1">
+                                        <span class="blind">손모양 제스처</span>
+                                    </i>
+                                </div>
+                            </div>
+
+                            <div class="table-input-wrap">
+                                <div class="table-input-box-wrap">
+                                    <h4 class="title-sort-wrap">
+                                        <em class="title-sort">
+                                            <span class="text">구분</span>
+                                        </em>
+                                        <em class="title-color">
+                                            <!--
+                                                text 항목 근접클래스 active일때 display: inline-block,
+                                                classList.remove('active'); 이면 display: none
+                                                .button-number-list 각 항목들과 같이 적용
+                                            -->
+                                            <span class="text active">
+                                                HCl 2 mL<br />
+                                                NaOH 10 mL
+                                            </span>
+                                            <span class="text active">
+                                                HCl 4 mL<br />
+                                                NaOH 8 mL
+                                            </span>
+                                            <span class="text active">
+                                                HCl 6 mL<br />
+                                                NaOH 6 mL
+                                            </span>
+                                            <span class="text active">
+                                                HCl 8 mL<br />
+                                                NaOH 4 mL
+                                            </span>
+                                            <span class="text active">
+                                                HCl 10 mL<br />
+                                                NaOH 2 mL
+                                            </span>
+                                        </em>
+                                    </h4>
+                                    <div class="table-input-system">
+                                        <div class="number-remaining-title-wrap">
+                                            <div class="number-remaining-title-text">
+                                                <span class="text">온도(℃)</span>
+                                            </div>
+                                            <div class="number-remaining-title-text">
+                                                <span class="text">색</span>
+                                            </div>
+                                        </div>
+                                        <div class="button-number-wrap">
+                                            <div class="button-number-inner">
+                                                <ul class="button-number-list active">
+                                                    <li>
+                                                        <input
+                                                            type="number"
+                                                            class="number-input number-input1"
+                                                            name=""
+                                                            value=""
+                                                            readonly="readonly"
+                                                        />
+                                                        <!-- gesture-number-input-finger1 인접클래스 active 추가시 활성화 -->
+                                                        <i class="gesture-finger gesture-number-input-finger1">
+                                                            <span class="blind">손모양 제스처</span>
+                                                        </i>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="input-button-choice-layer input-button-choice-layer1"
+                                                        >
+                                                            <button class="button-choice button-choice1">
+                                                                <span class="text">파란색</span>
+                                                            </button>
+                                                            <button class="button-choice button-choice2">
+                                                                <span class="text">초록색</span>
+                                                            </button>
+                                                            <button class="button-choice button-choice3">
+                                                                <span class="text">노란색</span>
+                                                            </button>
+                                                        </div>
+                                                        <input
+                                                            type="text"
+                                                            class="text-input text-input1"
+                                                            name=""
+                                                            value=""
+                                                            readonly="readonly"
+                                                        />
+
+                                                        <!-- gesture-choice-input-finger1 인접클래스 active 추가시 활성화 -->
+                                                        <i class="gesture-finger gesture-choice-input-finger1">
+                                                            <span class="blind">손모양 제스처</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                                <ul class="button-number-list active">
+                                                    <li>
+                                                        <input
+                                                            type="number"
+                                                            class="number-input number-input2"
+                                                            name=""
+                                                            value=""
+                                                            readonly="readonly"
+                                                        />
+                                                        <!-- gesture-number-input-finger1 인접클래스 active 추가시 활성화 -->
+                                                        <i class="gesture-finger gesture-number-input-finger2">
+                                                            <span class="blind">손모양 제스처</span>
+                                                        </i>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="input-button-choice-layer input-button-choice-layer2"
+                                                        >
+                                                            <button class="button-choice button-choice1">
+                                                                <span class="text">파란색</span>
+                                                            </button>
+                                                            <button class="button-choice button-choice2">
+                                                                <span class="text">초록색</span>
+                                                            </button>
+                                                            <button class="button-choice button-choice3">
+                                                                <span class="text">노란색</span>
+                                                            </button>
+                                                        </div>
+                                                        <input
+                                                            type="text"
+                                                            class="text-input text-input2"
+                                                            name=""
+                                                            value=""
+                                                            readonly="readonly"
+                                                        />
+
+                                                        <!-- gesture-choice-input-finger2 인접클래스 active 추가시 활성화 -->
+                                                        <i class="gesture-finger gesture-choice-input-finger2">
+                                                            <span class="blind">손모양 제스처</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                                <ul class="button-number-list active">
+                                                    <li>
+                                                        <input
+                                                            type="number"
+                                                            class="number-input number-input3"
+                                                            name=""
+                                                            value=""
+                                                            readonly="readonly"
+                                                        />
+                                                        <!-- gesture-number-input-finger1 인접클래스 active 추가시 활성화 -->
+                                                        <i class="gesture-finger gesture-number-input-finger3">
+                                                            <span class="blind">손모양 제스처</span>
+                                                        </i>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="input-button-choice-layer input-button-choice-layer3"
+                                                        >
+                                                            <button class="button-choice button-choice1">
+                                                                <span class="text">파란색</span>
+                                                            </button>
+                                                            <button class="button-choice button-choice2">
+                                                                <span class="text">초록색</span>
+                                                            </button>
+                                                            <button class="button-choice button-choice3">
+                                                                <span class="text">노란색</span>
+                                                            </button>
+                                                        </div>
+                                                        <input
+                                                            type="text"
+                                                            class="text-input text-input3"
+                                                            name=""
+                                                            value=""
+                                                            readonly="readonly"
+                                                        />
+
+                                                        <!-- gesture-choice-input-finger3 인접클래스 active 추가시 활성화 -->
+                                                        <i class="gesture-finger gesture-choice-input-finger3">
+                                                            <span class="blind">손모양 제스처</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                                <ul class="button-number-list active">
+                                                    <li>
+                                                        <input
+                                                            type="number"
+                                                            class="number-input number-input4"
+                                                            name=""
+                                                            value=""
+                                                            readonly="readonly"
+                                                        />
+                                                        <!-- gesture-number-input-finger1 인접클래스 active 추가시 활성화 -->
+                                                        <i class="gesture-finger gesture-number-input-finger4">
+                                                            <span class="blind">손모양 제스처</span>
+                                                        </i>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="input-button-choice-layer input-button-choice-layer4"
+                                                        >
+                                                            <button class="button-choice button-choice1">
+                                                                <span class="text">파란색</span>
+                                                            </button>
+                                                            <button class="button-choice button-choice2">
+                                                                <span class="text">초록색</span>
+                                                            </button>
+                                                            <button class="button-choice button-choice3">
+                                                                <span class="text">노란색</span>
+                                                            </button>
+                                                        </div>
+                                                        <input
+                                                            type="text"
+                                                            class="text-input text-input4"
+                                                            name=""
+                                                            value=""
+                                                            readonly="readonly"
+                                                        />
+
+                                                        <!-- gesture-choice-input-finger4 인접클래스 active 추가시 활성화 -->
+                                                        <i class="gesture-finger gesture-choice-input-finger4">
+                                                            <span class="blind">손모양 제스처</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                                <ul class="button-number-list active">
+                                                    <li>
+                                                        <input
+                                                            type="number"
+                                                            class="number-input number-input5"
+                                                            name=""
+                                                            value=""
+                                                            readonly="readonly"
+                                                        />
+                                                        <!-- gesture-number-input-finger1 인접클래스 active 추가시 활성화 -->
+                                                        <i class="gesture-finger gesture-number-input-finger5">
+                                                            <span class="blind">손모양 제스처</span>
+                                                        </i>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="input-button-choice-layer input-button-choice-layer5"
+                                                        >
+                                                            <button class="button-choice button-choice1">
+                                                                <span class="text">파란색</span>
+                                                            </button>
+                                                            <button class="button-choice button-choice2">
+                                                                <span class="text">초록색</span>
+                                                            </button>
+                                                            <button class="button-choice button-choice3">
+                                                                <span class="text">노란색</span>
+                                                            </button>
+                                                        </div>
+                                                        <input
+                                                            type="text"
+                                                            class="text-input text-input5"
+                                                            name=""
+                                                            value=""
+                                                            readonly="readonly"
+                                                        />
+
+                                                        <!-- gesture-choice-input-finger5 인접클래스 active 추가시 활성화 -->
+                                                        <i class="gesture-finger gesture-choice-input-finger5">
+                                                            <span class="blind">손모양 제스처</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// scene-layer2 인접클래스 active 추가시 화면보여짐 -->
+
+                        <!-- 계산기 : popup-calculator-layer에 인접클래스 active시 계신기 보여짐 -->
+                        <div class="popup popup-calculator-wrap">
+                            <div class="popup-calculator-inner">
+                                <div id="the-calculator" class="the-calculator">
+                                    <div id="the-display" class="the-display">
+                                        <form name="calculator">
+                                            <input id="total" class="total" value="0" />
+                                        </form>
+                                    </div>
+                                    <div id="the-buttons" class="the-buttons">
+                                        <div class="button-row clearfix">
+                                            <button class="calc-int calc-int7" value="7">7</button>
+                                            <button class="calc-int calc-int8" value="8">8</button>
+                                            <button class="calc-int calc-int9" value="9">9</button>
+                                            <!-- <button class="calc-op" value="*">&times;</button> -->
+                                        </div>
+                                        <div class="button-row clearfix">
+                                            <button class="calc-int calc-int4" value="4">4</button>
+                                            <button class="calc-int calc-int5" value="5">5</button>
+                                            <button class="calc-int calc-int6" value="6">6</button>
+                                            <!-- <button class="calc-op" value="-">-</button> -->
+                                        </div>
+                                        <div class="button-row clearfix">
+                                            <button class="calc-int calc-int1" value="1">1</button>
+                                            <button class="calc-int calc-int2" value="2">2</button>
+                                            <button class="calc-int calc-int3" value="3">3</button>
+                                            <!-- <button class="calc-op" value="+">+</button> -->
+                                        </div>
+                                        <div class="button-row clearfix">
+                                            <button id="calcZero" class="calc-int calc-int0" value="0">0</button>
+                                            <button id="calcNeg" class="calc-neg" value="-/+">+<span>/</span>-</button>
+                                        </div>
+                                        <div class="button-row clearfix">
+                                            <button id="calc-decimal" class="calc-decimal" value=".">.</button>
+                                            <button id="calc-back" class="calc-back">삭제</button>
+                                        </div>
+                                        <div class="button-row clearfix">
+                                            <button id="calc-eval" class="calc-eval" value="입력">입력</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop-close">
+                                    <button type="button" class="button-pop-close">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 계산기 -->
+                    </div>
+                    <!--// 씬 영역 : 씬 영역1 -->
+
+                    <!-- Common Element : 하단 버튼 영역 -->
+                    <div class="bottom-button-wrap right-location">
+                        <!-- active 근접클래스 추가시 보이기 : active 근접클래스 삭제시 감추기 -->
+                        <!--
+                        <button class="button-next">
+                            <span class="text">다음으로</span>
+                            <i class="arrow"></i>
+                        </button>
+                        -->
+                        <!-- active 근접클래스 추가시 보이기 : active 근접클래스 삭제시 감추기 -->
+                        <button class="button-restart">
+                            <span class="text">처음으로</span>
+                            <i class="arrow"></i>
+                        </button>
+                    </div>
+                    <!--// Common Element : 하단 버튼 영역 -->
+
+                    <!-- 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                    <ul class="tab-list-basic">
+                        <li>
+                            <!-- 버튼 클릭 : button-tab 인접클래스 active 추가 -->
+                            <button class="button-tab">
+                                <span>정리하기</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                </div>
+                <!--// page-view3 : (페이지) 컨텐츠 페이지 -->
+
+                <!-- page-view4 : 탭 스타일 page-view4 modal-layer-activity-goals3 인접클래스 active시 활성화 -->
+                <div class="page-view page-view4 modal-layer-activity-goals3 modal-layer">
+                    <div class="modal-layer-box tab-modal active">
+                        <h4 class="title-sign">
+                            <span class="text">정리하기</span>
+                        </h4>
+                        <button id="btnTabClose" class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <div class="text-content-area">
+                            <div class="text-align-center">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="organizing-content-wrap">
+                                                <ul class="organizing-content-list">
+                                                    <li>
+                                                        <em class="bullet-text">
+                                                            산과 염기를 혼합하면 산의 수소 이온(H<sup class="sup-sign"
+                                                                >+</sup
+                                                            >)과 염기의 수산화 이온(OH<sup class="sup-sign">-</sup>)이
+                                                            1:1의<br />
+                                                            개수비로 반응해 물(H<sup class="sup-num">2</sup>O)이 되는
+                                                            중화 반응이 일어난다.
+                                                        </em>
+                                                    </li>
+                                                    <li>
+                                                        <em class="bullet-text">
+                                                            산과 염기를 혼합하면 온도가 높아지는 것은 중화 반응이 일어날
+                                                            때 중화열이<br />
+                                                            발생하기 때문이다.
+                                                        </em>
+                                                    </li>
+                                                </ul>
+                                                <div class="organizing-content-info-wrap organizing-content-info-wrap1">
+                                                    <div class="organizing-content-info-inner">
+                                                        <div class="organizing-content-image">
+                                                            <h4 class="title-round-box">
+                                                                <em class="sign-wrap">
+                                                                    <i class="text-wrap">
+                                                                        <span class="text-i">H</span>
+                                                                        <span class="sup-sign">+</span>
+                                                                    </i>
+                                                                    <span class="text-cont">수소 이온</span>
+                                                                </em>
+                                                                <span class="icon-pop-title-plus">+</span>
+                                                                <em class="sign-wrap">
+                                                                    <i class="text-wrap">
+                                                                        <span class="text-i">OH</span>
+                                                                        <span class="sup-sign">-</span>
+                                                                    </i>
+                                                                    <span class="text-cont">수산화 이온</span>
+                                                                </em>
+                                                                <span class="icon-pop-title-arrow-right">→</span>
+                                                                <em class="sign-wrap">
+                                                                    <i class="text-wrap">
+                                                                        <span class="text-i">H</span>
+                                                                        <span class="sup-num">2</span>
+                                                                        <span class="text-i">O</span>
+                                                                    </i>
+                                                                    <span class="text-cont">물</span>
+                                                                </em>
+                                                            </h4>
+                                                            <div class="content-wrap">
+                                                                <div class="beaker-wrap beaker-wrap1">
+                                                                    <div class="beaker-inner">
+                                                                        <span class="text-cont">염산(HCl) 수용액</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="icon-pop-con-plus">+</span>
+                                                                <div class="beaker-wrap beaker-wrap2">
+                                                                    <div class="beaker-inner">
+                                                                        <span class="text-cont"
+                                                                            >수산화 나트륨(NaOH) 수용액</span
+                                                                        >
+                                                                    </div>
+                                                                </div>
+                                                                <span class="icon-pop-con-arrow-right">→</span>
+                                                                <div class="beaker-wrap beaker-wrap3">
+                                                                    <div class="beaker-inner">
+                                                                        <span class="text-cont">혼합 용액</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="organizing-content-wrap">
+                                                <ul class="organizing-content-list">
+                                                    <li>
+                                                        <em class="bullet-text">
+                                                            농도와 온도가 같은 염산과 수산화 나트륨 수용액이 1:1의
+                                                            부피비로 중화 반응을 할 때<br />
+                                                            최고 온도가 가장 높고, 혼합 용액은 중성을 띤다.
+                                                        </em>
+                                                    </li>
+                                                </ul>
+                                                <div class="organizing-content-info-wrap organizing-content-info-wrap2">
+                                                    <div class="organizing-content-info-inner">
+                                                        <div class="beaker-wrap">
+                                                            <div class="beaker-inner">
+                                                                <div class="beaker-box-wrap beaker-box-wrap1">
+                                                                    <div class="beaker-box-inner">
+                                                                        <div class="pop-bg-speech pop-bg-speech-2-1">
+                                                                            반응하지 않은 수산화 이온(OH<sup
+                                                                                class="sup-sign"
+                                                                                >-</sup
+                                                                            >)이<br />
+                                                                            남아 있으므로 염기성을 띤다.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="beaker-box-wrap beaker-box-wrap2">
+                                                                    <div class="beaker-box-inner">
+                                                                        <div class="pop-bg-speech pop-bg-speech-2-2">
+                                                                            수소 이온(H<sup class="sup-sign">+</sup>)과
+                                                                            수산화 이온(OH<sup class="sup-sign">-</sup
+                                                                            >)이<br />
+                                                                            모두 반응했으므로 중성을 띤다.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="beaker-box-wrap beaker-box-wrap3">
+                                                                    <div class="beaker-box-inner">
+                                                                        <div class="pop-bg-speech pop-bg-speech-2-3">
+                                                                            반응하지 않은 수소 이온(H<sup
+                                                                                class="sup-sign"
+                                                                                >+</sup
+                                                                            >)이<br />
+                                                                            남아 있으므로 산성을 띤다.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table-info-bottom">
+                                                            <div class="table-info">
+                                                                <div class="ing">
+                                                                    <div class="item item0"></div>
+                                                                    <div class="item item1">
+                                                                        <span class="text">염기성</span>
+                                                                    </div>
+                                                                    <div class="item item2">
+                                                                        <span class="text">염기성</span>
+                                                                    </div>
+                                                                    <div class="item item3">
+                                                                        <span class="text">중성</span>
+                                                                    </div>
+                                                                    <div class="item item4">
+                                                                        <span class="text">산성</span>
+                                                                    </div>
+                                                                    <div class="item item5">
+                                                                        <span class="text">산성</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="num">
+                                                                    <div class="item item0"></div>
+                                                                    <div class="item item1">
+                                                                        <span class="text">2</span>
+                                                                    </div>
+                                                                    <div class="item item2">
+                                                                        <span class="text">4</span>
+                                                                    </div>
+                                                                    <div class="item item3">
+                                                                        <span class="text">6</span>
+                                                                    </div>
+                                                                    <div class="item item4">
+                                                                        <span class="text">8</span>
+                                                                    </div>
+                                                                    <div class="item item5">
+                                                                        <span class="text">10</span>
+                                                                    </div>
+                                                                    <div class="item item6">
+                                                                        <span class="text">HCl(mL)</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="num">
+                                                                    <div class="item item0"></div>
+                                                                    <div class="item item1">
+                                                                        <span class="text">10</span>
+                                                                    </div>
+                                                                    <div class="item item2">
+                                                                        <span class="text">8</span>
+                                                                    </div>
+                                                                    <div class="item item3">
+                                                                        <span class="text">6</span>
+                                                                    </div>
+                                                                    <div class="item item4">
+                                                                        <span class="text">4</span>
+                                                                    </div>
+                                                                    <div class="item item5">
+                                                                        <span class="text">2</span>
+                                                                    </div>
+                                                                    <div class="item item6">
+                                                                        <span class="text">NaOH(mL)</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="active-wrap">
+                                        <div id="nextFinal" class="swiper-button-next custom-next"></div>
+                                        <div id="prevFinal" class="swiper-button-prev custom-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="character-area character">
+                                <img src="../../images/common/character/h-character-organizing.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!-- page-view4 : 탭 스타일 - 우에서 좌로 모션 -->
+            </div>
+            <!--// View 영역 -->
+        </div>
+        <!--// Wrap 영역 -->
+
+        <script>
+            const swiper = new Swiper('.mySwiper', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'fraction',
+                },
+                navigation: {
+                    nextEl: '.custom-next',
+                    prevEl: '.custom-prev',
+                },
+                allowTouchMove: false, // 가로로 드래그를 막음
+                spaceBetween: 5, // 슬라이드 간격
+            });
+
+            $('.tab-list-basic').on('click', () => {
+                swiper.slideTo(0, 0); // Swiper를 첫 화면으로 이동
+            });
+        </script>
+    </body>
+</html>

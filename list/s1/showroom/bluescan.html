@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <meta content="온라인 쇼룸 | 블루스캔 | 에스원" id="metaTitle" name="title" />
+        <meta content="온라인 쇼룸 | 블루스캔" id="metaDescription" name="description" />
+        <meta content="온라인 쇼룸 | 블루스캔" id="metaKeyword" name="keywords" />
+
+        <meta content="website" property="og:type" />
+        <meta content="https://www.s1.co.kr/secom/commercial" property="og:url" />
+        <meta content="온라인 쇼룸 | 블루스캔 | 에스원" property="og:title" />
+        <meta content="온라인 쇼룸 | 블루스캔" property="og:description" />
+        <meta content="https://www.s1.co.kr/images/ko/meta/meta-default-img.png" property="og:image" />
+        <meta content="630" property="og:image:height" />
+        <meta content="1200" property="og:image:width" />
+
+        <title>온라인 쇼룸 | 블루스캔 | 에스원</title>
+
+        <link rel="preload" href="/css/ko/common.css" as="style" type="text/css" />
+        <link rel="preload" href="/css/ko/main.css" as="style" type="text/css" />
+        <link rel="preload" href="/css/ko/s1_contents.css" as="style" type="text/css" />
+        <link rel="preload" href="/js/libs/jquery-1.12.4.min.js" as="script" />
+        <link rel="preload" href="/js/libs/jquery-ui.js" as="script" />
+        <link rel="preload" href="/js/libs/slick.js" as="script" />
+        <link rel="preload" href="/js/ui/ko/common.js" as="script" />
+
+        <link rel="icon" href="/favicon/favicon-48x48.ico" />
+        <link rel="shortcut icon" href="/favicon/favicon-48x48.ico" />
+        <link rel="stylesheet" href="/css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="/css/aos.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/common.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/s1_contents.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/popup.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/showroom.css" type="text/css" />
+
+        <script type="text/javascript" src="/js/libs/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="/js/libs/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/libs/slick.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.min.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.scrollbar-2.1.js"></script>
+        <script type="text/javascript" src="/js/libs/aos.js"></script>
+        <script type="text/javascript" src="/js/libs/stick-to-me.js"></script>
+        <script type="text/javascript" src="/js/libs/client.min.js"></script>
+
+        <!-- 네이버 연관채널 -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "s1",
+                "url": "https://www.s1.co.kr",
+                "sameAs": [
+                    "https://blog.naver.com/s1corporation",
+                    "https://www.instagram.com/s1corporation/",
+                    "https://www.youtube.com/@welcome.S1",
+                    "https://www.facebook.com/s1corporation"
+                ]
+            }
+        </script>
+
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 쇼룸 전용 컨텐츠 : 블루스캔 bluescan.html -->
+        <div id="wrapShowroom" class="wrap-online-showroom">
+            <!--
+                showroom-container-wrap의 인접클래스
+                .sr8-bluescan로 제어
+
+                인접클래스로
+
+                [메인]
+                main
+
+                [화면1 영역 : BLUESCAN B1 누수 감시] 인접클래스
+                screen1 step1 : 화면1, 스텝1
+                screen1 step2 : 화면1, 스텝2
+                screen1 step3 : 화면1, 스텝3
+                screen1 step4 : 화면1, 스텝4
+
+                [화면2 영역 : BLUESCAN 1F 가스 누출 감시] 인접클래스
+                screen2 step1 : 화면1, 스텝1
+                screen2 step2 : 화면1, 스텝2
+                screen2 step3 : 화면1, 스텝3
+                screen2 step4 : 화면1, 스텝4
+
+                [화면3 영역 : BLUESCAN 2F 화재 감시] 인접클래스
+                screen3 step1 : 화면1, 스텝1
+                screen3 step2 : 화면1, 스텝2
+                screen3 step3 : 화면1, 스텝3
+                screen3 step4 : 화면1, 스텝4
+
+                [화면4 영역 : BLUESCAN 3F loT 감시(온도 제어)] 인접클래스
+                screen4 step1 : 화면1, 스텝1
+                screen4 step2 : 화면1, 스텝2
+                screen4 step3 : 화면1, 스텝3
+                screen4 step4 : 화면1, 스텝4
+
+                [화면5 영역 : BLUESCAN 4F 환기 감시] 인접클래스
+                screen4 step1 : 화면1, 스텝1
+                screen4 step2 : 화면1, 스텝2
+                screen4 step3 : 화면1, 스텝3
+                screen4 step4 : 화면1, 스텝4
+
+                [화면6 영역 - BLUESCAN 5F 정전 감시 인접클래스]
+                screen6 step1 : 화면2, 스텝1
+                screen6 step2 : 화면2, 스텝2
+                screen6 step3 : 화면2, 스텝3
+                screen6 step4 : 화면2, 스텝4
+
+                스크린 넘버(ex : screen1)를 먼저 추가 후 각 스텝(ex : step1)의 인접클래스 넘버를 추가하여 효과를 적용
+            -->
+            <div class="showroom-container-wrap sr8-bluescan default">
+                <div class="showroom-container-inner">
+                    <!-- 이전 페이지 버튼 -->
+                    <button
+                        onclick="showroomControll.goBack()"
+                        class="button-screen-wrap page-back"
+                        title="인트로 페이지 이동"
+                        aria-label="인트로 페이지 이동"
+                    >
+                        <em class="button-screen-inner">
+                            <span class="text">처음으로</span>
+                        </em>
+                    </button>
+                    <!--// 이전 페이지 버튼 -->
+
+                    <!-- [확대, 축소 버튼 영역] 인접클래스 active 추가시 해당 버튼 영역 활성화 -->
+                    <ul class="page-screen">
+                        <li>
+                            <button class="button-screen-wrap page-screen-plus">
+                                <em class="button-screen-inner">
+                                    <span class="blind">확대</span>
+                                </em>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-screen-wrap page-screen-minus">
+                                <em class="button-screen-inner">
+                                    <span class="blind">축소</span>
+                                </em>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// [확대, 축소 버튼 영역] -->
+
+                    <!--
+                        showroom-top-tab-wrap : 상단 - [쇼룸보기] / [가격견적] 탭
+                        인접 active 클래스 추가시 페이지 보임
+                    -->
+                    <div class="showroom-top-tab-wrap">
+                        <div class="showroom-top-tab-inner">
+                            <ul class="showroom-top-tab-list">
+                                <li class="active">
+                                    <button
+                                        onclick="javascript:void(0)"
+                                        class="button-tab"
+                                        title="현재 페이지"
+                                        aria-label="현재 페이지"
+                                    >
+                                        <span class="text">쇼룸 보기</span>
+                                    </button>
+                                </li>
+                                <li class="">
+                                    <button
+                                        onclick="location.href='/showroom/pricing.html'"
+                                        class="button-tab"
+                                        title="가격견적 페이지 보기"
+                                        aria-label="가격견적 페이지 보기"
+                                    >
+                                        <span class="text">가격 견적</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <em class="button-bg" style="left: 0px"></em>
+                        </div>
+                    </div>
+
+                    <!--
+                        블루스캔 : showroom-content-wrap8 인접클래스
+                        active 추가시 페이지 보임
+                    -->
+                    <div class="showroom-content-wrap showroom-content-wrap8 active">
+                        <div class="showroom-content-inner">
+                            <!-- 영역 마커 시작 -->
+                            <!-- <div class="showroom-content-mark">
+                                <span class="blind">영역 마크</span>
+                            </div> -->
+                            <!--// 영역 마커 끝 -->
+
+                            <!-- [스크린0 영역 - 메인] : showroom-screen0-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen0-wrap active">
+                                <div class="showroom-screen-inner">
+                                    <!--
+                                        [스크린0의 스텝1 영역]
+                                        showroom-step1-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- step1 - 메인화면 -->
+                                            <!-- building -->
+                                            <div class="bs-building-layer">
+                                                <ul>
+                                                    <li class="bs-building-item under-1">
+                                                        <a href="javascript:;" data-screen-target="1-1">
+                                                            <span class="bg">
+                                                                <i></i>
+                                                                <i></i>
+                                                            </span>
+                                                            <span class="floating">
+                                                                <span class="icon">
+                                                                    <span></span>
+                                                                </span>
+                                                                <span class="dot"></span>
+                                                                <p>누수 모니터링</p>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="bs-building-item floor-1">
+                                                        <a href="javascript:;" data-screen-target="2-1">
+                                                            <span class="bg">
+                                                                <i></i>
+                                                                <i></i>
+                                                            </span>
+                                                            <span class="floating">
+                                                                <span class="icon">
+                                                                    <span></span>
+                                                                </span>
+                                                                <span class="dot"></span>
+                                                                <p>가스 누출 모니터링</p>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="bs-building-item floor-2">
+                                                        <a href="javascript:;" data-screen-target="3-1">
+                                                            <span class="bg">
+                                                                <i></i>
+                                                                <i></i>
+                                                            </span>
+                                                            <span class="floating">
+                                                                <span class="icon">
+                                                                    <span></span>
+                                                                </span>
+                                                                <span class="dot"></span>
+                                                                <p>화재 모니터링</p>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="bs-building-item floor-3">
+                                                        <a href="javascript:;" data-screen-target="4-1">
+                                                            <span class="bg">
+                                                                <i></i>
+                                                                <i></i>
+                                                            </span>
+                                                            <span class="floating">
+                                                                <span class="icon">
+                                                                    <span></span>
+                                                                </span>
+                                                                <span class="dot"></span>
+                                                                <p>온도 모니터링</p>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="bs-building-item floor-4">
+                                                        <a href="javascript:;" data-screen-target="5-1">
+                                                            <span class="bg">
+                                                                <i></i>
+                                                                <i></i>
+                                                            </span>
+                                                            <span class="floating">
+                                                                <span class="icon">
+                                                                    <span></span>
+                                                                </span>
+                                                                <span class="dot"></span>
+                                                                <p>공기질 모니터링</p>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="bs-building-item floor-rf">
+                                                        <a href="javascript:;" data-screen-target="6-1">
+                                                            <span class="bg">
+                                                                <i></i>
+                                                                <i></i>
+                                                            </span>
+                                                            <span class="floating">
+                                                                <span class="icon">
+                                                                    <span></span>
+                                                                </span>
+                                                                <span class="dot"></span>
+                                                                <p>정전 모니터링</p>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <!-- 빌딩 중앙 위치 메시지 -->
+                                                <div class="sr-toast-msg active">
+                                                    <p>
+                                                        <strong>블루스캔 서비스</strong>를 체험할 공간을 선택해주세요.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- text -->
+                                            <div class="bs-main-text">
+                                                <p class="sub-tit">스마트 건물관리 솔루션</p>
+                                                <h2>에스원 블루스캔</h2>
+                                                <p class="text">
+                                                    블루스캔은 건물의 주요 설비에 센서를 부착하여,<br />
+                                                    Web · Mobile 모니터링 시스템을 통해<br />
+                                                    고객이 언제 어디서든 건물의 상황을 확인하고<br />
+                                                    대응하는 새로운 차원의 건물관리 솔루션 입니다.
+                                                </p>
+                                                <button data-th-onclick="showroomControll.bluescan.contact()">
+                                                    블루스캔 상담신청
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린0의 스텝1 영역] -->
+                                </div>
+                            </div>
+                            <!--// [스크린0 영역] -->
+
+                            <!-- [스크린1 영역 - 누수감시] : showroom-screen1-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen1-wrap">
+                                <div class="showroom-screen-inner">
+                                    <!--
+                                        [스크린1의 스텝1 영역 - 이상상황 사전 감지]
+                                        showroom-step1-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 1-1-1 -->
+                                            <!-- cctv -->
+                                            <div class="bs-cctv-wrap">
+                                                <div class="bs-cctv-item"></div>
+                                                <div class="bs-cctv-beam">
+                                                    <span class="blind">step1 beam되어야 함</span>
+                                                </div>
+                                            </div>
+                                            <!-- 누수 감지센서 -->
+                                            <div class="sr-lk-sensor">
+                                                <div class="sr-lk-sensor-item"></div>
+                                                <div class="sr-lk-sensor-beam"></div>
+                                            </div>
+                                            <!-- alert 메시지 -->
+                                            <!-- 진입 후 1초 후 노출 -->
+                                            <div class="sr-alert-msg sr-alert-msg-1">
+                                                <p><i class="error"></i>물탱크의 수위가 위험합니다!</p>
+                                            </div>
+                                            <!-- 포인터 -->
+                                            <!-- 진입 후 1초 후 노출 -->
+                                            <button class="sr-pointer red sr-pointer-1">
+                                                <span class="sr-pointer-pin"></span>
+                                                <span class="sr-pointer-layer">
+                                                    <span class="sr-pointer-layer-1"></span>
+                                                    <span class="sr-pointer-layer-2"></span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린1의 스텝1 영역] -->
+
+                                    <!--
+                                        [스크린1의 스텝2 영역 - 이상신호 관제센터 전달]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step2-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 1-2-2 -->
+                                            <!-- 클로즈업 이미지 -->
+                                            <div class="closeup closeup-1"></div>
+                                            <!-- 하단 메시지 -->
+                                            <!-- 1-2-3 -->
+                                            <!-- 하단 메시지 미노출 -->
+                                            <!-- 애니메이션 팝업 노출 -->
+                                            <div class="sr-popup-wrap popup-sensor active" id="popupSr8Sc1Sensor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame active">
+                                                            <!-- 애니메이션 영역 -->
+                                                            <!--
+                                                                양쪽 아이템 하단 - 양쪽 센서랑 cctv - 가운데 세콤
+                                                                - 가로 라인 - 상단 사람 - 세로 라인 순서로 노출
+                                                            -->
+                                                            <div class="frame-top">
+                                                                <span class="line">
+                                                                    <span><i class="blind">세로 라인</i></span>
+                                                                </span>
+                                                                <span class="counselor">
+                                                                    <i class="blind">사람</i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="frame-bottom">
+                                                                <div class="items">
+                                                                    <span class="line">
+                                                                        <span class="line-left">
+                                                                            <i class="blind">가로 좌측 라인</i>
+                                                                        </span>
+                                                                        <span class="line-right">
+                                                                            <i class="blind">가로 우측 라인</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="item left">
+                                                                        <i class="blind">센서</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                    <span class="item center">
+                                                                        <i class="blind">세콤</i>
+                                                                    </span>
+                                                                    <span class="item right">
+                                                                        <i class="blind">cctv</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            이상신호 발생 시,<br />
+                                                            설치된 기기에서 신호를 즉시 <em>블루스캔 관제센터</em>로
+                                                            전송합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린1의 스텝2 영역] -->
+
+                                    <!--
+                                        [스크린1의 스텝3 영역 - 관제센터 이중 모니터링]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step3-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 1-3-1 -->
+                                            <!-- 
+                                                진입 시 cctv/center 라운드 표시O
+                                                빔 노출 (이미지 필요)
+                                                하단 메시지 노출 
+                                                레이어 노출
+                                            -->
+                                            <!-- cctv와 감지센서 잇는 라인 -->
+                                            <div class="line"></div>
+                                            <!-- cctv -->
+                                            <div class="bs-cctv-wrap">
+                                                <div class="bs-cctv-item"></div>
+                                                <div class="sr-round-beam">
+                                                    <span class="sr-round-beam-layer-1"></span>
+                                                    <span class="sr-round-beam-layer-2"></span>
+                                                </div>
+                                            </div>
+                                            <!-- 누수감지센서만 (빔 없이) -->
+                                            <div class="sr-lk-sensor-round">
+                                                <div class="sr-lk-sensor-item"></div>
+                                                <div class="sr-round-beam">
+                                                    <span class="sr-round-beam-layer-1"></span>
+                                                    <span class="sr-round-beam-layer-2"></span>
+                                                </div>
+                                            </div>
+                                            <div class="layer-mobile layer-mobile-1">
+                                                <span class="blind">모바일 메시지 레이어</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린1의 스텝3 영역] -->
+
+                                    <!--
+                                        [스크린1의 스텝4 영역 - 고객 현장조치 및 대응 지원]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step4-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 1-4-1 -->
+                                            <!-- 
+                                                클로즈업 노출
+                                                빔 노출 
+                                                모바일 레이어 노출 
+                                            -->
+                                            <!-- 팝업 노출 -->
+                                            <div class="sr-popup-wrap popup-monitor" id="popupSr8Sc1Monitor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame">
+                                                            <!-- 이미지 영역 -->
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            블루스캔 관제센터는 CCTV로 상황을 24시간 모니터링하고 이상
+                                                            발생 시<br />
+                                                            고객 및 유관기관에 통보하여
+                                                            <em>신속한 대응이 가능</em>하도록 지원합니다.
+                                                        </p>
+                                                        <button class="sr-popup-btn" data-screen-target="0-0">
+                                                            체험 완료
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린1의 스텝4 영역] -->
+                                </div>
+                            </div>
+                            <!--// [스크린1 영역] -->
+
+                            <!-- [스크린2 영역 - 가스 누출 감시] : showroom-screen2-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen2-wrap">
+                                <div class="showroom-screen-inner">
+                                    <!--
+                                        [스크린2의 스텝1 영역]
+                                        showroom-step1-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 2-1-1 -->
+                                            <!-- 공기질 센서 -->
+                                            <!-- 진입 시 item만 노출 -->
+                                            <div class="bs-air-sensor">
+                                                <span class="bs-air-item"></span>
+                                                <span class="bs-air-beam"></span>
+                                            </div>
+                                            <!-- alert 메시지 -->
+                                            <!-- 진입 후 1초 후 노출 active -->
+                                            <div class="sr-alert-msg sr-alert-msg-2">
+                                                <p><i class="error"></i>가스 누출이 의심됩니다!</p>
+                                            </div>
+                                            <!-- 포인터 -->
+                                            <!-- 진입 후 1초 후 노출 show -->
+                                            <button class="sr-pointer red sr-pointer-2 show">
+                                                <span class="sr-pointer-pin"></span>
+                                                <span class="sr-pointer-layer">
+                                                    <span class="sr-pointer-layer-1"></span>
+                                                    <span class="sr-pointer-layer-2"></span>
+                                                </span>
+                                            </button>
+                                            <!-- 하단 메시지 노출 -->
+
+                                            <!-- 2-1-2 -->
+                                            <!-- 가스 감지기 1초 뒤 active -->
+                                            <!-- 포인터 1초 뒤 active -->
+                                        </div>
+                                    </div>
+                                    <!--// [스크린2의 스텝1 영역] -->
+
+                                    <!--
+                                    [스크린2의 스텝2 영역]
+                                    showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                -->
+                                    <div class="showroom-step-wrap showroom-step2-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 2-2-1 -->
+                                            <!-- 클로즈업 이미지 -->
+                                            <div class="closeup closeup-2"></div>
+                                            <!-- 애니메이션 센서 팝업 -->
+                                            <div class="sr-popup-wrap popup-sensor" id="popupSr8Sc2St2Sensor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame">
+                                                            <!-- 애니메이션 영역 -->
+                                                            <!-- 양쪽 아이템 하단 - 양쪽 센서랑 cctv - 가운데 세콤 - 가로 라인 - 상단 사람 - 세로 라인 순서로 노출 -->
+                                                            <div class="frame-top">
+                                                                <span class="line">
+                                                                    <span>
+                                                                        <i class="blind">세로 라인</i>
+                                                                    </span>
+                                                                </span>
+                                                                <span class="counselor">
+                                                                    <i class="blind">사람</i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="frame-bottom">
+                                                                <div class="items">
+                                                                    <span class="line">
+                                                                        <span class="line-left">
+                                                                            <i class="blind">가로 좌측 라인</i>
+                                                                        </span>
+                                                                        <span class="line-right">
+                                                                            <i class="blind">가로 우측 라인</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="item left">
+                                                                        <i class="blind">센서</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                    <span class="item center">
+                                                                        <i class="blind">세콤</i>
+                                                                    </span>
+                                                                    <span class="item right">
+                                                                        <i class="blind">cctv</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            이상신호 발생 시, <br />
+                                                            설치된 기기에서 신호를 즉시 <em>블루스캔 관제센터</em>로
+                                                            전송합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린2의 스텝2 영역] -->
+
+                                    <!--
+                                        [스크린2의 스텝3 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step3-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 2-2-3 -->
+                                            <!-- cctv와 센서 잇는 라인 -->
+                                            <div class="line"></div>
+                                            <!-- cctv -->
+                                            <div class="bs-cctv-wrap">
+                                                <div class="bs-cctv-item"></div>
+                                                <div class="sr-round-beam">
+                                                    <span class="sr-round-beam-layer-1"></span>
+                                                    <span class="sr-round-beam-layer-2"></span>
+                                                </div>
+                                                <!-- <div class="bs-cctv-beam">
+                                                <span class="blind">cctv</span>
+                                            </div> -->
+                                            </div>
+                                            <!-- 공기질 센서 -->
+                                            <div class="bs-air-sensor-round">
+                                                <span class="bs-air-item"></span>
+                                                <div class="sr-round-beam">
+                                                    <span class="sr-round-beam-layer-1"></span>
+                                                    <span class="sr-round-beam-layer-2"></span>
+                                                </div>
+                                                <!-- <span class="bs-air-beam"></span> -->
+                                            </div>
+                                            <!-- 클로즈업 이미지 노출  -->
+                                            <!-- 모바일 레이어 -->
+                                            <div class="layer-mobile layer-mobile-2">
+                                                <span class="blind">모바일 메시지 레이어</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린2의 스텝3 영역] -->
+
+                                    <!--
+                                        [스크린2의 스텝4 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step4-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 2-4-1 -->
+                                            <!-- cctv, sensor active -->
+                                            <!-- 클로즈업 노출 -->
+                                            <!-- 하단 메시지 노출 -->
+                                            <!-- 팝업 노출 -->
+                                            <div class="sr-popup-wrap popup-monitor" id="popupSr8Sc2St4Monitor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame">
+                                                            <!-- 이미지 영역 -->
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            블루스캔 관제센터는 CCTV로 상황을 24시간 모니터링하고 이상
+                                                            발생 시<br />
+                                                            고객 및 유관기관에 통보하여
+                                                            <em>신속한 대응이 가능</em>하도록 지원합니다.
+                                                        </p>
+                                                        <button class="sr-popup-btn" data-screen-target="0-0">
+                                                            체험 완료
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린2의 스텝4 영역] -->
+                                </div>
+                            </div>
+                            <!--// [스크린2 영역] -->
+
+                            <!-- [스크린3 영역 - 화재 감시] : showroom-screen3-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen3-wrap">
+                                <div class="showroom-screen-inner">
+                                    <!--
+                                        [스크린3의 스텝1 영역]
+                                        showroom-step1-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 3-1-1 -->
+                                            <!-- 화재감지기 노출 active -->
+                                            <div class="sr-fire-sensor">
+                                                <span class="sr-fire-item"></span>
+                                                <span class="sr-fire-beam"></span>
+                                            </div>
+                                            <!-- 컨트롤판넬 노출 active -->
+                                            <div class="sr-control-panel">
+                                                <span class="sr-control-item"></span>
+                                                <span class="sr-control-beam"></span>
+                                            </div>
+                                            <!-- 콘센트 -->
+                                            <div class="sr-socket-wrap">
+                                                <span class="sr-socket-item"></span>
+                                            </div>
+
+                                            <!-- 3-1-2 -->
+                                            <!-- 애니메이션 팝업 -->
+                                            <div class="sr-popup-wrap popup-sensor" id="popupSr8Sc3St1Sensor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame blue">
+                                                            <!-- 애니메이션 영역 -->
+                                                            <!-- 양쪽 아이템 하단 - 양쪽 센서랑 cctv - 가운데 세콤 - 가로 라인 - 상단 사람 - 세로 라인 순서로 노출 -->
+                                                            <div class="frame-top">
+                                                                <span class="line">
+                                                                    <span><i class="blind">세로 라인</i></span>
+                                                                </span>
+                                                                <span class="counselor">
+                                                                    <i class="blind">사람</i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="frame-bottom">
+                                                                <div class="items">
+                                                                    <span class="line">
+                                                                        <span class="line-left">
+                                                                            <i class="blind">가로 좌측 라인</i>
+                                                                        </span>
+                                                                        <span class="line-right">
+                                                                            <i class="blind">가로 우측 라인</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="item left">
+                                                                        <i class="blind">센서</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                    <span class="item center">
+                                                                        <i class="blind">세콤</i>
+                                                                    </span>
+                                                                    <span class="item right">
+                                                                        <i class="blind">cctv</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            <em>블루스캔 관제센터</em>에서 화재 감시 설비(열/연기
+                                                            등)의<br />
+                                                            이상 신호를 모니터링 합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린3의 스텝1 영역] -->
+
+                                    <!--
+                                    [스크린3의 스텝2 영역]
+                                    showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                -->
+                                    <div class="showroom-step-wrap showroom-step2-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 3-2-1 -->
+                                            <!-- alert 메시지 -->
+                                            <div class="sr-alert-msg sr-alert-msg-3 active">
+                                                <p><i class="error"></i>화재 경보가 발생했습니다!</p>
+                                            </div>
+                                            <!-- 포인터 -->
+                                            <button class="sr-pointer red sr-pointer-3 active show">
+                                                <span class="sr-pointer-pin"></span>
+                                                <span class="sr-pointer-layer">
+                                                    <span class="sr-pointer-layer-1"></span>
+                                                    <span class="sr-pointer-layer-2"></span>
+                                                </span>
+                                            </button>
+
+                                            <!-- 3-2-2 -->
+                                            <!-- 클로즈업 -->
+                                            <div class="closeup closeup-3"></div>
+                                            <!-- 하단 메시지 노출 -->
+
+                                            <!-- 3-2-3 -->
+                                            <!-- 모바일 레이어 -->
+                                            <div class="layer-mobile layer-mobile-3">
+                                                <span class="blind">모바일 메시지 레이어</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린3의 스텝2 영역] -->
+
+                                    <!--
+                                        [스크린3의 스텝3 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step3-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 3-3-1 -->
+                                            <!-- cctv, 화재감지기 잇는 선 -->
+                                            <div class="line"></div>
+                                            <!-- cctv -->
+                                            <div class="bs-cctv-wrap bs-cctv-wrap-2">
+                                                <div class="bs-cctv-item"></div>
+                                                <div class="sr-round-beam active">
+                                                    <span class="sr-round-beam-layer-1"></span>
+                                                    <span class="sr-round-beam-layer-2"></span>
+                                                </div>
+                                            </div>
+                                            <!-- 화재감지기 -->
+                                            <div class="sr-fire-sensor sr-fire-sensor-2 active">
+                                                <span class="sr-fire-item"></span>
+                                                <div class="sr-round-beam active">
+                                                    <span class="sr-round-beam-layer-1"></span>
+                                                    <span class="sr-round-beam-layer-2"></span>
+                                                </div>
+                                            </div>
+                                            <!-- alert 메시지 -->
+                                            <div class="sr-alert-msg sr-alert-msg-3-2 active">
+                                                <p><i class="error"></i>화재가 의심됩니다!</p>
+                                            </div>
+                                            <!-- cctv 확인 레이어 -->
+                                            <div class="layer-check active">
+                                                <p>소방펌프 가동상태 CCTV 확인</p>
+                                                <span class="img-box"></span>
+                                            </div>
+
+                                            <!-- 3-3-2 -->
+                                            <!-- 애니메이션 팝업 -->
+                                            <div class="sr-popup-wrap popup-sensor" id="popupSr8Sc3St3Sensor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame">
+                                                            <!-- 애니메이션 영역 -->
+                                                            <!-- 양쪽 아이템 하단 - 양쪽 센서랑 cctv - 가운데 세콤 - 가로 라인 - 상단 사람 - 세로 라인 순서로 노출 -->
+                                                            <div class="frame-top">
+                                                                <span class="line">
+                                                                    <span><i class="blind">세로 라인</i></span>
+                                                                </span>
+                                                                <span class="counselor">
+                                                                    <i class="blind">사람</i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="frame-bottom">
+                                                                <div class="items">
+                                                                    <span class="line">
+                                                                        <span class="line-left">
+                                                                            <i class="blind">가로 좌측 라인</i>
+                                                                        </span>
+                                                                        <span class="line-right">
+                                                                            <i class="blind">가로 우측 라인</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="item left">
+                                                                        <i class="blind">cctv</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                    <span class="item center">
+                                                                        <i class="blind">컨트롤판넬</i>
+                                                                    </span>
+                                                                    <span class="item right">
+                                                                        <i class="blind">cctv</i>
+                                                                        <span class="bg">화재감지기</span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            <em>블루스캔 관제센터</em>에서 화재 감지 설비(열/연기 등)의
+                                                            이상 신호를<br />
+                                                            모니터링 하고 문제 발생 시 관제센터에서
+                                                            <em>실제 화재 여부를 파악</em>합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린3의 스텝3 영역] -->
+
+                                    <!--
+                                        [스크린3의 스텝4 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step4-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 3-4-1 -->
+                                            <!-- 클로즈업 노출 -->
+                                            <!-- 모바일 레이어 노출 -->
+                                            <!-- 하단 메시지 노출 -->
+
+                                            <!-- 3-4-2 -->
+                                            <!-- 팝업 노출 -->
+                                            <div class="sr-popup-wrap popup-monitor" id="popupSr8Sc3St4Monitor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame">
+                                                            <!-- 이미지 영역 -->
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            블루스캔 관제센터는 CCTV로 상황을 24시간 모니터링하고 이상
+                                                            발생 시<br />
+                                                            고객 및 유관기관에 통보하여
+                                                            <em>신속한 대응이 가능</em>하도록 지원합니다.
+                                                        </p>
+                                                        <button class="sr-popup-btn" data-screen-target="0-0">
+                                                            체험 완료
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린3의 스텝4 영역] -->
+                                </div>
+                            </div>
+                            <!--// [스크린3 영역] -->
+
+                            <!-- [스크린4 영역 - IoT 감시] : showroom-screen4-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen4-wrap">
+                                <div class="showroom-screen-inner">
+                                    <!--
+                                        [스크린4의 스텝1 영역]
+                                        showroom-step1-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 4-1-1 -->
+                                            <!-- 감지기 노출 show -->
+                                            <div class="sr-temp-sensor">
+                                                <span class="sr-temp-item"></span>
+                                                <span class="sr-temp-beam"></span>
+                                            </div>
+                                            <!-- 4-1-2 -->
+                                            <!-- 감지기 빔 활성화 active -->
+                                            <!-- 하단 메시지 노출 -->
+                                        </div>
+                                    </div>
+                                    <!--// [스크린4의 스텝1 영역] -->
+
+                                    <!--
+                                        [스크린4의 스텝2 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step2-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 4-2-1 -->
+                                            <!-- 감지기 노출 및 활성화 -->
+                                            <!-- 포인터 노출 -->
+                                            <button class="sr-pointer red sr-pointer-4">
+                                                <span class="sr-pointer-pin"></span>
+                                                <span class="sr-pointer-layer">
+                                                    <span class="sr-pointer-layer-1"></span>
+                                                    <span class="sr-pointer-layer-2"></span>
+                                                </span>
+                                            </button>
+                                            <!-- alert 메시지 노출 -->
+                                            <div class="sr-alert-msg sr-alert-msg-4">
+                                                <p><i class="error"></i>온도상승이 감지되었습니다!</p>
+                                            </div>
+
+                                            <!-- 4-2-2 -->
+                                            <!-- 클로즈업 노출 -->
+                                            <div class="closeup closeup-4"></div>
+
+                                            <!-- 4-2-3 -->
+                                            <!-- 팝업 노출 -->
+                                            <div class="sr-popup-wrap popup-sensor" id="popupSr8Sc4St2Sensor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame">
+                                                            <!-- 애니메이션 영역 -->
+                                                            <!--
+                                                        양쪽 아이템 하단 - 양쪽 센서랑 cctv - 가운데 세콤 - 가로 라인 - 상단 사람 - 세로 라인 순서로 노출 -->
+                                                            <div class="frame-top">
+                                                                <span class="line">
+                                                                    <span><i class="blind">세로 라인</i></span>
+                                                                </span>
+                                                                <span class="counselor">
+                                                                    <i class="blind">사람</i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="frame-bottom">
+                                                                <div class="items">
+                                                                    <span class="line">
+                                                                        <span class="line-left">
+                                                                            <i class="blind">가로 좌측 라인</i>
+                                                                        </span>
+                                                                        <span class="line-right">
+                                                                            <i class="blind">가로 우측 라인</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="item left">
+                                                                        <i class="blind">센서</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                    <span class="item center">
+                                                                        <i class="blind">세콤</i>
+                                                                    </span>
+                                                                    <span class="item right">
+                                                                        <i class="blind">감지기</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            이상신호 발생 시, <br />
+                                                            설치된 기기에서 신호를 즉시 <em>블루스캔 관제센터</em>로
+                                                            전송합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린4의 스텝2 영역] -->
+
+                                    <!--
+                                        [스크린4의 스텝3 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step3-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 4-3-1 -->
+                                            <!-- 기존 센서 item 노출 -->
+                                            <!-- 모바일 레이어 노출 .substep-1 -->
+                                            <div class="layer-mobile layer-mobile-4 substep-1">
+                                                <span class="blind">모바일 메시지 레이어</span>
+                                            </div>
+
+                                            <!-- 4-3-2 -->
+                                            <!-- 모바일 레이어 이미지 변경 .substep-2 -->
+                                            <!-- 하단 메시지 노출 -->
+
+                                            <!-- 4-3-3 -->
+                                            <!-- 하단 메시지 유지 -->
+                                            <!-- 포인터 노출 및 활성화 -->
+                                            <!-- 에어컨 바람 노출 -->
+                                            <div class="aircon-wind aircon-wind-4"></div>
+                                            <!-- 클로즈업 노출 -->
+                                            <!-- 모바일 레이어 변경 및 노출 .substep-3 -->
+
+                                            <!-- 4-3-4 -->
+                                            <!-- 팝업 노출 -->
+                                            <div class="sr-popup-wrap popup-monitor" id="popupSr8Sc4St4Monitor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame">
+                                                            <!-- 이미지 영역 -->
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            고객이 직접 APP을 통해 에어컨 ON/OFF를 제어하여<br />
+                                                            회의실이 <em>쾌적한 온도로 변경</em>되었습니다.
+                                                        </p>
+                                                        <button class="sr-popup-btn" data-screen-target="0-0">
+                                                            체험 완료
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린4의 스텝3 영역] -->
+                                </div>
+                            </div>
+                            <!--// [스크린4 영역] -->
+
+                            <!-- [스크린5 영역 - 환기 감시] : showroom-screen5-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen5-wrap">
+                                <div class="showroom-screen-inner">
+                                    <!--
+                                        [스크린5의 스텝1 영역]
+                                        showroom-step1-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 5-1-1 -->
+                                            <!-- 미세먼지 감지기 -->
+                                            <div class="sr-dust-sensor">
+                                                <span class="sr-dust-item"></span>
+                                                <span class="sr-dust-beam"></span>
+                                            </div>
+                                            <!-- 포인터 -->
+                                            <button class="sr-pointer red sr-pointer-5">
+                                                <span class="sr-pointer-pin"></span>
+                                                <span class="sr-pointer-layer">
+                                                    <span class="sr-pointer-layer-1"></span>
+                                                    <span class="sr-pointer-layer-2"></span>
+                                                </span>
+                                            </button>
+                                            <!-- alert 메시지 -->
+                                            <div class="sr-alert-msg sr-alert-msg-5">
+                                                <p><i class="error"></i>미세먼지의 농도가 높아지고 있습니다!</p>
+                                            </div>
+                                            <!-- 하단 메시지 노출 -->
+                                        </div>
+                                    </div>
+                                    <!--// [스크린5의 스텝1 영역] -->
+
+                                    <!--
+                                        [스크린5의 스텝2 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step2-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 5-2-1 -->
+                                            <!-- 기존 상태 알럿 메시지, 포인터, 노출 유지 -->
+                                            <!-- 감지기 active -->
+                                            <!-- 하단 메시지 노출 -->
+
+                                            <!-- 5-2-2 -->
+                                            <!-- 클로즈업 노출 -->
+                                            <div class="closeup closeup-5"></div>
+
+                                            <!-- 5-2-3 -->
+                                            <!-- 팝업 노출 -->
+                                            <div class="sr-popup-wrap popup-sensor" id="popupSr8Sc5St2Sensor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame">
+                                                            <!-- 애니메이션 영역 -->
+                                                            <!--
+                                                                양쪽 아이템 하단 - 양쪽 센서랑 cctv - 가운데 세콤
+                                                                - 가로 라인 - 상단 사람 - 세로 라인 순서로 노출
+                                                            -->
+                                                            <div class="frame-top">
+                                                                <span class="line">
+                                                                    <span><i class="blind">세로 라인</i></span>
+                                                                </span>
+                                                                <span class="counselor">
+                                                                    <i class="blind">사람</i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="frame-bottom">
+                                                                <div class="items">
+                                                                    <span class="line">
+                                                                        <span class="line-left">
+                                                                            <i class="blind">가로 좌측 라인</i>
+                                                                        </span>
+                                                                        <span class="line-right">
+                                                                            <i class="blind">가로 우측 라인</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="item left">
+                                                                        <i class="blind">센서</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                    <span class="item center">
+                                                                        <i class="blind">세콤</i>
+                                                                    </span>
+                                                                    <span class="item right">
+                                                                        <i class="blind">감지기</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            이상신호 발생 시, <br />
+                                                            설치된 기기에서 신호를 즉시 <em>블루스캔 관제센터</em>로
+                                                            전송합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린5의 스텝2 영역] -->
+
+                                    <!--
+                                        [스크린5의 스텝3 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step3-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 5-3-1 -->
+                                            <!-- 감지기 바로 활성화 -->
+                                            <!-- 에어컨 활성화 -->
+                                            <div class="aircon-wind aircon-wind-5"></div>
+                                            <!-- 하단 메시지 노출 -->
+
+                                            <!-- 5-3-2 -->
+                                            <!-- 클로즈업 노출 -->
+                                        </div>
+                                    </div>
+                                    <!--// [스크린5의 스텝3 영역] -->
+
+                                    <!--
+                                        [스크린5의 스텝4 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step4-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 5-4-1 -->
+                                            <!-- 기존 감지기 활성화 유지 -->
+                                            <!-- 포인터 blue, show, active -->
+                                            <!-- 클로즈업 노출 -->
+                                            <!-- 모바일 레이어 노출, 하단 메시지 노출 -->
+                                            <!-- 모바일 레이어 -->
+                                            <div class="layer-mobile layer-mobile-5">
+                                                <span class="blind">모바일 메시지 레이어</span>
+                                            </div>
+
+                                            <!-- 5-4-2 -->
+                                            <!-- 팝업 노출 -->
+                                            <div class="sr-popup-wrap popup-monitor" id="popupSr8Sc5St4Monitor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame">
+                                                            <!-- 이미지 영역 -->
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            블루스캔 관제센터에서는 24시간 모니터링하고 이상 발생 시<br />고객에게
+                                                            통보하여 <em>신속한 대응이 가능</em>하도록 지원합니다.
+                                                        </p>
+                                                        <button class="sr-popup-btn" data-screen-target="0-0">
+                                                            체험 완료
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린5의 스텝4 영역] -->
+                                </div>
+                            </div>
+                            <!--// [스크린5 영역] -->
+
+                            <!-- [스크린6 영역 - 정전 감시] : showroom-screen6-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen6-wrap">
+                                <div class="showroom-screen-inner">
+                                    <!--
+                                        [스크린6의 스텝1 영역]
+                                        showroom-step1-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 애니메이션 팝업 -->
+                                            <!-- 진입 후 1초 뒤 노출 -->
+                                            <div class="sr-popup-wrap popup-sensor" id="popupSr8Sc6St1Sensor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame blue">
+                                                            <!-- 애니메이션 영역 -->
+                                                            <!--
+                                                                양쪽 아이템 하단 - 양쪽 센서랑 cctv - 가운데 세콤
+                                                                - 가로 라인 - 상단 사람 - 세로 라인 순서로 노출
+                                                            -->
+                                                            <div class="frame-top">
+                                                                <span class="line">
+                                                                    <span><i class="blind">세로 라인</i></span>
+                                                                </span>
+                                                                <span class="counselor">
+                                                                    <i class="blind">사람</i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="frame-bottom">
+                                                                <div class="items">
+                                                                    <span class="line">
+                                                                        <span class="line-left">
+                                                                            <i class="blind">가로 좌측 라인</i>
+                                                                        </span>
+                                                                        <span class="line-right">
+                                                                            <i class="blind">가로 우측 라인</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="item left">
+                                                                        <i class="blind">센서</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                    <span class="item center">
+                                                                        <i class="blind">세콤</i>
+                                                                    </span>
+                                                                    <span class="item right">
+                                                                        <i class="blind">cctv</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            24시간 365일, <em>블루스캔 관제센터</em>에서<br />
+                                                            건물 내 전기 시스템이 정상 가동되는지 모니터링합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린6의 스텝1 영역] -->
+
+                                    <!--
+                                        [스크린6의 스텝2 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step2-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 포인터/alert메시지/클로즈업 진입 후 1초 뒤 노출 -->
+                                            <!-- 포인터 -->
+                                            <button class="sr-pointer red sr-pointer-6">
+                                                <span class="sr-pointer-pin"></span>
+                                                <span class="sr-pointer-layer">
+                                                    <span class="sr-pointer-layer-1"></span>
+                                                    <span class="sr-pointer-layer-2"></span>
+                                                </span>
+                                            </button>
+                                            <!-- alert 메시지 -->
+                                            <div class="sr-alert-msg sr-alert-msg-6">
+                                                <p><i class="error"></i>건물 전체에 정전이 발생했습니다!</p>
+                                            </div>
+                                            <!-- 클로즈업 이미지 -->
+                                            <div class="closeup closeup-6"></div>
+                                            <!-- 하단 메시지 -->
+                                            <!-- 애니메이션 팝업 -->
+                                            <div class="sr-popup-wrap popup-sensor" id="popupSr8Sc6St2Sensor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame">
+                                                            <!-- 애니메이션 영역 -->
+                                                            <!--
+                                                            양쪽 아이템 하단 - 양쪽 센서랑 cctv - 가운데 세콤
+                                                            - 가로 라인 - 상단 사람 - 세로 라인 순서로 노출
+                                                        -->
+                                                            <div class="frame-top">
+                                                                <span class="line">
+                                                                    <span><i class="blind">세로 라인</i></span>
+                                                                </span>
+                                                                <span class="counselor">
+                                                                    <i class="blind">사람</i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="frame-bottom">
+                                                                <div class="items">
+                                                                    <span class="line">
+                                                                        <span class="line-left">
+                                                                            <i class="blind">가로 좌측 라인</i>
+                                                                        </span>
+                                                                        <span class="line-right">
+                                                                            <i class="blind">가로 우측 라인</i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="item left">
+                                                                        <i class="blind">센서</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                    <span class="item center">
+                                                                        <i class="blind">세콤</i>
+                                                                    </span>
+                                                                    <span class="item right">
+                                                                        <i class="blind">cctv</i>
+                                                                        <span class="bg"></span>
+                                                                        <strong></strong>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            이상신호 발생 시, <br />
+                                                            설치된 기기에서 신호를 즉시 <em>블루스캔 관제센터</em>로
+                                                            전송합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린6의 스텝2 영역] -->
+
+                                    <!--
+                                        [스크린6의 스텝3 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step3-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 빌딩 프레임 노출 -->
+                                            <div class="bs-building-frame">
+                                                <span class="blind">빌딩 프레임</span>
+                                            </div>
+                                            <!-- 모바일 레이어 노출 -->
+                                            <!-- 0.5초 뒤 layer-mobile-6에 .on 추가 (빈 화면에서 메시지 노출로 화면 전환) -->
+                                            <div class="layer-mobile layer-mobile-6 active">
+                                                <span class="blind">모바일 메시지 레이어</span>
+                                            </div>
+                                            <!-- bg-dim에 .off 추가(밝음 효과) -->
+                                            <!-- 클로즈업 이미지 노출 -->
+                                        </div>
+                                    </div>
+                                    <!--// [스크린6의 스텝3 영역] -->
+
+                                    <!--
+                                        [스크린6의 스텝4 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step4-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 모바일 레이어 -->
+                                            <!-- 하단 메시지 노출 -->
+                                            <!-- 팝업 노출 -->
+                                            <div class="sr-popup-wrap popup-monitor" id="popupSr8Sc6St4Monitor">
+                                                <div class="sr-popup-inner">
+                                                    <div class="sr-popup-content">
+                                                        <div class="sr-popup-frame">
+                                                            <!-- 이미지 영역 -->
+                                                        </div>
+                                                        <p class="sr-popup-text">
+                                                            블루스캔 관제센터는 CCTV로 상황을 24시간 모니터링하고 이상
+                                                            발생 시<br />
+                                                            고객 및 유관기관에 통보하여
+                                                            <em>신속한 대응이 가능</em>하도록 지원합니다.
+                                                        </p>
+                                                        <button class="sr-popup-btn" data-screen-target="0-0">
+                                                            체험 완료
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// [스크린6의 스텝4 영역] -->
+                                </div>
+                            </div>
+                            <!--// [스크린6 영역] -->
+                        </div>
+                    </div>
+
+                    <!-- [스크린 넘버와 스텝 넘버에 따라 배경 변경 및 사이즈 조정] -->
+                    <div class="showroom-background-area">
+                        <div class="showroom-background-inner">
+                            <div class="showroom-background-layer">
+                                <span class="blind">배경 인테리어</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// [스크린 넘버와 스텝 넘버에 따라 배경 변경 및 사이즈 조정] -->
+
+                    <!-- [배경의 밝기 css opacity로 조정] -->
+                    <div class="showroom-background-dim">
+                        <span class="blind">배경 밝기</span>
+                    </div>
+                    <!--// [배경의 밝기 css opacity로 조정] -->
+
+                    <!-- service-step-wrap : 자동 생성 메뉴 -->
+                    <div class="service-step-wrap service-screen1-step-wrap">
+                        <span class="blind">자동 생성 메뉴</span>
+                    </div>
+                    <!--// service-step-wrap -->
+
+                    <!--
+                        bottom-gray-tooltip-wrap 인접클래스 active 시
+                        하단 정보영역 박스 전체 활성화
+                    -->
+                    <div class="bottom-gray-tooltip-wrap">
+                        <!-- bottom-gray-text 인접클래스 active 시 하단 정보 텍스트 내용 -->
+                        <!-- screen1 -->
+                        <p class="bottom-gray-text bottom-gray-text1">
+                            모두가 퇴근한 새벽, <br />
+                            <strong class="color-bold-blue">물탱크의 밸브/펌프 고장</strong>으로 인해 지하 설비실 물탱크
+                            수위가 점점 올라가고 있습니다.
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text1-2">
+                            물탱크의 수위가 정상범위를 벗어나면 고수위 감지 센서에 이상이 감지되어 <br />
+                            <strong class="color-bold-blue">문제 상황을 경고하는 알림</strong>을 보냅니다.
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text1-3">
+                            이상상황에 대한 신속한 대응이 가능하도록<br />이상 유형, 발생시간, 장소 등을
+                            <strong class="color-bold-blue">관리자에게 통보</strong>(APP Push, SMS)합니다.
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text1-4">
+                            블루스캔 관제센터는 CCTV로 상황을 24시간 모니터링하고<br />
+                            이상 발생 시 <strong class="color-bold-blue">고객 및 유관기관에 통보</strong>하여 신속한
+                            대응이 가능하도록 지원합니다.
+                        </p>
+                        <!-- screen2 -->
+                        <p class="bottom-gray-text bottom-gray-text2-1">
+                            건물 내 매장에서 기준치를 초과하는 <strong class="color-bold-blue">가스 누출</strong>이
+                            의심됩니다!
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text2-2">
+                            관제센터는 매장 내 부착된 가스누출감지기의<br />
+                            설비 연동을 통해<strong class="color-bold-blue"> 가스 누출 여부</strong>를 실시간으로
+                            체크합니다.
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text2-3">
+                            관제센터에서 가스 누출 신호 확인 후
+                            <strong class="color-bold-blue">CCTV로 가스밸브의 상태 등을 체크</strong>하고, <br />
+                            조치 필요 시 해당 정보를 고객에게 안내합니다.
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text2-4">
+                            <strong class="color-bold-blue">가스 누출 상황 처리 결과</strong>를
+                            <strong class="color-bold-blue">고객에게 통보</strong>(APP Push, SMS) <br />알림으로
+                            신속하게 전달합니다.
+                        </p>
+                        <!-- screen3 -->
+                        <p class="bottom-gray-text bottom-gray-text3-1">
+                            화재 감지 설비(열/연기 등)의 이상 신호를 확인하고<br />
+                            <strong class="color-bold-blue">스프링클러의 작동 여부를 체크</strong>합니다.
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text3-2">
+                            화재 의심 상황이 없고, <strong class="color-bold-blue">화재 감지 설비(열/연기 등)</strong>의
+                            오작동으로 파악된 결과를<br />
+                            고객과 건물관리자에게 안내하여 대피 인원들이 안전하게 복귀하도록 합니다.
+                        </p>
+                        <!-- screen4 -->
+                        <p class="bottom-gray-text bottom-gray-text4-1">
+                            건물에 부착된 온도감지기로 설정온도가 정상적으로 유지되는지<br />
+                            APP/관제센터에서 <strong class="color-bold-blue">실시간 온도 변화를 확인</strong>할 수
+                            있습니다.
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text4-2">
+                            설정온도와 온도차가 지속될 경우, 온도감지 센서와 에어컨 작동 여부를 판단하는 <br />
+                            전력량 감지 센서 측정 결과를 바탕으로
+                            <strong class="color-bold-blue">고객에게 통보</strong>(APP Push/SMS)알림이 전달됩니다.
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text4-3">
+                            고객이 직접 APP을 통해 에어컨 ON/OFF를 제어하여<br />
+                            회의실을 <strong class="color-bold-blue">쾌적한 온도로 변경 조치</strong>합니다.<br />
+                            <em class="sub-text">* ON/OFF 제어 IoT 센서 설치 필요</em>
+                        </p>
+                        <!-- screen5 -->
+                        <p class="bottom-gray-text bottom-gray-text5-1">
+                            라운지 내 미세먼지의 농도가 높아지고 있습니다.
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text5-2">
+                            건물 내 설치된 공기질 센서를 통해
+                            <strong class="color-bold-blue">실시간 공기질을 측정</strong>하고<br />
+                            주기적으로 현장관리자에게 공기 청정 작업을 요청하여 실내를 쾌적하게 합니다.
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text5-3">
+                            <strong class="color-bold-blue">관제센터에서 이상 감지</strong> 시 현장 관리자에게 공기 청정
+                            작업을 요청하여 실내를 쾌적하게 유지합니다. <br />
+                            <em class="sub-text">* 공기 청정기(연동이 가능한 경우)ON/OFF 제어 가능</em>
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text5-4">
+                            공기질 센서 측정값(미세먼지, CO2 등)이 정상으로 변경된 상황을
+                            <strong class="color-bold-blue"> 고객에게 통보</strong>(APP Push, SMS)합니다.
+                        </p>
+                        <!-- screen6 -->
+                        <p class="bottom-gray-text bottom-gray-text6-1">
+                            건물 내 전력상태에 이상이 생긴 경우,<br />
+                            전기 시스템에 부착된 <strong class="color-bold-blue">정전 감지 센서</strong> 등을 통해 이상
+                            신호가 감지됩니다.<br />
+                            <em class="sub-text">* 전기설비 연동을 통해서도 확인 가능</em>
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text6-2">
+                            정전상황에 대한 신속한 대응이 가능하도록<br />
+                            정전 유형, 발생시간, 장소 등을
+                            <strong class="color-bold-blue">관리자에게 통보(APP Push, SMS)</strong>합니다.
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text6-3">
+                            정전이 정상적으로 복구된 상황을<br />
+                            <strong class="color-bold-blue">관리자에게 통보</strong>(APP Push/SMS) 알림으로 신속하게
+                            전달합니다.
+                        </p>
+                    </div>
+                    <!--// bottom-gray-tooltip-wrap -->
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomData.js"></script>
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomMenu.js"></script>
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomComm.js"></script>
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroom8.js"></script>
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomControll.js"></script>
+
+        <script>
+            function setView() {
+                const width = window.innerWidth;
+                const height = window.innerHeight;
+                const wrap = document.querySelector('.showroom-content-wrap8');
+                const srBgA = document.querySelector('.showroom-background-area');
+                const widthSize = 1920;
+                const heightSize = 1080;
+
+                // 너비나 높이가 지정된 크기 이상인 경우 원래 크기 유지
+                if (width >= widthSize && height >= heightSize) {
+                    wrap.style.transform = `translate3d(-50%,-50%, 0) scale(1)`;
+                    srBgA.style.transform = `translate3d(-50%,-50%, 0) scale(1)`;
+                    return;
+                }
+
+                const horizontalZoomRate = width / widthSize;
+                const verticalZoomRate = height / heightSize;
+                const zoomRate = widthSize * verticalZoomRate > width ? horizontalZoomRate : verticalZoomRate;
+
+                wrap.style.transform = `translate3d(-50%,-50%, 0) scale(${zoomRate})`;
+                srBgA.style.transform = `translate3d(-50%,-50%, 0) scale(${zoomRate})`;
+            }
+            setView();
+
+            setPageContent('sr8-bluescan', 'screen1', showroomData); // 카테고리 스크린 데이터 초기설정
+
+            window.addEventListener('resize', setView);
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showroomComm();
+                showroom8();
+            });
+        </script>
+        <!--// 쇼룸 전용 컨텐츠 : 블루스캔 bluescan.html -->
+    </body>
+</html>

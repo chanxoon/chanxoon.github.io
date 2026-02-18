@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>파동의 중첩과 간섭</title>
+        <!-- 공통 css -->
+        <link type="text/css" href="../../css/common.css?t=1739422595818" rel="stylesheet" />
+        <!-- 주제별 css -->
+        <link type="text/css" href="../../css/page/h_s7_314_140.css?t=1739422595818" rel="stylesheet" />
+        <link type="text/css" href="../../css/swiper-bundle.min.css?t=1739422595818" rel="stylesheet" />
+        <script src="../../js/lib/swiper.min.js?t=1739422595818"></script>
+        <script src="../../js/lib/jquery.min.js?t=1739422595818"></script>
+        <script src="../../js/lib/jquery-ui.min.js?t=1739422595818"></script>
+        <script src="../../js/lib/jquery.ui.touch-punch.min.js?t=1739422595818"></script>
+        <script src="../../js/lib/video-js.js?t=1739422595818"></script>
+        <script src="../../js/lib/video.js?t=1739422595818"></script>
+        <script src="../../js/lib/gsap.min.js?t=1739422595818"></script>
+        <script src="../../js/lib/p5.min.js?t=1739422595818"></script>
+        <script src="../../js/common.js?t=1739422595818"></script>
+        <script src="../../js/h_s7_314_140.js?t=1739422595818"></script>
+    </head>
+    <body>
+        <!-- Wrap 영역 -->
+        <div id="wrap" class="wrap wrap-new">
+            <!-- View 영역 -->
+            <div class="wrapper-set-view h_s7_314_140">
+                <!-- page-view1 : (페이지) 인트로 : page-view1 intro에 인접클래스 active가 있으면 보여짐 제거시 사라짐 -->
+                <div class="page-view page-view1 intro active">
+                    <!-- intro header area : 인트로 헤더영역 -->
+                    <div class="header-area header-area-intro">
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// intro header area : 인트로 헤더영역 -->
+
+                    <!-- Common Element : 인트로 과목명 -->
+                    <div class="background-area">
+                        <div class="background-area-inner">
+                            <em class="object-cockle-hat">
+                                <span class="blind">꼬깔모자 요소</span>
+                            </em>
+                            <h2 class="intro-title-text">
+                                파동의 <span class="text-color-fff605">중첩</span>과
+                                <span class="text-color-fff605">간섭</span>
+                            </h2>
+                            <ul class="ruler">
+                                <li class="begin">
+                                    <span class="number">0</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">10</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">20</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">30</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">40</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 과목명 -->
+
+                    <!-- Common Element : 인트로 메인으로 시작 버튼 -->
+                    <div class="button-intro-area">
+                        <div class="button-start-area">
+                            <button class="button-intro-main-start">
+                                <em class="text-box">
+                                    <span>활동 시작</span>
+                                </em>
+                                <em class="arrow-box">
+                                    <span class="text blind">-&gt;</span>
+                                    <i class="icon"></i>
+                                </em>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 메인으로 시작 버튼 -->
+
+                    <!-- Common Element : 인트로 캐릭터 -->
+                    <div class="intro-character1-layer">
+                        <span class="blind">인트로 캐릭터</span>
+                        <ul id="" class="interaction-character-list">
+                            <li class="motion-1">
+                                <img src="../../images/common/character1/character1-motion1.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// Common Element : 인트로 캐릭터 -->
+                </div>
+                <!--// page-view1 : (페이지) 인트로 -->
+
+                <!-- page-view2 : (모달) 활동목표 : page-view2에 인접클래스 active가 있으면 보여짐 제거시 사라짐 님 -->
+                <div class="page-view page-view2 modal-layer modal-layer-activity-goals">
+                    <div class="modal-layer-box aim-madal">
+                        <button class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <h4 class="title-round">
+                            <span>활동 목표</span>
+                        </h4>
+                        <ul class="bullet-list">
+                            <li>
+                                파동의 중첩과 간섭 현상을 관찰하고<br />
+                                설명할 수 있다.
+                            </li>
+                        </ul>
+                        <div class="character-guide h-character-activity-goals">
+                            <span class="blind">고등 활동목표</span>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view2 : (모달) 활동목표 -->
+
+                <!-- page-view3 : (페이지) 컨텐츠 페이지 -->
+                <div class="page-view page-view3 content-area">
+                    <!-- Content Header Area : 컨텐츠 헤더영역 -->
+                    <div class="header-area header-area-content">
+                        <!-- Common Title : 타이틀 -->
+                        <div class="header-title">
+                            <p>파동의 중첩과 간섭</p>
+                        </div>
+                        <!--// Common Title : 타이틀 -->
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-home">
+                                <span class="blind">홈</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// Content Header Area : 컨텐츠 헤더영역 -->
+
+                    <!-- 씬 영역 : 씬 영역1 -->
+                    <div class="scene scene-layer-area1">
+                        <div class="scene-layer scene-layer1">
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text1">
+                                            서로 반대 방향으로 진행하는 두 파동의 최대<br />
+                                            변위를 각각 선택하고 파동이 겹쳐지는 모습을<br />
+                                            확인해 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="overlay" style="width: 100%; height: 100%; position: absolute; z-index: 10"></div>
+
+                            <canvas id="myCanvasContainer" style="width: 100%; height: 100%"></canvas>
+                            <!-- svg path 3개 -->
+                            <div class="graph-path">
+                                <div class="svg-path">
+                                    <!--<?xml version="1.0" encoding="utf-8"?>-->
+                                    <!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+                                    <!-- sample 빨간 회색 두개 -->
+                                    <!--<svg
+                                        version="1.1"
+                                        id="레이어_1"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px"
+                                        y="0px"
+                                        preserveAspectRatio="none"
+                                        viewBox="0 0 3840 2160"
+                                        style="enable-background: new 0 0 3840 2160"
+                                        xml:space="preserve"
+                                    >
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill-rule: evenodd;
+                                                clip-rule: evenodd;
+                                                fill: none;
+                                                stroke: #546375;
+                                                stroke-width: 5;
+                                                stroke-miterlimit: 10;
+                                            }
+                                            .st1 {
+                                                fill-rule: evenodd;
+                                                clip-rule: evenodd;
+                                                fill: none;
+                                                stroke: #e54b49;
+                                                stroke-width: 10;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        &lt;!&ndash; 회색 라인 &ndash;&gt;
+                                        <path class="st0" d="M0,1237h3840" id="str01" />
+                                        &lt;!&ndash; //회색 라인 &ndash;&gt;
+                                        &lt;!&ndash; 회색 라인 &ndash;&gt;
+                                        <path class="st0" d="M0,1237h3840" id="str02" />
+                                        &lt;!&ndash; //회색 라인 &ndash;&gt;
+                                        &lt;!&ndash; 빨간 라인 &ndash;&gt;
+                                        <path
+                                            class="st1"
+                                            id="str03"
+                                            d="M0,1236.46h551.34c0,0,123.51-17.32,200.93-61.93c111.65-64.33,163.49-150.83,322.26-150.83
+                                                   c157.74,0,184.81,61.9,360.12,151.83c105.19,53.96,155.31,53.94,155.31,53.94h629c0,0,94.5-0.04,138.81-57.94
+                                                   c195.78-255.79,227.08-435.01,392.15-430.53c156.37,4.25,209.57,188.59,382.45,423.54c29.85,40.56,97.34,63.93,132.01,63.93
+                                                   c147.32,0,575.61,6.07,575.61,6.07"
+                                        />
+                                        &lt;!&ndash; //빨간 라인 &ndash;&gt;
+                                    </svg>-->
+                                    <!-- //sample 빨간 회색 두개 -->
+                                </div>
+                            </div>
+                            <!-- //svg path 3개 -->
+
+                            <!-- 컨트롤러 -->
+                            <div class="bottom-control-box">
+                                <div class="bottom-control-inner">
+                                    <div class="bottom-control-left">
+                                        <p>파동의 최대 변위</p>
+                                        <ul>
+                                            <li>
+                                                <button
+                                                    type="button"
+                                                    onclick="setLeftWave(-3)"
+                                                    class="btn-num-minus-03"
+                                                ></button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    type="button"
+                                                    onclick="setLeftWave(-2)"
+                                                    class="btn-num-minus-02"
+                                                ></button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    type="button"
+                                                    onclick="setLeftWave(-1)"
+                                                    class="btn-num-minus-01"
+                                                ></button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    type="button"
+                                                    onclick="setLeftWave(1)"
+                                                    class="btn-num-plus-01"
+                                                ></button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    type="button"
+                                                    onclick="setLeftWave(2)"
+                                                    class="btn-num-plus-02"
+                                                ></button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    type="button"
+                                                    onclick="setLeftWave(3)"
+                                                    class="btn-num-plus-03"
+                                                ></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="bottom-control-right">
+                                        <p>파동의 최대 변위</p>
+                                        <ul>
+                                            <li>
+                                                <button
+                                                    type="button"
+                                                    onclick="setRightWave(-3)"
+                                                    class="btn-num-minus-03"
+                                                ></button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    type="button"
+                                                    onclick="setRightWave(-2)"
+                                                    class="btn-num-minus-02"
+                                                ></button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    type="button"
+                                                    onclick="setRightWave(-1)"
+                                                    class="btn-num-minus-01"
+                                                ></button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    type="button"
+                                                    onclick="setRightWave(1)"
+                                                    class="btn-num-plus-01"
+                                                ></button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    type="button"
+                                                    onclick="setRightWave(2)"
+                                                    class="btn-num-plus-02"
+                                                ></button>
+                                            </li>
+                                            <li>
+                                                <button
+                                                    type="button"
+                                                    onclick="setRightWave(3)"
+                                                    class="btn-num-plus-03"
+                                                ></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //컨트롤러 -->
+                        </div>
+                        <!-- <div class="scene-layer scene-layer2"></div> -->
+                    </div>
+                    <!--// 씬 영역 : 씬 영역1 -->
+
+                    <!-- 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                    <ul class="tab-list-basic">
+                        <li>
+                            <!-- 버튼 클릭 : button-tab 인접클래스 active 추가 -->
+                            <button class="button-tab">
+                                <span>정리하기</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                </div>
+                <!--// page-view3 : (페이지) 컨텐츠 페이지 -->
+
+                <!-- page-view4 : 탭 스타일 page-view4 modal-layer-activity-goals3 인접클래스 active시 활성화 -->
+                <div class="page-view page-view4 modal-layer-activity-goals3 modal-layer">
+                    <!-- modal-layer-box tab-modal 인접클래스 active 추가시 우에서 좌로 모션 -->
+                    <div class="modal-layer-box tab-modal">
+                        <h4 class="title-sign">
+                            <span class="text">정리하기</span>
+                        </h4>
+                        <button id="btnTabClose" class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <div class="text-tab-content-area">
+                            <div class="text-tab-content-inner">
+                                <div class="text-area">
+                                    <p class="dot">
+                                        두 파동이 겹쳤을 때 합성파의 최대 변위는 각 파동의 최대 변위의 합과 같다.
+                                    </p>
+                                    <span class="dot-desc">중첩 원리</span>
+                                    <p class="dot">
+                                        두 개 이상의 파동이 중첩할 때 합성파의 진폭이 커지거나 작아지는 현상을<br />
+                                        파동의 간섭이라고 한다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="image-finish-coil">
+                                <span class="blind">정리하기</span>
+                            </div>
+                            <div class="character-area character">
+                                <img src="../../images/common/character/h-character-organizing.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view4 : 탭 스타일 - 우에서 좌로 모션 -->
+            </div>
+            <!--// View 영역 -->
+        </div>
+        <!--// Wrap 영역 -->
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>디지털교과서 가상실험실 2학기</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                list-style: none;
+            }
+            .wrap-index-wrap {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 1);
+            }
+            .wrap-index-inner {
+                width: 100%;
+                height: 100%;
+            }
+            .index-text-set-wrap {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .index-text-set-inner {
+                position: relative;
+            }
+            .index-text-set-inner .text-wrap {
+                display: block;
+                font-size: 0;
+                font-style: normal;
+                text-align: center;
+            }
+            .index-text-set-inner .text-wrap ~ .text-wrap {
+                margin-top: 15px;
+            }
+            .index-text-set-inner .text {
+                display: inline-block;
+                white-space: nowrap;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .index-text-set-inner .text1 {
+                font-size: 100px;
+                font-weight: 700;
+                line-height: 110px;
+                color: rgba(255, 255, 255, 1);
+            }
+            .index-text-set-inner .text2 {
+                font-size: 280px;
+                font-weight: 700;
+                line-height: 290px;
+                color: rgba(250, 255, 112, 1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap-index-wrap">
+            <div class="wrap-index-inner">
+                <div class="index-text-set-wrap">
+                    <div class="index-text-set-inner">
+                        <em class="text-wrap">
+                            <span class="text text1">디지털교과서</span>
+                            <span class="text text1">가상실험실</span>
+                        </em>
+                        <em class="text-wrap">
+                            <span class="text text2">2학기</span>
+                        </em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

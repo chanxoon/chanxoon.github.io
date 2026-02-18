@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>스마트 헬스케어 시스템을 활용하여 항상성 유지 작용 탐구하기</title>
+        <!-- 공통 css -->
+        <link type="text/css" href="../../css/common.css?t=1739422595761" rel="stylesheet" />
+        <!-- 주제별 css -->
+        <link type="text/css" href="../../css/page/h_s12_222_108.css?t=1739422595761" rel="stylesheet" />
+        <link type="text/css" href="../../css/swiper-bundle.min.css?t=1739422595761" rel="stylesheet" />
+        <script src="../../js/lib/swiper.min.js?t=1739422595761"></script>
+        <script src="../../js/lib/jquery.min.js?t=1739422595761"></script>
+        <script src="../../js/lib/jquery-ui.min.js?t=1739422595761"></script>
+        <script src="../../js/lib/jquery.ui.touch-punch.min.js?t=1739422595761"></script>
+        <script src="../../js/lib/video-js.js?t=1739422595761"></script>
+        <script src="../../js/lib/video.js?t=1739422595761"></script>
+        <script src="../../js/lib/gsap.min.js?t=1739422595761"></script>
+        <script src="../../js/lib/p5.min.js?t=1739422595761"></script>
+        <script src="../../js/common.js?t=1739422595761"></script>
+        <script src="../../js/h_s12_222_108.js?t=1739422595761"></script>
+
+        <script src="../../js/lib/echarts.min.js?t=1739422595761"></script>
+        <!-- 차트 js -->
+    </head>
+    <body>
+        <!-- Wrap 영역 -->
+        <div id="wrap" class="wrap wrap-new">
+            <!-- View 영역 -->
+            <div class="wrapper-set-view h_s12_222_108">
+                <!-- page-view1 : (페이지) 인트로 : page-view1 intro에 인접클래스 active가 있으면 보여짐 제거시 사라짐 -->
+                <div class="page-view page-view1 intro active">
+                    <!-- intro header area : 인트로 헤더영역 -->
+                    <div class="header-area header-area-intro">
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// intro header area : 인트로 헤더영역 -->
+
+                    <!-- Common Element : 인트로 과목명 -->
+                    <div class="background-area">
+                        <div class="background-area-inner">
+                            <em class="object-cockle-hat">
+                                <span class="blind">꼬깔모자 요소</span>
+                            </em>
+                            <h2 class="intro-title-text">
+                                <span class="text-color-fff000">스마트 헬스케어 시스템</span>을 활용하여<br />
+                                <span class="text-color-abb5ff">항상성 유지</span> 작용 탐구하기
+                            </h2>
+                            <ul class="ruler">
+                                <li class="begin">
+                                    <span class="number">0</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">10</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">20</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">30</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">40</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 과목명 -->
+
+                    <!-- Common Element : 인트로 메인으로 시작 버튼 -->
+                    <div class="button-intro-area">
+                        <div class="button-start-area">
+                            <button class="button-intro-main-start">
+                                <em class="text-box">
+                                    <span>활동 시작</span>
+                                </em>
+                                <em class="arrow-box">
+                                    <span class="text blind">-&gt;</span>
+                                    <i class="icon"></i>
+                                </em>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 메인으로 시작 버튼 -->
+
+                    <!-- Common Element : 인트로 캐릭터 -->
+                    <div class="intro-character1-layer">
+                        <span class="blind">인트로 캐릭터</span>
+                        <ul id="" class="interaction-character-list">
+                            <li class="motion-1">
+                                <img src="../../images/common/character1/character1-motion1.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// Common Element : 인트로 캐릭터 -->
+                </div>
+                <!--// page-view1 : (페이지) 인트로 -->
+
+                <!-- page-view2 : (모달) 활동목표 : page-view2에 인접클래스 active가 있으면 보여짐 제거시 사라짐 님 -->
+                <div class="page-view page-view2 modal-layer modal-layer-activity-goals">
+                    <div class="modal-layer-box aim-madal">
+                        <button class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <h4 class="title-round">
+                            <span>활동 목표</span>
+                        </h4>
+                        <ul class="bullet-list">
+                            <li>
+                                스마트 헬스케어 시스템으로<br />
+                                심장박동 수를 측정하여 항상성<br />
+                                유지 작용을 탐구하는 실험을<br />
+                                스스로 설계해 수행할 수 있다.
+                            </li>
+                        </ul>
+                        <div class="character-guide h-character-activity-goals">
+                            <span class="blind">고등 활동목표</span>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view2 : (모달) 활동목표 -->
+
+                <!-- page-view3 : (페이지) 컨텐츠 페이지 -->
+                <div class="page-view page-view3 content-area">
+                    <!-- Content Header Area : 컨텐츠 헤더영역 -->
+                    <div class="header-area header-area-content">
+                        <!-- Common Title : 타이틀 -->
+                        <div class="header-title">
+                            <p>스마트 헬스케어 시스템을 활용하여 항상성 유지 작용 탐구하기</p>
+                        </div>
+                        <!--// Common Title : 타이틀 -->
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-home">
+                                <span class="blind">홈</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// Content Header Area : 컨텐츠 헤더영역 -->
+
+                    <!-- 씬 영역  -->
+                    <div class="scene scene-layer-area1">
+                        <!-- 서브 1 : 장비 선택 -->
+                        <div class="scene-layer scene-layer1 active">
+                            <!-- 내용 -->
+                            <div class="scene-inner">
+                                <div class="select-device-wrap">
+                                    <!-- 활성화 .select-device-item > button.on -->
+                                    <div class="select-device-item">
+                                        <button>
+                                            <p>스마트워치</p>
+                                        </button>
+                                    </div>
+                                    <div class="select-device-item">
+                                        <button>
+                                            <p>휴대용 심장박동<br />수 측정기</p>
+                                        </button>
+                                    </div>
+                                    <div class="select-device-item">
+                                        <button></button>
+                                        <input
+                                            type="text"
+                                            placeholder="장비명을 입력하세요"
+                                            id="enterDevice"
+                                            maxlength="15"
+                                            autocomplete="off"
+                                            disabled
+                                        />
+                                    </div>
+                                    <!-- 클릭 제스쳐 -->
+                                    <div class="button-click-hand"></div>
+                                </div>
+                            </div>
+
+                            <!-- 하단 버튼 영역 -->
+                            <div class="bottom-btn-area">
+                                <div></div>
+                                <div>
+                                    <button class="btn-next" type="button" data-scene-target="2" disabled>
+                                        다음<i class="next"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text1 active">
+                                            심장박동 수를 측정할<br />
+                                            휴대용 장비를 정해 보자.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 서브 2 : 운동 선택 -->
+                        <div class="scene-layer scene-layer2">
+                            <!-- 내용 -->
+                            <div class="scene-inner">
+                                <div class="set-member-wrap">
+                                    <!-- 
+                                        * 첫 진입 시 입력필드 모두 미노출
+                                        * 운동 체크 시 우측 모둠원 입력필드 1개 노출(입력필드 상태로)
+                                        * 클릭 제스처 노출 (각 row마다 하나씩 넣고 class로 위치 조절할 것)
+                                        * 노출되어있는 1개의 입력필드 클릭 시 옆에 입력필드 노출(+형태)
+                                    -->
+                                    <dl class="set-member-row sit">
+                                        <dt>
+                                            <button data-check-excercise="sit">
+                                                <p>앉았다 일어서기<br />30 회</p>
+                                            </button>
+                                        </dt>
+                                    </dl>
+                                    <dl class="set-member-row jump">
+                                        <dt>
+                                            <button data-check-excercise="jump">
+                                                <p>
+                                                    제자리 뛰기<br />
+                                                    10 회
+                                                </p>
+                                            </button>
+                                        </dt>
+                                    </dl>
+                                    <dl class="set-member-row custom">
+                                        <dt>
+                                            <button data-check-excercise="custom"></button>
+                                            <input
+                                                type="text"
+                                                placeholder="운동명을 입력하세요"
+                                                id="enterExcercise"
+                                                autocomplete="off"
+                                                disabled
+                                                maxlength="15"
+                                            />
+                                            <em id="enterExcerciseText"></em>
+                                        </dt>
+                                    </dl>
+                                    <!-- 클릭 제스쳐 -->
+                                    <div class="button-click-hand"></div>
+                                </div>
+                            </div>
+                            <!-- 하단 버튼 영역 -->
+                            <div class="bottom-btn-area">
+                                <div>
+                                    <button class="btn-prev" type="button" data-scene-target="1">
+                                        <i class="prev"></i>이전
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="btn-save" type="button" disabled>저장</button>
+                                    <button class="btn-next" type="button" data-scene-target="3" disabled>
+                                        다음<i class="next"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text2 active">
+                                            어떤 운동을 할 지 정해 보자.<br />
+                                            <small>* 모둠원에 따라 다른 운동을 정할 수 있다.</small>
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text3 active">
+                                            운동을 하면서 심장박동 수를 측정할<br />
+                                            모둠원을 정해 보자.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 서브 3 : 모둠원 입력 -->
+                        <div class="scene-layer scene-layer3">
+                            <!-- 내용 -->
+                            <div class="scene-inner">
+                                <div class="set-member-wrap">
+                                    <!-- 
+                                        * 첫 진입 시 입력필드 모두 미노출
+                                        * 운동 체크 시 우측 모둠원 입력필드 1개 노출(입력필드 상태로)
+                                        * 클릭 제스처 노출 (각 row마다 하나씩 넣고 class로 위치 조절할 것)
+                                        * 노출되어있는 1개의 입력필드 클릭 시 옆에 입력필드 노출(+형태)
+                                    -->
+                                    <dl class="set-member-row sit">
+                                        <dt>
+                                            <button data-check-excercise="sit" disabled>
+                                                <p>앉았다 일어서기<br />30 회</p>
+                                            </button>
+                                        </dt>
+                                        <dd>
+                                            <!-- 노출: .show / 활성화 : .active -->
+                                            <span>
+                                                <input type="text" placeholder="모둠원" maxlength="5" />
+                                            </span>
+                                            <span>
+                                                <input type="text" placeholder="모둠원" maxlength="5" />
+                                            </span>
+                                            <span>
+                                                <input type="text" placeholder="모둠원" maxlength="5" />
+                                            </span>
+                                            <span>
+                                                <input type="text" placeholder="모둠원" maxlength="5" />
+                                            </span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="set-member-row jump">
+                                        <dt>
+                                            <button data-check-excercise="jump" disabled>
+                                                <p>
+                                                    제자리 뛰기<br />
+                                                    10 회
+                                                </p>
+                                            </button>
+                                        </dt>
+                                        <dd>
+                                            <span>
+                                                <input type="text" placeholder="모둠원" maxlength="5" />
+                                            </span>
+                                            <span>
+                                                <input type="text" placeholder="모둠원" maxlength="5" />
+                                            </span>
+                                            <span>
+                                                <input type="text" placeholder="모둠원" maxlength="5" />
+                                            </span>
+                                            <span>
+                                                <input type="text" placeholder="모둠원" maxlength="5" />
+                                            </span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="set-member-row custom">
+                                        <dt>
+                                            <button data-check-excercise="custom" disabled></button>
+                                            <em id="enterExcercise2"></em>
+                                        </dt>
+                                        <dd>
+                                            <span>
+                                                <input type="text" placeholder="모둠원" maxlength="5" />
+                                            </span>
+                                            <span>
+                                                <input type="text" placeholder="모둠원" maxlength="5" />
+                                            </span>
+                                            <span>
+                                                <input type="text" placeholder="모둠원" maxlength="5" />
+                                            </span>
+                                            <span>
+                                                <input type="text" placeholder="모둠원" maxlength="5" />
+                                            </span>
+                                        </dd>
+                                    </dl>
+
+                                    <!-- 손가락 아이콘 
+                                        (초기 진입 시 노출되었다가 세번 깜빡이고 미노출)
+                                        가장 첫번째 span.show.active의 위치에서
+                                    -->
+                                    <div class="button-click-hand"></div>
+                                </div>
+                            </div>
+                            <!-- 하단 버튼 영역 -->
+                            <div class="bottom-btn-area">
+                                <div>
+                                    <button class="btn-prev" type="button" data-scene-target="2">
+                                        <i class="prev"></i>이전
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="btn-save" type="button" disabled>저장</button>
+                                    <button class="btn-next" type="button" data-scene-target="4" disabled>
+                                        다음<i class="next"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text3 active">
+                                            운동을 하면서 심장박동 수를 측정할<br />
+                                            모둠원을 정해 보자.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 서브 4 : 심장박동수 측정 (5 분 전 입력) -->
+                        <div class="scene-layer scene-layer4">
+                            <!-- 내용 -->
+                            <div class="scene-inner">
+                                <!-- 심박수 입력 테이블 -->
+                                <div class="heartbeat-table-wrap">
+                                    <div class="table-box">
+                                        <div class="table-inner">
+                                            <div class="table-head">
+                                                <div class="table-row" data-row="member">
+                                                    <div class="th"><span>모둠원</span></div>
+                                                </div>
+                                                <div class="table-row" data-row="excercise">
+                                                    <div class="th">운동명</div>
+                                                </div>
+                                            </div>
+                                            <div class="table-body">
+                                                <div class="table-col-left">
+                                                    <p>
+                                                        심장<br />
+                                                        박동<br />
+                                                        수<small>(회)</small>
+                                                    </p>
+                                                </div>
+                                                <div class="table-col-right">
+                                                    <div class="table-row" data-row="before5Min">
+                                                        <div class="th">
+                                                            <span>
+                                                                운동 하기<br />
+                                                                5 분 전</span
+                                                            >
+                                                        </div>
+                                                        <!-- data init -->
+                                                    </div>
+                                                    <div class="table-row" data-row="after1Min">
+                                                        <div class="th">
+                                                            <span
+                                                                >운동 끝나고<br />
+                                                                1 분 뒤</span
+                                                            >
+                                                        </div>
+                                                        <!-- data init -->
+                                                    </div>
+                                                    <div class="table-row" data-row="after2Min">
+                                                        <div class="th">
+                                                            <span
+                                                                >운동 끝나고<br />
+                                                                2 분 뒤</span
+                                                            >
+                                                        </div>
+                                                        <!-- data init -->
+                                                    </div>
+                                                    <div class="table-row" data-row="after3Min">
+                                                        <div class="th">
+                                                            <span
+                                                                >운동 끝나고<br />
+                                                                3 분 뒤</span
+                                                            >
+                                                        </div>
+                                                        <!-- data init -->
+                                                    </div>
+                                                    <div class="table-row" data-row="after4Min">
+                                                        <div class="th">
+                                                            <span
+                                                                >운동 끝나고<br />
+                                                                4 분 뒤</span
+                                                            >
+                                                        </div>
+                                                        <!-- data init -->
+                                                    </div>
+                                                    <div class="table-row" data-row="after5Min">
+                                                        <div class="th">
+                                                            <span
+                                                                >운동 끝나고<br />
+                                                                5 분 뒤</span
+                                                            >
+                                                        </div>
+                                                        <!-- data init -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 심박수 테이블 스크롤바 -->
+                                <div class="scroll-wrap">
+                                    <div class="scroll-to-left">
+                                        <button title="스크롤 왼쪽으로"></button>
+                                    </div>
+                                    <div class="scrollbar">
+                                        <input type="range" min="0" value="0" />
+                                    </div>
+                                    <div class="scroll-to-right">
+                                        <button title="스크롤 오른쪽으로"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 하단 버튼 영역 -->
+                            <div class="bottom-btn-area">
+                                <div>
+                                    <button class="btn-prev" type="button" data-scene-target="3">
+                                        <i class="prev"></i>이전
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="btn-save" type="button" disabled>저장</button>
+                                    <button class="btn-next" type="button" data-scene-target="5" disabled>
+                                        다음<i class="next"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text4 active">
+                                            정한 운동을 하기 5 분 전의 심장박동<br />
+                                            수를 측정하여 써 보자.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 서브 5 : 심장박동수 측정 (1~5 분 뒤 입력) -->
+                        <div class="scene-layer scene-layer5">
+                            <!-- 내용 -->
+                            <div class="scene-inner">
+                                <!-- 심박수 입력 테이블 -->
+                                <div class="heartbeat-table-wrap">
+                                    <div class="table-box">
+                                        <div class="table-inner">
+                                            <div class="table-head">
+                                                <div class="table-row" data-row="member">
+                                                    <div class="th"><span>모둠원</span></div>
+                                                </div>
+                                                <div class="table-row" data-row="excercise">
+                                                    <div class="th">운동명</div>
+                                                </div>
+                                            </div>
+                                            <div class="table-body">
+                                                <div class="table-col-left">
+                                                    <p>
+                                                        심장<br />
+                                                        박동<br />
+                                                        수<small>(회)</small>
+                                                    </p>
+                                                </div>
+                                                <div class="table-col-right">
+                                                    <div class="table-row" data-row="before5Min">
+                                                        <div class="th">
+                                                            <span>
+                                                                운동 하기<br />
+                                                                5 분 전</span
+                                                            >
+                                                        </div>
+                                                        <!-- data init -->
+                                                    </div>
+                                                    <div class="table-row" data-row="after1Min">
+                                                        <div class="th">
+                                                            <span
+                                                                >운동 끝나고<br />
+                                                                1 분 뒤</span
+                                                            >
+                                                        </div>
+                                                        <!-- data init -->
+                                                    </div>
+                                                    <div class="table-row" data-row="after2Min">
+                                                        <div class="th">
+                                                            <span
+                                                                >운동 끝나고<br />
+                                                                2 분 뒤</span
+                                                            >
+                                                        </div>
+                                                        <!-- data init -->
+                                                    </div>
+                                                    <div class="table-row" data-row="after3Min">
+                                                        <div class="th">
+                                                            <span
+                                                                >운동 끝나고<br />
+                                                                3 분 뒤</span
+                                                            >
+                                                        </div>
+                                                        <!-- data init -->
+                                                    </div>
+                                                    <div class="table-row" data-row="after4Min">
+                                                        <div class="th">
+                                                            <span
+                                                                >운동 끝나고<br />
+                                                                4 분 뒤</span
+                                                            >
+                                                        </div>
+                                                        <!-- data init -->
+                                                    </div>
+                                                    <div class="table-row" data-row="after5Min">
+                                                        <div class="th">
+                                                            <span
+                                                                >운동 끝나고<br />
+                                                                5 분 뒤</span
+                                                            >
+                                                        </div>
+                                                        <!-- data init -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 심박수 테이블 스크롤바 -->
+                                <div class="scroll-wrap">
+                                    <div class="scroll-to-left">
+                                        <button title="스크롤 왼쪽으로"></button>
+                                    </div>
+                                    <div class="scrollbar">
+                                        <input type="range" />
+                                    </div>
+                                    <div class="scroll-to-right">
+                                        <button title="스크롤 오른쪽으로"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 하단 버튼 영역 -->
+                            <div class="bottom-btn-area">
+                                <div>
+                                    <button class="btn-prev" type="button" data-scene-target="4">
+                                        <i class="prev"></i>이전
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="btn-save" type="button" disabled>저장</button>
+                                    <button class="btn-next" type="button" data-scene-target="6" disabled>
+                                        다음<i class="next"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap5">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text5 active">
+                                            정한 운동을 해 보자.<br />
+                                            운동이 끝난 뒤 1 분마다 심장박동 수를<br />
+                                            측정하여 써 보자.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 서브 6 : 그래프 화면 -->
+                        <div class="scene-layer scene-layer6">
+                            <!-- 내용 -->
+                            <div class="scene-inner">
+                                <div class="graph-section">
+                                    <!-- 그래프 영역 -->
+                                    <div class="graph-area">
+                                        <!-- 좌측 타이틀(심장박동수) -->
+                                        <div class="graph-title">
+                                            <p>심장<br />박동<br />수</p>
+                                        </div>
+                                        <!-- 그래프 출력 영역 -->
+                                        <div class="graph-view" id="viewGraphArea"></div>
+                                        <!-- 그래프 전환 버튼 -->
+                                        <button class="btn-graph-converse" id="btnGraphConverse">
+                                            <p>그래프 전환</p>
+                                        </button>
+                                        <!-- 손가락 아이콘(버튼 클릭 시 미노출 전환) -->
+                                        <div class="button-click-hand"></div>
+                                    </div>
+                                    <!-- 범례 영역 -->
+                                    <div class="legend-area">
+                                        <div class="legend-inner">
+                                            <button class="blue" data-chart-target="sit">
+                                                <i></i>
+                                                <p>앉았다 일어서기</p>
+                                            </button>
+                                            <button class="red" data-chart-target="jump">
+                                                <i></i>
+                                                <p>제자리 뛰기</p>
+                                            </button>
+                                            <button class="green" id="customExcercise" data-chart-target="custom">
+                                                <i></i>
+                                                <p></p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 하단 버튼 영역 -->
+                            <div class="bottom-btn-area">
+                                <div>
+                                    <button class="btn-prev" type="button" data-scene-target="5">
+                                        <i class="prev"></i>이전
+                                    </button>
+                                    <!-- 그래프 전체보기 버튼 -->
+                                    <button class="btn-view-graph-all" id="btnGraphAll" disabled>
+                                        <p>그래프 전체 보기</p>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="btn-next" type="button" data-scene-target="7" disabled>
+                                        다음<i class="next"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap6">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text6 active">
+                                            측정한 심장박동 수를 그래프로 나타내 보자.<br />
+                                            <small>* 같은 운동을 한 모둠원의 심장박동 수는 평균으로 나타낸다.</small>
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 서브 7 : 그래프 분석 화면 -->
+                        <div class="scene-layer scene-layer7">
+                            <!-- 내용 -->
+                            <div class="scene-inner">
+                                <!-- 그래프 영역 -->
+                                <div class="graph-section">
+                                    <!-- 그래프 영역 -->
+                                    <div class="graph-area">
+                                        <!-- 좌측 타이틀(심장박동수) -->
+                                        <div class="graph-title">
+                                            <p>심장<br />박동<br />수</p>
+                                        </div>
+                                        <!-- 그래프 출력 영역 -->
+                                        <div class="graph-view" id="viewGraphArea2"></div>
+                                    </div>
+                                    <!-- 범례 영역 -->
+                                    <div class="legend-area">
+                                        <div class="legend-inner">
+                                            <button class="blue show" data-chart-target="sit">
+                                                <i></i>
+                                                <p>앉았다 일어서기</p>
+                                            </button>
+                                            <button class="red show" data-chart-target="jump">
+                                                <i></i>
+                                                <p>제자리 뛰기</p>
+                                            </button>
+                                            <button class="green show" id="customExcercise" data-chart-target="custom">
+                                                <i></i>
+                                                <p></p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 결과 분석 영역 -->
+                                <div class="result-section">
+                                    <div class="result-box">
+                                        <p class="result-text">
+                                            운동을 하면 심장박동 수가<br />
+                                            증가하지만 운동하고 난 뒤<br />
+                                            시간이 지날수록 원래의<br />
+                                            심장박동 수로 돌아온다.
+                                        </p>
+                                    </div>
+                                    <button class="result-btn">
+                                        <p>결과분석<i></i></p>
+                                    </button>
+                                    <!-- 손가락 아이콘(버튼 클릭 시 미노출 전환) -->
+                                    <div class="button-click-hand"></div>
+                                </div>
+                            </div>
+                            <!-- 하단 버튼 영역 -->
+                            <div class="bottom-btn-area">
+                                <div>
+                                    <button class="btn-prev" type="button" data-scene-target="6">
+                                        <i class="prev"></i>이전
+                                    </button>
+                                </div>
+                                <div></div>
+                            </div>
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap7">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text7 active">
+                                            운동하고 난 뒤 심장박동<br />
+                                            수는 어떻게 변할까?
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 씬 영역 -->
+
+                    <!-- 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                    <ul class="tab-list-basic">
+                        <li>
+                            <!-- 버튼 클릭 : button-tab 인접클래스 active 추가 -->
+                            <button class="button-tab">
+                                <span>정리하기</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                </div>
+                <!--// page-view3 : (페이지) 컨텐츠 페이지 -->
+
+                <!-- page-view4 : 탭 스타일 page-view4 modal-layer-activity-goals3 인접클래스 active시 활성화 -->
+                <div class="page-view page-view4 modal-layer-activity-goals3 modal-layer">
+                    <!-- modal-layer-box tab-modal 인접클래스 active 추가시 우에서 좌로 모션 -->
+                    <div class="modal-layer-box tab-modal">
+                        <h4 class="title-sign">
+                            <span class="text">정리하기</span>
+                        </h4>
+                        <button id="btnTabClose" class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <div class="text-content-area"></div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view4 : 탭 스타일 - 우에서 좌로 모션 -->
+            </div>
+            <!--// View 영역 -->
+        </div>
+        <!--// Wrap 영역 -->
+    </body>
+</html>

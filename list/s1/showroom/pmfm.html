@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <meta content="온라인 쇼룸 | 자산관리(PM) 시설관리(FM) | 에스원" id="metaTitle" name="title" />
+        <meta content="온라인 쇼룸 | 자산관리(PM) 시설관리(FM)" id="metaDescription" name="description" />
+        <meta content="온라인 쇼룸 | 자산관리(PM) 시설관리(FM)" id="metaKeyword" name="keywords" />
+
+        <meta content="website" property="og:type" />
+        <meta content="https://www.s1.co.kr/secom/commercial" property="og:url" />
+        <meta content="온라인 쇼룸 | 자산관리(PM) 시설관리(FM) | 에스원" property="og:title" />
+        <meta content="온라인 쇼룸 | 자산관리(PM) 시설관리(FM)" property="og:description" />
+        <meta content="https://www.s1.co.kr/images/ko/meta/meta-default-img.png" property="og:image" />
+        <meta content="630" property="og:image:height" />
+        <meta content="1200" property="og:image:width" />
+
+        <title>온라인 쇼룸 | 자산관리(PM) 시설관리(FM) | 에스원</title>
+
+        <link rel="preload" href="/css/ko/common.css" as="style" type="text/css" />
+        <link rel="preload" href="/css/ko/main.css" as="style" type="text/css" />
+        <link rel="preload" href="/css/ko/s1_contents.css" as="style" type="text/css" />
+        <link rel="preload" href="/js/libs/jquery-1.12.4.min.js" as="script" />
+        <link rel="preload" href="/js/libs/jquery-ui.js" as="script" />
+        <link rel="preload" href="/js/libs/slick.js" as="script" />
+        <link rel="preload" href="/js/ui/ko/common.js" as="script" />
+
+        <link rel="icon" href="/favicon/favicon-48x48.ico" />
+        <link rel="shortcut icon" href="/favicon/favicon-48x48.ico" />
+        <link rel="stylesheet" href="/css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="/css/aos.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/common.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/s1_contents.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/popup.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/showroom.css" type="text/css" />
+
+        <script type="text/javascript" src="/js/libs/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="/js/libs/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/libs/slick.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.min.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.scrollbar-2.1.js"></script>
+        <script type="text/javascript" src="/js/libs/aos.js"></script>
+        <script type="text/javascript" src="/js/libs/stick-to-me.js"></script>
+        <script type="text/javascript" src="/js/libs/client.min.js"></script>
+
+        <!-- 네이버 연관채널 -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "s1",
+                "url": "https://www.s1.co.kr",
+                "sameAs": [
+                    "https://blog.naver.com/s1corporation",
+                    "https://www.instagram.com/s1corporation/",
+                    "https://www.youtube.com/@welcome.S1",
+                    "https://www.facebook.com/s1corporation"
+                ]
+            }
+        </script>
+
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 쇼룸 전용 컨텐츠 : 자산관리(PM) 시설관리(FM) pmfm.html -->
+        <div id="wrapShowroom" class="wrap-online-showroom">
+            <!--
+                showroom-container-wrap의 인접클래스
+                .sr9-pmfm로 제어
+
+                인접클래스로
+
+                [메인]
+                main
+
+                [화면1 영역 - 인접클래스]
+                screen1 step1 : 화면1, 스텝1
+                screen1 step2 : 화면1, 스텝2
+                screen1 step3 : 화면1, 스텝3
+                screen1 step4 : 화면1, 스텝4
+
+                [화면2 영역 - 인접클래스]
+                screen2 step1 : 화면2, 스텝1
+                screen2 step2 : 화면2, 스텝2
+                screen2 step3 : 화면2, 스텝3
+                screen2 step4 : 화면2, 스텝4
+
+                [화면3 영역 - 인접클래스]
+                screen3 step1 : 화면3, 스텝1
+                screen3 step2 : 화면3, 스텝2
+                screen3 step3 : 화면3, 스텝3
+                screen3 step4 : 화면3, 스텝4
+
+                스크린 넘버(ex : screen1)를 먼저 추가 후 각 스텝(ex : step1)의 인접클래스 넘버를 추가하여 효과를 적용
+            -->
+            <div class="showroom-container-wrap sr8-bluescan main">
+                <div class="showroom-container-inner">
+                    <!-- 이전 페이지 버튼 -->
+                    <button
+                        onclick="showroomControll.goBack()"
+                        class="button-screen-wrap page-back"
+                        title="인트로 페이지 이동"
+                        aria-label="인트로 페이지 이동"
+                    >
+                        <em class="button-screen-inner">
+                            <span class="text">처음으로</span>
+                        </em>
+                    </button>
+                    <!--// 이전 페이지 버튼 -->
+
+                    <!-- [확대, 축소 버튼 영역] 인접클래스 active 추가시 해당 버튼 영역 활성화 -->
+                    <ul class="page-screen">
+                        <li>
+                            <button class="button-screen-wrap page-screen-plus">
+                                <em class="button-screen-inner">
+                                    <span class="blind">확대</span>
+                                </em>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-screen-wrap page-screen-minus">
+                                <em class="button-screen-inner">
+                                    <span class="blind">축소</span>
+                                </em>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// [확대, 축소 버튼 영역] -->
+
+                    <!--
+                        showroom-top-tab-wrap : 상단 - [쇼룸보기] / [가격견적] 탭
+                        인접 active 클래스 추가시 페이지 보임
+                    -->
+                    <div class="showroom-top-tab-wrap active">
+                        <div class="showroom-top-tab-inner">
+                            <ul class="showroom-top-tab-list">
+                                <li class="active">
+                                    <button
+                                        onclick="javascript:void(0)"
+                                        class="button-tab"
+                                        title="현재 페이지"
+                                        aria-label="현재 페이지"
+                                    >
+                                        <span class="text">쇼룸 보기</span>
+                                    </button>
+                                </li>
+                                <li class="">
+                                    <button
+                                        onclick="location.href='/showroom/pricing.html'"
+                                        class="button-tab"
+                                        title="가격견적 페이지 보기"
+                                        aria-label="가격견적 페이지 보기"
+                                    >
+                                        <span class="text">가격 견적</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <em class="button-bg" style="left: 0px"></em>
+                        </div>
+                    </div>
+
+                    <!--
+                        자산관리(PM) 시설관리(FM) : showroom-content-wrap9 인접클래스
+                        active 추가시 페이지 보임
+                    -->
+                    <div class="showroom-content-wrap showroom-content-wrap9 active">
+                        <div class="showroom-content-inner">
+                            <!-- [스크린1 영역] : showroom-screen1-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen1-wrap">
+                                <div class="showroom-screen-inner">
+                                    <!--
+                                        [스크린1의 스텝1 영역]
+                                        showroom-step1-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner"></div>
+                                    </div>
+                                    <!--// [스크린1의 스텝1 영역] -->
+
+                                    <!--
+                                        [스크린1의 스텝2 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step2-wrap">
+                                        <div class="showroom-step-inner"></div>
+                                    </div>
+                                    <!--// [스크린1의 스텝2 영역] -->
+
+                                    <!--
+                                        [스크린1의 스텝3 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step3-wrap">
+                                        <div class="showroom-step-inner"></div>
+                                    </div>
+                                    <!--// [스크린1의 스텝3 영역] -->
+
+                                    <!--
+                                        [스크린1의 스텝4 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step4-wrap">
+                                        <div class="showroom-step-inner"></div>
+                                    </div>
+                                    <!--// [스크린1의 스텝4 영역] -->
+                                </div>
+                            </div>
+                            <!--// [스크린1 영역] -->
+
+                            <!-- [스크린2 영역] : showroom-screen2-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen2-wrap">
+                                <div class="showroom-screen-inner">
+                                    <!--
+                                        [스크린2의 스텝1 영역]
+                                        showroom-step1-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner"></div>
+                                    </div>
+                                    <!--// [스크린2의 스텝1 영역] -->
+
+                                    <!--
+                                        [스크린2의 스텝2 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step2-wrap">
+                                        <div class="showroom-step-inner"></div>
+                                    </div>
+                                    <!--// [스크린2의 스텝2 영역] -->
+
+                                    <!--
+                                        [스크린2의 스텝3 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step3-wrap">
+                                        <div class="showroom-step-inner"></div>
+                                    </div>
+                                    <!--// [스크린2의 스텝3 영역] -->
+
+                                    <!--
+                                        [스크린2의 스텝4 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step4-wrap">
+                                        <div class="showroom-step-inner"></div>
+                                    </div>
+                                    <!--// [스크린2의 스텝4 영역] -->
+                                </div>
+                            </div>
+                            <!--// [스크린2 영역] -->
+
+                            <!-- [스크린3 영역] : showroom-screen3-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen3-wrap">
+                                <div class="showroom-screen-inner">
+                                    <!--
+                                        [스크린3의 스텝1 영역]
+                                        showroom-step1-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner"></div>
+                                    </div>
+                                    <!--// [스크린3의 스텝1 영역] -->
+
+                                    <!--
+                                        [스크린3의 스텝2 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step2-wrap">
+                                        <div class="showroom-step-inner"></div>
+                                    </div>
+                                    <!--// [스크린3의 스텝2 영역] -->
+
+                                    <!--
+                                        [스크린3의 스텝3 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step3-wrap">
+                                        <div class="showroom-step-inner"></div>
+                                    </div>
+                                    <!--// [스크린3의 스텝3 영역] -->
+
+                                    <!--
+                                        [스크린3의 스텝4 영역]
+                                        showroom-step2-wrap 인접클래스 active시 스텝 활성화
+                                    -->
+                                    <div class="showroom-step-wrap showroom-step4-wrap">
+                                        <div class="showroom-step-inner"></div>
+                                    </div>
+                                    <!--// [스크린3의 스텝4 영역] -->
+                                </div>
+                            </div>
+                            <!--// [스크린3 영역] -->
+                        </div>
+                    </div>
+
+                    <!-- [스크린 넘버와 스텝 넘버에 따라 배경 변경 및 사이즈 조정] -->
+                    <div class="showroom-background-area">
+                        <div class="showroom-background-inner">
+                            <div class="showroom-background-layer">
+                                <span class="blind">배경 인테리어</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// [스크린 넘버와 스텝 넘버에 따라 배경 변경 및 사이즈 조정] -->
+
+                    <!-- [배경의 밝기 css opacity로 조정] -->
+                    <div class="showroom-background-dim">
+                        <span class="blind">배경 밝기</span>
+                    </div>
+                    <!--// [배경의 밝기 css opacity로 조정] -->
+
+                    <!--
+                        [페이지 우측 - 스텝 이동 리스트]
+                        service-step-wrap 인접클래스 active 추가시 스텝활성화
+                    -->
+                    <div class="service-step-wrap">
+                        <div class="service-step-inner">
+                            <div class="title-step-top">
+                                <h4 class="title-top-text">
+                                    <span class="text">출동경비 알람 서비스</span>
+                                </h4>
+                                <!-- 삭제 백업
+                                <em class="sub-top-text">
+                                    <span class="text">에스원의 경비는 어떻게 다를까요?</span>
+                                </em>
+                                -->
+                            </div>
+
+                            <!--
+                                공통 STEP 리스트
+                            -->
+                            <div class="step-list-wrap">
+                                <ul class="step-play-list">
+                                    <!--
+                                        해당 레이어 진입시
+                                        step-play-item 인접클래스
+                                        active시 메뉴활성화 되면
+                                        step-play-item에 인접클래스 play 추가
+                                        5초가 지나면 complate 클래스 추가
+                                    -->
+                                    <li class="step-play-item active">
+                                        <a
+                                            href="javascript:void(0)"
+                                            class="link-list-step"
+                                            title="페이지 이동"
+                                            aria-label="페이지 이동"
+                                        >
+                                            <h6 class="title-number">
+                                                <span class="text">STEP 1</span>
+                                            </h6>
+                                            <em class="title-con">
+                                                <span class="text">문 열림 감지</span>
+                                            </em>
+                                        </a>
+                                        <div class="automatic-layer">
+                                            <!--
+                                                service-circle-play의 인접클래스
+                                                play : 실행
+                                                pause시 : 멈춤
+                                            -->
+                                            <button class="service-circle-play play">
+                                                <span class="service-circle-play-inner">
+                                                    <svg
+                                                        width="28"
+                                                        height="28"
+                                                        viewBox="0 0 100 100"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <circle
+                                                            cx="50"
+                                                            cy="50"
+                                                            r="45"
+                                                            fill="none"
+                                                            stroke="gray"
+                                                            stroke-width="5"
+                                                        />
+                                                        <path
+                                                            class="blue-circle"
+                                                            d="M50,5 a45,45 0 1,1 0,90 a45,45 0 1,1 0,-90"
+                                                            fill="none"
+                                                            stroke="#1d6ceb"
+                                                            stroke-width="5"
+                                                        />
+                                                    </svg>
+                                                    <i class="icon-play">
+                                                        <span class="blind">실행/멈춤 버튼</span>
+                                                    </i>
+                                                </span>
+                                            </button>
+                                            <i class="check">
+                                                <span class="blind">재생완료</span>
+                                            </i>
+                                        </div>
+                                    </li>
+                                    <li class="step-play-item">
+                                        <a
+                                            href="javascript:void(0)"
+                                            class="link-list-step"
+                                            title="페이지 이동"
+                                            aria-label="페이지 이동"
+                                        >
+                                            <h6 class="title-number">
+                                                <span class="text">STEP 2</span>
+                                            </h6>
+                                            <em class="title-con">
+                                                <span class="text">움직임 감지</span>
+                                            </em>
+                                        </a>
+                                        <div class="automatic"></div>
+                                    </li>
+                                    <li class="step-play-item">
+                                        <a
+                                            href="javascript:void(0)"
+                                            class="link-list-step"
+                                            title="페이지 이동"
+                                            aria-label="페이지 이동"
+                                        >
+                                            <h6 class="title-number">
+                                                <span class="text">STEP 3</span>
+                                            </h6>
+                                            <em class="title-con">
+                                                <span class="text">이상신호 관제센터 전달</span>
+                                            </em>
+                                        </a>
+                                        <div class="automatic"></div>
+                                    </li>
+                                    <li class="step-play-item">
+                                        <a
+                                            href="javascript:void(0)"
+                                            class="link-list-step"
+                                            title="페이지 이동"
+                                            aria-label="페이지 이동"
+                                        >
+                                            <h6 class="title-number">
+                                                <span class="text">STEP 4</span>
+                                            </h6>
+                                            <em class="title-con">
+                                                <span class="text">출동요원 출동</span>
+                                            </em>
+                                        </a>
+                                        <div class="automatic"></div>
+                                    </li>
+                                </ul>
+                                <div class="step-button-wrap">
+                                    <button class="button-submit">
+                                        <span class="text">다른 체험이 궁금해요</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!--// 공통 STEP 리스트 -->
+                        </div>
+                    </div>
+                    <!--// service-step-wrap -->
+
+                    <!--
+                        bottom-gray-tooltip-wrap 인접클래스 active 시
+                        하단 정보영역 박스 전체 활성화
+                    -->
+                    <div class="bottom-gray-tooltip-wrap active">
+                        <!-- bottom-gray-text 인접클래스 active 시 하단 정보 텍스트 내용 -->
+                        <p class="bottom-gray-text bottom-gray-text1 active">
+                            에스원 <strong class="color-bold-blue">자석 감지기</strong>는 자석의 접촉 상태를 감지하여
+                            도난 및 침입을 방지하는 보안 장치입니다.
+                        </p>
+                        <p class="bottom-gray-text bottom-gray-text2">
+                            에스원 <strong class="color-bold-blue">열선 감지기</strong>는 내부 무단 침입자의 움직임을
+                            감시합니다.
+                        </p>
+                    </div>
+                    <!--// bottom-gray-tooltip-wrap -->
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomComm.js"></script>
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroom9.js"></script>
+        <script>
+            function setView() {
+                const width = window.innerWidth;
+                const height = window.innerHeight;
+                const wrap = document.querySelector('.showroom-content-wrap3');
+                const srBgA = document.querySelector('.showroom-background-area');
+                const widthSize = 1920;
+                const heightSize = 1080;
+
+                // 너비나 높이가 지정된 크기 이상인 경우 원래 크기 유지
+                if (width >= widthSize && height >= heightSize) {
+                    wrap.style.transform = `translate3d(-50%,-50%, 0) scale(1)`;
+                    srBgA.style.transform = `translate3d(-50%,-50%, 0) scale(1)`;
+                    return;
+                }
+
+                const horizontalZoomRate = width / widthSize;
+                const verticalZoomRate = height / heightSize;
+                const zoomRate = widthSize * verticalZoomRate > width ? horizontalZoomRate : verticalZoomRate;
+
+                wrap.style.transform = `translate3d(-50%,-50%, 0) scale(${zoomRate})`;
+                srBgA.style.transform = `translate3d(-50%,-50%, 0) scale(${zoomRate})`;
+            }
+            setView();
+            window.addEventListener('resize', setView);
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showroomComm();
+                showroom9();
+            });
+        </script>
+        <!--// 쇼룸 전용 컨텐츠 : 블루스캔 bluescan.html -->
+    </body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>산성을 나타내는 이온과 염기성을 나타내는 이온 확인하기</title>
+        <!-- 공통 css -->
+        <link type="text/css" href="../../css/common.css?t=1739422595811" rel="stylesheet" />
+        <!-- 주제별 css -->
+        <link type="text/css" href="../../css/page/h_s2_122_049.css?t=1739422595811" rel="stylesheet" />
+        <link type="text/css" href="../../css/swiper-bundle.min.css?t=1739422595811" rel="stylesheet" />
+        <script src="../../js/lib/swiper.min.js?t=1739422595811"></script>
+        <script src="../../js/lib/jquery.min.js?t=1739422595811"></script>
+        <script src="../../js/lib/jquery-ui.min.js?t=1739422595811"></script>
+        <script src="../../js/lib/jquery.ui.touch-punch.min.js?t=1739422595811"></script>
+        <script src="../../js/lib/video-js.js?t=1739422595811"></script>
+        <script src="../../js/lib/video.js?t=1739422595811"></script>
+        <script src="../../js/lib/gsap.min.js?t=1739422595811"></script>
+        <script src="../../js/lib/p5.min.js?t=1739422595811"></script>
+        <script src="../../js/common.js?t=1739422595811"></script>
+        <script src="../../js/h_s2_122_049.js?t=1739422595811"></script>
+    </head>
+
+    <body>
+        <!-- Wrap 영역 -->
+        <div id="wrap" class="wrap wrap-new">
+            <!-- View 영역 -->
+            <div class="wrapper-set-view h_s2_122_049">
+                <!-- page-view1 : (페이지) 인트로 : page-view1 intro에 인접클래스 active가 있으면 보여짐 제거시 사라짐 -->
+                <div class="page-view page-view1 intro active">
+                    <!-- intro header area : 인트로 헤더영역 -->
+                    <div class="header-area header-area-intro">
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// intro header area : 인트로 헤더영역 -->
+
+                    <!-- Common Element : 인트로 과목명 -->
+                    <div class="background-area">
+                        <div class="background-area-inner">
+                            <em class="object-cockle-hat">
+                                <span class="blind">꼬깔모자 요소</span>
+                            </em>
+                            <h2 class="intro-title-text">
+                                <span class="text-color-fff000">산성</span>을 나타내는 이온과<br />
+                                <span class="text-color-abb5ff">염기성</span>을 나타내는 이온 확인하기
+                            </h2>
+                            <ul class="ruler">
+                                <li class="begin">
+                                    <span class="number">0</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">10</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">20</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">30</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">40</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 과목명 -->
+
+                    <!-- Common Element : 인트로 메인으로 시작 버튼 -->
+                    <div class="button-intro-area">
+                        <div class="button-start-area">
+                            <button class="button-intro-main-start">
+                                <em class="text-box">
+                                    <span>활동 시작</span>
+                                </em>
+                                <em class="arrow-box">
+                                    <span class="text blind">-&gt;</span>
+                                    <i class="icon"></i>
+                                </em>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 메인으로 시작 버튼 -->
+
+                    <!-- Common Element : 인트로 캐릭터 -->
+                    <div class="intro-character1-layer">
+                        <span class="blind">인트로 캐릭터</span>
+                        <ul id="" class="interaction-character-list">
+                            <li class="motion-1">
+                                <img src="../../images/common/character1/character1-motion1.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// Common Element : 인트로 캐릭터 -->
+                </div>
+                <!--// page-view1 : (페이지) 인트로 -->
+
+                <!-- page-view2 : (모달) 활동목표 : page-view2에 인접클래스 active가 있으면 보여짐 제거시 사라짐 님 -->
+                <div class="page-view page-view2 modal-layer modal-layer-activity-goals">
+                    <div class="modal-layer-box aim-madal">
+                        <button class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <h4 class="title-round">
+                            <span>활동 목표</span>
+                        </h4>
+                        <ul class="bullet-list">
+                            <li>
+                                산의 수용액에서 산성을 나타내는<br />
+                                이온과 염기의 수용액에서 염기성을<br />
+                                나타내는 이온이 각각 무엇인지<br />
+                                설명할 수 있다.
+                            </li>
+                        </ul>
+                        <div class="character-guide h-character-activity-goals">
+                            <span class="blind">고등 활동목표</span>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view2 : (모달) 활동목표 -->
+
+                <!-- page-view3 : (페이지) 컨텐츠 페이지 -->
+                <div class="page-view page-view3 content-area">
+                    <!-- Content Header Area : 컨텐츠 헤더영역 -->
+                    <div class="header-area header-area-content">
+                        <!-- Common Title : 타이틀 -->
+                        <div class="header-title">
+                            <p>산성을 나타내는 이온과 염기성을 나타내는 이온 확인하기</p>
+                        </div>
+                        <!--// Common Title : 타이틀 -->
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-home">
+                                <span class="blind">홈</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// Content Header Area : 컨텐츠 헤더영역 -->
+
+                    <!-- 씬 영역 : 씬 영역1 -->
+                    <div class="scene scene-layer-area1">
+                        <div class="scene-layer scene-layer1">
+                            <div class="select-box">
+                                <a href="javascript:;" class="list blue acidic">
+                                    <div class="tit">
+                                        <div class="txt">활동</div>
+                                        <div class="num">1</div>
+                                    </div>
+                                    <div class="con">
+                                        <div class="txt">
+                                            산성을 나타내는 이온<br />
+                                            <span>확인하기</span>
+                                        </div>
+                                        <div class="img">
+                                            <span class="blind">산성 이온 확인하기</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:;" class="list pink alkaline">
+                                    <div class="tit">
+                                        <div class="txt">활동</div>
+                                        <div class="num">2</div>
+                                    </div>
+                                    <div class="con">
+                                        <div class="txt">
+                                            염기성을 나타내는 이온<br />
+                                            <span>확인하기</span>
+                                        </div>
+                                        <div class="img">
+                                            <span class="blind">염기성 이온 확인하기</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger1-select">
+                                <span class="blind">손모양 제스처1</span>
+                            </i>
+                            <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger2-select">
+                                <span class="blind">손모양 제스처2</span>
+                            </i>
+                        </div>
+
+                        <div class="scene-layer scene-layer2 blue">
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text1">
+                                            질산 칼륨 수용액을 적신 푸른색 리트머스 <br />
+                                            종이의 가운데를 클릭해 염산을 적신 <br />
+                                            거름종이 조각을 올려놓아 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text2">
+                                            양쪽 끝의 집게에 전원을 연결해 전류를 흘려 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text3">
+                                            푸른색 리트머스 종이가 거름종이 조각에서부터 <br />
+                                            어느 쪽으로 붉은색으로 변하는지 관찰해 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text4">
+                                            푸른색 리트머스 종이가 거름종이 조각에서부터 <br />
+                                            (-)극 쪽으로 붉은색으로 변한 까닭을 알아볼까요? <br />
+                                            거름종이 조각을 클릭해 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap5">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text5">
+                                            염산은 수소 이온(H&#8314;)과 염화 이온(Cl&#8315;)으로 <br />
+                                            이온화합니다. 전원을 연결하면 각각의 <br />
+                                            이온은 어떻게 이동하는지 알아봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap6">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text6">
+                                            각각의 수소 이온(H&#8314;)과 염화 이온(Cl&#8315;)이 (+)극과 (-)극 <br />
+                                            중에서 어느 방향으로 이동할지 드래그해 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap7">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text7">
+                                            푸른색 리트머스 종이가 거름종이 조각에서부터 <br />
+                                            (-)극 쪽으로 붉은색으로 변한 까닭은 산성을 <br />
+                                            나타내는 이온이 (-)극 쪽으로 이동하기 때문입니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap8">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text8">
+                                            따라서 수소 이온(H&#8314;)과 염화 이온(Cl&#8315;) 중에서 <br />
+                                            산성을 나타내는 이온은 양이온인 수소 이온입니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-title-wrap">
+                                <div class="txt-box">
+                                    <div class="t1">활동 1</div>
+                                    <div class="t2">산성을 나타내는 이온 확인하기</div>
+                                </div>
+                            </div>
+
+                            <div class="popup-layer activity1">
+                                <div class="popup-inner">
+                                    <div class="img">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                    <div class="tit">활동1</div>
+                                    <div class="con">
+                                        염산에서 산성을 나타내는 이온은<br />
+                                        무엇인지 알아봅시다.
+                                    </div>
+                                    <div class="btn">
+                                        <button type="button">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="litmus-paper-wrap">
+                                <div class="litmus-paper">
+                                    <span class="blind">리트머스 종이</span>
+                                    <button type="button" class="left-crab">왼쪽 집게</button>
+                                    <button type="button" class="right-crab">오른쪽 집게</button>
+                                </div>
+                                <div class="filter-paper">
+                                    <button type="button">거름종이</button>
+                                </div>
+                                <div class="hci">
+                                    <span class="blind">염산</span>
+                                </div>
+                                <div class="plus-crab">
+                                    <span class="blind">플러스집게</span>
+                                </div>
+                                <div class="minus-crab">
+                                    <span class="blind">마이너스집게</span>
+                                </div>
+                                <div class="plus">
+                                    <span><strong>(+)</strong> 극</span>
+                                </div>
+                                <div class="minus">
+                                    <span><strong>(-)</strong> 극</span>
+                                </div>
+
+                                <div class="guide-litmus-txt">
+                                    <span>푸른색 리트머스 종이</span>
+                                    <div class="arr"></div>
+                                </div>
+                                <div class="guide-hci-txt">
+                                    <span>염산을 적신 거름종이 조각</span>
+                                    <div class="arr"></div>
+                                </div>
+                                <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger1">
+                                    <span class="blind">손모양 제스처1</span>
+                                </i>
+                                <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger2">
+                                    <span class="blind">손모양 제스처2</span>
+                                </i>
+                                <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger3">
+                                    <span class="blind">손모양 제스처3</span>
+                                </i>
+                                <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger4">
+                                    <span class="blind">손모양 제스처4</span>
+                                </i>
+                                <i class="guide-dote-line dote-line1">
+                                    <span class="blind">원형 점선</span>
+                                </i>
+                                <i class="guide-dote-line dote-line2">
+                                    <span class="blind">원형 점선</span>
+                                </i>
+                            </div>
+
+                            <div class="litmus-paper-detail-wrap">
+                                <div class="connection-btn blue">
+                                    <button type="button">전원을 연결하기 전</button>
+                                </div>
+                                <div class="litmus-paper">
+                                    <span class="blind">리트머스 종이</span>
+                                </div>
+                                <div class="filter-paper">
+                                    <button type="button">거름종이</button>
+                                </div>
+                                <div class="hci">
+                                    <span class="blind">염산</span>
+                                </div>
+                                <div class="plus">
+                                    <span><strong>(+)</strong> 극</span>
+                                </div>
+                                <div class="minus">
+                                    <span><strong>(-)</strong> 극</span>
+                                </div>
+
+                                <div class="litmus-small">
+                                    <div class="litmus-paper">
+                                        <span class="blind">리트머스 종이</span>
+                                    </div>
+                                    <div class="filter-paper">
+                                        <button type="button">거름종이</button>
+                                    </div>
+                                    <div class="hci">
+                                        <span class="blind">염산</span>
+                                    </div>
+                                    <div class="plus-crab">
+                                        <span class="blind">플러스집게</span>
+                                    </div>
+                                    <div class="minus-crab">
+                                        <span class="blind">마이너스집게</span>
+                                    </div>
+                                </div>
+
+                                <div class="drag-wrap drag-wrap1">
+                                    <div class="drop drop1-1"></div>
+                                    <div class="drag-box drag-box1">
+                                        <div class="drag ci drag1" id="drag1-1">
+                                            <span>CI</span>
+                                        </div>
+                                        <div class="drag ci drag2" id="drag1-1">
+                                            <span>CI</span>
+                                        </div>
+                                        <div class="drag ci drag3" id="drag1-1">
+                                            <span>CI</span>
+                                        </div>
+                                        <div class="drag h drag4" id="drag1-2">
+                                            <span>H</span>
+                                        </div>
+                                        <div class="drag h drag5" id="drag1-2">
+                                            <span>H</span>
+                                        </div>
+                                        <div class="drag h drag6" id="drag1-2">
+                                            <span>H</span>
+                                        </div>
+                                    </div>
+                                    <div class="drop drop1-2"></div>
+                                </div>
+
+                                <div class="btn-wrap">
+                                    <button type="button" class="reset-btn blue">다시하기</button>
+                                    <button type="button" class="back-btn">이전화면</button>
+                                </div>
+
+                                <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger5">
+                                    <span class="blind">손모양 제스처5</span>
+                                </i>
+                                <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger6">
+                                    <span class="blind">손모양 제스처6</span>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="scene-layer scene-layer3 pink">
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text1">
+                                            질산 칼륨 수용액을 적신 붉은색 리트머스 <br />
+                                            종이의 가운데를 클릭해 수산화 나트륨 수용액을 <br />
+                                            적신 거름종이 조각을 올려놓아 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text2">
+                                            양쪽 끝의 집게에 전원을 연결해 전류를 흘려 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text3">
+                                            붉은색 리트머스 종이가 거름종이 조각에서부터 <br />
+                                            어느 쪽으로 푸른색으로 변하는지 관찰해 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text4">
+                                            붉은색 리트머스 종이가 거름종이 조각에서부터 <br />
+                                            (+)극 쪽으로 푸른색으로 변한 까닭을 알아볼까요? <br />
+                                            거름종이 조각을 클릭해 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap5">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text5">
+                                            수산화 나트륨은 수용액에서 나트륨 이온(Na&#8314;)과 <br />
+                                            수산화 이온(OH&#8315;)으로 이온화합니다. 전원을 연결하면 <br />
+                                            각각의 이온은 어떻게 이동하는지 알아봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap6">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text6">
+                                            각각의 나트륨 이온(Na&#8314;)과 수산화 이온(OH&#8315;)이 (+)극과 <br />
+                                            (-)극 중에서 어느 방향으로 이동할지 드래그해 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap7">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text7">
+                                            붉은색 리트머스 종이가 거름종이 조각에서부터 <br />
+                                            (+)극 쪽으로 푸른색으로 변한 까닭은 염기성을 <br />
+                                            나타내는 이온이 (+)극 쪽으로 이동하기 때문입니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap8">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text8">
+                                            따라서 나트륨 이온(Na&#8314;)과 수산화 이온(OH&#8315;) 중에서 <br />
+                                            염기성을 나타내는 이온은 음이온인 수산화 이온입니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="guide-title-wrap">
+                                <div class="txt-box">
+                                    <div class="t1">활동 2</div>
+                                    <div class="t2">염기성을 나타내는 이온 확인하기</div>
+                                </div>
+                            </div>
+
+                            <div class="popup-layer activity2">
+                                <div class="popup-inner">
+                                    <div class="img">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                    <div class="tit">활동2</div>
+                                    <div class="con">
+                                        수산화 나트륨 수용액에서 염기성을 <br />
+                                        나타내는 이온은 무엇인지 알아봅시다.
+                                    </div>
+                                    <div class="btn">
+                                        <button type="button">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="litmus-paper-wrap">
+                                <div class="litmus-paper">
+                                    <span class="blind">리트머스 종이</span>
+                                    <button type="button" class="left-crab">왼쪽 집게</button>
+                                    <button type="button" class="right-crab">오른쪽 집게</button>
+                                </div>
+                                <div class="filter-paper">
+                                    <button type="button">거름종이</button>
+                                </div>
+                                <div class="hci">
+                                    <span class="blind">염산</span>
+                                </div>
+                                <div class="plus-crab">
+                                    <span class="blind">플러스집게</span>
+                                </div>
+                                <div class="minus-crab">
+                                    <span class="blind">마이너스집게</span>
+                                </div>
+                                <div class="plus">
+                                    <span><strong>(+)</strong> 극</span>
+                                </div>
+                                <div class="minus">
+                                    <span><strong>(-)</strong> 극</span>
+                                </div>
+
+                                <div class="guide-litmus-txt">
+                                    <span>붉은색 리트머스 종이</span>
+                                    <div class="arr"></div>
+                                </div>
+                                <div class="guide-hci-txt">
+                                    <span>수산화 나트륨 수용액을 적신 거름종이 조각</span>
+                                    <div class="arr"></div>
+                                </div>
+                                <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger1">
+                                    <span class="blind">손모양 제스처1</span>
+                                </i>
+                                <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger2">
+                                    <span class="blind">손모양 제스처2</span>
+                                </i>
+                                <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger3">
+                                    <span class="blind">손모양 제스처3</span>
+                                </i>
+                                <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger4">
+                                    <span class="blind">손모양 제스처4</span>
+                                </i>
+                                <i class="guide-dote-line dote-line1">
+                                    <span class="blind">원형 점선</span>
+                                </i>
+                                <i class="guide-dote-line dote-line2">
+                                    <span class="blind">원형 점선</span>
+                                </i>
+                            </div>
+
+                            <div class="litmus-paper-detail-wrap">
+                                <div class="connection-btn pink">
+                                    <button type="button">전원을 연결하기 전</button>
+                                </div>
+                                <div class="litmus-paper">
+                                    <span class="blind">리트머스 종이</span>
+                                </div>
+                                <div class="filter-paper">
+                                    <button type="button">거름종이</button>
+                                </div>
+                                <div class="hci">
+                                    <span class="blind">염산</span>
+                                </div>
+                                <div class="plus">
+                                    <span><strong>(+)</strong> 극</span>
+                                </div>
+                                <div class="minus">
+                                    <span><strong>(-)</strong> 극</span>
+                                </div>
+
+                                <div class="litmus-small">
+                                    <div class="litmus-paper">
+                                        <span class="blind">리트머스 종이</span>
+                                    </div>
+                                    <div class="filter-paper">
+                                        <button type="button">거름종이</button>
+                                    </div>
+                                    <div class="hci">
+                                        <span class="blind">염산</span>
+                                    </div>
+                                    <div class="plus-crab">
+                                        <span class="blind">플러스집게</span>
+                                    </div>
+                                    <div class="minus-crab">
+                                        <span class="blind">마이너스집게</span>
+                                    </div>
+                                </div>
+
+                                <div class="drag-wrap drag-wrap2">
+                                    <div class="drop drop2-1"></div>
+                                    <div class="drag-box drag-box2">
+                                        <div class="drag ci drag1" id="drag2-1">
+                                            <span>CI</span>
+                                        </div>
+                                        <div class="drag ci drag2" id="drag2-1">
+                                            <span>CI</span>
+                                        </div>
+                                        <div class="drag ci drag3" id="drag2-1">
+                                            <span>CI</span>
+                                        </div>
+                                        <div class="drag h drag4" id="drag2-2">
+                                            <span>H</span>
+                                        </div>
+                                        <div class="drag h drag5" id="drag2-2">
+                                            <span>H</span>
+                                        </div>
+                                        <div class="drag h drag6" id="drag2-2">
+                                            <span>H</span>
+                                        </div>
+                                    </div>
+                                    <div class="drop drop2-2"></div>
+                                </div>
+
+                                <div class="btn-wrap">
+                                    <button type="button" class="reset-btn pink">다시하기</button>
+                                    <button type="button" class="back-btn">이전화면</button>
+                                </div>
+
+                                <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger5">
+                                    <span class="blind">손모양 제스처5</span>
+                                </i>
+                                <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger6-1 pink">
+                                    <span class="blind">손모양 제스처6</span>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 씬 영역 : 씬 영역1 -->
+
+                    <!-- 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                    <ul class="tab-list-basic">
+                        <li>
+                            <!-- 버튼 클릭 : button-tab 인접클래스 active 추가 -->
+                            <button class="button-tab">
+                                <span>정리하기</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                </div>
+                <!--// page-view3 : (페이지) 컨텐츠 페이지 -->
+
+                <!-- page-view4 : 탭 스타일 page-view4 modal-layer-activity-goals3 인접클래스 active시 활성화 -->
+                <div class="page-view page-view4 modal-layer-activity-goals3 modal-layer">
+                    <!-- modal-layer-box tab-modal 인접클래스 active 추가시 우에서 좌로 모션 -->
+                    <div class="modal-layer-box tab-modal">
+                        <h4 class="title-sign">
+                            <span class="text">정리하기</span>
+                        </h4>
+                        <button id="btnTabClose" class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <div class="text-content-area"></div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view4 : 탭 스타일 - 우에서 좌로 모션 -->
+            </div>
+            <!--// View 영역 -->
+        </div>
+        <!--// Wrap 영역 -->
+    </body>
+</html>

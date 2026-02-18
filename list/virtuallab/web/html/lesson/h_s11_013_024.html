@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>케플러 법칙 시뮬레이션</title>
+        <!-- 공통 css -->
+        <link type="text/css" href="../../css/common.css?t=1739422595768" rel="stylesheet" />
+        <!-- 주제별 css -->
+        <link type="text/css" href="../../css/page/h_s11_013_024.css?t=1739422595768" rel="stylesheet" />
+        <link type="text/css" href="../../css/swiper-bundle.min.css?t=1739422595768" rel="stylesheet" />
+        <script src="../../js/lib/swiper.min.js?t=1739422595768"></script>
+        <script src="../../js/lib/jquery.min.js?t=1739422595768"></script>
+        <script src="../../js/lib/jquery-ui.min.js?t=1739422595768"></script>
+        <script src="../../js/lib/jquery.ui.touch-punch.min.js?t=1739422595768"></script>
+        <script src="../../js/lib/video-js.js?t=1739422595768"></script>
+        <script src="../../js/lib/video.js?t=1739422595768"></script>
+        <script src="../../js/lib/gsap.min.js?t=1739422595768"></script>
+        <script src="../../js/lib/p5.min.js?t=1739422595768"></script>
+        <script src="../../js/common.js?t=1739422595768"></script>
+        <script src="../../js/h_s11_013_024.js?t=1739422595768"></script>
+        <script src="../../js/lib/bignumber.min.js?t=1739422595768"></script>
+    </head>
+    <body>
+        <!-- Wrap 영역 -->
+        <div id="wrap" class="wrap wrap-new">
+            <!-- View 영역 -->
+            <div class="wrapper-set-view h_s11_013_024">
+                <!-- page-view1 : (페이지) 인트로 : page-view1 intro에 인접클래스 active가 있으면 보여짐 제거시 사라짐 -->
+                <div class="page-view page-view1 intro active">
+                    <!-- intro header area : 인트로 헤더영역 -->
+                    <div class="header-area header-area-intro">
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// intro header area : 인트로 헤더영역 -->
+
+                    <!-- Common Element : 인트로 과목명 -->
+                    <div class="background-area">
+                        <div class="background-area-inner">
+                            <em class="object-cockle-hat">
+                                <span class="blind">꼬깔모자 요소</span>
+                            </em>
+                            <h2 class="intro-title-text">
+                                케플러 법칙 시뮬레이션
+                                <span class="text-color-fff000"></span>
+                                <span class="text-color-abb5ff"></span>
+                            </h2>
+                            <ul class="ruler">
+                                <li class="begin">
+                                    <span class="number">0</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">10</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">20</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">30</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">40</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 과목명 -->
+
+                    <!-- Common Element : 인트로 메인으로 시작 버튼 -->
+                    <div class="button-intro-area">
+                        <div class="button-start-area">
+                            <button class="button-intro-main-start">
+                                <em class="text-box">
+                                    <span>활동 시작</span>
+                                </em>
+                                <em class="arrow-box">
+                                    <span class="text blind">-&gt;</span>
+                                    <i class="icon"></i>
+                                </em>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 메인으로 시작 버튼 -->
+
+                    <!-- Common Element : 인트로 캐릭터 -->
+                    <div class="intro-character1-layer">
+                        <span class="blind">인트로 캐릭터</span>
+                        <ul id="" class="interaction-character-list">
+                            <li class="motion-1">
+                                <img src="../../images/common/character1/character1-motion1.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// Common Element : 인트로 캐릭터 -->
+                </div>
+                <!--// page-view1 : (페이지) 인트로 -->
+
+                <!-- page-view2 : (모달) 활동목표 : page-view2에 인접클래스 active가 있으면 보여짐 제거시 사라짐 님 -->
+                <div class="page-view page-view2 modal-layer modal-layer-activity-goals">
+                    <div class="modal-layer-box aim-madal">
+                        <button class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <h4 class="title-round">
+                            <span>활동 목표</span>
+                        </h4>
+                        <ul class="bullet-list">
+                            <li>
+                                모의실험을 통해 물체의 질량 물체에<br />
+                                작용하는 알짜힘, 가속도의 관계를<br />
+                                확인할 수 있다.
+                            </li>
+                        </ul>
+                        <div class="character-guide h-character-activity-goals">
+                            <span class="blind">고등 활동목표</span>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view2 : (모달) 활동목표 -->
+
+                <!-- page-view3 : (페이지) 컨텐츠 페이지 -->
+                <div class="page-view page-view3 content-area">
+                    <!-- Content Header Area : 컨텐츠 헤더영역 -->
+                    <div class="header-area header-area-content">
+                        <!-- Common Title : 타이틀 -->
+                        <div class="header-title">
+                            <p>케플러 법칙 시뮬레이션</p>
+                        </div>
+                        <!--// Common Title : 타이틀 -->
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-home">
+                                <span class="blind">홈</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// Content Header Area : 컨텐츠 헤더영역 -->
+
+                    <!-- 씬 영역 : 씬 영역1 -->
+                    <div class="scene scene-layer-area1">
+                        <div class="scene-layer scene-layer1">
+                            <div class="kepler-simulation-wrap">
+                                <!-- 궤도 설정 -->
+                                <div class="orbit-controller-box">
+                                    <div class="orbit-controller-inner">
+                                        <!-- 가이드 1번 -->
+                                        <div class="orbit-setting">
+                                            <p class="orbit-tit">궤도 설정</p>
+                                            <div class="search-area">
+                                                <div class="row-sel">
+                                                    <div class="custom-sel">
+                                                        <input
+                                                            type="text"
+                                                            name="planetSelect"
+                                                            id="planetSelect"
+                                                            class="blind"
+                                                            value="earth"
+                                                        />
+                                                        <button type="button">지구</button>
+                                                        <ul>
+                                                            <li data-value="mercury">수성</li>
+                                                            <li data-value="venus">금성</li>
+                                                            <li data-value="earth">지구</li>
+                                                            <li data-value="mars">화성</li>
+                                                            <li data-value="jupiter">목성</li>
+                                                            <li data-value="saturn">토성</li>
+                                                            <li data-value="uranus">천왕성</li>
+                                                            <li data-value="neptune">해왕성</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="orbit-control A-range">
+                                                <div class="orbit-sub">
+                                                    <div class="label">이심률</div>
+                                                    <span
+                                                        ><input
+                                                            type="text"
+                                                            id="eccentricityValue"
+                                                            value="0.017"
+                                                            class="output"
+                                                    /></span>
+                                                </div>
+                                                <div class="range-wrap">
+                                                    <input
+                                                        type="range"
+                                                        class="input eq"
+                                                        id="eccentricity"
+                                                        min="0"
+                                                        max="0.975"
+                                                        step="0.001"
+                                                        value="0.017"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="orbit-guide orbit-guide01">
+                                                <div class="orbit-guide-inner">
+                                                    <p>
+                                                        <span class="num">① </span
+                                                        ><span class="desc">원하는 행성을 선택해 보자.</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //가이드 1번 -->
+                                        <div class="stick"><span class="blind">라인</span></div>
+                                        <!-- 가이드 2번 -->
+                                        <div class="orbit-start">
+                                            <p class="orbit-tit">재생 조절</p>
+                                            <div class="orbit-btn-wrap">
+                                                <ul>
+                                                    <li class="on">
+                                                        <button type="button" id="orbitStart" class="btn-start blue">
+                                                            <span>재생</span>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button" id="orbitStop" class="btn-start gray">
+                                                            <span>일시정지</span>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="orbit-control">
+                                                <div class="orbit-sub">
+                                                    <div class="label">재생 속도</div>
+                                                </div>
+                                                <div class="range-wrap">
+                                                    <input
+                                                        type="range"
+                                                        class="input eq"
+                                                        id="animationRate"
+                                                        min="0.1"
+                                                        max="5"
+                                                        step="0.1"
+                                                        value="1"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="orbit-guide orbit-guide02">
+                                                <div class="orbit-guide-inner">
+                                                    <p>
+                                                        <span class="num">②</span>
+                                                        <span class="desc"
+                                                            >재생 버튼을 눌러 행성이<br />
+                                                            어떻게 운동하는지 관찰해 보자.
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //가이드 2번 -->
+                                        <div class="stick"><span class="blind">라인</span></div>
+                                        <!-- 가이드 3번 -->
+                                        <div class="orbit-rule">
+                                            <p class="orbit-tit">케플러 법칙</p>
+                                            <div class="orbit-cont">
+                                                <ul class="tab">
+                                                    <li class="on"><a href="javascript:void(0)">제1법칙</a></li>
+                                                    <li><a href="javascript:void(0)">제2법칙</a></li>
+                                                    <li><a href="javascript:void(0)">제3법칙</a></li>
+                                                </ul>
+                                                <div class="tab-wrap">
+                                                    <ul class="tab-cont on">
+                                                        <li class="circle-purple">
+                                                            <label for="showMark" class="check-box">
+                                                                <input type="checkbox" name="showMark" id="showMark" />
+                                                                <span>초점 표시</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="circle-gray">
+                                                            <label for="ellipseMark" class="check-box">
+                                                                <input
+                                                                    type="checkbox"
+                                                                    name="ellipseMark"
+                                                                    id="ellipseMark"
+                                                                />
+                                                                <span>타원 중심 표시</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label for="longRadiusMark" class="check-box">
+                                                                <input
+                                                                    type="checkbox"
+                                                                    name="longRadiusMark"
+                                                                    id="longRadiusMark"
+                                                                />
+                                                                <span>궤도 긴반지름 표시</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label for="shortRadiusMark" class="check-box">
+                                                                <input
+                                                                    type="checkbox"
+                                                                    name="shortRadiusMark"
+                                                                    id="shortRadiusMark"
+                                                                />
+                                                                <span>궤도 짧은반지름 표시</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="tab-cont">
+                                                        <li>
+                                                            <button
+                                                                type="button"
+                                                                id="areaDisplay"
+                                                                class="btn-start purple"
+                                                            >
+                                                                <span>면적 표시</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button
+                                                                type="button"
+                                                                id="clearArea"
+                                                                class="btn-start purple"
+                                                            >
+                                                                <span>면적 지우기</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <label for="areaErasing" class="check-box">
+                                                                <input
+                                                                    type="checkbox"
+                                                                    name="areaErasing"
+                                                                    id="areaErasing"
+                                                                />
+                                                                <span>면적 연속 표시</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="B-range">
+                                                            <div class="area-text-wrap">
+                                                                <div class="area-text">
+                                                                    <span class="area-ratio">면적 비율</span>
+                                                                    <span class="area-num"
+                                                                        ><span>1</span><span>ㅡ</span
+                                                                        ><input
+                                                                            type="number"
+                                                                            id="areaSizeValue"
+                                                                            value="12"
+                                                                            class="output"
+                                                                    /></span>
+                                                                </div>
+                                                                <p class="area-total">(전체 면적 대비)</p>
+                                                            </div>
+                                                            <div class="area-input-mark">
+                                                                <div class="range-wrap">
+                                                                    <input
+                                                                        type="range"
+                                                                        class="input eq"
+                                                                        style="direction: rtl"
+                                                                        id="areaSize"
+                                                                        value="12"
+                                                                        min="4"
+                                                                        max="24"
+                                                                    />
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="tab-cont">
+                                                        <li>
+                                                            <div class="orbit-control C-range">
+                                                                <div class="orbit-sub">
+                                                                    <div class="label">궤도 긴반지름(AU)</div>
+                                                                    <span
+                                                                        ><input
+                                                                            type="number"
+                                                                            id="semiMajorAxisValue"
+                                                                            value="1"
+                                                                            class="output"
+                                                                    /></span>
+                                                                </div>
+                                                                <div class="range-wrap">
+                                                                    <input
+                                                                        type="range"
+                                                                        class="input eq"
+                                                                        id="semiMajorAxisSlider"
+                                                                        min="0.3"
+                                                                        max="31"
+                                                                        step="0.001"
+                                                                        value="1"
+                                                                    />
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="orbit-control D-range">
+                                                                <div class="orbit-sub">
+                                                                    <div class="label">공전 주기(일)</div>
+                                                                    <span
+                                                                        ><input
+                                                                            type="text"
+                                                                            id="orbitalPeriodValue"
+                                                                            value="365.256"
+                                                                            class="output"
+                                                                    /></span>
+                                                                </div>
+                                                                <div class="range-wrap">
+                                                                    <input
+                                                                        type="range"
+                                                                        class="input eq"
+                                                                        id="orbitalPeriodSlider"
+                                                                        min="85"
+                                                                        max="63043.502"
+                                                                        step="0.001"
+                                                                        value="365.256"
+                                                                    />
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="orbit-guide orbit-guide03">
+                                                <div class="orbit-guide-inner">
+                                                    <p>
+                                                        <span class="num">③</span>
+                                                        <span class="desc">
+                                                            각 법칙을 선택해 케플러 법칙이<br />
+                                                            행성의 운동에 어떻게 적용되는지<br />
+                                                            확인해 보자.
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //가이드 3번 -->
+                                    </div>
+                                </div>
+                                <!-- //궤도 설정 -->
+
+                                <!-- 천체 구성 -->
+                                <div class="orbit-science-box">
+                                    <canvas id="canvas" style="position: absolute"></canvas>
+                                    <!--<div class="orbit-path">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1412 1410">
+                                            <defs>
+                                                <style>
+                                                    .cls-1 {
+                                                        fill: #d62727;
+                                                    }
+
+                                                    .cls-2 {
+                                                        fill: #15becf;
+                                                    }
+
+                                                    .cls-3 {
+                                                        fill: #ffe25c;
+                                                    }
+
+                                                    .cls-4 {
+                                                        fill: #bcbd21;
+                                                    }
+
+                                                    .cls-5 {
+                                                        fill: none;
+                                                        stroke: #fff;
+                                                        stroke-miterlimit: 10;
+                                                        stroke-width: 3px;
+                                                    }
+
+                                                    .cls-6 {
+                                                        fill: #8a2be3;
+                                                    }
+
+                                                    .cls-7 {
+                                                        fill: #2ba02b;
+                                                    }
+
+                                                    .cls-8 {
+                                                        fill: #e377c3;
+                                                    }
+
+                                                    .cls-9 {
+                                                        fill: #5cb8ff;
+                                                    }
+
+                                                    .cls-10 {
+                                                        fill: #8c564c;
+                                                    }
+
+                                                    .cls-11 {
+                                                        fill: #959595;
+                                                    }
+
+                                                    .cls-12 {
+                                                        fill: #7f7f7f;
+                                                    }
+
+                                                    .cls-13 {
+                                                        fill: #838892;
+                                                    }
+
+                                                    .cls-14 {
+                                                        fill: #1f77b4;
+                                                    }
+
+                                                    .cls-15 {
+                                                        fill: #9467bd;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            &lt;!&ndash; Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  &ndash;&gt;
+                                            <g>
+                                                <g id="circleLayer" data-name="circleLayer">
+                                                    <rect x="-4" y="-4" width="709" height="709" />
+                                                    <g>
+                                                        &lt;!&ndash; green &ndash;&gt;
+                                                        <path
+                                                            class="cls-7"
+                                                            d="M702.67,707.24L112.04,366.32c29.8-51.6,66.24-99.08,108.38-141.21,42.14-42.13,89.63-78.56,141.25-108.36l341,590.49Z"
+                                                            id="greenPath"
+                                                        />
+                                                        &lt;!&ndash; //green &ndash;&gt;
+
+                                                        &lt;!&ndash; red &ndash;&gt;
+                                                        <path
+                                                            class="cls-1"
+                                                            d="M702.67,707.24L23.26,647.82c4.33-49.45,14.04-98.27,28.97-145.61,14.93-47.34,34.98-92.9,59.81-135.89l590.63,340.92Z"
+                                                            id="redPath"
+                                                        />
+                                                        &lt;!&ndash; //red &ndash;&gt;
+
+                                                        &lt;!&ndash; purple &ndash;&gt;
+                                                        <path
+                                                            class="cls-15"
+                                                            d="M702.67,707.24L84.58,995.43c-42.1-90.24-63.91-188.62-63.91-288.19,0-19.84.87-39.66,2.6-59.43l679.4,59.43Z"
+                                                            id="purplePath"
+                                                        />
+                                                        &lt;!&ndash; //purple &ndash;&gt;
+
+                                                        &lt;!&ndash; brown &ndash;&gt;
+                                                        <path
+                                                            class="cls-10"
+                                                            d="M702.67,707.24l-391.2,558.52c-48.82-34.18-92.94-74.6-131.25-120.25-38.31-45.64-70.47-96.11-95.65-150.11l618.1-288.16Z"
+                                                            id="brownPath"
+                                                        />
+                                                        &lt;!&ndash; //brown &ndash;&gt;
+
+                                                        &lt;!&ndash; pink &ndash;&gt;
+                                                        <path
+                                                            class="cls-8"
+                                                            d="M702.67,707.24l-59.48,679.24c-59.37-5.2-117.8-18.15-173.8-38.53-56-20.38-109.09-48.01-157.9-82.18l391.18-558.53Z"
+                                                            id="pinkPath"
+                                                        />
+                                                        &lt;!&ndash; //pink &ndash;&gt;
+
+                                                        &lt;!&ndash; gray &ndash;&gt;
+                                                        <path
+                                                            class="cls-12"
+                                                            d="M702.67,707.24l288.22,617.96c-90.25,42.08-188.64,63.88-288.22,63.88-19.84,0-39.67-.87-59.44-2.59l59.44-679.25Z"
+                                                            id="grayPath"
+                                                        />
+                                                        &lt;!&ndash; //gray &ndash;&gt;
+
+                                                        &lt;!&ndash; yellow &ndash;&gt;
+                                                        <path
+                                                            class="cls-4"
+                                                            d="M702.67,707.24l522.43,438.29c-31.91,38.02-67.88,72.44-107.26,102.65-39.38,30.21-81.95,56.04-126.94,77.01l-288.23-617.96Z"
+                                                            id="yellowPath"
+                                                        />
+                                                        &lt;!&ndash; //yellow &ndash;&gt;
+
+                                                        &lt;!&ndash; sky blue&ndash;&gt;
+                                                        <path
+                                                            class="cls-2"
+                                                            d="M702.67,707.24l658.76,176.47c-12.85,47.94-30.9,94.34-53.82,138.37-22.92,44.03-50.59,85.42-82.5,123.44l-522.44-438.28Z"
+                                                            id="skyBluePath"
+                                                        />
+                                                        &lt;!&ndash; //sky blue &ndash;&gt;
+
+                                                        &lt;!&ndash; &ndash;&gt;
+
+                                                        &lt;!&ndash; blue &ndash;&gt;
+                                                        <path
+                                                            class="cls-14"
+                                                            d="M702.67,707.24l671.64-118.4c6.89,39.09,10.36,78.71,10.36,118.4,0,59.59-7.81,118.92-23.24,176.47l-658.76-176.47Z"
+                                                            id="bluePath"
+                                                        />
+                                                        &lt;!&ndash; //blue &ndash;&gt;
+                                                    </g>
+                                                    &lt;!&ndash; line circle wrap &ndash;&gt;
+                                                    <circle
+                                                        class="cls-5"
+                                                        cx="702.67"
+                                                        cy="707.08"
+                                                        r="682"
+                                                        id="circleLineWrap"
+                                                    />
+                                                    &lt;!&ndash; line circle wrap &ndash;&gt;
+                                                    &lt;!&ndash; vertical line &ndash;&gt;
+                                                    <rect
+                                                        class="cls-11"
+                                                        x="701.92"
+                                                        y="25.08"
+                                                        width="1.5"
+                                                        height="680.75"
+                                                        transform="translate(1405.33 730.92) rotate(180)"
+                                                        id="verticalLine"
+                                                    />
+                                                    &lt;!&ndash; vertical line &ndash;&gt;
+
+                                                    &lt;!&ndash; horizontal line&ndash;&gt;
+                                                    <rect
+                                                        class="cls-11"
+                                                        x="1045.7"
+                                                        y="368.87"
+                                                        width="1.5"
+                                                        height="676.43"
+                                                        transform="translate(339.37 1753.53) rotate(-90)"
+                                                        id="horizontalLine"
+                                                    />
+                                                    &lt;!&ndash; //horizontal line &ndash;&gt;
+                                                    &lt;!&ndash; sky blue circle&ndash;&gt;
+                                                    <circle
+                                                        class="cls-9"
+                                                        cx="20.67"
+                                                        cy="705"
+                                                        r="12"
+                                                        id="skyBlueCircle"
+                                                    />
+                                                    &lt;!&ndash; //sky blue circle &ndash;&gt;
+
+                                                    &lt;!&ndash; yellow circle&ndash;&gt;
+                                                    <circle
+                                                        class="cls-3"
+                                                        cx="702.67"
+                                                        cy="707.24"
+                                                        r="20"
+                                                        id="yellowCircle"
+                                                    />
+                                                    &lt;!&ndash; //yellow circle&ndash;&gt;
+
+                                                    &lt;!&ndash; gray circle&ndash;&gt;
+                                                    <circle
+                                                        class="cls-13"
+                                                        cx="738.17"
+                                                        cy="707.24"
+                                                        r="13.5"
+                                                        id="grayCircle"
+                                                    />
+                                                    &lt;!&ndash; //gray circle&ndash;&gt;
+
+                                                    &lt;!&ndash; purple circle &ndash;&gt;
+                                                    <circle
+                                                        class="cls-6"
+                                                        cx="761.8"
+                                                        cy="707.24"
+                                                        r="8.13"
+                                                        id="purpleCircle"
+                                                    />
+                                                    &lt;!&ndash; //purple circle &ndash;&gt;
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>-->
+                                </div>
+                                <!-- //천체 구성 -->
+                            </div>
+                            <div class="dimmed"></div>
+                        </div>
+                        <div class="scene-layer scene-layer2"></div>
+                    </div>
+                    <!--// 씬 영역 : 씬 영역1 -->
+
+                    <!-- 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                    <ul class="tab-list-basic">
+                        <li>
+                            <!-- 버튼 클릭 : button-tab 인접클래스 active 추가 -->
+                            <button class="button-tab">
+                                <span>정리하기</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                </div>
+                <!--// page-view3 : (페이지) 컨텐츠 페이지 -->
+
+                <!-- page-view4 : 탭 스타일 page-view4 modal-layer-activity-goals3 인접클래스 active시 활성화 -->
+                <div class="page-view page-view4 modal-layer-activity-goals3 modal-layer">
+                    <!-- modal-layer-box tab-modal 인접클래스 active 추가시 우에서 좌로 모션 -->
+                    <div class="modal-layer-box tab-modal">
+                        <h4 class="title-sign">
+                            <span class="text">정리하기</span>
+                        </h4>
+                        <button id="btnTabClose" class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <div class="text-content-area"></div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view4 : 탭 스타일 - 우에서 좌로 모션 -->
+            </div>
+            <!--// View 영역 -->
+        </div>
+        <!--// Wrap 영역 -->
+    </body>
+</html>

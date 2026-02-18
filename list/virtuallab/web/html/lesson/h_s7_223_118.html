@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>유도 전류의 방향</title>
+        <!-- 공통 css -->
+        <link type="text/css" href="../../css/common.css?t=1739422595816" rel="stylesheet" />
+        <!-- 주제별 css -->
+        <link type="text/css" href="../../css/page/h_s7_223_118.css?t=1739422595816" rel="stylesheet" />
+        <link type="text/css" href="../../css/swiper-bundle.min.css?t=1739422595816" rel="stylesheet" />
+        <script src="../../js/lib/swiper.min.js?t=1739422595816"></script>
+        <script src="../../js/lib/jquery.min.js?t=1739422595816"></script>
+        <script src="../../js/lib/jquery-ui.min.js?t=1739422595816"></script>
+        <script src="../../js/lib/jquery.ui.touch-punch.min.js?t=1739422595816"></script>
+        <script src="../../js/lib/video-js.js?t=1739422595816"></script>
+        <script src="../../js/lib/video.js?t=1739422595816"></script>
+        <script src="../../js/lib/gsap.min.js?t=1739422595816"></script>
+        <script src="../../js/lib/p5.min.js?t=1739422595816"></script>
+        <script src="../../js/common.js?t=1739422595816"></script>
+        <script src="../../js/h_s7_223_118.js?t=1739422595816"></script>
+    </head>
+    <body>
+        <!-- Wrap 영역 -->
+        <div id="wrap" class="wrap wrap-new">
+            <!-- View 영역 -->
+            <div class="wrapper-set-view h_s7_223_118">
+                <!-- page-view1 : (페이지) 인트로 : page-view1 intro에 인접클래스 active가 있으면 보여짐 제거시 사라짐 -->
+                <div class="page-view page-view1 intro active">
+                    <!-- intro header area : 인트로 헤더영역 -->
+                    <div class="header-area header-area-intro">
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// intro header area : 인트로 헤더영역 -->
+
+                    <!-- Common Element : 인트로 과목명 -->
+                    <div class="background-area">
+                        <div class="background-area-inner">
+                            <em class="object-cockle-hat">
+                                <span class="blind">꼬깔모자 요소</span>
+                            </em>
+                            <h2 class="intro-title-text"><span class="text-color-fff605">유도 전류</span>의 방향</h2>
+                            <ul class="ruler">
+                                <li class="begin">
+                                    <span class="number">0</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">10</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">20</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">30</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">40</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 과목명 -->
+
+                    <!-- Common Element : 인트로 메인으로 시작 버튼 -->
+                    <div class="button-intro-area">
+                        <div class="button-start-area">
+                            <button class="button-intro-main-start">
+                                <em class="text-box">
+                                    <span>활동 시작</span>
+                                </em>
+                                <em class="arrow-box">
+                                    <span class="text blind">-&gt;</span>
+                                    <i class="icon"></i>
+                                </em>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 메인으로 시작 버튼 -->
+
+                    <!-- Common Element : 인트로 캐릭터 -->
+                    <div class="intro-character1-layer">
+                        <span class="blind">인트로 캐릭터</span>
+                        <ul id="" class="interaction-character-list">
+                            <li class="motion-1">
+                                <img src="../../images/common/character1/character1-motion1.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// Common Element : 인트로 캐릭터 -->
+                </div>
+                <!--// page-view1 : (페이지) 인트로 -->
+
+                <!-- page-view2 : (모달) 활동목표 : page-view2에 인접클래스 active가 있으면 보여짐 제거시 사라짐 님 -->
+                <div class="page-view page-view2 modal-layer modal-layer-activity-goals">
+                    <div class="modal-layer-box aim-madal">
+                        <button class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <h4 class="title-round">
+                            <span>활동 목표</span>
+                        </h4>
+                        <ul class="bullet-list">
+                            <li>
+                                코일 주위에서 자석을 움직일 때<br />
+                                발생하는 유도 전류는 코일 내부를<br />
+                                통과하는 자기장의 변화를 방해하는<br />
+                                방향으로 흐른다는 것을 확인할 수<br />
+                                있다.
+                            </li>
+                        </ul>
+                        <div class="character-guide h-character-activity-goals">
+                            <span class="blind">고등 활동목표</span>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view2 : (모달) 활동목표 -->
+
+                <!-- page-view3 : (페이지) 컨텐츠 페이지 -->
+                <div class="page-view page-view3 content-area">
+                    <!-- Content Header Area : 컨텐츠 헤더영역 -->
+                    <div class="header-area header-area-content">
+                        <!-- Common Title : 타이틀 -->
+                        <div class="header-title">
+                            <p>유도 전류의 방향</p>
+                        </div>
+                        <!--// Common Title : 타이틀 -->
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-home">
+                                <span class="blind">홈</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// Content Header Area : 컨텐츠 헤더영역 -->
+
+                    <!-- 씬 영역 : 씬 영역1 -->
+                    <div class="scene scene-layer-area1">
+                        <div class="scene-layer scene-layer1">
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text1">
+                                            자석을 드래그해 코일을 통과시키면서 <br />
+                                            코일에 유도되는 전류의 방향을 관찰해 보자.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="magnet-content-wrap">
+                                <div class="magnet-content-inner">
+                                    <div class="drag-area-magnet active">
+                                        <em class="item-magnet">
+                                            <span class="blind">막대자석</span>
+                                        </em>
+                                        <em class="item-magnet-line">
+                                            <span class="blind">자석라인</span>
+                                        </em>
+                                        <!--
+                                        <i class="gesture-arrow active">
+                                            <span class="blind">화살표 제스처</span>
+                                        </i>
+                                        <i class="gesture-finger gesture-magnet-finger gesture-magnet-finger1">
+                                            <span class="blind">손모양 제스처</span>
+                                        </i>
+                                        -->
+                                    </div>
+                                    <div class="magnet-coil">
+                                        <em class="item-magnet-coil-back">
+                                            <span class="blind">코일 뒷 배경</span>
+                                        </em>
+                                        <em class="item-magnet-coil-front">
+                                            <span class="blind">코일 앞 배경</span>
+                                        </em>
+
+                                        <div class="arr-coil">
+                                            <div class="arr-right-box">
+                                                <em class="arr" name="e-minus">화살표 오른쪽 위</em>
+                                                <em class="arr" name="e-plus">화살표 오른쪽 아래</em>
+                                            </div>
+                                            <div class="arr-top-box" name="right-box">
+                                                <em class="arr" name="e-plus">화살표 위쪽</em>
+                                                <em class="arr" name="e-plus">화살표 위쪽</em>
+                                                <em class="arr" name="e-plus">화살표 위쪽</em>
+                                                <em class="arr" name="e-plus">화살표 위쪽</em>
+                                            </div>
+
+                                            <div class="arr-left-box">
+                                                <em class="arr" name="e-plus">화살표 왼쪽 위</em>
+                                                <em class="arr" name="e-minus">화살표 왼쪽 아래</em>
+                                            </div>
+                                            <div class="arr-bot-box" name="left-box">
+                                                <em class="arr" name="e-minus">화살표 아래쪽</em>
+                                                <em class="arr" name="e-minus">화살표 아래쪽</em>
+                                                <em class="arr" name="e-minus">화살표 아래쪽</em>
+                                                <em class="arr" name="e-minus">화살표 아래쪽</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="coil-bulb">
+                                        <em class="item-bulb">
+                                            <span class="blind">전구</span>
+                                        </em>
+                                        <em class="item-light">
+                                            <span class="blind">라이트</span>
+                                        </em>
+                                    </div>
+                                    <div class="magnet-btn">
+                                        <button type="button" class="item-magnet-btn">막대자석 회전버튼</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scene-layer scene-layer2"></div>
+                    </div>
+                    <!--// 씬 영역 : 씬 영역1 -->
+
+                    <!-- 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                    <ul class="tab-list-basic">
+                        <li>
+                            <!-- 버튼 클릭 : button-tab 인접클래스 active 추가 -->
+                            <button class="button-tab">
+                                <span>정리하기</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                </div>
+                <!--// page-view3 : (페이지) 컨텐츠 페이지 -->
+
+                <!-- page-view4 : 탭 스타일 page-view4 modal-layer-activity-goals3 인접클래스 active시 활성화 -->
+                <div class="page-view page-view4 modal-layer-activity-goals3 modal-layer">
+                    <!-- modal-layer-box tab-modal 인접클래스 active 추가시 우에서 좌로 모션 -->
+                    <div class="modal-layer-box tab-modal">
+                        <h4 class="title-sign">
+                            <span class="text">정리하기</span>
+                        </h4>
+                        <button id="btnTabClose" class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <div class="text-tab-content-area">
+                            <div class="text-tab-content-inner">
+                                <div class="dot-list">
+                                    <div class="list">
+                                        <div class="tit">N극을 가까이 할 때</div>
+                                        <div class="img"></div>
+                                        <div class="txt">
+                                            자석의 N극을 코일에 가까이 가져가면 <br />
+                                            코일 내부에서 왼쪽 방향으로 향하는 자기장의 <br />
+                                            세기가 증가하므로 코일에는 이 자기장의 변화를 <br />
+                                            방해하는 방향, 즉 오른쪽 방향(반대 방향)의 <br />
+                                            자기장이 생기도록 유도 전류가 흐른다.
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="tit">N극을 멀리 할 때</div>
+                                        <div class="img"></div>
+                                        <div class="txt">
+                                            자석의 N극이 멀어지는 동안에는 코일 내부에서 <br />
+                                            왼쪽 방향으로 향하는 자기장의 세기가 감소하므로 <br />
+                                            코일에는 이 자기장의 변화를 방해하는 방향, <br />
+                                            즉 왼쪽 방향(같은 방향)의 자기장이 생기도록 <br />
+                                            유도 전류가 흐른다.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-finish-coil">
+                                <span class="blind">정리하기</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view4 : 탭 스타일 - 우에서 좌로 모션 -->
+            </div>
+            <!--// View 영역 -->
+        </div>
+        <!--// Wrap 영역 -->
+    </body>
+</html>

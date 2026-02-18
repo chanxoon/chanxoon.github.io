@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no"
+        />
+        <title>혈액형 판정하기</title>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            .wrapper {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                overflow: hidden;
+            }
+            .wrapper .wrap-iframe {
+                position: absolute;
+                width: 1920px;
+                height: 1080px;
+                top: 50%;
+                left: 50%;
+                transform-origin: 50% 50%;
+                overflow: hidden;
+                will-change: transform;
+            }
+            .wrapper .wrap-iframe .tag-iframe {
+                width: 100%;
+                height: 100%;
+                border: 0;
+                display: block;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap" class="wrapper">
+            <div class="wrap-iframe">
+                <iframe src="./lesson/h_s12_232_130.html" frameborder="0" scrolling="no" class="tag-iframe"></iframe>
+            </div>
+        </div>
+        <script>
+            let resizeTimeout;
+            function setView() {
+                const width = window.innerWidth;
+                const height = window.innerHeight;
+                const wrap = document.querySelector('.wrap-iframe');
+                const widthSize = 1920;
+                const heightSize = 1080;
+                const horizontalZoomRate = width / widthSize;
+                const verticalZoomRate = height / heightSize;
+                const zoomRate = widthSize * verticalZoomRate > width ? horizontalZoomRate : verticalZoomRate;
+                wrap.style.transform = `translate3d(-50%,-50%, 0) scale(${zoomRate})`;
+            }
+
+            function debounceSetView() {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(setView, 200); // 200ms 후에 실행
+            }
+
+            setView();
+            window.addEventListener('resize', debounceSetView);
+        </script>
+    </body>
+</html>

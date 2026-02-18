@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>모의실험으로 충돌 전후 운동량 보존 확인하기</title>
+        <!-- 공통 css -->
+        <link type="text/css" href="../../css/common.css?t=1739422595794" rel="stylesheet" />
+        <!-- 주제별 css -->
+        <link type="text/css" href="../../css/page/h_s7_113_035.css?t=1739422595794" rel="stylesheet" />
+        <link type="text/css" href="../../css/swiper-bundle.min.css?t=1739422595794" rel="stylesheet" />
+        <script src="../../js/lib/swiper.min.js?t=1739422595794"></script>
+        <script src="../../js/lib/jquery.min.js?t=1739422595794"></script>
+        <script src="../../js/lib/jquery-ui.min.js?t=1739422595794"></script>
+        <script src="../../js/lib/jquery.ui.touch-punch.min.js?t=1739422595794"></script>
+        <script src="../../js/lib/video-js.js?t=1739422595794"></script>
+        <script src="../../js/lib/video.js?t=1739422595794"></script>
+        <script src="../../js/lib/gsap.min.js?t=1739422595794"></script>
+        <script src="../../js/lib/p5.min.js?t=1739422595794"></script>
+        <script src="../../js/common.js?t=1739422595794"></script>
+        <script src="../../js/h_s7_113_035.js?t=1739422595794"></script>
+    </head>
+
+    <body>
+        <!-- Wrap 영역 -->
+        <div id="wrap" class="wrap wrap-new">
+            <!-- View 영역 -->
+            <div class="wrapper-set-view h_s7_113_035">
+                <!-- page-view1 : (페이지) 인트로 : page-view1 intro에 인접클래스 active가 있으면 보여짐 제거시 사라짐 -->
+                <div class="page-view page-view1 intro active">
+                    <!-- intro header area : 인트로 헤더영역 -->
+                    <div class="header-area header-area-intro">
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// intro header area : 인트로 헤더영역 -->
+
+                    <!-- Common Element : 인트로 과목명 -->
+                    <div class="background-area">
+                        <div class="background-area-inner">
+                            <em class="object-cockle-hat">
+                                <span class="blind">꼬깔모자 요소</span>
+                            </em>
+                            <h2 class="intro-title-text">
+                                모의실험으로 충돌 전후<br />
+                                <span class="text-color-fff000">운동량 보존</span> 확인하기
+                            </h2>
+                            <ul class="ruler">
+                                <li class="begin">
+                                    <span class="number">0</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">10</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">20</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">30</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">40</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 과목명 -->
+
+                    <!-- Common Element : 인트로 메인으로 시작 버튼 -->
+                    <div class="button-intro-area">
+                        <div class="button-start-area">
+                            <button class="button-intro-main-start">
+                                <em class="text-box">
+                                    <span>활동 시작</span>
+                                </em>
+                                <em class="arrow-box">
+                                    <span class="text blind">-&gt;</span>
+                                    <i class="icon"></i>
+                                </em>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 메인으로 시작 버튼 -->
+
+                    <!-- Common Element : 인트로 캐릭터 -->
+                    <div class="intro-character1-layer">
+                        <span class="blind">인트로 캐릭터</span>
+                        <ul id="" class="interaction-character-list">
+                            <li class="motion-1">
+                                <img src="../../images/common/character1/character1-motion1.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// Common Element : 인트로 캐릭터 -->
+                </div>
+                <!--// page-view1 : (페이지) 인트로 -->
+
+                <!-- page-view2 : (모달) 활동목표 : page-view2에 인접클래스 active가 있으면 보여짐 제거시 사라짐 님 -->
+                <div class="page-view page-view2 modal-layer modal-layer-activity-goals">
+                    <div class="modal-layer-box aim-madal">
+                        <button class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <h4 class="title-round">
+                            <span>활동 목표</span>
+                        </h4>
+                        <ul class="bullet-list">
+                            <li>
+                                모의실험을 통해 일차원 충돌 상황에서<br />
+                                운동량이 보존되는지를 확인할 수 있다.
+                            </li>
+                        </ul>
+                        <div class="character-guide h-character-activity-goals">
+                            <span class="blind">고등 활동목표</span>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view2 : (모달) 활동목표 -->
+
+                <!-- page-view3 : (페이지) 컨텐츠 페이지 -->
+                <div class="page-view page-view3 content-area">
+                    <!-- Content Header Area : 컨텐츠 헤더영역 -->
+                    <div class="header-area header-area-content">
+                        <!-- Common Title : 타이틀 -->
+                        <div class="header-title">
+                            <p>모의실험으로 충돌 전후 운동량 보존 확인하기</p>
+                        </div>
+                        <!--// Common Title : 타이틀 -->
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-home">
+                                <span class="blind">홈</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// Content Header Area : 컨텐츠 헤더영역 -->
+
+                    <!-- 씬 영역 : 씬 영역1 -->
+                    <div class="scene scene-layer-area1">
+                        <div id="overlay" style="width: 100%; height: 100%; position: absolute; z-index: 10"></div>
+
+                        <div class="scene-layer scene-layer1">
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text1">
+                                            물체의 질량과 속도를 정한 뒤 시작 버튼을 누르고, <br />
+                                            충돌 전후 운동량이 보존되는지 확인해 봅시다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ball-area">
+                                <div class="screen-box" style="overflow: hidden">
+                                    <canvas
+                                        id="simulationCanvas"
+                                        style="width: 100%; height: 100%; position: absolute"
+                                    ></canvas>
+                                    <div class="ball-area-A" id="ball-info-a">
+                                        <div class="t1">
+                                            <span class="tit">VA</span>
+                                            <span class="con" id="va-value">= 0.50 m/s</span>
+                                        </div>
+
+                                        <div class="ball-A">
+                                            <div class="item-ball"><span style="z-index: 2">A</span></div>
+                                            <div class="item-arrow" id="item-arrow-a" style="z-index: 1">
+                                                <button type="button" id="drag-arrow-a">화살표</button>
+                                                <div class="line" id="line-a"></div>
+                                                <div class="bg"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="t2" style="white-space: nowrap">
+                                            <span class="tit">PA</span>
+                                            <span class="con" id="pa-value">= 0.50 kg∙m/s</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="return-btn">
+                                        <button type="button" id="reset-outside-button">공 되돌리기</button>
+                                        <div class="dote-line">점선</div>
+                                    </div>
+
+                                    <div class="ball-area-B" id="ball-info-b">
+                                        <div class="t1">
+                                            <span class="tit">VB</span>
+                                            <span class="con" id="vb-value">= 0.50 m/s</span>
+                                        </div>
+
+                                        <div class="ball-B">
+                                            <div class="item-ball"><span style="z-index: 2">B</span></div>
+                                            <div class="item-arrow" id="item-arrow-b" style="z-index: 1">
+                                                <button type="button" id="drag-arrow-b">화살표</button>
+                                                <div class="line" id="line-b"></div>
+                                                <div class="bg"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="t2" style="white-space: nowrap">
+                                            <span class="tit">PB</span>
+                                            <span class="con" id="pb-value">= 0.75 kg∙m/s</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-box">
+                                    <div class="input-area radio">
+                                        <div class="radio-1">
+                                            <input
+                                                type="radio"
+                                                name="radio"
+                                                id="radio-1"
+                                                value="normal"
+                                                checked
+                                            /><label for="radio-1"></label><span>보통 동작 보기</span>
+                                        </div>
+                                        <div class="radio-2">
+                                            <input type="radio" name="radio" id="radio-2" value="slow" /><label
+                                                for="radio-2"
+                                            ></label
+                                            ><span>느린 동작 보기</span>
+                                        </div>
+                                    </div>
+                                    <div class="start-area">
+                                        <button type="button" id="start-button">시작</button>
+                                        <button type="button" id="stop-button" hidden="hidden">정지</button>
+                                        <span class="dote-line">점선</span>
+                                    </div>
+                                    <div class="reset-area">
+                                        <button type="button" id="reset-button">리셋</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row-box">
+                                <div class="controller-box">
+                                    <div class="tit"><strong>질량</strong> (kg)</div>
+                                    <div class="con">
+                                        <div class="A-range">
+                                            <span>A</span>
+                                            <input type="number" id="mass1-value" value="0.50" class="output" />
+                                            <div class="range-wrap">
+                                                <input
+                                                    type="range"
+                                                    id="mass1"
+                                                    class="input eq"
+                                                    value="0.50"
+                                                    step="0.01"
+                                                    min="0.10"
+                                                    max="3.00"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="B-range">
+                                            <span>B</span>
+                                            <input type="number" id="mass2-value" value="1.50" class="output" />
+                                            <div class="range-wrap">
+                                                <input
+                                                    type="range"
+                                                    id="mass2"
+                                                    class="input eq"
+                                                    value="1.50"
+                                                    step="0.01"
+                                                    min="0.10"
+                                                    max="3.00"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="dote-line">점선</span>
+                                </div>
+
+                                <div class="zoom-box">
+                                    <div class="tit">운동량</div>
+                                    <div class="screen-area">
+                                        <canvas
+                                            id="momentumCanvas"
+                                            style="width: 100%; height: 100%; position: absolute"
+                                        ></canvas>
+                                        <!--<div class="inner">
+                                            <div class="A-arrow">
+                                                <div class="txt">A</div>
+                                                <div class="item-arrow">
+                                                    <div class="arr">화살표</div>
+                                                    <div class="line"></div>
+                                                </div>
+                                            </div>
+                                            <div class="B-arrow">
+                                                <div class="txt">B</div>
+                                                <div class="item-arrow">
+                                                    <div class="arr">화살표</div>
+                                                    <div class="line"></div>
+                                                </div>
+                                            </div>
+                                            <div class="total-arrow">
+                                                <div class="txt">합계</div>
+                                                <div class="item-arrow">
+                                                    <div class="arr">화살표</div>
+                                                    <div class="line"></div>
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                    <div class="btn-area">
+                                        <button type="button" class="minus zoom-out" id="zoom-out">
+                                            <span>마이너스</span>
+                                        </button>
+                                        <button type="button" class="plus zoom-in" id="zoom-in">
+                                            <span>플러스</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="popup popup-layer" style="display: none">
+                                <div class="inner">
+                                    <div id="the-calculator">
+                                        <div id="the-display">
+                                            <form name="calculator">
+                                                <span id="total">0</span>
+                                            </form>
+                                        </div>
+                                        <div id="the-buttons">
+                                            <div class="button-row clearfix">
+                                                <button class="calc_int" value="7">7</button>
+                                                <button class="calc_int" value="8">8</button>
+                                                <button class="calc_int" value="9">9</button>
+                                                <!-- <button class="calc_op" value="*">&times;</button> -->
+                                            </div>
+                                            <div class="button-row clearfix">
+                                                <button class="calc_int" value="4">4</button>
+                                                <button class="calc_int" value="5">5</button>
+                                                <button class="calc_int" value="6">6</button>
+                                                <!-- <button class="calc_op" value="-">-</button> -->
+                                            </div>
+                                            <div class="button-row clearfix">
+                                                <button class="calc_int" value="1">1</button>
+                                                <button class="calc_int" value="2">2</button>
+                                                <button class="calc_int" value="3">3</button>
+                                                <!-- <button class="calc_op" value="+">+</button> -->
+                                            </div>
+                                            <div class="button-row clearfix">
+                                                <button id="calc_zero" class="calc_int" value="0">0</button>
+                                                <button id="calc_neg" value="-/+">&#43;<span>/</span>&#45;</button>
+                                            </div>
+                                            <div class="button-row clearfix">
+                                                <button id="calc_decimal" value=".">.</button>
+                                                <button id="calc_back">삭제</button>
+                                            </div>
+                                            <div class="button-row clearfix">
+                                                <button id="calc_eval" value="입력">입력</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--
+                                <div id="the-results">
+                                    <ul id="results_list">
+                                        <li id="result_default">Memory is Empty</li>
+                                    </ul>
+                                    <a id="result_clear" href="#">Wipe</a>
+                                </div>
+                                -->
+                                    <div class="pop-close">
+                                        <button type="button">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scene-layer scene-layer2"></div>
+                    </div>
+                    <!--// 씬 영역 : 씬 영역1 -->
+
+                    <!-- 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                    <ul class="tab-list-basic">
+                        <li>
+                            <!-- 버튼 클릭 : button-tab 인접클래스 active 추가 -->
+                            <button class="button-tab">
+                                <span>정리하기</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                </div>
+                <!--// page-view3 : (페이지) 컨텐츠 페이지 -->
+
+                <!-- page-view4 : 탭 스타일 page-view4 modal-layer-activity-goals3 인접클래스 active시 활성화 -->
+                <div class="page-view page-view4 modal-layer-activity-goals3 modal-layer">
+                    <!-- modal-layer-box tab-modal 인접클래스 active 추가시 우에서 좌로 모션 -->
+                    <div class="modal-layer-box tab-modal">
+                        <h4 class="title-sign">
+                            <span class="text">정리하기</span>
+                        </h4>
+                        <button id="btnTabClose" class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <div class="text-tab-content-area">
+                            <div class="text-tab-content-inner">
+                                <div class="text-area">
+                                    두 물체가 충돌하기 전 두 물체의 운동량 합과 <br />
+                                    충돌한 후 두 물체의 운동량 합은 같다. <br />
+                                    즉, 두 물체의 충돌 전후 운동량은 보존된다.
+                                </div>
+                            </div>
+                            <div class="image-finish-coil">
+                                <span class="blind">정리하기</span>
+                            </div>
+                            <div class="character-area character">
+                                <img src="../../images/common/character/h-character-organizing.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view4 : 탭 스타일 - 우에서 좌로 모션 -->
+            </div>
+            <!--// View 영역 -->
+        </div>
+        <!--// Wrap 영역 -->
+    </body>
+</html>

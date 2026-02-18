@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: "GmarketSansLight";
+  src: local("GmarketSans Light"), url("../../common/fonts/GmarketSansLight.woff2") format("woff2"), url("../../common/fonts/GmarketSansLight.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GmarketSansLight";
+  src: local("GmarketSans Light"), url("../../common/fonts/GmarketSansLight.woff2") format("woff2"), url("../../common/fonts/GmarketSansLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GmarketSansLight";
+  src: local("GmarketSans Light"), url("../../common/fonts/GmarketSansLight.woff2") format("woff2"), url("../../common/fonts/GmarketSansLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: local("GmarketSans Medium"), url("../../common/fonts/GmarketSansMedium.woff2") format("woff2"), url("../../common/fonts/GmarketSansMedium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: local("GmarketSans Medium"), url("../../common/fonts/GmarketSansMedium.woff2") format("woff2"), url("../../common/fonts/GmarketSansMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: local("GmarketSans Medium"), url("../../common/fonts/GmarketSansMedium.woff2") format("woff2"), url("../../common/fonts/GmarketSansMedium.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: local("GmarketSans Bold"), url("../../common/fonts/GmarketSansBold.woff2") format("woff2"), url("../../common/fonts/GmarketSansBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: local("GmarketSans Bold"), url("../../common/fonts/GmarketSansBold.woff2") format("woff2"), url("../../common/fonts/GmarketSansBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: local("GmarketSans Bold"), url("../../common/fonts/GmarketSansBold.woff2") format("woff2"), url("../../common/fonts/GmarketSansBold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "STIXTwoText";
+  src: local("STIXTwoText Bold"), url("../../common/fonts/STIXTwoText-VariableFont_wght.woff2") format("woff2"), url("../../common/fonts/STIXTwoText-VariableFont_wght.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+/* ----------------------------------------------------------------------------------- */
+/* [중등1] */
+/** 과학1 **/
+/* ----------------------------------------------------------------------------------- */
+/* [고등] */
+/** 통합과학1 **/
+/** 통합과학2 **/
+/** 물리학 **/
+/** 행성우주과학 **/
+/** 생명과학 **/
+/** 화학 **/
+/*# sourceMappingURL=maps/style.css.map */

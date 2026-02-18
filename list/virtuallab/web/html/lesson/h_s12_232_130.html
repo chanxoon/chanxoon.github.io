@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>혈액형 판정하기</title>
+        <!-- 공통 css -->
+        <link type="text/css" href="../../css/common.css?t=1739422595820" rel="stylesheet" />
+        <!-- 주제별 css -->
+        <link type="text/css" href="../../css/page/h_s12_232_130.css?t=1739422595820" rel="stylesheet" />
+        <link type="text/css" href="../../css/swiper-bundle.min.css?t=1739422595820" rel="stylesheet" />
+        <script src="../../js/lib/swiper.min.js?t=1739422595820"></script>
+        <script src="../../js/lib/jquery.min.js?t=1739422595820"></script>
+        <script src="../../js/lib/jquery-ui.min.js?t=1739422595820"></script>
+        <script src="../../js/lib/jquery.ui.touch-punch.min.js?t=1739422595820"></script>
+        <script src="../../js/lib/video-js.js?t=1739422595820"></script>
+        <script src="../../js/lib/video.js?t=1739422595820"></script>
+        <script src="../../js/lib/gsap.min.js?t=1739422595820"></script>
+        <script src="../../js/lib/p5.min.js?t=1739422595820"></script>
+        <script src="../../js/common.js?t=1739422595820"></script>
+        <script src="../../js/h_s12_232_130.js?t=1739422595820"></script>
+    </head>
+    <body>
+        <!-- Wrap 영역 -->
+        <div id="wrap" class="wrap wrap-new">
+            <!-- View 영역 -->
+            <div class="wrapper-set-view h_s12_232_130">
+                <!-- page-view1 : (페이지) 인트로 : page-view1 intro에 인접클래스 active가 있으면 보여짐 제거시 사라짐 -->
+                <div class="page-view page-view1 intro active">
+                    <!-- intro header area : 인트로 헤더영역 -->
+                    <div class="header-area header-area-intro">
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// intro header area : 인트로 헤더영역 -->
+
+                    <!-- Common Element : 인트로 과목명 -->
+                    <div class="background-area">
+                        <div class="background-area-inner">
+                            <em class="object-cockle-hat">
+                                <span class="blind">꼬깔모자 요소</span>
+                            </em>
+                            <h2 class="intro-title-text"><span class="text-color-fff000">혈액형</span> 판정하기</h2>
+                            <ul class="ruler">
+                                <li class="begin">
+                                    <span class="number">0</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">10</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">20</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">30</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">40</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 과목명 -->
+
+                    <!-- Common Element : 인트로 메인으로 시작 버튼 -->
+                    <div class="button-intro-area">
+                        <div class="button-start-area">
+                            <button class="button-intro-main-start">
+                                <em class="text-box">
+                                    <span>활동 시작</span>
+                                </em>
+                                <em class="arrow-box">
+                                    <span class="text blind">-&gt;</span>
+                                    <i class="icon"></i>
+                                </em>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 메인으로 시작 버튼 -->
+
+                    <!-- Common Element : 인트로 캐릭터 -->
+                    <div class="intro-character1-layer">
+                        <span class="blind">인트로 캐릭터</span>
+                        <ul id="" class="interaction-character-list">
+                            <li class="motion-1">
+                                <img src="../../images/common/character1/character1-motion1.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// Common Element : 인트로 캐릭터 -->
+                </div>
+                <!--// page-view1 : (페이지) 인트로 -->
+
+                <!-- page-view2 : (모달) 활동목표 : page-view2에 인접클래스 active가 있으면 보여짐 제거시 사라짐 님 -->
+                <div class="page-view page-view2 modal-layer modal-layer-activity-goals">
+                    <div class="modal-layer-box aim-madal">
+                        <button class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <h4 class="title-round">
+                            <span>활동 목표</span>
+                        </h4>
+                        <ul class="bullet-list">
+                            <li>
+                                혈액과 혈청의 응집반응 결과를<br />
+                                이용하여 혈액형을 판정하고,<br />
+                                나의 혈액에 있는 응집원과<br />
+                                응집소를 판단할 수 있다.
+                            </li>
+                        </ul>
+                        <div class="character-guide h-character-activity-goals">
+                            <span class="blind">고등 활동목표</span>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view2 : (모달) 활동목표 -->
+
+                <!-- page-view3 : (페이지) 컨텐츠 페이지 -->
+                <div class="page-view page-view3 content-area">
+                    <!-- Content Header Area : 컨텐츠 헤더영역 -->
+                    <div class="header-area header-area-content">
+                        <!-- Common Title : 타이틀 -->
+                        <div class="header-title">
+                            <p>혈액형 판정하기</p>
+                        </div>
+                        <!--// Common Title : 타이틀 -->
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-home">
+                                <span class="blind">홈</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// Content Header Area : 컨텐츠 헤더영역 -->
+
+                    <!-- 씬 영역 : 씬 영역1 -->
+                    <div class="scene scene-layer-area1">
+                        <div class="scene-layer scene-layer1 active">
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text1">
+                                            혈액 반응판에 혈액을 떨어뜨려 응집반응이<br />
+                                            일어나는지 관찰하고 혈액형을 판정해 보자.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blood-reaction-plate">
+                                <div class="tit">혈액 반응판</div>
+                                <div class="con">
+                                    <div class="RH">
+                                        <div class="blood-serum">
+                                            <span>항RH 혈청</span>
+                                        </div>
+                                        <div class="agglomeration">
+                                            <span class="blue">응집 <i class="icon o"></i></span>
+                                        </div>
+                                        <div class="blood blood-damage">
+                                            <div class="blood-drop">
+                                                <span class="blind">블러드</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="A">
+                                        <div class="blood-serum">
+                                            <span>항A 혈청</span>
+                                        </div>
+                                        <div class="agglomeration">
+                                            <span class="blue">응집 <i class="icon o"></i></span>
+                                        </div>
+                                        <div class="blood blood-damage">
+                                            <div class="blood-drop">
+                                                <span class="blind">블러드</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="B">
+                                        <div class="blood-serum">
+                                            <span>항B 혈청</span>
+                                        </div>
+                                        <div class="agglomeration">
+                                            <span class="green">응집 <i class="icon x"></i></span>
+                                        </div>
+                                        <div class="blood blood-damage">
+                                            <div class="blood-drop">
+                                                <span class="blind">블러드</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blood-list">
+                                <button type="button" class="b1">혈액 <span>1</span></button>
+                                <button type="button" class="b2">혈액 <span>2</span></button>
+                                <button type="button" class="b3">혈액 <span>3</span></button>
+                                <button type="button" class="b4">혈액 <span>4</span></button>
+                                <button type="button" class="b5">혈액 <span>5</span></button>
+                                <button type="button" class="b6">혈액 <span>6</span></button>
+                                <button type="button" class="b7">혈액 <span>7</span></button>
+                                <button type="button" class="b8">혈액 <span>8</span></button>
+                            </div>
+
+                            <div class="blood-type">
+                                <button type="button">혈액형 입력하기 <i class="icon plus"></i></button>
+                                <i class="guide-dote-line dote-line1">
+                                    <span class="blind">점선</span>
+                                </i>
+                            </div>
+
+                            <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger1">
+                                <span class="blind">손모양 제스처1</span>
+                            </i>
+                        </div>
+
+                        <div class="scene-layer scene-layer2">
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text2">
+                                            응집반응 결과에 따라 각 혈액의 <br />
+                                            혈액형을 판정하여 써 보자.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blood-type-grid">
+                                <div class="tit">
+                                    <div class="type">구분</div>
+                                    <div class="RH">Rh식 혈액형</div>
+                                    <div class="ABO">ABO식 혈액형</div>
+                                </div>
+                                <div class="con">
+                                    <div class="blood-list">
+                                        <div class="blood blood1">혈액1</div>
+                                        <div class="blood blood2">혈액2</div>
+                                        <div class="blood blood3">혈액3</div>
+                                        <div class="blood blood4">혈액4</div>
+                                        <div class="blood blood5">혈액5</div>
+                                        <div class="blood blood6">혈액6</div>
+                                        <div class="blood blood7">혈액7</div>
+                                        <div class="blood blood8">혈액8</div>
+                                    </div>
+                                    <div class="rh-list">
+                                        <div class="rh-box rh-plus"></div>
+                                        <div class="rh-box rh-plus"></div>
+                                        <div class="rh-box rh-plus"></div>
+                                        <div class="rh-box rh-plus"></div>
+                                        <div class="rh-box rh-minus"></div>
+                                        <div class="rh-box rh-minus"></div>
+                                        <div class="rh-box rh-minus"></div>
+                                        <div class="rh-box rh-minus"></div>
+                                    </div>
+                                    <div class="ABO-list">
+                                        <div class="abo-box Atype"></div>
+                                        <div class="abo-box Btype"></div>
+                                        <div class="abo-box ABtype"></div>
+                                        <div class="abo-box Otype"></div>
+                                        <div class="abo-box Otype"></div>
+                                        <div class="abo-box ABtype"></div>
+                                        <div class="abo-box Btype"></div>
+                                        <div class="abo-box Atype"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blood-type-box">
+                                <div id="RH1" class="RH RH-plus-type">RH&#8314;형</div>
+                                <div id="RH2" class="RH RH-minus-type">RH&#8315;형</div>
+                                <div id="ABO1" class="ABO A-type">A형</div>
+                                <div id="ABO2" class="ABO B-type">B형</div>
+                                <div id="ABO3" class="ABO AB-type">AB형</div>
+                                <div id="ABO4" class="ABO O-type">O형</div>
+                            </div>
+
+                            <div class="info-box info-box1-1">
+                                <p>항Rh 혈청에서 응집반응이 일어났으므로 Rh&#8314;형이다.</p>
+                                <p>
+                                    항A 혈청에서는 응집반응이 일어났지만, 항B 혈청에서는 응집반응이 일어나지 않았으므로
+                                    A형이다.
+                                </p>
+                            </div>
+                            <div class="info-box info-box1-2">
+                                <p>항Rh 혈청에서 응집반응이 일어났으므로 Rh&#8314;형이다.</p>
+                                <p>
+                                    항A 혈청에서는 응집반응이 일어나지 않았지만, 항B 혈청에서는 응집반응이 일어났으므로
+                                    B형이다.
+                                </p>
+                            </div>
+                            <div class="info-box info-box1-3">
+                                <p>항Rh 혈청에서 응집반응이 일어났으므로 Rh&#8314;형이다.</p>
+                                <p>항A 혈청과 항B 혈청에서 모두 응집반응이 일어났으므로 AB형이다.</p>
+                            </div>
+                            <div class="info-box info-box1-4">
+                                <p>항Rh 혈청에서 응집반응이 일어났으므로 Rh&#8314;형이다.</p>
+                                <p>항A 혈청과 항B 혈청에서 모두 응집반응이 일어나지 않았으므로 O형이다.</p>
+                            </div>
+                            <div class="info-box info-box1-5">
+                                <p>항Rh 혈청에서 응집반응이 일어나지 않았으므로 Rh&#8315;형이다.</p>
+                                <p>항A 혈청과 항B 혈청에서 모두 응집반응이 일어나지 않았으므로 O형이다.</p>
+                            </div>
+                            <div class="info-box info-box1-6">
+                                <p>항Rh 혈청에서 응집반응이 일어나지 않았으므로 Rh&#8315;형이다.</p>
+                                <p>항A 혈청과 항B 혈청에서 모두 응집반응이 일어났으므로 AB형이다.</p>
+                            </div>
+                            <div class="info-box info-box1-7">
+                                <p>항Rh 혈청에서 응집반응이 일어나지 않았으므로 Rh&#8315;형이다.</p>
+                                <p>
+                                    항A 혈청에서는 응집반응이 일어나지 않았지만, 항B 혈청에서는 응집반응이 일어났으므로
+                                    B형이다.
+                                </p>
+                            </div>
+                            <div class="info-box info-box1-8">
+                                <p>항Rh 혈청에서 응집반응이 일어나지 않았으므로 Rh&#8315;형이다.</p>
+                                <p>
+                                    항A 혈청에서는 응집반응이 일어났지만, 항B 혈청에서는 응집반응이 일어나지 않았으므로
+                                    A형이다.
+                                </p>
+                            </div>
+
+                            <!-- <div class="info-box info-box2-1">
+                                <p>
+                                    항A 혈청에서는 응집반응이 일어났지만, <br />항B 혈청에서는 응집반응이 일어나지
+                                    않았으므로 A형이다.
+                                </p>
+                            </div>
+                            <div class="info-box info-box2-2">
+                                <p>
+                                    항A 혈청에서는 응집반응이 일어나지 않았지만, <br />항B 혈청에서는 응집반응이
+                                    일어났으므로 B형이다.
+                                </p>
+                            </div>
+                            <div class="info-box info-box2-3">
+                                <p>항A 혈청과 항B 혈청에서 모두 응집반응이 <br />일어났으므로 AB형이다.</p>
+                            </div>
+                            <div class="info-box info-box2-4">
+                                <p>항A 혈청과 항B 혈청에서 모두 응집반응이 <br />일어나지 않았으므로 O형이다.</p>
+                            </div>
+                            <div class="info-box info-box2-5">
+                                <p>항A 혈청과 항B 혈청에서 모두 응집반응이 <br />일어나지 않았으므로 O형이다.</p>
+                            </div>
+                            <div class="info-box info-box2-6">
+                                <p>항A 혈청과 항B 혈청에서 모두 응집반응이 <br />일어났으므로 AB형이다.</p>
+                            </div>
+                            <div class="info-box info-box2-7">
+                                <p>
+                                    항A 혈청에서는 응집반응이 일어나지 않았지만, <br />항B 혈청에서는 응집반응이
+                                    일어났으므로 B형이다.
+                                </p>
+                            </div>
+                            <div class="info-box info-box2-8">
+                                <p>
+                                    항A 혈청에서는 응집반응이 일어났지만, <br />항B 혈청에서는 응집반응이 일어나지
+                                    않았으므로 A형이다.
+                                </p>
+                            </div> -->
+
+                            <div class="blood-agg-reaction">
+                                <button type="button">
+                                    <span>혈액 응집반응 <br />관찰하기</span><i class="icon search"></i>
+                                </button>
+                                <i class="guide-dote-line dote-line2">
+                                    <span class="blind">점선</span>
+                                </i>
+                            </div>
+
+                            <div class="prev-btn">
+                                <button type="button"><i class="icon arr"></i> 이전</button>
+                            </div>
+
+                            <div class="next-btn">
+                                <button type="button">다음 <i class="icon arr"></i></button>
+                            </div>
+
+                            <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger2">
+                                <span class="blind">손모양 제스처2</span>
+                            </i>
+                        </div>
+
+                        <div class="scene-layer scene-layer3">
+                            <!-- guide-balloon-tip-wrap 인접클래스 active 추가시 팝업 전체 모션 활성화 후 보여짐 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text3">
+                                            응집소의 모양을 참고하여 각 혈액형의 <br />
+                                            혈액에 포함된 응집원을 적혈구의 <br />
+                                            세포막에 표현해 보자.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-high">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blood-list-btn">
+                                <button type="button" class="RHA">
+                                    <span>혈액<em>1</em></span> Rh&#8314; A형
+                                    <span class="blind">
+                                        <span class="succ">agg-RH</span>
+                                        <span class="succ">agg-A</span>
+                                        <span class="fail">agg-B</span>
+                                    </span>
+                                </button>
+                                <button type="button" class="RHB">
+                                    <span>혈액<em>2</em></span> Rh&#8314; B형
+                                    <span class="blind">
+                                        <span class="succ">agg-RH</span>
+                                        <span class="fail">agg-A</span>
+                                        <span class="succ">agg-B</span>
+                                    </span>
+                                </button>
+                                <button type="button" class="RHAB">
+                                    <span>혈액<em>3</em></span> Rh&#8314; AB형
+                                    <span class="blind">
+                                        <span class="succ">agg-RH</span>
+                                        <span class="succ">agg-A</span>
+                                        <span class="succ">agg-B</span>
+                                    </span>
+                                </button>
+                                <button type="button" class="RHO">
+                                    <span>혈액<em>4</em></span> Rh&#8314; O형
+                                    <span class="blind">
+                                        <span class="succ">agg-RH</span>
+                                        <span class="fail">agg-A</span>
+                                        <span class="fail">agg-B</span>
+                                    </span>
+                                </button>
+                                <button type="button" class="RH-O">
+                                    <span>혈액<em>5</em></span> Rh&#8315; O형
+                                    <span class="blind">
+                                        <span class="fail">agg-RH</span>
+                                        <span class="fail">agg-A</span>
+                                        <span class="fail">agg-B</span>
+                                        <span class="succ">agg-RH-O</span>
+                                    </span>
+                                </button>
+                                <button type="button" class="RH-AB">
+                                    <span>혈액<em>6</em></span> Rh&#8315; AB형
+                                    <span class="blind">
+                                        <span class="fail">agg-RH</span>
+                                        <span class="succ">agg-A</span>
+                                        <span class="succ">agg-B</span>
+                                    </span>
+                                </button>
+                                <button type="button" class="RH-B">
+                                    <span>혈액<em>7</em></span> Rh&#8315; B형
+                                    <span class="blind">
+                                        <span class="fail">agg-RH</span>
+                                        <span class="fail">agg-A</span>
+                                        <span class="succ">agg-B</span>
+                                    </span>
+                                </button>
+                                <button type="button" class="RH-A">
+                                    <span>혈액<em>8</em></span> Rh&#8315; A형
+                                    <span class="blind">
+                                        <span class="fail">agg-RH</span>
+                                        <span class="succ">agg-A</span>
+                                        <span class="fail">agg-B</span>
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="agglutinin-box">
+                                <div class="agglutinin">
+                                    <div class="agg1">
+                                        <div class="img"></div>
+                                        <div class="txt">응집소 &#945;</div>
+                                    </div>
+                                    <div class="agg2">
+                                        <div class="img"></div>
+                                        <div class="txt">응집소 &#946;</div>
+                                    </div>
+                                    <div class="agg3">
+                                        <div class="img"></div>
+                                        <div class="txt">Rh 응집소</div>
+                                    </div>
+                                </div>
+                                <div class="red-blood">
+                                    <div class="img"></div>
+                                    <div class="txt">적혈구</div>
+                                </div>
+                            </div>
+
+                            <div class="info-box info-box3">
+                                <p>Rh&#8314;형이므로 Rh 응집원이 있고, A형이므로 응집원 A가 있다.</p>
+                            </div>
+                            <div class="info-box info-box3-2">
+                                <p>Rh&#8314;형이므로 Rh 응집원이 있고, B형이므로 응집원 B가 있다.</p>
+                            </div>
+                            <div class="info-box info-box3-3">
+                                <p>Rh&#8314;형이므로 Rh 응집원이 있고, AB형이므로 응집원 A와 응집원 B가 있다.</p>
+                            </div>
+                            <div class="info-box info-box3-4">
+                                <p>Rh&#8314;형이므로 Rh 응집원이 있고, O형이므로 응집원 A와 B가 없다.</p>
+                            </div>
+                            <div class="info-box info-box3-5">
+                                <p>Rh&#8315;형이므로 Rh 응집원이 없고, O형이므로 응집원 A와 B가 없다.</p>
+                            </div>
+                            <div class="info-box info-box3-6">
+                                <p>Rh&#8315;형이므로 Rh 응집원이 없고, AB형이므로 응집원 A와 응집원 B가 있다.</p>
+                            </div>
+                            <div class="info-box info-box3-7">
+                                <p>Rh&#8315;형이므로 Rh 응집원이 없고, B형이므로 응집원 B가 있다.</p>
+                            </div>
+                            <div class="info-box info-box3-8">
+                                <p>Rh&#8315;형이므로 Rh 응집원이 없고, A형이므로 응집원 A가 있다.</p>
+                            </div>
+
+                            <div class="example-box">
+                                <div class="tit">보기</div>
+                                <div class="con">
+                                    <div id="agg-A" class="agg-A">
+                                        <span class="blind">응집원 A</span>
+                                    </div>
+                                    <div id="agg-B" class="agg-B">
+                                        <span class="blind">응집원 B</span>
+                                    </div>
+                                    <div id="agg-RH" class="agg-RH">
+                                        <span class="blind">Rh 응집원</span>
+                                    </div>
+                                    <div id="agg-RH-O" class="agg-RH-O"></div>
+                                </div>
+                            </div>
+
+                            <div class="prev-btn">
+                                <button type="button"><i class="icon arr"></i> 이전</button>
+                            </div>
+
+                            <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger3">
+                                <span class="blind">손모양 제스처3</span>
+                            </i>
+                            <i class="gesture-finger gesture-box-guide-finger gesture-box-guide-finger4">
+                                <span class="blind">손모양 제스처4</span>
+                            </i>
+                        </div>
+                    </div>
+                    <!--// 씬 영역 : 씬 영역1 -->
+
+                    <!-- 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                    <ul class="tab-list-basic">
+                        <li>
+                            <!-- 버튼 클릭 : button-tab 인접클래스 active 추가 -->
+                            <button class="button-tab">
+                                <span>정리하기</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                </div>
+                <!--// page-view3 : (페이지) 컨텐츠 페이지 -->
+
+                <!-- page-view4 : 탭 스타일 page-view4 modal-layer-activity-goals3 인접클래스 active시 활성화 -->
+                <div class="page-view page-view4 modal-layer-activity-goals3 modal-layer">
+                    <!-- modal-layer-box tab-modal 인접클래스 active 추가시 우에서 좌로 모션 -->
+                    <div class="modal-layer-box tab-modal">
+                        <h4 class="title-sign">
+                            <span class="text">정리하기</span>
+                        </h4>
+                        <button id="btnTabClose" class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <div class="text-content-area"></div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view4 : 탭 스타일 - 우에서 좌로 모션 -->
+            </div>
+            <!--// View 영역 -->
+        </div>
+        <!--// Wrap 영역 -->
+    </body>
+</html>

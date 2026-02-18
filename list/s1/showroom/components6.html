@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <meta content="온라인 쇼룸 | 에스원" id="metaTitle" name="title" />
+        <meta content="온라인 쇼룸" id="metaDescription" name="description" />
+        <meta content="온라인 쇼룸" id="metaKeyword" name="keywords" />
+
+        <meta content="website" property="og:type" />
+        <meta content="https://www.s1.co.kr/secom/commercial" property="og:url" />
+        <meta content="온라인 쇼룸 | 에스원" property="og:title" />
+        <meta content="온라인 쇼룸" property="og:description" />
+        <meta content="https://www.s1.co.kr/images/ko/meta/meta-default-img.png" property="og:image" />
+        <meta content="630" property="og:image:height" />
+        <meta content="1200" property="og:image:width" />
+
+        <title>온라인 쇼룸 | 에스원</title>
+
+        <link rel="preload" href="/css/ko/common.css" as="style" type="text/css" />
+        <link rel="preload" href="/css/ko/main.css" as="style" type="text/css" />
+        <link rel="preload" href="/css/ko/s1_contents.css" as="style" type="text/css" />
+        <link rel="preload" href="/js/libs/jquery-1.12.4.min.js" as="script" />
+        <link rel="preload" href="/js/libs/jquery-ui.js" as="script" />
+        <link rel="preload" href="/js/libs/slick.js" as="script" />
+        <link rel="preload" href="/js/ui/ko/common.js" as="script" />
+
+        <link rel="icon" href="/favicon/favicon-48x48.ico" />
+        <link rel="shortcut icon" href="/favicon/favicon-48x48.ico" />
+        <link rel="stylesheet" href="/css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="/css/aos.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/common.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/s1_contents.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/popup.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/showroom.css" type="text/css" />
+
+        <script type="text/javascript" src="/js/libs/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="/js/libs/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/libs/slick.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.min.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.scrollbar-2.1.js"></script>
+        <script type="text/javascript" src="/js/libs/aos.js"></script>
+        <script type="text/javascript" src="/js/libs/stick-to-me.js"></script>
+        <script type="text/javascript" src="/js/libs/client.min.js"></script>
+
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomComm.js"></script>
+
+        <!-- 네이버 연관채널 -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "s1",
+                "url": "https://www.s1.co.kr",
+                "sameAs": [
+                    "https://blog.naver.com/s1corporation",
+                    "https://www.instagram.com/s1corporation/",
+                    "https://www.youtube.com/@welcome.S1",
+                    "https://www.facebook.com/s1corporation"
+                ]
+            }
+        </script>
+
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            .wrap-online-showroom.sr-component {
+                background: rgba(266, 266, 266, 0.8);
+                padding: 20px;
+                overflow: auto;
+            }
+
+            .wrap-online-showroom.sr-component h1,
+            h2,
+            h3,
+            h4 {
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            .wrap-online-showroom.sr-component h1 {
+                margin-bottom: 20px;
+                font-size: 28px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-set > h2 {
+                font-size: 24px;
+                margin-top: 32px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-box > h3 {
+                font-size: 18px;
+                margin-top: 16px;
+                position: relative;
+                padding-left: 14px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-box > h3::before {
+                content: '';
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-width: 0 0 2px 2px;
+                border-style: solid;
+                border-color: #222;
+                position: absolute;
+                left: 1px;
+                top: 49%;
+                margin-top: -4px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-item {
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 20px;
+                margin-top: 16px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-item > h4 {
+                padding-left: 14px;
+                position: relative;
+                font-size: 16px;
+                color: #666;
+                margin-bottom: 16px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-item > h4:before {
+                content: '▼';
+                font-size: 7px;
+                display: inline-block;
+                position: absolute;
+                left: 2px;
+                top: 4px;
+            }
+
+            .wrap-online-showroom.sr-component .sr-component-item-inner {
+                margin-bottom: 16px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 쇼룸 공통 컴포넌트 -->
+        <div id="wrapShowroom" class="wrap-online-showroom sr-component sr6-storage">
+            <h1>에스원 쇼룸 퍼블리싱 공통 컴포넌트 : 창고 storage 전용</h1>
+            <div class="sr-component-set">
+                <h2>일러스트</h2>
+                <div class="sr-component-box">
+                    <div class="sr-component-item">
+                        <h4>근로자</h4>
+                        <div class="sr-component-item-inner">
+                            <div style="padding: 20px; background-color: rgba(0, 0, 0, 0.1)">
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-worker-storage item-sr6-worker-storage1">
+                                            <span class="blind">근로자</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-worker-storage item-sr6-worker-storage2">
+                                            <span class="blind">근로자</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-worker-storage item-sr6-worker-storage3">
+                                            <span class="blind">근로자</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-worker-storage item-sr6-worker-storage4">
+                                            <span class="blind">근로자</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-worker-storage item-sr6-worker-storage5">
+                                            <span class="blind">근로자</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-worker-storage item-sr6-worker-storage6">
+                                            <span class="blind">근로자</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>일러스트</h2>
+                <div class="sr-component-box">
+                    <div class="sr-component-item">
+                        <h4>도둑</h4>
+                        <div class="sr-component-item-inner">
+                            <div style="padding: 20px; background-color: rgba(0, 0, 0, 0.1)">
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-criminal-storage item-sr6-criminal-storage1">
+                                            <span class="blind">도둑</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-criminal-storage item-sr6-criminal-storage2">
+                                            <span class="blind">도둑</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-criminal-storage item-sr6-criminal-storage3">
+                                            <span class="blind">도둑</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>일러스트</h2>
+                <div class="sr-component-box">
+                    <div class="sr-component-item">
+                        <h4>아이템</h4>
+                        <div class="sr-component-item-inner">
+                            <div style="padding: 20px; background-color: rgba(0, 0, 0, 0.1)">
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-circle-item item-sr6-circle-item1">
+                                            <span class="blind">얼굴 리더기</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-circle-item item-sr6-circle-item2">
+                                            <span class="blind">움직임 감지기</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-circle-item item-sr6-circle-item3">
+                                            <span class="blind">문열림 감지기</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-circle-item item-sr6-circle-item4">
+                                            <span class="blind">종합안심플랜</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-circle-item item-sr6-circle-item5">
+                                            <span class="blind">컨트롤러</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!-- 요소 -->
+                                <em class="worker-sr6-storage-wrap">
+                                    <span class="worker-sr6-storage-inner">
+                                        <i class="item-sr6-circle-item item-sr6-circle-item6">
+                                            <span class="blind">적외선 감지기</span>
+                                        </i>
+                                    </span>
+                                </em>
+                                <!--// 요소 -->
+
+                                <!--// 출동경비 서비스의 구성은? -->
+                                <div class="showroom-step2-icon-layer-wrap">
+                                    <div class="showroom-step2-icon-layer-inner">
+                                        <div class="sr-circle-item sr-circle-item1">
+                                            <div class="sr-circle-item-inner">
+                                                <i class="img-secom-circle-item img-secom-circle-item1">
+                                                    <span class="blind">얼굴 리더기</span>
+                                                </i>
+                                                <div data-tooltip-wrap>
+                                                    <div class="sr-float-tooltip" data-tooltip>
+                                                        <button data-tooltip-title>
+                                                            <p>얼굴 리더기</p>
+                                                        </button>
+                                                        <div data-tooltip-text>
+                                                            <p>출동경비 설정 및 출입관리</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sr-circle-item sr-circle-item2">
+                                            <div class="sr-circle-item-inner">
+                                                <i class="img-secom-circle-item img-secom-circle-item2">
+                                                    <span class="blind">움직임 감지기</span>
+                                                </i>
+                                                <div data-tooltip-wrap>
+                                                    <div class="sr-float-tooltip" data-tooltip>
+                                                        <button data-tooltip-title>
+                                                            <p>움직임 감지기</p>
+                                                        </button>
+                                                        <div data-tooltip-text>
+                                                            <p>내부 무단 침입자의 움직임 감지</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sr-circle-item sr-circle-item3">
+                                            <div class="sr-circle-item-inner">
+                                                <i class="img-secom-circle-item img-secom-circle-item3">
+                                                    <span class="blind">문열림 감지기</span>
+                                                </i>
+                                                <div data-tooltip-wrap>
+                                                    <div class="sr-float-tooltip" data-tooltip>
+                                                        <button data-tooltip-title>
+                                                            <p>문열림 감지기</p>
+                                                        </button>
+                                                        <div data-tooltip-text>
+                                                            <p>출입문 강제 문열림 감지</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sr-circle-item sr-circle-item4">
+                                            <div class="sr-circle-item-inner">
+                                                <i class="img-secom-circle-item img-secom-circle-item4">
+                                                    <span class="blind">종합안심플랜</span>
+                                                </i>
+                                                <div data-tooltip-wrap>
+                                                    <div class="sr-float-tooltip" data-tooltip>
+                                                        <button data-tooltip-title>
+                                                            <p>종합안심플랜</p>
+                                                        </button>
+                                                        <div data-tooltip-text>
+                                                            <p>도난, 집기 파손, 화재 등 사고 발생 시 배상/보상</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sr-circle-item sr-circle-item5">
+                                            <div class="sr-circle-item-inner">
+                                                <i class="img-secom-circle-item img-secom-circle-item5">
+                                                    <span class="blind">열선 감지기</span>
+                                                </i>
+                                                <div data-tooltip-wrap>
+                                                    <div class="sr-float-tooltip" data-tooltip>
+                                                        <button data-tooltip-title>
+                                                            <p>열선 감지기</p>
+                                                        </button>
+                                                        <div data-tooltip-text>
+                                                            <p>움직임 감지기 내부 무단 침입자의 움직임 감지</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sr-circle-item sr-circle-item6">
+                                            <div class="sr-circle-item-inner">
+                                                <i class="img-secom-circle-item img-secom-circle-item6">
+                                                    <span class="blind">컨트롤러</span>
+                                                </i>
+                                                <div data-tooltip-wrap>
+                                                    <div class="sr-float-tooltip" data-tooltip>
+                                                        <button data-tooltip-title>
+                                                            <p>컨트롤러</p>
+                                                        </button>
+                                                        <div data-tooltip-text>
+                                                            <p>
+                                                                출동경비/출입관리<br />
+                                                                이상신호 관제센터 전송
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="sr-circle-item sr-circle-item7">
+                                            <div class="sr-circle-item-inner">
+                                                <i class="img-secom-circle-item img-secom-circle-item7">
+                                                    <span class="blind">적외선 감지기</span>
+                                                </i>
+                                                <div data-tooltip-wrap>
+                                                    <div class="sr-float-tooltip" data-tooltip>
+                                                        <button data-tooltip-title>
+                                                            <p>적외선 감지기</p>
+                                                        </button>
+                                                        <div data-tooltip-text>
+                                                            <p>외부 통로 침입 감지</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// 충동경비 서비스의 구성은? -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomComm.js"></script>
+
+        <!--// 쇼룸 공통 컴포넌트 -->
+    </body>
+</html>

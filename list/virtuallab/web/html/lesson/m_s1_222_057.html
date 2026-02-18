@@ -1,0 +1,2045 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>생물 분류하기</title>
+        <!-- 공통 css -->
+        <link type="text/css" href="../../css/common.css?t=1739422595856" rel="stylesheet" />
+        <!-- 주제별 css -->
+        <link type="text/css" href="../../css/page/m_s1_222_057.css?t=1739422595856" rel="stylesheet" />
+        <link type="text/css" href="../../css/swiper-bundle.min.css?t=1739422595856" rel="stylesheet" />
+        <script src="../../js/lib/swiper.min.js?t=1739422595856"></script>
+        <script src="../../js/lib/jquery.min.js?t=1739422595856"></script>
+        <script src="../../js/lib/jquery-ui.min.js?t=1739422595856"></script>
+        <script src="../../js/lib/jquery.ui.touch-punch.min.js?t=1739422595856"></script>
+        <script src="../../js/lib/video-js.js?t=1739422595856"></script>
+        <script src="../../js/lib/video.js?t=1739422595856"></script>
+        <script src="../../js/lib/gsap.min.js?t=1739422595856"></script>
+        <script src="../../js/lib/p5.min.js?t=1739422595856"></script>
+        <script src="../../js/common.js?t=1739422595856"></script>
+        <script src="../../js/m_s1_222_057.js?t=1739422595856"></script>
+    </head>
+    <body>
+        <!-- Wrap 영역 -->
+        <div id="wrap" class="wrap wrap-new">
+            <!-- View 영역 -->
+            <div class="wrapper-set-view m_s1_222_057">
+                <!-- page-view1 : (페이지) 인트로 : page-view1 intro에 인접클래스 active가 있으면 보여짐 제거시 사라짐 -->
+                <div class="page-view page-view1 intro active">
+                    <!-- intro header area : 인트로 헤더영역 -->
+                    <div class="header-area header-area-intro">
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// intro header area : 인트로 헤더영역 -->
+
+                    <!-- Common Element : 인트로 과목명 -->
+                    <div class="background-area">
+                        <div class="background-area-inner">
+                            <em class="object-cockle-hat">
+                                <span class="blind">꼬깔모자 요소</span>
+                            </em>
+                            <h2 class="intro-title-text">
+                                <span class="text-color-fff000">생물</span>
+                                분류하기
+                            </h2>
+                            <ul class="ruler">
+                                <li class="begin">
+                                    <span class="number">0</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">10</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">20</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">30</span>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li class="begin">
+                                    <span class="number">40</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 과목명 -->
+
+                    <!-- Common Element : 인트로 메인으로 시작 버튼 -->
+                    <div class="button-intro-area">
+                        <div class="button-start-area">
+                            <button class="button-intro-main-start">
+                                <em class="text-box">
+                                    <span>활동 시작</span>
+                                </em>
+                                <em class="arrow-box">
+                                    <span class="text blind">-&gt;</span>
+                                    <i class="icon"></i>
+                                </em>
+                            </button>
+                        </div>
+                    </div>
+                    <!--// Common Element : 인트로 메인으로 시작 버튼 -->
+
+                    <!-- Common Element : 인트로 캐릭터 -->
+                    <div class="intro-character1-layer">
+                        <span class="blind">인트로 캐릭터</span>
+                        <ul id="" class="interaction-character-list">
+                            <li class="motion-1">
+                                <img src="../../images/common/character1/character1-motion1.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// Common Element : 인트로 캐릭터 -->
+                </div>
+                <!--// page-view1 : (페이지) 인트로 -->
+
+                <!-- page-view2 : (모달) 활동목표 : page-view2에 인접클래스 active가 있으면 보여짐 제거시 사라짐 님 -->
+                <div class="page-view page-view2 modal-layer modal-layer-activity-goals">
+                    <div class="modal-layer-box aim-madal">
+                        <button class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <h4 class="title-round">
+                            <span>활동 목표</span>
+                        </h4>
+                        <ul class="bullet-list">
+                            <li>
+                                여러 가지 생물을 생물의 고유한<br />
+                                특징을 기준으로 분류할 수 있다.
+                            </li>
+                        </ul>
+                        <div class="character-guide m-character-activity-goals">
+                            <span class="blind">중등 활동목표</span>
+                        </div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view2 : (모달) 활동목표 -->
+
+                <!-- page-view3 : (페이지) 컨텐츠 페이지 -->
+                <div class="page-view page-view3 content-area">
+                    <!-- Content Header Area : 컨텐츠 헤더영역 -->
+                    <div class="header-area header-area-content">
+                        <!-- Common Title : 타이틀 -->
+                        <div class="header-title">
+                            <p>생물 분류하기</p>
+                        </div>
+                        <!--// Common Title : 타이틀 -->
+                        <!-- Common Element : 탑버튼 -->
+                        <div class="top-button right-location">
+                            <button class="button-bubble click-sound">
+                                <span class="blind">음성</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-home">
+                                <span class="blind">홈</span>
+                                <i class="icon"></i>
+                            </button>
+                            <button class="button-bubble click-close">
+                                <span class="blind">닫기</span>
+                                <i class="icon"></i>
+                            </button>
+                        </div>
+                        <!--// Common Element : 탑버튼 -->
+                    </div>
+                    <!--// Content Header Area : 컨텐츠 헤더영역 -->
+
+                    <!-- guide-first-layer-wrap 진앱 가이드1 : 인접클래스 active 시 활성화 -->
+                    <div class="guide-first-layer-wrap guide-first-layer-wrap1">
+                        <div class="guide-first-layer-inner">
+                            <div class="content-tab-header-guide">
+                                <h5 class="title-content-tab-header-bullet">
+                                    <span class="text">분류 기준</span>
+                                </h5>
+                                <!-- 탭 content-tab-header-item 인접클래스 active 추가시 활성화 -->
+                                <ul class="content-tab-header-list">
+                                    <li class="content-tab-header-item content-tab-header-item1">
+                                        <span
+                                            class="content-tab-header-link"
+                                            title="탭메뉴 보기"
+                                            aria-label="탭메뉴 보기"
+                                        >
+                                            <em class="text-wrap">
+                                                <span class="text">광합성</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                    <li class="content-tab-header-item content-tab-header-item2">
+                                        <span
+                                            class="content-tab-header-link"
+                                            title="탭메뉴 보기"
+                                            aria-label="탭메뉴 보기"
+                                        >
+                                            <em class="text-wrap">
+                                                <span class="text">세포벽</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                    <li class="content-tab-header-item content-tab-header-item3">
+                                        <span
+                                            class="content-tab-header-link"
+                                            title="탭메뉴 보기"
+                                            aria-label="탭메뉴 보기"
+                                        >
+                                            <em class="text-wrap">
+                                                <span class="text">운동성</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="content-drag-list-wrap">
+                                <div class="content-drag-list-inner">
+                                    <div class="content-drag-list-first active">
+                                        <div class="content-drag-item-wrap active">
+                                            <div class="content-drag-item-inner">
+                                                <div class="content-drag-item-list">
+                                                    <div class="content-drag-item-item content-drag-item-item1">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item1">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item2">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">명아주</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item2">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">명아주</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item3">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">고래</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item3">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">고래</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item4">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">벚나무</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item4">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">벚나무</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item5">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개구리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item5">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개구리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item6">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">보리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item6">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">보리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item7">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">강아지풀</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item7">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">강아지풀</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item8">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">붕어</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item8">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">붕어</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                </div>
+                                                <div class="content-bottom-round-box-wrap">
+                                                    <div class="content-bottom-round-box-inner">
+                                                        <div class="decide-wrap">
+                                                            <div class="title-content-bottom-bullet">
+                                                                <div class="title-content-bottom-bullet-inner">
+                                                                    <span class="title">분류 기준</span>
+                                                                    <span class="colon">:</span>
+                                                                    <span class="text-view"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-line-wrap">
+                                                                <div class="content-line-inner">
+                                                                    <em class="line-wrap line-wrap1">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                    <em class="line-wrap line-wrap2">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                </div>
+                                                            </div>
+                                                            <div class="decide-box-wrap">
+                                                                <div class="decide-box-item decide-box-item1">
+                                                                    <em class="title-decide-box title-decide-box1">
+                                                                        <span class="text">예</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                                <div class="decide-box-item decide-box-item2">
+                                                                    <em class="title-decide-box title-decide-box2">
+                                                                        <span class="text">아니요</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="complate-button-wrap">
+                                                                <button class="button-check">
+                                                                    <span class="text">확인</span>
+                                                                </button>
+                                                                <button class="button-again">
+                                                                    <span class="text">다시 하기</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- guide-balloon-tip-wrap1 인접클래스 active 활성화 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap1">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text1 active"> ① 분류 기준을 선택합니다. </span>
+                                    </div>
+                                    <div class="img-background-area img-background-middle">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- gesture-finger 인접클래스 active 활성화 -->
+                            <i class="gesture-finger gesture-guide-finger1">
+                                <span class="blind">손모양 제스처</span>
+                            </i>
+                            <div class="dimmed"></div>
+                        </div>
+                    </div>
+
+                    <!-- guide-first-layer-wrap 진앱 가이드2 : 인접클래스 active 시 활성화 -->
+                    <div class="guide-first-layer-wrap guide-first-layer-wrap2">
+                        <div class="guide-first-layer-inner">
+                            <div class="content-drag-list-wrap">
+                                <div class="content-drag-list-inner">
+                                    <div class="content-drag-list-first active">
+                                        <div class="content-drag-item-wrap active">
+                                            <div class="content-drag-item-inner">
+                                                <div class="content-drag-item-list">
+                                                    <div class="content-drag-item-item content-drag-item-item1">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item1">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item2">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">명아주</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item2">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">명아주</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item3">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">고래</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item3">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">고래</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item4">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">벚나무</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item4">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">벚나무</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item5">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개구리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item5">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개구리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item6">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">보리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item6">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">보리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item7">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">강아지풀</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item7">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">강아지풀</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item8">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">붕어</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item8">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">붕어</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                </div>
+                                                <div class="content-bottom-round-box-wrap">
+                                                    <div class="content-bottom-round-box-inner">
+                                                        <div class="decide-wrap">
+                                                            <div class="title-content-bottom-bullet">
+                                                                <div class="title-content-bottom-bullet-inner">
+                                                                    <span class="title">분류 기준</span>
+                                                                    <span class="colon">:</span>
+                                                                    <span class="text-view"
+                                                                        >광합성을 할 수 있는가?</span
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-line-wrap">
+                                                                <div class="content-line-inner">
+                                                                    <em class="line-wrap line-wrap1">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                    <em class="line-wrap line-wrap2">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                </div>
+                                                            </div>
+                                                            <div class="decide-box-wrap">
+                                                                <div class="decide-box-item decide-box-item1">
+                                                                    <em class="title-decide-box title-decide-box1">
+                                                                        <span class="text">예</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                                <div class="decide-box-item decide-box-item2">
+                                                                    <em class="title-decide-box title-decide-box2">
+                                                                        <span class="text">아니요</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="complate-button-wrap">
+                                                                <button class="button-check">
+                                                                    <span class="text">확인</span>
+                                                                </button>
+                                                                <button class="button-again">
+                                                                    <span class="text">다시 하기</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-drag-item-list content-drag-item-list-guide">
+                                <div class="content-drag-item-item content-drag-item-item1">
+                                    <h5 class="title-content-drag">
+                                        <span class="text">개</span>
+                                    </h5>
+                                </div>
+                                <div class="content-drag-item-item content-drag-item-item2">
+                                    <h5 class="title-content-drag">
+                                        <span class="text">명아주</span>
+                                    </h5>
+                                </div>
+                                <div class="content-drag-item-item content-drag-item-item3">
+                                    <h5 class="title-content-drag">
+                                        <span class="text">고래</span>
+                                    </h5>
+                                </div>
+                                <div class="content-drag-item-item content-drag-item-item4">
+                                    <h5 class="title-content-drag">
+                                        <span class="text">벚나무</span>
+                                    </h5>
+                                </div>
+                                <div class="content-drag-item-item content-drag-item-item5">
+                                    <h5 class="title-content-drag">
+                                        <span class="text">개구리</span>
+                                    </h5>
+                                </div>
+                                <div class="content-drag-item-item content-drag-item-item6">
+                                    <h5 class="title-content-drag">
+                                        <span class="text">보리</span>
+                                    </h5>
+                                </div>
+                                <div class="content-drag-item-item content-drag-item-item7">
+                                    <h5 class="title-content-drag">
+                                        <span class="text">강아지풀</span>
+                                    </h5>
+                                </div>
+                                <div class="content-drag-item-item content-drag-item-item8">
+                                    <h5 class="title-content-drag">
+                                        <span class="text">붕어</span>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="content-drag-guide-list">
+                                <em class="element-drag-item element-drag-item1">
+                                    <em class="element-drag-item-inner">
+                                        <span class="round-text">개</span>
+                                    </em>
+                                </em>
+                                <em class="element-drag-item element-drag-item2">
+                                    <em class="element-drag-item-inner">
+                                        <span class="round-text">명아주</span>
+                                    </em>
+                                </em>
+                                <em class="element-drag-item element-drag-item3">
+                                    <em class="element-drag-item-inner">
+                                        <span class="round-text">고래</span>
+                                    </em>
+                                </em>
+                                <em class="element-drag-item element-drag-item4">
+                                    <em class="element-drag-item-inner">
+                                        <span class="round-text">벚나무</span>
+                                    </em>
+                                </em>
+                                <em class="element-drag-item element-drag-item5">
+                                    <em class="element-drag-item-inner">
+                                        <span class="round-text">개구리</span>
+                                    </em>
+                                </em>
+                                <em class="element-drag-item element-drag-item6">
+                                    <em class="element-drag-item-inner">
+                                        <span class="round-text">보리</span>
+                                    </em>
+                                </em>
+                                <em class="element-drag-item element-drag-item7">
+                                    <em class="element-drag-item-inner">
+                                        <span class="round-text">강아지풀</span>
+                                    </em>
+                                </em>
+                                <em class="element-drag-item element-drag-item8">
+                                    <em class="element-drag-item-inner">
+                                        <span class="round-text">붕어</span>
+                                    </em>
+                                </em>
+                            </div>
+
+                            <div class="decide-box-wrap decide-box-wrap-guide">
+                                <div class="decide-box-item decide-box-item1">
+                                    <em class="title-decide-box title-decide-box1">
+                                        <span class="text">예</span>
+                                    </em>
+                                    <div class="decide-complate"></div>
+                                </div>
+                                <div class="decide-box-item decide-box-item2">
+                                    <em class="title-decide-box title-decide-box2">
+                                        <span class="text">아니요</span>
+                                    </em>
+                                    <div class="decide-complate"></div>
+                                </div>
+                            </div>
+
+                            <!-- guide-balloon-tip-wrap1 인접클래스 active 활성화 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap2">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text1 active">
+                                            ② 생물을 드래그하여 원하는 위치에 가져다 놓습니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-middle">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- gesture-finger 인접클래스 active 활성화 -->
+                            <i class="gesture-finger gesture-guide-finger3">
+                                <span class="blind">손모양 제스처</span>
+                            </i>
+
+                            <div class="dimmed"></div>
+                        </div>
+                    </div>
+
+                    <!-- guide-first-layer-wrap 진앱 가이드3 : 인접클래스 active 시 활성화 -->
+                    <div class="guide-first-layer-wrap guide-first-layer-wrap3">
+                        <div class="guide-first-layer-inner">
+                            <div class="content-drag-list-wrap">
+                                <div class="content-drag-list-inner">
+                                    <div class="content-drag-list-first active">
+                                        <div class="content-drag-item-wrap active">
+                                            <div class="content-drag-item-inner">
+                                                <div class="content-drag-item-list">
+                                                    <div class="content-drag-item-item content-drag-item-item1">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item1">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item2">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">명아주</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item2">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">명아주</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item3">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">고래</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item3">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">고래</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item4">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">벚나무</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item4">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">벚나무</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item5">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개구리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item5">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개구리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item6">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">보리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item6">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">보리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item7">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">강아지풀</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item7">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">강아지풀</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item8">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">붕어</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item8">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">붕어</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                </div>
+                                                <div class="content-bottom-round-box-wrap">
+                                                    <div class="content-bottom-round-box-inner">
+                                                        <div class="decide-wrap">
+                                                            <div class="title-content-bottom-bullet">
+                                                                <div class="title-content-bottom-bullet-inner">
+                                                                    <span class="title">분류 기준</span>
+                                                                    <span class="colon">:</span>
+                                                                    <span class="text-view"
+                                                                        >광합성을 할 수 있는가?</span
+                                                                    >
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-line-wrap">
+                                                                <div class="content-line-inner">
+                                                                    <em class="line-wrap line-wrap1">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                    <em class="line-wrap line-wrap2">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                </div>
+                                                            </div>
+                                                            <div class="decide-box-wrap">
+                                                                <div class="decide-box-item decide-box-item1">
+                                                                    <em class="title-decide-box title-decide-box1">
+                                                                        <span class="text">예</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                                <div class="decide-box-item decide-box-item2">
+                                                                    <em class="title-decide-box title-decide-box2">
+                                                                        <span class="text">아니요</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="complate-button-wrap">
+                                                                <button class="button-check">
+                                                                    <span class="text">확인</span>
+                                                                </button>
+                                                                <button class="button-again">
+                                                                    <span class="text">다시 하기</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- guide-balloon-tip-wrap1 인접클래스 active 활성화 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap3">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text1 active">
+                                            ③ 확인 버튼을 눌러 분류 결과를 확인합니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-middle">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="complate-button-wrap guide">
+                                <button class="button-check active">
+                                    <span class="text">확인</span>
+                                </button>
+                            </div>
+
+                            <!-- gesture-finger 인접클래스 active 활성화 -->
+                            <i class="gesture-finger gesture-guide-finger3">
+                                <span class="blind">손모양 제스처</span>
+                            </i>
+                            <div class="dimmed"></div>
+                        </div>
+                    </div>
+
+                    <!-- guide-first-layer-wrap 진앱 가이드1 : 인접클래스 active 시 활성화 -->
+                    <div class="guide-first-layer-wrap guide-first-layer-wrap4">
+                        <div class="guide-first-layer-inner">
+                            <div class="content-tab-header-guide">
+                                <h5 class="title-content-tab-header-bullet">
+                                    <span class="text">분류 기준</span>
+                                </h5>
+                                <!-- 탭 content-tab-header-item 인접클래스 active 추가시 활성화 -->
+                                <ul class="content-tab-header-list">
+                                    <li class="content-tab-header-item content-tab-header-item1">
+                                        <span
+                                            class="content-tab-header-link"
+                                            title="탭메뉴 보기"
+                                            aria-label="탭메뉴 보기"
+                                        >
+                                            <em class="text-wrap">
+                                                <span class="text">광합성</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                    <li class="content-tab-header-item content-tab-header-item2">
+                                        <span
+                                            class="content-tab-header-link"
+                                            title="탭메뉴 보기"
+                                            aria-label="탭메뉴 보기"
+                                        >
+                                            <em class="text-wrap">
+                                                <span class="text">세포벽</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                    <li class="content-tab-header-item content-tab-header-item3">
+                                        <span
+                                            class="content-tab-header-link"
+                                            title="탭메뉴 보기"
+                                            aria-label="탭메뉴 보기"
+                                        >
+                                            <em class="text-wrap">
+                                                <span class="text">운동성</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="content-drag-list-wrap">
+                                <div class="content-drag-list-inner">
+                                    <div class="content-drag-list-first active">
+                                        <div class="content-drag-item-wrap active">
+                                            <div class="content-drag-item-inner">
+                                                <div class="content-drag-item-list">
+                                                    <div class="content-drag-item-item content-drag-item-item1">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item1">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item2">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">명아주</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item2">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">명아주</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item3">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">고래</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item3">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">고래</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item4">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">벚나무</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item4">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">벚나무</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item5">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개구리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item5">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개구리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item6">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">보리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item6">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">보리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item7">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">강아지풀</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item7">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">강아지풀</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item8">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">붕어</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item8">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">붕어</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                </div>
+                                                <div class="content-bottom-round-box-wrap">
+                                                    <div class="content-bottom-round-box-inner">
+                                                        <div class="decide-wrap">
+                                                            <div class="title-content-bottom-bullet">
+                                                                <div class="title-content-bottom-bullet-inner">
+                                                                    <span class="title">분류 기준</span>
+                                                                    <span class="colon">:</span>
+                                                                    <span class="text-view"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-line-wrap">
+                                                                <div class="content-line-inner">
+                                                                    <em class="line-wrap line-wrap1">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                    <em class="line-wrap line-wrap2">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                </div>
+                                                            </div>
+                                                            <div class="decide-box-wrap">
+                                                                <div class="decide-box-item decide-box-item1">
+                                                                    <em class="title-decide-box title-decide-box1">
+                                                                        <span class="text">예</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                                <div class="decide-box-item decide-box-item2">
+                                                                    <em class="title-decide-box title-decide-box2">
+                                                                        <span class="text">아니요</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="complate-button-wrap">
+                                                                <button class="button-check">
+                                                                    <span class="text">확인</span>
+                                                                </button>
+                                                                <button class="button-again">
+                                                                    <span class="text">다시 하기</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- guide-balloon-tip-wrap4 인접클래스 active 활성화 -->
+                            <div class="guide-balloon-tip-wrap guide-balloon-tip-wrap4">
+                                <div class="bubble-box">
+                                    <div class="text-box">
+                                        <!-- bubble-text에 인접클래스 active 추가시 텍스트 보여짐 -->
+                                        <span class="bubble-text bubble-text1 active"
+                                            >④ 분류 기준을 다르게 하면서 생물을 분류합니다.
+                                        </span>
+                                    </div>
+                                    <div class="img-background-area img-background-middle">
+                                        <span class="blind">캐릭터</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- gesture-finger 인접클래스 active 활성화 -->
+                            <i class="gesture-finger gesture-guide-finger4">
+                                <span class="blind">손모양 제스처</span>
+                            </i>
+                            <div class="dimmed"></div>
+                        </div>
+                    </div>
+
+                    <!-- 씬 영역 : 씬 영역1 -->
+                    <div class="scene scene-layer-area1">
+                        <div class="scene-layer scene-layer1">
+                            <div class="content-tab-header-wrap">
+                                <div class="content-tab-header-inner">
+                                    <h5 class="title-content-tab-header-bullet">
+                                        <span class="text">분류 기준</span>
+                                    </h5>
+                                    <!-- 탭 content-tab-header-item 인접클래스 active 추가시 활성화 -->
+                                    <ul class="content-tab-header-list">
+                                        <li class="content-tab-header-item content-tab-header-item1">
+                                            <a
+                                                href="javascript:void(0)"
+                                                class="content-tab-header-link content-tab-header-link1"
+                                                title="탭메뉴 보기"
+                                                aria-label="탭메뉴 보기"
+                                            >
+                                                <em class="text-wrap">
+                                                    <span class="text">광합성</span>
+                                                </em>
+                                            </a>
+                                        </li>
+                                        <li class="content-tab-header-item content-tab-header-item2">
+                                            <a
+                                                href="javascript:void(0)"
+                                                class="content-tab-header-link content-tab-header-link2"
+                                                title="탭메뉴 보기"
+                                                aria-label="탭메뉴 보기"
+                                            >
+                                                <em class="text-wrap">
+                                                    <span class="text">세포벽</span>
+                                                </em>
+                                            </a>
+                                        </li>
+                                        <li class="content-tab-header-item content-tab-header-item3">
+                                            <a
+                                                href="javascript:void(0)"
+                                                class="content-tab-header-link content-tab-header-link3"
+                                                title="탭메뉴 보기"
+                                                aria-label="탭메뉴 보기"
+                                            >
+                                                <em class="text-wrap">
+                                                    <span class="text">운동성</span>
+                                                </em>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="content-drag-list-wrap content-drag-list-wrap-controll">
+                                <div class="content-drag-list-inner">
+                                    <!-- content-drag-item-wrap : 인접클래스 active 추가시 활성화-->
+                                    <ul class="content-drag-list">
+                                        <li class="content-drag-item-wrap content-drag-item-wrap0 active">
+                                            <div class="content-drag-item-inner">
+                                                <div class="content-drag-item-list content-drag-item-list-bg">
+                                                    <div class="content-drag-item-item content-drag-item-item1">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item2">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">명아주</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item3">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">고래</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item4">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">벚나무</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item5">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개구리</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item6">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">보리</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item7">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">강아지풀</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item8">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">붕어</span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="content-drag-item-list content-drag-item-ex-controll">
+                                                    <div class="content-drag-item-item content-drag-item-item1">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item1">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item2">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">명아주</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item2">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">명아주</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item3">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">고래</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item3">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">고래</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item4">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">벚나무</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item4">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">벚나무</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item5">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개구리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item5">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개구리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item6">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">보리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item6">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">보리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item7">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">강아지풀</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item7">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">강아지풀</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item8">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">붕어</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item8">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">붕어</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                </div>
+                                                <div class="content-bottom-round-box-wrap">
+                                                    <div class="content-bottom-round-box-inner">
+                                                        <div class="decide-wrap">
+                                                            <div class="title-content-bottom-bullet">
+                                                                <div class="title-content-bottom-bullet-inner">
+                                                                    <span class="title">분류 기준</span>
+                                                                    <span class="colon">:</span>
+                                                                    <span class="text-view text-view1">
+                                                                        광합성을 할 수 있는가?
+                                                                    </span>
+                                                                    <span class="text-view text-view2">
+                                                                        세포벽이 있는가?
+                                                                    </span>
+                                                                    <span class="text-view text-view3">
+                                                                        운동 기관이 있어 이동할 수 있는가?
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-line-wrap">
+                                                                <div class="content-line-inner">
+                                                                    <em class="line-wrap line-wrap1">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                    <em class="line-wrap line-wrap2">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                </div>
+                                                            </div>
+                                                            <div class="decide-box-wrap">
+                                                                <div class="decide-box-item decide-box-item1">
+                                                                    <em class="title-decide-box title-decide-box1">
+                                                                        <span class="text">예</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                                <div class="decide-box-item decide-box-item2">
+                                                                    <em class="title-decide-box title-decide-box2">
+                                                                        <span class="text">아니요</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="complate-button-wrap">
+                                                                <button class="button-check">
+                                                                    <span class="text">확인</span>
+                                                                </button>
+                                                                <button class="button-again">
+                                                                    <span class="text">다시 하기</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="content-drag-item-wrap content-drag-item-wrap1">
+                                            <div class="content-drag-item-inner">
+                                                <div class="content-drag-item-list content-drag-item-list-bg">
+                                                    <div class="content-drag-item-item content-drag-item-item1">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item2">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">명아주</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item3">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">고래</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item4">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">벚나무</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item5">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개구리</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item6">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">보리</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item7">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">강아지풀</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item8">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">붕어</span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="content-drag-item-list content-drag-item-ex-controll">
+                                                    <div class="content-drag-item-item content-drag-item-item1">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item1">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item2">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">명아주</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item2">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">명아주</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item3">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">고래</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item3">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">고래</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item4">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">벚나무</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item4">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">벚나무</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item5">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개구리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item5">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개구리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item6">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">보리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item6">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">보리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item7">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">강아지풀</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item7">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">강아지풀</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item8">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">붕어</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item8">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">붕어</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                </div>
+                                                <div class="content-bottom-round-box-wrap">
+                                                    <div class="content-bottom-round-box-inner">
+                                                        <div class="decide-wrap">
+                                                            <div class="title-content-bottom-bullet">
+                                                                <div class="title-content-bottom-bullet-inner">
+                                                                    <span class="title">분류 기준</span>
+                                                                    <span class="colon">:</span>
+                                                                    <span class="text-view text-view1">
+                                                                        광합성을 할 수 있는가?
+                                                                    </span>
+                                                                    <span class="text-view text-view2">
+                                                                        세포벽이 있는가?
+                                                                    </span>
+                                                                    <span class="text-view text-view3">
+                                                                        운동 기관이 있어 이동할 수 있는가?
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-line-wrap">
+                                                                <div class="content-line-inner">
+                                                                    <em class="line-wrap line-wrap1">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                    <em class="line-wrap line-wrap2">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                </div>
+                                                            </div>
+                                                            <div class="decide-box-wrap">
+                                                                <div class="decide-box-item decide-box-item1">
+                                                                    <em class="title-decide-box title-decide-box1">
+                                                                        <span class="text">예</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                                <div class="decide-box-item decide-box-item2">
+                                                                    <em class="title-decide-box title-decide-box2">
+                                                                        <span class="text">아니요</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="complate-button-wrap">
+                                                                <button class="button-check">
+                                                                    <span class="text">확인</span>
+                                                                </button>
+                                                                <button class="button-again">
+                                                                    <span class="text">다시 하기</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="content-drag-item-wrap content-drag-item-wrap2">
+                                            <div class="content-drag-item-inner">
+                                                <div class="content-drag-item-list content-drag-item-list-bg">
+                                                    <div class="content-drag-item-item content-drag-item-item1">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item2">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">명아주</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item3">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">고래</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item4">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">벚나무</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item5">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개구리</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item6">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">보리</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item7">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">강아지풀</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item8">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">붕어</span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="content-drag-item-list content-drag-item-ex-controll">
+                                                    <div class="content-drag-item-item content-drag-item-item1">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item1">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item2">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">명아주</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item2">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">명아주</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item3">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">고래</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item3">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">고래</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item4">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">벚나무</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item4">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">벚나무</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item5">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개구리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item5">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개구리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item6">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">보리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item6">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">보리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item7">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">강아지풀</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item7">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">강아지풀</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item8">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">붕어</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item8">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">붕어</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                </div>
+                                                <div class="content-bottom-round-box-wrap">
+                                                    <div class="content-bottom-round-box-inner">
+                                                        <div class="decide-wrap">
+                                                            <div class="title-content-bottom-bullet">
+                                                                <div class="title-content-bottom-bullet-inner">
+                                                                    <span class="title">분류 기준</span>
+                                                                    <span class="colon">:</span>
+                                                                    <span class="text-view text-view1">
+                                                                        광합성을 할 수 있는가?
+                                                                    </span>
+                                                                    <span class="text-view text-view2">
+                                                                        세포벽이 있는가?
+                                                                    </span>
+                                                                    <span class="text-view text-view3">
+                                                                        운동 기관이 있어 이동할 수 있는가?
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-line-wrap">
+                                                                <div class="content-line-inner">
+                                                                    <em class="line-wrap line-wrap1">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                    <em class="line-wrap line-wrap2">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                </div>
+                                                            </div>
+                                                            <div class="decide-box-wrap">
+                                                                <div class="decide-box-item decide-box-item1">
+                                                                    <em class="title-decide-box title-decide-box1">
+                                                                        <span class="text">예</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                                <div class="decide-box-item decide-box-item2">
+                                                                    <em class="title-decide-box title-decide-box2">
+                                                                        <span class="text">아니요</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="complate-button-wrap">
+                                                                <button class="button-check">
+                                                                    <span class="text">확인</span>
+                                                                </button>
+                                                                <button class="button-again">
+                                                                    <span class="text">다시 하기</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="content-drag-item-wrap content-drag-item-wrap3">
+                                            <div class="content-drag-item-inner">
+                                                <div class="content-drag-item-list content-drag-item-list-bg">
+                                                    <div class="content-drag-item-item content-drag-item-item1">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item2">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">명아주</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item3">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">고래</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item4">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">벚나무</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item5">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개구리</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item6">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">보리</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item7">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">강아지풀</span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item8">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">붕어</span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="content-drag-item-list content-drag-item-ex-controll">
+                                                    <div class="content-drag-item-item content-drag-item-item1">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item1">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item2">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">명아주</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item2">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">명아주</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item3">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">고래</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item3">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">고래</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item4">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">벚나무</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item4">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">벚나무</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item5">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">개구리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item5">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">개구리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item6">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">보리</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item6">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">보리</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item7">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">강아지풀</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item7">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">강아지풀</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                    <div class="content-drag-item-item content-drag-item-item8">
+                                                        <h5 class="title-content-drag">
+                                                            <span class="text">붕어</span>
+                                                        </h5>
+                                                        <em class="element-drag-item element-drag-item8">
+                                                            <em class="element-drag-item-inner">
+                                                                <span class="round-text">붕어</span>
+                                                            </em>
+                                                        </em>
+                                                    </div>
+                                                </div>
+                                                <div class="content-bottom-round-box-wrap">
+                                                    <div class="content-bottom-round-box-inner">
+                                                        <div class="decide-wrap">
+                                                            <div class="title-content-bottom-bullet">
+                                                                <div class="title-content-bottom-bullet-inner">
+                                                                    <span class="title">분류 기준</span>
+                                                                    <span class="colon">:</span>
+                                                                    <span class="text-view text-view1">
+                                                                        광합성을 할 수 있는가?
+                                                                    </span>
+                                                                    <span class="text-view text-view2">
+                                                                        세포벽이 있는가?
+                                                                    </span>
+                                                                    <span class="text-view text-view3">
+                                                                        운동 기관이 있어 이동할 수 있는가?
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-line-wrap">
+                                                                <div class="content-line-inner">
+                                                                    <em class="line-wrap line-wrap1">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                    <em class="line-wrap line-wrap2">
+                                                                        <em class="line-inner"></em>
+                                                                    </em>
+                                                                </div>
+                                                            </div>
+                                                            <div class="decide-box-wrap">
+                                                                <div class="decide-box-item decide-box-item1">
+                                                                    <em class="title-decide-box title-decide-box1">
+                                                                        <span class="text">예</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                                <div class="decide-box-item decide-box-item2">
+                                                                    <em class="title-decide-box title-decide-box2">
+                                                                        <span class="text">아니요</span>
+                                                                    </em>
+                                                                    <div class="decide-complate"></div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="complate-button-wrap">
+                                                                <button class="button-check">
+                                                                    <span class="text">확인</span>
+                                                                </button>
+                                                                <button class="button-again">
+                                                                    <span class="text">다시 하기</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- "확인" 활성화('button-check active') 버튼 클릭시 popup-answer-wrap 인접클래스 active 추가 -->
+                            <div class="popup-answer-wrap">
+                                <div class="popup-answer-inner">
+                                    <div class="popup-answer-box-wrap">
+                                        <div class="popup-answer-box-inner">
+                                            <h4 class="title-popup-answer">
+                                                <span class="text">정답 확인</span>
+                                            </h4>
+                                            <button
+                                                class="button-answer-popup-close"
+                                                title="팝업닫기"
+                                                aria-label="팝업닫기"
+                                            >
+                                                <span class="blind">닫기</span>
+                                            </button>
+                                            <ul class="popup-answer-list">
+                                                <li class="popup-answer-item popup-answer-item1">
+                                                    <!-- 정답 확인 : 광합성을 할 수 있는가? -->
+                                                    <div class="decide-box-wrap">
+                                                        <div class="decide-box-item decide-box-item1">
+                                                            <em class="title-decide-box title-decide-box1">
+                                                                <span class="text">예</span>
+                                                            </em>
+                                                            <div class="decide-complate">
+                                                                <em class="element-drag-item element-drag-item2">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">명아주</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item4">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">벚나무</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item6">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">보리</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item7">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">강아지풀</span>
+                                                                    </em>
+                                                                </em>
+                                                            </div>
+                                                        </div>
+                                                        <div class="decide-box-item decide-box-item2">
+                                                            <em class="title-decide-box title-decide-box2">
+                                                                <span class="text">아니요</span>
+                                                            </em>
+                                                            <div class="decide-complate">
+                                                                <em class="element-drag-item element-drag-item1">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">개</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item3">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">고래</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item5">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">개구리</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item8">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">붕어</span>
+                                                                    </em>
+                                                                </em>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="popup-answer-item popup-answer-item2">
+                                                    <!-- 정답 확인 : 세포벽이 있는가? -->
+                                                    <div class="decide-box-wrap">
+                                                        <div class="decide-box-item decide-box-item1">
+                                                            <em class="title-decide-box title-decide-box1">
+                                                                <span class="text">예</span>
+                                                            </em>
+                                                            <div class="decide-complate">
+                                                                <em class="element-drag-item element-drag-item2">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">명아주</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item4">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">벚나무</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item6">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">보리</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item7">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">강아지풀</span>
+                                                                    </em>
+                                                                </em>
+                                                            </div>
+                                                        </div>
+                                                        <div class="decide-box-item decide-box-item2">
+                                                            <em class="title-decide-box title-decide-box2">
+                                                                <span class="text">아니요</span>
+                                                            </em>
+                                                            <div class="decide-complate">
+                                                                <em class="element-drag-item element-drag-item1">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">개</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item3">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">고래</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item5">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">개구리</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item8">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">붕어</span>
+                                                                    </em>
+                                                                </em>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="popup-answer-item popup-answer-item3">
+                                                    <!-- 정답 확인 : 운동 기관이 있어 이동할 수 있는가? -->
+                                                    <div class="decide-box-wrap">
+                                                        <div class="decide-box-item decide-box-item1">
+                                                            <em class="title-decide-box title-decide-box1">
+                                                                <span class="text">예</span>
+                                                            </em>
+                                                            <div class="decide-complate">
+                                                                <em class="element-drag-item element-drag-item1">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">개</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item3">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">고래</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item5">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">개구리</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item8">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">붕어</span>
+                                                                    </em>
+                                                                </em>
+                                                            </div>
+                                                        </div>
+                                                        <div class="decide-box-item decide-box-item2">
+                                                            <em class="title-decide-box title-decide-box2">
+                                                                <span class="text">아니요</span>
+                                                            </em>
+                                                            <div class="decide-complate">
+                                                                <em class="element-drag-item element-drag-item2">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">명아주</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item4">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">벚나무</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item6">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">보리</span>
+                                                                    </em>
+                                                                </em>
+                                                                <em class="element-drag-item element-drag-item7">
+                                                                    <em class="element-drag-item-inner">
+                                                                        <span class="round-text">강아지풀</span>
+                                                                    </em>
+                                                                </em>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 씬 영역 : 씬 영역1 -->
+
+                    <!-- 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                    <ul class="tab-list-basic">
+                        <li>
+                            <!-- 버튼 클릭 : button-tab 인접클래스 active 추가 -->
+                            <button class="button-tab">
+                                <span>정리하기</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// 우측 정리하기 및 탭 모달 : tab-list-basic 인접클래스 active 추가시 활성화 -->
+                </div>
+                <!--// page-view3 : (페이지) 컨텐츠 페이지 -->
+
+                <!-- page-view4 : 탭 스타일 page-view4 modal-layer-activity-goals3 인접클래스 active시 활성화 -->
+                <div class="page-view page-view4 modal-layer-activity-goals3 modal-layer">
+                    <!-- modal-layer-box tab-modal 인접클래스 active 추가시 우에서 좌로 모션 -->
+                    <div class="modal-layer-box tab-modal">
+                        <h4 class="title-sign">
+                            <span class="text">정리하기</span>
+                        </h4>
+                        <button id="btnTabClose" class="button-close">
+                            <span class="blind">닫기</span>
+                        </button>
+                        <div class="text-content-area"></div>
+                    </div>
+                    <div class="dimmed"></div>
+                </div>
+                <!--// page-view4 : 탭 스타일 - 우에서 좌로 모션 -->
+            </div>
+            <!--// View 영역 -->
+        </div>
+        <!--// Wrap 영역 -->
+    </body>
+</html>

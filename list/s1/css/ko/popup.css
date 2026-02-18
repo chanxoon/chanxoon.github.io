@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/*-------------------------------------------------------------------
+    파일정의 : s1_company.css / 윈도우 팝업
+    작성날짜 : 2021-03-19 이수정
+-------------------------------------------------------------------*/
+/* new popup */
+.popup_inner {
+  position: relative;
+  background: #fff;
+  z-index: 3;
+}
+
+.popup_header {
+  padding: 40px 40px 18px;
+}
+
+.popup_header h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.popup_cont {
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.popup_cont .scroll_area {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.popup_cont .tbl_tit {
+  margin-top: 35px;
+}
+
+.popup_cont .sub_txt02 + .tbl_sub_tit {
+  margin: 40px 0 12px;
+}
+
+.popup_cont + .btn_area {
+  display: -webkit-box;
+  display: -moz-box;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 40px;
+}
+
+.popup_cont + .btn_area button {
+  width: 100%;
+}
+
+.popup_cont .txt {
+  color: #000;
+}
+
+.popup_bottom {
+  margin-top: 30px;
+  padding: 30px 40px 0;
+  border-top: 1px solid #eee;
+}
+
+.popup_bottom .input_chk + .btn_area {
+  margin-top: 30px;
+}
+
+.popup_bottom .tit {
+  font-size: 20px;
+  margin-bottom: 19px;
+  min-height: 60px;
+  text-align: center;
+}
+
+.popup_bottom .btn_area {
+  text-align: center;
+}
+
+.popup_bottom .btn_l {
+  min-width: 170px;
+  height: 55px;
+  line-height: 55px;
+}
+
+/* 계약정보 찾기 pop */
+.popup_cont .info_list {
+  width: 100%;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+.popup_cont .info_list li {
+  /* display: flex;
+     display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items:center;
+  -ms-flex-align:center;
+     justify-content: space-between; */
+  padding: 16px 12px 16px;
+}
+
+.popup_cont .info_list li + li {
+  border-top: 1px solid #dddddd;
+}
+
+.popup_cont .info_list .input_chk {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3px 0;
+}
+
+.popup_cont .info_list .input_chk i {
+  overflow: hidden;
+  display: inline-block;
+  width: 380px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.popup_cont .info_list .input_chk i:before {
+  top: 2px;
+}
+
+.popup_cont .info_list .input_chk input:checked + i:after {
+  top: 6px;
+}
+
+.popup_cont .info_list .number {
+  display: block;
+  padding: 23px 0 0 27px;
+  font-size: 14px;
+  color: #888888;
+}
+
+.popup_cont .info_list .input_chk .number {
+  padding: 0;
+  min-width: 100px;
+  text-align: right;
+}
+
+.popup_cont .scroll_area + .sub_txt02 {
+  margin: 41px 0 43px;
+}
+
+.popup_cont .info_list .nodata {
+  padding: 61px 0 61px;
+  font-size: 16px;
+  color: #666666;
+  text-align: center;
+}
+
+.popup_cont .info_list .header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f9fafb;
+}
+
+.popup_cont .info_list .header + li {
+  border-top: 0;
+}
+
+.popup_cont .info_list .header span {
+  padding-left: 30px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* 서비스 대상처 찾기 pop */
+.search_svc_tgt .board_search_bar {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.search_svc_tgt .tbl_sub_tit {
+  margin-top: 26px;
+  margin-bottom: 16px;
+}
+
+.search_svc_tgt + .btn_area {
+  margin-top: 30px;
+}
+
+/* 부가서비스 신청/해지 신청 popup */
+.apl_form_wrap h1 {
+  font-size: 28px;
+}
+
+.apl_form_wrap .btn_area button {
+  width: 300px;
+}
+
+.apl_form_wrap .btn_area.col2 button {
+  width: 200px;
+}
+
+.popup_cont .apl_form_area {
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  border: none;
+}
+
+.popup_cont .apl_form_area input[type=text]:disabled {
+  border: 1px solid #ddd;
+}
+
+.popup_cont .apl_form_area .select_box .sel,
+.popup_cont .apl_form_area input[type=text],
+.popup_cont .apl_form_area textarea {
+  font-size: 16px;
+}
+
+.popup_cont .apl_form_area .form_tit {
+  width: 110px;
+  font-size: 16px;
+}
+
+.popup_cont .apl_form_area .form_cont {
+  width: 100%;
+}
+
+.popup_cont .form_area.alg_top {
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.popup_cont .form_area.alg_top .form_tit {
+  padding-top: 15px;
+}
+
+.apl_form_area .required {
+  font-size: 14px;
+  color: #0072ce;
+  text-align: right;
+}
+
+.apl_form_area .txt_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 100px;
+  font-size: 14px;
+}
+
+/* 출력페이지 */
+.pop_print .popup_header h1 {
+  font-size: 50px;
+}
+
+.pop_print .wrap_info ul {
+  overflow: hidden;
+}
+
+.pop_print .wrap_info {
+  margin-top: 80px;
+}
+
+.pop_print .wrap_info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  float: left;
+  width: -webkit-calc(50% - 20px);
+  width: -moz-calc(50% - 20px);
+  width: calc(50% - 20px);
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.pop_print .wrap_info li:nth-child(2n) {
+  margin-left: 40px;
+}
+
+.pop_print .wrap_info li span {
+  font-size: 16px;
+  color: #333;
+}
+
+.pop_print .wrap_info li .title {
+  font-weight: bold;
+}
+
+.pop_print .wrap_info .sub_txt {
+  margin-top: -25px;
+  margin-left: 52%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.wrap_info + .wrap_tbl_mysone {
+  margin-top: 100px;
+}
+/*# sourceMappingURL=../maps/ko/popup.css.map */

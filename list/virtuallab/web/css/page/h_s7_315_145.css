@@ -1,0 +1,768 @@
+.h_s7_315_145 .intro-title-text {
+  font-size: 108px;
+  line-height: 113px;
+  letter-spacing: -2px;
+}
+.h_s7_315_145 .modal-layer .aim-madal .bullet-list {
+  width: 80%;
+  padding-left: 62px;
+}
+.h_s7_315_145 .scene-layer1 {
+  padding-top: 130px;
+}
+.h_s7_315_145 .light-slit-area {
+  position: relative;
+  width: 86%;
+  margin: 0% 7%;
+}
+.h_s7_315_145 .light-slit-area .light-area {
+  -moz-border-radius: 30px;
+       border-radius: 30px;
+  background: #d0d8e9;
+  height: 780px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+}
+.h_s7_315_145 .light-slit-area .light-area > div {
+  width: 33.3%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.h_s7_315_145 .light-slit-area .light-area #circle1 circle {
+  -webkit-animation: motion1 8.5s ease-in infinite both;
+     -moz-animation: motion1 8.5s ease-in infinite both;
+          animation: motion1 8.5s ease-in infinite both;
+  stroke-width: 0.005;
+  stroke: #999;
+  fill: transparent;
+  position: relative;
+}
+.h_s7_315_145 .light-slit-area .light-area #circle2 circle {
+  -webkit-animation: motion2 8.5s ease-in infinite both;
+     -moz-animation: motion2 8.5s ease-in infinite both;
+          animation: motion2 8.5s ease-in infinite both;
+  stroke-width: 0.005;
+  stroke: #999;
+  fill: transparent;
+}
+.h_s7_315_145 .light-slit-area .light-area #circle3 circle {
+  -webkit-animation: motion3 8.5s ease-in infinite both;
+     -moz-animation: motion3 8.5s ease-in infinite both;
+          animation: motion3 8.5s ease-in infinite both;
+  stroke-width: 0.005;
+  stroke: #999;
+  fill: transparent;
+}
+@-webkit-keyframes motion1 {
+  0% {
+    r: 0;
+  }
+  100% {
+    r: 3;
+  }
+}
+@-moz-keyframes motion1 {
+  0% {
+    r: 0;
+  }
+  100% {
+    r: 3;
+  }
+}
+@keyframes motion1 {
+  0% {
+    r: 0;
+  }
+  100% {
+    r: 3;
+  }
+}
+@-webkit-keyframes motion2 {
+  0% {
+    r: 0;
+  }
+  100% {
+    r: 3;
+  }
+}
+@-moz-keyframes motion2 {
+  0% {
+    r: 0;
+  }
+  100% {
+    r: 3;
+  }
+}
+@keyframes motion2 {
+  0% {
+    r: 0;
+  }
+  100% {
+    r: 3;
+  }
+}
+@-webkit-keyframes motion3 {
+  0% {
+    r: 0;
+  }
+  100% {
+    r: 3;
+  }
+}
+@-moz-keyframes motion3 {
+  0% {
+    r: 0;
+  }
+  100% {
+    r: 3;
+  }
+}
+@keyframes motion3 {
+  0% {
+    r: 0;
+  }
+  100% {
+    r: 3;
+  }
+}
+.h_s7_315_145 .light-slit-area .light-area .sec1 {
+  width: 30%;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec1 .item-light {
+  display: inline-block;
+  width: 420px;
+  height: 240px;
+  background: url("../../images/h_s7_315_145/img-light.png") center no-repeat;
+  -webkit-background-size: 100% 100%;
+     -moz-background-size: 100% 100%;
+          background-size: 100% 100%;
+  position: absolute;
+  top: 260px;
+  left: 10px;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 {
+  width: 23%;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1 {
+  position: absolute;
+  top: 0px;
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0% 50%);
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: left center;
+     -moz-transform-origin: left center;
+      -ms-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active-5 {
+  -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active-5 circle {
+  stroke-width: 0.007;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active-4 {
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active-4 circle {
+  stroke-width: 0.007;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active-3 {
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active-3 circle {
+  stroke-width: 0.0065;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active-2 {
+  -webkit-transform: scale(1.3);
+     -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active-2 circle {
+  stroke-width: 0.006;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active-1 {
+  -webkit-transform: scale(1.4);
+     -moz-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active-1 circle {
+  stroke-width: 0.0055;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active0 {
+  -webkit-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active0 circle {
+  stroke-width: 0.005;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active1 {
+  -webkit-transform: scale(1.6);
+     -moz-transform: scale(1.6);
+      -ms-transform: scale(1.6);
+          transform: scale(1.6);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active1 circle {
+  stroke-width: 0.0045;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active2 {
+  -webkit-transform: scale(1.7);
+     -moz-transform: scale(1.7);
+      -ms-transform: scale(1.7);
+          transform: scale(1.7);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active2 circle {
+  stroke-width: 0.004;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active3 {
+  -webkit-transform: scale(1.8);
+     -moz-transform: scale(1.8);
+      -ms-transform: scale(1.8);
+          transform: scale(1.8);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active3 circle {
+  stroke-width: 0.0035;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active4 {
+  -webkit-transform: scale(1.9);
+     -moz-transform: scale(1.9);
+      -ms-transform: scale(1.9);
+          transform: scale(1.9);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active4 circle {
+  stroke-width: 0.003;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active5 {
+  -webkit-transform: scale(2);
+     -moz-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec2 #circle1.active5 circle {
+  stroke-width: 0.003;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 {
+  width: 42%;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2 {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 30% 100%, 0% 28.5%);
+          clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 30% 100%, 0% 28.5%);
+  -webkit-transform-origin: left 27%;
+     -moz-transform-origin: left 27%;
+      -ms-transform-origin: left 27%;
+          transform-origin: left 27%;
+  -webkit-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active-5 {
+  -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active-5 circle {
+  stroke-width: 0.007;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active-4 {
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active-4 circle {
+  stroke-width: 0.007;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active-3 {
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active-3 circle {
+  stroke-width: 0.0065;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active-2 {
+  -webkit-transform: scale(1.3);
+     -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active-2 circle {
+  stroke-width: 0.006;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active-1 {
+  -webkit-transform: scale(1.4);
+     -moz-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active-1 circle {
+  stroke-width: 0.0055;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active0 {
+  -webkit-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active0 circle {
+  stroke-width: 0.005;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active1 {
+  -webkit-transform: scale(1.6);
+     -moz-transform: scale(1.6);
+      -ms-transform: scale(1.6);
+          transform: scale(1.6);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active1 circle {
+  stroke-width: 0.0045;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active2 {
+  -webkit-transform: scale(1.7);
+     -moz-transform: scale(1.7);
+      -ms-transform: scale(1.7);
+          transform: scale(1.7);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active2 circle {
+  stroke-width: 0.004;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active3 {
+  -webkit-transform: scale(1.8);
+     -moz-transform: scale(1.8);
+      -ms-transform: scale(1.8);
+          transform: scale(1.8);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active3 circle {
+  stroke-width: 0.0035;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active4 {
+  -webkit-transform: scale(1.9);
+     -moz-transform: scale(1.9);
+      -ms-transform: scale(1.9);
+          transform: scale(1.9);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active4 circle {
+  stroke-width: 0.003;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active5 {
+  -webkit-transform: scale(2);
+     -moz-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle2.active5 circle {
+  stroke-width: 0.003;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3 {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 50%, 100% 100%, 15% 100%, 0% 70%);
+          clip-path: polygon(30% 0, 100% 0, 100% 50%, 100% 100%, 15% 100%, 0% 70%);
+  -webkit-transform-origin: left 70%;
+     -moz-transform-origin: left 70%;
+      -ms-transform-origin: left 70%;
+          transform-origin: left 70%;
+  -webkit-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active-5 {
+  -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active-5 circle {
+  stroke-width: 0.007;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active-4 {
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active-4 circle {
+  stroke-width: 0.007;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active-3 {
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active-3 circle {
+  stroke-width: 0.0065;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active-2 {
+  -webkit-transform: scale(1.3);
+     -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active-2 circle {
+  stroke-width: 0.006;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active-1 {
+  -webkit-transform: scale(1.4);
+     -moz-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active-1 circle {
+  stroke-width: 0.0055;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active0 {
+  -webkit-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active0 circle {
+  stroke-width: 0.005;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active1 {
+  -webkit-transform: scale(1.6);
+     -moz-transform: scale(1.6);
+      -ms-transform: scale(1.6);
+          transform: scale(1.6);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active1 circle {
+  stroke-width: 0.0045;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active2 {
+  -webkit-transform: scale(1.7);
+     -moz-transform: scale(1.7);
+      -ms-transform: scale(1.7);
+          transform: scale(1.7);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active2 circle {
+  stroke-width: 0.004;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active3 {
+  -webkit-transform: scale(1.8);
+     -moz-transform: scale(1.8);
+      -ms-transform: scale(1.8);
+          transform: scale(1.8);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active3 circle {
+  stroke-width: 0.0035;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active4 {
+  -webkit-transform: scale(1.9);
+     -moz-transform: scale(1.9);
+      -ms-transform: scale(1.9);
+          transform: scale(1.9);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active4 circle {
+  stroke-width: 0.003;
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active5 {
+  -webkit-transform: scale(2);
+     -moz-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+}
+.h_s7_315_145 .light-slit-area .light-area .sec3 #circle3.active5 circle {
+  stroke-width: 0.003;
+}
+.h_s7_315_145 .light-slit-area .item-slit1 {
+  display: inline-block;
+  width: 20px;
+  height: 740px;
+  background: url("../../images/h_s7_315_145/img-slit-1.png") center no-repeat;
+  -webkit-background-size: 100% 100%;
+     -moz-background-size: 100% 100%;
+          background-size: 100% 100%;
+  position: absolute;
+  top: 20px;
+  left: 537px;
+}
+.h_s7_315_145 .light-slit-area .item-slit2 {
+  display: inline-block;
+  width: 20px;
+  height: 740px;
+  background: url("../../images/h_s7_315_145/img-slit-2.png") center no-repeat;
+  -webkit-background-size: 100% 100%;
+     -moz-background-size: 100% 100%;
+          background-size: 100% 100%;
+  position: absolute;
+  top: 20px;
+  left: 904px;
+}
+.h_s7_315_145 .light-slit-area .item-light-color {
+  background: #000;
+  width: 90px;
+  height: 740px;
+  -moz-border-radius: 10px;
+       border-radius: 10px;
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+.h_s7_315_145 .light-slit-area .item-light-color span {
+  display: inline-block;
+  background: #0b2961;
+  width: 130px;
+  height: 60px;
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+}
+.h_s7_315_145 .light-slit-area .item-light-color .color1,
+.h_s7_315_145 .light-slit-area .item-light-color .color5 {
+  height: 100px;
+}
+.h_s7_315_145 .light-slit-area .item-light-color .color2,
+.h_s7_315_145 .light-slit-area .item-light-color .color4 {
+  height: 80px;
+}
+.h_s7_315_145 .controll-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 40px 135px 0px 0px;
+}
+.h_s7_315_145 .controll-box .output-area {
+  background: #3a4757;
+  -moz-border-radius: 25px;
+       border-radius: 25px;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  width: 160px;
+  text-align: center;
+  padding: 12px 0px 6px;
+  margin-right: 10px;
+}
+.h_s7_315_145 .controll-box .output-area p {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+}
+.h_s7_315_145 .controll-box .output-area p:nth-child(1) {
+  padding-bottom: 5px;
+}
+.h_s7_315_145 .controll-box .output-area p:nth-child(2) {
+  font-weight: bold;
+  font-size: 22px;
+}
+.h_s7_315_145 .controll-box .output-area p .output {
+  display: inline-block;
+  width: 54px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+}
+.h_s7_315_145 .controll-box .input-area {
+  background: #3a4757;
+  -moz-border-radius: 25px;
+       border-radius: 25px;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  width: 530px;
+  text-align: center;
+  padding: 15px 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.h_s7_315_145 .controll-box .input-area .range-wrap {
+  width: 100%;
+}
+.h_s7_315_145 .controll-box .input-area .range-wrap input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 40px;
+  margin: 0px 0px;
+  background: #7c8795;
+  -webkit-background-size: 100% 10px;
+     -moz-background-size: 100% 10px;
+          background-size: 100% 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-border-radius: 10px;
+       border-radius: 10px;
+  -webkit-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.4);
+     -moz-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.4);
+  display: block;
+  color: #57626f;
+  border-color: #57626f;
+  background: url("../../images/h_s7_315_145/img-rgb-bg.png") center no-repeat;
+  -webkit-background-size: 100% 100%;
+     -moz-background-size: 100% 100%;
+          background-size: 100% 100%;
+  cursor: pointer;
+}
+.h_s7_315_145 .controll-box .input-area .range-wrap input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 46px;
+  height: 80px;
+  border-radius: 40px;
+  background: url("../../images/h_s7_315_145/icon-input-bg.png") center no-repeat #c4ccd5;
+  -webkit-box-shadow: inset 4px 10px 8px rgba(255, 255, 255, 0.6), 1px 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 4px 10px 8px rgba(255, 255, 255, 0.6), 1px 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-background-size: 22px 30px;
+          background-size: 22px 30px;
+  background-position: 12px 24px;
+  border: 1px solid #515d6b;
+  position: relative;
+  z-index: 3;
+}
+.h_s7_315_145 .controll-box .input-area .range-wrap input::-webkit-slider-thumb:hover,
+.h_s7_315_145 .controll-box .input-area .range-wrap input::-webkit-slider-thumb:active {
+  background: url("../../images/h_s7_315_145/icon-input-bg.png") center no-repeat #83b0e7;
+  -webkit-background-size: 22px 30px;
+          background-size: 22px 30px;
+  background-position: 12px 24px;
+  -webkit-box-shadow: inset 4px 10px 8px rgba(255, 255, 255, 0.2), 1px 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 4px 10px 8px rgba(255, 255, 255, 0.2), 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.h_s7_315_145 .controll-box .input-area .range-wrap input::-webkit-slider-thumb:after {
+  content: "";
+  width: 160px;
+  height: 10px;
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 5px;
+  background: #2ecc71;
+}
+.h_s7_315_145 .page-view.modal-layer-activity-goals3 {
+  z-index: 20;
+}
+.h_s7_315_145 .page-view.modal-layer-activity-goals3 .tab-modal {
+  min-height: 1010px;
+}
+.h_s7_315_145 .page-view.modal-layer-activity-goals3 .text-tab-content-area {
+  width: 100%;
+  height: 100%;
+  padding-top: 49px;
+  padding-left: 25px;
+}
+.h_s7_315_145 .page-view.modal-layer-activity-goals3 .text-tab-content-area .text-tab-content-inner {
+  position: relative;
+  z-index: 1;
+}
+.h_s7_315_145 .page-view.modal-layer-activity-goals3 .text-tab-content-area .text-tab-content-inner .text-area {
+  font-size: 45px;
+  font-weight: bold;
+  color: #303a46;
+  margin-top: 100px;
+}
+.h_s7_315_145 .page-view.modal-layer-activity-goals3 .text-tab-content-area .text-tab-content-inner .text-area li {
+  margin-bottom: 40px;
+  list-style: disc;
+  margin-left: 35px;
+  word-break: keep-all;
+}
+.h_s7_315_145 .page-view.modal-layer-activity-goals3 .character {
+  width: 187px;
+  height: 225px;
+  top: auto;
+  left: auto;
+  right: 37px;
+  bottom: -24px !important;
+}
+.h_s7_315_145 .page-view.modal-layer-activity-goals3.active {
+  display: block;
+}
+.h_s7_315_145 .page-view.modal-layer-activity-goals3.active .tab-modal {
+  right: 0;
+}
+.h_s7_315_145 .page-view.modal-layer-activity-goals3.active .dimmed {
+  opacity: 0.859;
+}
+.h_s7_315_145 .guide-balloon-tip-wrap {
+  z-index: 9;
+}
+.h_s7_315_145 .guide-balloon-tip-wrap .bubble-box .bubble-text {
+  position: relative;
+  opacity: 1;
+  visibility: unset;
+}
+/*# sourceMappingURL=../maps/page/h_s7_315_145.css.map */

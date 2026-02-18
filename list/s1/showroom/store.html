@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <meta content="온라인 쇼룸 | 매장 | 에스원" id="metaTitle" name="title" />
+        <meta content="온라인 쇼룸 | 매장" id="metaDescription" name="description" />
+        <meta content="온라인 쇼룸 | 매장" id="metaKeyword" name="keywords" />
+
+        <meta content="website" property="og:type" />
+        <meta content="https://www.s1.co.kr/secom/commercial" property="og:url" />
+        <meta content="온라인 쇼룸 | 매장 | 에스원" property="og:title" />
+        <meta content="온라인 쇼룸 | 매장" property="og:description" />
+        <meta content="https://www.s1.co.kr/images/ko/meta/meta-default-img.png" property="og:image" />
+        <meta content="630" property="og:image:height" />
+        <meta content="1200" property="og:image:width" />
+
+        <title>온라인 쇼룸 | 매장 | 에스원</title>
+
+        <link rel="preload" href="/css/ko/common.css" as="style" type="text/css" />
+        <link rel="preload" href="/css/ko/main.css" as="style" type="text/css" />
+        <link rel="preload" href="/css/ko/s1_contents.css" as="style" type="text/css" />
+        <link rel="preload" href="/js/libs/jquery-1.12.4.min.js" as="script" />
+        <link rel="preload" href="/js/libs/jquery-ui.js" as="script" />
+        <link rel="preload" href="/js/libs/slick.js" as="script" />
+        <link rel="preload" href="/js/ui/ko/common.js" as="script" />
+
+        <link rel="icon" href="/favicon/favicon-48x48.ico" />
+        <link rel="shortcut icon" href="/favicon/favicon-48x48.ico" />
+        <link rel="stylesheet" href="/css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="/css/aos.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/common.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/s1_contents.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/popup.css" type="text/css" />
+        <link rel="stylesheet" href="/css/ko/showroom.css" type="text/css" />
+
+        <script type="text/javascript" src="/js/libs/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="/js/libs/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/libs/slick.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.min.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.scrollbar-2.1.js"></script>
+        <script type="text/javascript" src="/js/libs/aos.js"></script>
+        <script type="text/javascript" src="/js/libs/stick-to-me.js"></script>
+        <script type="text/javascript" src="/js/libs/client.min.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+
+        <!-- 네이버 연관채널 -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "s1",
+                "url": "https://www.s1.co.kr",
+                "sameAs": [
+                    "https://blog.naver.com/s1corporation",
+                    "https://www.instagram.com/s1corporation/",
+                    "https://www.youtube.com/@welcome.S1",
+                    "https://www.facebook.com/s1corporation"
+                ]
+            }
+        </script>
+
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 쇼룸 전용 컨텐츠 : 매장 store.html -->
+        <div id="wrapShowroom" class="wrap-online-showroom">
+            <!--
+                showroom-container-wrap의 인접클래스
+                .sr3-store로 제어
+
+                인접클래스로
+
+                초기 시작전
+
+                [기본]
+                default
+
+                => 페이지 초기 진입 1초뒤
+
+                [메인]
+                main
+
+                [화면1 영역 : 출동경비 서비스 - 인접클래스]
+                screen1 step1 : 화면1, 스텝1 - 출동경비가 왜 필요할까?
+                screen1 step2 : 화면1, 스텝2 - 출동보안 서비스의 구성은?
+                screen1 step3 : 화면1, 스텝3 - 출동보안 서비스는 어떻게 진행 될까?
+                screen1 step3 step3-1 : 화면1, 스텝3-1 - 1. 문열림 감지
+                screen1 step3 step3-2 : 화면1, 스텝3-2 - 2. 움직임 감지
+                screen1 step3 step3-3 : 화면1, 스텝3-3 - 3. 이상신호 관제센터 전달
+                screen1 step3 step3-4 : 화면1, 스텝3-4 - 4. 출동요원 출동
+                screen1 step4 : 화면1, 스텝4 - 에스원의 출동경비 서비스를 영상으로 체험해보세요! (팝업 : 레이어 스와이퍼)
+                screen1 complete : 화면 체크 완료
+
+                [화면2 영역 : CCTV 서비스 - 인접클래스]
+                screen2 step1 : 화면2, 스텝1 - CCTV가 왜 필요할까?
+                screen2 step2 : 화면2, 스텝2 - CCTV 기기의 종류는?
+                screen2 step3 : 화면2, 스텝3 - 에스원의 특장점은?
+
+                [화면3 영역 : 출입관리 서비스 - 인접클래스]
+                screen3 step1 : 화면3, 스텝1 - 출입관리가 왜 필요할까?
+                screen3 step2 : 화면3, 스텝2 - 출입인증 기기의 종류는?
+                screen3 step3 : 화면3, 스텝3 - 사용하는 방법은?
+                screen3 step3 : 화면3, 스텝4 - 매장에 설치된 출입관리 서비스 사례를 확인해보세요! (팝업 : 레이어 스와이퍼)
+
+                [화면1 영역 or + and 화면2 영역 or + and 화면3 영역 완료 시]
+                complete
+
+                스크린 넘버(ex : screen1)를 먼저 추가 후 각 스텝(ex : step1)의 인접클래스 넘버를 추가하여 효과를 적용
+            -->
+            <div class="showroom-container-wrap sr3-store default">
+                <div class="showroom-container-inner">
+                    <!-- 이전 페이지 버튼 -->
+                    <button
+                        onclick="showroomControll.goBack()"
+                        class="button-screen-wrap page-back"
+                        title="페이지 이동"
+                        aria-label="페이지 이동"
+                    >
+                        <em class="button-screen-inner">
+                            <span class="text">처음으로</span>
+                        </em>
+                    </button>
+                    <!--// 이전 페이지 버튼 -->
+
+                    <!-- [확대, 축소 버튼 영역] 인접클래스 active 추가시 해당 버튼 영역 활성화 -->
+                    <ul class="page-screen">
+                        <li>
+                            <button class="button-screen-wrap page-screen-plus">
+                                <em class="button-screen-inner">
+                                    <span class="blind">확대</span>
+                                </em>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-screen-wrap page-screen-minus">
+                                <em class="button-screen-inner">
+                                    <span class="blind">축소</span>
+                                </em>
+                            </button>
+                        </li>
+                    </ul>
+                    <!--// [확대, 축소 버튼 영역] -->
+
+                    <!--
+                        showroom-top-tab-wrap : 상단 - [쇼룸보기] / [가격견적] 탭
+                        인접 active 클래스 추가시 페이지 보임
+                    -->
+                    <div class="showroom-top-tab-wrap active">
+                        <div class="showroom-top-tab-inner">
+                            <ul class="showroom-top-tab-list">
+                                <li class="active">
+                                    <button
+                                        onclick="javascript:void(0)"
+                                        class="button-tab"
+                                        title="현재 페이지"
+                                        aria-label="현재 페이지"
+                                    >
+                                        <span class="text">쇼룸 보기</span>
+                                    </button>
+                                </li>
+                                <li class="">
+                                    <button
+                                        onclick="location.href='/showroom/pricing.html'"
+                                        class="button-tab"
+                                        title="가격견적 페이지 보기"
+                                        aria-label="가격견적 페이지 보기"
+                                    >
+                                        <span class="text">가격 견적</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <em class="button-bg" style="left: 0px"></em>
+                        </div>
+                    </div>
+
+                    <!--
+                        매장 : showroom-content-wrap3 인접클래스
+                        active 추가시 페이지 보임
+                    -->
+                    <div class="showroom-content-wrap showroom-content-wrap3 active">
+                        <div class="showroom-content-inner">
+                            <!-- 영역 마커 시작 -->
+                            <div class="showroom-content-mark">
+                                <span class="blind">영역 마크</span>
+                            </div>
+                            <!--// 영역 마커 끝 -->
+
+                            <!-- [스크린0 영역 / 메인] : showroom-screen0-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen0-wrap">
+                                <div class="showroom-screen-inner">
+                                    <!-- showroom-step1-wrap 인접클래스 active 스텝활성화 -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- sr-pointer-wrap에 인접 active 클래스 동작 -->
+                                            <div class="sr-pointer-wrap sr-pointer-wrap1 active">
+                                                <div class="sr-pointer-inner">
+                                                    <button
+                                                        class="sr-pointer sr-pointer1 red"
+                                                        title="출동경비 서비스 STEP1 보기"
+                                                        aria-label="출동경비 서비스 STEP1 보기"
+                                                    >
+                                                        <span class="sr-pointer-pin"></span>
+                                                        <span class="sr-pointer-layer">
+                                                            <span class="sr-pointer-layer-1"></span>
+                                                            <span class="sr-pointer-layer-2"></span>
+                                                        </span>
+                                                    </button>
+                                                    <em class="sr-pointer-tip-wrap sr-pointer-tip-wrap1">
+                                                        <span class="sr-pointer-tip-inner">
+                                                            <span class="box-text">출동경비 서비스</span>
+                                                            <span class="triangle-top"></span>
+                                                        </span>
+                                                    </em>
+                                                </div>
+                                            </div>
+
+                                            <!-- sr-pointer-wrap에 인접 active 클래스 동작 -->
+                                            <div class="sr-pointer-wrap sr-pointer-wrap2 active">
+                                                <div class="sr-pointer-inner">
+                                                    <button
+                                                        class="sr-pointer sr-pointer2 red"
+                                                        title="CCTV 서비스 STEP1 보기"
+                                                        aria-label="CCTV 서비스 STEP1 보기"
+                                                    >
+                                                        <span class="sr-pointer-pin"></span>
+                                                        <span class="sr-pointer-layer">
+                                                            <span class="sr-pointer-layer-1"></span>
+                                                            <span class="sr-pointer-layer-2"></span>
+                                                        </span>
+                                                    </button>
+                                                    <em class="sr-pointer-tip-wrap sr-pointer-tip-wrap1">
+                                                        <span class="sr-pointer-tip-inner">
+                                                            <span class="box-text">CCTV 서비스</span>
+                                                            <span class="triangle-top"></span>
+                                                        </span>
+                                                    </em>
+                                                </div>
+                                            </div>
+
+                                            <!-- sr-pointer-wrap에 인접 active 클래스 동작 -->
+                                            <div class="sr-pointer-wrap sr-pointer-wrap3 active">
+                                                <div class="sr-pointer-inner">
+                                                    <button
+                                                        class="sr-pointer sr-pointer3 red"
+                                                        title="출입관리 서비스 STEP1 보기"
+                                                        aria-label="출입관리 서비스 STEP1 보기"
+                                                    >
+                                                        <span class="sr-pointer-pin"></span>
+                                                        <span class="sr-pointer-layer">
+                                                            <span class="sr-pointer-layer-1"></span>
+                                                            <span class="sr-pointer-layer-2"></span>
+                                                        </span>
+                                                    </button>
+                                                    <em class="sr-pointer-tip-wrap sr-pointer-tip-wrap1">
+                                                        <span class="sr-pointer-tip-inner">
+                                                            <span class="box-text">출입관리 서비스</span>
+                                                            <span class="triangle-top"></span>
+                                                        </span>
+                                                    </em>
+                                                </div>
+                                            </div>
+
+                                            <!-- 출동 경비 서비스로 안심 -->
+                                            <a
+                                                href="javascript:void(0)"
+                                                title="출동경비 서비스 STEP1 보기"
+                                                aria-label="출동경비 서비스 STEP1 보기"
+                                                class="popup-check-complete-wrap popup-check-complete-wrap1"
+                                            >
+                                                <div class="popup-check-complete-inner">
+                                                    <h4 class="title-service-check-complete">
+                                                        <span class="text">출동경비 서비스로 안심</span>
+                                                    </h4>
+                                                    <i class="icon-complete-check">
+                                                        <em class="icon-complete-check-inner">
+                                                            <span class="blind">체크</span>
+                                                        </em>
+                                                    </i>
+                                                    <div class="bg-check-complete">
+                                                        <span class="blind">배경</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!--// 출동 경비 서비스로 안심 -->
+
+                                            <!-- CCTV 서비스로 매장 안심 -->
+                                            <a
+                                                href="javascript:void(0)"
+                                                title="CCTV 서비스 STEP1 보기"
+                                                aria-label="CCTV 서비스 STEP1 보기"
+                                                class="popup-check-complete-wrap popup-check-complete-wrap2"
+                                            >
+                                                <div class="popup-check-complete-inner">
+                                                    <h4 class="title-service-check-complete">
+                                                        <span class="text">CCTV 서비스로 안심</span>
+                                                    </h4>
+                                                    <i class="icon-complete-check">
+                                                        <em class="icon-complete-check-inner">
+                                                            <span class="blind">체크</span>
+                                                        </em>
+                                                    </i>
+                                                    <div class="bg-check-complete">
+                                                        <span class="blind">배경</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!--// CCTV 서비스로 매장 안심 -->
+
+                                            <!-- 직원 출입/근태 안심 -->
+                                            <a
+                                                href="javascript:void(0)"
+                                                title="출입관리 서비스 STEP1 보기"
+                                                aria-label="출입관리 서비스 STEP1 보기"
+                                                class="popup-check-complete-wrap popup-check-complete-wrap3"
+                                            >
+                                                <div class="popup-check-complete-inner">
+                                                    <h4 class="title-service-check-complete">
+                                                        <span class="text">출입관리 서비스로 안심</span>
+                                                    </h4>
+                                                    <i class="icon-complete-check">
+                                                        <em class="icon-complete-check-inner">
+                                                            <span class="blind">체크</span>
+                                                        </em>
+                                                    </i>
+                                                    <div class="bg-check-complete">
+                                                        <span class="blind">배경</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!--// 직원 출입/근태 안심 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// [스크린0 영역 / 메인] -->
+
+                            <!-- [스크린1 영역 / 출동경비 서비스] : showroom-screen1-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen1-wrap active">
+                                <div class="showroom-screen-inner">
+                                    <!-- showroom-step1-wrap : STEP1 출동경비가 왜 필요할까? -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner">
+                                            <div class="sr-speech-bubble sr-speech-bubble1 sr-speech-sr1-st1">
+                                                <div class="sr-speech-bubble-inner">
+                                                    <p class="sr-speech-bubble-text">
+                                                        <em>야간에 주취자가 무단 침입해서</em><br />
+                                                        매장 집기를 파손하는 사고가 있었는데<br />
+                                                        에스원 덕분에 잘 해결됐어요!
+                                                    </p>
+                                                    <span class="sr-speech-bubble-frame">
+                                                        <span class="sr-speech-bubble-box"></span>
+                                                        <span class="sr-speech-bubble-tail right"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="sr-speech-bubble sr-speech-bubble1 sr-speech-sr1-st1-2">
+                                                <div class="sr-speech-bubble-inner">
+                                                    <p class="sr-speech-bubble-text">
+                                                        <em>에스원 출동경비 서비스</em>에 대해<br />
+                                                        알려드릴게요!
+                                                    </p>
+                                                    <span class="sr-speech-bubble-frame">
+                                                        <span class="sr-speech-bubble-box"></span>
+                                                        <span class="sr-speech-bubble-tail left"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <i class="sr-person-cs sr-person-cs1 sr-person-sr1-st1">
+                                                <span class="blind">카페 직원</span>
+                                            </i>
+                                        </div>
+                                    </div>
+                                    <!-- showroom-step2-wrap : STEP2 출동보안 서비스의 구성은? -->
+                                    <div class="showroom-step-wrap showroom-step2-wrap">
+                                        <div class="showroom-step-inner">
+                                            <div class="showroom-step2-icon-layer-wrap">
+                                                <div class="showroom-step2-icon-layer-inner">
+                                                    <!-- 컨트롤러 -->
+                                                    <div class="sr-circle-item sr-circle-item1">
+                                                        <div class="sr-circle-item-inner">
+                                                            <i class="img-secom-circle-item img-secom-circle-item1">
+                                                                <span class="blind">컨트롤러</span>
+                                                            </i>
+                                                            <div data-tooltip-wrap>
+                                                                <div class="sr-float-tooltip" data-tooltip>
+                                                                    <button data-tooltip-title>
+                                                                        <p>컨트롤러</p>
+                                                                    </button>
+                                                                    <div data-tooltip-text>
+                                                                        <p>
+                                                                            출동경비/출입관리 이상신호<br />관제센터
+                                                                            전송
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- //컨트롤러 -->
+
+                                                    <!-- 비상 버튼 -->
+                                                    <div class="sr-circle-item sr-circle-item2">
+                                                        <div class="sr-circle-item-inner">
+                                                            <i class="img-secom-circle-item img-secom-circle-item2">
+                                                                <span class="blind">비상 버튼</span>
+                                                            </i>
+                                                            <div data-tooltip-wrap>
+                                                                <div class="sr-float-tooltip" data-tooltip>
+                                                                    <button data-tooltip-title>
+                                                                        <p>비상 버튼</p>
+                                                                    </button>
+                                                                    <div data-tooltip-text>
+                                                                        <p>
+                                                                            위급상황 시 누르면 신호를<br />
+                                                                            관제센터 전송
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="check-dot-line-wrap check-dot-line-sr1-st2 check-dot-line1 blue"
+                                                    >
+                                                        <div class="check-dot-line-inner">
+                                                            <i class="circle-line-wrap">
+                                                                <i class="circle-line-inner">
+                                                                    <span class="blind">라인 중심점</span>
+                                                                </i>
+                                                            </i>
+                                                            <em class="dot-line-repeat dot-line-repeat1-1">
+                                                                <span class="blind">점선</span>
+                                                            </em>
+                                                            <em class="dot-line-repeat dot-line-repeat1-2">
+                                                                <span class="blind">점선</span>
+                                                            </em>
+                                                        </div>
+                                                    </div>
+                                                    <!-- //비상 버튼 -->
+
+                                                    <!-- 문열림 감지기 -->
+                                                    <div class="sr-circle-item sr-circle-item3">
+                                                        <div class="sr-circle-item-inner">
+                                                            <i class="img-secom-circle-item img-secom-circle-item3">
+                                                                <span class="blind">문열림 감지기</span>
+                                                            </i>
+                                                            <div data-tooltip-wrap data-tooltip-bottom>
+                                                                <div class="sr-float-tooltip" data-tooltip>
+                                                                    <button data-tooltip-title>
+                                                                        <p>문열림 감지기</p>
+                                                                    </button>
+                                                                    <div data-tooltip-text>
+                                                                        <p>출입문 강제 문 열림 감지</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 문열림 감지기 -->
+
+                                                    <!-- 움직임 감지기 -->
+                                                    <div class="sr-circle-item sr-circle-item4">
+                                                        <div class="sr-circle-item-inner">
+                                                            <i class="img-secom-circle-item img-secom-circle-item4">
+                                                                <span class="blind">움직임 감지기</span>
+                                                            </i>
+                                                            <div data-tooltip-wrap>
+                                                                <div class="sr-float-tooltip" data-tooltip>
+                                                                    <button data-tooltip-title>
+                                                                        <p>움직임 감지기</p>
+                                                                    </button>
+                                                                    <div data-tooltip-text>
+                                                                        <p>내부 무단 침입자의 움직임 감지</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 지문 리더기 -->
+                                                    <div
+                                                        class="check-dot-line-wrap check-dot-line-sr1-st2 check-dot-line2 blue"
+                                                    >
+                                                        <div class="check-dot-line-inner">
+                                                            <i class="circle-line-wrap">
+                                                                <i class="circle-line-inner">
+                                                                    <span class="blind">라인 중심점</span>
+                                                                </i>
+                                                            </i>
+                                                            <em class="dot-line-repeat dot-line-repeat2-1">
+                                                                <span class="blind">점선</span>
+                                                            </em>
+                                                            <em class="dot-line-repeat dot-line-repeat2-2">
+                                                                <span class="blind">점선</span>
+                                                            </em>
+                                                        </div>
+                                                    </div>
+                                                    <div class="sr-circle-item sr-circle-item5">
+                                                        <div class="sr-circle-item-inner">
+                                                            <i class="img-secom-circle-item img-secom-circle-item5">
+                                                                <span class="blind">지문 리더기</span>
+                                                            </i>
+                                                            <div data-tooltip-wrap>
+                                                                <div class="sr-float-tooltip" data-tooltip>
+                                                                    <button data-tooltip-title>
+                                                                        <p>지문 리더기</p>
+                                                                    </button>
+                                                                    <div data-tooltip-text>
+                                                                        <p>출동경비 설정 및 출입관리</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- //지문 리더기 -->
+
+                                                    <!-- 문열림 감지기 -->
+                                                    <div class="sr-circle-item sr-circle-item6">
+                                                        <div class="sr-circle-item-inner">
+                                                            <i class="img-secom-circle-item img-secom-circle-item6">
+                                                                <span class="blind">문열림 감지기</span>
+                                                            </i>
+                                                            <div data-tooltip-wrap data-tooltip-bottom>
+                                                                <div class="sr-float-tooltip" data-tooltip>
+                                                                    <button data-tooltip-title>
+                                                                        <p>문열림 감지기</p>
+                                                                    </button>
+                                                                    <div data-tooltip-text>
+                                                                        <p>출입문 강제 문 열림 감지</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 문열림 감지기 -->
+
+                                                    <!-- 종합안심플랜 -->
+                                                    <div class="sr-circle-item sr-circle-item7">
+                                                        <div class="sr-circle-item-inner">
+                                                            <i class="img-secom-circle-item img-secom-circle-item7">
+                                                                <span class="blind">종합안심플랜</span>
+                                                            </i>
+                                                            <div data-tooltip-wrap>
+                                                                <div class="sr-float-tooltip" data-tooltip>
+                                                                    <button data-tooltip-title>
+                                                                        <p>종합안심플랜</p>
+                                                                    </button>
+                                                                    <div data-tooltip-text>
+                                                                        <p>
+                                                                            도난, 집기 파손, 화재 등 사고 발생 시<br />
+                                                                            배상/보상
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- //종합안심플랜 -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- showroom-step3-wrap : 출동보안 서비스는 어떻게 진행될까? -->
+                                    <div class="showroom-step-wrap showroom-step3-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 경고 메시지 -->
+                                            <div class="sr-warning-red-wrap">
+                                                <div class="sr-warning-red-inner">
+                                                    <div class="sr-warning-red sr-warning-red1">
+                                                        <p><i class="complete"></i>침입이 발생했습니다!</p>
+                                                    </div>
+                                                </div>
+                                                <div class="sr-warning-red-inner">
+                                                    <div class="sr-warning-red sr-warning-red2">
+                                                        <p><i class="complete"></i>움직임이 감지되었습니다!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <i class="sr-person-dm sr-person-dm1">
+                                                <span class="blind">술취한 남자</span>
+                                            </i>
+                                            <i class="sr-person-dm sr-person-dm2">
+                                                <span class="blind">술취한 남자</span>
+                                            </i>
+                                            <!-- start -->
+                                            <div class="sr-targeting">
+                                                <span class="sr-targeting-frame"></span>
+                                                <span class="sr-targeting-inner"></span>
+                                            </div>
+                                            <!-- // end -->
+                                            <i class="img-secom-magnet-detector">
+                                                <span class="blind">자석 감지기</span>
+                                            </i>
+                                            <i class="img-secom-heat-detector">
+                                                <span class="blind">열선 감지기</span>
+                                            </i>
+                                            <i class="img-secom-opendoor-detector">
+                                                <span class="blind">문열림 감지기</span>
+                                            </i>
+                                            <div class="sr-layer-beam-sr1-st2">
+                                                <div class="sr-layer-beam">
+                                                    <span class="blind">빔 효과</span>
+                                                </div>
+                                            </div>
+
+                                            <!-- 팝업 : 에스원 관제센터 -->
+                                            <div class="popup-layer-animation-wrap popup-layer-animation-wrap1">
+                                                <div class="popup-layer-animation-inner">
+                                                    <div class="animation-box-wrap control-center">
+                                                        <div class="animation-box-inner">
+                                                            <div class="icon-postion-wrap top-center">
+                                                                <div class="icon-postion-inner">
+                                                                    <i class="sr-person-counselor">
+                                                                        <span class="blind">상담사</span>
+                                                                    </i>
+                                                                </div>
+                                                            </div>
+                                                            <!-- 왼쪽 아래 -->
+                                                            <div class="icon-postion-wrap bottom-left">
+                                                                <div class="icon-postion-inner">
+                                                                    <i class="ani-icon-secom-glass-detector">
+                                                                        <span class="blind">움직임 감지기</span>
+                                                                    </i>
+                                                                    <div class="ani-icon-name">
+                                                                        <span>움직임 감지기</span>
+                                                                    </div>
+                                                                    <em
+                                                                        class="ellipse-wave-length-wrap ellipse-wave-length-wrap1"
+                                                                    >
+                                                                        <span class="ellipse-wave-length-inner">
+                                                                            <i
+                                                                                class="ellipse-wave-item ellipse-wave-item1"
+                                                                            >
+                                                                                <span class="blind">큰파장</span>
+                                                                            </i>
+                                                                            <i
+                                                                                class="ellipse-wave-item ellipse-wave-item2"
+                                                                            >
+                                                                                <span class="blind">중간파장</span>
+                                                                            </i>
+                                                                            <i
+                                                                                class="ellipse-wave-item ellipse-wave-item3"
+                                                                            >
+                                                                                <span class="blind">작은파장</span>
+                                                                            </i>
+                                                                        </span>
+                                                                    </em>
+                                                                </div>
+                                                            </div>
+                                                            <!-- //왼쪽 아래 -->
+
+                                                            <!-- 가운데 -->
+                                                            <div class="icon-postion-wrap bottom-center">
+                                                                <div class="icon-postion-inner">
+                                                                    <i class="ani-icon-secom ani-icon-secom-link">
+                                                                        <span class="blind">세콤링크</span>
+                                                                    </i>
+                                                                    <div class="ani-icon-name">
+                                                                        <span>컨트롤러</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- //가운데 -->
+
+                                                            <!-- 오른쪽 아래 -->
+                                                            <div class="icon-postion-wrap bottom-right">
+                                                                <div class="icon-postion-inner">
+                                                                    <i
+                                                                        class="ani-icon-secom ani-icon-secom-magnet-detector"
+                                                                    >
+                                                                        <span class="blind">문열림 감지기</span>
+                                                                    </i>
+                                                                    <div class="ani-icon-name">
+                                                                        <span>문열림 감지기</span>
+                                                                    </div>
+                                                                    <em
+                                                                        class="ellipse-wave-length-wrap ellipse-wave-length-wrap2"
+                                                                    >
+                                                                        <span class="ellipse-wave-length-inner">
+                                                                            <i
+                                                                                class="ellipse-wave-item ellipse-wave-item1"
+                                                                            >
+                                                                                <span class="blind">큰파장</span>
+                                                                            </i>
+                                                                            <i
+                                                                                class="ellipse-wave-item ellipse-wave-item2"
+                                                                            >
+                                                                                <span class="blind">중간파장</span>
+                                                                            </i>
+                                                                            <i
+                                                                                class="ellipse-wave-item ellipse-wave-item3"
+                                                                            >
+                                                                                <span class="blind">작은파장</span>
+                                                                            </i>
+                                                                        </span>
+                                                                    </em>
+                                                                </div>
+                                                            </div>
+                                                            <!-- //오른쪽 아래 -->
+                                                            <em class="line-dot-red center-width center-width-left">
+                                                                <span class="blind"
+                                                                    >중앙에서 아래 왼쪽 방향 적색 점선</span
+                                                                >
+                                                                <i class="line-dot-view"></i>
+                                                            </em>
+                                                            <em class="line-dot-red center-width center-width-right">
+                                                                <span class="blind"
+                                                                    >중앙에서 아래 오른쪽 방향 적색 점선</span
+                                                                >
+                                                                <i class="line-dot-view"></i>
+                                                            </em>
+
+                                                            <em class="line-dot-red center-bottom-top">
+                                                                <span class="blind">중앙에서 위방향 적색 점선</span>
+                                                                <i class="line-dot-view"></i>
+                                                            </em>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom-text-wrap">
+                                                        <span class="text">
+                                                            경비 구역에 침입·이상 상황이 발생하면<br />
+                                                            이상신호를 즉시
+                                                            <strong class="color-blue">에스원 관제센터</strong>로
+                                                            전송합니다.
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--// 팝업 : 에스원 관제센터 -->
+
+                                            <!-- 팝업 : 즉시 현장으로 출동 -->
+                                            <div class="popup-layer-animation-wrap popup-layer-animation-wrap2">
+                                                <div class="popup-layer-animation-inner">
+                                                    <div class="animation-box-wrap dispatch-immediately">
+                                                        <div class="animation-box-inner">
+                                                            <div class="sr-person-dm-wrap">
+                                                                <div class="sr-person-dm-inner">
+                                                                    <i class="icon-ex-mark-speech-bubble">
+                                                                        <span class="blind">!</span>
+                                                                    </i>
+                                                                    <i class="sr-person-dm-ex sr-person-dm-ex1">
+                                                                        <span class="blind">술취한 남자</span>
+                                                                    </i>
+                                                                </div>
+                                                            </div>
+                                                            <em class="img-dispatch-vehicle">
+                                                                <span class="img-dispatch-vehicle-inner">
+                                                                    <i class="di-car-siren-machine">
+                                                                        <span class="blind">사이렌 장치</span>
+                                                                    </i>
+                                                                    <i class="di-car-siren-light">
+                                                                        <span class="blind">사이렌 빛</span>
+                                                                    </i>
+                                                                    <i class="di-car-body">
+                                                                        <span class="blind">차체</span>
+                                                                    </i>
+                                                                    <i class="di-car-wheel di-car-wheel1">
+                                                                        <em class="di-car-wheel-inner">
+                                                                            <span class="blind">앞바퀴</span>
+                                                                        </em>
+                                                                    </i>
+                                                                    <i class="di-car-wheel di-car-wheel2">
+                                                                        <em class="di-car-wheel-inner">
+                                                                            <span class="blind">뒷바퀴</span>
+                                                                        </em>
+                                                                    </i>
+                                                                    <em class="di-car-exhaust di-car-exhaust1">
+                                                                        <span class="di-car-exhaust-inner">
+                                                                            <i class="di-car-exhaust-bar">
+                                                                                <span class="blind">매연1</span>
+                                                                            </i>
+                                                                        </span>
+                                                                    </em>
+                                                                    <em class="di-car-exhaust di-car-exhaust2">
+                                                                        <span class="di-car-exhaust-inner">
+                                                                            <i class="di-car-exhaust-bar">
+                                                                                <span class="blind">매연2</span>
+                                                                            </i>
+                                                                        </span>
+                                                                    </em>
+                                                                    <i class="di-car-shadow">
+                                                                        <span class="blind">그림자</span>
+                                                                    </i>
+                                                                </span>
+                                                            </em>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom-text-wrap">
+                                                        <span class="text">
+                                                            관제센터로부터 출동지시를 받은 출동요원이<br />
+                                                            <strong class="color-blue">즉시 현장으로 출동</strong>하여
+                                                            신속하게 대처합니다.
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--// 팝업 : 즉시 현장으로 출동 -->
+
+                                            <!-- 출동경비 서비스 : 스와이퍼 -->
+                                            <div class="sr-step-swiper-wrap sr-step-swiper-wrap1">
+                                                <div class="sr-step-swiper-inner">
+                                                    <div class="swiper-title-wrap swiper-title-wrap1">
+                                                        <div class="swiper-title-item swiper-title-item1">
+                                                            <div class="top-swiper-text">
+                                                                <h5 class="title-step-swiper">
+                                                                    <span class="text">
+                                                                        <strong>
+                                                                            에스원의 출동경비 서비스를 영상으로 체험해
+                                                                            보세요!
+                                                                        </strong>
+                                                                    </span>
+                                                                </h5>
+                                                                <!-- <em class="sub-text-step-swiper">
+                                                                <span class="text">1. 이상신호 감지_움직임 감지기</span>
+                                                            </em> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-layer-wrap swiper-layer-wrap1">
+                                                        <div
+                                                            class="swiper-layer-item swiper-layer-item1 swiper-movie-item"
+                                                        >
+                                                            <!--
+                                                            <iframe
+                                                                class="iframe-video"
+                                                                id="youtubePlayer1"
+                                                                width="100%"
+                                                                height="100%"
+                                                                src="https://www.youtube.com/embed/I8sSElJJGX4?enablejsapi=1"
+                                                                title="YouTube video player"
+                                                                frameborder="0"
+                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                                allowfullscreen
+                                                            >
+                                                            </iframe>
+                                                            -->
+                                                            <video
+                                                                src="/video/s1-sr3-store-sc1.mp4"
+                                                                class="iframe-video tag-video"
+                                                                controls
+                                                            >
+                                                                <track
+                                                                    src="/video/s1-sr3-store-sc1.vtt"
+                                                                    kind="subtitles"
+                                                                    srclang="ko"
+                                                                    label="Korean"
+                                                                />
+                                                            </video>
+                                                            <div class="thumbnail-wrap thumbnail-wrap1 active">
+                                                                <div class="thumbnail-inner">
+                                                                    <button
+                                                                        class="button-movie-start"
+                                                                        title="재생"
+                                                                        aria-label="재생"
+                                                                    >
+                                                                        <span class="blind">PLAY</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom-swiper-button-wrap">
+                                                        <button
+                                                            class="button-swiper-bottom button-swiper-bottom-screen1 bg-color-blue"
+                                                            title="체험 완료"
+                                                            aria-label="체험 완료"
+                                                        >
+                                                            <span class="text">체험 완료</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--// 출동경비 서비스 : 스와이퍼 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// [스크린1 영역 / 출동경비 서비스] -->
+
+                            <!-- [스크린2 영역 / CCTV 서비스] : showroom-screen2-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen2-wrap">
+                                <div class="showroom-screen-inner">
+                                    <!-- showroom-step1-wrap 인접클래스 active 스텝활성화 -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner">
+                                            <div class="sr-speech-bubble sr-speech-bubble1 sr-speech-sr2-st1">
+                                                <div class="sr-speech-bubble-inner">
+                                                    <p class="sr-speech-bubble-text">
+                                                        <em>매장 손님의 물건이 없어지는 사고</em>가 있었는데<br />
+                                                        에스원 덕분에 안전하고 편리해졌어요!
+                                                    </p>
+                                                    <span class="sr-speech-bubble-frame">
+                                                        <span class="sr-speech-bubble-box"></span>
+                                                        <span class="sr-speech-bubble-tail right"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="sr-speech-bubble sr-speech-bubble2 sr-speech-sr2-st1-2">
+                                                <div class="sr-speech-bubble-inner">
+                                                    <p class="sr-speech-bubble-text">
+                                                        <em>에스원 CCTV 서비스</em>에 대해<br />
+                                                        알려드릴게요!
+                                                    </p>
+                                                    <span class="sr-speech-bubble-frame">
+                                                        <span class="sr-speech-bubble-box"></span>
+                                                        <span class="sr-speech-bubble-tail left"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <i class="sr-person-cs sr-person-cs1 sr-person-sr2-st1">
+                                                <span class="blind">카페 직원</span>
+                                            </i>
+                                        </div>
+                                    </div>
+                                    <!-- showroom-step2-wrap 인접클래스 active 스텝활성화 -->
+                                    <div class="showroom-step-wrap showroom-step2-wrap">
+                                        <div class="showroom-step-inner">
+                                            <div class="showroom-screen2-step2-icon-layer-wrap">
+                                                <div class="showroom-screen2-step2-icon-layer-inner">
+                                                    <div class="sr-circle-item sr-circle-item1">
+                                                        <div class="sr-circle-item-inner">
+                                                            <i class="img-secom-circle-item img-secom-circle-item6">
+                                                                <span class="blind">실외용 CCTV</span>
+                                                            </i>
+                                                            <div data-tooltip-wrap>
+                                                                <div class="sr-float-tooltip" data-tooltip>
+                                                                    <button data-tooltip-title>
+                                                                        <p>실외용 CCTV</p>
+                                                                    </button>
+                                                                    <div data-tooltip-text>
+                                                                        <p>
+                                                                            넓은 범위의 가시거리도 촬영이<br />가능하며
+                                                                            어두운 밤에도 선명하게<br />촬영 돼요!
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="sr-circle-item-ex sr-circle-item2">
+                                                        <div class="sr-circle-item-inner">
+                                                            <div data-tooltip-wrap data-tooltip-bottom>
+                                                                <div class="sr-float-tooltip" data-tooltip>
+                                                                    <button data-tooltip-title>
+                                                                        <p>녹화기(NVR)</p>
+                                                                    </button>
+                                                                    <div data-tooltip-text>
+                                                                        <p>
+                                                                            고화질 영상의 저장과 조회가 가능하고<br />영상
+                                                                            압축 기술로 저장 기간도 길어요!
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <i class="img-secom-circle-item img-secom-circle-item7">
+                                                                <span class="blind">컨트롤러</span>
+                                                            </i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="sr-circle-item sr-circle-item3">
+                                                        <div class="sr-circle-item-inner">
+                                                            <i class="img-secom-circle-item img-secom-circle-item8">
+                                                                <span class="blind">실내용 CCTV</span>
+                                                            </i>
+                                                            <div data-tooltip-wrap>
+                                                                <div class="sr-float-tooltip" data-tooltip>
+                                                                    <button data-tooltip-title>
+                                                                        <p>실내용 CCTV</p>
+                                                                    </button>
+                                                                    <div data-tooltip-text>
+                                                                        <p>
+                                                                            매장 운영 환경과 목적에 맞는<br />
+                                                                            최대 500만 화소 고화질 카메라로<br />빈틈없는
+                                                                            감시가 가능해요!
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- showroom-step3-wrap 인접클래스 active 스텝활성화 -->
+                                    <div class="showroom-step-wrap showroom-step3-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- CCTV 서비스 : 스와이퍼 -->
+                                            <div class="sr-step-swiper-wrap sr-step-swiper-wrap2">
+                                                <div class="sr-step-swiper-inner">
+                                                    <div class="swiper-title-wrap swiper-title-wrap2">
+                                                        <div class="swiper-title-item swiper-title-item1">
+                                                            <div class="top-swiper-text">
+                                                                <h5 class="title-step-swiper">
+                                                                    <span class="text">
+                                                                        <span class="bold"
+                                                                            >2백만 화소 CCTV 대비 2배 선명한 화질로
+                                                                            정교한 감시 가능</span
+                                                                        >
+                                                                    </span>
+                                                                </h5>
+                                                                <em class="sub-text-step-swiper">
+                                                                    <span class="text"
+                                                                        >선명하고 뛰어난 야간 화질로 이동 차량의 후면
+                                                                        번호판 식별 등 정교한 감시가 가능합니다.</span
+                                                                    >
+                                                                </em>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-title-item swiper-title-item1">
+                                                            <div class="top-swiper-text">
+                                                                <h5 class="title-step-swiper">
+                                                                    <span class="text">
+                                                                        <span class="bold"> 24시간 연중무휴 </span>
+                                                                    </span>
+                                                                </h5>
+                                                                <em class="sub-text-step-swiper">
+                                                                    <span class="text">
+                                                                        24시간 운영 연중무휴, 문제 상황 발생 시 바로
+                                                                        대응 가능한 상담직원이 항시 대기중입니다.
+                                                                    </span>
+                                                                </em>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-title-item swiper-title-item1">
+                                                            <div class="top-swiper-text">
+                                                                <h5 class="title-step-swiper">
+                                                                    <span class="text">
+                                                                        <span class="bold">
+                                                                            모두(MoDU) 앱 원격 모니터링
+                                                                        </span>
+                                                                    </span>
+                                                                </h5>
+                                                                <em class="sub-text-step-swiper">
+                                                                    <span class="text">
+                                                                        PC는 물론, 에스원 통합 모바일 애플리케이션을
+                                                                        통해 언제 어디서나 모니터링이 가능합니다.
+                                                                    </span>
+                                                                </em>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-layer-wrap swiper-layer-wrap2">
+                                                        <div
+                                                            class="swiper-layer-item swiper-layer-item1 swiper-movie-item"
+                                                        >
+                                                            <div class="thumbnail-wrap thumbnail-wrap1 active"></div>
+                                                            <!--
+                                                            <iframe
+                                                                class="video-iframe"
+                                                                src="https://www.youtube.com/embed/8lh9DvMnpOI?si=8KfSQCj0crOujrLj"
+                                                                title="YouTube video player"
+                                                                frameborder="0"
+                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                                allowfullscreen
+                                                            ></iframe>
+                                                            -->
+                                                            <video
+                                                                src="/video/s1-sr3-store-sc2.mp4"
+                                                                class="iframe-video tag-video"
+                                                                controls
+                                                            ></video>
+                                                        </div>
+                                                        <div class="swiper-layer-item swiper-layer-item2">
+                                                            <div class="thumbnail-wrap thumbnail-wrap2 active">
+                                                                <div class="thumbnail-inner">
+                                                                    <span class="blind">이미지</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-layer-item swiper-layer-item3">
+                                                            <div class="thumbnail-wrap thumbnail-wrap3 active">
+                                                                <div class="thumbnail-inner">
+                                                                    <span class="blind">이미지</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom-swiper-button-wrap">
+                                                        <button
+                                                            class="button-swiper-bottom button-swiper-bottom-screen2 bg-color-blue"
+                                                            title="체험 완료"
+                                                            aria-label="체험 완료"
+                                                        >
+                                                            <span class="text">체험 완료</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- // CCTV 서비스 : 스와이퍼 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// [스크린2 영역 / CCTV 서비스] -->
+
+                            <!-- [스크린3 영역 / 출입관리 서비스] : showroom-screen3-wrap 인접클래스 active시 스크린 활성화 -->
+                            <div class="showroom-screen-wrap showroom-screen3-wrap">
+                                <div class="showroom-screen-inner">
+                                    <!-- showroom-step1-wrap 인접클래스 active 스텝활성화 -->
+                                    <div class="showroom-step-wrap showroom-step1-wrap">
+                                        <div class="showroom-step-inner">
+                                            <div class="sr-speech-bubble sr-speech-bubble1 sr-speech-sr3-st1">
+                                                <div class="sr-speech-bubble-inner">
+                                                    <p class="sr-speech-bubble-text">
+                                                        <em>퇴근할 때 문을 잠그지 않는 경우</em>가 있었는데<br />
+                                                        에스원 덕분에 안전하고 편리해졌어요!
+                                                    </p>
+                                                    <span class="sr-speech-bubble-frame">
+                                                        <span class="sr-speech-bubble-box"></span>
+                                                        <span class="sr-speech-bubble-tail right"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="sr-speech-bubble sr-speech-bubble2 sr-speech-sr3-st1-2">
+                                                <div class="sr-speech-bubble-inner">
+                                                    <p class="sr-speech-bubble-text">
+                                                        <em>에스원 출입관리 서비스</em>에<br />
+                                                        대해 알려드릴게요!
+                                                    </p>
+                                                    <span class="sr-speech-bubble-frame">
+                                                        <span class="sr-speech-bubble-box"></span>
+                                                        <span class="sr-speech-bubble-tail left"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <i class="sr-person-cs1-sr3 sr-person-cs1-sr3-st1">
+                                                <span class="blind">카페 직원</span>
+                                            </i>
+                                        </div>
+                                    </div>
+                                    <!-- showroom-step2-wrap 인접클래스 active 스텝활성화 -->
+                                    <div class="showroom-step-wrap showroom-step2-wrap">
+                                        <div class="showroom-step-inner">
+                                            <!-- 기기 -->
+                                            <div class="info-view-popup-wrap">
+                                                <div class="info-view-popup-inner">
+                                                    <!-- 버튼 영역 -->
+                                                    <div class="info-button-wrap">
+                                                        <div class="info-button-inner">
+                                                            <ul class="info-button-list">
+                                                                <li class="info-button-item">
+                                                                    <button
+                                                                        class="button-info-view"
+                                                                        title="팝업 정보 보기"
+                                                                        aria-label="팝업 정보 보기"
+                                                                    >
+                                                                        <span class="text">카드 리더기</span>
+                                                                        <em class="icon-view">
+                                                                            <span class="icon-view-inner">
+                                                                                <i class="bar bar1"></i>
+                                                                                <i class="bar bar2"></i>
+                                                                            </span>
+                                                                        </em>
+                                                                    </button>
+                                                                </li>
+                                                                <li class="info-button-item">
+                                                                    <button
+                                                                        class="button-info-view"
+                                                                        title="팝업 정보 보기"
+                                                                        aria-label="팝업 정보 보기"
+                                                                    >
+                                                                        <span class="text">지문 리더기</span>
+                                                                        <em class="icon-view">
+                                                                            <span class="icon-view-inner">
+                                                                                <i class="bar bar1"></i>
+                                                                                <i class="bar bar2"></i>
+                                                                            </span>
+                                                                        </em>
+                                                                    </button>
+                                                                </li>
+                                                                <li class="info-button-item">
+                                                                    <button
+                                                                        class="button-info-view"
+                                                                        title="팝업 정보 보기"
+                                                                        aria-label="팝업 정보 보기"
+                                                                    >
+                                                                        <span class="text">얼굴 리더기</span>
+                                                                        <em class="icon-view">
+                                                                            <span class="icon-view-inner">
+                                                                                <i class="bar bar1"></i>
+                                                                                <i class="bar bar2"></i>
+                                                                            </span>
+                                                                        </em>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--// 버튼 영역 -->
+                                                    <!-- 팝업 영역 -->
+                                                    <div class="info-popup-wrap">
+                                                        <div class="info-popup-inner">
+                                                            <ul class="popup-view-list">
+                                                                <li class="popup-view-item">
+                                                                    <div class="popup-view-wrap">
+                                                                        <div class="popup-view-inner">
+                                                                            <a
+                                                                                class="icon-view-close"
+                                                                                href="javascript:void(0)"
+                                                                                title="닫기"
+                                                                                aria-label="닫기"
+                                                                            >
+                                                                                <span class="icon-view-inner">
+                                                                                    <i class="bar bar1"></i>
+                                                                                    <i class="bar bar2"></i>
+                                                                                </span>
+                                                                            </a>
+                                                                            <h4 class="title-popup-view">
+                                                                                <span class="text">카드 리더기</span>
+                                                                            </h4>
+                                                                            <div class="screen-view-icon-wrap">
+                                                                                <div class="screen-view-icon-inner">
+                                                                                    <i
+                                                                                        class="image-device image-device1"
+                                                                                    >
+                                                                                        <span class="blind"
+                                                                                            >카드 리더기</span
+                                                                                        >
+                                                                                    </i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bottom-text-wrap">
+                                                                                <span class="text">
+                                                                                    카드, 스마트폰(모바일 카드)으로<br />
+                                                                                    간편하게 인증 후 출입할 수 있어요!
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="popup-view-item">
+                                                                    <div class="popup-view-wrap">
+                                                                        <div class="popup-view-inner">
+                                                                            <a
+                                                                                class="icon-view-close"
+                                                                                href="javascript:void(0)"
+                                                                                title="닫기"
+                                                                                aria-label="닫기"
+                                                                            >
+                                                                                <span class="icon-view-inner">
+                                                                                    <i class="bar bar1"></i>
+                                                                                    <i class="bar bar2"></i>
+                                                                                </span>
+                                                                            </a>
+                                                                            <h4 class="title-popup-view">
+                                                                                <span class="text">지문 리더기</span>
+                                                                            </h4>
+                                                                            <div class="screen-view-icon-wrap">
+                                                                                <div class="screen-view-icon-inner">
+                                                                                    <i
+                                                                                        class="image-device image-device2"
+                                                                                    >
+                                                                                        <span class="blind"
+                                                                                            >지문 리더기</span
+                                                                                        >
+                                                                                    </i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bottom-text-wrap">
+                                                                                <span class="text">
+                                                                                    개인 생체(지문)을 활용하여<br />
+                                                                                    보안은 철저하고,<br />
+                                                                                    사용은 더욱 편리해요!
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="popup-view-item">
+                                                                    <div class="popup-view-wrap">
+                                                                        <div class="popup-view-inner">
+                                                                            <a
+                                                                                class="icon-view-close"
+                                                                                href="javascript:void(0)"
+                                                                                title="닫기"
+                                                                                aria-label="닫기"
+                                                                            >
+                                                                                <span class="icon-view-inner">
+                                                                                    <i class="bar bar1"></i>
+                                                                                    <i class="bar bar2"></i>
+                                                                                </span>
+                                                                            </a>
+                                                                            <h4 class="title-popup-view">
+                                                                                <span class="text">얼굴 리더기</span>
+                                                                            </h4>
+                                                                            <div class="screen-view-icon-wrap">
+                                                                                <div class="screen-view-icon-inner">
+                                                                                    <i
+                                                                                        class="image-device image-device3"
+                                                                                    >
+                                                                                        <span class="blind"
+                                                                                            >얼굴 리더기</span
+                                                                                        >
+                                                                                    </i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bottom-text-wrap">
+                                                                                <span class="text">
+                                                                                    비접촉 방식으로 위생적이고
+                                                                                    편리하며,<br />
+                                                                                    고도화된 인증방식으로<br />
+                                                                                    보안수준까지 높일 수 있어요!
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--// 팝업 영역 -->
+                                                </div>
+                                            </div>
+                                            <div class="sr-alert-msg-wrap">
+                                                <div class="sr-alert-msg-inner">
+                                                    <div class="sr-alert-msg sr-alert-msg1">
+                                                        <p><i class="complete"></i>카드 인식이 완료되었습니다.</p>
+                                                    </div>
+                                                    <div class="sr-alert-msg sr-alert-msg2">
+                                                        <p><i class="complete"></i>지문 인식이 완료되었습니다.</p>
+                                                    </div>
+                                                    <div class="sr-alert-msg sr-alert-msg3">
+                                                        <p><i class="complete"></i>얼굴 인식이 완료되었습니다.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sr-person-cs1-sr3 sr-person-cs1-sr3-st2">
+                                                <div class="sr-person-cs1-sr3-inner">
+                                                    <i class="sr-person-cs1-sr3-st2-obj sr-person-cs1-sr3-st2-obj1">
+                                                        <span class="blind">카페 직원</span>
+                                                    </i>
+                                                    <i class="sr-person-cs1-sr3-st2-obj sr-person-cs1-sr3-st2-obj2">
+                                                        <span class="blind">카페 직원</span>
+                                                    </i>
+                                                    <i class="sr-person-cs1-sr3-st2-obj sr-person-cs1-sr3-st2-obj3">
+                                                        <span class="blind">카페 직원</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <i class="sr-targeting sr-targeting-sr3-st2 active">
+                                                <span class="sr-targeting-frame"></span>
+                                                <span class="sr-targeting-inner"></span>
+                                            </i>
+                                            <div class="item-skew-device-sr3-wrap item-skew-device-sr3-sys-wrap">
+                                                <div class="item-skew-device-sr3-sys-inner">
+                                                    <i class="item-skew-device-item item-skew-device-item1">
+                                                        <span class="blind">카드 리더기</span>
+                                                    </i>
+                                                    <i class="item-skew-device-item item-skew-device-item2">
+                                                        <span class="blind">지문 리더기</span>
+                                                    </i>
+                                                    <i class="item-skew-device-item item-skew-device-item3">
+                                                        <span class="blind">얼굴 리더기</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- showroom-step3-wrap 인접클래스 active 스텝활성화 -->
+                                    <div class="showroom-step-wrap showroom-step3-wrap">
+                                        <div class="showroom-step-inner">
+                                            <div class="sr-alert-msg-wrap">
+                                                <div class="sr-alert-msg-inner">
+                                                    <div class="sr-alert-msg sr-alert-msg-sr3-st3">
+                                                        <p><i class="complete"></i>경비 설정이 되었습니다.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="sr-person-cs1-sr3 sr-person-cs1-sr3-st3">
+                                                <div class="sr-person-cs1-sr3-inner">
+                                                    <i class="sr-person-cs1-sr3-st2-obj sr-person-cs1-sr3-st2-obj4">
+                                                        <span class="blind">카페 직원</span>
+                                                    </i>
+                                                    <i class="sr-person-cs1-sr3-st2-obj sr-person-cs1-sr3-st2-obj1">
+                                                        <span class="blind">카페 직원</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+
+                                            <div class="item-skew-device-sr3-wrap item-skew-device-sr3-sys-wrap2">
+                                                <div class="item-skew-device-sr3-sys-inner">
+                                                    <i class="item-skew-device-item item-skew-device-item1">
+                                                        <span class="blind">카드 리더기</span>
+                                                    </i>
+                                                </div>
+                                            </div>
+
+                                            <div class="popup-layer-animation2-wrap">
+                                                <div class="popup-layer-animation2-inner">
+                                                    <div class="s1-reader-safe-warp">
+                                                        <div class="s1-reader-safe-inner">
+                                                            <em class="circle-safe-check-wrap">
+                                                                <span class="circle-safe-check-inner">
+                                                                    <i class="icon-safe-check-white">
+                                                                        <span class="blind">체크</span>
+                                                                    </i>
+                                                                    <i class="icon-safe-check-circle">
+                                                                        <span class="blind">원</span>
+                                                                    </i>
+                                                                </span>
+                                                            </em>
+                                                            <div class="bg-icon-safe-lock-wrap">
+                                                                <div class="bg-icon-safe-lock-inner">
+                                                                    <div class="bg-icon-safe-ring">
+                                                                        <span class="blind">자물쇠 고리</span>
+                                                                    </div>
+                                                                    <div class="bg-icon-safe-lock">
+                                                                        <span class="blind">자물쇠 몸통</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bg-icon-safe-guard">
+                                                                <span class="blind">세이프</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom-text-wrap">
+                                                        <span class="text">
+                                                            <strong class="color-blue">에스원 출입관리 서비스</strong>로
+                                                            더욱 안전하고<br />
+                                                            편리하게 관리하세요!
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- 출입관리 서비스 : 스와이퍼 -->
+                                            <div class="sr-step-swiper-wrap sr-step-swiper-wrap3">
+                                                <div class="sr-step-swiper-inner">
+                                                    <div class="swiper-title-wrap swiper-title-wrap3">
+                                                        <div class="swiper-title-item swiper-title-item1">
+                                                            <div class="top-swiper-text">
+                                                                <h5 class="title-step-swiper">
+                                                                    <span class="text">
+                                                                        <strong
+                                                                            >에스원의 출입관리 서비스를 영상으로 체험해
+                                                                            보세요!</strong
+                                                                        >
+                                                                    </span>
+                                                                </h5>
+                                                                <!-- <em class="sub-text-step-swiper">
+                                                                    <span class="text">출입관리 서비스의 사례</span>
+                                                                </em> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-layer-wrap swiper-layer-wrap3">
+                                                        <div
+                                                            class="swiper-layer-item swiper-layer-item1 swiper-movie-item"
+                                                        >
+                                                            <!--
+                                                            <iframe
+                                                                class="iframe-video"
+                                                                id="youtubePlayer2"
+                                                                width="100%"
+                                                                height="100%"
+                                                                src="https://www.youtube.com/embed/QBJC0SGsTtk?enablejsapi=1"
+                                                                title="YouTube video player"
+                                                                frameborder="0"
+                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                                allowfullscreen
+                                                            ></iframe>
+                                                            -->
+                                                            <video
+                                                                src="/video/s1-sr3-store-sc3.mp4"
+                                                                class="iframe-video tag-video"
+                                                                controls
+                                                            >
+                                                                <track
+                                                                    src="/video/s1-sr3-store-sc3.vtt"
+                                                                    kind="subtitles"
+                                                                    srclang="ko"
+                                                                    label="Korean"
+                                                                />
+                                                            </video>
+                                                            <div class="thumbnail-wrap thumbnail-wrap1 active">
+                                                                <div class="thumbnail-inner">
+                                                                    <button
+                                                                        class="button-movie-start"
+                                                                        title="재생"
+                                                                        aria-label="재생"
+                                                                    >
+                                                                        <span class="blind">PLAY</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom-swiper-button-wrap">
+                                                        <button
+                                                            class="button-swiper-bottom button-swiper-bottom-screen3 bg-color-blue"
+                                                            title="체험 완료"
+                                                            aria-label="체험 완료"
+                                                        >
+                                                            <span class="text">체험 완료</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- // 출입관리 서비스 : 스와이퍼 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// [스크린3 영역 / 출입관리 서비스] -->
+                        </div>
+                    </div>
+
+                    <div class="showroom-background-area">
+                        <div class="showroom-background-inner">
+                            <div class="showroom-background-layer">
+                                <span class="blind">배경 인테리어</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showroom-background-dim">
+                        <span class="blind">배경 밝기</span>
+                    </div>
+
+                    <!-- service-step-wrap : 자동 생성 메뉴 -->
+                    <div class="service-step-wrap service-screen1-step-wrap">
+                        <span class="blind">자동 생성 메뉴</span>
+                    </div>
+                    <!--// service-step-wrap -->
+
+                    <!--
+                        bottom-gray-tooltip-wrap 인접클래스 active 시
+                        하단 정보영역 박스 전체 활성화
+                    -->
+                    <div class="bottom-gray-tooltip-wrap bottom-gray-tooltip-wrap-sr1-st3-1">
+                        <!-- bottom-gray-text 인접클래스 active 시 하단 정보 텍스트 내용 -->
+                        <p class="bottom-gray-text bottom-gray-text1">
+                            <strong class="color-bold-blue">문열림 감지기</strong>는 창문 또는 출입문에 부착되어 강제 문
+                            열림을 감지합니다.
+                        </p>
+                    </div>
+
+                    <div class="bottom-gray-tooltip-wrap bottom-gray-tooltip-wrap-sr1-st3-2">
+                        <!-- bottom-gray-text 인접클래스 active 시 하단 정보 텍스트 내용 -->
+                        <p class="bottom-gray-text bottom-gray-text2">
+                            <strong class="color-bold-blue">움직임 감지기</strong>는 내부 무단 침입자의 움직임을
+                            감지합니다.
+                        </p>
+                    </div>
+
+                    <div class="bottom-gray-tooltip-wrap bottom-gray-tooltip-wrap-sr1-st3-3">
+                        <!-- bottom-gray-text 인접클래스 active 시 하단 정보 텍스트 내용 -->
+                        <p class="bottom-gray-text bottom-gray-text3">
+                            실제 에스원에서 사용하는 CCTV입니다. 쇼룸에 설치된 CCTV를 선택해 보세요.<br />
+                            매장에 적합한 <strong class="color-bold-blue">CCTV 종류와 설치 장소를 안내</strong>해
+                            드립니다.
+                        </p>
+                    </div>
+                    <!--// bottom-gray-tooltip-wrap -->
+                </div>
+            </div>
+        </div>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomData.js"></script>
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomMenu.js"></script>
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomComm.js"></script>
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroom3.js"></script>
+        <script type="text/javascript" src="/js/ui/ko/showroom/showroomControll.js"></script>
+        <script>
+            function setView() {
+                const width = window.innerWidth;
+                const height = window.innerHeight;
+                const wrap = document.querySelector('.showroom-content-wrap3');
+                const srBgA = document.querySelector('.showroom-background-area');
+                const widthSize = 1920;
+                const heightSize = 1080;
+
+                // 너비나 높이가 지정된 크기 이상인 경우 원래 크기 유지
+                if (width >= widthSize && height >= heightSize) {
+                    wrap.style.transform = `translate3d(-50%,-50%, 0) scale(1)`;
+                    srBgA.style.transform = `translate3d(-50%,-50%, 0) scale(1)`;
+                    return;
+                }
+
+                const horizontalZoomRate = width / widthSize;
+                const verticalZoomRate = height / heightSize;
+                const zoomRate = widthSize * verticalZoomRate > width ? horizontalZoomRate : verticalZoomRate;
+
+                wrap.style.transform = `translate3d(-50%,-50%, 0) scale(${zoomRate})`;
+                srBgA.style.transform = `translate3d(-50%,-50%, 0) scale(${zoomRate})`;
+            }
+            setView();
+
+            setPageContent('sr3-store', 'screen1', showroomData); // 카테고리 스크린 데이터 초기설정
+
+            window.addEventListener('resize', setView);
+            window.addEventListener('DOMContentLoaded', () => {
+                showroomComm();
+                showroom3();
+                slickSlideContent();
+            });
+        </script>
+
+        <!--// 쇼룸 전용 컨텐츠 -->
+    </body>
+</html>

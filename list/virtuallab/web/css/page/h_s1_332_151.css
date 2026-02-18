@@ -1,0 +1,1077 @@
+body:has(.h_s1_332_151) {
+  overflow: hidden;
+}
+body:has(.h_s1_332_151):after {
+  content: url(../../images/h_s1_332_151/img-cell-animal-step0.png) url(../../images/h_s1_332_151/img-cell-animal-step1.png) url(../../images/h_s1_332_151/img-cell-animal-step2.png) url(../../images/h_s1_332_151/img-cell-animal-step3.png) url(../../images/h_s1_332_151/img-cell-animal-step4.png) url(../../images/h_s1_332_151/img-cell-animal-step5.png) url(../../images/h_s1_332_151/img-cell-animal-step6.png) url(../../images/h_s1_332_151/img-cell-animal-step7.png) url(../../images/h_s1_332_151/img-cell-animal-step8.png) url(../../images/h_s1_332_151/img-cell-animal-step9.png) url(../../images/h_s1_332_151/img-cell-animal-step10.png) url(../../images/h_s1_332_151/img-cell-animal-step11.png) url(../../images/h_s1_332_151/img-cell-animal2-step1.png) url(../../images/h_s1_332_151/img-cell-animal2-step2.png) url(../../images/h_s1_332_151/img-cell-animal2-step3.png) url(../../images/h_s1_332_151/img-cell-animal2-step4.png) url(../../images/h_s1_332_151/img-cell-animal2-step5.png) url(../../images/h_s1_332_151/img-cell-animal2-step6.png) url(../../images/h_s1_332_151/img-cell-animal2-step7.png) url(../../images/h_s1_332_151/img-cell-animal2-step8.png) url(../../images/h_s1_332_151/img-cell-animal2-step9.png) url(../../images/h_s1_332_151/img-cell-animal2-step10.png) url(../../images/h_s1_332_151/img-cell-animal2-step11.png) url(../../images/h_s1_332_151/img-cell-plant-step0.png) url(../../images/h_s1_332_151/img-cell-plant-step1.png) url(../../images/h_s1_332_151/img-cell-plant-step2.png) url(../../images/h_s1_332_151/img-cell-plant-step3.png) url(../../images/h_s1_332_151/img-cell-plant-step4.png) url(../../images/h_s1_332_151/img-cell-plant-step5.png) url(../../images/h_s1_332_151/img-cell-plant-step6.png) url(../../images/h_s1_332_151/img-cell-plant-step7.png) url(../../images/h_s1_332_151/img-cell-plant-step8.png) url(../../images/h_s1_332_151/img-cell-plant-step9.png) url(../../images/h_s1_332_151/img-cell-plant-step10.png) url(../../images/h_s1_332_151/img-cell-plant-step11.png) url(../../images/h_s1_332_151/img-cell-plant2-step1.png) url(../../images/h_s1_332_151/img-cell-plant2-step2.png) url(../../images/h_s1_332_151/img-cell-plant2-step3.png) url(../../images/h_s1_332_151/img-cell-plant2-step4.png) url(../../images/h_s1_332_151/img-cell-plant2-step5.png) url(../../images/h_s1_332_151/img-cell-plant2-step6.png) url(../../images/h_s1_332_151/img-cell-plant2-step7.png) url(../../images/h_s1_332_151/img-cell-plant2-step8.png) url(../../images/h_s1_332_151/img-cell-plant2-step9.png) url(../../images/h_s1_332_151/img-cell-plant2-step10.png);
+}
+
+.h_s1_332_151 .page-view3:has(.guide-balloon-tip-wrap.active) .tab-list-basic.active .button-tab {
+  pointer-events: none;
+}
+.h_s1_332_151 .intro-title-text {
+  font-size: 108px;
+  line-height: 113px;
+  letter-spacing: -2px;
+}
+.h_s1_332_151 .modal-layer .aim-madal .bullet-list {
+  width: 80%;
+  padding-left: 62px;
+}
+.h_s1_332_151 .guide-balloon-tip-wrap {
+  text-align: left;
+  z-index: 1;
+  -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.h_s1_332_151 .guide-balloon-tip-wrap1 {
+  top: 120px;
+}
+.h_s1_332_151 .guide-balloon-tip-wrap2 {
+  top: 120px;
+}
+.h_s1_332_151 .guide-balloon-tip-wrap3,
+.h_s1_332_151 .guide-balloon-tip-wrap6 {
+  left: 79px;
+  top: 417px;
+  right: auto;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: unset;
+     -moz-transform: unset;
+      -ms-transform: unset;
+          transform: unset;
+}
+.h_s1_332_151 .guide-balloon-tip-wrap3.active,
+.h_s1_332_151 .guide-balloon-tip-wrap6.active {
+  opacity: 1;
+  visibility: unset;
+  -webkit-transform: translateY(-20px);
+     -moz-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+.h_s1_332_151 .guide-balloon-tip-wrap4,
+.h_s1_332_151 .guide-balloon-tip-wrap7 {
+  right: 585px;
+  top: 444px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: unset;
+     -moz-transform: unset;
+      -ms-transform: unset;
+          transform: unset;
+}
+.h_s1_332_151 .guide-balloon-tip-wrap4.active,
+.h_s1_332_151 .guide-balloon-tip-wrap7.active {
+  opacity: 1;
+  visibility: unset;
+  -webkit-transform: translateY(-20px);
+     -moz-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+.h_s1_332_151 .guide-balloon-tip-wrap5,
+.h_s1_332_151 .guide-balloon-tip-wrap8 {
+  right: 74px;
+  top: 417px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: unset;
+     -moz-transform: unset;
+      -ms-transform: unset;
+          transform: unset;
+}
+.h_s1_332_151 .guide-balloon-tip-wrap5.active,
+.h_s1_332_151 .guide-balloon-tip-wrap8.active {
+  opacity: 1;
+  visibility: unset;
+  -webkit-transform: translateY(-20px);
+     -moz-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+.h_s1_332_151 .scene-layer1 {
+  position: relative;
+  height: 100%;
+  padding-top: 130px;
+  text-align: center;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-wrap {
+  display: inline-block;
+  background: #3a4757;
+  font-size: 0;
+  padding: 36px 85px;
+  -moz-border-radius: 28.5px;
+       border-radius: 28.5px;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item {
+  display: inline-block;
+  vertical-align: top;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item + .drag-area-cell-item {
+  margin-left: 110px;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame {
+  display: inline-block;
+  vertical-align: top;
+  width: 184px;
+  height: 184px;
+  background: url(../../images/h_s1_332_151/img-cell-frame.png) no-repeat 50%/184px auto;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame.ui-droppable-active [data-drag-item] {
+  z-index: 20;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item] {
+  display: inline-block;
+  vertical-align: top;
+  width: inherit;
+  height: inherit;
+  cursor: pointer;
+  z-index: 12;
+  position: relative;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item]:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=animal]:before {
+  width: 201px;
+  height: 201px;
+  background: url(../../images/h_s1_332_151/img-cell-animal-step0.png) no-repeat 50%/201px auto;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=animal].low:before {
+  -webkit-animation-direction: normal;
+     -moz-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-name: animalCellChangeLow;
+     -moz-animation-name: animalCellChangeLow;
+          animation-name: animalCellChangeLow;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.5s;
+     -moz-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in;
+     -moz-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=animal].low-to-same {
+  animation-direction: reverse;
+  -webkit-animation-name: animalCellChangeLow;
+     -moz-animation-name: animalCellChangeLow;
+          animation-name: animalCellChangeLow;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.5s;
+     -moz-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+     -moz-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=animal].low-to-same:before {
+  background: none;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=animal].high:before {
+  -webkit-animation-direction: normal;
+     -moz-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-name: animalCellChangeHigh;
+     -moz-animation-name: animalCellChangeHigh;
+          animation-name: animalCellChangeHigh;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=animal].high-to-same {
+  animation-direction: reverse;
+  -webkit-animation-name: animalCellChangeHigh;
+     -moz-animation-name: animalCellChangeHigh;
+          animation-name: animalCellChangeHigh;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=animal].high-to-same:before {
+  background: none;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=plant]:before {
+  width: 184px;
+  height: 184px;
+  background: url(../../images/h_s1_332_151/img-cell-plant-step1.png) no-repeat 50%/113px 104px;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=plant].low:before {
+  -webkit-animation-direction: normal;
+     -moz-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-name: plantCellChangeLow;
+     -moz-animation-name: plantCellChangeLow;
+          animation-name: plantCellChangeLow;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.2s;
+     -moz-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=plant].low-to-same {
+  animation-direction: reverse;
+  -webkit-animation-name: plantCellChangeLow;
+     -moz-animation-name: plantCellChangeLow;
+          animation-name: plantCellChangeLow;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.2s;
+     -moz-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=plant].low-to-same:before {
+  background: none;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=plant].high:before {
+  -webkit-animation-direction: normal;
+     -moz-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-name: plantCellChangeHigh;
+     -moz-animation-name: plantCellChangeHigh;
+          animation-name: plantCellChangeHigh;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.2s;
+     -moz-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=plant].high-to-same {
+  animation-direction: reverse;
+  -webkit-animation-name: plantCellChangeHigh;
+     -moz-animation-name: plantCellChangeHigh;
+          animation-name: plantCellChangeHigh;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.2s;
+     -moz-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-frame [data-drag-item=plant].high-to-same:before {
+  background: none;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-text {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 20px;
+}
+.h_s1_332_151 .scene-layer1 .drag-area-cell-item .cell-text > small {
+  font-size: 25px;
+  font-weight: 400;
+  display: block;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-wrap {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition-duration: 0.2s;
+     -moz-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-wrap.show {
+  visibility: unset;
+  opacity: 1;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-wrap.show .drag-guide-hand:before {
+  -webkit-animation-play-state: running;
+     -moz-animation-play-state: running;
+          animation-play-state: running;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-wrap > span {
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-circle {
+  width: 27px;
+  height: 27px;
+  border: 7px solid #262e38;
+  -moz-border-radius: 50%;
+       border-radius: 50%;
+  background: #fff;
+  top: 0;
+  left: 0;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-line {
+  width: 6px;
+  background: url(../../images/h_s1_332_151/img-guide-line-dot.png) repeat-y 50% 0/6px 15px;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-arrow {
+  width: 56px;
+  height: 56px;
+  background: url(../../images/h_s1_332_151/img-guide-arrow.png) no-repeat 50%/56px auto;
+  bottom: 0;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-hand {
+  width: 84px;
+  z-index: 3;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-hand:before {
+  content: "";
+  display: inline-block;
+  width: 84px;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../../images/common/item-finger-right.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 84px auto;
+     -moz-background-size: 84px auto;
+          background-size: 84px auto;
+  background-position: 50%;
+  -webkit-animation-name: guideHand;
+     -moz-animation-name: guideHand;
+          animation-name: guideHand;
+  -webkit-animation-duration: 1.5s;
+     -moz-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+     -moz-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: paused;
+     -moz-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-wrap-1 {
+  width: 61px;
+  height: 257px;
+  position: absolute;
+  top: -259px;
+  left: -webkit-calc(50% - 72px);
+  left: -moz-calc(50% - 72px);
+  left: calc(50% - 72px);
+  -webkit-transform: rotate(-15deg);
+     -moz-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-wrap-1 .drag-guide-line {
+  height: 170px;
+  top: 30px;
+  left: 9px;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-wrap-1 .drag-guide-arrow {
+  left: -16px;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-wrap-1 .drag-guide-hand {
+  height: 130px;
+  top: 32px;
+  left: 18px;
+}
+.h_s1_332_151 .scene-layer1 .drag-guide-wrap-1 .drag-guide-hand:before {
+  -webkit-transform: rotate(-15deg);
+     -moz-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+.h_s1_332_151 .scene-layer1 .drop-area-beaker-wrap {
+  position: relative;
+  display: block;
+  margin-top: 90px;
+  font-size: 0;
+  white-space: nowrap;
+}
+.h_s1_332_151 .scene-layer1 .drop-area-beaker-item {
+  display: inline-block;
+  vertical-align: top;
+}
+.h_s1_332_151 .scene-layer1 .drop-area-beaker-item + .drop-area-beaker-item {
+  margin-left: 202px;
+}
+.h_s1_332_151 .scene-layer1 .drop-area-beaker-item .beaker-bg {
+  display: inline-block;
+  vertical-align: top;
+  width: 318px;
+  height: 384px;
+}
+.h_s1_332_151 .scene-layer1 .drop-area-beaker-item .beaker-bg > span {
+  display: block;
+  width: 100%;
+}
+.h_s1_332_151 .scene-layer1 .drop-area-beaker-item .beaker-bg .beaker-top {
+  height: 48px;
+  background: url(../../images/h_s1_332_151/bg-beaker-01.png) no-repeat 0 0/100% auto;
+}
+.h_s1_332_151 .scene-layer1 .drop-area-beaker-item .beaker-bg .beaker-bottom {
+  height: -webkit-calc(100% - 48px);
+  height: -moz-calc(100% - 48px);
+  height: calc(100% - 48px);
+  background: url(../../images/h_s1_332_151/bg-beaker-02.png) no-repeat 0 0/100% auto;
+  margin-top: -19px;
+  position: relative;
+  z-index: 11;
+}
+.h_s1_332_151 .scene-layer1 .drop-area-beaker-item .beaker-bg .beaker-inner {
+  display: block;
+  width: 248px;
+  height: 181px;
+  position: absolute;
+  top: 130px;
+  left: 30px;
+}
+.h_s1_332_151 .scene-layer1 .drop-area-beaker-item .beaker-bg i {
+  display: inline-block;
+  vertical-align: top;
+  width: 81%;
+  height: -webkit-calc(100% + 10px);
+  height: -moz-calc(100% + 10px);
+  height: calc(100% + 10px);
+  position: absolute;
+  top: -29px;
+  left: 8.5%;
+  z-index: 11;
+}
+.h_s1_332_151 .scene-layer1 .drop-area-beaker-item .beaker-text {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: #fff;
+  padding: 17px 48px 12px;
+  background: rgba(65, 80, 97, 0.61);
+  -moz-border-radius: 45px;
+       border-radius: 45px;
+  margin-top: -13px;
+  position: relative;
+  z-index: 2;
+  -webkit-box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.36);
+     -moz-box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.36);
+          box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.36);
+}
+.h_s1_332_151 .scene-layer1 .btn-retry {
+  width: 62px;
+  height: 62px;
+  background: url(../../images/h_s1_332_151/ico_retry.png) no-repeat 50%/62px auto;
+  -webkit-box-shadow: 4px 4px 13px 0px rgba(28, 36, 46, 0.56);
+     -moz-box-shadow: 4px 4px 13px 0px rgba(28, 36, 46, 0.56);
+          box-shadow: 4px 4px 13px 0px rgba(28, 36, 46, 0.56);
+  -moz-border-radius: 50%;
+       border-radius: 50%;
+  position: absolute;
+  right: 60px;
+  bottom: 50px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 {
+  z-index: 16;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .tab-modal {
+  padding: 88px 140px 0 130px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .text-content-area {
+  padding-left: 0;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-inner {
+  width: 100%;
+  position: relative;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap {
+  margin: 26px 0 48px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-box {
+  width: 100%;
+  -moz-border-radius: 30px;
+       border-radius: 30px;
+  overflow: hidden;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row .td,
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row .th {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: -1px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row .td:first-child,
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row .th:first-child {
+  width: 14.7%;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row .td:nth-child(2),
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row .th:nth-child(2) {
+  width: 26.7%;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row .td:nth-child(3),
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row .th:nth-child(3) {
+  width: 28%;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row .td:nth-child(4),
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row .th:nth-child(4) {
+  width: 30.6%;
+  padding-right: 40px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row .td:has(.position-center),
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-row .th:has(.position-center) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-head {
+  background: #465261;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-head .th {
+  font-size: 24px;
+  color: #c3cbd5;
+  padding: 18px 0 15px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-body {
+  background: #303a46;
+  margin-top: -1px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-body .th,
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-body .td {
+  color: #fff;
+  padding: 30px 0 26px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-body .th {
+  font-size: 30px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-body .td {
+  font-size: 20px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-body .img-box {
+  display: block;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-body .img-box > img {
+  width: auto;
+  height: 100%;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-body .row-animal .img-box {
+  height: 146px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-body .row-animal .img-box + p {
+  margin-top: 25px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-body .row-plant {
+  border-top: 1px solid rgba(207, 215, 223, 0.11);
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-body .row-plant .img-box {
+  height: 146px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-table-wrap .table-body .row-plant .img-box + p {
+  margin-top: 16px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .modal-text {
+  padding: 0 0 72px 50px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #303a46;
+  line-height: 1.23;
+  letter-spacing: -1.5px;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .character-area {
+  width: 230px;
+  height: 233px;
+  bottom: 0;
+  right: -95px;
+  left: auto;
+}
+.h_s1_332_151 .modal-layer-activity-goals3 .character-area > img {
+  width: 100%;
+  height: auto;
+}
+
+@-webkit-keyframes guideHand {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@-moz-keyframes guideHand {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes guideHand {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@-webkit-keyframes animalCellChangeLow {
+  0% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step1.png) no-repeat 50%/201px auto;
+  }
+  10% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step2.png) no-repeat 50%/201px auto;
+  }
+  16.6% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step3.png) no-repeat 50%/201px auto;
+  }
+  33% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step4.png) no-repeat 50%/201px auto;
+  }
+  49.8% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step5.png) no-repeat 50%/201px auto;
+  }
+  50% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step6.png) no-repeat 50%/201px auto;
+  }
+  66% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step7.png) no-repeat 50%/201px auto;
+  }
+  70% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step8.png) no-repeat 50%/201px auto;
+  }
+  75% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step9.png) no-repeat 50%/201px auto;
+  }
+  95% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step10.png) no-repeat 50%/201px auto;
+  }
+  100% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step11.png) no-repeat 50%/201px auto;
+  }
+}
+@-moz-keyframes animalCellChangeLow {
+  0% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step1.png) no-repeat 50%/201px auto;
+  }
+  10% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step2.png) no-repeat 50%/201px auto;
+  }
+  16.6% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step3.png) no-repeat 50%/201px auto;
+  }
+  33% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step4.png) no-repeat 50%/201px auto;
+  }
+  49.8% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step5.png) no-repeat 50%/201px auto;
+  }
+  50% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step6.png) no-repeat 50%/201px auto;
+  }
+  66% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step7.png) no-repeat 50%/201px auto;
+  }
+  70% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step8.png) no-repeat 50%/201px auto;
+  }
+  75% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step9.png) no-repeat 50%/201px auto;
+  }
+  95% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step10.png) no-repeat 50%/201px auto;
+  }
+  100% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step11.png) no-repeat 50%/201px auto;
+  }
+}
+@keyframes animalCellChangeLow {
+  0% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step1.png) no-repeat 50%/201px auto;
+  }
+  10% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step2.png) no-repeat 50%/201px auto;
+  }
+  16.6% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step3.png) no-repeat 50%/201px auto;
+  }
+  33% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step4.png) no-repeat 50%/201px auto;
+  }
+  49.8% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step5.png) no-repeat 50%/201px auto;
+  }
+  50% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step6.png) no-repeat 50%/201px auto;
+  }
+  66% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step7.png) no-repeat 50%/201px auto;
+  }
+  70% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step8.png) no-repeat 50%/201px auto;
+  }
+  75% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step9.png) no-repeat 50%/201px auto;
+  }
+  95% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step10.png) no-repeat 50%/201px auto;
+  }
+  100% {
+    background: url(../../images/h_s1_332_151/img-cell-animal-step11.png) no-repeat 50%/201px auto;
+  }
+}
+@-webkit-keyframes animalCellChangeHigh {
+  0% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step1.png) no-repeat 50%/201px auto;
+  }
+  10% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step2.png) no-repeat 50%/201px auto;
+  }
+  16.6% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step3.png) no-repeat 50%/201px auto;
+  }
+  33% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step4.png) no-repeat 50%/201px auto;
+  }
+  49.8% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step5.png) no-repeat 50%/201px auto;
+  }
+  50% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step6.png) no-repeat 50%/201px auto;
+  }
+  66% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step7.png) no-repeat 50%/201px auto;
+  }
+  70% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step8.png) no-repeat 50%/201px auto;
+  }
+  80% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step9.png) no-repeat 50%/201px auto;
+  }
+  95% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step10.png) no-repeat 50%/201px auto;
+  }
+  100% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step11.png) no-repeat 50%/201px auto;
+  }
+}
+@-moz-keyframes animalCellChangeHigh {
+  0% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step1.png) no-repeat 50%/201px auto;
+  }
+  10% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step2.png) no-repeat 50%/201px auto;
+  }
+  16.6% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step3.png) no-repeat 50%/201px auto;
+  }
+  33% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step4.png) no-repeat 50%/201px auto;
+  }
+  49.8% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step5.png) no-repeat 50%/201px auto;
+  }
+  50% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step6.png) no-repeat 50%/201px auto;
+  }
+  66% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step7.png) no-repeat 50%/201px auto;
+  }
+  70% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step8.png) no-repeat 50%/201px auto;
+  }
+  80% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step9.png) no-repeat 50%/201px auto;
+  }
+  95% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step10.png) no-repeat 50%/201px auto;
+  }
+  100% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step11.png) no-repeat 50%/201px auto;
+  }
+}
+@keyframes animalCellChangeHigh {
+  0% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step1.png) no-repeat 50%/201px auto;
+  }
+  10% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step2.png) no-repeat 50%/201px auto;
+  }
+  16.6% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step3.png) no-repeat 50%/201px auto;
+  }
+  33% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step4.png) no-repeat 50%/201px auto;
+  }
+  49.8% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step5.png) no-repeat 50%/201px auto;
+  }
+  50% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step6.png) no-repeat 50%/201px auto;
+  }
+  66% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step7.png) no-repeat 50%/201px auto;
+  }
+  70% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step8.png) no-repeat 50%/201px auto;
+  }
+  80% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step9.png) no-repeat 50%/201px auto;
+  }
+  95% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step10.png) no-repeat 50%/201px auto;
+  }
+  100% {
+    background: url(../../images/h_s1_332_151/img-cell-animal2-step11.png) no-repeat 50%/201px auto;
+  }
+}
+@-webkit-keyframes plantCellChangeLow {
+  0% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step1.png) no-repeat 50%/113px 104px;
+  }
+  18% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step2.png) no-repeat 50%/113px 104px;
+  }
+  27% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step3.png) no-repeat 50%/113px 104px;
+  }
+  36% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step4.png) no-repeat 50%/113px 104px;
+  }
+  45% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step5.png) no-repeat 50%/113px 104px;
+  }
+  54% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step6.png) no-repeat 50%/113px 104px;
+  }
+  63% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step7.png) no-repeat 50%/113px 104px;
+  }
+  72% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step8.png) no-repeat 50%/113px 104px;
+  }
+  81% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step9.png) no-repeat 50%/113px 104px;
+  }
+  90% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step10.png) no-repeat 50%/113px 104px;
+  }
+  100% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step11.png) no-repeat 50%/113px 104px;
+  }
+}
+@-moz-keyframes plantCellChangeLow {
+  0% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step1.png) no-repeat 50%/113px 104px;
+  }
+  18% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step2.png) no-repeat 50%/113px 104px;
+  }
+  27% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step3.png) no-repeat 50%/113px 104px;
+  }
+  36% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step4.png) no-repeat 50%/113px 104px;
+  }
+  45% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step5.png) no-repeat 50%/113px 104px;
+  }
+  54% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step6.png) no-repeat 50%/113px 104px;
+  }
+  63% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step7.png) no-repeat 50%/113px 104px;
+  }
+  72% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step8.png) no-repeat 50%/113px 104px;
+  }
+  81% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step9.png) no-repeat 50%/113px 104px;
+  }
+  90% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step10.png) no-repeat 50%/113px 104px;
+  }
+  100% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step11.png) no-repeat 50%/113px 104px;
+  }
+}
+@keyframes plantCellChangeLow {
+  0% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step1.png) no-repeat 50%/113px 104px;
+  }
+  18% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step2.png) no-repeat 50%/113px 104px;
+  }
+  27% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step3.png) no-repeat 50%/113px 104px;
+  }
+  36% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step4.png) no-repeat 50%/113px 104px;
+  }
+  45% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step5.png) no-repeat 50%/113px 104px;
+  }
+  54% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step6.png) no-repeat 50%/113px 104px;
+  }
+  63% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step7.png) no-repeat 50%/113px 104px;
+  }
+  72% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step8.png) no-repeat 50%/113px 104px;
+  }
+  81% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step9.png) no-repeat 50%/113px 104px;
+  }
+  90% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step10.png) no-repeat 50%/113px 104px;
+  }
+  100% {
+    background: url(../../images/h_s1_332_151/img-cell-plant-step11.png) no-repeat 50%/113px 104px;
+  }
+}
+@-webkit-keyframes plantCellChangeHigh {
+  0% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step1.png) no-repeat 50%/113px 104px;
+  }
+  20% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step2.png) no-repeat 50%/113px 104px;
+  }
+  30% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step3.png) no-repeat 50%/113px 104px;
+  }
+  40% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step4.png) no-repeat 50%/113px 104px;
+  }
+  50% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step5.png) no-repeat 50%/113px 104px;
+  }
+  60% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step6.png) no-repeat 50%/113px 104px;
+  }
+  70% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step7.png) no-repeat 50%/113px 104px;
+  }
+  80% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step8.png) no-repeat 50%/113px 104px;
+  }
+  90% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step9.png) no-repeat 50%/113px 104px;
+  }
+  100% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step10.png) no-repeat 50%/113px 104px;
+  }
+}
+@-moz-keyframes plantCellChangeHigh {
+  0% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step1.png) no-repeat 50%/113px 104px;
+  }
+  20% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step2.png) no-repeat 50%/113px 104px;
+  }
+  30% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step3.png) no-repeat 50%/113px 104px;
+  }
+  40% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step4.png) no-repeat 50%/113px 104px;
+  }
+  50% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step5.png) no-repeat 50%/113px 104px;
+  }
+  60% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step6.png) no-repeat 50%/113px 104px;
+  }
+  70% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step7.png) no-repeat 50%/113px 104px;
+  }
+  80% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step8.png) no-repeat 50%/113px 104px;
+  }
+  90% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step9.png) no-repeat 50%/113px 104px;
+  }
+  100% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step10.png) no-repeat 50%/113px 104px;
+  }
+}
+@keyframes plantCellChangeHigh {
+  0% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step1.png) no-repeat 50%/113px 104px;
+  }
+  20% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step2.png) no-repeat 50%/113px 104px;
+  }
+  30% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step3.png) no-repeat 50%/113px 104px;
+  }
+  40% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step4.png) no-repeat 50%/113px 104px;
+  }
+  50% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step5.png) no-repeat 50%/113px 104px;
+  }
+  60% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step6.png) no-repeat 50%/113px 104px;
+  }
+  70% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step7.png) no-repeat 50%/113px 104px;
+  }
+  80% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step8.png) no-repeat 50%/113px 104px;
+  }
+  90% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step9.png) no-repeat 50%/113px 104px;
+  }
+  100% {
+    background: url(../../images/h_s1_332_151/img-cell-plant2-step10.png) no-repeat 50%/113px 104px;
+  }
+}
+/*# sourceMappingURL=../maps/page/h_s1_332_151.css.map */

@@ -1,0 +1,52 @@
+{
+    "templete": {
+        "h2Title": "<h2><a href=\"#\" onclick=\"toggleFunc(event, this)\">{title}</a></h2>",
+        "detail": [
+            "{html}",
+            "<td colspan=\"{colspan}\" class=\"{td_class}\"><a href=\"{href}\" target=\"{target}\" class=\"{class}\" onclick=\"clickFuncs(event, this)\">{subject}<span class=\"{comment_class}\">{comment}</span></a><a href=\"{href}\" target=\"_blank\" class=\"new_window\">새창</a></td>"
+        ]
+    },
+    "header": {
+        "title": "코딩리스트"
+    },
+    "links": {
+        "공통": {
+            "공통": ["/list/hyosung_itx/guide.html", "mainframe", "완료", ""],
+            "로그인": ["/list/hyosung_itx/login.html", "mainframe", "완료", ""],
+            "메인": ["/list/hyosung_itx/index.html", "mainframe", "완료", ""],
+            "테넌트":{
+                "테넌트 관리": ["/list/hyosung_itx/tenant_detail.html", "mainframe", "완료", ""],
+                "테넌트 상세": ["/list/hyosung_itx/tenant_manage.html", "mainframe", "완료", ""]
+            },
+            "챗봇":{
+                "챗봇_대시보드": ["/list/hyosung_itx/chatbot_dashboard.html", "mainframe", "완료", ""],
+                "챗봇_시나리오 작성": ["/list/hyosung_itx/chatbot_scenario.html", "mainframe", "완료", ""],
+                "챗봇_모델 빌드": ["/list/hyosung_itx/chatbot_model_build.html", "mainframe", "완료", ""],
+                "챗봇_모델 빌드(결과)": ["/list/hyosung_itx/chatbot_build_result.html", "mainframe", "완료", ""],
+                "챗봇_시나리오 배포": ["/list/hyosung_itx/chatbot_scenario_distribute.html", "mainframe", "완료", ""],
+                "챗봇_통계": ["/list/hyosung_itx/chatbot_total.html", "mainframe", "완료", ""]
+            },
+            "채팅상담":{
+                "채팅상담_대시보드": ["/list/hyosung_itx/chatcounsel_dashboard.html", "mainframe", "완료", ""],
+                "채팅상담_상담화면": ["/list/hyosung_itx/chatcounsel_screen.html", "mainframe", "완료", ""],
+                "채팅상담_채팅고객창": ["/list/hyosung_itx/chatcounsel_chat.html", "mainframe", "완료", ""],
+                "채팅상담_상담관리설정": ["/list/hyosung_itx/chatcounsel_set.html", "mainframe", "완료", ""],
+                "채팅상담_팀/상담자 관리": ["/list/hyosung_itx/chatcounsel_team_manage.html", "mainframe", "완료", ""],
+                "채팅상담_상담 지표 분석": ["/list/hyosung_itx/chatcounsel_Indicator_analysis.html", "mainframe", "완료", ""],
+                "채팅상담_사전관리": ["/list/hyosung_itx/chatcounsel_pre_manage.html", "mainframe", "완료", ""],
+                "채팅상담_상담 메세지 관리": ["/list/hyosung_itx/chatcounsel_message.html", "mainframe", "완료", ""]
+            },
+            "콜봇":{
+                "콜봇_대시보드": ["/list/hyosung_itx/callbot_dashboard.html", "mainframe", "완료", ""],
+                "콜봇_상담화면": ["/list/hyosung_itx/callbot_screen.html", "mainframe", "완료", ""]
+            },
+            "팝업":{
+                "테넌트 생성": ["/list/hyosung_itx/popup_tenant_create.html", "mainframe", "완료", ""],
+                "새 분류 생성": ["/list/hyosung_itx/popup_add_type.html", "mainframe", "완료", ""],
+                "새 팀 생성": ["/list/hyosung_itx/popup_add_team.html", "mainframe", "완료", ""],
+                "SOP 입력/불러오기": ["/list/hyosung_itx/popup_sop.html", "mainframe", "완료", ""],
+                "인바운드 봇 생성": ["/list/hyosung_itx/popup_inbound_bot.html", "mainframe", "완료", ""]
+            }
+        }
+    }
+}

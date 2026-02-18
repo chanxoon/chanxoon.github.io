@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376640601"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376640601" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376640601" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376640601" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376640601" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376640601" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376640601"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376640601"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376640601"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376640601"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376640601"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376640601"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376640601"></script>
+        <script src="./assets/js/lib/script.js?t=1771376640601"></script>
+        <script src="./assets/js/common.js?t=1771376640601"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="tenant">
+            <div class="logoWrap">
+                <h1>
+                    <a href="/index.html"><img src="./assets/img/img-logo.svg" alt="HYOSUNG ITX" /></a
+                    ><span class="tit">테넌트 관리</span>
+                </h1>
+            </div>
+            <div class="btnWrap">
+                <a href="javascript:;" class="btn md outline">삭제</a>
+                <a href="javascript:;" class="btn md quaternary">수정</a>
+                <a href="javascript:;" class="btn md primary">목록</a>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <!-- nav -->
+            <nav id="nav" class="dropdown cf">
+                <ul class="navList dropdown menu">
+                    <li>
+                        <a href="" class="active">
+                            <i class="ico icoDash">대시보드</i>
+                            <div>대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoGroup">테넌트 관리</i>
+                            <div>테넌트 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoLog">로그 확인</i>
+                            <div>로그 확인</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoClock">배치</i>
+                            <div>배치</div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="panelBtn">
+                    <i class="ico icoArrRight">오른쪽 화살표</i>
+                </button>
+            </nav>
+            <!--// nav -->
+
+            <div id="contents" class="flex jcB gap12">
+                <div class="innerWrap" style="width: 30%">
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>현대모비스</h3>
+                            </div>
+                            <div class="btnBox">
+                                <div class="formBox">
+                                    <div class="toggleBtnset">
+                                        <input type="checkbox" id="toggle1" class="toggle" checked />
+                                        <label for="toggle1" class="toggleSlide">
+                                            <span class="togBtn"></span>
+                                        </label>
+                                        <div class="toggleLabel">사용</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea borderBot">
+                            <div class="row listBox">
+                                <ul>
+                                    <li>
+                                        <div class="tit">테넌트 ID</div>
+                                        <div class="con">acme</div>
+                                    </li>
+                                    <li>
+                                        <div class="tit">생성일</div>
+                                        <div class="con">2025-01-01</div>
+                                    </li>
+                                    <li>
+                                        <div class="tit">수정일</div>
+                                        <div class="con">2025-05-12</div>
+                                    </li>
+                                    <li>
+                                        <div class="tit">사용기간</div>
+                                        <div class="con">2025-01-01 ~ 2025-12-31</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>솔루션</h3>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea solution">
+                            <div class="row">
+                                <div class="titArea">
+                                    <div class="titBox accentTxt">xtmChat</div>
+                                    <div class="btnBox">
+                                        <div class="sm outline stateLabel active">사용</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="titArea">
+                                    <div class="titBox accentTxt">채팅</div>
+                                    <div class="btnBox">
+                                        <div class="sm outline stateLabel active">사용</div>
+                                    </div>
+                                </div>
+                                <div class="con cardBox active">
+                                    <ul>
+                                        <li>
+                                            <div class="tit">총 상담사</div>
+                                            <div class="cou">120</div>
+                                        </li>
+                                        <li>
+                                            <div class="tit">할당</div>
+                                            <div class="cou">30</div>
+                                        </li>
+                                        <li>
+                                            <div class="tit">미할당</div>
+                                            <div class="cou">90</div>
+                                        </li>
+                                    </ul>
+                                    <div class="progressbarWrap">
+                                        <progress value="30" max="100"></progress>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="titArea">
+                                    <div class="titBox accentTxt">xtrmCall</div>
+                                    <div class="btnBox">
+                                        <div class="sm outline stateLabel gray">미사용</div>
+                                    </div>
+                                </div>
+                                <div class="con cardBox">
+                                    <ul>
+                                        <li>
+                                            <div class="tit">할당</div>
+                                            <div class="cou">120</div>
+                                        </li>
+                                        <li>
+                                            <div class="tit">사용</div>
+                                            <div class="cou">30</div>
+                                        </li>
+                                        <li>
+                                            <div class="tit">잔여</div>
+                                            <div class="cou">90</div>
+                                        </li>
+                                    </ul>
+                                    <div class="progressbarWrap">
+                                        <progress value="0" max="100"></progress>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="innerWrap flex fdC gap12" style="width: 70%">
+                    <div class="inner" style="height: 60%">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>담당자 목록</h3>
+                            </div>
+                        </div>
+                        <div class="conArea">
+                            <!-- 검색 영역 -->
+                            <div class="searchBox jcE">
+                                <ul>
+                                    <li>
+                                        <div class="searchBtn">
+                                            <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                                            <button class="btn sm outline">
+                                                <i class="icon icon-search">검색 아이콘</i>
+                                                <span>검색</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 테이블 영역 -->
+                            <div class="tblBox">
+                                <div class="tblList">
+                                    <table>
+                                        <caption>
+                                            테넌트 목록
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    이름<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    연락처<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    이메일<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    비밀번호 오입력<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                                <th>
+                                                    잠금여부<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                                <th>
+                                                    사용여부<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>홍길동</td>
+                                                <td>010-2345-6789</td>
+                                                <td>gildong.h@hmotor.com</td>
+                                                <td>0</td>
+                                                <td>
+                                                    <div class="formBox">
+                                                        <div class="toggleBtnset">
+                                                            <input
+                                                                type="checkbox"
+                                                                id="toggle2"
+                                                                class="toggle"
+                                                                checked
+                                                            />
+                                                            <label for="toggle2" class="toggleSlide">
+                                                                <span class="togBtn"></span>
+                                                            </label>
+                                                            <div class="toggleLabel">사용</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="formBox">
+                                                        <div class="toggleBtnset">
+                                                            <input
+                                                                type="checkbox"
+                                                                id="toggle3"
+                                                                class="toggle"
+                                                                checked
+                                                            />
+                                                            <label for="toggle2" class="toggleSlide">
+                                                                <span class="togBtn"></span>
+                                                            </label>
+                                                            <div class="toggleLabel">사용</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 페이지네이션 -->
+                            <!-- pagination -->
+                            <div id="paginationWrap">
+                                <ul>
+                                    <li class="first"><a href="#" class="btn xs outline">처음으로</a></li>
+                                    <li class="prev"><a href="#" class="btn xs outline">이전으로</a></li>
+                                    <li class="pageInput">
+                                        <input type="number" class="sm" min="1" value="1" />
+                                        <span class="dash">/</span>
+                                        <span class="totalPage">50</span>
+                                    </li>
+                                    <li class="next"><a href="#" class="btn xs outline">다음으로</a></li>
+                                    <li class="last"><a href="#" class="btn xs outline">마지막으로</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="total">전체<span>1,000</span>건 중<span>1~20</span>건</li>
+                                    <li class="perPageSelect">
+                                        <select class="sm">
+                                            <option value="50">페이지당 50</option>
+                                            <option value="100">페이지당 100</option>
+                                            <option value="150">페이지당 150</option>
+                                            <option value="200">페이지당 200</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--// pagination -->
+                        </div>
+                    </div>
+                    <div class="inner" style="height: 40%">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>최근 로그</h3>
+                            </div>
+                            <div class="infoBox">
+                                <i class="ico icoInfo">정보</i>
+                                <p class="txt">최근 10건만 표시됩니다.</p>
+                            </div>
+                        </div>
+                        <div class="conArea">
+                            <!-- 테이블 영역 -->
+                            <div class="tblBox">
+                                <div class="tblList">
+                                    <table>
+                                        <caption>
+                                            테넌트 목록
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 200px" />
+                                            <col style="width: auto" />
+                                            <col style="width: 200px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    일시<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    이벤트<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    담당자<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2025-05-12 14:21</td>
+                                                <td>솔루션 상태 변경(xtrmCall 사용)</td>
+                                                <td>홍길동</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

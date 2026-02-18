@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376640602"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376640602" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376640602" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376640602" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376640602" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376640602" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376640602"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376640602"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376640602"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376640602"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376640602"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376640602"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376640602"></script>
+        <script src="./assets/js/lib/script.js?t=1771376640602"></script>
+        <script src="./assets/js/common.js?t=1771376640602"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="tenant">
+            <div class="logoWrap">
+                <h1>
+                    <a href="/index.html"><img src="./assets/img/img-logo.svg" alt="HYOSUNG ITX" /></a
+                    ><span class="tit">테넌트 관리</span>
+                </h1>
+            </div>
+            <div class="btnWrap">
+                <a href="javascript:;" class="btn md outline">삭제</a>
+                <a href="javascript:;" class="btn md quaternary">수정</a>
+                <a href="javascript:;" class="btn md primary">목록</a>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <!-- nav -->
+            <nav id="nav" class="dropdown cf">
+                <ul class="navList dropdown menu">
+                    <li>
+                        <a href="" class="active">
+                            <i class="ico icoDash">대시보드</i>
+                            <div>대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoGroup">테넌트 관리</i>
+                            <div>테넌트 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoLog">로그 확인</i>
+                            <div>로그 확인</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoClock">배치</i>
+                            <div>배치</div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="panelBtn">
+                    <i class="ico icoArrRight">오른쪽 화살표</i>
+                </button>
+            </nav>
+            <!--// nav -->
+
+            <div id="contents">
+                <div class="innerWrap">
+                    <div class="inner">
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>테넌트 목록</h3>
+                            </div>
+                            <div class="btnBox">
+                                <a href="/" class="btn outline md">
+                                    <i class="ico icoDown">엑셀</i>
+                                    <span>엑셀다운로드</span>
+                                </a>
+                                <a href="/" class="btn primary md">등록</a>
+                            </div>
+                        </div>
+                        <div class="conArea" style="height: calc(100% - 57px)">
+                            <div class="searchBox">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>조회날짜</dt>
+                                            <dd>
+                                                <div class="datepickerWrap" style="width: 278px">
+                                                    <div>
+                                                        <input
+                                                            type="text"
+                                                            id=""
+                                                            value="2025-01-22"
+                                                            class="datepicker md"
+                                                            stlye="width:130px"
+                                                        />
+                                                    </div>
+                                                    <span>-</span>
+                                                    <div>
+                                                        <input
+                                                            type="text"
+                                                            id=""
+                                                            value="2025-01-23"
+                                                            class="datepicker md"
+                                                            stlye="width:130px"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>테넌트</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md">
+                                                        <option>테넌트</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>상태</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md">
+                                                        <option>상태</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>xtmChat</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md">
+                                                        <option>xtmChat</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>채팅</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md">
+                                                        <option>채팅</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>xtmCall</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md">
+                                                        <option>xtmCall</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div class="searchBtn">
+                                            <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                                            <button class="btn sm outline">
+                                                <i class="icon icon-search">검색 아이콘</i>
+                                                <span>검색</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tblBox">
+                                <div class="tblList">
+                                    <table>
+                                        <caption>
+                                            테넌트 목록
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 50px" />
+                                            <col style="width: 330px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 200px" />
+                                            <col style="width: 200px" />
+                                            <col style="width: 200px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 120px" />
+                                            <col style="width: 120px" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    테넌트명<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                                <th>
+                                                    담당자<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    사용자수<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                                <th>
+                                                    연락처<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    이메일<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    시용기간<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                                <th>
+                                                    상태<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    xtrmChat<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                                <th>
+                                                    채팅<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    xtrmCall<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </td>
+                                                <td>현대모비스</td>
+                                                <td>김가영</td>
+                                                <td>312</td>
+                                                <td>010-2345-6789</td>
+                                                <td>gayeong.h@hmptor.com</td>
+                                                <td>2025-01-01 ~ 2025-12-31</td>
+                                                <td><span class="xs tertiary stateLabel active">사용</span></td>
+                                                <td><span class="xs tertiary stateLabel active">사용</span></td>
+                                                <td><span class="xs tertiary stateLabel active">사용</span></td>
+                                                <td><span class="xs outline stateLabel">미사용</span></td>
+                                            </tr>
+                                            <tr class="on">
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" checked />
+                                                    </div>
+                                                </td>
+                                                <td>현대모비스</td>
+                                                <td>김가영</td>
+                                                <td>312</td>
+                                                <td>010-2345-6789</td>
+                                                <td>gayeong.h@hmptor.com</td>
+                                                <td>2025-01-01 ~ 2025-12-31</td>
+                                                <td><span class="xs tertiary stateLabel">사용</span></td>
+                                                <td><span class="xs tertiary stateLabel">사용</span></td>
+                                                <td><span class="xs tertiary stateLabel">사용</span></td>
+                                                <td><span class="xs outline stateLabel">미사용</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </td>
+                                                <td>현대모비스</td>
+                                                <td>김가영</td>
+                                                <td>312</td>
+                                                <td>010-2345-6789</td>
+                                                <td>gayeong.h@hmptor.com</td>
+                                                <td>2025-01-01 ~ 2025-12-31</td>
+                                                <td><span class="xs tertiary stateLabel">사용</span></td>
+                                                <td><span class="xs tertiary stateLabel">사용</span></td>
+                                                <td><span class="xs tertiary stateLabel">사용</span></td>
+                                                <td><span class="xs outline stateLabel">미사용</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- 페이지네이션 -->
+                                <!-- pagination -->
+                                <div id="paginationWrap">
+                                    <ul>
+                                        <li class="first"><a href="#" class="btn xs outline">처음으로</a></li>
+                                        <li class="prev"><a href="#" class="btn xs outline">이전으로</a></li>
+                                        <li class="pageInput">
+                                            <input type="number" class="sm" min="1" value="1" />
+                                            <span class="dash">/</span>
+                                            <span class="totalPage">50</span>
+                                        </li>
+                                        <li class="next"><a href="#" class="btn xs outline">다음으로</a></li>
+                                        <li class="last"><a href="#" class="btn xs outline">마지막으로</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="total">전체<span>1,000</span>건 중<span>1~20</span>건</li>
+                                        <li class="perPageSelect">
+                                            <select class="sm">
+                                                <option value="50">페이지당 50</option>
+                                                <option value="100">페이지당 100</option>
+                                                <option value="150">페이지당 150</option>
+                                                <option value="200">페이지당 200</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--// pagination -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

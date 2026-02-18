@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376090914" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376090914" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-confirm.css?t=1771376090914" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jqgrid-ui.css?t=1771376090914" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jstree.min.css?t=1771376090914" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/qtip.css?t=1771376090914" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/timepicker.min.css?t=1771376090914" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376090914" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376090914" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376090914"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376090914"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376090914"></script>
+        <script src="./assets/js/lib/iscroll.min.js?t=1771376090914"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376090914"></script>
+        <script src="./assets/js/lib/jquery-confirm.js?t=1771376090914"></script>
+        <script src="./assets/js/lib/jqgrid-4.15.5.js?t=1771376090914"></script>
+        <script src="./assets/js/lib/jstree.min.js?t=1771376090914"></script>
+        <script src="./assets/js/lib/qtip-3.0.3.js?t=1771376090914"></script>
+        <script src="./assets/js/lib/blockUI-2.70.js?t=1771376090914"></script>
+        <script src="./assets/js/lib/fullcalendar.min.js?t=1771376090914"></script>
+        <script src="./assets/js/lib/timepicker.min.js?t=1771376090914"></script>
+        <script src="./assets/js/common.js?t=1771376090914"></script>
+        <title>DREAM SYSTEM</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- popup -->
+            <div class="popWrap" style="max-width: 1200px">
+                <div class="popHead">
+                    <p class="popTitle">2025년 10월 사내 어학 교육(화상 중국어 과정)</p>
+                    <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                </div>
+                <div class="popBody">
+                    <div class="inner">
+                        <div class="multipleContainer type2">
+                            <div class="multipleContent">
+                                <div class="leftBox">
+                                    <div class="boxInner">
+                                        <div class="titArea noBorder pb0">
+                                            <div class="titBox flex aiC">
+                                                <h4>조직도</h4>
+                                                <i
+                                                    class="tooltipModule gray sm ml6"
+                                                    data-tooltip="툴팁 내용"
+                                                    data-hasqtip="0"
+                                                ></i>
+                                            </div>
+                                        </div>
+                                        <div class="treeScrollContainer mt12">
+                                            <div id="tree"></div>
+                                        </div>
+                                        <div class="btnArea right">
+                                            <a href="#none" class="btn lg primary-default" onclick="modalClose(this)"
+                                                >저장</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rightBox">
+                                    <div class="boxInner flex fdC">
+                                        <div class="titArea noBorder pb0">
+                                            <div class="titBox">
+                                                <h4>신청자 목록</h4>
+                                            </div>
+                                        </div>
+                                        <div class="tblList mt12 fgr1">
+                                            <table>
+                                                <caption>
+                                                    신청자 목록
+                                                </caption>
+                                                <colgroup>
+                                                    <col style="width: 120px" />
+                                                    <col style="width: 100px" />
+                                                    <col style="width: 100px" />
+                                                    <col style="width: 100px" />
+                                                    <col style="width: 140px" />
+                                                    <col style="width: 230px" />
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>부서</th>
+                                                        <th>직위</th>
+                                                        <th>이름</th>
+                                                        <th>상태</th>
+                                                        <th>신청서</th>
+                                                        <th>취소 사유</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>IT 서비스팀</td>
+                                                        <td>과장</td>
+                                                        <td>김효성</td>
+                                                        <td><div class="stateBadge blue">승인</div></td>
+                                                        <td>
+                                                            <div class="flex jcC">
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn sm primary text icon right detailPri"
+                                                                >
+                                                                    상세
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IT 서비스팀</td>
+                                                        <td>과장</td>
+                                                        <td>김효성</td>
+                                                        <td><div class="stateBadge red">미승인</div></td>
+                                                        <td>
+                                                            <div class="flex jcC">
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn sm primary text icon right detailPri"
+                                                                >
+                                                                    상세
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IT 서비스팀</td>
+                                                        <td>과장</td>
+                                                        <td>김효성</td>
+                                                        <td><div class="stateBadge orange">대기</div></td>
+                                                        <td>
+                                                            <div class="flex jcC">
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn sm primary text icon right detailPri"
+                                                                >
+                                                                    상세
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="listWrapModule jcC">
+                                                                <li class="listItem">
+                                                                    <button type="button" class="btn sm icon trashSec">
+                                                                        삭제
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IT 서비스팀</td>
+                                                        <td>과장</td>
+                                                        <td>김효성</td>
+                                                        <td><div class="stateBadge gray">취소</div></td>
+                                                        <td>
+                                                            <div class="flex jcC">
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn sm primary text icon right detailPri"
+                                                                >
+                                                                    상세
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>취소사유 내용 작성</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div id="dim"></div>
+        </div>
+
+        <script>
+            /* global tooltipEvent */
+            (function () {
+                $(document).ready(() => {
+                    $('#dim').fadeIn('fast');
+                });
+
+                // 재귀적으로 모든 노드에 툴팁 추가
+                function addTooltipsToNodes(nodes) {
+                    return nodes.map(node => {
+                        const newNode = {
+                            text: node.text,
+                            state: node.state,
+                        };
+
+                        if (node.children) {
+                            newNode.children = addTooltipsToNodes(node.children);
+                        }
+
+                        return newNode;
+                    });
+                }
+
+                // 툴팁 샘플 데이터
+                const originalData = [
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트 삼성생명 IT서비스데스크 상담1파트 삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트 삼성생명 IT서비스데스크 상담1파트 삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트 삼성생명 IT서비스데스크 상담1파트 삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                    {
+                        text: '삼성생명 IT서비스데스크 상담1파트',
+                        state: { opened: false },
+                        children: [
+                            { text: '홍길동' },
+                            {
+                                text: '홍길동',
+                                children: [{ text: '홍길동' }, { text: '홍길동' }],
+                            },
+                        ],
+                    },
+                ];
+
+                // 툴팁 로드 이벤트
+                $(() => {
+                    $('#tree')
+                        .jstree({
+                            core: {
+                                multiple: false,
+                                animation: 100,
+                                check_callback: true,
+                                dblclick_toggle: false,
+                                themes: {
+                                    icons: false,
+                                },
+                                data: originalData,
+                            },
+                            plugins: ['checkbox'],
+                        })
+                        .on('ready.jstree', () => {
+                            // 모든 jstree-anchor에 tooltipTitle 클래스와 data-tooltip 속성 추가
+                            $('#tree')
+                                .find('.jstree-anchor')
+                                .each(function () {
+                                    const text = $(this).text().trim();
+                                    const escapedText = text.replace(/'/g, "\\'");
+
+                                    $(this).addClass('tooltipTitle');
+                                    $(this).attr(
+                                        'data-tooltip',
+                                        '<div class="tooltipCustom"><strong class="title">' +
+                                            escapedText +
+                                            '</strong></div>',
+                                    );
+                                });
+
+                            // 트리가 준비되면 툴팁 이벤트 실행
+                            if (typeof tooltipEvent === 'function') {
+                                tooltipEvent('top center', 'bottom center');
+                            }
+                        });
+                });
+
+                window.addTooltipsToNodes = addTooltipsToNodes;
+            })();
+        </script>
+    </body>
+</html>

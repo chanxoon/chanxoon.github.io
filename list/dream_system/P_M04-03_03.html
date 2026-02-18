@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376091155" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376091155" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-confirm.css?t=1771376091155" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jqgrid-ui.css?t=1771376091155" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jstree.min.css?t=1771376091155" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/qtip.css?t=1771376091155" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/timepicker.min.css?t=1771376091155" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376091155" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376091155" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376091155"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376091155"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376091155"></script>
+        <script src="./assets/js/lib/iscroll.min.js?t=1771376091155"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376091155"></script>
+        <script src="./assets/js/lib/jquery-confirm.js?t=1771376091155"></script>
+        <script src="./assets/js/lib/jqgrid-4.15.5.js?t=1771376091155"></script>
+        <script src="./assets/js/lib/jstree.min.js?t=1771376091155"></script>
+        <script src="./assets/js/lib/qtip-3.0.3.js?t=1771376091155"></script>
+        <script src="./assets/js/lib/blockUI-2.70.js?t=1771376091155"></script>
+        <script src="./assets/js/lib/fullcalendar.min.js?t=1771376091155"></script>
+        <script src="./assets/js/lib/timepicker.min.js?t=1771376091155"></script>
+        <script src="./assets/js/common.js?t=1771376091155"></script>
+        <title>DREAM SYSTEM</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- popup -->
+            <div class="popWrap keep" style="max-width: 320px">
+                <div class="popHead">
+                    <p class="popTitle">2025년 11월 24일</p>
+                    <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                </div>
+                <div class="popBody">
+                    <div class="inner">
+                        <div>
+                            <ul class="flex fdC gap4">
+                                <li>
+                                    <input
+                                        type="radio"
+                                        id="boxRadio0101"
+                                        name="boxRadio01"
+                                        class="boxRadioItem"
+                                        checked
+                                    />
+                                    <label for="boxRadio0101">
+                                        <span class="scheduleItemModule scheduleBlue">
+                                            <span class="scheduleItemContent">
+                                                <span class="scheduleText"> 12:00 ~ 13:00 </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="boxRadio0102" name="boxRadio01" class="boxRadioItem" />
+                                    <label for="boxRadio0102">
+                                        <span class="scheduleItemModule scheduleGreen">
+                                            <span class="scheduleItemContent">
+                                                <span class="scheduleText"> 12:00 ~ 13:00 </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="boxRadio0103" name="boxRadio01" class="boxRadioItem" />
+                                    <label for="boxRadio0103">
+                                        <span class="scheduleItemModule scheduleGray">
+                                            <span class="scheduleItemContent">
+                                                <span class="scheduleText"> 12:00 ~ 13:00 </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="boxRadio0104" name="boxRadio01" class="boxRadioItem" />
+                                    <label for="boxRadio0104">
+                                        <span class="scheduleItemModule schedulePrimary">
+                                            <span class="scheduleItemContent">
+                                                <span class="scheduleText"> 12:00 ~ 13:00 </span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btnArea right mt16">
+                            <a href="/" class="btn lg outline-primary w100">취소</a>
+                            <a href="/" class="btn lg primary-default w100">선택</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div id="dim"></div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('#dim').fadeIn('fast');
+            });
+        </script>
+    </body>
+</html>

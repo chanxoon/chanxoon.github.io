@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376639046"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376639046" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376639046" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376639046" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376639046" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376639046" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376639046"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376639046"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376639046"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376639046"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376639046"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376639046"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376639046"></script>
+        <script src="./assets/js/lib/script.js?t=1771376639046"></script>
+        <script src="./assets/js/common.js?t=1771376639046"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="chatBot">
+            <div class="logoWrap flex">
+                <h1 class="mr40">
+                    <a href="/index.html"><img src="./assets/img/img-logo-w.svg" alt="HYOSUNG ITX" /></a>
+                </h1>
+                <div class="headerNav">
+                    <ul>
+                        <li class="active"><a href="#none">챗봇</a></li>
+                        <li><a href="#none">채팅상담</a></li>
+                        <li><a href="#none">콜봇</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setWrap">
+                <div class="setBtn">
+                    <a href="#none">
+                        <i class="ico icoSet">설정</i>
+                        <span>환경설정</span>
+                    </a>
+                </div>
+                <div class="counselBtn">
+                    <a href="#none">
+                        <div class="userImg">
+                            <img src="./assets/img/img-user-man.svg" alt="사용자" />
+                            <span class="dote wait"></span>
+                        </div>
+                        <span>상담대기</span>
+                        <i class="ico icoArrDown">화살표</i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <!-- nav -->
+            <nav id="nav" class="dropdown cf chatBot">
+                <ul class="navList dropdown menu">
+                    <li>
+                        <a href="" class="active">
+                            <i class="ico icoDash">대시보드</i>
+                            <div>대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoWrite">시나리오</i>
+                            <div>시나리오 작성</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoBulb">전구</i>
+                            <div>학습(모델빌드)</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoSharing">배포</i>
+                            <div>배포</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoStati">통계</i>
+                            <div>통계</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoCounselor">사전</i>
+                            <div>사전관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoMessage">메세지</i>
+                            <div>메세지 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoClock">배치</i>
+                            <div>배치</div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="panelBtn">
+                    <i class="ico icoArrRight">오른쪽 화살표</i>
+                </button>
+            </nav>
+            <!--// nav -->
+
+            <div id="contents" class="flex jcB fdC gap12 chat chatBotType">
+                <div class="titWrap">
+                    <h3>챗봇 모델 빌드</h3>
+                    <div class="infoBox ml12 aiC"><i class="ico icoInfoG mb0">정보</i>Single Node</div>
+                </div>
+                <div class="innerWrap flex jcS gap12">
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox flex">
+                                <h3>학습(모델 빌드)</h3>
+                                <div class="stateBox ml16">
+                                    <div class="wait noBorder">총 빌드 수<span style="color: #222">128</span></div>
+                                    <div class="consul">성공<span>84</span></div>
+                                    <div class="error">실패<span>12</span></div>
+                                    <div class="complete">진행<span>6</span></div>
+                                </div>
+                            </div>
+                            <div class="btnBox">
+                                <button type="button" class="btn md outline">
+                                    <i class="ico icoDown">다운로드</i>내보내기
+                                </button>
+                                <button type="button" class="btn md green">
+                                    <i class="ico icoPlusW">플러스</i>새노드 생성
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <!-- 검색 영역 -->
+                            <div class="searchBox">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>조회날짜</dt>
+                                            <dd>
+                                                <div class="datepickerWrap" style="width: 278px">
+                                                    <div>
+                                                        <input
+                                                            type="text"
+                                                            id=""
+                                                            value="2025-01-22"
+                                                            class="datepicker md"
+                                                            stlye="width:130px"
+                                                        />
+                                                    </div>
+                                                    <span>-</span>
+                                                    <div>
+                                                        <input
+                                                            type="text"
+                                                            id=""
+                                                            value="2025-01-23"
+                                                            class="datepicker md"
+                                                            stlye="width:130px"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>상태</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md">
+                                                        <option>상태</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>LLM</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md">
+                                                        <option>LLM</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>RAG</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md">
+                                                        <option>RAG</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div class="searchBtn type2">
+                                            <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                                            <button class="btn sm outline">
+                                                <i class="icon icon-search">검색 아이콘</i>
+                                                <span>검색</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 테이블 영역 -->
+                            <div class="tblBox">
+                                <div class="tblList">
+                                    <table>
+                                        <caption>
+                                            고객서비스 1-1팀
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 40px" />
+                                            <col style="width: 30%" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    시나리오 노드명<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                                <th>
+                                                    LLM<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    RAG<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    상태<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    작성자<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    수정자<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    입력일<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    수정일<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    시뮬레레이션<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" checked />
+                                                    </div>
+                                                </td>
+                                                <td class="al">카드 가입입 전문 AI v2025.Q3</td>
+                                                <td>GPT-4o</td>
+                                                <td>벡터/Milvus</td>
+                                                <td><div class="outline stateLabel blue">성공</div></td>
+                                                <td>kim.dev</td>
+                                                <td>park.ops</td>
+                                                <td>2023.07.01</td>
+                                                <td>2년 1개월</td>
+                                                <td>
+                                                    <button type="button" class="btn sm outlineGreen">
+                                                        <i class="ico icoSet">셋팅</i>실행
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </td>
+                                                <td class="al">카드 가입입 전문 AI v2025.Q3</td>
+                                                <td>GPT-4o</td>
+                                                <td>벡터/Milvus</td>
+                                                <td><div class="outline stateLabel green">진행</div></td>
+                                                <td>kim.dev</td>
+                                                <td>park.ops</td>
+                                                <td>2023.07.01</td>
+                                                <td>2년 1개월</td>
+                                                <td>
+                                                    <button type="button" class="btn sm outlineGreen dis">
+                                                        <i class="ico icoSet">셋팅</i>실행
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </td>
+                                                <td class="al">카드 가입입 전문 AI v2025.Q3</td>
+                                                <td>GPT-4o</td>
+                                                <td>벡터/Milvus</td>
+                                                <td><div class="outline stateLabel red">실패</div></td>
+                                                <td>kim.dev</td>
+                                                <td>park.ops</td>
+                                                <td>2023.07.01</td>
+                                                <td>2년 1개월</td>
+                                                <td>
+                                                    <button type="button" class="btn sm outlineGreen dis">
+                                                        <i class="ico icoSet">셋팅</i>실행
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 페이지네이션 -->
+                            <!-- pagination -->
+                            <div id="paginationWrap">
+                                <ul>
+                                    <li class="first"><a href="#" class="btn xs outline">처음으로</a></li>
+                                    <li class="prev"><a href="#" class="btn xs outline">이전으로</a></li>
+                                    <li class="pageInput">
+                                        <input type="number" class="sm" min="1" value="1" />
+                                        <span class="dash">/</span>
+                                        <span class="totalPage">50</span>
+                                    </li>
+                                    <li class="next"><a href="#" class="btn xs outline">다음으로</a></li>
+                                    <li class="last"><a href="#" class="btn xs outline">마지막으로</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="total">전체<span>1,000</span>건 중<span>1~20</span>건</li>
+                                    <li class="perPageSelect">
+                                        <select class="sm">
+                                            <option value="50">페이지당 50</option>
+                                            <option value="100">페이지당 100</option>
+                                            <option value="150">페이지당 150</option>
+                                            <option value="200">페이지당 200</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--// pagination -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

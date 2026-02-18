@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376091347" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376091347" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-confirm.css?t=1771376091347" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jqgrid-ui.css?t=1771376091347" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jstree.min.css?t=1771376091347" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/qtip.css?t=1771376091347" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/timepicker.min.css?t=1771376091347" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376091347" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376091347" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376091347"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376091347"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376091347"></script>
+        <script src="./assets/js/lib/iscroll.min.js?t=1771376091347"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376091347"></script>
+        <script src="./assets/js/lib/jquery-confirm.js?t=1771376091347"></script>
+        <script src="./assets/js/lib/jqgrid-4.15.5.js?t=1771376091347"></script>
+        <script src="./assets/js/lib/jstree.min.js?t=1771376091347"></script>
+        <script src="./assets/js/lib/qtip-3.0.3.js?t=1771376091347"></script>
+        <script src="./assets/js/lib/blockUI-2.70.js?t=1771376091347"></script>
+        <script src="./assets/js/lib/fullcalendar.min.js?t=1771376091347"></script>
+        <script src="./assets/js/lib/timepicker.min.js?t=1771376091347"></script>
+        <script src="./assets/js/common.js?t=1771376091347"></script>
+        <title>DREAM SYSTEM</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header">
+            <div class="inner">
+                <div class="logoWrap">
+                    <h1>
+                        <a href="/index.html"><img src="./assets/img/img-logo.svg" alt="DREAM SYSTEM" /></a>
+                    </h1>
+                    <div class="menuBtn-mobile">
+                        <button id="nav-button" type="button">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="navWrap">
+                    <ul>
+                        <li><a href="#">인사급여</a></li>
+                        <li><a href="#">근태관리</a></li>
+                        <li><a href="#">교육관리</a></li>
+                        <li><a href="#">업무지원</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">관리자</a></li>
+                    </ul>
+                    <div class="depthWrap">
+                        <div class="inner">
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">인사급여</h3>
+                                <li><a href="#">직원조회</a></li>
+                                <li><a href="#">개인인사정보</a></li>
+                                <li>
+                                    <a href="#">발령 신청 및 조회</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">발령 신청</a></li>
+                                        <li><a href="#">발령 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">급여 조회</a></li>
+                                <li><a href="#">연봉확인서</a></li>
+                                <li><a href="#">증명서 발급</a></li>
+                                <li><a href="#">인재풀 정보 조회</a></li>
+                                <li><a href="#">메뉴1</a></li>
+                                <li><a href="#">메뉴2</a></li>
+                                <li><a href="#">메뉴3</a></li>
+                                <li><a href="#">메뉴4</a></li>
+                                <li><a href="#">메뉴5</a></li>
+                                <li><a href="#">메뉴6</a></li>
+                                <li><a href="#">메뉴7</a></li>
+                                <li><a href="#">메뉴8</a></li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">근태관리</h3>
+                                <li>
+                                    <a href="#">근무</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">근무계획 등록</a></li>
+                                        <li><a href="#">근무계획 조정</a></li>
+                                        <li><a href="#">근무계획 외 근무 신청</a></li>
+                                        <li><a href="#">대체휴무일 변경 신청</a></li>
+                                        <li><a href="#">근로시간 조정</a></li>
+                                        <li><a href="#">월 근로시간 확인</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">근태</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">근태 등록</a></li>
+                                        <li><a href="#">휴직 및 단축 신청</a></li>
+                                        <li><a href="#">휴직 및 단축 관리</a></li>
+                                        <li><a href="#">일 근태 신청</a></li>
+                                        <li><a href="#">월별 근태 현황</a></li>
+                                        <li><a href="#">기간별 근태 현황</a></li>
+                                        <li><a href="#">연차 현황</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">교육관리</h3>
+                                <li><a href="#">교육과정 관리</a></li>
+                                <li><a href="#">교육 신청</a></li>
+                                <li><a href="#">교육 수료증확인</a></li>
+                                <li><a href="#">교육 자료</a></li>
+                                <li><a href="#">HRD 소식</a></li>
+                                <li><a href="#">대표 강사</a></li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">업무지원</h3>
+                                <li>
+                                    <a href="#">인감</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">인감사용신청</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">계약서</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">계약서 관리</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">복지</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">네일아트 예약</a></li>
+                                        <li><a href="#">네일아트 예약 관리</a></li>
+                                        <li><a href="#">헬스키퍼 예약</a></li>
+                                        <li><a href="#">심리상담 예약</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">카페테리아</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">사용 내역 조회</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">커뮤니티</h3>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">사내규정</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">궁금합니다</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">웹진</a></li>
+                                <li><a href="#">고충·윤리 상담센터</a></li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">관리자</h3>
+                                <li><a href="#">재직자 메뉴 관리</a></li>
+                                <li><a href="#">시스템 로그</a></li>
+                                <li><a href="#">관리자 권한 설정</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="userWrap">
+                    <div class="userArea">
+                        <button type="button" class="userBtn">
+                            <i class="ico icoUser">유저</i>
+                            <span>김효성</span>
+                            <i class="ico icoArrDown">화살표</i>
+                        </button>
+                        <div class="userMenu">
+                            <ul>
+                                <li>
+                                    <a href="#none"><i class="ico icoPasswd">비밀번호</i>비번변경</a>
+                                </li>
+                                <li>
+                                    <a href="#none"><i class="ico icoLogout">로그아웃</i>로그아웃</a>
+                                </li>
+                                <!-- <li><a href="#none"><i class="ico icoLogin">로그인</i>로그인</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="familyArea">
+                        <button type="button" class="familyBtn"><i class="ico icoFamily">메뉴</i></button>
+                        <div class="familyMenu">
+                            <h3>패밀리 사이트</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://gw.hyosungitx.com" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoGroupware">그룹웨어</i></div>
+                                        <div class="titWrap">그룹웨어</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://admin.dodreami.com:8443/login/form.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoRecruitManage">채용관리 시스템</i></div>
+                                        <div class="titWrap">채용관리<br />시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://box.hyosungitx.com:5001" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoFileManage">파일관리 시스템</i></div>
+                                        <div class="titWrap">파일관리<br />시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <div id="contents">
+                <div class="inner">
+                    <!-- 타이틀 영역 -->
+                    <div class="titArea moCol">
+                        <div class="titBox">
+                            <h3>궁금합니다</h3>
+                        </div>
+                        <div class="pathBox">
+                            <ul>
+                                <li class="home"><a href="#none">홈</a></li>
+                                <li>커뮤니티</li>
+                                <li>궁금합니다</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="conArea">
+                        <!-- 테이블 영역 -->
+                        <div class="tabWrap mt0">
+                            <ul class="tabMenu full">
+                                <li class="active" data-tab="tab1">궁금합니다</li>
+                                <li data-tab="tab2">자주 묻는 질문</li>
+                            </ul>
+
+                            <div class="tabContent">
+                                <!-- tab1 -->
+                                <div id="tab1" class="tabPanel active">
+                                    <!-- 검색 영역 -->
+                                    <div class="searchBox mt24">
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt>조회 내용</dt>
+                                                    <dd>
+                                                        <div class="formArea">
+                                                            <select class="md" style="width: 160px">
+                                                                <option>선택</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="inputArea">
+                                                            <input
+                                                                type="text"
+                                                                class="md"
+                                                                placeholder="내용을 입력하세요"
+                                                                style="width: 360px"
+                                                            />
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <div class="searchBtn">
+                                                    <button class="btn md primary-70">
+                                                        <i class="ico icoSearchW">검색 아이콘</i>
+                                                        <span>검색</span>
+                                                    </button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- 타이틀 영역 -->
+                                    <div class="titArea">
+                                        <div class="titBox">
+                                            <h4>목록</h4>
+                                        </div>
+                                    </div>
+
+                                    <!-- 테이블 영역 -->
+                                    <div class="tblList">
+                                        <table>
+                                            <caption>
+                                                목록
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width: 60px" />
+                                                <col style="width: 200px" />
+                                                <col style="width: 120px" />
+                                                <col style="width: 120px" />
+                                                <col style="width: 120px" />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>NO</th>
+                                                    <th>제목</th>
+                                                    <th>작성자</th>
+                                                    <th>등록일</th>
+                                                    <th>조회수</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td class="al">
+                                                        <a href="#none" class="tblLink"
+                                                            >육아휴직 절차 확인 요청<span class="new">N</span></a
+                                                        >
+                                                    </td>
+                                                    <td>박효성</td>
+                                                    <td>2025-10-31</td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td class="al">
+                                                        <a href="#none" class="tblLink"
+                                                            ><span class="re">ㄴ</span>답변<span class="new">N</span></a
+                                                        >
+                                                    </td>
+                                                    <td>박효성</td>
+                                                    <td>2025-10-31</td>
+                                                    <td>3</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!--
+                                        <div class="noResult">
+                                            <div class="innerResult">
+                                                <div class="resultTxt"><i class="ico icoWarningTri">데이터없음</i> 조회된 결과가 없습니다.</div>
+                                            </div>
+                                        </div>
+                                        -->
+                                    </div>
+                                    <!-- 페이지네이션 -->
+                                    <!-- pagination -->
+                                    <div id="paginationWrap">
+                                        <ul>
+                                            <li class="first"><a href="#" class="btn sm outline">처음으로</a></li>
+                                            <li class="prev"><a href="#" class="btn sm outline">이전으로</a></li>
+                                            <li class="pageInput">
+                                                <input type="text" class="sm" min="1" value="1" />
+                                                <span class="dash">/</span>
+                                                <span class="totalPage">50</span>
+                                            </li>
+                                            <li class="next"><a href="#" class="btn sm outline">다음으로</a></li>
+                                            <li class="last"><a href="#" class="btn sm outline">마지막으로</a></li>
+                                            <li class="pageSelect">
+                                                <select class="sm">
+                                                    <option value="50">30</option>
+                                                    <option value="100">100</option>
+                                                    <option value="150">150</option>
+                                                    <option value="200">200</option>
+                                                </select>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="total">
+                                                보기<span>1-1</span><span class="dash">/</span><span>1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--// pagination -->
+
+                                    <div class="btnArea right">
+                                        <a href="#none" class="btn lg primary-default">글쓰기</a>
+                                    </div>
+                                </div>
+                                <!-- tab2 -->
+                                <div id="tab2" class="tabPanel"></div>
+                                <!-- tab3 -->
+                                <div id="tab3" class="tabPanel"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header -->
+        <footer id="footer">
+            <div class="footerContent">
+                <div class="footerContentInner">© Copyright 2025. HYOSUNG ITX. All Right Reserved.</div>
+            </div>
+        </footer>
+        <!--// header -->
+        <!-- popup -->
+        <div id="addrFind" class="popWrap" style="max-width: 480px; display: none">
+            <div class="popHead">
+                <p class="popTitle">우편번호 찾기</p>
+                <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+            </div>
+            <div class="popBody">
+                <div class="inner">
+                    <div class="dlArea">
+                        <dl>
+                            <dd class="flex">
+                                <div class="inputArea w100">
+                                    <input
+                                        type="text"
+                                        class="lg"
+                                        placeholder="도로명, 건물명, 지번을 입력하세요."
+                                        required
+                                    />
+                                </div>
+                                <div class="searchBtn">
+                                    <button class="btn lg primary-light">
+                                        <i class="ico icoSearchW">검색 아이콘</i>
+                                        <span>검색</span>
+                                    </button>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="addrBox">
+                        <ul>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <!-- <div class="noResult">
+                    <div class="innerResult">
+                        <div class="resultTxt"><i class="ico icoWarningTri">데이터없음</i> 검색어를 입력하세요.</div>
+                    </div>
+                </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- popup -->
+        <div id="dim"></div>
+    </body>
+</html>

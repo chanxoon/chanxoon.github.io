@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376089809" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376089809" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-confirm.css?t=1771376089809" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jqgrid-ui.css?t=1771376089809" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jstree.min.css?t=1771376089809" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/qtip.css?t=1771376089809" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/timepicker.min.css?t=1771376089809" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376089809" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376089809" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376089809"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376089809"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376089809"></script>
+        <script src="./assets/js/lib/iscroll.min.js?t=1771376089809"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376089809"></script>
+        <script src="./assets/js/lib/jquery-confirm.js?t=1771376089809"></script>
+        <script src="./assets/js/lib/jqgrid-4.15.5.js?t=1771376089809"></script>
+        <script src="./assets/js/lib/jstree.min.js?t=1771376089809"></script>
+        <script src="./assets/js/lib/qtip-3.0.3.js?t=1771376089809"></script>
+        <script src="./assets/js/lib/blockUI-2.70.js?t=1771376089809"></script>
+        <script src="./assets/js/lib/fullcalendar.min.js?t=1771376089809"></script>
+        <script src="./assets/js/lib/timepicker.min.js?t=1771376089809"></script>
+        <script src="./assets/js/common.js?t=1771376089809"></script>
+        <title>DREAM SYSTEM</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- popup -->
+            <div class="popWrap" style="max-width: 1024px">
+                <div class="popHead">
+                    <p class="popTitle">상여 상세</p>
+                    <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                </div>
+                <div class="popBody">
+                    <div class="inner">
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>상세</h4>
+                            </div>
+                        </div>
+                        <!-- 테이블 영역 -->
+                        <div class="tblList basic tlb-min-w-975 flex fdC">
+                            <table>
+                                <caption>
+                                    상여 상세표
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 12.5%" />
+                                    <col style="width: 12.5%" />
+                                    <col style="width: 12.5%" />
+                                    <col style="width: 130px" />
+                                    <col style="width: 12.5%" />
+                                    <col style="width: 12.5%" />
+                                    <col style="width: 13.5%" />
+                                    <col style="width: 12.5%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>상여종류</th>
+                                        <th>지급총액</th>
+                                        <th>공제(소득세)</th>
+                                        <th>공제(지방소득세)</th>
+                                        <th>공제(고용보험)</th>
+                                        <th>공제(가압류)</th>
+                                        <th>공제(기타공제1)</th>
+                                        <th>차인지금액</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>차량보조비</td>
+                                        <td>100,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>100,000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2">합계</td>
+                                        <td colspan="2" class="ar">18,600,000</td>
+                                        <td colspan="2" class="ar">1,000,000</td>
+                                        <td colspan="2" class="ar">19,600,000</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <!--
+                            <div class="noResult">
+                                <div class="innerResult">
+                                    <div class="resultTxt"><i class="ico icoWarningTri">데이터없음</i> 조회된 결과가 없습니다.</div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                        <div class="btnArea right">
+                            <a href="#none" class="btn lg primary-default">인쇄 미리보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div id="dim"></div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('#dim').fadeIn('fast');
+            });
+        </script>
+    </body>
+</html>

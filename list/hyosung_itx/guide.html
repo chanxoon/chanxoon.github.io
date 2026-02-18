@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376640218"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376640218" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376640218" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376640218" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376640218" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376640218" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376640218"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376640218"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376640218"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376640218"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376640218"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376640218"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376640218"></script>
+        <script src="./assets/js/lib/script.js?t=1771376640218"></script>
+        <script src="./assets/js/common.js?t=1771376640218"></script>
+        <title>HYOSUNG ITX</title>
+
+        <style>
+            #header,
+            #wrap,
+            body {
+                min-width: unset;
+            }
+            body {
+                padding: 2%;
+            }
+            .guideBox {
+                padding: 1%;
+                margin-bottom: 15px;
+            }
+            .guideBox h4 {
+                font-size: 26px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .guideBox > .inner {
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                width: 100%;
+                min-height: 300px;
+                padding: 2%;
+            }
+            .guideBox > .inner .row {
+                margin-bottom: 15px;
+                border: 1px solid #e1e1e1;
+                border-radius: 8px;
+                padding: 1%;
+            }
+            .guideBox > .inner .row > p {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="guideBox">
+            <h4>button</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>outline</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs outline">xs</button>
+                        <button type="button" class="btn sm outline">sm</button>
+                        <button type="button" class="btn md outline">md</button>
+                        <button type="button" class="btn lg outline">lg</button>
+                        <button type="button" class="btn xlg outline">xlg</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>primary</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs primary">버튼</button>
+                        <button type="button" class="btn sm primary">버튼</button>
+                        <button type="button" class="btn md primary">버튼</button>
+                        <button type="button" class="btn lg primary">버튼</button>
+                        <button type="button" class="btn xlg primary">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>blue</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs blue">버튼</button>
+                        <button type="button" class="btn sm blue">버튼</button>
+                        <button type="button" class="btn md blue">버튼</button>
+                        <button type="button" class="btn lg blue">버튼</button>
+                        <button type="button" class="btn xlg blue">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>outlineBlue</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs outlineBlue">버튼</button>
+                        <button type="button" class="btn sm outlineBlue">버튼</button>
+                        <button type="button" class="btn md outlineBlue">버튼</button>
+                        <button type="button" class="btn lg outlineBlue">버튼</button>
+                        <button type="button" class="btn xlg outlineBlue">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>green</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs green">버튼</button>
+                        <button type="button" class="btn sm green">버튼</button>
+                        <button type="button" class="btn md green">버튼</button>
+                        <button type="button" class="btn lg green">버튼</button>
+                        <button type="button" class="btn xlg green">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>outlineGreen</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs outlineGreen">버튼</button>
+                        <button type="button" class="btn sm outlineGreen">버튼</button>
+                        <button type="button" class="btn md outlineGreen">버튼</button>
+                        <button type="button" class="btn lg outlineGreen">버튼</button>
+                        <button type="button" class="btn xlg outlineGreen">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>purple</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs purple">버튼</button>
+                        <button type="button" class="btn sm purple">버튼</button>
+                        <button type="button" class="btn md purple">버튼</button>
+                        <button type="button" class="btn lg purple">버튼</button>
+                        <button type="button" class="btn xlg purple">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>outlinePurple</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs outlinePurple">버튼</button>
+                        <button type="button" class="btn sm outlinePurple">버튼</button>
+                        <button type="button" class="btn md outlinePurple">버튼</button>
+                        <button type="button" class="btn lg outlinePurple">버튼</button>
+                        <button type="button" class="btn xlg outlinePurple">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>disabled</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs primary" disabled>버튼</button>
+                        <button type="button" class="btn sm primary" disabled>버튼</button>
+                        <button type="button" class="btn md primary" disabled>버튼</button>
+                        <button type="button" class="btn lg primary" disabled>버튼</button>
+                        <button type="button" class="btn xlg primary" disabled>버튼</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>form</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>인풋</p>
+                    <div class="inputBox">
+                        <input type="text" class="md" placeholder="placeholder" />
+                        <input type="text" class="md" value="filled" />
+                        <input type="text" class="md error" value="error" />
+                        <input type="text" class="md" value="disabled" disabled />
+                        <input type="text" class="md" value="readonly" readonly />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>셀렉트</p>
+                    <div class="formArea">
+                        <select class="md">
+                            <option>select</option>
+                        </select>
+                        <select class="md error">
+                            <option>select</option>
+                        </select>
+                        <select class="md" disabled>
+                            <option>select</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>날짜</p>
+                    <div class="datepickerWrap" style="width: 278px">
+                        <div><input type="text" id="" value="2025-01-22" class="datepicker md" /></div>
+                        <span>-</span>
+                        <div><input type="text" id="" value="2025-01-23" class="datepicker md" /></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>체크</p>
+                    <div class="colArea mb8">
+                        <div class="col">
+                            <input type="checkbox" id="check0101" checked /><label for="check0101">check</label>
+                        </div>
+                        <div class="col">
+                            <input type="checkbox" id="check0102" /><label for="check0102">check</label>
+                        </div>
+                        <div class="col">
+                            <input type="checkbox" id="check0103" /><label for="check0103">check</label>
+                        </div>
+                    </div>
+                    <div class="colArea chatCounType mb8">
+                        <div class="col">
+                            <input type="checkbox" id="check0201" checked /><label for="check0201">check</label>
+                        </div>
+                        <div class="col">
+                            <input type="checkbox" id="check0202" /><label for="check0202">check</label>
+                        </div>
+                        <div class="col">
+                            <input type="checkbox" id="check0203" /><label for="check0203">check</label>
+                        </div>
+                    </div>
+                    <div class="colArea chatBotType">
+                        <div class="col">
+                            <input type="checkbox" id="check0301" checked /><label for="check0301">check</label>
+                        </div>
+                        <div class="col">
+                            <input type="checkbox" id="check0302" /><label for="check0302">check</label>
+                        </div>
+                        <div class="col">
+                            <input type="checkbox" id="check0303" /><label for="check0303">check</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>라디오</p>
+                    <div class="colArea mb8">
+                        <div class="col">
+                            <input type="radio" id="radio0101" name="radio0101" checked /><label for="radio0101"
+                                >radio</label
+                            >
+                        </div>
+                        <div class="col">
+                            <input type="radio" id="radio0102" name="radio0101" /><label for="radio0102">radio</label>
+                        </div>
+                        <div class="col">
+                            <input type="radio" id="radio0103" name="radio0101" /><label for="radio0103">radio</label>
+                        </div>
+                    </div>
+                    <div class="colArea mb8">
+                        <div class="col">
+                            <input type="radio" id="radio0201" name="radio0201" class="doteBlue" checked="" /><label
+                                for="radio0201"
+                                >순차분배</label
+                            >
+                        </div>
+                        <div class="col">
+                            <input type="radio" id="radio0202" name="radio0201" class="doteBlue" /><label
+                                for="radio0202"
+                                >균등분배</label
+                            >
+                        </div>
+                    </div>
+                    <div class="colArea">
+                        <div class="radioWrap flex gap8">
+                            <div class="col">
+                                <input type="radio" id="ty1" name="ty" class="checkBlue" checked="" /><label for="ty1"
+                                    >고객서비스</label
+                                >
+                            </div>
+                            <div class="col">
+                                <input type="radio" id="ty2" name="ty" class="checkBlue" /><label for="ty2"
+                                    >기술지원</label
+                                >
+                            </div>
+                            <div class="col">
+                                <input type="radio" id="ty3" name="ty" class="checkBlue" /><label for="ty3"
+                                    >결제/빌링</label
+                                >
+                            </div>
+                            <div class="col">
+                                <input type="radio" id="ty4" name="ty" class="checkBlue" /><label for="ty4"
+                                    >배송/반품</label
+                                >
+                            </div>
+                            <div class="col">
+                                <input type="radio" id="ty5" name="ty" class="checkBlue" /><label for="ty5"
+                                    >계정/보안</label
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>토글버튼</p>
+                    <div class="formBox jcS">
+                        <div class="toggleBtnset">
+                            <input type="checkbox" id="toggle1" class="toggle" checked />
+                            <label for="toggle1" class="toggleSlide">
+                                <span class="togBtn"></span>
+                            </label>
+                            <div class="toggleLabel">togglebtn</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>검색</p>
+                    <div class="searchBtn">
+                        <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                        <button class="btn-md-outline">
+                            <i class="icon icon-search">검색 아이콘</i>
+                            <span>검색</span>
+                        </button>
+                    </div>
+                    <div class="searchBtn type2">
+                        <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                        <button class="btn-md-outline">
+                            <i class="icon icon-search">검색 아이콘</i>
+                            <span>검색</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>searchbox</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>검색영역</p>
+
+                    <div class="searchBox">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>조회날짜</dt>
+                                    <dd>
+                                        <div class="datepickerWrap" style="width: 278px">
+                                            <div>
+                                                <input
+                                                    type="text"
+                                                    id=""
+                                                    value="2025-01-22"
+                                                    class="datepicker md"
+                                                    stlye="width:130px"
+                                                />
+                                            </div>
+                                            <span>-</span>
+                                            <div>
+                                                <input
+                                                    type="text"
+                                                    id=""
+                                                    value="2025-01-23"
+                                                    class="datepicker md"
+                                                    stlye="width:130px"
+                                                />
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>테넌트</dt>
+                                    <dd>
+                                        <div class="formArea">
+                                            <select class="md">
+                                                <option>테넌트</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>상태</dt>
+                                    <dd>
+                                        <div class="formArea">
+                                            <select class="md">
+                                                <option>상태</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>xtmChat</dt>
+                                    <dd>
+                                        <div class="formArea">
+                                            <select class="md">
+                                                <option>xtmChat</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>채팅</dt>
+                                    <dd>
+                                        <div class="formArea">
+                                            <select class="md">
+                                                <option>채팅</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>xtmCall</dt>
+                                    <dd>
+                                        <div class="formArea">
+                                            <select class="md">
+                                                <option>xtmCall</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="searchBtn">
+                                    <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                                    <button class="btn sm outline">
+                                        <i class="icon icon-search">검색 아이콘</i>
+                                        <span>검색</span>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>title</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>헤더 타이틀</p>
+
+                    <header id="header">
+                        <div class="logoWrap">
+                            <h1>
+                                <a href="/index.html"><img src="./assets/img/img-logo.svg" alt="HYOSUNG ITX" /></a
+                                ><span class="tit">테넌트 관리</span>
+                            </h1>
+                        </div>
+                        <div class="btnWrap">
+                            <a href="javascript:;" class="btn md outline">삭제</a>
+                            <a href="javascript:;" class="btn md quaternary">수정</a>
+                            <a href="javascript:;" class="btn md primary">목록</a>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="row">
+                    <p>챗봇 헤더</p>
+
+                    <header id="header" class="chatBot">
+                        <div class="logoWrap flex">
+                            <h1 class="mr40">
+                                <a href="/index.html"><img src="./assets/img/img-logo-w.svg" alt="HYOSUNG ITX" /></a>
+                            </h1>
+                            <div class="headerNav">
+                                <ul>
+                                    <li class="active"><a href="#none">챗봇</a></li>
+                                    <li><a href="#none">채팅상담</a></li>
+                                    <li><a href="#none">콜봇</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="setWrap">
+                            <div class="setBtn">
+                                <a href="#none">
+                                    <i class="ico icoSet">설정</i>
+                                    <span>환경설정</span>
+                                </a>
+                            </div>
+                            <div class="counselBtn">
+                                <a href="#none">
+                                    <div class="userImg">
+                                        <img src="../assets/img/img-user-man.svg" alt="사용자" />
+                                        <span class="dote wait"></span>
+                                    </div>
+                                    <span>상담대기</span>
+                                    <i class="ico icoArrDown">화살표</i>
+                                </a>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="row">
+                    <p>채팅상담 헤더</p>
+
+                    <header id="header" class="chatCounsel">
+                        <div class="logoWrap flex">
+                            <h1 class="mr40">
+                                <a href="/index.html"><img src="./assets/img/img-logo-w.svg" alt="HYOSUNG ITX" /></a>
+                            </h1>
+                            <div class="headerNav">
+                                <ul>
+                                    <li><a href="#none">챗봇</a></li>
+                                    <li class="active"><a href="#none">채팅상담</a></li>
+                                    <li><a href="#none">콜봇</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="setWrap">
+                            <div class="setBtn">
+                                <a href="#none">
+                                    <i class="ico icoSet">설정</i>
+                                    <span>환경설정</span>
+                                </a>
+                            </div>
+                            <div class="counselBtn">
+                                <a href="#none">
+                                    <div class="userImg">
+                                        <img src="../assets/img/img-user-man.svg" alt="사용자" />
+                                        <span class="dote wait"></span>
+                                    </div>
+                                    <span>상담대기</span>
+                                    <i class="ico icoArrDown">화살표</i>
+                                </a>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="row">
+                    <p>콜봇 헤더</p>
+
+                    <header id="header" class="callBot">
+                        <div class="logoWrap flex">
+                            <h1 class="mr40">
+                                <a href="/index.html"><img src="./assets/img/img-logo-w.svg" alt="HYOSUNG ITX" /></a>
+                            </h1>
+                            <div class="headerNav">
+                                <ul>
+                                    <li><a href="#none">챗봇</a></li>
+                                    <li><a href="#none">채팅상담</a></li>
+                                    <li class="active"><a href="#none">콜봇</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="setWrap">
+                            <div class="setBtn">
+                                <a href="#none">
+                                    <i class="ico icoSet">설정</i>
+                                    <span>환경설정</span>
+                                </a>
+                            </div>
+                            <div class="counselBtn">
+                                <a href="#none">
+                                    <div class="userImg">
+                                        <img src="../assets/img/img-user-man.svg" alt="사용자" />
+                                        <span class="dote wait"></span>
+                                    </div>
+                                    <span>상담대기</span>
+                                    <i class="ico icoArrDown">화살표</i>
+                                </a>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="row">
+                    <p>타이틀</p>
+
+                    <div class="titArea">
+                        <div class="titBox">
+                            <h3>Title</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>컨텐츠 버튼 타이틀</p>
+
+                    <div class="titArea">
+                        <div class="titBox">
+                            <h3>Title</h3>
+                        </div>
+                        <div class="btnBox">
+                            <a href="#" class="btn outline md">버튼1</a>
+                            <a href="#" class="btn primary md">버튼2</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>인포 텍스트 타이틀</p>
+
+                    <div class="titArea">
+                        <div class="titBox">
+                            <h3>Title</h3>
+                        </div>
+                        <div class="infoBox">
+                            <i class="ico icoInfo">정보</i>
+                            <p class="txt">최근 10건만 표시됩니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>table</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>테이블 - tblList</p>
+
+                    <div class="tblList">
+                        <table>
+                            <caption>
+                                테넌트 목록
+                            </caption>
+                            <colgroup>
+                                <col style="width: 50px" />
+                                <col style="width: 330px" />
+                                <col style="width: 160px" />
+                                <col style="width: 160px" />
+                                <col style="width: 200px" />
+                                <col style="width: 200px" />
+                                <col style="width: 200px" />
+                                <col style="width: 120px" />
+                                <col style="width: 120px" />
+                                <col style="width: 120px" />
+                                <col style="width: 120px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="formArea">
+                                            <input type="checkbox" id="test" />
+                                        </div>
+                                    </th>
+                                    <th>테넌트명<button type="button" class="ico icoSorting">오름차순</button></th>
+                                    <th>담당자<button type="button" class="ico icoSorting">오름차순</button></th>
+                                    <th>사용자수<button type="button" class="ico icoSorting">오름차순</button></th>
+                                    <th>연락처<button type="button" class="ico icoSorting">오름차순</button></th>
+                                    <th>이메일<button type="button" class="ico icoSorting">오름차순</button></th>
+                                    <th>시용기간<button type="button" class="ico icoSorting">오름차순</button></th>
+                                    <th>상태<button type="button" class="ico icoSorting">오름차순</button></th>
+                                    <th>xtrmChat<button type="button" class="ico icoSorting">오름차순</button></th>
+                                    <th>채팅<button type="button" class="ico icoSorting">오름차순</button></th>
+                                    <th>xtrmCall<button type="button" class="ico icoSorting">오름차순</button></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="formArea">
+                                            <input type="checkbox" id="test" />
+                                        </div>
+                                    </td>
+                                    <td>현대모비스</td>
+                                    <td>김가영</td>
+                                    <td>312</td>
+                                    <td>010-2345-6789</td>
+                                    <td>gayeong.h@hmptor.com</td>
+                                    <td>2025-01-01 ~ 2025-12-31</td>
+                                    <td><span class="xs tertiary stateLabel active">사용</span></td>
+                                    <td><span class="xs tertiary stateLabel active">사용</span></td>
+                                    <td><span class="xs tertiary stateLabel active">사용</span></td>
+                                    <td><span class="xs outline stateLabel">미사용</span></td>
+                                </tr>
+                                <tr class="on">
+                                    <td>
+                                        <div class="formArea">
+                                            <input type="checkbox" id="test" checked />
+                                        </div>
+                                    </td>
+                                    <td>현대모비스</td>
+                                    <td>김가영</td>
+                                    <td>312</td>
+                                    <td>010-2345-6789</td>
+                                    <td>gayeong.h@hmptor.com</td>
+                                    <td>2025-01-01 ~ 2025-12-31</td>
+                                    <td><span class="xs tertiary stateLabel">사용</span></td>
+                                    <td><span class="xs tertiary stateLabel">사용</span></td>
+                                    <td><span class="xs tertiary stateLabel">사용</span></td>
+                                    <td><span class="xs outline stateLabel">미사용</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="formArea">
+                                            <input type="checkbox" id="test" />
+                                        </div>
+                                    </td>
+                                    <td>현대모비스</td>
+                                    <td>김가영</td>
+                                    <td>312</td>
+                                    <td>010-2345-6789</td>
+                                    <td>gayeong.h@hmptor.com</td>
+                                    <td>2025-01-01 ~ 2025-12-31</td>
+                                    <td><span class="xs tertiary stateLabel">사용</span></td>
+                                    <td><span class="xs tertiary stateLabel">사용</span></td>
+                                    <td><span class="xs tertiary stateLabel">사용</span></td>
+                                    <td><span class="xs outline stateLabel">미사용</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>테이블 - tblList type1</p>
+
+                    <div class="tblList type1" style="height: 176px">
+                        <table>
+                            <caption>
+                                담당자 등록
+                            </caption>
+                            <colgroup>
+                                <col style="width: 5%" />
+                                <col style="width: 10%" />
+                                <col style="width: 15%" />
+                                <col style="width: 15%" />
+                                <col style="width: 15%" />
+                                <col style="width: 15%" />
+                                <col style="width: 25%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>삭제</th>
+                                    <th>이름<span class="req">*</span></th>
+                                    <th>Prefix ID</th>
+                                    <th>Suffix ID<span class="req">*</span></th>
+                                    <th>비밀번호<span class="req">*</span></th>
+                                    <th>연락처</th>
+                                    <th>이메일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="ico icoDel">삭제</button>
+                                    </td>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" class="xs" placeholder="이름" />
+                                        </div>
+                                    </td>
+                                    <td>Prefix ID</td>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" class="xs" placeholder="Suffix ID 입력" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" class="xs" placeholder="숫자 4~8자리" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" class="xs" placeholder="'-'없이 번호만 입력" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" class="xs" placeholder="이메일 주소 입력" />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" class="ico icoDel">삭제</button>
+                                    </td>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" class="xs" value="김서연" />
+                                        </div>
+                                    </td>
+                                    <td>acme-</td>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" class="xs" value="service" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" class="xs" value="12345678" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" class="xs" value="010-9999-9999" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" class="xs" value="example@company.com" />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>pagination</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>페이징</p>
+
+                    <!-- pagination -->
+                    <div id="paginationWrap">
+                        <ul>
+                            <li class="first"><a href="#" class="btn xs outline">처음으로</a></li>
+                            <li class="prev"><a href="#" class="btn xs outline">이전으로</a></li>
+                            <li class="pageInput">
+                                <input type="number" class="sm" min="1" value="1" />
+                                <span class="dash">/</span>
+                                <span class="totalPage">50</span>
+                            </li>
+                            <li class="next"><a href="#" class="btn xs outline">다음으로</a></li>
+                            <li class="last"><a href="#" class="btn xs outline">마지막으로</a></li>
+                        </ul>
+                        <ul>
+                            <li class="total">전체<span>1,000</span>건 중<span>1~20</span>건</li>
+                            <li class="perPageSelect">
+                                <select class="sm">
+                                    <option value="50">페이지당 50</option>
+                                    <option value="100">페이지당 100</option>
+                                    <option value="150">페이지당 150</option>
+                                    <option value="200">페이지당 200</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// pagination -->
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>popup</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>팝업</p>
+
+                    <!-- popup -->
+                    <div class="popup" style="width: 900px; min-height: 300px; position: unset; transform: unset">
+                        <div class="popHead">
+                            <p class="popTitle">팝업 타이틀</p>
+                            <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                        </div>
+                        <div class="popBody">
+                            <div class="inner">
+                                <div class="btnArea right">
+                                    <a href="/" class="btn md outline">취소</a>
+                                    <a href="/" class="btn md primary">확인</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- popup -->
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>tab</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>탭1</p>
+                    <div class="tabWrap type2 green">
+                        <ul class="tabMenu aiC">
+                            <li class="active" data-tab="tab3">tab1</li>
+                            <li data-tab="tab4" class="">tab2</li>
+                        </ul>
+
+                        <div class="tabContent h100">
+                            <!-- tab1 -->
+                            <div id="tab3" class="tabPanel h100 active">1</div>
+                            <!-- tab2 -->
+                            <div id="tab4" class="tabPanel">2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>탭2</p>
+                    <div class="tabWrap type2">
+                        <ul class="tabMenu aiC">
+                            <li class="active" data-tab="tab1">tab1</li>
+                            <li data-tab="tab2" class="">tab2</li>
+                        </ul>
+
+                        <div class="tabContent h100">
+                            <!-- tab1 -->
+                            <div id="tab1" class="tabPanel h100 active">1</div>
+                            <!-- tab2 -->
+                            <div id="tab2" class="tabPanel">2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>탭3</p>
+                    <div class="row flex fdC tabWrap">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea pt0 pb0">
+                            <div class="titBox">
+                                <ul class="tabMenu">
+                                    <li class="active" data-tab="tab5">tab1</li>
+                                    <li data-tab="tab6">tab2</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <div class="tabContent">
+                                <!-- tab1 -->
+                                <div id="tab5" class="tabPanel active">1</div>
+                                <!-- tab2 -->
+                                <div id="tab6" class="tabPanel">2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>state</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>상태1</p>
+
+                    <div class="flex gap16">
+                        <div class="state logon">
+                            <div class="dote"></div>
+                            <div class="txt">로그인</div>
+                        </div>
+                        <div class="state logoff">
+                            <div class="dote"></div>
+                            <div class="txt">로그아웃</div>
+                        </div>
+                        <div class="state wiat">
+                            <div class="dote"></div>
+                            <div class="txt">상담대기</div>
+                        </div>
+                        <div class="state leave">
+                            <div class="dote"></div>
+                            <div class="txt">자리비움</div>
+                        </div>
+                        <div class="state error">
+                            <div class="dote"></div>
+                            <div class="txt">에러상태</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>상태2</p>
+
+                    <div class="flex gap16">
+                        <div class="outline stateLabel red">치명</div>
+                        <div class="outline stateLabel yellow">높음</div>
+                        <div class="outline stateLabel green">보통</div>
+                        <div class="outline stateLabel gray">낮음</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>상태3</p>
+
+                    <div class="flex gap16">
+                        <div class="stateBox">
+                            <div class="consul">상담중<span>3</span></div>
+                            <div class="wait">대기<span>1</span></div>
+                            <div class="process">후처리<span>1</span></div>
+                            <div class="complete">완료<span>1</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>상태4</p>
+                    <div class="formBox jcS">
+                        <div class="outline stateLabel"><span>미사용</span></div>
+                        <div class="outline stateLabel active"><span>사용</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>progress</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>프로그레스</p>
+
+                    <div class="">
+                        <div class="progBox pl0 pr0">
+                            <progress min="0" max="100" value="78"></progress>
+                            <span>78%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>프로그레스 컬러</p>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" data-value="80"></div>
+                        <div class="progress-value">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

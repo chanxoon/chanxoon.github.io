@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376639821"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376639821" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376639821" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376639821" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376639821" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376639821" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376639821"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376639821"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376639821"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376639821"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376639821"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376639821"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376639821"></script>
+        <script src="./assets/js/lib/script.js?t=1771376639821"></script>
+        <script src="./assets/js/common.js?t=1771376639821"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="chatCounsel">
+            <div class="logoWrap flex">
+                <h1 class="mr40">
+                    <a href="/index.html"><img src="./assets/img/img-logo-w.svg" alt="HYOSUNG ITX" /></a>
+                </h1>
+                <div class="headerNav">
+                    <ul>
+                        <li><a href="#none">챗봇</a></li>
+                        <li class="active"><a href="#none">채팅상담</a></li>
+                        <li><a href="#none">콜봇</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setWrap">
+                <div class="setBtn">
+                    <a href="#none">
+                        <i class="ico icoSet">설정</i>
+                        <span>환경설정</span>
+                    </a>
+                </div>
+                <div class="counselBtn">
+                    <a href="#none">
+                        <div class="userImg">
+                            <img src="./assets/img/img-user-man.svg" alt="사용자" />
+                            <span class="dote wait"></span>
+                        </div>
+                        <span>상담대기</span>
+                        <i class="ico icoArrDown">화살표</i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <!-- nav -->
+            <nav id="nav" class="dropdown cf chatCounsel">
+                <ul class="navList dropdown menu">
+                    <li>
+                        <a href="" class="active">
+                            <i class="ico icoDash">대시보드</i>
+                            <div>대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoScreen">상담화면</i>
+                            <div>상담화면</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoManage">상담관리</i>
+                            <div>상담관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoHistory">상담이력조회</i>
+                            <div>상담이력조회</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoStati">통계</i>
+                            <div>통계</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoCounselor">상담사 & 팀 관리</i>
+                            <div>상담사 & 팀 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoDictionary">사전관리</i>
+                            <div>사전관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoMessage">메세지 관리</i>
+                            <div>메세지 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="ico icoClock">배치</i>
+                            <div>배치</div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="panelBtn">
+                    <i class="ico icoArrRight">오른쪽 화살표</i>
+                </button>
+            </nav>
+            <!--// nav -->
+
+            <div id="contents" class="flex jcB fdC gap12 chat">
+                <div class="titWrap">
+                    <h3>대시보드</h3>
+                </div>
+                <div class="innerWrap flex jcS gap12 innerHover" style="height: 13%">
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>대기 총 고객수</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea jcE">
+                            <div class="countBox">
+                                <div class="lA"><strong>24</strong> 명</div>
+                                <div class="rA">
+                                    <span class="dote wait"></span>
+                                    <span>대기 <strong>24</strong> 명</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>평균 대기시간</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea jcE">
+                            <div class="countBox">
+                                <div class="lA"><strong>2</strong> 분 <strong>18</strong> 초</div>
+                                <div class="rA">
+                                    <span>전날대비 <strong>-14</strong> 초</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder pb0">
+                            <div class="titBox">
+                                <h4>실시간 채팅상태</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea pt0 jcE">
+                            <div class="cardList">
+                                <div class="card logon">
+                                    <div class="tit">로그인</div>
+                                    <div class="con"><strong>38</strong> 명</div>
+                                </div>
+                                <div class="card wait">
+                                    <div class="tit">상담대기</div>
+                                    <div class="con"><strong>24</strong> 명</div>
+                                </div>
+                                <div class="card leave">
+                                    <div class="tit">자리비움</div>
+                                    <div class="con"><strong>7</strong> 명</div>
+                                </div>
+                                <div class="card logoff">
+                                    <div class="tit">로그아웃</div>
+                                    <div class="con"><strong>102</strong> 명</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>상담사 온라인</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea jcE">
+                            <div class="countBox">
+                                <div class="lA"><strong>12</strong> 명</div>
+                                <div class="rA">
+                                    <span class="dote logoff"></span>
+                                    <span>오프라인 <strong>3</strong> 명</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="innerWrap flex gap12" style="height: 87%">
+                    <div class="inner" style="width: 75.4%">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>일별지표</h3>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea pt0">
+                            <div class="chartArea">
+                                <div class="row">
+                                    <div class="titArea noBorder pl0 pr0">
+                                        <div class="titBox">
+                                            <h4>평균 채팅 시간(일별)</h4>
+                                        </div>
+                                        <div class="infoBox">
+                                            <p>단위 : 분</p>
+                                        </div>
+                                    </div>
+                                    <div class="chartBox">차트영역</div>
+                                </div>
+                                <div class="row">
+                                    <div class="titArea noBorder pl0 pr0">
+                                        <div class="titBox">
+                                            <h4>채팅 응답 시간(일별)</h4>
+                                        </div>
+                                        <div class="infoBox">
+                                            <p>단위 : 초</p>
+                                        </div>
+                                    </div>
+                                    <div class="chartBox">차트영역</div>
+                                </div>
+                                <div class="row">
+                                    <div class="titArea noBorder pl0 pr0">
+                                        <div class="titBox">
+                                            <h4>채팅 대기 시간(일별)</h4>
+                                        </div>
+                                        <div class="infoBox">
+                                            <p>단위 : 분</p>
+                                        </div>
+                                    </div>
+                                    <div class="chartBox">차트영역</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner" style="width: 24.6%">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>상담사 목록 및 상태</h3>
+                            </div>
+                            <div class="infoBox">
+                                <div class="total">
+                                    <span>전체<strong>15</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea pt0">
+                            <div class="counselList">
+                                <ul>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state wait">
+                                                <div class="dote"></div>
+                                                <div class="txt">상담대기</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state leave">
+                                                <div class="dote"></div>
+                                                <div class="txt">자리비움</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state wait">
+                                                <div class="dote"></div>
+                                                <div class="txt">상담대기</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state error">
+                                                <div class="dote"></div>
+                                                <div class="txt">에러상태</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state logoff">
+                                                <div class="dote"></div>
+                                                <div class="txt">로그아웃</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state logoff">
+                                                <div class="dote"></div>
+                                                <div class="txt">로그아웃</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state logoff">
+                                                <div class="dote"></div>
+                                                <div class="txt">로그아웃</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state logoff">
+                                                <div class="dote"></div>
+                                                <div class="txt">로그아웃</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state logoff">
+                                                <div class="dote"></div>
+                                                <div class="txt">로그아웃</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state logoff">
+                                                <div class="dote"></div>
+                                                <div class="txt">로그아웃</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state logoff">
+                                                <div class="dote"></div>
+                                                <div class="txt">로그아웃</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state logoff">
+                                                <div class="dote"></div>
+                                                <div class="txt">로그아웃</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state logoff">
+                                                <div class="dote"></div>
+                                                <div class="txt">로그아웃</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lA">
+                                            <div class="thum">
+                                                <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">홍길동</div>
+                                                <div class="time">13:30:17</div>
+                                            </div>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="state logoff">
+                                                <div class="dote"></div>
+                                                <div class="txt">로그아웃</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

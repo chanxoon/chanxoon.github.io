@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376640016"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376640016" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376640016" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376640016" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376640016" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376640016" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376640016"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376640016"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376640016"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376640016"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376640016"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376640016"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376640016"></script>
+        <script src="./assets/js/lib/script.js?t=1771376640016"></script>
+        <script src="./assets/js/common.js?t=1771376640016"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header id="header" class="chatCounsel">
+            <div class="logoWrap flex">
+                <h1 class="mr40">
+                    <a href="/index.html"><img src="./assets/img/img-logo-w.svg" alt="HYOSUNG ITX" /></a>
+                </h1>
+                <div class="headerNav">
+                    <ul>
+                        <li><a href="#none">챗봇</a></li>
+                        <li class="active"><a href="#none">채팅상담</a></li>
+                        <li><a href="#none">콜봇</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setWrap">
+                <div class="setBtn">
+                    <a href="#none">
+                        <i class="ico icoSet">설정</i>
+                        <span>환경설정</span>
+                    </a>
+                </div>
+                <div class="counselBtn">
+                    <a href="#none">
+                        <div class="userImg">
+                            <img src="./assets/img/img-user-man.svg" alt="사용자" />
+                            <span class="dote wait"></span>
+                        </div>
+                        <span>상담대기</span>
+                        <i class="ico icoArrDown">화살표</i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <!-- nav -->
+            <nav id="nav" class="dropdown cf chatCounsel">
+                <ul class="navList dropdown menu">
+                    <li>
+                        <a href="" class="active">
+                            <i class="ico icoDash">대시보드</i>
+                            <div>대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoScreen">상담화면</i>
+                            <div>상담화면</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoManage">상담관리</i>
+                            <div>상담관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoHistory">상담이력조회</i>
+                            <div>상담이력조회</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoStati">통계</i>
+                            <div>통계</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoCounselor">상담사 & 팀 관리</i>
+                            <div>상담사 & 팀 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoDictionary">사전관리</i>
+                            <div>사전관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoMessage">메세지 관리</i>
+                            <div>메세지 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="ico icoClock">배치</i>
+                            <div>배치</div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="panelBtn">
+                    <i class="ico icoArrRight">오른쪽 화살표</i>
+                </button>
+            </nav>
+            <!--// nav -->
+
+            <div id="contents" class="flex jcB gap12 chat">
+                <div class="titWrap">
+                    <h3>상담화면</h3>
+                </div>
+                <div class="innerWrap" style="width: 28%">
+                    <div class="inner">
+                        <div class="row flex fdC borderBot" style="height: 65%">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea">
+                                <div class="titBox">
+                                    <h3>상담 목록</h3>
+                                </div>
+                                <div class="infoBox">
+                                    <div class="stateBox">
+                                        <div class="consul">상담중<span>3</span></div>
+                                        <div class="wait">대기<span>1</span></div>
+                                        <div class="process">후처리<span>1</span></div>
+                                        <div class="complete">완료<span>1</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea pt0">
+                                <div class="counselListCount">
+                                    <ul>
+                                        <li>
+                                            <div class="lA">
+                                                <div class="thum">
+                                                    <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                                </div>
+                                            </div>
+                                            <div class="rA">
+                                                <div class="idBox">
+                                                    <div class="id">0825_0001<span class="state wait">대기</span></div>
+                                                    <div class="date">13:30:17</div>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <div class="txt">
+                                                        네, 4421이에요, 인보이스 번호는 INV-20394입니다.네, 4421이에요,
+                                                        인보이스 번호는 INV-20394입니다.네, 4421이에요, 인보이스 번호는
+                                                        INV-20394입니다.네, 4421이에요, 인보이스 번호는 INV-20394입니다.
+                                                    </div>
+                                                    <div class="count"><span>1</span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lA">
+                                                <div class="thum">
+                                                    <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                                </div>
+                                            </div>
+                                            <div class="rA">
+                                                <div class="idBox">
+                                                    <div class="id">
+                                                        0825_0001<span class="state consul">상담중</span>
+                                                    </div>
+                                                    <div class="date">13:30:17</div>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <div class="txt">
+                                                        네, 4421이에요, 인보이스 번호는 INV-20394입니다.
+                                                    </div>
+                                                    <div class="count"><span>1</span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lA">
+                                                <div class="thum">
+                                                    <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                                </div>
+                                            </div>
+                                            <div class="rA">
+                                                <div class="idBox">
+                                                    <div class="id">
+                                                        0825_0001<span class="state complete">완료</span>
+                                                    </div>
+                                                    <div class="date">13:30:17</div>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <div class="txt">
+                                                        네, 4421이에요, 인보이스 번호는 INV-20394입니다.
+                                                    </div>
+                                                    <div class="count"><span>1</span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lA">
+                                                <div class="thum">
+                                                    <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                                </div>
+                                            </div>
+                                            <div class="rA">
+                                                <div class="idBox">
+                                                    <div class="id">
+                                                        0825_0001<span class="state process">후처리</span>
+                                                    </div>
+                                                    <div class="date">13:30:17</div>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <div class="txt">
+                                                        네, 4421이에요, 인보이스 번호는 INV-20394입니다.
+                                                    </div>
+                                                    <div class="count"><span>1</span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lA">
+                                                <div class="thum">
+                                                    <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                                </div>
+                                            </div>
+                                            <div class="rA">
+                                                <div class="idBox">
+                                                    <div class="id">
+                                                        0825_0001<span class="state process">후처리</span>
+                                                    </div>
+                                                    <div class="date">13:30:17</div>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <div class="txt">
+                                                        네, 4421이에요, 인보이스 번호는 INV-20394입니다.
+                                                    </div>
+                                                    <div class="count"><span>1</span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lA">
+                                                <div class="thum">
+                                                    <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                                </div>
+                                            </div>
+                                            <div class="rA">
+                                                <div class="idBox">
+                                                    <div class="id">
+                                                        0825_0001<span class="state process">후처리</span>
+                                                    </div>
+                                                    <div class="date">13:30:17</div>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <div class="txt">
+                                                        네, 4421이에요, 인보이스 번호는 INV-20394입니다.
+                                                    </div>
+                                                    <div class="count"><span>1</span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lA">
+                                                <div class="thum">
+                                                    <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                                </div>
+                                            </div>
+                                            <div class="rA">
+                                                <div class="idBox">
+                                                    <div class="id">
+                                                        0825_0001<span class="state process">후처리</span>
+                                                    </div>
+                                                    <div class="date">13:30:17</div>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <div class="txt">
+                                                        네, 4421이에요, 인보이스 번호는 INV-20394입니다.
+                                                    </div>
+                                                    <div class="count"><span>1</span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lA">
+                                                <div class="thum">
+                                                    <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                                </div>
+                                            </div>
+                                            <div class="rA">
+                                                <div class="idBox">
+                                                    <div class="id">
+                                                        0825_0001<span class="state process">후처리</span>
+                                                    </div>
+                                                    <div class="date">13:30:17</div>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <div class="txt">
+                                                        네, 4421이에요, 인보이스 번호는 INV-20394입니다.
+                                                    </div>
+                                                    <div class="count"><span>1</span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="lA">
+                                                <div class="thum">
+                                                    <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                                </div>
+                                            </div>
+                                            <div class="rA">
+                                                <div class="idBox">
+                                                    <div class="id">
+                                                        0825_0001<span class="state process">후처리</span>
+                                                    </div>
+                                                    <div class="date">13:30:17</div>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <div class="txt">
+                                                        네, 4421이에요, 인보이스 번호는 INV-20394입니다.
+                                                    </div>
+                                                    <div class="count"><span>1</span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row flex fdC" style="height: 35%">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea">
+                                <div class="titBox">
+                                    <h3>상담 히스토리</h3>
+                                </div>
+                                <div class="btnBox">
+                                    <button type="button" class="ico icoArrDown">접기</button>
+                                </div>
+                            </div>
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea">
+                                <div class="historyList">
+                                    <ul>
+                                        <li>
+                                            <div class="pathBox">
+                                                <div class="pat">카드 > 가입 > <span>재가입</span></div>
+                                                <div class="dat">2025.08.20 09:40:24</div>
+                                            </div>
+                                            <div class="subject">해당 고객은 기입과 동시에 결제 오류 문의 접수</div>
+                                        </li>
+                                        <li>
+                                            <div class="pathBox">
+                                                <div class="pat">카드 > 가입 > <span>재가입</span></div>
+                                                <div class="dat">2025.08.20 09:40:24</div>
+                                            </div>
+                                            <div class="subject">해당 고객은 기입과 동시에 결제 오류 문의 접수</div>
+                                        </li>
+                                        <li>
+                                            <div class="pathBox">
+                                                <div class="pat">카드 > 가입 > <span>재가입</span></div>
+                                                <div class="dat">2025.08.20 09:40:24</div>
+                                            </div>
+                                            <div class="subject">해당 고객은 기입과 동시에 결제 오류 문의 접수</div>
+                                        </li>
+                                        <li>
+                                            <div class="pathBox">
+                                                <div class="pat">카드 > 가입 > <span>재가입</span></div>
+                                                <div class="dat">2025.08.20 09:40:24</div>
+                                            </div>
+                                            <div class="subject">해당 고객은 기입과 동시에 결제 오류 문의 접수</div>
+                                        </li>
+                                        <li>
+                                            <div class="pathBox">
+                                                <div class="pat">카드 > 가입 > <span>재가입</span></div>
+                                                <div class="dat">2025.08.20 09:40:24</div>
+                                            </div>
+                                            <div class="subject">해당 고객은 기입과 동시에 결제 오류 문의 접수</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="innerWrap" style="width: 44%">
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <div class="timerWrap">
+                                    <div class="thum">
+                                        <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                    </div>
+                                    <div class="id">세션 ID : 0825_0001</div>
+                                    <div class="timeBox entTime">
+                                        <i class="ico icoTimer">시계</i>
+                                        <div class="txt">인입시간 <span class="time">09:40:13</span></div>
+                                    </div>
+                                    <div class="timeBox runTime">
+                                        <i class="ico icoClock2">시계</i>
+                                        <div class="txt">진행시간 <span class="time">07:13</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btnBox">
+                                <button type="button" class="btn md outlineBlue">
+                                    <i class="ico icoRefresh">리프레쉬</i>
+                                    <span>상담사 변경</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea noPadding">
+                            <div class="chatWrap">
+                                <div class="chatBody">
+                                    <div class="chatDate">2025.09.17</div>
+
+                                    <div class="chatMsg user">
+                                        <div class="time"><strong>고객</strong> 13:31</div>
+                                        <div class="bubble">
+                                            안녕하세요, 지난 인보이스에서 중복청구가 있었습니다. 도와주실 수 있나요?
+                                        </div>
+                                    </div>
+
+                                    <div class="chatMsg agent">
+                                        <div class="time"><strong>상담사</strong> 13:31</div>
+                                        <div class="bubble">
+                                            물론입니다. 사용하신 카드의 마지막 4자리를 알려주실 수 있나요?
+                                        </div>
+                                    </div>
+
+                                    <div class="chatMsg user">
+                                        <div class="time"><strong>고객</strong> 13:31</div>
+                                        <div class="bubble">
+                                            감사합니다. 거래 내역 확인 중입니다. 잠시만 기다려주세요.
+                                        </div>
+                                    </div>
+
+                                    <div class="chatMsg agent">
+                                        <div class="time"><strong>상담사</strong> 13:31</div>
+                                        <div class="bubble">네, 44210예요. 인보이스 번호는 INV-20394입니다.</div>
+                                    </div>
+                                </div>
+                                <div class="chatFoot">
+                                    <div class="inputBox">
+                                        <textarea placeholder="메시지를 입력하세요."></textarea>
+                                    </div>
+                                    <div class="chatBtns">
+                                        <div class="lA">
+                                            <button class="btn md outlineBlue btnEval">
+                                                <i class="ico icoEva">평가</i>상담평가
+                                            </button>
+                                            <button class="btn md outlineBlue btnEnd">
+                                                <i class="ico icoEnd">종료</i>대화종료
+                                            </button>
+                                        </div>
+                                        <div class="rA">
+                                            <div class="fileBox">
+                                                <span class="fileName" id="fileName"></span>
+                                                <input type="file" id="fileUpload" class="fileInput" />
+                                                <label for="fileUpload" class="fileLabel"
+                                                    ><i class="ico icoFileAtt">첨부</i></label
+                                                >
+                                            </div>
+                                            <button class="btn md blue sendBtn">전송</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="innerWrap" style="width: 28%">
+                    <div class="inner">
+                        <div class="row flex fdC borderBot" style="height: 25%">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea">
+                                <div class="titBox">
+                                    <h3>어드바이저</h3>
+                                </div>
+                            </div>
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea">
+                                <div class="inputArea">
+                                    <p>감사합니다. 거래 내역 확인 중입니다. 잠시만 기다려주세요.</p>
+                                    <div class="thinking fcBlue">생각중...</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row flex fdC tabWrap" style="height: 75%">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea pt0 pb0">
+                                <div class="titBox">
+                                    <ul class="tabMenu">
+                                        <li class="active" data-tab="tab1">상담 템플릿</li>
+                                        <li data-tab="tab2">후처리</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea">
+                                <div class="tabContent">
+                                    <!-- tab1 -->
+                                    <div id="tab1" class="tabPanel active">
+                                        <div class="searchBox fwN gap4">
+                                            <div class="formArea" style="width: 35%">
+                                                <select class="md">
+                                                    <option>상담사용 메세지</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="searchBtn type2" style="width: 65%">
+                                                <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                                                <button class="btn sm outline">
+                                                    <i class="icon icon-search">검색 아이콘</i>
+                                                    <span>검색</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="templateList">
+                                            <ul>
+                                                <li>
+                                                    <div class="tit">
+                                                        <span class="ellipsis">#안내 결제 실패</span>
+                                                        <button type="button" class="btn sm outline">
+                                                            메세지 입력
+                                                        </button>
+                                                    </div>
+                                                    <div class="con">
+                                                        <p>
+                                                            결제가 실패한 경우, 카드 정보(만료일/CVC)와 잔액을 확인한 뒤
+                                                            다시 시도해 주세요. 지속적으로 실패한 경우 다른 결제수단을
+                                                            이용해 주세요.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="tit">
+                                                        <span class="ellipsis">#보안 비밀번호</span>
+                                                        <button type="button" class="btn sm outline">
+                                                            메세지 입력
+                                                        </button>
+                                                    </div>
+                                                    <div class="con">
+                                                        <p>
+                                                            결제가 실패한 경우, 카드 정보(만료일/CVC)와 잔액을 확인한 뒤
+                                                            다시 시도해 주세요. 지속적으로 실패한 경우 다른 결제수단을
+                                                            이용해 주세요.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="tit">
+                                                        <span class="ellipsis">#배송 출고 일정</span>
+                                                        <button type="button" class="btn sm outline">
+                                                            메세지 입력
+                                                        </button>
+                                                    </div>
+                                                    <div class="con">
+                                                        <p>
+                                                            결제가 실패한 경우, 카드 정보(만료일/CVC)와 잔액을 확인한 뒤
+                                                            다시 시도해 주세요. 지속적으로 실패한 경우 다른 결제수단을
+                                                            이용해 주세요.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="tit">
+                                                        <span class="ellipsis">#계정 이메일 변경</span>
+                                                        <button type="button" class="btn sm outline">
+                                                            메세지 입력
+                                                        </button>
+                                                    </div>
+                                                    <div class="con">
+                                                        <p>
+                                                            결제가 실패한 경우, 카드 정보(만료일/CVC)와 잔액을 확인한 뒤
+                                                            다시 시도해 주세요. 지속적으로 실패한 경우 다른 결제수단을
+                                                            이용해 주세요.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="tit">
+                                                        <span class="ellipsis">#환불 처리</span>
+                                                        <button type="button" class="btn sm outline">
+                                                            메세지 입력
+                                                        </button>
+                                                    </div>
+                                                    <div class="con">
+                                                        <p>
+                                                            결제가 실패한 경우, 카드 정보(만료일/CVC)와 잔액을 확인한 뒤
+                                                            다시 시도해 주세요. 지속적으로 실패한 경우 다른 결제수단을
+                                                            이용해 주세요.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- tab2 -->
+                                    <div id="tab2" class="tabPanel">
+                                        <div class="laterProcess">
+                                            <div class="proInfo">
+                                                <dl>
+                                                    <dt>세션ID</dt>
+                                                    <dd>0825_0001</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>IP 주소</dt>
+                                                    <dd>283.0.113</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>인입시간</dt>
+                                                    <dd>2025.09.15 09:40:13</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>채팅종료</dt>
+                                                    <dd>-</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="proList">
+                                                <ul>
+                                                    <li class="summary">
+                                                        <div class="tit">상담요약</div>
+                                                        <div class="con">
+                                                            <textarea>AI가 추천한 상담요약 입니다.</textarea>
+                                                        </div>
+                                                    </li>
+                                                    <li class="category">
+                                                        <div class="tit">상담 분류 선택</div>
+                                                        <div class="con">
+                                                            <div class="pathBox">
+                                                                <div class="path">
+                                                                    <span>카드문의</span>
+                                                                    <span>가입</span>
+                                                                    <span>체크카드</span>
+                                                                </div>
+                                                                <button type="button" class="ico icoDel delBtn">
+                                                                    삭제
+                                                                </button>
+                                                            </div>
+                                                            <div class="radioWrap">
+                                                                <div class="col">
+                                                                    <input
+                                                                        type="radio"
+                                                                        id="ty1"
+                                                                        name="ty"
+                                                                        class="checkBlue"
+                                                                        checked=""
+                                                                    /><label for="ty1">고객서비스</label>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <input
+                                                                        type="radio"
+                                                                        id="ty2"
+                                                                        name="ty"
+                                                                        class="checkBlue"
+                                                                    /><label for="ty2">기술지원</label>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <input
+                                                                        type="radio"
+                                                                        id="ty3"
+                                                                        name="ty"
+                                                                        class="checkBlue"
+                                                                    /><label for="ty3">결제/빌링</label>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <input
+                                                                        type="radio"
+                                                                        id="ty4"
+                                                                        name="ty"
+                                                                        class="checkBlue"
+                                                                    /><label for="ty4">배송/반품</label>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <input
+                                                                        type="radio"
+                                                                        id="ty5"
+                                                                        name="ty"
+                                                                        class="checkBlue"
+                                                                    /><label for="ty5">계정/보안</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="notes">
+                                                        <div class="tit">후처리 메모</div>
+                                                        <div class="con">
+                                                            <textarea
+                                                                placeholder="상담 후 메모를 입력하세요."
+                                                            ></textarea>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="btnArea right">
+                                                <a href="/" class="btn md outline">취소</a>
+                                                <a href="/" class="btn md blue">저장</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

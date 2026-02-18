@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376090833" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376090833" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-confirm.css?t=1771376090833" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jqgrid-ui.css?t=1771376090833" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jstree.min.css?t=1771376090833" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/qtip.css?t=1771376090833" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/timepicker.min.css?t=1771376090833" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376090833" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376090833" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376090833"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376090833"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376090833"></script>
+        <script src="./assets/js/lib/iscroll.min.js?t=1771376090833"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376090833"></script>
+        <script src="./assets/js/lib/jquery-confirm.js?t=1771376090833"></script>
+        <script src="./assets/js/lib/jqgrid-4.15.5.js?t=1771376090833"></script>
+        <script src="./assets/js/lib/jstree.min.js?t=1771376090833"></script>
+        <script src="./assets/js/lib/qtip-3.0.3.js?t=1771376090833"></script>
+        <script src="./assets/js/lib/blockUI-2.70.js?t=1771376090833"></script>
+        <script src="./assets/js/lib/fullcalendar.min.js?t=1771376090833"></script>
+        <script src="./assets/js/lib/timepicker.min.js?t=1771376090833"></script>
+        <script src="./assets/js/common.js?t=1771376090833"></script>
+        <title>DREAM SYSTEM</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- popup -->
+            <div class="popWrap smsPop flex fdC" style="max-width: 1600px">
+                <div class="popHead">
+                    <p class="popTitle">SMS</p>
+                    <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                </div>
+                <div class="popBody">
+                    <div class="inner h100">
+                        <div class="tabWrap h100 mt0">
+                            <!-- 탭 영역 -->
+                            <ul class="tabMenu">
+                                <li class="active" data-tab="tab1">SMS 보내기</li>
+                                <li data-tab="tab2">이력조회</li>
+                            </ul>
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea h100">
+                                <div class="tabContent h100 pt16">
+                                    <!-- tab1 -->
+                                    <div id="tab1" class="tabPanel gap16 fdR active">
+                                        <div class="leftBox">
+                                            <div class="boxInner flex fdC h100">
+                                                <div class="titArea noBorder pb10">
+                                                    <div class="titBox flex aiC">
+                                                        <h4>수신자 선택</h4>
+                                                    </div>
+                                                </div>
+                                                <!-- 검색 영역 -->
+                                                <div class="searchBox">
+                                                    <ul class="w100">
+                                                        <li class="mb8 jcB">
+                                                            <dl>
+                                                                <dt>조회 기간</dt>
+                                                                <dd>
+                                                                    <div class="datepickerWrap">
+                                                                        <div>
+                                                                            <input
+                                                                                type="text"
+                                                                                value="2025-01-22"
+                                                                                class="datepicker md"
+                                                                            />
+                                                                        </div>
+                                                                        <span>-</span>
+                                                                        <div>
+                                                                            <input
+                                                                                type="text"
+                                                                                value="2025-01-23"
+                                                                                class="datepicker md"
+                                                                            />
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt>교육 과정</dt>
+                                                                <dd>
+                                                                    <div class="formArea">
+                                                                        <select class="md">
+                                                                            <option disabled selected>선택</option>
+                                                                            <option>항목1</option>
+                                                                            <option>항목2</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="searchBtn">
+                                                                        <button class="btn md primary-70">
+                                                                            <i class="ico icoSearchW">검색 아이콘</i>
+                                                                            <span>검색</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </dd>
+                                                            </dl>
+                                                        </li>
+                                                        <li>
+                                                            <dl class="w100">
+                                                                <dt>상세 검색</dt>
+                                                                <dd class="flex1">
+                                                                    <div class="inputArea flex1">
+                                                                        <input
+                                                                            type="text"
+                                                                            class="md flex1"
+                                                                            placeholder="검색결과 내 검색어 조회"
+                                                                        />
+                                                                    </div>
+                                                                </dd>
+                                                            </dl>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- 테이블 영역 -->
+                                                <div class="tblList mt24" style="height: 440px">
+                                                    <table>
+                                                        <caption>
+                                                            수신자 선택
+                                                        </caption>
+                                                        <colgroup>
+                                                            <col style="width: 60px" />
+                                                            <col style="width: 40px" />
+                                                            <col style="width: 350px" />
+                                                            <col style="width: 60px" />
+                                                            <col style="width: 60px" />
+                                                            <col style="width: 60px" />
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>NO.</th>
+                                                                <th>
+                                                                    <input type="checkbox" id="check0100" />
+                                                                </th>
+                                                                <th>부서</th>
+                                                                <th>직위</th>
+                                                                <th>이름</th>
+                                                                <th>상태</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>
+                                                                    <input type="checkbox" id="check0101" />
+                                                                </td>
+                                                                <td>떠리몰 고객센터</td>
+                                                                <td>대리</td>
+                                                                <td>김효성</td>
+                                                                <td>취소</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>
+                                                                    <input type="checkbox" id="check0102" />
+                                                                </td>
+                                                                <td>00749 에듀콜센터</td>
+                                                                <td>컨설턴트</td>
+                                                                <td>김효성</td>
+                                                                <td>승인</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>
+                                                                    <input type="checkbox" id="check0103" />
+                                                                </td>
+                                                                <td>교육행재정 통합상담센터 교육재정 일반6팀</td>
+                                                                <td>주임</td>
+                                                                <td>김효성</td>
+                                                                <td>취소</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!--
+                                                    <div class="noResult">
+                                                        <div class="innerResult">
+                                                            <div class="resultTxt"><i class="ico icoWarningTri">데이터없음</i> 조회된 결과가 없습니다.</div>
+                                                        </div>
+                                                    </div>
+                                                    -->
+                                                </div>
+                                                <div id="paginationWrap" class="noView">
+                                                    <ul>
+                                                        <li class="first">
+                                                            <a href="#" class="btn sm outline">처음으로</a>
+                                                        </li>
+                                                        <li class="prev">
+                                                            <a href="#" class="btn sm outline">이전으로</a>
+                                                        </li>
+                                                        <li class="pageInput">
+                                                            <input type="text" class="sm" min="1" value="1" />
+                                                            <span class="dash">/</span>
+                                                            <span class="totalPage">50</span>
+                                                        </li>
+                                                        <li class="next">
+                                                            <a href="#" class="btn sm outline">다음으로</a>
+                                                        </li>
+                                                        <li class="last">
+                                                            <a href="#" class="btn sm outline">마지막으로</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movementBox flex aiC">
+                                            <div class="boxInner flex fdC gap16">
+                                                <div class="boxItem add">
+                                                    <button
+                                                        type="button"
+                                                        class="btn lg icon squarePri radius6 arrowRightPri"
+                                                    >
+                                                        추가
+                                                    </button>
+                                                </div>
+                                                <div class="boxItem remove">
+                                                    <button
+                                                        type="button"
+                                                        class="btn lg icon squareGray radius6 arrowLeftGray"
+                                                    >
+                                                        삭제
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rightBox">
+                                            <div class="boxInner flex gap16 h100">
+                                                <div class="leftBox" style="width: 50%">
+                                                    <div class="boxInner flex fdC h100">
+                                                        <div class="titArea noBorder pb10">
+                                                            <div class="titBox flex aiC">
+                                                                <h4>추가 등록</h4>
+                                                                <i
+                                                                    class="tooltipModule gray sm ml6"
+                                                                    data-tooltip="툴팁 내용"
+                                                                    data-hasqtip="0"
+                                                                ></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="searchBox type2 grid">
+                                                            <ul>
+                                                                <li>
+                                                                    <dl>
+                                                                        <dt>이름</dt>
+                                                                        <dd>
+                                                                            <div style="width: 100%" class="inputArea">
+                                                                                <input
+                                                                                    type="text"
+                                                                                    class="md"
+                                                                                    placeholder="이름을 입력하세요"
+                                                                                />
+                                                                            </div>
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl>
+                                                                        <dt>휴대폰 번호</dt>
+                                                                        <dd>
+                                                                            <div style="width: 100%" class="inputArea">
+                                                                                <input
+                                                                                    type="text"
+                                                                                    class="md"
+                                                                                    placeholder="'-'없이 숫자만 입력하세요"
+                                                                                />
+                                                                            </div>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- 테이블 영역 -->
+                                                        <div class="tblList mt24" style="height: 440px">
+                                                            <table>
+                                                                <caption>
+                                                                    추가 등록
+                                                                </caption>
+                                                                <colgroup>
+                                                                    <col style="width: 60px" />
+                                                                    <col style="width: 40px" />
+                                                                    <col style="width: 80px" />
+                                                                    <col style="width: 130px" />
+                                                                </colgroup>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>NO.</th>
+                                                                        <th>
+                                                                            <input type="checkbox" id="check0200" />
+                                                                        </th>
+                                                                        <th>이름</th>
+                                                                        <th>휴대폰 번호</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>
+                                                                            <input type="checkbox" id="check0201" />
+                                                                        </td>
+                                                                        <td>김효성</td>
+                                                                        <td>01012341234</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>
+                                                                            <input type="checkbox" id="check0202" />
+                                                                        </td>
+                                                                        <td>김효성</td>
+                                                                        <td>01012341234</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>3</td>
+                                                                        <td>
+                                                                            <input type="checkbox" id="check0203" />
+                                                                        </td>
+                                                                        <td>김효성</td>
+                                                                        <td>01012341234</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <!--
+                                                            <div class="noResult">
+                                                                <div class="innerResult">
+                                                                    <div class="resultTxt"><i class="ico icoWarningTri">데이터없음</i> 조회된 결과가 없습니다.</div>
+                                                                </div>
+                                                            </div>
+                                                            -->
+                                                        </div>
+                                                        <div id="paginationWrap" class="noView">
+                                                            <ul>
+                                                                <li class="first">
+                                                                    <a href="#" class="btn sm outline">처음으로</a>
+                                                                </li>
+                                                                <li class="prev">
+                                                                    <a href="#" class="btn sm outline">이전으로</a>
+                                                                </li>
+                                                                <li class="pageInput">
+                                                                    <input type="text" class="sm" min="1" value="1" />
+                                                                    <span class="dash">/</span>
+                                                                    <span class="totalPage">50</span>
+                                                                </li>
+                                                                <li class="next">
+                                                                    <a href="#" class="btn sm outline">다음으로</a>
+                                                                </li>
+                                                                <li class="last">
+                                                                    <a href="#" class="btn sm outline">마지막으로</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="rightBox moLine" style="width: 50%">
+                                                    <div class="boxInner flex fdC h100">
+                                                        <div class="titArea noBorderTa pb10">
+                                                            <div class="titBox flex aiC">
+                                                                <h4>메세지 입력</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="searchBox type3 fgr1 grid">
+                                                            <ul class="h100 flex fdC">
+                                                                <li>
+                                                                    <dl>
+                                                                        <dt>예약일자</dt>
+                                                                        <dd>
+                                                                            <div
+                                                                                style="width: 100%"
+                                                                                class="inputArea gap8"
+                                                                            >
+                                                                                <input
+                                                                                    type="text"
+                                                                                    class="md mw0"
+                                                                                    placeholder="YYYY.MM.DD"
+                                                                                />
+                                                                                <input
+                                                                                    type="text"
+                                                                                    class="md mw0"
+                                                                                    placeholder="HH:MM"
+                                                                                />
+                                                                            </div>
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl>
+                                                                        <dt>발신번호</dt>
+                                                                        <dd>
+                                                                            <div style="width: 100%" class="inputArea">
+                                                                                <input
+                                                                                    type="text"
+                                                                                    class="md"
+                                                                                    placeholder="'-'없이 숫자만 입력하세요"
+                                                                                />
+                                                                            </div>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </li>
+                                                                <li class="noTitle noGrid">
+                                                                    <div style="width: 100%" class="inputArea">
+                                                                        <input
+                                                                            type="text"
+                                                                            class="md"
+                                                                            placeholder="제목을 입력하세요"
+                                                                        />
+                                                                    </div>
+                                                                </li>
+                                                                <li class="noTitle h100 noGrid">
+                                                                    <div style="width: 100%" class="inputArea h100">
+                                                                        <textarea
+                                                                            style="height: 390px"
+                                                                            placeholder="문자 내용을 입력하세요"
+                                                                        ></textarea>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="noTitle noGrid">
+                                                                    <button
+                                                                        type="button"
+                                                                        class="btn lg primary-default w100 jcC"
+                                                                    >
+                                                                        SMS 전송
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- tab2 -->
+                                    <div id="tab2" class="tabPanel"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div id="dim"></div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('#dim').fadeIn('fast');
+            });
+        </script>
+    </body>
+</html>

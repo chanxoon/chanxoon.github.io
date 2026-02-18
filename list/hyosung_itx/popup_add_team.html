@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376640207"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376640207" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376640207" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376640207" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376640207" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376640207" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376640207"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376640207"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376640207"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376640207"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376640207"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376640207"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376640207"></script>
+        <script src="./assets/js/lib/script.js?t=1771376640207"></script>
+        <script src="./assets/js/common.js?t=1771376640207"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- popup -->
+            <div class="popup type2" style="max-width: 900px">
+                <div class="popHead">
+                    <p class="popTitle">고객서비스 1-1팀</p>
+                    <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                </div>
+                <div class="popBody">
+                    <div class="inner">
+                        <!-- 검색 영역 -->
+                        <div class="searchBox">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>상태</dt>
+                                        <dd>
+                                            <div class="formArea">
+                                                <select class="md" style="width: 160px">
+                                                    <option>상태</option>
+                                                </select>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="searchBtn type2">
+                                        <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                                        <button class="btn sm outline">
+                                            <i class="icon icon-search">검색 아이콘</i>
+                                            <span>검색</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 테이블 영역 -->
+                        <div class="tblBox">
+                            <div class="tblList type2">
+                                <table>
+                                    <caption>
+                                        팀 관리
+                                    </caption>
+                                    <colgroup>
+                                        <col style="width: auto" />
+                                        <col style="width: 25%" />
+                                        <col style="width: 25%" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                팀명
+                                                <button type="button" class="ico icoSorting">오름차순</button>
+                                            </th>
+                                            <th>
+                                                인원수
+                                                <button type="button" class="ico icoSorting">오름차순</button>
+                                            </th>
+                                            <th>
+                                                수정
+                                                <button type="button" class="ico icoSorting">오름차순</button>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <!-- <tbody>
+                                        <tr>
+
+                                        </tr>
+                                    </tbody> -->
+                                </table>
+                                <div class="noResult">
+                                    <div class="innerResult">
+                                        <i class="ico icoNodata">데이터없음</i>
+                                        <div class="resultTxt">등록된 데이터가 없습니다.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div id="dim"></div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('#dim').fadeIn('fast');
+            });
+        </script>
+    </body>
+</html>

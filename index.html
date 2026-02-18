@@ -29,17 +29,22 @@
                         </h1>
                     </div>
                     <div class="navWrap">
-                        <div class="navBtn">
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#project">Project</a></li>
+                        </ul>
+                        <div class="navBtn" style="display: none;">
                             <button type="button">
                                 <span class="line"></span>
                                 <span class="line"></span>
                             </button>
                         </div>
-                        <div class="navListWrap">
+                        <div class="navListWrap" style="display: none;">
                             <div class="navList">
                                 <ul>
                                     <li><a href="#">About</a></li>
-                                    <li><a href="#">Skill</a></li>
+                                    <li><a href="#">Experience</a></li>
                                     <li><a href="#">Project</a></li>
                                 </ul>
                             </div>
@@ -71,7 +76,7 @@
             <!--// header -->
 
             <div id="container">
-                <section class="introSec">
+                <section id="about" class="aboutSec">
                     <h3 class="blind">소개 영역</h3>
                     <div class="inner">
                         <h1>
@@ -79,15 +84,15 @@
                             <p>EASY TO USE.</p>
                         </h1>
                     </div>
-                    <div class="scrollBtn">
+                    <div class="scrollBtn" style="display: none;">
                         <button type="button"><span>Scroll</span></button>
                     </div>
                 </section>
-                <section class="skillSec">
+                <section id="experience" class="experienceSec">
                     <h3 class="blind">스킬 영역</h3>
                     <div class="inner"></div>
                 </section>
-                <section class="projectSec">
+                <section id="project" class="projectSec">
                     <h3 class="blind">프로젝트 영역</h3>
                     <div class="inner">
                         <!-- 탭 / 모바일 셀렉트 -->

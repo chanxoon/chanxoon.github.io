@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376089222" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376089222" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-confirm.css?t=1771376089222" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jqgrid-ui.css?t=1771376089222" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jstree.min.css?t=1771376089222" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/qtip.css?t=1771376089222" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/timepicker.min.css?t=1771376089222" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376089222" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376089222" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376089222"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376089222"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376089222"></script>
+        <script src="./assets/js/lib/iscroll.min.js?t=1771376089222"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376089222"></script>
+        <script src="./assets/js/lib/jquery-confirm.js?t=1771376089222"></script>
+        <script src="./assets/js/lib/jqgrid-4.15.5.js?t=1771376089222"></script>
+        <script src="./assets/js/lib/jstree.min.js?t=1771376089222"></script>
+        <script src="./assets/js/lib/qtip-3.0.3.js?t=1771376089222"></script>
+        <script src="./assets/js/lib/blockUI-2.70.js?t=1771376089222"></script>
+        <script src="./assets/js/lib/fullcalendar.min.js?t=1771376089222"></script>
+        <script src="./assets/js/lib/timepicker.min.js?t=1771376089222"></script>
+        <script src="./assets/js/common.js?t=1771376089222"></script>
+        <title>DREAM SYSTEM</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- popup -->
+            <div class="popWrap" style="max-width: 480px">
+                <div class="popHead">
+                    <p class="popTitle">프로젝트 경력 관리</p>
+                    <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                </div>
+                <div class="popBody">
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h3>경력 내용</h3>
+                            </div>
+                        </div>
+
+                        <!-- 테이블 영역 -->
+                        <div class="tblForm type1">
+                            <table>
+                                <caption>
+                                    경력 내용
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 120px" />
+                                    <col style="width: auto" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>프로젝트명<span class="req">*</span></th>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" placeholder="프로젝트명을 입력하세요." />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>시작일<span class="req">*</span></th>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input
+                                                    type="text"
+                                                    class="md"
+                                                    placeholder="‘-’ 없이 (YYYYMMDD)를 입력하세요"
+                                                />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>종료일<span class="req">*</span></th>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input
+                                                    type="text"
+                                                    class="md"
+                                                    placeholder="‘-’ 없이 (YYYYMMDD)를 입력하세요"
+                                                />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>프로젝트 개요</th>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input
+                                                    type="text"
+                                                    class="md"
+                                                    placeholder="프로젝트 개요를 입력하세요."
+                                                />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>담당역할<span class="req">*</span></th>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" placeholder="담당역할을 입력하세요." />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>기술 역량</th>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" placeholder="기술 역량을 입력하세요." />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>발주처</th>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" placeholder="발주처를 입력하세요." />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="btnArea right">
+                            <a href="#none" class="btn lg primary-default">저장</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div id="dim"></div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('#dim').fadeIn('fast');
+            });
+        </script>
+    </body>
+</html>

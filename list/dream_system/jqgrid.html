@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376088595" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376088595" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-confirm.css?t=1771376088595" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jqgrid-ui.css?t=1771376088595" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jstree.min.css?t=1771376088595" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/qtip.css?t=1771376088595" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/timepicker.min.css?t=1771376088595" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376088595" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376088595" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376088595"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376088595"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376088595"></script>
+        <script src="./assets/js/lib/iscroll.min.js?t=1771376088595"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376088595"></script>
+        <script src="./assets/js/lib/jquery-confirm.js?t=1771376088595"></script>
+        <script src="./assets/js/lib/jqgrid-4.15.5.js?t=1771376088595"></script>
+        <script src="./assets/js/lib/jstree.min.js?t=1771376088595"></script>
+        <script src="./assets/js/lib/qtip-3.0.3.js?t=1771376088595"></script>
+        <script src="./assets/js/lib/blockUI-2.70.js?t=1771376088595"></script>
+        <script src="./assets/js/lib/fullcalendar.min.js?t=1771376088595"></script>
+        <script src="./assets/js/lib/timepicker.min.js?t=1771376088595"></script>
+        <script src="./assets/js/common.js?t=1771376088595"></script>
+        <title>DREAM SYSTEM</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header">
+            <div class="inner">
+                <div class="logoWrap">
+                    <h1>
+                        <a href="/index.html"><img src="./assets/img/img-logo.svg" alt="DREAM SYSTEM" /></a>
+                    </h1>
+                    <div class="menuBtn-mobile">
+                        <button id="nav-button" type="button">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="navWrap">
+                    <ul>
+                        <li><a href="#">인사급여</a></li>
+                        <li><a href="#">근태관리</a></li>
+                        <li><a href="#">교육관리</a></li>
+                        <li><a href="#">업무지원</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">관리자</a></li>
+                    </ul>
+                    <div class="depthWrap">
+                        <div class="inner">
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">인사급여</h3>
+                                <li><a href="#">직원조회</a></li>
+                                <li><a href="#">개인인사정보</a></li>
+                                <li>
+                                    <a href="#">발령 신청 및 조회</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">발령 신청</a></li>
+                                        <li><a href="#">발령 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">급여 조회</a></li>
+                                <li><a href="#">연봉확인서</a></li>
+                                <li><a href="#">증명서 발급</a></li>
+                                <li><a href="#">인재풀 정보 조회</a></li>
+                                <li><a href="#">메뉴1</a></li>
+                                <li><a href="#">메뉴2</a></li>
+                                <li><a href="#">메뉴3</a></li>
+                                <li><a href="#">메뉴4</a></li>
+                                <li><a href="#">메뉴5</a></li>
+                                <li><a href="#">메뉴6</a></li>
+                                <li><a href="#">메뉴7</a></li>
+                                <li><a href="#">메뉴8</a></li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">근태관리</h3>
+                                <li>
+                                    <a href="#">근무</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">근무계획 등록</a></li>
+                                        <li><a href="#">근무계획 조정</a></li>
+                                        <li><a href="#">근무계획 외 근무 신청</a></li>
+                                        <li><a href="#">대체휴무일 변경 신청</a></li>
+                                        <li><a href="#">근로시간 조정</a></li>
+                                        <li><a href="#">월 근로시간 확인</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">근태</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">근태 등록</a></li>
+                                        <li><a href="#">휴직 및 단축 신청</a></li>
+                                        <li><a href="#">휴직 및 단축 관리</a></li>
+                                        <li><a href="#">일 근태 신청</a></li>
+                                        <li><a href="#">월별 근태 현황</a></li>
+                                        <li><a href="#">기간별 근태 현황</a></li>
+                                        <li><a href="#">연차 현황</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">교육관리</h3>
+                                <li><a href="#">교육과정 관리</a></li>
+                                <li><a href="#">교육 신청</a></li>
+                                <li><a href="#">교육 수료증확인</a></li>
+                                <li><a href="#">교육 자료</a></li>
+                                <li><a href="#">HRD 소식</a></li>
+                                <li><a href="#">대표 강사</a></li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">업무지원</h3>
+                                <li>
+                                    <a href="#">인감</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">인감사용신청</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">계약서</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">계약서 관리</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">복지</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">네일아트 예약</a></li>
+                                        <li><a href="#">네일아트 예약 관리</a></li>
+                                        <li><a href="#">헬스키퍼 예약</a></li>
+                                        <li><a href="#">심리상담 예약</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">카페테리아</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">사용 내역 조회</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">커뮤니티</h3>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">사내규정</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">궁금합니다</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">웹진</a></li>
+                                <li><a href="#">고충·윤리 상담센터</a></li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">관리자</h3>
+                                <li><a href="#">재직자 메뉴 관리</a></li>
+                                <li><a href="#">시스템 로그</a></li>
+                                <li><a href="#">관리자 권한 설정</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="userWrap">
+                    <div class="userArea">
+                        <button type="button" class="userBtn">
+                            <i class="ico icoUser">유저</i>
+                            <span>김효성</span>
+                            <i class="ico icoArrDown">화살표</i>
+                        </button>
+                        <div class="userMenu">
+                            <ul>
+                                <li>
+                                    <a href="#none"><i class="ico icoPasswd">비밀번호</i>비번변경</a>
+                                </li>
+                                <li>
+                                    <a href="#none"><i class="ico icoLogout">로그아웃</i>로그아웃</a>
+                                </li>
+                                <!-- <li><a href="#none"><i class="ico icoLogin">로그인</i>로그인</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="familyArea">
+                        <button type="button" class="familyBtn"><i class="ico icoFamily">메뉴</i></button>
+                        <div class="familyMenu">
+                            <h3>패밀리 사이트</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://gw.hyosungitx.com" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoGroupware">그룹웨어</i></div>
+                                        <div class="titWrap">그룹웨어</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://admin.dodreami.com:8443/login/form.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoRecruitManage">채용관리 시스템</i></div>
+                                        <div class="titWrap">채용관리<br />시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://box.hyosungitx.com:5001" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoFileManage">파일관리 시스템</i></div>
+                                        <div class="titWrap">파일관리<br />시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <div id="contents">
+                <div class="inner">
+                    <!-- 타이틀 영역 -->
+                    <div class="titArea moCol">
+                        <div class="titBox">
+                            <h3>테이블</h3>
+                        </div>
+                        <div class="pathBox">
+                            <ul>
+                                <li class="home"><a href="#none">홈</a></li>
+                                <li>테이블</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="conArea">
+                        <!-- 검색 영역 -->
+                        <div class="searchBox">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>사번</dt>
+                                        <dd>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" value="012345678" readonly />
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>조회날짜</dt>
+                                        <dd>
+                                            <div class="datepickerWrap" style="width: 50%">
+                                                <div>
+                                                    <input type="text" id="" value="2025-01-22" class="datepicker md" />
+                                                </div>
+                                            </div>
+                                            <div class="formArea" style="width: 100%">
+                                                <select class="md">
+                                                    <option>선택</option>
+                                                </select>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="searchBtn">
+                                        <button class="btn md primary-70">
+                                            <i class="ico icoSearchW">검색 아이콘</i>
+                                            <span>검색</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- jq그리드 영역 -->
+                        <div class="jqGridWrap">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea">
+                                <div class="titBox">
+                                    <h4>jqGrid1</h4>
+                                </div>
+                            </div>
+
+                            <!-- 그리드 영역 -->
+                            <table id="jqGrid1" class="jqGridCustom"></table>
+                            <div class="jqGridPager"></div>
+
+                            <!-- 버튼 영역 -->
+                            <div class="btnArea right">
+                                <a href="#none" class="btn lg outline-primary">저장</a>
+                                <a href="#none" class="btn lg primary-default">승인요청</a>
+                            </div>
+                        </div>
+
+                        <!-- jq그리드 영역 -->
+                        <div class="jqGridWrap">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea">
+                                <div class="titBox">
+                                    <h4>jqGrid2</h4>
+                                </div>
+                            </div>
+
+                            <!-- 그리드 영역 -->
+                            <table id="jqGrid2" class="jqGridCustom"></table>
+                            <div class="jqGridPager"></div>
+
+                            <!-- 버튼 영역 -->
+                            <div class="btnArea right">
+                                <a href="#none" class="btn lg outline-primary">저장</a>
+                                <a href="#none" class="btn lg primary-default">승인요청</a>
+                            </div>
+                        </div>
+
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea moCol">
+                            <div class="titBox">
+                                <h4>tblList</h4>
+                            </div>
+                        </div>
+                        <!-- tbl 테이블 영역 -->
+                        <div class="tblList">
+                            <table>
+                                <caption>
+                                    근무시간 계획
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 70px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 280px" />
+                                    <col style="width: 160px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">요일</th>
+                                        <th rowspan="2">근로일</th>
+                                        <th colspan="3">출퇴근 계획</th>
+                                        <th rowspan="2">일근태현황</th>
+                                        <th rowspan="2">비고</th>
+                                        <th rowspan="2">관리자확정</th>
+                                    </tr>
+                                    <tr>
+                                        <th>시작</th>
+                                        <th>종료</th>
+                                        <th>근로시간</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>월</td>
+                                        <td>2025. 10. 27</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel blue">승인</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>화</td>
+                                        <td>2025. 10. 28</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel blue">승인</div>
+                                        </td>
+                                    </tr>
+                                    <tr class="on">
+                                        <td>수</td>
+                                        <td>2025. 10. 29</td>
+                                        <td colspan="6">공휴일</td>
+                                    </tr>
+                                    <tr>
+                                        <td>목</td>
+                                        <td>2025. 10. 30</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>금</td>
+                                        <td>2025. 10. 31</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td>연차휴가(8h)</td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel red">미승인</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4">근로시간 소계</td>
+                                        <td>55h</td>
+                                        <td colspan="3"></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <!--
+                            <div class="noResult">
+                                <div class="innerResult">
+                                    <i class="ico icoNodata">데이터없음</i>
+                                    <div class="resultTxt">등록된 데이터가 없습니다.</div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                        <!-- 페이지네이션 -->
+                        <!-- pagination -->
+                        <div id="paginationWrap">
+                            <ul>
+                                <li class="first"><a href="#" class="btn sm outline">처음으로</a></li>
+                                <li class="prev"><a href="#" class="btn sm outline">이전으로</a></li>
+                                <li class="pageInput">
+                                    <input type="text" class="sm" min="1" value="1" />
+                                    <span class="dash">/</span>
+                                    <span class="totalPage">50</span>
+                                </li>
+                                <li class="next"><a href="#" class="btn sm outline">다음으로</a></li>
+                                <li class="last"><a href="#" class="btn sm outline">마지막으로</a></li>
+                                <li class="pageSelect">
+                                    <select class="sm">
+                                        <option value="50">30</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="total">보기<span>1-1</span><span class="dash">/</span><span>1</span></li>
+                            </ul>
+                        </div>
+                        <!--// pagination -->
+
+                        <div class="btnArea right">
+                            <a href="#none" class="btn lg outline-primary">저장</a>
+                            <a href="#none" class="btn lg primary-default">승인요청</a>
+                        </div>
+
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea moCol">
+                            <div class="titBox">
+                                <h4>컬럼 고정</h4>
+                            </div>
+                        </div>
+                        <div class="infoBox" style="margin: 15px 0px">
+                            <p>
+                                - 컬럼고정시 colFix 클래스 추가 첫번재 left:0 디폴트값<br />
+                                - 두번째 left 값은 첫번째의 width값 넣기
+                            </p>
+                        </div>
+                        <!-- tbl 테이블 영역 -->
+                        <div class="tblList" style="max-height: 200px">
+                            <table>
+                                <caption>
+                                    근무시간 계획
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 70px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 1200px" />
+                                    <col style="width: 400px" />
+                                    <col style="width: 300px" />
+                                    <col style="width: 260px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="colFix" style="left: 0px">요일</th>
+                                        <!-- 컬럼고정시 colFix 클래스 추가 첫번재 left:0 디폴트값 -->
+                                        <th class="colFix" style="left: 70px">근로일</th>
+                                        <!-- 두번째 left 값은 첫번째의 width값 넣기 -->
+                                        <th>출퇴근 계획</th>
+                                        <th>일근태현황</th>
+                                        <th>비고</th>
+                                        <th>관리자확정</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="colFix" style="left: 0px">월</td>
+                                        <td class="colFix" style="left: 70px">2025. 10. 27</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>11h</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="colFix" style="left: 0px">월</td>
+                                        <td class="colFix" style="left: 70px">2025. 10. 27</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>11h</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="colFix" style="left: 0px">월</td>
+                                        <td class="colFix" style="left: 70px">2025. 10. 27</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>11h</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="colFix" style="left: 0px">월</td>
+                                        <td class="colFix" style="left: 70px">2025. 10. 27</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>11h</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="colFix" style="left: 0px">월</td>
+                                        <td class="colFix" style="left: 70px">2025. 10. 27</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>11h</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="colFix" style="left: 0px">월</td>
+                                        <td class="colFix" style="left: 70px">2025. 10. 27</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>11h</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="colFix" style="left: 0px">월</td>
+                                        <td class="colFix" style="left: 70px">2025. 10. 27</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>11h</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--
+                            <div class="noResult">
+                                <div class="innerResult">
+                                    <i class="ico icoNodata">데이터없음</i>
+                                    <div class="resultTxt">등록된 데이터가 없습니다.</div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                        <!-- 페이지네이션 -->
+                        <!-- pagination -->
+                        <div id="paginationWrap">
+                            <ul>
+                                <li class="first"><a href="#" class="btn sm outline">처음으로</a></li>
+                                <li class="prev"><a href="#" class="btn sm outline">이전으로</a></li>
+                                <li class="pageInput">
+                                    <input type="text" class="sm" min="1" value="1" />
+                                    <span class="dash">/</span>
+                                    <span class="totalPage">50</span>
+                                </li>
+                                <li class="next"><a href="#" class="btn sm outline">다음으로</a></li>
+                                <li class="last"><a href="#" class="btn sm outline">마지막으로</a></li>
+                                <li class="pageSelect">
+                                    <select class="sm">
+                                        <option value="50">30</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="total">보기<span>1-1</span><span class="dash">/</span><span>1</span></li>
+                            </ul>
+                        </div>
+                        <!--// pagination -->
+
+                        <div class="btnArea right">
+                            <a href="#none" class="btn lg outline-primary">저장</a>
+                            <a href="#none" class="btn lg primary-default">승인요청</a>
+                        </div>
+
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea moCol">
+                            <div class="titBox">
+                                <h4>헤더고정</h4>
+                            </div>
+                        </div>
+                        <div class="infoBox" style="margin: 15px 0px">
+                            <p>- thead영역 항시 고정, tblList에 max-height값 입력시 스크롤시 헤더 고정.</p>
+                        </div>
+                        <!-- tbl 테이블 영역 -->
+                        <div class="tblList" style="max-height: 400px">
+                            <table>
+                                <caption>
+                                    근무시간 계획
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 70px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 200px" />
+                                    <col style="width: 160px" />
+                                    <col style="width: 280px" />
+                                    <col style="width: 160px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">요일</th>
+                                        <th rowspan="2">근로일</th>
+                                        <th colspan="3">출퇴근 계획</th>
+                                        <th rowspan="2">일근태현황</th>
+                                        <th rowspan="2">비고</th>
+                                        <th rowspan="2">관리자확정</th>
+                                    </tr>
+                                    <tr>
+                                        <th>시작</th>
+                                        <th>종료</th>
+                                        <th>근로시간</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>월</td>
+                                        <td>2025. 10. 27</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel blue">승인</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>월</td>
+                                        <td>2025. 10. 27</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel blue">승인</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>월</td>
+                                        <td>2025. 10. 27</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel blue">승인</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>월</td>
+                                        <td>2025. 10. 27</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel blue">승인</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>월</td>
+                                        <td>2025. 10. 27</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel blue">승인</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>화</td>
+                                        <td>2025. 10. 28</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel blue">승인</div>
+                                        </td>
+                                    </tr>
+                                    <tr class="on">
+                                        <td>수</td>
+                                        <td>2025. 10. 29</td>
+                                        <td colspan="6">공휴일</td>
+                                    </tr>
+                                    <tr>
+                                        <td>목</td>
+                                        <td>2025. 10. 30</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>금</td>
+                                        <td>2025. 10. 31</td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>09시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="formArea time">
+                                                <select class="md">
+                                                    <option>18시</option>
+                                                </select>
+                                                <select class="md">
+                                                    <option>30분</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>11h</td>
+                                        <td>연차휴가(8h)</td>
+                                        <td>
+                                            <div class="inputArea">
+                                                <input type="text" class="md" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="stateLabel red">미승인</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4">근로시간 소계</td>
+                                        <td>55h</td>
+                                        <td colspan="3"></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <!--
+                            <div class="noResult">
+                                <div class="innerResult">
+                                    <i class="ico icoNodata">데이터없음</i>
+                                    <div class="resultTxt">등록된 데이터가 없습니다.</div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                        <!-- 페이지네이션 -->
+                        <!-- pagination -->
+                        <div id="paginationWrap">
+                            <ul>
+                                <li class="first"><a href="#" class="btn sm outline">처음으로</a></li>
+                                <li class="prev"><a href="#" class="btn sm outline">이전으로</a></li>
+                                <li class="pageInput">
+                                    <input type="text" class="sm" min="1" value="1" />
+                                    <span class="dash">/</span>
+                                    <span class="totalPage">50</span>
+                                </li>
+                                <li class="next"><a href="#" class="btn sm outline">다음으로</a></li>
+                                <li class="last"><a href="#" class="btn sm outline">마지막으로</a></li>
+                                <li class="pageSelect">
+                                    <select class="sm">
+                                        <option value="50">30</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="total">보기<span>1-1</span><span class="dash">/</span><span>1</span></li>
+                            </ul>
+                        </div>
+                        <!--// pagination -->
+
+                        <div class="btnArea right">
+                            <a href="#none" class="btn lg outline-primary">저장</a>
+                            <a href="#none" class="btn lg primary-default">승인요청</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header -->
+        <footer id="footer">
+            <div class="footerContent">
+                <div class="footerContentInner">© Copyright 2025. HYOSUNG ITX. All Right Reserved.</div>
+            </div>
+        </footer>
+        <!--// header -->
+        <!-- popup -->
+        <div id="addrFind" class="popWrap" style="max-width: 480px; display: none">
+            <div class="popHead">
+                <p class="popTitle">우편번호 찾기</p>
+                <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+            </div>
+            <div class="popBody">
+                <div class="inner">
+                    <div class="dlArea">
+                        <dl>
+                            <dd class="flex">
+                                <div class="inputArea w100">
+                                    <input
+                                        type="text"
+                                        class="lg"
+                                        placeholder="도로명, 건물명, 지번을 입력하세요."
+                                        required
+                                    />
+                                </div>
+                                <div class="searchBtn">
+                                    <button class="btn lg primary-light">
+                                        <i class="ico icoSearchW">검색 아이콘</i>
+                                        <span>검색</span>
+                                    </button>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="addrBox">
+                        <ul>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <!-- <div class="noResult">
+                    <div class="innerResult">
+                        <div class="resultTxt"><i class="ico icoWarningTri">데이터없음</i> 검색어를 입력하세요.</div>
+                    </div>
+                </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- popup -->
+        <div id="dim"></div>
+    </body>
+</html>
+
+<script>
+    // 그리드 아이디 개별 데이터
+    const GRID_CONFIG = {
+        jqGrid1: {
+            colModel: [
+                {
+                    label: '이름',
+                    name: 'name',
+                    width: 100,
+                    align: 'center',
+                },
+                {
+                    label: '셀렉트 박스',
+                    name: 'selectBox',
+                    width: 120,
+                    align: 'center',
+                    formatter(cellvalue, options, rowObject) {
+                        let select = '<select class="custom-select md grid-select" data-rowid="' + options.rowId + '">';
+                        select += '<option value="">선택하세요</option>';
+                        select += '<option value="id01"' + (cellvalue === 'id01' ? ' selected' : '') + '>id01</option>';
+                        select += '<option value="id02"' + (cellvalue === 'id02' ? ' selected' : '') + '>id02</option>';
+                        select += '<option value="id03"' + (cellvalue === 'id03' ? ' selected' : '') + '>id03</option>';
+                        select += '<option value="id04"' + (cellvalue === 'id04' ? ' selected' : '') + '>id04</option>';
+                        select += '</select>';
+                        return select;
+                    },
+                },
+                {
+                    label: '데이트 픽커',
+                    name: 'datePicker',
+                    width: 170,
+                    align: 'left',
+                    formatter(cellvalue, options, rowObject) {
+                        const dateValue = cellvalue || '';
+
+                        let html = '<div class="datepickerWrap grid-date-picker">';
+                        html +=
+                            '<div><input type="text" value="' +
+                            dateValue +
+                            '" class="datepicker md single-date" data-rowid="' +
+                            options.rowId +
+                            '" /></div>';
+                        html += '</div>';
+                        return html;
+                    },
+                },
+                {
+                    label: '데이트 레인지 픽커',
+                    name: 'dateRangePicker',
+                    width: 340,
+                    align: 'left',
+                    formatter(cellvalue, options, rowObject) {
+                        const dates = cellvalue ? cellvalue.split('~') : ['', ''];
+                        const startDate = dates[0] ? dates[0].trim() : '';
+                        const endDate = dates[1] ? dates[1].trim() : '';
+
+                        let html = '<div class="datepickerWrap">';
+                        html +=
+                            '<div><input type="text" value="' +
+                            startDate +
+                            '" class="datepicker md start-date" data-rowid="' +
+                            options.rowId +
+                            '" /></div>';
+                        html += '<span>-</span>';
+                        html +=
+                            '<div><input type="text" value="' +
+                            endDate +
+                            '" class="datepicker md end-date" data-rowid="' +
+                            options.rowId +
+                            '" /></div>';
+                        html += '</div>';
+                        return html;
+                    },
+                },
+                {
+                    label: '타임 픽커',
+                    name: 'timePicker',
+                    width: 140,
+                    align: 'left',
+                    formatter(cellvalue, options, rowObject) {
+                        let html = '<div class="datepickerWrap" style="max-width:92px">';
+                        html += '<div>';
+                        html +=
+                            '<input type="text" class="timepickerModule md work-time" value="' +
+                            (cellvalue || '') +
+                            '" data-rowid="' +
+                            options.rowId +
+                            '" />';
+                        html +=
+                            '<img src="/assets/img/icon/ico-timepicker-g.svg" alt="타임픽커 아이콘" class="ui-timepicker-trigger">';
+                        html += '</div>';
+                        html += '</div>';
+                        return html;
+                    },
+                },
+                {
+                    label: '타임 레인지 셀렉트',
+                    name: 'timeRangePicker',
+                    width: 300,
+                    align: 'left',
+                    formatter(cellvalue, options, rowObject) {
+                        let html = '<div class="formArea time">';
+                        html += '<select class="md start-time">';
+                        html += '<option value="">선택하세요</option>';
+                        html += '<option value="id01"' + (cellvalue === 'id01' ? ' selected' : '') + '>id01</option>';
+                        html += '<option value="id02"' + (cellvalue === 'id02' ? ' selected' : '') + '>id02</option>';
+                        html += '<option value="id03"' + (cellvalue === 'id03' ? ' selected' : '') + '>id03</option>';
+                        html += '<option value="id04"' + (cellvalue === 'id04' ? ' selected' : '') + '>id04</option>';
+                        html += '</select>';
+                        html += '<select class="md end-time">';
+                        html += '<option value="">선택하세요</option>';
+                        html += '<option value="id05"' + (cellvalue === 'id05' ? ' selected' : '') + '>id05</option>';
+                        html += '<option value="id06"' + (cellvalue === 'id06' ? ' selected' : '') + '>id06</option>';
+                        html += '<option value="id07"' + (cellvalue === 'id07' ? ' selected' : '') + '>id07</option>';
+                        html += '<option value="id08"' + (cellvalue === 'id08' ? ' selected' : '') + '>id08</option>';
+                        html += '</select>';
+                        html += '</div>';
+                        return html;
+                    },
+                },
+                {
+                    label: '텍스트 필드',
+                    name: 'textField',
+                    width: 120,
+                    align: 'left',
+                    formatter(cellvalue, options, rowObject) {
+                        let html = '<div class="textFieldWrap" style="max-width: 92px;">';
+                        html += '<div>';
+                        html +=
+                            '<input type="text" class="grid-text-input md" value="' +
+                            (cellvalue || '') +
+                            '" data-rowid="' +
+                            options.rowId +
+                            '" />';
+                        html += '</div>';
+                        html += '</div>';
+                        return html;
+                    },
+                },
+                {
+                    label: '체크박스',
+                    name: 'checkbox',
+                    width: 90,
+                    align: 'center',
+                    formatter(cellvalue, options, rowObject) {
+                        const checked = cellvalue ? ' checked' : '';
+                        const html =
+                            '<input type="checkbox" id="check' +
+                            options.rowId +
+                            '" class="grid-checkbox" data-rowid="' +
+                            options.rowId +
+                            '"' +
+                            checked +
+                            '>';
+                        return html;
+                    },
+                },
+                {
+                    label: '링크',
+                    name: 'link',
+                    width: 100,
+                    align: 'center',
+                    formatter(cellvalue, options, rowObject) {
+                        const linkText = cellvalue || '링크';
+                        const html =
+                            '<a href="#none" class="tblLink grid-link" data-rowid="' +
+                            options.rowId +
+                            '" target="_blank">' +
+                            linkText +
+                            '</a>';
+                        return html;
+                    },
+                },
+                {
+                    label: '커스텀 액션',
+                    name: 'customAction',
+                    width: 200,
+                    align: 'center',
+                    formatter(cellvalue, options, rowObject) {
+                        // 버튼, 태그 등을 직접 입력하는 컬럼 케이스
+                        if (cellvalue) {
+                            const $temp = $('<div>').html(cellvalue);
+                            $temp.find('button, a, input').attr('data-rowid', options.rowId);
+                            return $temp.html();
+                        }
+                        return '';
+                    },
+                },
+            ],
+            data: [
+                {
+                    name: '김효성',
+                    selectBox: 'id01',
+                    datePicker: '2025-01-22',
+                    dateRangePicker: '2025-01-22 ~ 2025-01-23',
+                    timePicker: '09:00',
+                    timeRangePicker: '09:00 ~ 09:00',
+                    textField: '입력값',
+                    checkbox: true,
+                    link: '휴가원',
+                    customAction:
+                        '<div class="flex jcC"><button type="button" class="btn md primary-default custom-submit">결재 (상신)</button></div>',
+                },
+                {
+                    name: '김효성',
+                    selectBox: 'id01',
+                    datePicker: '2025-01-22',
+                    dateRangePicker: '2025-01-22 ~ 2025-01-23',
+                    timePicker: '09:00',
+                    timeRangePicker: '09:00 ~ 09:00',
+                    textField: '입력값',
+                    checkbox: false,
+                    link: '휴가원',
+                    customAction:
+                        '<ul class="listWrapModule jcC"><li class="listItem"><button type="button" class="btn sm primary text icon right detailPri custom-status">진행 중</button></li><li class="listItem"><button type="button" class="btn sm icon resetSec custom-reset">초기화</button></li></ul>',
+                },
+                {
+                    name: '김효성',
+                    selectBox: 'id01',
+                    datePicker: '2025-01-22',
+                    dateRangePicker: '2025-01-22 ~ 2025-01-23',
+                    timePicker: '09:00',
+                    timeRangePicker: '09:00 ~ 09:00',
+                    textField: '입력값',
+                    checkbox: true,
+                    link: '휴가원',
+                    customAction: '<button type="button" class="btn sm primary-default custom-edit">수정</button>',
+                },
+                {
+                    name: '김효성',
+                    selectBox: 'id01',
+                    datePicker: '2025-01-22',
+                    dateRangePicker: '2025-01-22 ~ 2025-01-23',
+                    timePicker: '09:00',
+                    timeRangePicker: '09:00 ~ 09:00',
+                    textField: '입력값',
+                    checkbox: true,
+                    link: '휴가원',
+                    customAction: '<div class="stateBadge blue">승인</div>',
+                },
+                {
+                    name: '김효성',
+                    selectBox: 'id01',
+                    datePicker: '2025-01-22',
+                    dateRangePicker: '2025-01-22 ~ 2025-01-23',
+                    timePicker: '09:00',
+                    timeRangePicker: '09:00 ~ 09:00',
+                    textField: '입력값',
+                    checkbox: true,
+                    link: '휴가원',
+                    customAction: '',
+                },
+                {
+                    name: '김효성',
+                    selectBox: 'id01',
+                    datePicker: '2025-01-22',
+                    dateRangePicker: '2025-01-22 ~ 2025-01-23',
+                    timePicker: '09:00',
+                    timeRangePicker: '09:00 ~ 09:00',
+                    textField: '입력값',
+                    checkbox: true,
+                    link: '휴가원',
+                    customAction: '',
+                },
+                {
+                    name: '김효성',
+                    selectBox: 'id01',
+                    datePicker: '2025-01-22',
+                    dateRangePicker: '2025-01-22 ~ 2025-01-23',
+                    timePicker: '09:00',
+                    timeRangePicker: '09:00 ~ 09:00',
+                    textField: '입력값',
+                    checkbox: true,
+                    link: '휴가원',
+                    customAction: '',
+                },
+                {
+                    name: '김효성',
+                    selectBox: 'id01',
+                    datePicker: '2025-01-22',
+                    dateRangePicker: '2025-01-22 ~ 2025-01-23',
+                    timePicker: '09:00',
+                    timeRangePicker: '09:00 ~ 09:00',
+                    textField: '입력값',
+                    checkbox: true,
+                    link: '휴가원',
+                    customAction: '',
+                },
+                {
+                    name: '김효성',
+                    selectBox: 'id01',
+                    datePicker: '2025-01-22',
+                    dateRangePicker: '2025-01-22 ~ 2025-01-23',
+                    timePicker: '09:00',
+                    timeRangePicker: '09:00 ~ 09:00',
+                    textField: '입력값',
+                    checkbox: true,
+                    link: '휴가원',
+                    customAction: '',
+                },
+                {
+                    name: '김효성',
+                    selectBox: 'id01',
+                    datePicker: '2025-01-22',
+                    dateRangePicker: '2025-01-22 ~ 2025-01-23',
+                    timePicker: '09:00',
+                    timeRangePicker: '09:00 ~ 09:00',
+                    textField: '입력값',
+                    checkbox: true,
+                    link: '휴가원',
+                    customAction: '',
+                },
+                {
+                    name: '김효성',
+                    selectBox: 'id01',
+                    datePicker: '2025-01-22',
+                    dateRangePicker: '2025-01-22 ~ 2025-01-23',
+                    timePicker: '09:00',
+                    timeRangePicker: '09:00 ~ 09:00',
+                    textField: '입력값',
+                    checkbox: true,
+                    link: '휴가원',
+                    customAction: '',
+                },
+            ],
+            footer: {
+                enabled: true,
+                data: {
+                    name: '합계',
+                    textField: 'test',
+                    link: 'test',
+                    customAction: 'test',
+                },
+            },
+        },
+
+        jqGrid2: {
+            colModel: [
+                {
+                    label: '이름',
+                    name: 'name',
+                    width: 780,
+                    align: 'center',
+                },
+                {
+                    label: '셀렉트 박스',
+                    name: 'selectBox',
+                    width: 480,
+                    align: 'center',
+                    formatter(cellvalue, options, rowObject) {
+                        let select = '<select class="custom-select md grid-select" data-rowid="' + options.rowId + '">';
+                        select += '<option value="">선택하세요</option>';
+                        select += '<option value="id01"' + (cellvalue === 'id01' ? ' selected' : '') + '>id01</option>';
+                        select += '<option value="id02"' + (cellvalue === 'id02' ? ' selected' : '') + '>id02</option>';
+                        select += '<option value="id03"' + (cellvalue === 'id03' ? ' selected' : '') + '>id03</option>';
+                        select += '<option value="id04"' + (cellvalue === 'id04' ? ' selected' : '') + '>id04</option>';
+                        select += '</select>';
+                        return select;
+                    },
+                },
+                {
+                    label: '데이트 픽커',
+                    name: 'datePicker',
+                    width: 170,
+                    align: 'left',
+                    formatter(cellvalue, options, rowObject) {
+                        const dateValue = cellvalue || '';
+
+                        let html = '<div class="datepickerWrap grid-date-picker">';
+                        html +=
+                            '<div><input type="text" value="' +
+                            dateValue +
+                            '" class="datepicker md single-date" data-rowid="' +
+                            options.rowId +
+                            '" /></div>';
+                        html += '</div>';
+                        return html;
+                    },
+                },
+            ],
+            data: [
+                {
+                    name: '김효성',
+                    selectBox: 'id01',
+                    datePicker: '2025-01-22',
+                },
+            ],
+            footer: {
+                enabled: false,
+            },
+        },
+    };
+
+    // 공통 jqGrid
+    $('.jqGridCustom').each(function (idx) {
+        const $grid = $(this);
+        const gridId = $grid.attr('id'); // jqGrid1, jqGrid2
+        const config = GRID_CONFIG[gridId];
+
+        if (!config) return;
+
+        const $pager = $(this).parent().find('.jqGridPager');
+        const pagerId = 'jqGridPager' + idx;
+
+        $pager.attr('id', pagerId);
+
+        $grid.jqGrid({
+            datatype: 'local', // 데이터 타입: local = JS 배열(data 옵션) 사용
+            data: config.data, // 그리드에 표시할 데이터 배열
+            colModel: config.colModel, // 컬럼 정의 정보
+            pager: '#' + pagerId, // 페이징 영역 ID 지정
+
+            /* ================= 공통 옵션 ================= */
+
+            rowNum: 5, // 한 페이지에 표시할 행 개수 (기본값)
+            rowList: [5, 50, 100], // 사용자가 선택 가능한 행 개수 목록
+            viewrecords: true, // 하단에 전체 레코드 수 표시 여부
+            pgtext: '{0} / {1}', // 페이지 표시 텍스트 (현재 페이지 / 전체 페이지)
+            recordtext: '보기 {0}-{1} / {2}', // 레코드 범위 표시 텍스트
+            emptyrecords: '등록된 데이터가 없습니다.', // 데이터가 없을 때 표시 문구
+            loadtext: '불러오는 중...', // 데이터 로딩 중 표시 문구
+            pgbuttons: true, // 이전/다음 페이지 버튼 표시 여부
+
+            footerrow: config.footer?.enabled === true, // footer 행 사용 여부 (합계/요약용)
+            userDataOnFooter: true, // userData 값을 footer에 자동 매핑
+
+            rownumbers: false, // 행 번호(1,2,3...) 표시 여부
+            rownumWidth: 40, // 행 번호 컬럼 너비
+
+            multiselect: true, // 체크박스를 이용한 다중 선택 가능 여부
+            multiboxonly: true, // 체크박스를 클릭했을 때만 선택되도록 제한
+            multiselectWidth: 50, // 체크박스 컬럼 너비
+
+            shrinkToFit: false, // 컬럼 너비를 그리드 폭에 맞춰 강제로 줄일지 여부
+            autowidth: false, // 그리드 폭을 부모 요소에 자동 맞춤 여부
+            // autoheight: true, // 데이터 높이에 맞춰 그리드 높이 자동 조절
+            gridview: true, // 성능 최적화 모드 (대용량 데이터 시 필수)
+            hoverrows: true, // 마우스 오버 시 행 하이라이트
+            height: 150,
+
+            /* ================= 이벤트 ================= */
+            loadComplete() {
+                if (config.footer?.enabled && config.footer.data) {
+                    $grid.jqGrid('footerData', 'set', config.footer.data);
+                }
+            },
+
+            gridComplete() {
+                bindGridEvents($grid);
+            },
+        });
+    });
+
+    function bindGridEvents($grid) {
+        // 셀렉트 박스 이벤트
+        $('.grid-select')
+            .off('change')
+            .on('change', function () {
+                const rowId = $(this).data('rowid');
+                const newValue = $(this).val();
+                $grid.jqGrid('setCell', rowId, 'selectBox', newValue);
+                console.log('셀렉트 변경:', rowId, '->', newValue);
+            });
+
+        // 단일 날짜 Datepicker 초기화
+        $('.single-date').each(function () {
+            if (!$(this).hasClass('hasDatepicker')) {
+                $(this).datepicker({
+                    dateFormat: 'yy-mm-dd',
+                    changeMonth: true,
+                    changeYear: true,
+                    showOn: 'both',
+                    buttonImage: '/assets/img/btn-calender.svg',
+                    buttonImageOnly: true,
+                    onSelect(dateText) {
+                        const rowId = $(this).data('rowid');
+                        $(this).val(dateText);
+                        console.log('날짜 변경:', dateText);
+                    },
+                });
+            }
+        });
+
+        // 시작일 Datepicker 초기화
+        $('.start-date').each(function () {
+            if (!$(this).hasClass('hasDatepicker')) {
+                $(this).datepicker({
+                    dateFormat: 'yy-mm-dd',
+                    changeMonth: true,
+                    changeYear: true,
+                    showOn: 'both',
+                    buttonImage: '/assets/img/btn-calender.svg',
+                    buttonImageOnly: true,
+                    onSelect(dateText) {
+                        const rowId = $(this).data('rowid');
+                        const endDate = $(this).closest('.datepickerWrap').find('.end-date').val();
+                        $(this).val(dateText);
+                        console.log('시작일 변경:', dateText);
+                    },
+                });
+            }
+        });
+
+        // 종료일 Datepicker 초기화
+        $('.end-date').each(function () {
+            if (!$(this).hasClass('hasDatepicker')) {
+                $(this).datepicker({
+                    dateFormat: 'yy-mm-dd',
+                    changeMonth: true,
+                    changeYear: true,
+                    showOn: 'both',
+                    buttonImage: '/assets/img/btn-calender.svg',
+                    buttonImageOnly: true,
+                    onSelect(dateText) {
+                        const rowId = $(this).data('rowid');
+                        const startDate = $(this).closest('.datepickerWrap').find('.start-date').val();
+                        $(this).val(dateText);
+                        console.log('종료일 변경:', dateText);
+                    },
+                });
+            }
+        });
+
+        // 시간 Timepicker 초기화
+        $('.work-time').each(function () {
+            if (!$(this).hasClass('hasTimepicker')) {
+                $(this)
+                    .timepicker({
+                        timeFormat: 'H:i',
+                        interval: 30,
+                        dynamic: false,
+                        dropdown: true,
+                        scrollbar: true,
+                        change(time) {
+                            const rowId = $(this).data('rowid');
+                            const timeString = $(this).val();
+                            $(this).val(timeString);
+                            console.log('시간 변경:', timeString);
+                        },
+                    })
+                    .addClass('hasTimepicker');
+            }
+        });
+
+        // 타임 레인지 셀렉트 이벤트
+        $('.start-time, .end-time')
+            .off('change')
+            .on('change', function () {
+                const rowId = $(this).closest('tr').attr('id');
+                const startTime = $(this).closest('.formArea').find('.start-time').val();
+                const endTime = $(this).closest('.formArea').find('.end-time').val();
+                console.log('시간 범위 변경:', startTime + ' ~ ' + endTime);
+            });
+
+        // 텍스트 필드 이벤트
+        $('.grid-text-input')
+            .off('change')
+            .on('change', function () {
+                const rowId = $(this).data('rowid');
+                const newValue = $(this).val();
+                $grid.jqGrid('setCell', rowId, 'textField', newValue);
+                console.log('텍스트 변경:', rowId, '->', newValue);
+            });
+
+        // 체크박스 이벤트
+        $('.grid-checkbox')
+            .off('change')
+            .on('change', function () {
+                const rowId = $(this).data('rowid');
+                const isChecked = $(this).is(':checked');
+                $grid.jqGrid('setCell', rowId, 'checkbox', isChecked);
+                console.log('체크박스 변경:', rowId, '->', isChecked);
+            });
+
+        // 링크 클릭 이벤트
+        $('.grid-link')
+            .off('click')
+            .on('click', function (e) {
+                e.preventDefault();
+                const rowId = $(this).data('rowid');
+                console.log('링크 클릭:', rowId);
+            });
+
+        // 커스텀 버튼 이벤트 바인딩 예시 ===
+
+        // 결재 버튼
+        $('.custom-submit')
+            .off('click')
+            .on('click', function () {
+                const rowId = $(this).data('rowid');
+                console.log('결재 버튼 클릭', rowId);
+                alert('결재 버튼 클릭', rowId);
+            });
+
+        // 진행 중 버튼
+        $('.custom-status')
+            .off('click')
+            .on('click', function () {
+                const rowId = $(this).data('rowid');
+                console.log('진행 중 버튼 클릭', rowId);
+                alert('진행 중 버튼 클릭', rowId);
+            });
+
+        // 초기화 버튼
+        $('.custom-reset')
+            .off('click')
+            .on('click', function () {
+                const rowId = $(this).data('rowid');
+                console.log('초기화 버튼 클릭:', rowId);
+                alert('초기화 버튼 클릭:', rowId);
+            });
+
+        // 수정 버튼
+        $('.custom-edit')
+            .off('click')
+            .on('click', function () {
+                const rowId = $(this).data('rowid');
+                console.log('수정 버튼 클릭:', rowId);
+                alert('수정 버튼 클릭:', rowId);
+            });
+    }
+</script>

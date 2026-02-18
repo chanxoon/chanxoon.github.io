@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let filtered;
 
-        // ✅ all 탭 처리 추가
+        // all 탭 처리 추가
         if (type === 'all') {
             filtered = projectData.projects;
         } else {
@@ -199,12 +199,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 ? [project.image]
                 : [];
 
+            const linkHtml = project.link
+                ? `<div class="link"><a href="${project.link}" target="_blank">LINK</a></div>`
+                : '';
+
             card.innerHTML = `
                 <div class="thumb">
                     <img src="${images[0] || ''}" alt="${project.title}">
                     <div class="overlay">
                         <div class="view"><a href="javascript:;">VIEW</a></div>
-                        <div class="link"><a href="${project.link}" target="_blank">LINK</a></div>
+                        ${linkHtml}
                     </div>
                 </div>
                 <div class="project-info">
@@ -268,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     wrap = document.getElementById('wrap');
-    syncHeight();
+
     // selectbox
     $('.custom-sel').each(function () {
         const selWrap = $(this);
@@ -351,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('load', () => {
-    
+    syncHeight();
 });
 window.addEventListener('resize', () => {
     syncHeight();

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376640009"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376640009" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376640009" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376640009" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376640009" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376640009" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376640009"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376640009"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376640009"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376640009"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376640009"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376640009"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376640009"></script>
+        <script src="./assets/js/lib/script.js?t=1771376640009"></script>
+        <script src="./assets/js/common.js?t=1771376640009"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header id="header" class="chatCounsel">
+            <div class="logoWrap flex">
+                <h1 class="mr40">
+                    <a href="/index.html"><img src="./assets/img/img-logo-w.svg" alt="HYOSUNG ITX" /></a>
+                </h1>
+                <div class="headerNav">
+                    <ul>
+                        <li><a href="#none">챗봇</a></li>
+                        <li class="active"><a href="#none">채팅상담</a></li>
+                        <li><a href="#none">콜봇</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setWrap">
+                <div class="setBtn">
+                    <a href="#none">
+                        <i class="ico icoSet">설정</i>
+                        <span>환경설정</span>
+                    </a>
+                </div>
+                <div class="counselBtn">
+                    <a href="#none">
+                        <div class="userImg">
+                            <img src="./assets/img/img-user-man.svg" alt="사용자" />
+                            <span class="dote wait"></span>
+                        </div>
+                        <span>상담대기</span>
+                        <i class="ico icoArrDown">화살표</i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <!-- nav -->
+            <nav id="nav" class="dropdown cf chatCounsel">
+                <ul class="navList dropdown menu">
+                    <li>
+                        <a href="" class="active">
+                            <i class="ico icoDash">대시보드</i>
+                            <div>대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoScreen">상담화면</i>
+                            <div>상담화면</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoManage">상담관리</i>
+                            <div>상담관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoHistory">상담이력조회</i>
+                            <div>상담이력조회</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoStati">통계</i>
+                            <div>통계</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoCounselor">상담사 & 팀 관리</i>
+                            <div>상담사 & 팀 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoDictionary">사전관리</i>
+                            <div>사전관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoMessage">메세지 관리</i>
+                            <div>메세지 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="ico icoClock">배치</i>
+                            <div>배치</div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="panelBtn">
+                    <i class="ico icoArrRight">오른쪽 화살표</i>
+                </button>
+            </nav>
+            <!--// nav -->
+
+            <div id="contents" class="flex jcB fdC gap12 chat chatCounType">
+                <div class="titWrap">
+                    <h3>팀/상담자 관리</h3>
+                </div>
+                <div class="innerWrap flex jcB gap12" style="width: 100%; height: 50%">
+                    <div class="inner" style="width: 50%">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>팀 관리</h3>
+                            </div>
+                            <div class="btnBox">
+                                <button type="button" class="btn md blue`">
+                                    <i class="ico icoGroupW">팀</i>팀 추가
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <!-- 검색 영역 -->
+                            <div class="searchBox jcE">
+                                <ul>
+                                    <li>
+                                        <div class="searchBtn type2">
+                                            <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                                            <button class="btn sm outline">
+                                                <i class="icon icon-search">검색 아이콘</i>
+                                                <span>검색</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 테이블 영역 -->
+                            <div class="tblBox">
+                                <div class="tblList">
+                                    <table>
+                                        <caption>
+                                            팀 관리
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: auto" />
+                                            <col style="width: 25%" />
+                                            <col style="width: 25%" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    팀명
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    인원수
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    수정
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>고객서비스 1팀</td>
+                                                <td>6명</td>
+                                                <td>
+                                                    <button type="button" class="btn xs outline p4">
+                                                        <i class="ico icoEdit">수정</i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 페이지네이션 -->
+                            <!-- pagination -->
+                            <div id="paginationWrap">
+                                <ul>
+                                    <li class="first"><a href="#" class="btn xs outline">처음으로</a></li>
+                                    <li class="prev"><a href="#" class="btn xs outline">이전으로</a></li>
+                                    <li class="pageInput">
+                                        <input type="number" class="sm" min="1" value="1" />
+                                        <span class="dash">/</span>
+                                        <span class="totalPage">50</span>
+                                    </li>
+                                    <li class="next"><a href="#" class="btn xs outline">다음으로</a></li>
+                                    <li class="last"><a href="#" class="btn xs outline">마지막으로</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="total">전체<span>1,000</span>건 중<span>1~20</span>건</li>
+                                    <li class="perPageSelect">
+                                        <select class="sm">
+                                            <option value="50">페이지당 50</option>
+                                            <option value="100">페이지당 100</option>
+                                            <option value="150">페이지당 150</option>
+                                            <option value="200">페이지당 200</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--// pagination -->
+                        </div>
+                    </div>
+                    <div class="inner" style="width: 50%">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>고객서비스 1-1팀</h3>
+                            </div>
+                            <div class="btnBox">
+                                <button type="button" class="btn md outline">
+                                    <i class="ico icoDown">다운</i>내보내기
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <!-- 검색 영역 -->
+                            <div class="searchBox">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>상태</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md" style="width: 160px">
+                                                        <option>상태</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div class="searchBtn type2">
+                                            <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                                            <button class="btn sm outline">
+                                                <i class="icon icon-search">검색 아이콘</i>
+                                                <span>검색</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 테이블 영역 -->
+                            <div class="tblBox">
+                                <div class="tblList">
+                                    <table>
+                                        <caption>
+                                            고객서비스 1-1팀
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 40px" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    상담사 ID
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    이름
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    상태
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    근속기간
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    근속년월
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" checked />
+                                                    </div>
+                                                </td>
+                                                <td>agent001</td>
+                                                <td>홍길동</td>
+                                                <td>
+                                                    <div class="state logon">
+                                                        <div class="dote"></div>
+                                                        <div class="txt">로그인</div>
+                                                    </div>
+                                                </td>
+                                                <td>1년 1개월</td>
+                                                <td>2023.07.01 ~ 2025.08.26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" checked />
+                                                    </div>
+                                                </td>
+                                                <td>agent001</td>
+                                                <td>홍길동</td>
+                                                <td>
+                                                    <div class="state wiat">
+                                                        <div class="dote"></div>
+                                                        <div class="txt">상담대기</div>
+                                                    </div>
+                                                </td>
+                                                <td>1년 1개월</td>
+                                                <td>2023.07.01 ~ 2025.08.26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" checked />
+                                                    </div>
+                                                </td>
+                                                <td>agent001</td>
+                                                <td>홍길동</td>
+                                                <td>
+                                                    <div class="state error">
+                                                        <div class="dote"></div>
+                                                        <div class="txt">에러상태</div>
+                                                    </div>
+                                                </td>
+                                                <td>1년 1개월</td>
+                                                <td>2023.07.01 ~ 2025.08.26</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 페이지네이션 -->
+                            <!-- pagination -->
+                            <div id="paginationWrap">
+                                <ul>
+                                    <li class="first"><a href="#" class="btn xs outline">처음으로</a></li>
+                                    <li class="prev"><a href="#" class="btn xs outline">이전으로</a></li>
+                                    <li class="pageInput">
+                                        <input type="number" class="sm" min="1" value="1" />
+                                        <span class="dash">/</span>
+                                        <span class="totalPage">50</span>
+                                    </li>
+                                    <li class="next"><a href="#" class="btn xs outline">다음으로</a></li>
+                                    <li class="last"><a href="#" class="btn xs outline">마지막으로</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="total">전체<span>1,000</span>건 중<span>1~20</span>건</li>
+                                    <li class="perPageSelect">
+                                        <select class="sm">
+                                            <option value="50">페이지당 50</option>
+                                            <option value="100">페이지당 100</option>
+                                            <option value="150">페이지당 150</option>
+                                            <option value="200">페이지당 200</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--// pagination -->
+                        </div>
+                    </div>
+                </div>
+                <div class="innerWrap flex jcB gap12" style="width: 100%; height: 50%">
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>전체 상담사</h3>
+                            </div>
+                            <div class="btnBox">
+                                <button type="button" class="btn md outline">
+                                    <i class="ico icoDown">다운</i>내보내기
+                                </button>
+                                <button type="button" class="btn md blue">
+                                    <i class="ico icoUseraddW">추가</i>상담사 추가
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <!-- 검색 영역 -->
+                            <div class="searchBox">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>팀</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md" style="width: 160px">
+                                                        <option>팀</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>현재 상태</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md" style="width: 160px">
+                                                        <option>현재 상태</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div class="searchBtn type2">
+                                            <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                                            <button class="btn sm outline">
+                                                <i class="icon icon-search">검색 아이콘</i>
+                                                <span>검색</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 테이블 영역 -->
+                            <div class="tblBox">
+                                <div class="tblList">
+                                    <table>
+                                        <caption>
+                                            전체 상담사
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 40px" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: 25%" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: 10%" />
+                                            <col style="width: auto" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    상담사 ID
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    이름
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    팀
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    현재상태
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    비밀번호 오입력
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    잠금여부
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    근속기간
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    근속년월
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    수정
+                                                    <button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" checked />
+                                                    </div>
+                                                </td>
+                                                <td>agent001</td>
+                                                <td>홍길동</td>
+                                                <td>고객서비스 1팀</td>
+                                                <td>
+                                                    <div class="state logon">
+                                                        <div class="dote"></div>
+                                                        <div class="txt">로그인</div>
+                                                    </div>
+                                                </td>
+                                                <td>2</td>
+                                                <td>
+                                                    <div class="formBox">
+                                                        <div class="toggleBtnset type2">
+                                                            <input type="checkbox" id="toggle1" class="toggle" />
+                                                            <label for="toggle1" class="toggleSlide">
+                                                                <span class="togBtn"></span>
+                                                                <div class="toggleLabel">잠금</div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>1년 1개월</td>
+                                                <td>2023.07.01 ~ 2025.08.26</td>
+                                                <td>
+                                                    <button type="button" class="btn xs outline p4">
+                                                        <i class="ico icoEdit">수정</i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" checked />
+                                                    </div>
+                                                </td>
+                                                <td>agent001</td>
+                                                <td>홍길동</td>
+                                                <td>고객서비스 1팀</td>
+                                                <td>
+                                                    <div class="state wiat">
+                                                        <div class="dote"></div>
+                                                        <div class="txt">상담대기</div>
+                                                    </div>
+                                                </td>
+                                                <td>2</td>
+                                                <td>
+                                                    <div class="formBox">
+                                                        <div class="toggleBtnset type2">
+                                                            <input
+                                                                type="checkbox"
+                                                                id="toggle1"
+                                                                class="toggle"
+                                                                checked
+                                                            />
+                                                            <label for="toggle1" class="toggleSlide">
+                                                                <span class="togBtn"></span>
+                                                                <div class="toggleLabel">정상</div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>1년 1개월</td>
+                                                <td>2023.07.01 ~ 2025.08.26</td>
+                                                <td>
+                                                    <button type="button" class="btn xs outline p4">
+                                                        <i class="ico icoEdit">수정</i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 페이지네이션 -->
+                            <!-- pagination -->
+                            <div id="paginationWrap">
+                                <ul>
+                                    <li class="first"><a href="#" class="btn xs outline">처음으로</a></li>
+                                    <li class="prev"><a href="#" class="btn xs outline">이전으로</a></li>
+                                    <li class="pageInput">
+                                        <input type="number" class="sm" min="1" value="1" />
+                                        <span class="dash">/</span>
+                                        <span class="totalPage">50</span>
+                                    </li>
+                                    <li class="next"><a href="#" class="btn xs outline">다음으로</a></li>
+                                    <li class="last"><a href="#" class="btn xs outline">마지막으로</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="total">전체<span>1,000</span>건 중<span>1~20</span>건</li>
+                                    <li class="perPageSelect">
+                                        <select class="sm">
+                                            <option value="50">페이지당 50</option>
+                                            <option value="100">페이지당 100</option>
+                                            <option value="150">페이지당 150</option>
+                                            <option value="200">페이지당 200</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--// pagination -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

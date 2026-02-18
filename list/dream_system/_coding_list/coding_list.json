@@ -1,0 +1,112 @@
+{
+    "templete": {
+        "h2Title": "<h2><a href=\"#\" onclick=\"toggleFunc(event, this)\">{title}</a></h2>",
+        "detail": [
+            "{html}",
+            "<td colspan=\"{colspan}\" class=\"{td_class}\"><a href=\"{href}\" target=\"{target}\" class=\"{class}\" onclick=\"clickFuncs(event, this)\">{subject}<span class=\"{comment_class}\">{comment}</span></a><a href=\"{href}\" target=\"_blank\" class=\"new_window\">새창</a></td>"
+        ]
+    },
+    "header": {
+        "title": "코딩리스트"
+    },
+    "links": {
+        "드림시스템": {
+            "가이드": ["/list/dream_system/_guide/guide.html", "mainframe", "완료", ""],
+            "jqgrid": ["/list/dream_system/jqgrid.html", "mainframe", "완료", ""],
+            "기본 레이아웃": ["/list/dream_system/index.html", "mainframe", "완료", ""],
+            "공통":{
+                "P_M00-03 - 로그인": ["/list/dream_system/P_M00-03.html", "mainframe", "완료", ""],
+                "P_M00-04 - 비밀번호 찾기 step1": ["/list/dream_system/P_M00-04.html", "mainframe", "완료", ""],
+                "P_M00-04_1 - 비밀번호 찾기 step2 tab1": ["/list/dream_system/P_M00-04_01.html", "mainframe", "완료", ""],
+                "P_M00-04_2 - 비밀번호 찾기 step2 tab2": ["/list/dream_system/P_M00-04_02.html", "mainframe", "완료", ""],
+                "P_M00-04_3 - 비밀번호 찾기 step3": ["/list/dream_system/P_M00-04_03.html", "mainframe", "완료", ""],
+                "P_M00-05_01 - 사번 찾기 step1": ["/list/dream_system/P_M00-05_01.html", "mainframe", "완료", ""],
+                "P_M00-05_03 - 사번 찾기 step2": ["/list/dream_system/P_M00-05_03.html", "mainframe", "완료", ""],
+                "P_M00-05_04 - 사번 찾기 step3": ["/list/dream_system/P_M00-05_04.html", "mainframe", "완료", ""],
+                "P_M00-05_05 - 사번 찾기 step4": ["/list/dream_system/P_M00-05_05.html", "mainframe", "완료", ""],
+                "P_M00-06 - 메인": ["/list/dream_system/P_M00-06.html", "mainframe", "완료", ""]
+            },
+            "인사급여":{
+                "P_M01-01 - 직원조회": ["/list/dream_system/P_M01-01.html", "mainframe", "완료", ""],
+                "P_M01-02 - 개인 인사정보(인적사항)": ["/list/dream_system/P_M01-02.html", "mainframe", "완료", ""],
+                "P_M01-02_01 - 개인 인사정보(프로젝트 경력)": ["/list/dream_system/P_M01-02_01.html", "mainframe", "완료", ""],
+                "P_M01-03 - 발령 신청 및 조회 - 발령 신청": ["/list/dream_system/P_M01-03.html", "mainframe", "완료", ""],
+                "P_M01-04 - 발령 신청 및 조회 - 발령 조회": ["/list/dream_system/P_M01-04.html", "mainframe", "완료", ""],
+                "P_M01-05 - 급여 조회": ["/list/dream_system/P_M01-05.html", "mainframe", "완료", ""],
+                "P_M01-07 - 증명서 발급": ["/list/dream_system/P_M01-07.html", "mainframe", "완료", ""]
+            },
+            "근태관리":{
+                "P_M02-01 - 근무 - 근무계획 등록": ["/list/dream_system/P_M02-01.html", "mainframe", "완료", ""],
+                "P_M02-03 - 근무 - 근무계획 외 근무 신청": ["/list/dream_system/P_M02-03.html", "mainframe", "완료", ""],
+                "P_M02-04 - 근무 - 대체휴무일 변경 신청": ["/list/dream_system/P_M02-04.html", "mainframe", "완료", ""],
+                "P_M02-05 - 근무 - 근로시간 조정": ["/list/dream_system/P_M02-05.html", "mainframe", "완료", ""],
+                "P_M02-06 - 근무 - 월 근로시간 확인": ["/list/dream_system/P_M02-06.html", "mainframe", "완료", ""],
+                "P_M02-07 - 근태 - 근태 등록": ["/list/dream_system/P_M02-07.html", "mainframe", "완료", ""],
+                "P_M02-08 - 근태 - 휴직 및 단축 신청": ["/list/dream_system/P_M02-08.html", "mainframe", "완료", ""],
+                "P_M02-09 - 근태 - 휴직 및 단축 관리": ["/list/dream_system/P_M02-09.html", "mainframe", "완료", ""],
+                "P_M02-10 - 근태 - 일 근태 신청": ["/list/dream_system/P_M02-10.html", "mainframe", "완료", ""],
+                "P_M02-10_01 - 근태 - 일 근태 신청": ["/list/dream_system/P_M02-10_01.html", "mainframe", "완료", ""],
+                "P_M02-11 - 근태 - 월별 근태 현황": ["/list/dream_system/P_M02-11.html", "mainframe", "완료", ""],
+                "P_M02-13 - 근태 - 연차 현황": ["/list/dream_system/P_M02-13.html", "mainframe", "완료", ""]
+            },
+            "교육관리":{
+                "P_M03-01 - 교육 과정 관리": ["/list/dream_system/P_M03-01.html", "mainframe", "완료", ""],
+                "P_M03-02 - 교육 신청": ["/list/dream_system/P_M03-02.html", "mainframe", "완료", ""],
+                "P_M03-05 - 근무 - HRD 소식 (컨텍센터 탭)": ["/list/dream_system/P_M03-05.html", "mainframe", "완료", ""],
+                "P_M03-05_01 -HRD 소식 (교육공지관리 탭)": ["/list/dream_system/P_M03-05_01.html", "mainframe", "완료", ""],
+                "P_M03-06 - 근무 - 대표강사": ["/list/dream_system/P_M03-06.html", "mainframe", "완료", ""]
+            },
+            "업무지원":{
+                "P_M04-03 - 복지 - 네일아트 예약": ["/list/dream_system/P_M04-03.html", "mainframe", "완료", ""],
+                "P_M04-04 - 복지 - 네일아트 예약 관리": ["/list/dream_system/P_M04-04.html", "mainframe", "완료", ""]
+            },
+            "커뮤니티":{
+                "P_M05-02 - 사내규정": ["/list/dream_system/P_M05-02.html", "mainframe", "완료", ""],
+                "P_M05-02_01 - 사내규정(탭2)": ["/list/dream_system/P_M05-02_01.html", "mainframe", "완료", ""],
+                "P_M05-02_02 - 사내규정(탭3)": ["/list/dream_system/P_M05-02_02.html", "mainframe", "완료", ""],
+                "P_M05-03 - 공지사항": ["/list/dream_system/P_M05-03.html", "mainframe", "완료", ""],
+                "P_M05-04 - 궁금합니다": ["/list/dream_system/P_M05-04.html", "mainframe", "완료", ""],
+                "P_M05-04_01 - 궁금합니다 글쓰기": ["/list/dream_system/P_M05-04_01.html", "mainframe", "완료", ""],
+                "P_M05-04_02 - 궁금합니다 상세": ["/list/dream_system/P_M05-04_02.html", "mainframe", "완료", ""],
+                "P_M05-05 - 자주 묻는 질문": ["/list/dream_system/P_M05-05.html", "mainframe", "완료", ""],
+                "P_M05-07 - 고충·윤리 상담센터": ["/list/dream_system/P_M05-07.html", "mainframe", "완료", ""],
+                "P_M05-07_01 - 고충·윤리 상담센터 (탭2)": ["/list/dream_system/P_M05-07_01.html", "mainframe", "완료", ""]
+            },
+            "관리자":{
+                "P_M99-08 - 재직자 매뉴 관리": ["/list/dream_system/P_M99-08.html", "mainframe", "완료", ""],
+                "P_M99-12 - 시스템 로그": ["/list/dream_system/P_M99-12.html", "mainframe", "완료", ""],
+                "P_M99-17 - 관리자 권한 설정": ["/list/dream_system/P_M99-17.html", "mainframe", "완료", ""]
+            },
+            "팝업":{
+                "P_M00-01 - 본인인증(비밀번호 확인) 팝업": ["/list/dream_system/P_M00-01.html", "mainframe", "완료", ""],
+                "P_M00-02 - 우편번호 찾기 팝업": ["/list/dream_system/P_M00-02.html", "mainframe", "완료", ""],
+                "P_M00-05_02 - 비밀번호 변경 팝업": ["/list/dream_system/P_M00-05_02.html", "mainframe", "완료", ""],
+
+                "P_M01-02_02 - 개인 인사정보 - 프로젝트 경력 관련 팝업": ["/list/dream_system/P_M01-02_02.html", "mainframe", "완료", ""],
+                "P_M01-02_03 - 개인 인사정보 - 프로젝트 경력 추가 팝업": ["/list/dream_system/P_M01-02_03.html", "mainframe", "완료", ""],
+                "P_M01-03_01 - 대상자 추가 팝업": ["/list/dream_system/P_M01-03_01.html", "mainframe", "완료", ""],
+                "P_M01-03_02 - 발령 신청 및 조회 - 발령 신청 - 부서 조회 팝업": ["/list/dream_system/P_M01-03_02.html", "mainframe", "완료", ""],
+                "P_M01-05_01 - 급여 조회 - 급여 상세 팝업": ["/list/dream_system/P_M01-05_01.html", "mainframe", "완료", ""],
+                "P_M01-05_02 - 급여 조회 - 상여 상세 팝업": ["/list/dream_system/P_M01-05_02.html", "mainframe", "완료", ""],
+                "P_M01-05_01 - 급여 상세 팝업": ["/list/dream_system/P_M01-05_01.html", "mainframe", "완료", ""],
+                "P_M01-05_02 - 상여 상세 팝업": ["/list/dream_system/P_M01-05_02.html", "mainframe", "완료", ""],
+                "P_M01-07_01 - 증명서 발급 - 증명서 발급 인쇄 팝업(빈팝업)": ["/list/dream_system/P_M01-07_01.html", "mainframe", "완료", ""],
+
+                "P_M02-04_01 - 근무 - 대체휴무일 변경 신청 팝업": ["/list/dream_system/P_M02-04_01.html", "mainframe", "완료", ""],
+                "P_M02-10_02 - 근무 - 일 근태 선택 팝업": ["/list/dream_system/P_M02-10_02.html", "mainframe", "완료", ""],
+
+                "P_M03-01_01 - 교육관리 SMS 팝업": ["/list/dream_system/P_M03-01_01.html", "mainframe", "완료", ""],
+                "P_M03-02_01 - 교육 대상자 선택 팝업": ["/list/dream_system/P_M03-02_01.html", "mainframe", "완료", ""],
+                "P_M03-05_02 - 교육공지 관리 등록 팝업": ["/list/dream_system/P_M03-05_02.html", "mainframe", "완료", ""],
+                "P_M03-05_03 - 교육공지 관리 상세 팝업": ["/list/dream_system/P_M03-05_03.html", "mainframe", "완료", ""],
+
+                "P_M04-03_01 - 복지 - 나의 예약 현황": ["/list/dream_system/P_M04-03_01.html", "mainframe", "완료", ""],
+                "P_M04-03_02 - 복지 - 네일아트 에약 상세": ["/list/dream_system/P_M04-03_02.html", "mainframe", "완료", ""],
+                "P_M04-03_03 - 복지 - 네일아트 예약 기간 선택": ["/list/dream_system/P_M04-03_03.html", "mainframe", "완료", ""],
+                "P_M04-04_01 - 복지 - 네일아트 예약 등록(팝업)": ["/list/dream_system/P_M04-04_01.html", "mainframe", "완료", ""],
+                "P_M04-04_02 - 복지 - 네일아트 예약 상세(팝업)": ["/list/dream_system/P_M04-04_02.html", "mainframe", "완료", ""],
+                "P_M04-04_03 - 복지 - 예약관리 SMS 전송": ["/list/dream_system/P_M04-04_03.html", "mainframe", "완료", ""]
+            }
+        }
+    }
+}

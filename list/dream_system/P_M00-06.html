@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376089235" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376089235" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-confirm.css?t=1771376089235" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jqgrid-ui.css?t=1771376089235" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jstree.min.css?t=1771376089235" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/qtip.css?t=1771376089235" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/timepicker.min.css?t=1771376089235" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376089235" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376089235" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376089235"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376089235"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376089235"></script>
+        <script src="./assets/js/lib/iscroll.min.js?t=1771376089235"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376089235"></script>
+        <script src="./assets/js/lib/jquery-confirm.js?t=1771376089235"></script>
+        <script src="./assets/js/lib/jqgrid-4.15.5.js?t=1771376089235"></script>
+        <script src="./assets/js/lib/jstree.min.js?t=1771376089235"></script>
+        <script src="./assets/js/lib/qtip-3.0.3.js?t=1771376089235"></script>
+        <script src="./assets/js/lib/blockUI-2.70.js?t=1771376089235"></script>
+        <script src="./assets/js/lib/fullcalendar.min.js?t=1771376089235"></script>
+        <script src="./assets/js/lib/timepicker.min.js?t=1771376089235"></script>
+        <script src="./assets/js/common.js?t=1771376089235"></script>
+        <title>DREAM SYSTEM</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header">
+            <div class="inner">
+                <div class="logoWrap">
+                    <h1>
+                        <a href="/index.html"><img src="./assets/img/img-logo.svg" alt="DREAM SYSTEM" /></a>
+                    </h1>
+                    <div class="menuBtn-mobile">
+                        <button id="nav-button" type="button">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="navWrap">
+                    <ul>
+                        <li><a href="#">인사급여</a></li>
+                        <li><a href="#">근태관리</a></li>
+                        <li><a href="#">교육관리</a></li>
+                        <li><a href="#">업무지원</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">관리자</a></li>
+                    </ul>
+                    <div class="depthWrap">
+                        <div class="inner">
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">인사급여</h3>
+                                <li><a href="#">직원조회</a></li>
+                                <li><a href="#">개인인사정보</a></li>
+                                <li>
+                                    <a href="#">발령 신청 및 조회</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">발령 신청</a></li>
+                                        <li><a href="#">발령 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">급여 조회</a></li>
+                                <li><a href="#">연봉확인서</a></li>
+                                <li><a href="#">증명서 발급</a></li>
+                                <li><a href="#">인재풀 정보 조회</a></li>
+                                <li><a href="#">메뉴1</a></li>
+                                <li><a href="#">메뉴2</a></li>
+                                <li><a href="#">메뉴3</a></li>
+                                <li><a href="#">메뉴4</a></li>
+                                <li><a href="#">메뉴5</a></li>
+                                <li><a href="#">메뉴6</a></li>
+                                <li><a href="#">메뉴7</a></li>
+                                <li><a href="#">메뉴8</a></li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">근태관리</h3>
+                                <li>
+                                    <a href="#">근무</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">근무계획 등록</a></li>
+                                        <li><a href="#">근무계획 조정</a></li>
+                                        <li><a href="#">근무계획 외 근무 신청</a></li>
+                                        <li><a href="#">대체휴무일 변경 신청</a></li>
+                                        <li><a href="#">근로시간 조정</a></li>
+                                        <li><a href="#">월 근로시간 확인</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">근태</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">근태 등록</a></li>
+                                        <li><a href="#">휴직 및 단축 신청</a></li>
+                                        <li><a href="#">휴직 및 단축 관리</a></li>
+                                        <li><a href="#">일 근태 신청</a></li>
+                                        <li><a href="#">월별 근태 현황</a></li>
+                                        <li><a href="#">기간별 근태 현황</a></li>
+                                        <li><a href="#">연차 현황</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">교육관리</h3>
+                                <li><a href="#">교육과정 관리</a></li>
+                                <li><a href="#">교육 신청</a></li>
+                                <li><a href="#">교육 수료증확인</a></li>
+                                <li><a href="#">교육 자료</a></li>
+                                <li><a href="#">HRD 소식</a></li>
+                                <li><a href="#">대표 강사</a></li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">업무지원</h3>
+                                <li>
+                                    <a href="#">인감</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">인감사용신청</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">계약서</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">계약서 관리</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">복지</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">네일아트 예약</a></li>
+                                        <li><a href="#">네일아트 예약 관리</a></li>
+                                        <li><a href="#">헬스키퍼 예약</a></li>
+                                        <li><a href="#">심리상담 예약</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">카페테리아</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">사용 내역 조회</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">커뮤니티</h3>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">사내규정</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">궁금합니다</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">웹진</a></li>
+                                <li><a href="#">고충·윤리 상담센터</a></li>
+                            </ul>
+                            <ul class="depth2">
+                                <h3 class="depth1-mobile">관리자</h3>
+                                <li><a href="#">재직자 메뉴 관리</a></li>
+                                <li><a href="#">시스템 로그</a></li>
+                                <li><a href="#">관리자 권한 설정</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="userWrap">
+                    <div class="userArea">
+                        <button type="button" class="userBtn">
+                            <i class="ico icoUser">유저</i>
+                            <span>김효성</span>
+                            <i class="ico icoArrDown">화살표</i>
+                        </button>
+                        <div class="userMenu">
+                            <ul>
+                                <li>
+                                    <a href="#none"><i class="ico icoPasswd">비밀번호</i>비번변경</a>
+                                </li>
+                                <li>
+                                    <a href="#none"><i class="ico icoLogout">로그아웃</i>로그아웃</a>
+                                </li>
+                                <!-- <li><a href="#none"><i class="ico icoLogin">로그인</i>로그인</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="familyArea">
+                        <button type="button" class="familyBtn"><i class="ico icoFamily">메뉴</i></button>
+                        <div class="familyMenu">
+                            <h3>패밀리 사이트</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://gw.hyosungitx.com" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoGroupware">그룹웨어</i></div>
+                                        <div class="titWrap">그룹웨어</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://admin.dodreami.com:8443/login/form.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoRecruitManage">채용관리 시스템</i></div>
+                                        <div class="titWrap">채용관리<br />시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://box.hyosungitx.com:5001" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoFileManage">파일관리 시스템</i></div>
+                                        <div class="titWrap">파일관리<br />시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://sr.hyosungitx.com/login.do" target="_blank">
+                                        <div class="icoWrap"><i class="ico icoSRsystem">SR시스템</i></div>
+                                        <div class="titWrap">SR시스템</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap" class="main">
+            <div id="contents">
+                <div class="inner">
+                    <div id="dashboard" class="dashboardContainer">
+                        <div class="dashboardContainerBox">
+                            <!--자주찾는 서비스 start-->
+                            <div class="dashboardContainerItem section1">
+                                <div class="inner">
+                                    <div class="cardItem type2">
+                                        <div class="cardItemInner">
+                                            <div class="cardItemHeader">
+                                                <div class="contentInner">
+                                                    <div class="left">
+                                                        <div class="titleContent">
+                                                            <strong class="title">자주찾는 서비스</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="controlContent">
+                                                            <div class="controlCount">
+                                                                <div class="current"></div>
+                                                                <i>/</i>
+                                                                <div class="total"></div>
+                                                            </div>
+                                                            <div class="controlButton">
+                                                                <div class="buttonItem">
+                                                                    <button type="button" class="buttonPrev">
+                                                                        이전
+                                                                    </button>
+                                                                </div>
+                                                                <div class="buttonItem">
+                                                                    <button type="button" class="buttonNext">
+                                                                        다음
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cardItemContent">
+                                                <div class="contentInner">
+                                                    <div
+                                                        class="swiperModule"
+                                                        data-ta-slides="1"
+                                                        data-mo-slides="1"
+                                                        data-pc-gaps="24"
+                                                    >
+                                                        <div class="swiper">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide">
+                                                                    <div class="mainServiceContent">
+                                                                        <div class="contentInner">
+                                                                            <ul class="serviceList">
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a href="">
+                                                                                            <span class="serviceItem">
+                                                                                                <i
+                                                                                                    class="service01"
+                                                                                                ></i>
+                                                                                                <span class="title">
+                                                                                                    급여조회
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a href="">
+                                                                                            <span class="serviceItem">
+                                                                                                <i
+                                                                                                    class="service02"
+                                                                                                ></i>
+                                                                                                <span class="title">
+                                                                                                    근태등록
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a href="">
+                                                                                            <span class="serviceItem">
+                                                                                                <i
+                                                                                                    class="service03"
+                                                                                                ></i>
+                                                                                                <span class="title">
+                                                                                                    근태현황
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a href="">
+                                                                                            <span class="serviceItem">
+                                                                                                <i
+                                                                                                    class="service04"
+                                                                                                ></i>
+                                                                                                <span class="title">
+                                                                                                    발령신청
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a
+                                                                                            href="https://gw.hyosungitx.com/"
+                                                                                        >
+                                                                                            <span class="serviceItem">
+                                                                                                <i
+                                                                                                    class="service05 type2"
+                                                                                                ></i>
+                                                                                                <span class="title">
+                                                                                                    그룹웨어
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a
+                                                                                            href="https://admin.dodreami.com:8443/login/form.do"
+                                                                                        >
+                                                                                            <span class="serviceItem">
+                                                                                                <i
+                                                                                                    class="service06 type2"
+                                                                                                ></i>
+                                                                                                <span class="title">
+                                                                                                    채용관리시스템
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a
+                                                                                            href="https://box.hyosungitx.com:5001/"
+                                                                                        >
+                                                                                            <span class="serviceItem">
+                                                                                                <i
+                                                                                                    class="service07 type2"
+                                                                                                ></i>
+                                                                                                <span class="title">
+                                                                                                    파일관리 시스템
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a
+                                                                                            href="https://sr.hyosungitx.com/login.do"
+                                                                                        >
+                                                                                            <span class="serviceItem">
+                                                                                                <i
+                                                                                                    class="service08 type2"
+                                                                                                ></i>
+                                                                                                <span class="title">
+                                                                                                    SR시스템
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <div class="mainServiceContent">
+                                                                        <div class="contentInner">
+                                                                            <ul class="serviceList">
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a href="">
+                                                                                            <span class="serviceItem">
+                                                                                                <i></i>
+                                                                                                <span class="title">
+                                                                                                    콘텐츠 2-1
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a href="">
+                                                                                            <span class="serviceItem">
+                                                                                                <i></i>
+                                                                                                <span class="title">
+                                                                                                    콘텐츠 2-2
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a href="">
+                                                                                            <span class="serviceItem">
+                                                                                                <i></i>
+                                                                                                <span class="title">
+                                                                                                    콘텐츠 2-3
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a href="">
+                                                                                            <span class="serviceItem">
+                                                                                                <i></i>
+                                                                                                <span class="title">
+                                                                                                    콘텐츠 2-4
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a href="">
+                                                                                            <span class="serviceItem">
+                                                                                                <i class="type2"></i>
+                                                                                                <span class="title">
+                                                                                                    콘텐츠 2-5
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a href="">
+                                                                                            <span class="serviceItem">
+                                                                                                <i class="type2"></i>
+                                                                                                <span class="title">
+                                                                                                    콘텐츠 2-6
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a href="">
+                                                                                            <span class="serviceItem">
+                                                                                                <i class="type2"></i>
+                                                                                                <span class="title">
+                                                                                                    콘텐츠 2-7
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li class="item">
+                                                                                    <div class="contentInner">
+                                                                                        <a href="">
+                                                                                            <span class="serviceItem">
+                                                                                                <i class="type2"></i>
+                                                                                                <span class="title">
+                                                                                                    콘텐츠 2-8
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--자주찾는 서비스 end-->
+                            <!--복지혜택 및 이벤트 start-->
+                            <div class="dashboardContainerItem section2">
+                                <div class="inner">
+                                    <div class="cardItem">
+                                        <div class="cardItemInner">
+                                            <div class="cardItemHeader">
+                                                <div class="contentInner">
+                                                    <div class="left">
+                                                        <div class="titleContent">
+                                                            <strong class="title">복지혜택 및 이벤트</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="controlContent">
+                                                            <div class="controlCount">
+                                                                <div class="current"></div>
+                                                                <i>/</i>
+                                                                <div class="total"></div>
+                                                            </div>
+                                                            <div class="controlButton">
+                                                                <div class="buttonItem">
+                                                                    <button type="button" class="buttonPrev">
+                                                                        이전
+                                                                    </button>
+                                                                </div>
+                                                                <div class="buttonItem">
+                                                                    <button type="button" class="buttonNext">
+                                                                        다음
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cardItemContent noBorderTop pt0">
+                                                <div class="contentInner">
+                                                    <div
+                                                        class="swiperModule"
+                                                        data-pc-slides="2"
+                                                        data-ta-slides="2"
+                                                        data-mo-slides="1"
+                                                        data-pc-gaps="12"
+                                                    >
+                                                        <div class="swiper">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide">
+                                                                    <div class="slideInner">
+                                                                        <div class="slideTit">
+                                                                            <p>항공권 할인</p>
+                                                                            <p>
+                                                                                열심히 일한 당신, <br />지금 떠나세요!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="slideLink">
+                                                                            <a href="#none" target="_blank"
+                                                                                >자세히<i class="ico icoArrRight"
+                                                                                    >화살표</i
+                                                                                ></a
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <div class="slideInner">
+                                                                        <div class="slideTit">
+                                                                            <p>병원 할인</p>
+                                                                            <p>
+                                                                                몸도 마음도 튼튼하게! <br />아플 땐 약
+                                                                                꼭 챙겨요.
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="slideLink">
+                                                                            <a href="#none" target="_blank"
+                                                                                >자세히<i class="ico icoArrRight"
+                                                                                    >화살표</i
+                                                                                ></a
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <div class="slideInner">
+                                                                        <div class="slideTit">
+                                                                            <p style="color: #fff">현대렌탈케어</p>
+                                                                            <p style="color: #fff">
+                                                                                임직원 전용 특별 혜택, <br />지금
+                                                                                만나보세요!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="slideLink">
+                                                                            <a href="#none" target="_blank"
+                                                                                >자세히<i class="ico icoArrRight"
+                                                                                    >화살표</i
+                                                                                ></a
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <div class="slideInner">
+                                                                        <div class="slideTit">
+                                                                            <p style="color: #535ee5">2025년</p>
+                                                                            <p style="color: #535ee5">
+                                                                                효성 ITX 어린이집 <br />신규 원아모집
+                                                                                상시모집
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="slideLink">
+                                                                            <a href="#none" target="_blank"
+                                                                                >자세히<i class="ico icoArrRight"
+                                                                                    >화살표</i
+                                                                                ></a
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--복지혜택 및 이벤트 end-->
+                            <!--중앙 배너 1 start-->
+                            <div class="dashboardContainerItem section3">
+                                <div class="inner">
+                                    <div class="normalBannerModule webzine">
+                                        <div class="normalBannerInner">
+                                            <div class="normalBannerTit">
+                                                <p>2025</p>
+                                                <p>WEBZINE</p>
+                                                <p>10월호</p>
+                                            </div>
+                                            <div class="normalBannerLink">
+                                                <a href="#none" target="_blank"
+                                                    >자세히<i class="ico icoArrRight">화살표</i></a
+                                                >
+                                            </div>
+                                            <div class="normalBannerBot">HYOSUNG ITX Monthly Magazine</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--중앙 배너 1 end-->
+                            <!--중앙 배너 2 start-->
+                            <div class="dashboardContainerItem section4">
+                                <div class="inner">
+                                    <div class="normalBannerModule counselCenter">
+                                        <div class="normalBannerInner">
+                                            <div class="normalBannerTit">
+                                                <p>고충·윤리 상담센터 오픈!</p>
+                                                <p>말하기 어려운 갈등과 고민, <br />이제 안전하게 상담하세요.</p>
+                                            </div>
+                                            <div class="normalBannerLink">
+                                                <a href="#none" target="_blank"
+                                                    >자세히<i class="ico icoArrRight">화살표</i></a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--중앙 배너 2 end-->
+                            <!--본사 근무 현황 start-->
+                            <div class="dashboardContainerItem section5">
+                                <div class="inner">
+                                    <!-- case1 -->
+                                    <!--
+                                    <div class="cardItem">
+                                        <div class="cardItemInner">
+                                            <div class="cardItemHeader">
+                                                <div class="contentInner">
+                                                    <div class="left">
+                                                        <div class="titleContent">
+                                                            <strong class="title">10월 본사 근무 현황</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="singleButtonContent">
+                                                            <div class="item">
+                                                                <a href="" class="buttonMore">
+                                                                    <span class="title">더 보기</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cardItemContent">
+                                                <div class="contentInner">
+                                                    <div class="timeCheckModule">
+                                                        <div class="timeCheckInner">
+                                                            <div class="header">
+                                                                <div class="contentInner">
+                                                                    <div class="left">
+                                                                        <div class="titleContent">
+                                                                            <span class="title">실 근로시간</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="right">
+                                                                        <div class="countContent">
+                                                                            <span class="countItem">
+                                                                                <span class="count">172</span>
+                                                                                <span class="unit">h</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="middle">
+                                                                <div class="timeCheckContent">
+                                                                    <div class="timeCheckBarContent">
+                                                                        <div class="timeCheckBar">
+                                                                            <div class="timeCheckBarTrack">
+                                                                                <div
+                                                                                    class="timeCheckBarTrackInner front"
+                                                                                >
+                                                                                    <i
+                                                                                        style="width: 92.5%"
+                                                                                        class="flag"
+                                                                                    ></i>
+                                                                                    <i
+                                                                                        style="width: 7.5%"
+                                                                                        class="dim"
+                                                                                    ></i>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="timeCheckBarTrackInner back"
+                                                                                >
+                                                                                    <span
+                                                                                        style="width: 75%"
+                                                                                        class="item safety"
+                                                                                    >
+                                                                                        <span class="countItem">
+                                                                                            <em class="count">144h</em>
+                                                                                        </span>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        style="width: 10%"
+                                                                                        class="item good"
+                                                                                    >
+                                                                                        <span class="countItem">
+                                                                                            <em class="count">164h</em>
+                                                                                        </span>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        style="width: 15%"
+                                                                                        class="item danger"
+                                                                                    >
+                                                                                        <span class="countItem">
+                                                                                            <em class="count">192h</em>
+                                                                                        </span>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="timeCheckItemList">
+                                                                        <div class="itemListInner">
+                                                                            <ul class="itemList">
+                                                                                <li class="item safety">
+                                                                                    <span class="title"
+                                                                                        >의무 근로시간</span
+                                                                                    >
+                                                                                </li>
+                                                                                <li class="item good">
+                                                                                    <span class="title"
+                                                                                        >기본 근로시간</span
+                                                                                    >
+                                                                                </li>
+                                                                                <li class="item danger">
+                                                                                    <span class="title"
+                                                                                        >최대 근로시간</span
+                                                                                    >
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bottom">
+                                                                <div class="noticeContent alert">
+                                                                    초과근무시간 24h입니다. 근무 조정 바랍니다.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    -->
+
+                                    <!-- case2 -->
+                                    <div class="cardItem">
+                                        <div class="cardItemInner">
+                                            <div class="cardItemHeader">
+                                                <div class="contentInner">
+                                                    <div class="left">
+                                                        <div class="titleContent">
+                                                            <strong class="title">10월 본사 근무 현황</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="singleButtonContent">
+                                                            <div class="item">
+                                                                <a href="" class="buttonMore">
+                                                                    <span class="title">더 보기</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cardItemContent">
+                                                <div class="contentInner">
+                                                    <div class="timeCheckModule case2">
+                                                        <div class="timeCheckInner">
+                                                            <div class="header">
+                                                                <div class="contentInner">
+                                                                    <div class="left">
+                                                                        <div class="titleContent">
+                                                                            <span class="title">실 근로시간</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="right">
+                                                                        <div class="countContent">
+                                                                            <span class="countItem">
+                                                                                <span class="count">172</span>
+                                                                                <span class="unit">h</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="middle">
+                                                                <div class="timeCheckContent">
+                                                                    <div class="timeCheckBarContent">
+                                                                        <div class="timeCheckBar">
+                                                                            <div class="timeCheckBarTrack">
+                                                                                <div
+                                                                                    class="timeCheckBarTrackInner front"
+                                                                                >
+                                                                                    <i
+                                                                                        style="width: 25%"
+                                                                                        class="flag"
+                                                                                    ></i>
+                                                                                    <i
+                                                                                        style="width: 75%"
+                                                                                        class="dim"
+                                                                                    ></i>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="timeCheckBarTrackInner back"
+                                                                                >
+                                                                                    <span
+                                                                                        style="width: 75%"
+                                                                                        class="item safety"
+                                                                                    >
+                                                                                        <span class="countItem">
+                                                                                            <em class="count">144h</em>
+                                                                                        </span>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        style="width: 10%"
+                                                                                        class="item good"
+                                                                                    >
+                                                                                        <span class="countItem">
+                                                                                            <em class="count">164h</em>
+                                                                                        </span>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        style="width: 15%"
+                                                                                        class="item danger"
+                                                                                    >
+                                                                                        <span class="countItem">
+                                                                                            <em class="count">192h</em>
+                                                                                        </span>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="timeCheckItemList">
+                                                                        <div class="itemListInner">
+                                                                            <ul class="itemList">
+                                                                                <li class="item safety">
+                                                                                    <span class="title"
+                                                                                        >의무 근로시간</span
+                                                                                    >
+                                                                                </li>
+                                                                                <li class="item good">
+                                                                                    <span class="title"
+                                                                                        >기본 근로시간</span
+                                                                                    >
+                                                                                </li>
+                                                                                <li class="item danger">
+                                                                                    <span class="title"
+                                                                                        >최대 근로시간</span
+                                                                                    >
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- case3 -->
+                                    <!--
+                                    <div class="cardItem">
+                                        <div class="cardItemInner">
+                                            <div class="cardItemHeader">
+                                                <div class="contentInner">
+                                                    <div class="left">
+                                                        <div class="titleContent">
+                                                            <strong class="title">10월 센터 근무 현황</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="singleButtonContent">
+                                                            <div class="item">
+                                                                <a href="" class="buttonMore">
+                                                                    <span class="title">더 보기</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cardItemContent noBorderTop">
+                                                <div class="contentInner">
+                                                    <div class="infoListCardModule case3">
+                                                        <div class="infoListcardInner">
+                                                            <ul class="itemList type3 sort3">
+                                                                <li class="item">
+                                                                    <div class="itemInner">
+                                                                        <div class="header">
+                                                                            <div class="titleContent">
+                                                                                <strong class="title vac01"
+                                                                                    >연장</strong
+                                                                                >
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bottom">
+                                                                            <div class="countContent">
+                                                                                <div class="countInner">
+                                                                                    <span class="count">10</span>
+                                                                                    <span class="unit">h</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="itemInner">
+                                                                        <div class="header">
+                                                                            <div class="titleContent">
+                                                                                <strong class="title vac02"
+                                                                                    >휴일</strong
+                                                                                >
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bottom">
+                                                                            <div class="countContent">
+                                                                                <div class="countInner">
+                                                                                    <span class="count">10</span>
+                                                                                    <span class="unit">h</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="itemInner">
+                                                                        <div class="header">
+                                                                            <div class="titleContent">
+                                                                                <strong class="title vac03"
+                                                                                    >대체휴무</strong
+                                                                                >
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bottom">
+                                                                            <div class="countContent">
+                                                                                <div class="countInner">
+                                                                                    <span class="count">10</span>
+                                                                                    <span class="unit">h</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                            <!--본사 근무 현황 end-->
+
+                            <!--연차현황 start-->
+                            <div class="dashboardContainerItem section6">
+                                <div class="inner">
+                                    <div class="cardItem">
+                                        <div class="cardItemInner">
+                                            <div class="cardItemHeader">
+                                                <div class="contentInner">
+                                                    <div class="left">
+                                                        <div class="titleContent">
+                                                            <strong class="title">2025년 연차현황</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="singleButtonContent">
+                                                            <div class="item">
+                                                                <a href="" class="buttonMore">
+                                                                    <span class="title">더 보기</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cardItemContent noBorderTop">
+                                                <div class="contentInner">
+                                                    <div class="infoListCardModule">
+                                                        <div class="infoListcardInner">
+                                                            <ul class="itemList">
+                                                                <li class="item">
+                                                                    <div class="itemInner">
+                                                                        <div class="header">
+                                                                            <div class="titleContent">
+                                                                                <strong class="title vac01"
+                                                                                    >총 연차</strong
+                                                                                >
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bottom">
+                                                                            <div class="countContent">
+                                                                                <div class="countInner">
+                                                                                    <span class="count">21</span>
+                                                                                    <span class="unit">건</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="itemInner">
+                                                                        <div class="header">
+                                                                            <div class="titleContent">
+                                                                                <strong class="title vac02"
+                                                                                    >사용연차</strong
+                                                                                >
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bottom">
+                                                                            <div class="countContent">
+                                                                                <div class="countInner">
+                                                                                    <span class="count">10</span>
+                                                                                    <span class="unit">건</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="itemInner">
+                                                                        <div class="header">
+                                                                            <div class="titleContent">
+                                                                                <strong class="title vac03"
+                                                                                    >전년도초과</strong
+                                                                                >
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bottom">
+                                                                            <div class="countContent">
+                                                                                <div class="countInner">
+                                                                                    <span class="count">0</span>
+                                                                                    <span class="unit">건</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <div class="itemInner">
+                                                                        <div class="header">
+                                                                            <div class="titleContent">
+                                                                                <strong class="title vac04"
+                                                                                    >잔여연차</strong
+                                                                                >
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bottom">
+                                                                            <div class="countContent">
+                                                                                <div class="countInner">
+                                                                                    <span class="count">11</span>
+                                                                                    <span class="unit">건</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--연차현황 end-->
+                            <!--신청현황 start-->
+                            <div class="dashboardContainerItem section7">
+                                <div class="inner">
+                                    <div class="cardItem">
+                                        <div class="cardItemInner tabWrap">
+                                            <div class="cardItemHeader">
+                                                <div class="contentInner">
+                                                    <div class="left">
+                                                        <div class="titleContent">
+                                                            <strong class="title">신청현황</strong>
+                                                            <i
+                                                                class="tooltipModule"
+                                                                data-tooltip="툴팁 내용입니다1"
+                                                            ></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="center tab">
+                                                        <div class="tabContent">
+                                                            <div class="titArea type2">
+                                                                <div class="titBox">
+                                                                    <ul class="tabMenu">
+                                                                        <li class="active" data-tab="applyTab01">
+                                                                            근태신청
+                                                                        </li>
+                                                                        <li data-tab="applyTab02">휴직·단축근무</li>
+                                                                        <li data-tab="applyTab03">발령신청</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="singleButtonContent">
+                                                            <div class="item">
+                                                                <a href="" class="buttonMore">
+                                                                    <span class="title">더 보기</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cardItemContent">
+                                                <div class="contentInner">
+                                                    <div class="conArea">
+                                                        <div class="tabContent">
+                                                            <div id="applyTab01" class="tabPanel active">
+                                                                <div class="infoListCardModule">
+                                                                    <div class="infoListcardInner">
+                                                                        <ul class="itemList type2 sort3">
+                                                                            <li class="item">
+                                                                                <div class="itemInner">
+                                                                                    <div class="header">
+                                                                                        <div class="titleContent">
+                                                                                            <strong
+                                                                                                class="title apply01"
+                                                                                                >신청</strong
+                                                                                            >
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="bottom">
+                                                                                        <div class="countContent">
+                                                                                            <div class="countInner">
+                                                                                                <span class="count"
+                                                                                                    >5</span
+                                                                                                >
+                                                                                                <span class="unit"
+                                                                                                    >건</span
+                                                                                                >
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item">
+                                                                                <div class="itemInner">
+                                                                                    <div class="header">
+                                                                                        <div class="titleContent">
+                                                                                            <strong
+                                                                                                class="title apply02"
+                                                                                                >결재중</strong
+                                                                                            >
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="bottom">
+                                                                                        <div class="countContent">
+                                                                                            <div class="countInner">
+                                                                                                <span class="count"
+                                                                                                    >1</span
+                                                                                                >
+                                                                                                <span class="unit"
+                                                                                                    >건</span
+                                                                                                >
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item">
+                                                                                <div class="itemInner">
+                                                                                    <div class="header">
+                                                                                        <div class="titleContent">
+                                                                                            <strong
+                                                                                                class="title apply03"
+                                                                                                >결재완료</strong
+                                                                                            >
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="bottom">
+                                                                                        <div class="countContent">
+                                                                                            <div class="countInner">
+                                                                                                <span class="count"
+                                                                                                    >4</span
+                                                                                                >
+                                                                                                <span class="unit"
+                                                                                                    >건</span
+                                                                                                >
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="applyTab02" class="tabPanel">
+                                                                <div class="infoListCardModule">
+                                                                    <div class="infoListcardInner">
+                                                                        <ul class="itemList type2 sort3">
+                                                                            <li class="item">
+                                                                                <div class="itemInner">
+                                                                                    <div class="header">
+                                                                                        <div class="titleContent">
+                                                                                            <strong
+                                                                                                class="title apply01"
+                                                                                                >신청</strong
+                                                                                            >
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="bottom">
+                                                                                        <div class="countContent">
+                                                                                            <div class="countInner">
+                                                                                                <span class="count"
+                                                                                                    >5</span
+                                                                                                >
+                                                                                                <span class="unit"
+                                                                                                    >건</span
+                                                                                                >
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item">
+                                                                                <div class="itemInner">
+                                                                                    <div class="header">
+                                                                                        <div class="titleContent">
+                                                                                            <strong
+                                                                                                class="title apply02"
+                                                                                                >결재중</strong
+                                                                                            >
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="bottom">
+                                                                                        <div class="countContent">
+                                                                                            <div class="countInner">
+                                                                                                <span class="count"
+                                                                                                    >1</span
+                                                                                                >
+                                                                                                <span class="unit"
+                                                                                                    >건</span
+                                                                                                >
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item">
+                                                                                <div class="itemInner">
+                                                                                    <div class="header">
+                                                                                        <div class="titleContent">
+                                                                                            <strong
+                                                                                                class="title apply03"
+                                                                                                >결재완료</strong
+                                                                                            >
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="bottom">
+                                                                                        <div class="countContent">
+                                                                                            <div class="countInner">
+                                                                                                <span class="count"
+                                                                                                    >4</span
+                                                                                                >
+                                                                                                <span class="unit"
+                                                                                                    >건</span
+                                                                                                >
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="applyTab03" class="tabPanel">
+                                                                <div class="infoListCardModule">
+                                                                    <div class="infoListcardInner">
+                                                                        <ul class="itemList type2 sort3">
+                                                                            <li class="item">
+                                                                                <div class="itemInner">
+                                                                                    <div class="header">
+                                                                                        <div class="titleContent">
+                                                                                            <strong
+                                                                                                class="title apply01"
+                                                                                                >신청</strong
+                                                                                            >
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="bottom">
+                                                                                        <div class="countContent">
+                                                                                            <div class="countInner">
+                                                                                                <span class="count"
+                                                                                                    >5</span
+                                                                                                >
+                                                                                                <span class="unit"
+                                                                                                    >건</span
+                                                                                                >
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item">
+                                                                                <div class="itemInner">
+                                                                                    <div class="header">
+                                                                                        <div class="titleContent">
+                                                                                            <strong
+                                                                                                class="title apply02"
+                                                                                                >결재중</strong
+                                                                                            >
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="bottom">
+                                                                                        <div class="countContent">
+                                                                                            <div class="countInner">
+                                                                                                <span class="count"
+                                                                                                    >1</span
+                                                                                                >
+                                                                                                <span class="unit"
+                                                                                                    >건</span
+                                                                                                >
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item">
+                                                                                <div class="itemInner">
+                                                                                    <div class="header">
+                                                                                        <div class="titleContent">
+                                                                                            <strong
+                                                                                                class="title apply03"
+                                                                                                >결재완료</strong
+                                                                                            >
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="bottom">
+                                                                                        <div class="countContent">
+                                                                                            <div class="countInner">
+                                                                                                <span class="count"
+                                                                                                    >4</span
+                                                                                                >
+                                                                                                <span class="unit"
+                                                                                                    >건</span
+                                                                                                >
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--신청현황 end-->
+                            <!--부서별 근태 현황 start-->
+                            <div class="dashboardContainerItem section8 lastContent">
+                                <div class="inner">
+                                    <div class="cardItem">
+                                        <div class="cardItemInner">
+                                            <div class="cardItemHeader">
+                                                <div class="contentInner">
+                                                    <div class="left">
+                                                        <div class="titleContent">
+                                                            <strong class="title">부서별 근태 현황</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="singleButtonContent">
+                                                            <div class="item">
+                                                                <a href="" class="buttonMore">
+                                                                    <span class="title">더 보기</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cardItemContent noBorderTop pt0">
+                                                <div class="contentInner">
+                                                    <div class="dailyCheckListModule">
+                                                        <div class="dailyCheckListInner">
+                                                            <div class="header">
+                                                                <div class="dateChangeModule">
+                                                                    <div class="changeInner">
+                                                                        <div class="left">
+                                                                            <div class="item">
+                                                                                <button class="moveButton left">
+                                                                                    이전
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="center">
+                                                                            <div class="dateView">
+                                                                                10월 26일 ~ 11월 1일
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <div class="item">
+                                                                                <button class="moveButton right">
+                                                                                    다음
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content">
+                                                                <div class="dateListModule">
+                                                                    <div class="dateListInner top">
+                                                                        <ul class="dateListContent">
+                                                                            <li class="item sun active">
+                                                                                <div class="itemInner">
+                                                                                    <button class="weekbutton top">
+                                                                                        <strong class="weekName">
+                                                                                            <span class="num">26</span>
+                                                                                            <span class="title">
+                                                                                                <em>(</em>
+                                                                                                <em class="text">일</em>
+                                                                                                <em>)</em>
+                                                                                            </span>
+                                                                                        </strong>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item mon">
+                                                                                <div class="itemInner">
+                                                                                    <button class="weekbutton top">
+                                                                                        <strong class="weekName">
+                                                                                            <span class="num">27</span>
+                                                                                            <span class="title">
+                                                                                                <em>(</em>
+                                                                                                <em class="text">월</em>
+                                                                                                <em>)</em>
+                                                                                            </span>
+                                                                                        </strong>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item tue">
+                                                                                <div class="itemInner">
+                                                                                    <button class="weekbutton top">
+                                                                                        <strong class="weekName">
+                                                                                            <span class="num">28</span>
+                                                                                            <span class="title">
+                                                                                                <em>(</em>
+                                                                                                <em class="text">화</em>
+                                                                                                <em>)</em>
+                                                                                            </span>
+                                                                                        </strong>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item wed">
+                                                                                <div class="itemInner">
+                                                                                    <button class="weekbutton top">
+                                                                                        <strong class="weekName">
+                                                                                            <span class="num">29</span>
+                                                                                            <span class="title">
+                                                                                                <em>(</em>
+                                                                                                <em class="text">수</em>
+                                                                                                <em>)</em>
+                                                                                            </span>
+                                                                                        </strong>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item thu">
+                                                                                <div class="itemInner">
+                                                                                    <button class="weekbutton top">
+                                                                                        <strong class="weekName">
+                                                                                            <span class="num">30</span>
+                                                                                            <span class="title">
+                                                                                                <em>(</em>
+                                                                                                <em class="text">목</em>
+                                                                                                <em>)</em>
+                                                                                            </span>
+                                                                                        </strong>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item fri">
+                                                                                <div class="itemInner">
+                                                                                    <button class="weekbutton top">
+                                                                                        <strong class="weekName">
+                                                                                            <span class="num">31</span>
+                                                                                            <span class="title">
+                                                                                                <em>(</em>
+                                                                                                <em class="text">금</em>
+                                                                                                <em>)</em>
+                                                                                            </span>
+                                                                                        </strong>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item sat">
+                                                                                <div class="itemInner">
+                                                                                    <button class="weekbutton top">
+                                                                                        <strong class="weekName">
+                                                                                            <span class="num">1</span>
+                                                                                            <span class="title">
+                                                                                                <em>(</em>
+                                                                                                <em class="text">토</em>
+                                                                                                <em>)</em>
+                                                                                            </span>
+                                                                                        </strong>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="dateListInner bottom">
+                                                                        <ul class="dateListContent">
+                                                                            <li class="item sun active">
+                                                                                <div class="itemInner">
+                                                                                    <div class="middle">
+                                                                                        <div class="infoListItem">
+                                                                                            <ul class="infoList">
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag red"
+                                                                                                        >
+                                                                                                            연차
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag yellow"
+                                                                                                        >
+                                                                                                            반차
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag blue"
+                                                                                                        >
+                                                                                                            교육
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag green"
+                                                                                                        >
+                                                                                                            현지출퇴근
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="middleBottom pcView"
+                                                                                        >
+                                                                                            <button
+                                                                                                type="button"
+                                                                                                class="btn md primary-second"
+                                                                                            >
+                                                                                                더보기
+                                                                                            </button>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="middleBottom moView"
+                                                                                        >
+                                                                                            <button
+                                                                                                type="button"
+                                                                                                class="btn md primary-second"
+                                                                                            >
+                                                                                                더보기
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item mon">
+                                                                                <div class="itemInner">
+                                                                                    <div class="middle">
+                                                                                        <div class="infoListItem">
+                                                                                            <ul class="infoList">
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag red"
+                                                                                                        >
+                                                                                                            연차
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성2
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag yellow"
+                                                                                                        >
+                                                                                                            반차
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성2
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag blue"
+                                                                                                        >
+                                                                                                            교육
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성2
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag green"
+                                                                                                        >
+                                                                                                            현지출퇴근
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성2
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                        <div class="middleBottom">
+                                                                                            <button
+                                                                                                type="button"
+                                                                                                class="btn md primary-second"
+                                                                                            >
+                                                                                                더보기
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item tue">
+                                                                                <div class="itemInner">
+                                                                                    <div class="middle">
+                                                                                        <div class="blank">
+                                                                                            데이터가 없습니다
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item wed">
+                                                                                <div class="itemInner">
+                                                                                    <div class="middle">
+                                                                                        <div class="blank">
+                                                                                            데이터가 없습니다
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item thu">
+                                                                                <div class="itemInner">
+                                                                                    <div class="middle">
+                                                                                        <div class="blank">
+                                                                                            데이터가 없습니다
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item fri">
+                                                                                <div class="itemInner">
+                                                                                    <div class="middle">
+                                                                                        <div class="infoListItem">
+                                                                                            <ul class="infoList">
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag red"
+                                                                                                        >
+                                                                                                            연차
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성3
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag yellow"
+                                                                                                        >
+                                                                                                            반차
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성3
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag blue"
+                                                                                                        >
+                                                                                                            교육
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성3
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag green"
+                                                                                                        >
+                                                                                                            현지출퇴근
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성3
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                                <li class="item">
+                                                                                                    <span
+                                                                                                        class="userInfo"
+                                                                                                    >
+                                                                                                        <span
+                                                                                                            class="stateTag purple"
+                                                                                                        >
+                                                                                                            출장
+                                                                                                        </span>
+                                                                                                        <span
+                                                                                                            class="name"
+                                                                                                        >
+                                                                                                            김효성3
+                                                                                                        </span>
+                                                                                                    </span>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="item sat">
+                                                                                <div class="itemInner">
+                                                                                    <div class="middle">
+                                                                                        <div class="blank">
+                                                                                            데이터가 없습니다
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--부서별 근태 현황 end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header -->
+        <footer id="footer">
+            <div class="footerContent">
+                <div class="footerContentInner">© Copyright 2025. HYOSUNG ITX. All Right Reserved.</div>
+            </div>
+        </footer>
+        <!--// header -->
+        <!-- popup -->
+        <div id="addrFind" class="popWrap" style="max-width: 480px; display: none">
+            <div class="popHead">
+                <p class="popTitle">우편번호 찾기</p>
+                <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+            </div>
+            <div class="popBody">
+                <div class="inner">
+                    <div class="dlArea">
+                        <dl>
+                            <dd class="flex">
+                                <div class="inputArea w100">
+                                    <input
+                                        type="text"
+                                        class="lg"
+                                        placeholder="도로명, 건물명, 지번을 입력하세요."
+                                        required
+                                    />
+                                </div>
+                                <div class="searchBtn">
+                                    <button class="btn lg primary-light">
+                                        <i class="ico icoSearchW">검색 아이콘</i>
+                                        <span>검색</span>
+                                    </button>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="addrBox">
+                        <ul>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="roadName">
+                                    <span class="titLabel">도로명</span>
+                                    <span class="addr">서울특별시 강남구 테헤란로13길 52(역삼동)</span>
+                                </button>
+                                <button class="addrNum">
+                                    <span class="titLabel">지번</span>
+                                    <span class="addr">서울특별시 강남구 역삼동 632 이레빌딩</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <!-- <div class="noResult">
+                    <div class="innerResult">
+                        <div class="resultTxt"><i class="ico icoWarningTri">데이터없음</i> 검색어를 입력하세요.</div>
+                    </div>
+                </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- popup -->
+        <div id="dim"></div>
+    </body>
+</html>

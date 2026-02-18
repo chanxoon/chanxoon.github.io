@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376091278" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376091278" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-confirm.css?t=1771376091278" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jqgrid-ui.css?t=1771376091278" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jstree.min.css?t=1771376091278" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/qtip.css?t=1771376091278" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/timepicker.min.css?t=1771376091278" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376091278" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376091278" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376091278"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376091278"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376091278"></script>
+        <script src="./assets/js/lib/iscroll.min.js?t=1771376091278"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376091278"></script>
+        <script src="./assets/js/lib/jquery-confirm.js?t=1771376091278"></script>
+        <script src="./assets/js/lib/jqgrid-4.15.5.js?t=1771376091278"></script>
+        <script src="./assets/js/lib/jstree.min.js?t=1771376091278"></script>
+        <script src="./assets/js/lib/qtip-3.0.3.js?t=1771376091278"></script>
+        <script src="./assets/js/lib/blockUI-2.70.js?t=1771376091278"></script>
+        <script src="./assets/js/lib/fullcalendar.min.js?t=1771376091278"></script>
+        <script src="./assets/js/lib/timepicker.min.js?t=1771376091278"></script>
+        <script src="./assets/js/common.js?t=1771376091278"></script>
+        <title>DREAM SYSTEM</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- popup -->
+            <div class="popWrap tblSingle" style="max-width: 1024px">
+                <div class="popHead">
+                    <p class="popTitle">네일아트 예약 상세</p>
+                    <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                </div>
+                <div class="popBody">
+                    <div class="inner">
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>상세</h4>
+                            </div>
+                        </div>
+                        <!-- 테이블 영역 -->
+                        <div class="tblForm type1">
+                            <table>
+                                <caption>
+                                    상세
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 100px" />
+                                    <col style="width: 250px" />
+                                    <col style="width: 100px" />
+                                    <col style="width: 250px" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th class="al">예약자</th>
+                                        <td class="al">김효성</td>
+                                        <th class="al">휴대폰</th>
+                                        <td class="al">
+                                            <div class="inputArea">
+                                                <input
+                                                    type="text"
+                                                    class="md"
+                                                    placeholder="'-' 없이 숫자로 입력하세요"
+                                                />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="al">예약일자</th>
+                                        <td class="al">
+                                            <div class="datepickerWrap">
+                                                <div class="w100">
+                                                    <input
+                                                        type="text"
+                                                        class="yearMonthBtn md"
+                                                        value="2025-01"
+                                                        disabled
+                                                    />
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <th class="al">예약시간</th>
+                                        <td class="al">
+                                            <div class="formArea w100">
+                                                <select class="md">
+                                                    <option disabled selected>선택</option>
+                                                    <option>항목1</option>
+                                                    <option>항목2</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="al">요청서비스</th>
+                                        <td class="al">보수</td>
+                                        <th class="al">종류</th>
+                                        <td class="al">
+                                            <div class="formArea w100">
+                                                <select class="md">
+                                                    <option selected>보수_무료 (0원)</option>
+                                                    <option>항목1</option>
+                                                    <option>항목2</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="al" rowspan="3">제품명</th>
+                                        <td class="al" colspan="3">
+                                            <div class="flex gap8">
+                                                <div class="formArea w100">
+                                                    <select class="md">
+                                                        <option disabled selected>대분류 선택</option>
+                                                        <option>항목1</option>
+                                                        <option>항목2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="formArea w100">
+                                                    <select class="md">
+                                                        <option disabled selected>브랜드 선택</option>
+                                                        <option>항목1</option>
+                                                        <option>항목2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="formArea w100">
+                                                    <select class="md">
+                                                        <option disabled selected>제품명 선택</option>
+                                                        <option>항목1</option>
+                                                        <option>항목2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="al" colspan="3">
+                                            <div class="flex gap8">
+                                                <div class="formArea w100">
+                                                    <select class="md">
+                                                        <option disabled selected>대분류 선택</option>
+                                                        <option>항목1</option>
+                                                        <option>항목2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="formArea w100">
+                                                    <select class="md">
+                                                        <option disabled selected>브랜드 선택</option>
+                                                        <option>항목1</option>
+                                                        <option>항목2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="formArea w100">
+                                                    <select class="md">
+                                                        <option disabled selected>제품명 선택</option>
+                                                        <option>항목1</option>
+                                                        <option>항목2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="al" colspan="3">
+                                            <div class="flex gap8">
+                                                <div class="formArea w100">
+                                                    <select class="md">
+                                                        <option disabled selected>대분류 선택</option>
+                                                        <option>항목1</option>
+                                                        <option>항목2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="formArea w100">
+                                                    <select class="md">
+                                                        <option disabled selected>브랜드 선택</option>
+                                                        <option>항목1</option>
+                                                        <option>항목2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="formArea w100">
+                                                    <select class="md">
+                                                        <option disabled selected>제품명 선택</option>
+                                                        <option>항목1</option>
+                                                        <option>항목2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="al">디자인</th>
+                                        <td class="al">
+                                            <div class="formArea w100">
+                                                <select class="md">
+                                                    <option disabled selected>디자인 선택</option>
+                                                    <option>항목1</option>
+                                                    <option>항목2</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <th class="al">옵션</th>
+                                        <td class="al">
+                                            <div class="formArea w100">
+                                                <select class="md">
+                                                    <option disabled selected>옵션 선택</option>
+                                                    <option>항목1</option>
+                                                    <option>항목2</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="al">서비스금액</th>
+                                        <td class="al">0 원</td>
+                                        <th class="al">옵션금액</th>
+                                        <td class="al">
+                                            <div class="flex aiC">
+                                                <div class="inputArea w100">
+                                                    <input
+                                                        type="text"
+                                                        class="md"
+                                                        placeholder="합산금액을 입력하세요"
+                                                        value="0"
+                                                    />
+                                                </div>
+                                                <div class="ml8">원</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="al">쿠폰</th>
+                                        <td class="al">
+                                            <div class="flex aiC">
+                                                <div class="inputArea w100">
+                                                    <input
+                                                        type="text"
+                                                        class="md"
+                                                        placeholder="합산금액을 입력하세요"
+                                                        value="0"
+                                                    />
+                                                </div>
+                                                <div class="ml8">원</div>
+                                            </div>
+                                        </td>
+                                        <th class="al">합산금액</th>
+                                        <td class="al">0 원 (서비스 + 옵션쿠폰)</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="al">담당자</th>
+                                        <td class="al">
+                                            <div class="formArea w100">
+                                                <select class="md">
+                                                    <option disabled selected>담당자 선택</option>
+                                                    <option>항목1</option>
+                                                    <option>항목2</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <th class="al">상태</th>
+                                        <td class="al">
+                                            <div class="formArea w100">
+                                                <select class="md">
+                                                    <option disabled selected>상태 선택</option>
+                                                    <option>항목1</option>
+                                                    <option>항목2</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="al">비고</th>
+                                        <td class="al" colspan="3">
+                                            <div class="inputArea pt10 pb10">
+                                                <textarea></textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--
+                            <div class="noResult">
+                                <div class="innerResult">
+                                    <div class="resultTxt"><i class="ico icoWarningTri">데이터없음</i> 조회된 결과가 없습니다.</div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                        <div class="btnArea right">
+                            <a href="#none" class="btn lg primary-80">저장</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div id="dim"></div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('#dim').fadeIn('fast');
+            });
+        </script>
+    </body>
+</html>

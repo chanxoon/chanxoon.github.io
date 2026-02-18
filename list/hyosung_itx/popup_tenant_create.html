@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376640540"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376640540" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376640540" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376640540" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376640540" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376640540" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376640540"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376640540"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376640540"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376640540"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376640540"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376640540"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376640540"></script>
+        <script src="./assets/js/lib/script.js?t=1771376640540"></script>
+        <script src="./assets/js/common.js?t=1771376640540"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- popup -->
+            <div class="popup" style="max-width: 900px">
+                <div class="popHead">
+                    <p class="popTitle">테넌트 생성</p>
+                    <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                </div>
+                <div class="popBody">
+                    <div class="inner">
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>테넌트 정보</h3>
+                            </div>
+                        </div>
+                        <div class="formArea">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>테넌트명<span class="req">*</span></dt>
+                                        <dd>
+                                            <div class="inputBox">
+                                                <input type="text" class="md" placeholder="테넌트명 입력" />
+                                            </div>
+                                            <div class="reqTxt disHide">테넌트명이 중복됩니다.</div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>사용기간<span class="req">*</span></dt>
+                                        <dd>
+                                            <div class="datepickerWrap" style="width: 278px">
+                                                <div>
+                                                    <input type="text" value="2025-01-22" class="datepicker md" />
+                                                </div>
+                                                <span>-</span>
+                                                <div>
+                                                    <input type="text" value="2025-01-23" class="datepicker md" />
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Prefix ID<span class="req">*</span></dt>
+                                        <dd>
+                                            <div class="inputBox">
+                                                <input type="text" class="md" placeholder="Prefix ID 입력" />
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>담당자 등록</h3>
+                            </div>
+                            <div class="btnBox">
+                                <a href="javascript:;" class="btn sm quaternary">
+                                    <i class="ico icoUseradd">담당자 추가</i>
+                                    <span>담당자 추가</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tblList type1" style="height: 176px">
+                            <table>
+                                <caption>
+                                    담당자 등록
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 5%" />
+                                    <col style="width: 10%" />
+                                    <col style="width: 15%" />
+                                    <col style="width: 15%" />
+                                    <col style="width: 15%" />
+                                    <col style="width: 15%" />
+                                    <col style="width: 25%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>삭제</th>
+                                        <th>이름<span class="req">*</span></th>
+                                        <th>Prefix ID</th>
+                                        <th>Suffix ID<span class="req">*</span></th>
+                                        <th>비밀번호<span class="req">*</span></th>
+                                        <th>연락처</th>
+                                        <th>이메일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <button type="button" class="ico icoDel">삭제</button>
+                                        </td>
+                                        <td>
+                                            <div class="inputBox">
+                                                <input type="text" class="xs" placeholder="이름" />
+                                            </div>
+                                        </td>
+                                        <td>Prefix ID</td>
+                                        <td>
+                                            <div class="inputBox">
+                                                <input type="text" class="xs" placeholder="Suffix ID 입력" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inputBox">
+                                                <input type="text" class="xs" placeholder="숫자 4~8자리" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inputBox">
+                                                <input type="text" class="xs" placeholder="'-'없이 번호만 입력" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inputBox">
+                                                <input type="text" class="xs" placeholder="이메일 주소 입력" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button type="button" class="ico icoDel">삭제</button>
+                                        </td>
+                                        <td>
+                                            <div class="inputBox">
+                                                <input type="text" class="xs" value="김서연" />
+                                            </div>
+                                        </td>
+                                        <td>acme-</td>
+                                        <td>
+                                            <div class="inputBox">
+                                                <input type="text" class="xs" value="service" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inputBox">
+                                                <input type="text" class="xs" value="12345678" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inputBox">
+                                                <input type="text" class="xs" value="010-9999-9999" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="inputBox">
+                                                <input type="text" class="xs" value="example@company.com" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>솔루션 사용 여부</h3>
+                            </div>
+                        </div>
+                        <div class="formArea aiS gap80">
+                            <!--왼쪽섹션-->
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt class="accentTxt">챗봇</dt>
+                                        <dd>
+                                            <div class="formBox jcE">
+                                                <div class="toggleBtnset">
+                                                    <input type="checkbox" id="toggle1" class="toggle" />
+                                                    <label for="toggle1" class="toggleSlide">
+                                                        <span class="togBtn"></span>
+                                                    </label>
+                                                    <div class="toggleLabel">미사용</div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class="accentTxt">콜봇</dt>
+                                        <dd>
+                                            <div class="formBox jcE">
+                                                <div class="toggleBtnset">
+                                                    <input type="checkbox" id="toggle3" class="toggle" checked />
+                                                    <label for="toggle3" class="toggleSlide">
+                                                        <span class="togBtn"></span>
+                                                    </label>
+                                                    <div class="toggleLabel">사용중</div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>헌트번호</dt>
+                                        <dd>
+                                            <div class="inputBox">
+                                                <input type="text" class="md" value="02-1234-5678" />
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="hAuto">
+                                    <dl>
+                                        <dt>봇수</dt>
+                                        <dd class="flex fdC">
+                                            <div class="formBox">
+                                                <select class="md">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputBox fdC gap4 ofA" style="height: 140px">
+                                                <div class="row">
+                                                    <input type="text" class="md" value="7001" /><span class="subTxt"
+                                                        >봇 #1</span
+                                                    >
+                                                </div>
+                                                <div class="row">
+                                                    <input type="text" class="md" value="7001" /><span class="subTxt"
+                                                        >봇 #1</span
+                                                    >
+                                                    <div class="reqTxt disHide">테넌트명이 중복됩니다.</div>
+                                                </div>
+                                                <div class="row">
+                                                    <input type="text" class="md" value="7001" /><span class="subTxt"
+                                                        >봇 #1</span
+                                                    >
+                                                </div>
+                                                <div class="row">
+                                                    <input type="text" class="md" value="7001" /><span class="subTxt"
+                                                        >봇 #1</span
+                                                    >
+                                                </div>
+                                                <div class="row">
+                                                    <input type="text" class="md" value="7001" /><span class="subTxt"
+                                                        >봇 #1</span
+                                                    >
+                                                </div>
+                                                <div class="row">
+                                                    <input type="text" class="md" value="7001" /><span class="subTxt"
+                                                        >봇 #1</span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+
+                            <!--오른쪽섹션-->
+                            <ul>
+                                <li style="margin-bottom: 48px">
+                                    <dl>
+                                        <dt class="accentTxt">채팅</dt>
+                                        <dd class="flex jcB">
+                                            <div class="inputBox">
+                                                <div class="row left">
+                                                    <input type="text" class="md ar" value="120" /><span class="subTxt"
+                                                        >총 사용자수</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="formBox">
+                                                <div class="toggleBtnset">
+                                                    <input type="checkbox" id="toggle2" class="toggle" checked />
+                                                    <label for="toggle2" class="toggleSlide">
+                                                        <span class="togBtn"></span>
+                                                    </label>
+                                                    <div class="toggleLabel">사용중</div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>CTI</dt>
+                                        <dd>
+                                            <div class="formBox">
+                                                <select class="md">
+                                                    <option>SIP 정보</option>
+                                                </select>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>PDS</dt>
+                                        <dd>
+                                            <div class="formBox">
+                                                <select class="md">
+                                                    <option>넥서스 PDS 정보</option>
+                                                </select>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>메모</dt>
+                                        <dd>
+                                            <div class="formBox">
+                                                <textarea
+                                                    style="height: 107px"
+                                                    placeholder="필요시 메모를 입력하세요."
+                                                ></textarea>
+                                            </div>
+                                            <div class="formBox jcB mt12">
+                                                <div class="sm outline stateLabel">챗봇 : <span>미사용</span></div>
+                                                <div class="sm outline stateLabel active">
+                                                    채팅 : <span>사용(총 120명)</span>
+                                                </div>
+                                                <div class="sm outline stateLabel active">
+                                                    콜봇 : <span>사용(3대)</span>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="btnArea right">
+                            <a href="/" class="btn md outline">취소</a>
+                            <a href="/" class="btn md primary">생성</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div id="dim"></div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('#dim').fadeIn('fast');
+            });
+        </script>
+    </body>
+</html>

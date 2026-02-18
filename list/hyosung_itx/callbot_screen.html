@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376639054"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376639054" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376639054" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376639054" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376639054" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376639054" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376639054"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376639054"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376639054"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376639054"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376639054"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376639054"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376639054"></script>
+        <script src="./assets/js/lib/script.js?t=1771376639054"></script>
+        <script src="./assets/js/common.js?t=1771376639054"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="callBot">
+            <div class="logoWrap flex">
+                <h1 class="mr40">
+                    <a href="/index.html"><img src="./assets/img/img-logo-w.svg" alt="HYOSUNG ITX" /></a>
+                </h1>
+                <div class="headerNav">
+                    <ul>
+                        <li><a href="#none">챗봇</a></li>
+                        <li><a href="#none">채팅상담</a></li>
+                        <li class="active"><a href="#none">콜봇</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setWrap">
+                <div class="setBtn">
+                    <a href="#none">
+                        <i class="ico icoSet">설정</i>
+                        <span>환경설정</span>
+                    </a>
+                </div>
+                <div class="counselBtn">
+                    <a href="#none">
+                        <div class="userImg">
+                            <img src="./assets/img/img-user-man.svg" alt="사용자" />
+                            <span class="dote wait"></span>
+                        </div>
+                        <span>상담대기</span>
+                        <i class="ico icoArrDown">화살표</i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <!-- nav -->
+            <nav id="nav" class="dropdown cf callBot">
+                <ul class="navList dropdown menu">
+                    <li>
+                        <a href="" class="active">
+                            <i class="ico icoDash">대시보드</i>
+                            <div>대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoWrite">시나리오</i>
+                            <div>시나리오 작성</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoBulb">전구</i>
+                            <div>학습(모델빌드)</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoSharing">배포</i>
+                            <div>배포</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoDictionary">사전</i>
+                            <div>사전관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoMessage">메세지</i>
+                            <div>메세지 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoIntegration">연동</i>
+                            <div>연동설정</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoCustomer">정보</i>
+                            <div>고객정보</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoInbound">인바운드</i>
+                            <div>인바운드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoOutbound">아웃바운드</i>
+                            <div>아웃바운드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoCallhistory">기록</i>
+                            <div>콜기록</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoStati">통계</i>
+                            <div>통계</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoClock">배치</i>
+                            <div>배치</div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="panelBtn">
+                    <i class="ico icoArrRight">오른쪽 화살표</i>
+                </button>
+            </nav>
+            <!--// nav -->
+
+            <div id="contents" class="flex jcB fdC gap12 chat callBotType">
+                <div class="titWrap">
+                    <h3>콜봇 대시보드</h3>
+                </div>
+                <div class="innerWrap flex jcS gap12 innerHover" style="height: 13%">
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>힌트번호</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea jcE">
+                            <div class="countBox type2">
+                                <div class="lA">
+                                    <i class="ico icoTelPer">전화</i>
+                                </div>
+                                <div class="rA"><strong>02-1234-5678</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>할당된 로봇</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea jcE">
+                            <div class="countBox type2">
+                                <div class="lA">
+                                    <i class="ico icoRobotPer">로봇</i>
+                                </div>
+                                <div class="rA"><strong>40</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>사용 중인 봇수</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea jcE">
+                            <div class="countBox type2">
+                                <div class="lA">
+                                    <i class="ico icoRefreshPer">리프레시</i>
+                                </div>
+                                <div class="rA"><strong>28</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>사용 가능한 봇수</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea jcE">
+                            <div class="countBox type2">
+                                <div class="lA">
+                                    <i class="ico icoCheckPer">체크</i>
+                                </div>
+                                <div class="rA"><strong>12</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerWrap flex jcB gap12">
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>테넌트 목록</h3>
+                            </div>
+                            <div class="btnBox">
+                                <a href="/" class="btn outline md">
+                                    <i class="ico icoDown">엑셀</i>
+                                    <span>엑셀다운로드</span>
+                                </a>
+                                <a href="/" class="btn purple md">등록</a>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <!-- 검색 영역 -->
+                            <div class="searchBox">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>조회날짜</dt>
+                                            <dd>
+                                                <div class="datepickerWrap" style="width: 278px">
+                                                    <div>
+                                                        <input type="text" value="2025-01-22" class="datepicker md" />
+                                                    </div>
+                                                    <span>-</span>
+                                                    <div>
+                                                        <input type="text" value="2025-01-23" class="datepicker md" />
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>상태</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md">
+                                                        <option>상태</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>진행률</dt>
+                                            <dd>
+                                                <div class="formArea">
+                                                    <select class="md">
+                                                        <option>진행률</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div class="searchBtn type2">
+                                            <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                                            <button class="btn sm outline">
+                                                <i class="icon icon-search">검색 아이콘</i>
+                                                <span>검색</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 테이블 영역 -->
+                            <div class="tblBox">
+                                <div class="tblList">
+                                    <table>
+                                        <caption>
+                                            캠페인 리더보드
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 40px" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    캠페인명<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                                <th>
+                                                    시나리오 노드명<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                                <th>
+                                                    진행률<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    발/연(오늘)<button type="button" class="ico icoSorting">
+                                                        오름차순
+                                                    </button>
+                                                </th>
+                                                <th>
+                                                    성공률<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    상태<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    등록일<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    등록자<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                                <th>
+                                                    액션<button type="button" class="ico icoSorting">오름차순</button>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </td>
+                                                <td>9월 캠페인 사전안내</td>
+                                                <td>기압유도_v3/노드A</td>
+                                                <td>
+                                                    <div class="progress-container">
+                                                        <div class="progress-bar" data-value="100"></div>
+                                                        <div class="progress-value">100%</div>
+                                                    </div>
+                                                </td>
+                                                <td>1,240 / 630</td>
+                                                <td>50.8%</td>
+                                                <td><div class="outline stateLabel green">완료</div></td>
+                                                <td>2025.09.19</td>
+                                                <td>홍길동</td>
+                                                <td class="actionBtn">
+                                                    <button type="button" class="btn outline">
+                                                        <i class="ico icoPause">일시정지</i>
+                                                    </button>
+                                                    <button type="button" class="btn outline on">
+                                                        <i class="ico icoPlay">플레이</i>
+                                                    </button>
+                                                    <button type="button" class="btn outline">
+                                                        <i class="ico icoStop">정지</i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </td>
+                                                <td>9월 캠페인 사전안내</td>
+                                                <td>기압유도_v3/노드A</td>
+                                                <td>
+                                                    <div class="progress-container">
+                                                        <div class="progress-bar" data-value="60"></div>
+                                                        <div class="progress-value">60%</div>
+                                                    </div>
+                                                </td>
+                                                <td>1,240 / 630</td>
+                                                <td>50.8%</td>
+                                                <td><div class="outline stateLabel blue">진행</div></td>
+                                                <td>2025.09.19</td>
+                                                <td>홍길동</td>
+                                                <td class="actionBtn">
+                                                    <button type="button" class="btn outline">
+                                                        <i class="ico icoPause">일시정지</i>
+                                                    </button>
+                                                    <button type="button" class="btn outline on">
+                                                        <i class="ico icoPlay">플레이</i>
+                                                    </button>
+                                                    <button type="button" class="btn outline">
+                                                        <i class="ico icoStop">정지</i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </td>
+                                                <td>9월 캠페인 사전안내</td>
+                                                <td>기압유도_v3/노드A</td>
+                                                <td>
+                                                    <div class="progress-container">
+                                                        <div class="progress-bar" data-value="40"></div>
+                                                        <div class="progress-value">40%</div>
+                                                    </div>
+                                                </td>
+                                                <td>1,240 / 630</td>
+                                                <td>50.8%</td>
+                                                <td><div class="outline stateLabel yellow">중지</div></td>
+                                                <td>2025.09.19</td>
+                                                <td>홍길동</td>
+                                                <td class="actionBtn">
+                                                    <button type="button" class="btn outline">
+                                                        <i class="ico icoPause">일시정지</i>
+                                                    </button>
+                                                    <button type="button" class="btn outline on">
+                                                        <i class="ico icoPlay">플레이</i>
+                                                    </button>
+                                                    <button type="button" class="btn outline">
+                                                        <i class="ico icoStop">정지</i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </td>
+                                                <td>9월 캠페인 사전안내</td>
+                                                <td>기압유도_v3/노드A</td>
+                                                <td>
+                                                    <div class="progress-container">
+                                                        <div class="progress-bar" data-value="20"></div>
+                                                        <div class="progress-value">20%</div>
+                                                    </div>
+                                                </td>
+                                                <td>1,240 / 630</td>
+                                                <td>50.8%</td>
+                                                <td><div class="outline stateLabel gray">대기</div></td>
+                                                <td>2025.09.19</td>
+                                                <td>홍길동</td>
+                                                <td class="actionBtn">
+                                                    <button type="button" class="btn outline">
+                                                        <i class="ico icoPause">일시정지</i>
+                                                    </button>
+                                                    <button type="button" class="btn outline on">
+                                                        <i class="ico icoPlay">플레이</i>
+                                                    </button>
+                                                    <button type="button" class="btn outline">
+                                                        <i class="ico icoStop">정지</i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </td>
+                                                <td>9월 캠페인 사전안내</td>
+                                                <td>기압유도_v3/노드A</td>
+                                                <td>
+                                                    <div class="progress-container">
+                                                        <div class="progress-bar" data-value="0"></div>
+                                                        <div class="progress-value">0%</div>
+                                                    </div>
+                                                </td>
+                                                <td>1,240 / 630</td>
+                                                <td>50.8%</td>
+                                                <td><div class="outline stateLabel red">에러</div></td>
+                                                <td>2025.09.19</td>
+                                                <td>홍길동</td>
+                                                <td class="actionBtn">
+                                                    <button type="button" class="btn outline">
+                                                        <i class="ico icoPause">일시정지</i>
+                                                    </button>
+                                                    <button type="button" class="btn outline on">
+                                                        <i class="ico icoPlay">플레이</i>
+                                                    </button>
+                                                    <button type="button" class="btn outline">
+                                                        <i class="ico icoStop">정지</i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 페이지네이션 -->
+                            <!-- pagination -->
+                            <div id="paginationWrap">
+                                <ul>
+                                    <li class="first"><a href="#" class="btn xs outline">처음으로</a></li>
+                                    <li class="prev"><a href="#" class="btn xs outline">이전으로</a></li>
+                                    <li class="pageInput">
+                                        <input type="number" class="sm" min="1" value="1" />
+                                        <span class="dash">/</span>
+                                        <span class="totalPage">50</span>
+                                    </li>
+                                    <li class="next"><a href="#" class="btn xs outline">다음으로</a></li>
+                                    <li class="last"><a href="#" class="btn xs outline">마지막으로</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="total">전체<span>1,000</span>건 중<span>1~20</span>건</li>
+                                    <li class="perPageSelect">
+                                        <select class="sm">
+                                            <option value="50">페이지당 50</option>
+                                            <option value="100">페이지당 100</option>
+                                            <option value="150">페이지당 150</option>
+                                            <option value="200">페이지당 200</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--// pagination -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

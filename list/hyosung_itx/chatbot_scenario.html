@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376639650"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376639650" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376639650" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376639650" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376639650" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376639650" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376639650"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376639650"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376639650"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376639650"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376639650"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376639650"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376639650"></script>
+        <script src="./assets/js/lib/script.js?t=1771376639650"></script>
+        <script src="./assets/js/common.js?t=1771376639650"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="chatBot">
+            <div class="logoWrap flex">
+                <h1 class="mr40">
+                    <a href="/index.html"><img src="./assets/img/img-logo-w.svg" alt="HYOSUNG ITX" /></a>
+                </h1>
+                <div class="headerNav">
+                    <ul>
+                        <li class="active"><a href="#none">챗봇</a></li>
+                        <li><a href="#none">채팅상담</a></li>
+                        <li><a href="#none">콜봇</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setWrap">
+                <div class="setBtn">
+                    <a href="#none">
+                        <i class="ico icoSet">설정</i>
+                        <span>환경설정</span>
+                    </a>
+                </div>
+                <div class="counselBtn">
+                    <a href="#none">
+                        <div class="userImg">
+                            <img src="./assets/img/img-user-man.svg" alt="사용자" />
+                            <span class="dote wait"></span>
+                        </div>
+                        <span>상담대기</span>
+                        <i class="ico icoArrDown">화살표</i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <!-- nav -->
+            <nav id="nav" class="dropdown cf chatBot">
+                <ul class="navList dropdown menu">
+                    <li>
+                        <a href="" class="active">
+                            <i class="ico icoDash">대시보드</i>
+                            <div>대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoWrite">시나리오</i>
+                            <div>시나리오 작성</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoBulb">전구</i>
+                            <div>학습(모델빌드)</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoSharing">배포</i>
+                            <div>배포</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoStati">통계</i>
+                            <div>통계</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoCounselor">사전</i>
+                            <div>사전관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoMessage">메세지</i>
+                            <div>메세지 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoClock">배치</i>
+                            <div>배치</div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="panelBtn">
+                    <i class="ico icoArrRight">오른쪽 화살표</i>
+                </button>
+            </nav>
+            <!--// nav -->
+
+            <div id="contents" class="flex jcB fdC gap12 chat chatBotType">
+                <div class="titWrap">
+                    <h3>새 시나리오</h3>
+                    <div class="infoBox ml12 aiC">
+                        <i class="ico icoInfoG">정보</i>AI 추천 분류와 상담사 선택 분류의 일치율입니다.
+                    </div>
+                </div>
+                <div class="innerWrap flex jcS gap12">
+                    <div class="inner">
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <div class="formArea doteLine pb16 mb16">
+                                <ul>
+                                    <li class="gap24">
+                                        <dl>
+                                            <dt>시나리오 제목<span class="req">*</span></dt>
+                                            <dd>
+                                                <div class="inputBox">
+                                                    <input
+                                                        type="text"
+                                                        class="md"
+                                                        value=""
+                                                        placeholder="예) 환불/취소 처리 시나리오처럼 서비스/업무가 잘 드러나게 간단히 써주세요."
+                                                    />
+                                                </div>
+                                                <div class="reqTxt disHide">시나리오 제목이 중복됩니다.</div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>시나리오 설명</dt>
+                                            <dd>
+                                                <div class="inputBox">
+                                                    <textarea
+                                                        style="height: 100px"
+                                                        placeholder="예) 고객 환불 및 주문 취소 요청 처리 시나리오처럼 목적과 범위를 간단히 요약해 주세요.(3~5줄 권장)"
+                                                    ></textarea>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea noBorder noPadding">
+                                <div class="btnBox">
+                                    <button type="button" class="btn md outline">
+                                        <i class="ico icoPlus">추가</i>Intent 추가
+                                    </button>
+                                    <button type="button" class="btn md outline">
+                                        <i class="ico icoPlus">추가</i>Entity 추가
+                                    </button>
+                                    <button type="button" class="btn md outline">
+                                        <i class="ico icoPlus">추가</i>Metadata 추가
+                                    </button>
+                                </div>
+                                <div class="btnBox">
+                                    <button type="button" class="btn md outline">
+                                        <i class="ico icoDown">다운로드</i>엑셀 다운로드
+                                    </button>
+                                    <button type="button" class="btn md outline">
+                                        <i class="ico icoUplode">업로드</i>엑셀 업로드
+                                    </button>
+                                    <button type="button" class="btn md outline fcBlue">
+                                        <i class="ico icoPlusB">추가</i>행 추가
+                                    </button>
+                                    <button type="button" class="btn md outline fcRed">
+                                        <i class="ico icoDelRed mr6">삭제</i>행 삭제
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- 테이블 영역 -->
+                            <div class="tblBox">
+                                <div class="tblList">
+                                    <table>
+                                        <caption>
+                                            고객서비스 1-1팀
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width: 40px" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: auto" />
+                                            <col style="width: 15%" />
+                                            <col style="width: 30%" />
+                                            <col style="width: 20%" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" />
+                                                    </div>
+                                                </th>
+                                                <th>Intent1</th>
+                                                <th>Intent2</th>
+                                                <th>Entity1</th>
+                                                <th>Metadata1</th>
+                                                <th>Request</th>
+                                                <th>Guide_prompt</th>
+                                                <th>SOP</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="formArea">
+                                                        <input type="checkbox" id="test" checked />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="inputBox">
+                                                        <input type="text" class="sm" value="service" />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="inputBox">
+                                                        <input type="text" class="sm" value="service2" />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="inputBox">
+                                                        <input type="text" class="sm" value="주문번호" />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="inputBox">
+                                                        <input type="text" class="sm" value="채널=웹" />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="inputBox">
+                                                        <input type="text" class="sm" value="주문 환불을 신청합니다." />
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="inputBox">
+                                                        <input
+                                                            type="text"
+                                                            class="sm"
+                                                            value="주문번호 확인 → 환불 가능 여부 조회 → 고객안내"
+                                                        />
+                                                        <button type="button" class="btn sm outline pl4 pr4">
+                                                            <i class="ico icoLink">삭제</i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="inputBox">
+                                                        <input type="text" class="sm" value="환불 처리 SOP v1" />
+                                                        <button type="button" class="btn sm outline pl4 pr4">
+                                                            <i class="ico icoLink">삭제</i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- 페이지네이션 -->
+                            <!-- pagination -->
+                            <div id="paginationWrap">
+                                <ul>
+                                    <li class="first"><a href="#" class="btn xs outline">처음으로</a></li>
+                                    <li class="prev"><a href="#" class="btn xs outline">이전으로</a></li>
+                                    <li class="pageInput">
+                                        <input type="number" class="sm" min="1" value="1" />
+                                        <span class="dash">/</span>
+                                        <span class="totalPage">50</span>
+                                    </li>
+                                    <li class="next"><a href="#" class="btn xs outline">다음으로</a></li>
+                                    <li class="last"><a href="#" class="btn xs outline">마지막으로</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="total">전체<span>1,000</span>건 중<span>1~20</span>건</li>
+                                    <li class="perPageSelect">
+                                        <select class="sm">
+                                            <option value="50">페이지당 50</option>
+                                            <option value="100">페이지당 100</option>
+                                            <option value="150">페이지당 150</option>
+                                            <option value="200">페이지당 200</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--// pagination -->
+
+                            <div class="btnArea right borderTop">
+                                <a href="/" class="btn md outline">취소</a>
+                                <a href="/" class="btn md green">저장</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

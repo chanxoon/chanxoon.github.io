@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376639038"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376639038" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376639038" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376639038" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376639038" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376639038" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376639038"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376639038"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376639038"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376639038"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376639038"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376639038"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376639038"></script>
+        <script src="./assets/js/lib/script.js?t=1771376639038"></script>
+        <script src="./assets/js/common.js?t=1771376639038"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="chatBot">
+            <div class="logoWrap flex">
+                <h1 class="mr40">
+                    <a href="/index.html"><img src="./assets/img/img-logo-w.svg" alt="HYOSUNG ITX" /></a>
+                </h1>
+                <div class="headerNav">
+                    <ul>
+                        <li class="active"><a href="#none">챗봇</a></li>
+                        <li><a href="#none">채팅상담</a></li>
+                        <li><a href="#none">콜봇</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setWrap">
+                <div class="setBtn">
+                    <a href="#none">
+                        <i class="ico icoSet">설정</i>
+                        <span>환경설정</span>
+                    </a>
+                </div>
+                <div class="counselBtn">
+                    <a href="#none">
+                        <div class="userImg">
+                            <img src="./assets/img/img-user-man.svg" alt="사용자" />
+                            <span class="dote wait"></span>
+                        </div>
+                        <span>상담대기</span>
+                        <i class="ico icoArrDown">화살표</i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <!-- nav -->
+            <nav id="nav" class="dropdown cf chatBot">
+                <ul class="navList dropdown menu">
+                    <li>
+                        <a href="" class="active">
+                            <i class="ico icoDash">대시보드</i>
+                            <div>대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoWrite">시나리오</i>
+                            <div>시나리오 작성</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoBulb">전구</i>
+                            <div>학습(모델빌드)</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoSharing">배포</i>
+                            <div>배포</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoStati">통계</i>
+                            <div>통계</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoCounselor">사전</i>
+                            <div>사전관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoMessage">메세지</i>
+                            <div>메세지 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoClock">배치</i>
+                            <div>배치</div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="panelBtn">
+                    <i class="ico icoArrRight">오른쪽 화살표</i>
+                </button>
+            </nav>
+            <!--// nav -->
+
+            <div id="contents" class="flex jcB fdC gap12 chat chatBotType">
+                <div class="titWrap">
+                    <h3>챗봇 모델 빌드</h3>
+                </div>
+                <div class="innerWrap flex gap12">
+                    <div class="inner" style="width: 30%">
+                        <div class="row borderBot" style="height: 25%">
+                            <div class="resultBox">
+                                <i class="ico icoCheckCir">체크</i>
+                                <h3>빌드가 완료되었습니다.</h3>
+                                <p>노드가 활성화되어 실시간 트래픽을 수신할 준비가 되었습니다.</p>
+                            </div>
+                        </div>
+                        <div class="row borderBot" style="height: 25%">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea">
+                                <div class="titBox flex">
+                                    <h3>빌드 요약</h3>
+                                </div>
+                            </div>
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea">
+                                <div class="listBox">
+                                    <ul>
+                                        <li>
+                                            <div class="tit">Agentic-AI 노드이름</div>
+                                            <div class="con">주문 조회 노드</div>
+                                        </li>
+                                        <li>
+                                            <div class="tit">LLIM</div>
+                                            <div class="con"><span class="stateLabel type2 green">GPT-4o</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="tit">RAG</div>
+                                            <div class="con"><span class="stateLabel type2 green">Milvus</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="tit">빌드시간</div>
+                                            <div class="con">2025.08.22 14:31:12</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row borderBot" style="height: 25%">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea">
+                                <div class="titBox flex">
+                                    <h3>빌드 로그</h3>
+                                </div>
+                            </div>
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea">
+                                <div class="listBox">
+                                    <ul>
+                                        <li>
+                                            <div class="tit accent">트래픽 전환 완료</div>
+                                            <div class="dat">2025.08.20 09:40:24</div>
+                                        </li>
+                                        <li>
+                                            <div class="tit accent">헬스체크 통과</div>
+                                            <div class="dat">2025.08.20 09:40:24</div>
+                                        </li>
+                                        <li>
+                                            <div class="tit accent">이미지 푸시 완료</div>
+                                            <div class="dat">2025.08.20 09:40:24</div>
+                                        </li>
+                                        <li>
+                                            <div class="tit accent">빌드 성공</div>
+                                            <div class="dat">2025.08.20 09:40:24</div>
+                                        </li>
+                                        <li>
+                                            <div class="tit accent">트래픽 전환 실패</div>
+                                            <div class="dat">2025.08.20 09:40:24</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="height: 25%">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea">
+                                <div class="titBox flex">
+                                    <h3>URL 앤드포인트</h3>
+                                </div>
+                            </div>
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea">
+                                <div class="linkPaste">
+                                    <input
+                                        type="text"
+                                        class="md"
+                                        value="https://api.example.com/agents/order-tracking"
+                                        aria-label="URL 입력"
+                                    />
+                                    <button type="button" class="btn md outlineGreen" aria-live="polite">
+                                        <i class="ico icoPaste">복사</i>복사
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner" style="width: 70%">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox flex">
+                                <h3>지식그래프</h3>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <div class="chartBox" style="height: 100%">차트영역</div>
+                            <div class="btnArea right borderTop">
+                                <a href="" class="btn md outline">빌드홈</a>
+                                <a href="" class="btn md green">시뮬레이션</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

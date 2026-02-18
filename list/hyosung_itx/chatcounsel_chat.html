@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376639737"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376639737" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376639737" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376639737" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376639737" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376639737" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376639737"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376639737"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376639737"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376639737"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376639737"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376639737"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376639737"></script>
+        <script src="./assets/js/lib/script.js?t=1771376639737"></script>
+        <script src="./assets/js/common.js?t=1771376639737"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header id="header" class="chatCounsel">
+            <div class="logoWrap flex">
+                <h1 class="mr40">
+                    <a href="/index.html"><img src="./assets/img/img-logo-w.svg" alt="HYOSUNG ITX" /></a>
+                </h1>
+                <div class="headerNav">
+                    <ul>
+                        <li><a href="#none">챗봇</a></li>
+                        <li class="active"><a href="#none">채팅상담</a></li>
+                        <li><a href="#none">콜봇</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setWrap">
+                <div class="setBtn">
+                    <a href="#none">
+                        <i class="ico icoSet">설정</i>
+                        <span>환경설정</span>
+                    </a>
+                </div>
+                <div class="counselBtn">
+                    <a href="#none">
+                        <div class="userImg">
+                            <img src="./assets/img/img-user-man.svg" alt="사용자" />
+                            <span class="dote wait"></span>
+                        </div>
+                        <span>상담대기</span>
+                        <i class="ico icoArrDown">화살표</i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <!-- nav -->
+            <nav id="nav" class="dropdown cf chatCounsel">
+                <ul class="navList dropdown menu">
+                    <li>
+                        <a href="" class="active">
+                            <i class="ico icoDash">대시보드</i>
+                            <div>대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoScreen">상담화면</i>
+                            <div>상담화면</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoManage">상담관리</i>
+                            <div>상담관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoHistory">상담이력조회</i>
+                            <div>상담이력조회</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoStati">통계</i>
+                            <div>통계</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoCounselor">상담사 & 팀 관리</i>
+                            <div>상담사 & 팀 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoDictionary">사전관리</i>
+                            <div>사전관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoMessage">메세지 관리</i>
+                            <div>메세지 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="ico icoClock">배치</i>
+                            <div>배치</div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="panelBtn">
+                    <i class="ico icoArrRight">오른쪽 화살표</i>
+                </button>
+            </nav>
+            <!--// nav -->
+
+            <div id="contents" class="flex jcB gap12">
+                <div class="innerWrap" style="width: 100%; max-width: 640px; margin: 0 auto">
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <div class="timerWrap">
+                                    <div class="thum type2">
+                                        <img src="/assets/img/img-counselor.png" alt="상담사" />
+                                    </div>
+                                    <div class="id">홍길동</div>
+                                </div>
+                            </div>
+                            <div class="btnBox">
+                                <div class="state progress">
+                                    <div class="dote"></div>
+                                    <div class="txt">진행중</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea noPadding">
+                            <div class="chatWrap type2">
+                                <div class="chatBody">
+                                    <div class="chatDate">2025.09.17</div>
+
+                                    <div class="chatMsg user">
+                                        <div class="time"><strong class="name">홍길동</strong> 13:31</div>
+                                        <div class="bubble">
+                                            안녕하세요, 지난 인보이스에서 중복청구가 있었습니다. 도와주실 수 있나요?
+                                        </div>
+                                    </div>
+
+                                    <div class="chatMsg agent">
+                                        <div class="time">13:31</div>
+                                        <div class="bubble">
+                                            물론입니다. 사용하신 카드의 마지막 4자리를 알려주실 수 있나요?
+                                        </div>
+                                    </div>
+
+                                    <div class="chatMsg user">
+                                        <div class="time"><strong class="name">홍길동</strong> 13:31</div>
+                                        <div class="bubble">
+                                            감사합니다. 거래 내역 확인 중입니다. 잠시만 기다려주세요.
+                                        </div>
+                                    </div>
+
+                                    <div class="chatMsg agent">
+                                        <div class="time">13:31</div>
+                                        <div class="bubble">네, 44210예요. 인보이스 번호는 INV-20394입니다.</div>
+                                    </div>
+                                </div>
+                                <div class="chatFoot">
+                                    <div class="inputBox">
+                                        <textarea placeholder="메시지를 입력하세요."></textarea>
+                                    </div>
+                                    <div class="chatBtns">
+                                        <button class="btn md blue sendBtn">
+                                            <i class="ico icoSend">보내기</i>보내기
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

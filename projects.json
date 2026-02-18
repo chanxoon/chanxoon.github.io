@@ -1,12 +1,25 @@
 {
-  "tabs": [
-    { "id": "all", "label": "전체" },
-    { "id": "company", "label": "회사 프로젝트" },
-    { "id": "operation", "label": "운영 프로젝트" }
+"tabs": [
+    { "id": "all", "label": "All" },
+    { "id": "si", "label": "SI Project" },
+    { "id": "finance", "label": "Finance" },
+    { "id": "brand", "label": "Brand" },
+    { "id": "operation", "label": "Operation" }
   ],
   "projects": [
     {
-      "type": "company",
+      "type": "brand",
+      "title": "다름 홈페이지 리뉴얼",
+      "desc": "다름 홈페이지 - UI/UX 퍼블리싱 / 2026.01 ~ 2026.02",
+      "stack": "HTML5 / SCSS / Javascript / Git / gulp / Figma",
+      "progressText": "참여도 100% / 작업자 1",
+      "progressValue": 100,
+      "image": "./assets/img/img-detail-list26.png",
+      "alt": "다름 홈페이지",
+      "link": "./list/darum2026/coding_list.html"
+    },
+    {
+      "type": "si",
       "title": "효성 ITX 드림시스템 프로젝트",
       "desc": "효성 ITX 드림시스템 - UI/UX 퍼블리싱 / 2025.11 ~ 2025.12",
       "stack": "HTML5 / SCSS / Javascript / Git / gulp / Figma",
@@ -17,7 +30,7 @@
       "link": "./list/dream_system/coding_list.html"
     },
     {
-      "type": "company",
+      "type": "si",
       "title": "신한라이프 QA 프로젝트",
       "desc": "신한라이프 QA 프로젝트 투입 - UI/UX 퍼블리싱 / 2025.04 ~ 2025.10",
       "stack": "HTML5 / CSS3 / Javascript / Git / Figma",
@@ -25,10 +38,10 @@
       "progressValue": 100,
       "image": "./assets/img/img-detail-list24.png",
       "alt": "신한라이프 QA프로젝트",
-      "link": "./list/dream_system/coding_list.html"
+      "link": ""
     },
     {
-      "type": "company",
+      "type": "si",
       "title": "효성 ITX 콜봇/챗봇 프로젝트",
       "desc": "효성 ITX 콜봇/챗봇 - UI/UX 퍼블리싱 / 2025.10 ~ 2025.11",
       "stack": "HTML5 / SCSS / Javascript / Git / gulp / Figma",
@@ -36,10 +49,10 @@
       "progressValue": 100,
       "image": "./assets/img/img-detail-list23.png",
       "alt": "효성 ITX 콜봇/챗봇",
-      "link": "./list/dream_system/coding_list.html"
+      "link": "./list/hyosung_itx/coding_list.html"
     },
     {
-      "type": "company",
+      "type": "finance",
       "title": "하나펀드 프로젝트",
       "desc": "하나펀드서비스 UI/UX 퍼블리싱 / 2025.4 ~ 2025.5",
       "stack": "HTML5 / SCSS / Javascript / Git / gulp / Figma",
@@ -50,7 +63,7 @@
       "link": "./list/hanafund/index.html"
     },
     {
-      "type": "company",
+      "type": "brand",
       "title": "에스원 프로젝트 (Storage)",
       "desc": "에스원 온라인 쇼룸 - UI/UX 퍼블리싱 / 2024.08 ~ 2024.09",
       "stack": "HTML5 / SCSS / Javascript / Git / Figma",
@@ -61,7 +74,7 @@
       "link": "./list/s1/dist/showroom/storage.html"
     },
     {
-      "type": "company",
+      "type": "brand",
       "title": "에스원 프로젝트 (Villa)",
       "desc": "에스원 온라인 쇼룸 - UI/UX 퍼블리싱 / 2024.08 ~ 2024.09",
       "stack": "HTML5 / SCSS / Javascript / Git / Figma",
@@ -72,7 +85,7 @@
       "link": "./list/s1/dist/showroom/villa.html"
     },
     {
-      "type": "company",
+      "type": "brand",
       "title": "가상실험실 프로젝트 (1)",
       "desc": "미래엔 중고등 교과서 가상실험실 퍼블리싱 - UI/UX 퍼블리싱 / 2024.09 ~ 2024.10",
       "stack": "HTML5 / SCSS / Javascript / Git / Figma",
@@ -83,7 +96,7 @@
       "link": "./list/virtuallab/dist/web/html/h_s12_232_130.html"
     },
     {
-      "type": "company",
+      "type": "brand",
       "title": "가상실험실 프로젝트 (2)",
       "desc": "미래엔 중고등 교과서 가상실험실 퍼블리싱 - UI/UX 퍼블리싱 / 2024.09 ~ 2024.10",
       "stack": "HTML5 / SCSS / Javascript / Git / Figma",
@@ -94,7 +107,7 @@
       "link": "./list/virtuallab/dist/web/html/h_s2_122_049.html"
     },
     {
-      "type": "company",
+      "type": "brand",
       "title": "HeyID 앱 프로젝트",
       "desc": "Heyid 전자신분증앱 - UI/UX 퍼블리싱 / 2023.09 ~ 2024.01",
       "stack": "HTML5 / CSS3 / Javascript / Photoshop",
@@ -105,7 +118,7 @@
       "link": "./list/heyid/pad/index.html"
     },
     {
-      "type": "company",
+      "type": "finance",
       "title": "KB공인전자문서센터 프로젝트",
       "desc": "KB공인전자문서 홈페이지 개발 투입 - UI/UX 퍼블리싱 / 2022.12 ~ 2023.02",
       "stack": "HTML5 / CSS3 / Javascript / Git / Figma",

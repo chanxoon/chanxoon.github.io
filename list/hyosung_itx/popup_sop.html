@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376640478"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376640478" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376640478" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376640478" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376640478" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376640478" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376640478"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376640478"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376640478"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376640478"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376640478"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376640478"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376640478"></script>
+        <script src="./assets/js/lib/script.js?t=1771376640478"></script>
+        <script src="./assets/js/common.js?t=1771376640478"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- popup -->
+            <div class="popup type2" style="max-width: 1000px">
+                <div class="popHead">
+                    <p class="popTitle">SOP 입력/불러오기</p>
+                    <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                </div>
+                <div class="popBody">
+                    <div class="inner">
+                        <div class="sopWrap">
+                            <div class="seaArea">
+                                <div class="searBox">
+                                    <div class="searchBtn type2">
+                                        <input type="text" class="md sea" placeholder="검색어를 입력해주세요" />
+                                        <button class="btn-md-outline">
+                                            <i class="icon icon-search">검색 아이콘</i>
+                                            <span>검색</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cardBox type3">
+                                    <ul>
+                                        <li class="on">
+                                            <div class="tit">
+                                                <div class="sub">환불 처리 SOP v1</div>
+                                                <div class="dat">2025.08.04</div>
+                                            </div>
+                                            <div class="con">
+                                                접수 → 주문 확인 → 환불 자격 판단 → 결제 취소 요청 → 고객 안내
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tit">
+                                                <div class="sub">VIP 클레임 대응</div>
+                                                <div class="dat">2025.08.04</div>
+                                            </div>
+                                            <div class="con">이관 기준 → 응대 톤/템플릿 → 해결 기한 → 후속 콜백</div>
+                                        </li>
+                                        <li>
+                                            <div class="tit">
+                                                <div class="sub">교환/반품 절차</div>
+                                                <div class="dat">2025.08.04</div>
+                                            </div>
+                                            <div class="con">신청 접수 → 택배 회수 → 검수 → 재발송/환급</div>
+                                        </li>
+                                        <li>
+                                            <div class="tit">
+                                                <div class="sub">환불 처리 SOP v1</div>
+                                                <div class="dat">2025.08.04</div>
+                                            </div>
+                                            <div class="con">
+                                                접수 → 주문 확인 → 환불 자격 판단 → 결제 취소 요청 → 고객 안내
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tit">
+                                                <div class="sub">배송 지연 커뮤니케이션</div>
+                                                <div class="dat">2025.08.04</div>
+                                            </div>
+                                            <div class="con">SLA 기준 → 지연 알림 주기 → 보상 가이드</div>
+                                        </li>
+                                        <li>
+                                            <div class="tit">
+                                                <div class="sub">국내 고객 SOP-01</div>
+                                                <div class="dat">2025.08.04</div>
+                                            </div>
+                                            <div class="con">용어 기준 → 개인정보 마스킹 → 감사 로그</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pagiBox">
+                                    <!-- 페이지네이션 -->
+                                    <!-- pagination -->
+                                    <div id="paginationWrap">
+                                        <ul>
+                                            <li class="first"><a href="#" class="btn xs outline">처음으로</a></li>
+                                            <li class="prev"><a href="#" class="btn xs outline">이전으로</a></li>
+                                            <li class="pageInput">
+                                                <input type="number" class="sm" min="1" value="1" />
+                                                <span class="dash">/</span>
+                                                <span class="totalPage">50</span>
+                                            </li>
+                                            <li class="next"><a href="#" class="btn xs outline">다음으로</a></li>
+                                            <li class="last"><a href="#" class="btn xs outline">마지막으로</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li class="total">전체<span>1,000</span>건 중<span>1~20</span>건</li>
+                                            <li class="perPageSelect">
+                                                <select class="sm">
+                                                    <option value="50">페이지당 50</option>
+                                                    <option value="100">페이지당 100</option>
+                                                    <option value="150">페이지당 150</option>
+                                                    <option value="200">페이지당 200</option>
+                                                </select>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--// pagination -->
+                                </div>
+                            </div>
+                            <div class="inpArea">
+                                <div class="titArea">
+                                    <div class="titBox flex aiC">
+                                        <h3>SOP</h3>
+                                        <div class="infoBox flex aiC ml8">
+                                            <i class="ico icoInfoG mb0">정보</i>SOP(Standard Operating Procedure)는
+                                            업무를 일관되게 수행하기 위한 표준 절차 문서입니다.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conArea">
+                                    <div class="inpBox">
+                                        <textarea
+                                            placeholder="단계, 조건(If/Else), 책임자(R&R), 체크리스트, 예외/에스컬레이션을 포함해 SOP를 작성해 주세요."
+                                        ></textarea>
+                                    </div>
+                                    <div class="exBox">
+                                        <h3><i class="ico icoInfo">정보</i>예시</h3>
+                                        <ul>
+                                            <li>
+                                                환불 처리 SOP v1 : 접수 → 주문 확인 → 환불 자격 판단 → 결제 취소 요청 →
+                                                고객 안내
+                                            </li>
+                                            <li>
+                                                VIP 클레임 대응 : 이관 기준 → 응대 톤/템플릿 → 해결 기한 → 후속 콜백
+                                            </li>
+                                            <li>교환/반품 절차 : 신청 접수 → 택배 회수 → 검수 → 재발송/환급</li>
+                                            <li>배송 지연 커뮤니케이션 : SLA 기준 → 지연 알림 주기 → 보상 가이드</li>
+                                            <li>국내 고객 SOP-01 : 용어 기준 → 개인정보 마스킹 → 감사 로그</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btnArea right">
+                            <a href="" class="btn md outline"><i class="ico icoRefreshB mr4">초기화</i>초기화</a>
+                            <a href="" class="btn md green">저장</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div id="dim"></div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('#dim').fadeIn('fast');
+            });
+        </script>
+    </body>
+</html>

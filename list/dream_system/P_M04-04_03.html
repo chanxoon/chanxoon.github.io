@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376091217" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376091217" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-confirm.css?t=1771376091217" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jqgrid-ui.css?t=1771376091217" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jstree.min.css?t=1771376091217" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/qtip.css?t=1771376091217" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/timepicker.min.css?t=1771376091217" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376091217" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376091217" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376091217"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376091217"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376091217"></script>
+        <script src="./assets/js/lib/iscroll.min.js?t=1771376091217"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376091217"></script>
+        <script src="./assets/js/lib/jquery-confirm.js?t=1771376091217"></script>
+        <script src="./assets/js/lib/jqgrid-4.15.5.js?t=1771376091217"></script>
+        <script src="./assets/js/lib/jstree.min.js?t=1771376091217"></script>
+        <script src="./assets/js/lib/qtip-3.0.3.js?t=1771376091217"></script>
+        <script src="./assets/js/lib/blockUI-2.70.js?t=1771376091217"></script>
+        <script src="./assets/js/lib/fullcalendar.min.js?t=1771376091217"></script>
+        <script src="./assets/js/lib/timepicker.min.js?t=1771376091217"></script>
+        <script src="./assets/js/common.js?t=1771376091217"></script>
+        <title>DREAM SYSTEM</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- popup -->
+            <div class="popWrap tblSingle" style="max-width: 1024px">
+                <div class="popHead">
+                    <p class="popTitle">예약관리 SMS 전송</p>
+                    <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                </div>
+                <div class="popBody">
+                    <div class="inner">
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>SMS 내용</h4>
+                            </div>
+                        </div>
+                        <!-- 테이블 영역 -->
+                        <div class="tblForm type1">
+                            <table>
+                                <caption>
+                                    SMS 내용
+                                </caption>
+                                <colgroup>
+                                    <col style="width: 100px" />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th class="al">유형</th>
+                                        <td class="al">
+                                            <div class="formArea pt8 pb8 fwW">
+                                                <div>
+                                                    <input
+                                                        type="radio"
+                                                        id="radio0101"
+                                                        name="radio01"
+                                                        checked=""
+                                                    /><label for="radio0101">인사말</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="radio0102" name="radio01" /><label
+                                                        for="radio0102"
+                                                        >예약 안내</label
+                                                    >
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="radio0103" name="radio01" /><label
+                                                        for="radio0103"
+                                                        >매장확인</label
+                                                    >
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="radio0104" name="radio01" /><label
+                                                        for="radio0104"
+                                                        >취소처리안내</label
+                                                    >
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="radio0105" name="radio01" /><label
+                                                        for="radio0105"
+                                                        >직접입력</label
+                                                    >
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="al">내용</th>
+                                        <td class="al">
+                                            <div class="inputArea pt10 pb10">
+                                                <textarea></textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="al">받는사람</th>
+                                        <td class="al">010-1234-1234</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="al">보내는 사람</th>
+                                        <td class="al">
+                                            <div class="inputArea">
+                                                <input
+                                                    type="text"
+                                                    class="md"
+                                                    placeholder="'-' 없이 숫자로 입력하세요"
+                                                    value="010-1234-1234"
+                                                />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--
+                            <div class="noResult">
+                                <div class="innerResult">
+                                    <div class="resultTxt"><i class="ico icoWarningTri">데이터없음</i> 조회된 결과가 없습니다.</div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                        <div class="btnArea right">
+                            <a href="#none" class="btn lg primary-80">저장</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div id="dim"></div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('#dim').fadeIn('fast');
+            });
+        </script>
+    </body>
+</html>

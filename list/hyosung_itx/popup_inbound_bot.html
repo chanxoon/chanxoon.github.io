@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376640482"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376640482" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376640482" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376640482" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376640482" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376640482" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376640482"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376640482"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376640482"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376640482"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376640482"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376640482"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376640482"></script>
+        <script src="./assets/js/lib/script.js?t=1771376640482"></script>
+        <script src="./assets/js/common.js?t=1771376640482"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- popup -->
+            <div class="popup type2 callBotType" style="max-width: 900px">
+                <div class="popHead">
+                    <p class="popTitle">인바운드 봇 생성</p>
+                    <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                </div>
+                <div class="popBody">
+                    <div class="inner">
+                        <div class="popSec">
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea">
+                                <div class="formArea">
+                                    <ul>
+                                        <li class="gap24">
+                                            <dl>
+                                                <dt>콜봇 이름</dt>
+                                                <dd>
+                                                    <div class="formBox">
+                                                        <select class="md">
+                                                            <option>선택</option>
+                                                        </select>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>사내번호</dt>
+                                                <dd>
+                                                    <div class="formBox">
+                                                        <select class="md">
+                                                            <option>선택</option>
+                                                        </select>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popSec">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea">
+                                <div class="titBox flex">
+                                    <h3>SIP 정보 입력</h3>
+                                </div>
+                            </div>
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea">
+                                <div class="formArea">
+                                    <ul class="minNone">
+                                        <li class="gap24">
+                                            <dl>
+                                                <dt>SIP 서버</dt>
+                                                <dd>
+                                                    <div class="inputBox">
+                                                        <input
+                                                            type="text"
+                                                            class="md"
+                                                            placeholder="예 : sip.company.com"
+                                                        />
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl style="width: 140px">
+                                                <dt>포트</dt>
+                                                <dd>
+                                                    <div class="inputBox">
+                                                        <input type="text" class="md" placeholder="예 : 5060" />
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>DID(고객 발신번호)</dt>
+                                                <dd>
+                                                    <div class="inputBox">
+                                                        <input
+                                                            type="text"
+                                                            class="md"
+                                                            placeholder="예 : 021234567(번호만 입력)"
+                                                        />
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popSec">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea">
+                                <div class="titBox flex">
+                                    <h3>연결 시나리오 노드 선택</h3>
+                                    <div class="infoBox ml12 aiC">
+                                        <i class="ico icoInfoG mb0">정보</i>하나의 봇에는 하나의 시나리오 노드만 선택할
+                                        수 있습니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea">
+                                <!-- 테이블 영역 -->
+                                <div class="tblBox">
+                                    <div class="tblList" style="min-height: 150px">
+                                        <table>
+                                            <caption>
+                                                연결 시나리오 노드 선택
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width: 40px" />
+                                                <col style="width: 25%" />
+                                                <col style="width: auto" />
+                                                <col style="width: auto" />
+                                                <col style="width: auto" />
+                                                <col style="width: auto" />
+                                                <col style="width: auto" />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <div class="formArea">
+                                                            <input type="checkbox" id="test" />
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        시나리오명
+                                                        <button type="button" class="ico icoSorting">오름차순</button>
+                                                    </th>
+                                                    <th>
+                                                        LLM
+                                                        <button type="button" class="ico icoSorting">오름차순</button>
+                                                    </th>
+                                                    <th>
+                                                        RAG
+                                                        <button type="button" class="ico icoSorting">오름차순</button>
+                                                    </th>
+                                                    <th>
+                                                        버전
+                                                        <button type="button" class="ico icoSorting">오름차순</button>
+                                                    </th>
+                                                    <th>
+                                                        빌드업
+                                                        <button type="button" class="ico icoSorting">오름차순</button>
+                                                    </th>
+                                                    <th>
+                                                        수정일
+                                                        <button type="button" class="ico icoSorting">오름차순</button>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="formArea">
+                                                            <input type="checkbox" id="test" checked />
+                                                        </div>
+                                                    </td>
+                                                    <td class="al">초기응대 시나리오</td>
+                                                    <td>GPT-4o</td>
+                                                    <td>사용</td>
+                                                    <td>v1.3.2</td>
+                                                    <td>2025.07.15</td>
+                                                    <td>2025.08.22</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popSec">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea">
+                                <div class="titBox flex">
+                                    <h3>콜봇 운영 요일/시간</h3>
+                                </div>
+                                <div class="timeBox">
+                                    <div class="date">
+                                        <i class="ico icoDate">요일</i>
+                                        <span><b>월</b>요일 ~ <b>금</b>요일</span>
+                                    </div>
+                                    <div class="time">
+                                        <i class="ico icoClock">시간</i>
+                                        <span>09:00 ~ 18:00 (테넌트 TZ)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea">
+                                <div class="formArea">
+                                    <ul>
+                                        <li>
+                                            <dl>
+                                                <dt>운영 요일</dt>
+                                                <dd>
+                                                    <div class="inputBox day">
+                                                        <button type="button" class="btn sm Mon on">월</button>
+                                                        <button type="button" class="btn sm Tue on">화</button>
+                                                        <button type="button" class="btn sm Wed on">수</button>
+                                                        <button type="button" class="btn sm Thu on">목</button>
+                                                        <button type="button" class="btn sm Fri on">금</button>
+                                                        <button type="button" class="btn sm Sat">토</button>
+                                                        <button type="button" class="btn sm Sun">일</button>
+                                                        <button type="button" class="btn sm all">전체</button>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>운영 시간</dt>
+                                                <dd>
+                                                    <div class="inputBox time">
+                                                        <input type="text" class="md" placeholder="00" />시
+                                                        <input type="text" class="md" placeholder="00" />분
+                                                        <span class="dash">~</span>
+                                                        <input type="text" class="md" placeholder="00" />시
+                                                        <input type="text" class="md" placeholder="00" />분
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popSec">
+                            <!-- 타이틀 영역 -->
+                            <div class="titArea">
+                                <div class="titBox flex">
+                                    <h3>콜봇 설명(선택)</h3>
+                                </div>
+                            </div>
+                            <!-- 컨텐츠 영역 -->
+                            <div class="conArea">
+                                <div class="formArea">
+                                    <textarea
+                                        class="noBorder noPadding"
+                                        placeholder="최대 500자 이내로 간단히 입력하세요."
+                                        style="height: 90px"
+                                    ></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btnArea right mt0">
+                            <a href="" class="btn md outline">취소</a>
+                            <a href="" class="btn md purple">저장</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div id="dim"></div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('#dim').fadeIn('fast');
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="HYOSUNG ITX" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="" />
+        <!-- <meta property="og:image" content="/assets/img/favicon/.png" /> -->
+        <meta property="og:description" content="" />
+        <meta name="apple-mobile-web-app-title" content="HYOSUNG ITX" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/css/lib/jquery.mCustomScrollbar.min.css?t=1771376639059"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771376639059" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771376639059" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/treeSortable.css?t=1771376639059" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771376639059" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771376639059" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771376639059"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771376639059"></script>
+        <script src="./assets/js/lib/jquery.ui.monthpicker.js?t=1771376639059"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771376639059"></script>
+        <script src="./assets/js/lib/jquery.mCustomScrollbar.concat.min.js?t=1771376639059"></script>
+        <script src="./assets/js/lib/apexcharts.min.js?t=1771376639059"></script>
+        <script src="./assets/js/lib/treeSortable.js?t=1771376639059"></script>
+        <script src="./assets/js/lib/script.js?t=1771376639059"></script>
+        <script src="./assets/js/common.js?t=1771376639059"></script>
+        <title>HYOSUNG ITX</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header" class="chatBot">
+            <div class="logoWrap flex">
+                <h1 class="mr40">
+                    <a href="/index.html"><img src="./assets/img/img-logo-w.svg" alt="HYOSUNG ITX" /></a>
+                </h1>
+                <div class="headerNav">
+                    <ul>
+                        <li class="active"><a href="#none">챗봇</a></li>
+                        <li><a href="#none">채팅상담</a></li>
+                        <li><a href="#none">콜봇</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setWrap">
+                <div class="setBtn">
+                    <a href="#none">
+                        <i class="ico icoSet">설정</i>
+                        <span>환경설정</span>
+                    </a>
+                </div>
+                <div class="counselBtn">
+                    <a href="#none">
+                        <div class="userImg">
+                            <img src="./assets/img/img-user-man.svg" alt="사용자" />
+                            <span class="dote wait"></span>
+                        </div>
+                        <span>상담대기</span>
+                        <i class="ico icoArrDown">화살표</i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--// header -->
+
+        <div id="wrap">
+            <!-- nav -->
+            <nav id="nav" class="dropdown cf chatBot">
+                <ul class="navList dropdown menu">
+                    <li>
+                        <a href="" class="active">
+                            <i class="ico icoDash">대시보드</i>
+                            <div>대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoWrite">시나리오</i>
+                            <div>시나리오 작성</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoBulb">전구</i>
+                            <div>학습(모델빌드)</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoSharing">배포</i>
+                            <div>배포</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoStati">통계</i>
+                            <div>통계</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoCounselor">사전</i>
+                            <div>사전관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoMessage">메세지</i>
+                            <div>메세지 관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ico icoClock">배치</i>
+                            <div>배치</div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="panelBtn">
+                    <i class="ico icoArrRight">오른쪽 화살표</i>
+                </button>
+            </nav>
+            <!--// nav -->
+
+            <div id="contents" class="flex jcB fdC gap12 chat chatBotType">
+                <div class="titWrap">
+                    <h3>대시보드</h3>
+                </div>
+                <div class="innerWrap flex jcS gap12 innerHover" style="height: 13%">
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>대기 총 고객수</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea jcE">
+                            <div class="countBox">
+                                <div class="lA"><strong>24</strong> 명</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>세션수</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea jcE">
+                            <div class="countBox">
+                                <div class="lA"><strong>12,480</strong> 건</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>사용자 발화 건수</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea jcE">
+                            <div class="countBox">
+                                <div class="lA"><strong>34,210</strong> 건</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>봇응답 성공률</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea jcE">
+                            <div class="countBox">
+                                <div class="lA"><strong>96.8</strong> %</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea noBorder">
+                            <div class="titBox">
+                                <h4>상담원 전환율</h4>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea jcE">
+                            <div class="countBox">
+                                <div class="lA"><strong>12</strong> %</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="innerWrap flex jcB gap12" style="height: 43.5%">
+                    <div class="inner tabWrap type2 green" style="width: 50%">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>봇 응답 속도(ms/s)</h3>
+                            </div>
+                            <div class="btnBox">
+                                <ul class="tabMenu aiC">
+                                    <li class="active" data-tab="tab1">ms</li>
+                                    <li data-tab="tab2" class="">s</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <div class="tabContent h100">
+                                <!-- tab1 -->
+                                <div id="tab1" class="tabPanel h100 active">
+                                    <div class="chartBox" style="height: 100%">차트영역1</div>
+                                </div>
+                                <!-- tab2 -->
+                                <div id="tab2" class="tabPanel">
+                                    <div class="chartBox" style="height: 100%">차트영역2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner" style="width: 50%">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>AI 서버 API 호출수</h3>
+                            </div>
+                            <div class="btnBox">
+                                <div class="state logoff">
+                                    <div class="dote"></div>
+                                    <div class="txt">호출수</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <div class="chartBox" style="height: 100%">차트영역</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="innerWrap flex jcB gap12" style="height: 43.5%">
+                    <div class="inner" style="width: 50%">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>봇응답 성공률</h3>
+                            </div>
+                            <div class="btnBox">
+                                <div class="state logoff">
+                                    <div class="dote"></div>
+                                    <div class="txt">성공률(%)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <div class="chartBox" style="height: 100%">차트영역</div>
+                        </div>
+                    </div>
+                    <div class="inner" style="width: 50%">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <h3>봇 응답 실패 건수</h3>
+                            </div>
+                            <div class="btnBox">
+                                <div class="state logoff">
+                                    <div class="dote"></div>
+                                    <div class="txt">실패 건수</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <div class="chartBox" style="height: 100%">차트영역</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

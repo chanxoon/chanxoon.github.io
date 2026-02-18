@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+        />
+        <meta http-equiv="X-UA-compatible" content="IE=edge" />
+        <meta name="author" content="주식회사 다름" />
+        <meta
+            name="description"
+            content="UX 컨설팅, UI 디자인, 브랜딩, 시스템 관리, 홈페이지 제작, 앱 개발 등 Total Digital 서비스를 제공하는 웹 에이전시입니다."
+        />
+        <meta name="keywords" content="UX컨설팅,UI디자인,브랜딩,시스템관리,홈페이지제작,앱개발,웹에이전시" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.da-rum.com/" />
+        <meta property="og:title" content="새로운 생각, 새로운 시선. 다름과 함께 다르게 커뮤니케이션" />
+        <meta property="og:image" content="/assets/img/og_darum.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="600" />
+        <meta
+            property="og:description"
+            content="UX 컨설팅, UI 디자인, 브랜딩, 시스템 관리, 홈페이지 제작, 앱 개발 등 Total Digital 서비스를 제공하는 웹 에이전시입니다."
+        />
+        <meta property="og:site_name" content="새로운 생각, 새로운 시선. 다름과 함께 다르게 커뮤니케이션" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta name="twitter:title" content="새로운 생각, 새로운 시선. 다름과 함께 다르게 커뮤니케이션" />
+        <meta
+            name="twitter:description"
+            content="UX 컨설팅, UI 디자인, 브랜딩, 시스템 관리, 홈페이지 제작, 앱 개발 등 Total Digital 서비스를 제공하는 웹 에이전시입니다."
+        />
+        <meta name="twitter:url" content="http://www.da-rum.com/" />
+        <meta name="twitter:image" content="/assets/img/og_darum.jpg" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/jquery-ui.css?t=1771377316277" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/swiper.min.css?t=1771377316277" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/lib/aos.css?t=1771377316277" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/common.min.css?t=1771377316277" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css?t=1771377316277" />
+
+        <script src="./assets/js/lib/jquery-3.6.0.min.js?t=1771377316277"></script>
+        <script src="./assets/js/lib/jquery-ui.min.js?t=1771377316277"></script>
+        <script src="./assets/js/lib/swiper.min.js?t=1771377316277"></script>
+        <script src="./assets/js/lib/gsap.min.js?t=1771377316277"></script>
+        <script src="./assets/js/lib/ScrollTrigger.min.js?t=1771377316277"></script>
+        <script src="./assets/js/lib/aos.js?t=1771377316277"></script>
+        <script src="./assets/js/common.js?t=1771377316277"></script>
+        <title>새로운 생각, 새로운 시선. 다름과 함께 다르게 커뮤니케이션</title>
+    </head>
+    <body>
+        <div id="wrap" class="introWrap">
+            <div id="container">
+                <section class="secVideo">
+                    <h1 class="blind">인트로 영상</h1>
+                    <div class="inner">
+                        <div class="mVideo-visual" id="videoWrap">
+                            <div class="video-container">
+                                <video autoplay loop muted playsinline preload="auto" id="projectVideo">
+                                    <source type="video/mp4" src="./assets/img/video/intro_video.mp4" />
+                                </video>
+                            </div>
+                        </div>
+                        <!-- <audio id="bgmAudio" autoplay loop muted>
+                            <source src="./assets/img/video/intro_bgm.mp3" type="audio/mpeg">
+                            브라우저가 audio 태그를 지원하지 않습니다.
+                        </audio> -->
+                    </div>
+                </section>
+                <button id="startBtn">인트로 재생</button>
+                <button class="scrollTop ico icoArrTop" id="scrollTopBtn" style="opacity: 0 !important">TOP</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    const video = document.getElementById('projectVideo');
+    const audio = document.getElementById('bgmAudio');
+    const btn = document.getElementById('startBtn');
+
+    // 페이지 로드 후 자동 클릭 트리거
+    // window.addEventListener('load', () => {
+    //     // 100ms 뒤 자동 클릭 시뮬레이션
+    //     setTimeout(() => {
+    //         btn.click();
+    //     }, 100);
+    // });
+
+    // 버튼 클릭 이벤트
+    btn.addEventListener('click', () => {
+        // 브라우저 정책 때문에 muted 상태에서 play 호출 필요
+        // video.muted = false;   // 영상 소리 켬
+        // audio.muted = false;   // BGM 소리 켬
+        video.play().catch(() => {}); // play 실패 방지
+        audio.play().catch(() => {});
+
+        btn.style.display = 'none'; // 버튼 숨김
+    });
+</script>

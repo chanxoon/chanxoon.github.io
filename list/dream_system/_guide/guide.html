@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1">
+
+        <link rel="stylesheet" type="text/css" href="../assets/css/lib/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/lib/swiper.min.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/lib/jquery-confirm.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/lib/jqgrid-ui.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/lib/jstree.min.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/lib/qtip.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/lib/timepicker.min.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/common.min.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.min.css" />
+
+        <script src="../assets/js/lib/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/lib/jquery-ui.min.js"></script>
+        <script src="../assets/js/lib/jquery.ui.monthpicker.js"></script>
+        <script src="../assets/js/lib/iscroll.min.js"></script>
+        <script src="../assets/js/lib/swiper.min.js"></script>
+        <script src="../assets/js/lib/jquery-confirm.js"></script>
+        <script src="../assets/js/lib/jqgrid-4.15.5.js"></script>
+        <script src="../assets/js/lib/jstree.min.js"></script>
+        <script src="../assets/js/lib/qtip-3.0.3.js"></script>
+        <script src="../assets/js/lib/blockUI-2.70.js"></script>
+        <script src="../assets/js/lib/fullcalendar.min.js"></script>
+        <script src="../assets/js/lib/timepicker.min.js"></script> 
+        <script src="../assets/js/common.js"></script>
+
+        <title>퍼블리싱 가이드</title>
+        <style>
+            #header,
+            #wrap,
+            body {
+                min-width: unset;
+            }
+            body {
+                padding: 2%;
+            }
+            .guideBox {
+                padding: 1%;
+                margin-bottom: 15px;
+            }
+            .guideBox > h4 {
+                font-size: 26px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                line-height: normal;
+            }
+            .guideBox > .inner {
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                width: 100%;
+                min-height: 300px;
+                padding: 2%;
+            }
+            .guideBox > .inner .row {
+                border-bottom: 1px solid #e1e1e1;
+                border-radius: 0px;
+                padding: 1%;
+                max-width: 1440px;
+                margin:15px auto;
+            }
+            .guideBox > .inner .row > p {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="guideBox">
+            <h4>button</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>outline</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs outline">xs</button>
+                        <button type="button" class="btn sm outline">sm</button>
+                        <button type="button" class="btn md outline">md</button>
+                        <button type="button" class="btn lg outline">lg</button>
+                        <button type="button" class="btn xlg outline">xlg</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>primary-default</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs primary-default">버튼</button>
+                        <button type="button" class="btn sm primary-default">버튼</button>
+                        <button type="button" class="btn md primary-default">버튼</button>
+                        <button type="button" class="btn lg primary-default">버튼</button>
+                        <button type="button" class="btn xlg primary-default">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>primary-dark</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs primary-dark">버튼</button>
+                        <button type="button" class="btn sm primary-dark">버튼</button>
+                        <button type="button" class="btn md primary-dark">버튼</button>
+                        <button type="button" class="btn lg primary-dark">버튼</button>
+                        <button type="button" class="btn xlg primary-dark">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>primary-light</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs primary-light">버튼</button>
+                        <button type="button" class="btn sm primary-light">버튼</button>
+                        <button type="button" class="btn md primary-light">버튼</button>
+                        <button type="button" class="btn lg primary-light">버튼</button>
+                        <button type="button" class="btn xlg primary-light">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>primary-light-second</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs primary-light-second">버튼</button>
+                        <button type="button" class="btn sm primary-light-second">버튼</button>
+                        <button type="button" class="btn md primary-light-second">버튼</button>
+                        <button type="button" class="btn lg primary-light-second">버튼</button>
+                        <button type="button" class="btn xlg primary-light-second">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>primary-second</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs primary-second">버튼</button>
+                        <button type="button" class="btn sm primary-second">버튼</button>
+                        <button type="button" class="btn md primary-second">버튼</button>
+                        <button type="button" class="btn lg primary-second">버튼</button>
+                        <button type="button" class="btn xlg primary-second">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>secondary</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs secondary">버튼</button>
+                        <button type="button" class="btn sm secondary">버튼</button>
+                        <button type="button" class="btn md secondary">버튼</button>
+                        <button type="button" class="btn lg secondary">버튼</button>
+                        <button type="button" class="btn xlg secondary">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>outline-primary</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs outline-primary">버튼</button>
+                        <button type="button" class="btn sm outline-primary">버튼</button>
+                        <button type="button" class="btn md outline-primary">버튼</button>
+                        <button type="button" class="btn lg outline-primary">버튼</button>
+                        <button type="button" class="btn xlg outline-primary">버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>disabled (primary-default, primary-dark, primary-light, primary-light-second)</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs primary" disabled>버튼</button>
+                        <button type="button" class="btn sm primary" disabled>버튼</button>
+                        <button type="button" class="btn md primary" disabled>버튼</button>
+                        <button type="button" class="btn lg primary" disabled>버튼</button>
+                        <button type="button" class="btn xlg primary" disabled>버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>disabled(outline)</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs outline-primary" disabled>버튼</button>
+                        <button type="button" class="btn sm outline-primary" disabled>버튼</button>
+                        <button type="button" class="btn md outline-primary" disabled>버튼</button>
+                        <button type="button" class="btn lg outline-primary" disabled>버튼</button>
+                        <button type="button" class="btn xlg outline-primary" disabled>버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>disabled(etc)</p>
+                    <div class="btnArea left">
+                        <button type="button" class="btn xs primary-second" disabled>버튼</button>
+                        <button type="button" class="btn sm primary-second" disabled>버튼</button>
+                        <button type="button" class="btn md primary-second" disabled>버튼</button>
+                        <button type="button" class="btn lg primary-second" disabled>버튼</button>
+                        <button type="button" class="btn xlg primary-second" disabled>버튼</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>text</p>
+                    <div class="btnArea left">
+                        <ul class="listWrapModule jcC">
+                            <li class="listItem">
+                                <button type="button" class="btn sm primary text icon right detailPri">상세</button>
+                            </li>
+                            <li class="listItem">
+                                <button type="button" class="btn sm primary-lignt text icon right settingPriLight">
+                                    대상자 설정
+                                </button>
+                            </li>
+                            <li class="listItem">
+                                <button type="button" class="btn sm primary-lignt text icon right downloadPriLight">
+                                    다운로드
+                                </button>
+                            </li>
+                            <li class="listItem">
+                                <button type="button" class="btn sm primary-lignt text icon right uploadPriLight">
+                                    업로드
+                                </button>
+                            </li>
+                            <li class="listItem">
+                                <button type="button" class="btn sm primary-lignt text icon right resetPriLight">초기화</button>
+                            </li>
+                            <li class="listItem">
+                                <button type="button" class="btn sm primary-lignt text icon right mailPriLight">SMS</button>
+                            </li>
+                            <li class="listItem">
+                                <button type="button" class="btn sm primary-lignt text icon right authPriLight">권한목록</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>icon</p>
+                    <div class="btnArea left">
+                        <ul class="listWrapModule jcC">
+                            <li class="listItem">
+                                <button type="button" class="btn sm icon trashSec">삭제</button>
+                            </li>
+                            <li class="listItem">
+                                <button type="button" class="btn sm icon resetSec">초기화</button>
+                            </li>
+                            <li class="listItem">
+                                <button type="button" class="btn lg icon squarePri radius6 arrowRightPri">추가</button>
+                            </li>
+                            <li class="listItem">
+                                <button type="button" class="btn lg icon squareGray radius6 arrowLeftGray">삭제</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>form</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>인풋</p>
+                    <div class="inputArea">
+                        <input type="text" class="md" placeholder="placeholder" />
+                        <input type="text" class="md" value="filled" />
+                        <input type="text" class="md error" value="error" />
+                        <input type="text" class="md" value="disabled" disabled />
+                        <input type="text" class="md" value="readonly" readonly />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>텍스트 에리어</p>
+                    <div class="inputArea">
+                        <textarea></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>셀렉트</p>
+                    <div class="formArea">
+                        <select class="md">
+                            <option>select</option>
+                        </select>
+                        <select class="md error">
+                            <option>select</option>
+                        </select>
+                        <select class="md" disabled>
+                            <option>select</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>날짜</p>
+                    <div class="datepickerWrap" style="max-width: 278px">
+                        <div><input type="text" id="" value="2025-01-22" class="datepicker md" /></div>
+                        <span>-</span>
+                        <div><input type="text" id="" value="2025-01-23" class="datepicker md" /></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>시간</p>
+                    <div class="datepickerWrap" style="max-width: 92px;">
+                        <div>
+                            <input type="text" class="timepickerModule md" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>체크</p>
+                    <div class="formArea">
+                        <div>
+                            <input type="checkbox" id="check0101" checked /><label for="check0101">check</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="check0102" /><label for="check0102">check</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="check0103" disabled/><label for="check0103">check</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>라디오</p>
+                    <div class="formArea jcS mb8">
+                        <div>
+                            <input type="radio" id="radio0101" name="radio0101" checked /><label for="radio0101"
+                                >radio</label
+                            >
+                        </div>
+                        <div>
+                            <input type="radio" id="radio0102" name="radio0101" /><label for="radio0102">radio</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radio0103" name="radio0101" disabled/><label for="radio0103">radio</label>
+                        </div>
+                    </div>
+                    <div class="formArea mb8">
+                        <div>
+                            <input type="radio" id="radio0201" name="radio0201" class="doteBlue" checked="" /><label
+                                for="radio0201"
+                                >라디오1</label
+                            >
+                        </div>
+                        <div>
+                            <input type="radio" id="radio0202" name="radio0201" class="doteBlue" /><label
+                                for="radio0202"
+                                >라디오2</label
+                            >
+                        </div>
+                    </div>
+                    <div class="formArea">
+                        <div class="radioWrap flex gap8">
+                            <div >
+                                <input type="radio" id="ty1" name="ty" class="checkBlue" checked="" /><label for="ty1"
+                                    >라디오1</label
+                                >
+                            </div>
+                            <div>
+                                <input type="radio" id="ty2" name="ty" class="checkBlue" /><label for="ty2"
+                                    >라디오2</label
+                                >
+                            </div>
+                            <div>
+                                <input type="radio" id="ty3" name="ty" class="checkBlue" /><label for="ty3"
+                                    >라디오3</label
+                                >
+                            </div>
+                            <div>
+                                <input type="radio" id="ty4" name="ty" class="checkBlue" /><label for="ty4"
+                                    >라디오4</label
+                                >
+                            </div>
+                            <div>
+                                <input type="radio" id="ty5" name="ty" class="checkBlue" /><label for="ty5"
+                                    >라디오5</label
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>토글버튼</p>
+                    <div class="formArea jcS">
+                        <div class="toggleBtnset">
+                            <input type="checkbox" id="toggle1" class="toggle" checked />
+                            <label for="toggle1" class="toggleSlide">
+                                <span class="togBtn"></span>
+                            </label>
+                            <div class="toggleLabel">togglebtn</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <p>전체 체크</p>
+                    <div class="formArea mb8">
+                        <div>
+                            <input type="checkbox" id="allChk" data-all-trigger="allChk" /><label for="allChk">all check</label>
+                        </div>
+                    </div>
+                    <div class="formArea mb8">
+                        <div>
+                            <input type="checkbox" id="allChk01" data-all-chk="allChk" data-all-trigger="allChk01" /><label for="allChk01">all check 01</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="allChk0101" data-all-chk="allChk01" /><label for="allChk0101">check 01-01</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="allChk0102" data-all-chk="allChk01" /><label for="allChk0102">check 01-02</label>
+                        </div>
+                    </div>
+                    <div class="formArea">
+                        <div>
+                            <div class="toggleBtnset">
+                                <input type="checkbox" id="allChk02" data-all-chk="allChk" data-all-trigger="allChk02" class="toggle" checked />
+                                <label for="allChk02" class="toggleSlide">
+                                    <span class="togBtn"></span>
+                                </label>
+                                <div class="toggleLabel">all check 02</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="toggleBtnset">
+                                <input type="checkbox" id="allChk0201" data-all-chk="allChk02" class="toggle" checked />
+                                <label for="allChk0201" class="toggleSlide">
+                                    <span class="togBtn"></span>
+                                </label>
+                                <div class="toggleLabel">all check 02-01</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="toggleBtnset">
+                                <input type="checkbox" id="allChk0202" data-all-chk="allChk02" class="toggle" checked />
+                                <label for="allChk0202" class="toggleSlide">
+                                    <span class="togBtn"></span>
+                                </label>
+                                <div class="toggleLabel">all check 02-02</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>검색</p>
+                    <div class="searchBtn">
+                        <button class="btn md primary-light">
+                            <i class="ico icoSearchW">검색 아이콘</i>
+                            <span>검색</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>searchbox</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>검색영역</p>
+
+                    <div class="searchBox">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>조회날짜<span class="req">*</span></dt>
+                                    <dd>
+                                        <div class="datepickerWrap" style="width: 278px">
+                                            <div>
+                                                <input type="text" id="" value="2025-01-22" class="datepicker md" />
+                                            </div>
+                                            <span>-</span>
+                                            <div>
+                                                <input type="text" id="" value="2025-01-23" class="datepicker md" />
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>선택</dt>
+                                    <dd>
+                                        <div class="formArea">
+                                            <select class="md">
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>선택</dt>
+                                    <dd>
+                                        <div class="formArea">
+                                            <select class="md">
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="searchBtn">
+                                    <button class="btn md primary-light">
+                                        <i class="ico icoSearchW">검색 아이콘</i>
+                                        <span>검색</span>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>검색영역 case2</p>
+
+                    <div class="searchBox type2 grid">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>이름</dt>
+                                    <dd>
+                                        <div style="width: 100%" class="inputArea">
+                                            <input type="text" class="md" placeholder="이름을 입력하세요" />
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>휴대폰 번호</dt>
+                                    <dd>
+                                        <div style="width: 100%" class="inputArea">
+                                            <input type="text" class="md" placeholder="'-'없이 숫자만 입력하세요" />
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>title</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>타이틀</p>
+
+                    <div class="titArea">
+                        <div class="titBox">
+                            <h3>Title</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>목록 타이틀</p>
+
+                    <div class="titArea">
+                        <div class="titBox">
+                            <h3>Title</h3>
+                        </div>
+                        <div class="pathBox">
+                            <ul>
+                                <li class="home"><a href="#none">홈</a></li>
+                                <li>근무계획</li>
+                                <li>사용자</li>
+                                <li>기본근무계획등록</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>버튼 타이틀</p>
+
+                    <div class="titArea">
+                        <div class="titBox">
+                            <h3>Title</h3>
+                        </div>
+                        <div class="btnBox">
+                            <a href="#" class="btn outline md">버튼1</a>
+                            <a href="#" class="btn primary-default md">버튼2</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>텍스트 타이틀</p>
+
+                    <div class="titArea">
+                        <div class="titBox">
+                            <h3>Title</h3>
+                        </div>
+                        <div class="infoBox">
+                            <i class="ico icoInfo">정보</i>
+                            <p class="txt">최근 10건만 표시됩니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>table</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>테이블 - tblList</p>
+
+                    <!-- 테이블 영역 -->
+                    <div class="tblList flex fdC">
+                        <table>
+                            <caption>
+                                월 근로시간 정보
+                            </caption>
+                            <colgroup>
+                                <col style="width: 70px" />
+                                <col style="width: 160px" />
+                                <col style="width: 200px" />
+                                <col style="width: 200px" />
+                                <col style="width: 200px" />
+                                <col style="width: 160px" />
+                                <col style="width: 280px" />
+                                <col style="width: 160px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">요일</th>
+                                    <th rowspan="2">근로일</th>
+                                    <th colspan="3">출퇴근 계획</th>
+                                    <th rowspan="2">일근태현황</th>
+                                    <th rowspan="2">비고</th>
+                                    <th rowspan="2">관리자확정</th>
+                                </tr>
+                                <tr>
+                                    <th>시작</th>
+                                    <th>종료</th>
+                                    <th>근로시간</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>월</td>
+                                    <td>2025. 10. 27</td>
+                                    <td>
+                                        <div class="formArea time">
+                                            <select class="md">
+                                                <option>09시</option>
+                                            </select>
+                                            <select class="md">
+                                                <option>30분</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="formArea time">
+                                            <select class="md">
+                                                <option>18시</option>
+                                            </select>
+                                            <select class="md">
+                                                <option>30분</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>11h</td>
+                                    <td></td>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input type="text" class="md" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="stateLabel blue">승인</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>화</td>
+                                    <td>2025. 10. 28</td>
+                                    <td>
+                                        <div class="formArea time">
+                                            <select class="md">
+                                                <option>09시</option>
+                                            </select>
+                                            <select class="md">
+                                                <option>30분</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="formArea time">
+                                            <select class="md">
+                                                <option>18시</option>
+                                            </select>
+                                            <select class="md">
+                                                <option>30분</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>11h</td>
+                                    <td></td>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input type="text" class="md" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="stateLabel blue">승인</div>
+                                    </td>
+                                </tr>
+                                <tr class="on">
+                                    <td>수</td>
+                                    <td>2025. 10. 29</td>
+                                    <td colspan="6">공휴일</td>
+                                </tr>
+                                <tr>
+                                    <td>목</td>
+                                    <td>2025. 10. 30</td>
+                                    <td>
+                                        <div class="formArea time">
+                                            <select class="md">
+                                                <option>09시</option>
+                                            </select>
+                                            <select class="md">
+                                                <option>30분</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="formArea time">
+                                            <select class="md">
+                                                <option>18시</option>
+                                            </select>
+                                            <select class="md">
+                                                <option>30분</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>11h</td>
+                                    <td></td>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input type="text" class="md" />
+                                        </div>
+                                    </td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>금</td>
+                                    <td>2025. 10. 31</td>
+                                    <td>
+                                        <div class="formArea time">
+                                            <select class="md">
+                                                <option>09시</option>
+                                            </select>
+                                            <select class="md">
+                                                <option>30분</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="formArea time">
+                                            <select class="md">
+                                                <option>18시</option>
+                                            </select>
+                                            <select class="md">
+                                                <option>30분</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>11h</td>
+                                    <td>연차휴가(8h)</td>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input type="text" class="md" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="stateLabel red">미승인</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--
+                        <div class="noResult">
+                            <div class="innerResult">
+                                <i class="ico icoNodata">데이터없음</i>
+                                <div class="resultTxt">등록된 데이터가 없습니다.</div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                    <div id="paginationWrap">
+                        <ul>
+                            <li class="first"><a href="#" class="btn sm outline">처음으로</a></li>
+                            <li class="prev"><a href="#" class="btn sm outline">이전으로</a></li>
+                            <li class="pageInput">
+                                <input type="text" class="sm" min="1" value="1" />
+                                <span class="dash">/</span>
+                                <span class="totalPage">50</span>
+                            </li>
+                            <li class="next"><a href="#" class="btn sm outline">다음으로</a></li>
+                            <li class="last"><a href="#" class="btn sm outline">마지막으로</a></li>
+                            <li class="pageSelect">
+                                <select class="sm">
+                                    <option value="50">30</option>
+                                    <option value="100">100</option>
+                                    <option value="150">150</option>
+                                    <option value="200">200</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="total">보기<span>1-1</span><span class="dash">/</span><span>1</span></li>
+                        </ul>
+                    </div>
+
+                    <p style="margin-top: 15px;">테이블 - tblList (bg-color, max-height ,min-height,border-bottom 없는 경우)</p>
+                    <!-- 테이블 영역 -->
+                    <div class="tblList basic">
+                        <table>
+                            <caption>
+                                공제내역표
+                            </caption>
+                            <colgroup>
+                                <col style="width: 20%" />
+                                <col style="width: 20%" />
+                                <col style="width: 20%" />
+                                <col style="width: 20%" />
+                                <col style="width: 20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>소득세</th>
+                                    <th>지방소득세</th>
+                                    <th>국민연금</th>
+                                    <th>건강보험</th>
+                                    <th>고용보험</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>552,130</td>
+                                    <td>55,210</td>
+                                    <td>210,230</td>
+                                    <td>187,050</td>
+                                    <td>54,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--
+                        <div class="noResult">
+                            <div class="innerResult">
+                                <div class="resultTxt"><i class="ico icoWarningTri">데이터없음</i> 조회된 결과가 없습니다.</div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>테이블 - tblForm</p>
+
+                    <!-- 테이블 영역 -->
+                    <div class="tblForm">
+                        <table>
+                            <caption>
+                                tblForm
+                            </caption>
+                            <colgroup>
+                                <col style="width: 120px" />
+                                <col style="width: auto" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>사번</th>
+                                    <td>123456789</td>
+                                </tr>
+                                <tr>
+                                    <th>직책</th>
+                                    <td>팀장</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>테이블 - tblForm (모바일 타입1)</p>
+                    <div class="tblForm type1">
+                        <table>
+                            <caption>
+                                tblForm
+                            </caption>
+                            <colgroup>
+                                <col style="width: 120px" />
+                                <col style="width: auto" />
+                                <col style="width: 120px" />
+                                <col style="width: auto" />
+                                <col style="width: 120px" />
+                                <col style="width: auto" />
+                                <col style="width: 120px" />
+                                <col style="width: auto" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>한부모여부</th>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input type="text" class="md" value="N" readonly />
+                                        </div>
+                                    </td>
+                                    <th>보훈구분</th>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input type="text" class="md" value="N" readonly />
+                                        </div>
+                                    </td>
+                                    <th>보훈번호</th>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input type="text" class="md" value="-" readonly />
+                                        </div>
+                                    </td>
+                                    <th>장애코드</th>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input type="text" class="md" value="N" readonly />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>장애유형</th>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input type="text" class="md" value="-" readonly />
+                                        </div>
+                                    </td>
+                                    <th>장애등급</th>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input type="text" class="md" value="-" readonly />
+                                        </div>
+                                    </td>
+                                    <th>사내메일</th>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input type="text" class="md" value="" placeholder="메일을 입력하세요" />
+                                        </div>
+                                    </td>
+                                    <th>사외메일</th>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input type="text" class="md" value="" placeholder="메일을 입력하세요" />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>사내전화</th>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input
+                                                type="text"
+                                                class="md"
+                                                value=""
+                                                placeholder="‘-’ 없이 숫자로 입력하세요"
+                                            />
+                                        </div>
+                                    </td>
+                                    <th>휴대폰</th>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input
+                                                type="text"
+                                                class="md"
+                                                value=""
+                                                placeholder="‘-’ 없이 숫자로 입력하세요"
+                                            />
+                                        </div>
+                                    </td>
+                                    <th>자택전화</th>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input
+                                                type="text"
+                                                class="md"
+                                                value=""
+                                                placeholder="‘-’ 없이 숫자로 입력하세요"
+                                            />
+                                        </div>
+                                    </td>
+                                    <th>기타연락처</th>
+                                    <td>
+                                        <div class="inputArea">
+                                            <input
+                                                type="text"
+                                                class="md"
+                                                value=""
+                                                placeholder="‘-’ 없이 숫자로 입력하세요"
+                                            />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>최종학력</th>
+                                    <td colspan="3">
+                                        <div class="inputArea">
+                                            <input
+                                                type="text"
+                                                class="md"
+                                                value="성균관대학교 글로벌 바이오메디컬 엔지니어링 학과"
+                                                readonly
+                                            />
+                                        </div>
+                                    </td>
+                                    <th>퇴직가산일</th>
+                                    <td colspan="3">
+                                        <div class="inputArea">
+                                            <input type="text" class="md" value="2022.08.01" readonly />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>테이블 - tblForm (모바일 타입2)</p>
+                    <div class="tblForm type2">
+                        <table>
+                            <caption>
+                                tblForm
+                            </caption>
+                            <colgroup>
+                                <col style="width: 120px" />
+                                <col style="width: auto" />
+                                <col style="width: 120px" />
+                                <col style="width: auto" />
+                                <col style="width: 120px" />
+                                <col style="width: auto" />
+                                <col style="width: 120px" />
+                                <col style="width: auto" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>사번</th>
+                                    <td>202200019</td>
+                                    <th>이름</th>
+                                    <td>김효성</td>
+                                    <th>연령</th>
+                                    <td>만 50</td>
+                                    <th>입사일</th>
+                                    <td>2022.08.01</td>
+                                </tr>
+                                <tr>
+                                    <th>직책</th>
+                                    <td>팀장</td>
+                                    <th>직위</th>
+                                    <td>과장</td>
+                                    <th>직급</th>
+                                    <td>과장</td>
+                                    <th>현부서발령일</th>
+                                    <td>2022.08.01</td>
+                                </tr>
+                                <tr>
+                                    <th>본부</th>
+                                    <td>CRM운영2부문 센터</td>
+                                    <th>사업팀</th>
+                                    <td>IT서비스팀</td>
+                                    <th>호봉</th>
+                                    <td>10</td>
+                                    <th>승진일</th>
+                                    <td>2022.08.01</td>
+                                </tr>
+                                <tr>
+                                    <th>부서</th>
+                                    <td colspan="7">한국재정정보원 고객센터 디브레인 멀티플러스팀</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>pagination</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>페이징</p>
+
+                    <!-- 페이지네이션 -->
+                    <!--#include file="./_pagination.html"-->
+
+                    <!-- pagination -->
+                    <div id="paginationWrap">
+                        <ul>
+                            <li class="first"><a href="#" class="btn sm outline">처음으로</a></li>
+                            <li class="prev"><a href="#" class="btn sm outline">이전으로</a></li>
+                            <li class="pageInput">
+                                <input type="text" class="sm" min="1" value="1" />
+                                <span class="dash">/</span>
+                                <span class="totalPage">50</span>
+                            </li>
+                            <li class="next"><a href="#" class="btn sm outline">다음으로</a></li>
+                            <li class="last"><a href="#" class="btn sm outline">마지막으로</a></li>
+                            <li class="pageSelect">
+                                <select class="sm">
+                                    <option value="50">30</option>
+                                    <option value="100">100</option>
+                                    <option value="150">150</option>
+                                    <option value="200">200</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="total">보기<span>1-1</span><span class="dash">/</span><span>1</span></li>
+                        </ul>
+                    </div>
+                    <!--// pagination -->
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>popup</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>팝업</p>
+
+                    <!-- popup -->
+                    <div
+                        class="popWrap"
+                        style="
+                            max-width: 900px;
+                            min-height: 300px;
+                            position: unset;
+                            transform: unset;
+                            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+                        "
+                    >
+                        <div class="popHead">
+                            <p class="popTitle">팝업 타이틀</p>
+                            <button type="button" class="popClose" onclick="modalClose(this)">닫기</button>
+                        </div>
+                        <div class="popBody">
+                            <div class="inner">
+                                <div class="btnArea right">
+                                    <a href="/" class="btn md outline">취소</a>
+                                    <a href="/" class="btn md primary-default">확인</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- popup -->
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>tab</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>탭</p>
+                    <div class="tabWrap">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <ul class="tabMenu">
+                                    <li class="active" data-tab="tab1-1">인적사항</li>
+                                    <li data-tab="tab1-2">가족사항</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <div class="tabContent">
+                                <!-- tab1 -->
+                                <div id="tab1-1" class="tabPanel active">1</div>
+                                <!-- tab2 -->
+                                <div id="tab1-2" class="tabPanel">2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ofH">
+                    <p>탭 반응형 대응</p>
+                    <div class="tabWrap">
+                        <div class="titBox iscrollBox">
+                            <ul class="tabMenu scroller">
+                                <li data-tab="tab2-1">인적사항</li>
+                                <li data-tab="tab2-2">가족사항</li>
+                                <li data-tab="tab2-3">학력사항</li>
+                                <li data-tab="tab2-4">발령사항</li>
+                                <li data-tab="tab2-5">경력사항</li>
+                                <li data-tab="tab2-6">자격증</li>
+                                <li class="active" data-tab="tab2-7">프로젝트 경력</li>
+                                <li data-tab="tab2-8">교육이력</li>
+                            </ul>
+                        </div>
+
+                        <div class="tabContent">
+                            <!-- tab1 -->
+                            <div id="tab2-1" class="tabPanel">1</div>
+                            <!-- tab2 -->
+                            <div id="tab2-2" class="tabPanel">2</div>
+                            <!-- tab3 -->
+                            <div id="tab2-3" class="tabPanel">3</div>
+                            <!-- tab4 -->
+                            <div id="tab2-4" class="tabPanel">4</div>
+                            <!-- tab5 -->
+                            <div id="tab2-5" class="tabPanel">5</div>
+                            <!-- tab6 -->
+                            <div id="tab2-6" class="tabPanel">6</div>
+                            <!-- tab7 -->
+                            <div id="tab2-7" class="tabPanel active">7</div>
+                            <!-- tab8 -->
+                            <div id="tab2-8" class="tabPanel">8</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>탭 전환 방식 변경(display에 영향 받는 이벤트 대응)</p>
+                    <div class="tabWrap opacityActive">
+                        <!-- 타이틀 영역 -->
+                        <div class="titArea">
+                            <div class="titBox">
+                                <ul class="tabMenu">
+                                    <li class="active" data-tab="tab3-1">인적사항</li>
+                                    <li data-tab="tab3-2">가족사항</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 컨텐츠 영역 -->
+                        <div class="conArea">
+                            <div class="tabContent">
+                                <!-- tab1 -->
+                                <div id="tab3-1" class="tabPanel active">1</div>
+                                <!-- tab2 -->
+                                <div id="tab3-2" class="tabPanel">2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>state</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>상태1</p>
+
+                    <div class="flex gap16">
+                        <div class="stateLabel blue">진행</div>
+                        <div class="stateLabel red">반려</div>
+                        <div class="stateLabel green">완료</div>
+                        <div class="stateLabel gray">임시</div>
+                        <div class="stateLabel outlineBlue">상신</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>상태2</p>
+
+                    <div class="flex gap16">
+                        <div class="stateTag red">연차</div>
+                        <div class="stateTag yellow">반차</div>
+                        <div class="stateTag blue">교육</div>
+                        <div class="stateTag green">현지출퇴근</div>
+                        <div class="stateTag purple">출장</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>상태3</p>
+
+                    <div class="flex gap16">
+                        <div class="stateBadge blue">승인</div>
+                        <div class="stateBadge red">미승인</div>
+                        <div class="stateBadge orange">대기</div>
+                        <div class="stateBadge gray">취소</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>상태4</p>
+
+                    <div class="flex gap16">
+                        <div class="stateChip blue">예약가능</div>
+                        <div class="stateChip green">예약완료</div>
+                        <div class="stateChip gray">예약마감</div>
+                        <div class="stateChip primary">나의예약</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>스케줄</p>
+
+                    <span class="flex gap16">
+                        <span class="scheduleItemModule scheduleBlue">
+                            <span class="scheduleItemContent">
+                                <span class="scheduleText"> 12:00 ~ 13:00 </span>
+                            </span>
+                        </span>
+                        <span class="scheduleItemModule scheduleGreen">
+                            <span class="scheduleItemContent">
+                                <span class="scheduleText"> 12:00 ~ 13:00 </span>
+                            </span>
+                        </span>
+                        <span class="scheduleItemModule scheduleGray">
+                            <span class="scheduleItemContent">
+                                <span class="scheduleText"> 12:00 ~ 13:00 </span>
+                            </span>
+                        </span>
+                        <span class="scheduleItemModule schedulePrimary">
+                            <span class="scheduleItemContent">
+                                <span class="scheduleText"> 12:00 ~ 13:00 </span>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>accordion</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>아코디언</p>
+
+                    <div class="flex aiC mb10">
+                        <span class="fs14 fwR fcB60">전체열기</span>
+                        <div class="toggleBtnset ml4">
+                            <input 
+                                type="checkbox" 
+                                id="toggleAll" 
+                                class="toggle"
+                                data-accordion-trigger="group1"
+                                checked
+                            />
+                            <label for="toggleAll" class="toggleSlide">
+                                <span class="togBtn"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="accordionModule" data-accordion-group="group1">
+                        <div class="accordionModuleContent">
+                            <div class="accordionHeader">
+                                <div class="accordionHeaderContent">
+                                    <div class="left">
+                                        <strong class="mainTitle">개인정보</strong>
+                                        <span class="subTitle">(YoungManInItem)</span>
+                                    </div>
+                                    <div class="right">
+                                        <div class="item">
+                                            <div class="toggleBtnset">
+                                                <input type="checkbox" id="toggle0101" class="toggle" />
+                                                <label for="toggle0101" class="toggleSlide">
+                                                    <span class="togBtn"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <button class="accordionTrigger">
+                                                열기
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordionBody">
+                                <div class="accordionBodyContent">
+                                    아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordionModule" data-accordion-group="group1">
+                        <div class="accordionModuleContent">
+                            <div class="accordionHeader">
+                                <div class="accordionHeaderContent">
+                                    <div class="left">
+                                        <strong class="mainTitle">개인정보</strong>
+                                        <span class="subTitle">(YoungManInItem)</span>
+                                    </div>
+                                    <div class="right">
+                                        <div class="item">
+                                            <div class="toggleBtnset">
+                                                <input type="checkbox" id="toggle0102" class="toggle" />
+                                                <label for="toggle0102" class="toggleSlide">
+                                                    <span class="togBtn"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <button class="accordionTrigger">
+                                                열기
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordionBody">
+                                <div class="accordionBodyContent">
+                                    아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordionModule" data-accordion-group="group1">
+                        <div class="accordionModuleContent">
+                            <div class="accordionHeader">
+                                <div class="accordionHeaderContent">
+                                    <div class="left">
+                                        <strong class="mainTitle">개인정보</strong>
+                                        <span class="subTitle">(YoungManInItem)</span>
+                                    </div>
+                                    <div class="right">
+                                        <div class="item">
+                                            <div class="toggleBtnset">
+                                                <input type="checkbox" id="toggle0103" class="toggle" />
+                                                <label for="toggle0103" class="toggleSlide">
+                                                    <span class="togBtn"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <button class="accordionTrigger">
+                                                열기
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordionBody">
+                                <div class="accordionBodyContent">
+                                    아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 아코디언 내용 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>tooltip</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>툴팁1</p>
+
+                    <i class="tooltipModule"
+                        data-tooltip="툴팁내용입니다.<br/>툴팁이요<br/>툴팁"
+                    ></i>
+                </div>
+                <div class="row">
+                    <p>툴팁2</p>
+
+                    <i class="tooltipModule gray sm"
+                        data-tooltip="툴팁내용입니다.
+                    툴팁이요
+                    툴팁"
+                    ></i>
+                </div>
+                <div class="row">
+                    <p>툴팁3</p>
+
+                    <i class="tooltipModule"
+                        data-tooltip="<div class='tooltipCustom'><strong class='title'>타이틀</strong><span class='info'>내용입니다1
+                            내용입니다2</span></div>"
+                    ></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>notice</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>알림 박스</p>
+
+                    <div class="noticeBoxModule yellowBox">
+                        <div class="noticeBoxModuleContent">
+                            <ul class="noticeBoxModuleList">
+                                <li>
+                                    <div class="item">
+                                        <strong class="title">※ 예약 방법</strong>
+                                        <span class="info"
+                                            >먼저 서비스점을 확인하고 , 원하는 날짜와 시간을 선택하여 예약해주세요. 예약
+                                            성공일 경우, 노란색으로 변경되어 확인이 됩니다.</span
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <strong class="title">※ 취소 방법</strong>
+                                        <span class="info"
+                                            >예약하신 날짜와 시간(노란색 칸)을 클릭 한 후, 노출되는 팝업창에서 취소
+                                            버튼을 클릭하면 취소가 됩니다.</span
+                                        >
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>tree</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>트리</p>
+
+                    <div id="tree" style="max-width: 300px"></div>
+
+                    <script>
+                        $(() => {
+                            $('#tree').jstree({
+                                core: {
+                                    multiple: true,
+                                    animation: 100,
+                                    check_callback: true,
+                                    dblclick_toggle: false,
+                                    themes: {
+                                        icons: false,
+                                    },
+                                    data: [
+                                        {
+                                            text: '삼성생명 IT서비스데스크 상담1파트',
+                                            state: { opened: true, selected: true },
+                                            children: [
+                                                { text: '홍길동' },
+                                                {
+                                                    text: '홍길동',
+                                                    children: [{ text: '홍길동' }, { text: '홍길동' }],
+                                                },
+                                            ],
+                                        },
+                                        {
+                                            text: '삼성생명 IT서비스데스크 상담1파트',
+                                            state: { opened: false },
+                                            children: [
+                                                { text: '홍길동' },
+                                                {
+                                                    text: '홍길동',
+                                                    children: [{ text: '홍길동' }, { text: '홍길동' }],
+                                                },
+                                            ],
+                                        },
+                                        {
+                                            text: '삼성생명 IT서비스데스크 상담1파트',
+                                            state: { opened: false },
+                                            children: [
+                                                { text: '홍길동' },
+                                                {
+                                                    text: '홍길동',
+                                                    children: [{ text: '홍길동' }, { text: '홍길동' }],
+                                                },
+                                            ],
+                                        },
+                                        {
+                                            text: '삼성생명 IT서비스데스크 상담1파트',
+                                            state: { opened: false },
+                                            children: [
+                                                { text: '홍길동' },
+                                                {
+                                                    text: '홍길동',
+                                                    children: [{ text: '홍길동' }, { text: '홍길동' }],
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                },
+                                plugins: ['checkbox'],
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>calendar</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>캘린더</p>
+
+                    <div class="calendarModule header1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>progress</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>프로그레스</p>
+
+                    <div class="">
+                        <div class="progBox pl0 pr0">
+                            <progress min="0" max="100" value="78"></progress>
+                            <span>78%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p>프로그레스 컬러</p>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" data-value="80"></div>
+                        <div class="progress-value">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guideBox">
+            <h4>Circle Progress</h4>
+            <div class="inner">
+                <div class="row">
+                    <p>test</p>
+                    <div class="btnArea left">
+                        <ul class="listWrapModule jcC">
+                            <li class="listItem">
+                                <button type="button" class="btn xlg primary-light progressTest">테스트</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

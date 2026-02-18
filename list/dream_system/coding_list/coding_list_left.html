@@ -87,7 +87,7 @@
 				}
 			};
 		}
-		getAjax('/list/dream_system/_coding_list/coding_list.json', function () {
+		getAjax('/list/dream_system/coding_list/coding_list.json', function () {
 			try{
 				var dataset = JSON.parse(this.responseText);			//data
 
@@ -124,7 +124,7 @@
 					console.log(e)
 				}
 
-				getAjax('/list/dream_system/_coding_list/coding_list.js', function () {
+				getAjax('/list/dream_system/coding_list/coding_list.js', function () {
 					eval(this.responseText);							//실행함수들
 					new Codinglist();
 

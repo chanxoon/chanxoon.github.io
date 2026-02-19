@@ -1433,7 +1433,7 @@ section.projectSec .inner .custom-select .select-list li:hover {
 }
 section.projectSec .inner .projects {
   display: none;
-  gap: 2.33%;
+  gap: 1.33%;
 }
 section.projectSec .inner .projects.active {
   display: flex;
@@ -1443,7 +1443,7 @@ section.projectSec .inner .projects .project {
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  width: 23%;
+  width: 24%;
   margin-bottom: 48px;
 }
 section.projectSec .inner .projects .project:hover {

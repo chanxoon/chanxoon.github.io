@@ -1125,7 +1125,7 @@ section {
             }
             .projects {
                 display: none;
-                gap:2.33%;
+                gap:1.33%;
                 &.active {
                     display: flex;
                     flex-wrap: wrap;
@@ -1134,7 +1134,7 @@ section {
                     border-radius: 12px;
                     overflow: hidden;
                     transition: transform 0.3s ease;
-                    width:23%;
+                    width:24%;
                     margin-bottom:48px;
                     &:hover {
                         transform: translateY(-6px);

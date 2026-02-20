@@ -3827,13 +3827,13 @@ transition:all 0.0s linear;
 
 /* 명승지와 절경 */
 .scenic-spot section .inner-wrap {max-width:none;width:1263px;}
-.scenic-spot .header-visual {background-image:url('/images/intro/scenic-spot/bg-scenicspot.png');}
+.scenic-spot .header-visual {background-image:url('../images/intro/scenic-spot/bg-scenicspot.png');}
 .scenic-spot .sec-area dt strong:after {display: none;} 
 .scenic-spot .sec-area {position: relative;}
 .scenic-spot .sec-area dt {font-family: 'NotoSansifCJKEL';}
 .scenic-spot .sec-area dt span {display:inline-block;font: 40px 'NotoSansifCJKEL';font-weight: 100;color: #E7B200;}
 .scenic-spot .sec-area dt strong b {color: #A16B00;}
-.scenic-spot .section1 {background:url('/images/intro/scenic-spot/bg-scenicspot-sec1.jpg') center no-repeat;background-size:100% 100%;}
+.scenic-spot .section1 {background:url('../images/intro/scenic-spot/bg-scenicspot-sec1.jpg') center no-repeat;background-size:100% 100%;}
 .scenic-spot .section1 .swiper .swiper-slide {opacity: 0 !important;}
 .scenic-spot .section1 .swiper .swiper-slide-active {opacity: 1 !important;z-index: 9 !important;}
 .scenic-spot .section1 .tab .bg-box {width:100%;height:504px;background-size:cover;position: absolute;top:378px;left:0px;}
@@ -3857,7 +3857,7 @@ transition:all 0.0s linear;
 .scenic-spot .section1 .swiper .swiper-pagination .swiper-pagination-bullet-active::before {content: '';position: absolute;top:-3px;left:-3px;border:1px solid #E7B200;width:12px;height:12px;border-radius:50%;}
 .scenic-spot .section1 .swiper .swiper-pagination .swiper-pagination-bullet-active span {color: #E7B200;}
 
-.scenic-spot .section2 {background:url('/images/intro/scenic-spot/bg-scenicspot-sec2.jpg') center no-repeat;background-size:100% 100%;}
+.scenic-spot .section2 {background:url('../images/intro/scenic-spot/bg-scenicspot-sec2.jpg') center no-repeat;background-size:100% 100%;}
 .scenic-spot .section2 .inner-wrap {width:1084px;}
 .scenic-spot .section2 .sec-area dt strong {color:#fff;}
 .scenic-spot .section2 .sec-area dt strong b {color: #E7B200;}
@@ -3872,7 +3872,7 @@ transition:all 0.0s linear;
 .scenic-spot .section2 .sec2-scenicspot-swiper .swiper-slide .left-sec .box .name {font-family: 'NotoSansifCJKEL';color: #FFF;font-size: 20px;font-weight: 400;line-height: normal;letter-spacing: -1px;margin-bottom:16px;}
 .scenic-spot .section2 .sec2-scenicspot-swiper .swiper-slide .left-sec .box .desc {color: rgba(255, 255, 255, 0.80);text-align: justify;font-size: 16px;font-weight: 200;line-height: normal;letter-spacing: -1px;}
 .scenic-spot .section2 .sec2-scenicspot-swiper .swiper-slide .left-sec .box .more {position:absolute;top:30px;right:30px;width:30px;height:30px;}
-.scenic-spot .section2 .sec2-scenicspot-swiper .swiper-slide .left-sec .box .more a {text-indent:-999999px;background:url(/images/intro/scenic-spot/icon-scenicspot-more.png) center no-repeat;width:30px;height:30px;display:inline-block;}
+.scenic-spot .section2 .sec2-scenicspot-swiper .swiper-slide .left-sec .box .more a {text-indent:-999999px;background:url(../images/intro/scenic-spot/icon-scenicspot-more.png) center no-repeat;width:30px;height:30px;display:inline-block;}
 .scenic-spot .section2 .sec2-scenicspot-swiper .tab-menu-scenicspot ul {display: flex;}
 .scenic-spot .section2 .sec2-scenicspot-swiper .tab-menu-scenicspot ul > li {margin-bottom:16px;text-align:center;}
 .scenic-spot .section2 .sec2-scenicspot-swiper .tab-menu-scenicspot ul > li > a {color:#fff;margin-right:10px;padding-right:10px;position: relative;}
@@ -3886,20 +3886,20 @@ transition:all 0.0s linear;
 .scenic-spot .section2 .sec2-scenicspot-swiper .nav-box {position:absolute;width:1084px;bottom:220px;}
 .scenic-spot .section2 .sec2-scenicspot-swiper .nav-box .swiper-button-next, 
 .scenic-spot .section2 .sec2-scenicspot-swiper .nav-box .swiper-button-prev {top:0px;margin:0;width:60px;height:60px;border:0px solid #ccc;}
-.scenic-spot .section2 .sec2-scenicspot-swiper .nav-box .swiper-button-next {left:60px;background:url('/images/intro/scenic-spot/icon-scenicspot-arr-right.png') center no-repeat #a58932;}
-.scenic-spot .section2 .sec2-scenicspot-swiper .nav-box .swiper-button-prev {left:0px;background:url('/images/intro/scenic-spot/icon-scenicspot-arr-left.png') center no-repeat #a58932;}
+.scenic-spot .section2 .sec2-scenicspot-swiper .nav-box .swiper-button-next {left:60px;background:url('../images/intro/scenic-spot/icon-scenicspot-arr-right.png') center no-repeat #a58932;}
+.scenic-spot .section2 .sec2-scenicspot-swiper .nav-box .swiper-button-prev {left:0px;background:url('../images/intro/scenic-spot/icon-scenicspot-arr-left.png') center no-repeat #a58932;}
 
-.scenic-spot .section3 {background:url('/images/intro/scenic-spot/bg-scenicspot-sec3.jpg') center no-repeat;background-size:100% 100%;}
+.scenic-spot .section3 {background:url('../images/intro/scenic-spot/bg-scenicspot-sec3.jpg') center no-repeat;background-size:100% 100%;}
 .scenic-spot .section3 .inner-wrap {width:1116px;}
 .scenic-spot .section3 .swiper-slide {display: flex;justify-content: center;align-items: center;}
 .scenic-spot .section3 .sec3-scenicspot-swiper {width: 920px;height: 100%;margin-left: auto;margin-right: auto;overflow: hidden;}
 .scenic-spot .section3 .sec3-scenicspot-swiper {height: 20%;box-sizing: border-box;padding: 10px 0;}
 .scenic-spot .section3 .sec3-scenicspot-swiper .swiper-slide {width: 25%;height: 100%;background:#fff;padding:8px;}
-.scenic-spot .section3 .sec3-scenicspot-swiper .swiper-slide p {font-family: 'NotoSansifCJKEL';width:100%;height:230px;display: flex;align-items: center;justify-content: center;background:url(/images/intro/scenic-spot/icon-scenicspot-sec3.png) center 55px no-repeat;border: 1px solid #BFB8A7;color: #222;text-align: center;font-size: 26px;font-weight: 500;line-height: normal;letter-spacing: 0px;}
+.scenic-spot .section3 .sec3-scenicspot-swiper .swiper-slide p {font-family: 'NotoSansifCJKEL';width:100%;height:230px;display: flex;align-items: center;justify-content: center;background:url(../images/intro/scenic-spot/icon-scenicspot-sec3.png) center 55px no-repeat;border: 1px solid #BFB8A7;color: #222;text-align: center;font-size: 26px;font-weight: 500;line-height: normal;letter-spacing: 0px;}
 .scenic-spot .section3 .sec3-scenicspot-swiper .swiper-slide-thumb-active {border: 4px solid #FFF;background: #A48343;}
 .scenic-spot .section3 .sec3-scenicspot-swiper .swiper-slide-thumb-active p {color:#fff;}
 .scenic-spot .section3 .sec3-1-scenicspot-swiper {width: 100%;height: 100%;overflow: hidden;margin-top:80px;}
-.scenic-spot .section3 .sec3-1-scenicspot-swiper .swiper-slide .left-sec {width:719px;height:600px;background:url(/images/intro/scenic-spot/img-scenicspot-sec3-bg.png) center no-repeat;border:1px solid #8d836e;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.scenic-spot .section3 .sec3-1-scenicspot-swiper .swiper-slide .left-sec {width:719px;height:600px;background:url(../images/intro/scenic-spot/img-scenicspot-sec3-bg.png) center no-repeat;border:1px solid #8d836e;display: flex;align-items: center;justify-content: center;flex-direction: column;}
 .scenic-spot .section3 .sec3-1-scenicspot-swiper .swiper-slide .left-sec .tit {margin-bottom:80px;font-family: 'NotoSansifCJKEL';color: #5C3528;text-align: center;font-size: 32px;font-weight: 600;line-height: normal;letter-spacing: -1px;text-indent: -30px;}
 .scenic-spot .section3 .sec3-1-scenicspot-swiper .swiper-slide .left-sec .desc {width:480px;}
 .scenic-spot .section3 .sec3-1-scenicspot-swiper .swiper-slide .left-sec .desc p:nth-child(1) {color: #846743;font-family: 'NotoSansifCJKEL';font-size: 20px;font-weight: 400;line-height: normal;letter-spacing: -1px;border-bottom:1px solid #AEAEAE;margin-bottom:16px;padding-bottom:16px;}
@@ -3908,13 +3908,13 @@ transition:all 0.0s linear;
 .scenic-spot .section3 .sec3-1-scenicspot-swiper .swiper-slide .right-sec .tit {text-align: center;background: #766A53;height:50px;line-height: 50px;color: #FFF;font-size: 20px;font-weight: 400;letter-spacing: -1px;font-family: 'NotoSansifCJKEL';}
 .scenic-spot .section3 .sec3-1-scenicspot-swiper .swiper-slide .right-sec .box {padding:15px;text-align: center;}
 .scenic-spot .section3 .sec3-1-scenicspot-swiper .swiper-slide .right-sec .box:nth-of-type(2) {border-bottom: 1px solid #B1A998;}
-.scenic-spot .section3 .sec3-1-scenicspot-swiper .swiper-slide .right-sec .box p:nth-of-type(2) {color: #FFF;font-size: 16px;font-weight: 400;line-height: normal;letter-spacing: -1px;text-align: center;padding-right:30px;background:url(/images/intro/scenic-spot/icon-scenicspot-more.png) right center no-repeat;background-size:20px 20px;display: inline-block;margin-top:5px;}
+.scenic-spot .section3 .sec3-1-scenicspot-swiper .swiper-slide .right-sec .box p:nth-of-type(2) {color: #FFF;font-size: 16px;font-weight: 400;line-height: normal;letter-spacing: -1px;text-align: center;padding-right:30px;background:url(../images/intro/scenic-spot/icon-scenicspot-more.png) right center no-repeat;background-size:20px 20px;display: inline-block;margin-top:5px;}
 .scenic-spot .section3 .sec3-1-scenicspot-swiper .nav-box .swiper-button-next, 
 .scenic-spot .section3 .sec3-1-scenicspot-swiper .nav-box .swiper-button-prev {top:420px;margin:0;width:60px;height:60px;}
-.scenic-spot .section3 .sec3-1-scenicspot-swiper .nav-box .swiper-button-next {right:calc(50% - 550px);background:url('/images/intro/scenic-spot/icon-scenicspot-sec3-arr-right.png') center no-repeat;}
-.scenic-spot .section3 .sec3-1-scenicspot-swiper .nav-box .swiper-button-prev {left:calc(50% - 550px);background:url('/images/intro/scenic-spot/icon-scenicspot-sec3-arr-left.png') center no-repeat;}
+.scenic-spot .section3 .sec3-1-scenicspot-swiper .nav-box .swiper-button-next {right:calc(50% - 550px);background:url('../images/intro/scenic-spot/icon-scenicspot-sec3-arr-right.png') center no-repeat;}
+.scenic-spot .section3 .sec3-1-scenicspot-swiper .nav-box .swiper-button-prev {left:calc(50% - 550px);background:url('../images/intro/scenic-spot/icon-scenicspot-sec3-arr-left.png') center no-repeat;}
 
-.scenic-spot .section4 {background:url('/images/intro/scenic-spot/bg-scenicspot-sec4.jpg') center no-repeat;background-size:100% 100%;}
+.scenic-spot .section4 {background:url('../images/intro/scenic-spot/bg-scenicspot-sec4.jpg') center no-repeat;background-size:100% 100%;}
 .scenic-spot .section4 .inner-wrap {width:1433px;}
 .scenic-spot .section4 .sec-area dt p {color: #A16B00;font-size: 20px;font-weight: 600;line-height: normal;letter-spacing: -1px;margin-top:5px;}
 .scenic-spot .section4 .con-box {display: flex;justify-content: space-between;align-items: flex-end;}

@@ -1208,6 +1208,10 @@ section.aboutSec {
   position: relative;
 }
 section.aboutSec h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   color: #222;
   text-align: center;
   font-size: 70px;

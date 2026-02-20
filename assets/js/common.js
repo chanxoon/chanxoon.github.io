@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: 1000,
     });
 
+    // 섹션2 슬라이드
     const swiper = new Swiper(".mySwiper", {
         effect: "cards",
         grabCursor: true,
